@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header style={{ padding: '1rem', background: '#000' }}>
+    <header className='nunito-text' style={{ padding: '1rem', background: '#000' }}>
         <h1>Header</h1>
       <nav>
         <Link href="/" style={{ marginRight: 10 }}>Home</Link>
