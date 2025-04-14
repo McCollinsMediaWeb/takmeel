@@ -164,6 +164,9 @@ margin-bottom: 30px;
 .bg1{
   background-color: #1D1D1D;
 }
+footer{
+
+}
 .FooterLogo{
   max-width: 200px;
 }
@@ -172,4 +175,106 @@ margin-bottom: 30px;
   font-size: 20px;
   padding: 30px 0px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 30px;
+}
+.CRow{
+  padding-left: 37px;
+  position: relative;
+  color: #fff;
+  margin-bottom: 25px;
+  font-family: var(--font-nunito-sans), Arial, Helvetica, sans-serif;
+}
+.CRow.whatsapp:after{
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image: url(../public/whatsapp.png);
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.CRow.call:after{
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image: url(../public/call.png);
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.CRow.email:after{
+  content: "";
+  width: 21px;
+  height: 16px;
+  background-image: url(../public/email.png);
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.CRow.location:after{
+  content: "";
+  width: 16px;
+  height: 23px;
+  background-image: url(../public/location.png);
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.CRow a:hover{
+  color: #D6B264;
+}
+.LinkTitle{
+  color: #D6B264;
+  margin-bottom: 15px;
+}
+.FtrLnk1{
+  color: #fff !important;
+  display: block;
+  margin-bottom: 15px;
+  font-family: var(--font-nunito-sans), Arial, Helvetica, sans-serif;
+}
+.FtrLnk1:hover{
+  color: #D6B264 !important;
+}
+.NewsletterBox{
+  position: relative;
+}
+.NewsletterBox input{
+  background-color: transparent;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-bottom: 1px solid #ffffff1a;
+  box-shadow: none;
+  outline: none;
+  color: #fff;
+}
+.NewsletterBox  button{
+  background-color: transparent;
+  color: #D6B264;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  border: 0;
+  cursor: pointer;
+}
+.NewsletterBox  button:hover{
+  color: #fff;
+}
+.NewsTxt{
+  margin-top: 15px;
+  color: #fff;
+  opacity: 0.5;
+}
+.FooterBottom{
+  padding: 20px 0px;
+  background-color: #000;
+  color: #fff;
+}
+.FooterBottom a:hover{
+  color: #D6B264;
 }
