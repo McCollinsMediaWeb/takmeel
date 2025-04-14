@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Optima';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Optima'), url('OPTIMA.woff') format('woff');
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Optima';
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.nunito-text {
+  font-family: var(--font-nunito-sans), Arial, Helvetica, sans-serif;
+}
+
+
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+  transition: 0.4s;
+}
+.container{
+  max-width: 1400px;
+}
+.HederBoxFlex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  background-color: rgba(0,0,0,0.2);
+}
+.scrolled header{
+  background-color: #1D1D1D;
+}
+.HeaderBox{
+  padding: 15px 15px;
+}
+@keyframes scrollBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+.FullScreenBanner{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  background-repeat: repeat-y;
+  animation: scrollBackground 10s linear infinite;
+  overflow: hidden;
+}
+.FullScreenBanner:after{
+  content: "";
+  background-image: url(../public/overlay.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.FsBannerContentFlex{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  color: #fff;
+  align-items: center;
+}
+.Txt1{
+color: #D6B264;
+margin-bottom: 15px;
+text-transform: uppercase;
+}
+.Txt2{
+font-size: 48px;
+max-width: 450px;
+margin-bottom: 10px;
+}
+.Txt3{
+font-size: 25px;
+margin-bottom: 30px;
+}
+.Link1{
+  display: inline-block;
+  padding: 10px 20px;
+  min-width: 200px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 20px;
+}
+.hover1:hover{
+  background-color: #D6B264;
+  color: #383838;
+}
+.MenuClick{
+  width: 27px;
+  height: 19px;
+  background-size: 100% 100%;
+  background-image: url(../public/menu.png);
+  cursor: pointer;
+  position: relative;
+}
+.MenuClick::after{
+  content: "Menu";
+  color: #fff;
+  position: absolute;
+  left: 40px;
+  top: 3px;
+  transition: 0.4s;
+}
+.MenuClick:hover{
+  background-image: url(../public/menuhover.png);
+}
+.MenuClick:hover::after{
+  color: #D6B264;
+}
+.MainLogo{
+  max-width: 150px;
+}

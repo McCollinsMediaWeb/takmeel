@@ -1,12 +1,42 @@
 'use client'; // optional if using interactivity (like menus)
 
 import Link from 'next/link';
-
+import { useEffect } from 'react';
 export default function Header() {
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        document.body.classList.add('scrolled');
+      } else {
+        document.body.classList.remove('scrolled');
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  
+
   return (
-    <header className='nunito-text' style={{ padding: '1rem', background: '#000' }}>
-        <h1>Header</h1>
-      <nav>
+    <header>
+      <div className='container-fluid'>
+        <div className='HeaderBox'>
+          <div className='HederBoxFlex'>
+            <div className='HeaderBoxLeft'>
+              <div className='MenuClick'>&nbsp;</div>
+            </div>
+            <div className='HeaderBoxMiddle'>
+              <Link href="/">
+                <img src='logo.png' className='MainLogo' />
+              </Link>
+              
+            </div>
+            <div className='HeaderBoxRight'>Ijas</div>
+          </div>
+        </div>
+      </div>
+      {/* <nav>
         <Link href="/" style={{ marginRight: 10 }}>Home</Link>
         <Link href="/about-us" style={{ marginRight: 10 }}>About Us</Link>
         <Link href="/projects" style={{ marginRight: 10 }}>Projects</Link>
@@ -15,7 +45,7 @@ export default function Header() {
         <Link href="/faq" style={{ marginRight: 10 }}>FAQ</Link>
         <Link href="/privacy-policy" style={{ marginRight: 10 }}>Privacy</Link>
         <Link href="/terms-of-use">Terms</Link>
-      </nav>
+      </nav> */}
     </header>
   );
 }

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer style={{ padding: '1rem', background: '#000' }}>
+    <footer>
         <h1>Footer</h1>
       <nav>
         <Link href="/" style={{ marginRight: 10 }}>Home</Link>
