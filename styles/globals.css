@@ -280,6 +280,7 @@ footer{
 }
 .socialMediaLinksFlex{
   display: flex;
+  justify-content: end;
 }
 .ScIcon{
   width: 25px;
@@ -305,4 +306,12 @@ footer{
   width:22px;
   height:22px;
   background-image: url(../public/youtube.png);
+}
+.ScIcon.x{
+  width:22px;
+  height:22px;
+  background-image: url(../public/x.png);
+}
+.socialMediaLinksFlex a{
+  margin-left: 15px;
 }
