@@ -46,3 +46,14 @@ a {
     color-scheme: dark;
   }
 }
+
+@font-face {
+  font-family: 'Optima';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Optima'), url('OPTIMA.woff') format('woff');
+  }
+  body{
+    font-family:'Optima';
+    font-weight:normal;
+  }
