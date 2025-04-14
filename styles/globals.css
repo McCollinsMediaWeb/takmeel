@@ -278,3 +278,31 @@ footer{
 .FooterBottom a:hover{
   color: #D6B264;
 }
+.socialMediaLinksFlex{
+  display: flex;
+}
+.ScIcon{
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+.ScIcon.facebook{
+  width:13px;
+  height:22px;
+  background-image: url(../public/facebook.png);
+}
+.ScIcon.instagram{
+  width:22px;
+  height:22px;
+  background-image: url(../public/instagram.png);
+}
+.ScIcon.tiktok{
+  width:20px;
+  height:22px;
+  background-image: url(../public/tiktok.png);
+}
+.ScIcon.youtube{
+  width:22px;
+  height:22px;
+  background-image: url(../public/youtube.png);
+}
