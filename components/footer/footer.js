@@ -4,18 +4,13 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer>
-        <h1>Footer</h1>
-      <nav>
-        <Link href="/" style={{ marginRight: 10 }}>Home</Link>
-        <Link href="/about-us" style={{ marginRight: 10 }}>About Us</Link>
-        <Link href="/projects" style={{ marginRight: 10 }}>Projects</Link>
-        <Link href="/news-updates" style={{ marginRight: 10 }}>News</Link>
-        <Link href="/contact-us" style={{ marginRight: 10 }}>Contact</Link>
-        <Link href="/faq" style={{ marginRight: 10 }}>FAQ</Link>
-        <Link href="/privacy-policy" style={{ marginRight: 10 }}>Privacy</Link>
-        <Link href="/terms-of-use">Terms</Link>
-      </nav>
+    <footer className='pd-common bg1'>
+      <div className='container'>
+        <div className='text-center'>
+            <img className='FooterLogo' src="footerlogo.png"/>
+            <div className='FtrT1 text-uppercase'>Urban Living, Reimagined by Nature</div>
+        </div>
+      </div>
     </footer>
   );
 }
