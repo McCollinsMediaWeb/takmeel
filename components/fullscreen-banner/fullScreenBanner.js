@@ -10,9 +10,8 @@ export default function FullScreenBanner({ backgroundImage,backgroundImageMobile
     return (
         <div className='FullScreenBanner'>
             <motion.div
-         initial={{ opacity: 0 }}
-         whileInView={{ opacity: 1 }}
-         transition={{ duration: 0.6, ease: "easeOut" }}
+         animate={{ scale: [1, 1.05, 1] }}
+         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
          viewport={{ once: true, amount: 0.5 }} 
       >
             {isDesktop && (

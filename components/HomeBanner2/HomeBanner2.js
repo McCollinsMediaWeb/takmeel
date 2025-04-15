@@ -51,9 +51,8 @@ export default function HomeBanner2({ backgroundImage, backgroundImageMobile, te
                     <div className='BannerItem'>
                         <div className='FtSliderContent'>
                             <motion.div
-                                initial={{ opacity: 0 }}
-                                whileInView={{ opacity: 1 }}
-                                transition={{ duration: 0.6, ease: "easeOut" }}
+                                animate={{ scale: [1, 1.05, 1] }}
+                                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                                 viewport={{ once: true, amount: 0.5 }}
                             >
                                 {isDesktop && (
@@ -75,6 +74,27 @@ export default function HomeBanner2({ backgroundImage, backgroundImageMobile, te
                                     />
                                 )}
                             </motion.div>
+                            <div className='BannerTextBox'>
+                                <div>
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 30 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.6, ease: "easeOut" }}
+                                        viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
+                                    >
+                                        <div className='row'>
+                                            <div className='col-md-8'>
+                                                <div className='Txt1 nunito-text'>{text1}</div>
+                                                <div className='Txt2 text-uppercase'>{text2}</div>
+                                                <div className='Txt3 nunito-text'>{text3}</div>
+                                            </div>
+                                            <div className='col-md-4'>
+                                                <Link href="/" className='Link1 hover1'>Explore Property</Link>
+                                            </div>
+                                        </div>
+                                    </motion.div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </Slider>
