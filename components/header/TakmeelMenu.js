@@ -1,0 +1,161 @@
+'use client'; // optional if using interactivity (like menus)
+
+import Link from 'next/link';
+import { motion } from "framer-motion";
+import { useEffect } from 'react';
+export default function TakmeelMenu() {
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                document.body.classList.add('scrolled');
+            } else {
+                document.body.classList.remove('scrolled');
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        handleScroll();
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+useEffect(() => {
+  const toggleButtons = document.querySelectorAll(".toggleMenu");
+
+  const toggleClass = () => {
+    document.body.classList.toggle("menu-open");
+  };
+
+  toggleButtons.forEach((btn) => btn.addEventListener("click", toggleClass));
+
+  // Cleanup
+  return () => {
+    toggleButtons.forEach((btn) => btn.removeEventListener("click", toggleClass));
+  };
+}, []);
+
+
+    return (
+        <div className='TakmeelMenu'>
+
+            <div className='Backdrop toggleMenu'>&nbsp;</div>
+            <div className='Megamenu'>
+                <div>
+                    <div className='MenuHd'>
+                        <div className='closeBtn toggleMenu'>&nbsp;</div>
+                    </div>
+                    <div className='MenuMiddle'>
+                        <ul>
+                            <li className='active'>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.5 }}
+                                >
+                                    <Link href="/" className='Link8'>
+                                        Home
+                                    </Link>
+                                </motion.div>
+
+                            </li>
+                            <li>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.5 }}
+                                >
+                                    <Link href="/" className='Link8'>
+                                        About Us
+                                    </Link>
+                                </motion.div>
+
+                            </li>
+                            <li>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.5 }}
+                                >
+                                    <Link href="/" className='Link8'>
+                                        Projects
+                                    </Link>
+                                </motion.div>
+
+                            </li>
+                            <li>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.5 }}
+                                >
+                                    <Link href="/" className='Link8'>
+                                        News & Updates
+                                    </Link>
+                                </motion.div>
+
+                            </li>
+                            <li>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.5 }}
+                                >
+                                    <Link href="/" className='Link8'>
+                                        Contact Us
+                                    </Link>
+                                </motion.div>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div className='MenuFtr'>
+                        <ul>
+                            <li>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.5 }}
+                                >
+                                    <Link href="/" className='Link8'>
+                                        FAQs
+                                    </Link>
+                                </motion.div>
+
+                            </li>
+                            <li>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.5 }}
+                                >
+                                    <Link href="/" className='Link8'>
+                                        Privacy Policies
+                                    </Link>
+                                </motion.div>
+
+                            </li>
+                            <li>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.5 }}
+                                >
+                                    <Link href="/" className='Link8'>
+                                        Terms of use
+                                    </Link>
+                                </motion.div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
