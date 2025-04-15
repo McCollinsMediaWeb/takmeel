@@ -32,7 +32,11 @@ export default function Header() {
               </Link>
               
             </div>
-            <div className='HeaderBoxRight'>Ijas</div>
+            <div className='HeaderBoxRight'>
+              <Link href="/" className='Link2 hover1'>
+               Get in Touch
+              </Link>
+            </div>
           </div>
         </div>
       </div>

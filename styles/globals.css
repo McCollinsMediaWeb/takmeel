@@ -43,50 +43,60 @@ a {
   text-decoration: none !important;
   transition: 0.4s;
 }
-.container{
+
+.container {
   max-width: 1400px;
 }
-.HederBoxFlex{
+
+.HederBoxFlex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header{
+
+header {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   z-index: 9;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
-.scrolled header{
+
+.scrolled header {
   background-color: #1D1D1D;
 }
-.HeaderBox{
+
+.HeaderBox {
   padding: 15px 15px;
 }
-.pd-common{
+
+.pd-common {
   padding: 50px 0px;
 }
+
 @keyframes scrollBackground {
   0% {
     background-position: 0 0;
   }
+
   100% {
     background-position: 0 100%;
   }
 }
-.FullScreenBanner{
+
+.FullScreenBanner {
   width: 100%;
-  height: 100vh;
   background-size: cover;
   background-position: center center;
   position: relative;
   background-repeat: repeat-y;
   animation: scrollBackground 10s linear infinite;
   overflow: hidden;
+  background-color: #D6B264;
 }
-.FullScreenBanner:after{
+
+.FullScreenBanner:after {
   content: "";
   background-image: url(../public/overlay.png);
   position: absolute;
@@ -98,7 +108,13 @@ header{
   background-size: cover;
   background-repeat: no-repeat;
 }
-.FsBannerContentFlex{
+.FullScreenBanner img{
+  max-height: 100vh;
+  animation: scrollBackground 10s linear infinite;
+  overflow: hidden;
+}
+
+.FsBannerContentFlex {
   display: flex;
   width: 100%;
   height: 100%;
@@ -109,21 +125,25 @@ header{
   color: #fff;
   align-items: center;
 }
-.Txt1{
-color: #D6B264;
-margin-bottom: 15px;
-text-transform: uppercase;
+
+.Txt1 {
+  color: #D6B264;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
-.Txt2{
-font-size: 48px;
-max-width: 450px;
-margin-bottom: 10px;
+
+.Txt2 {
+  font-size: 48px;
+  max-width: 450px;
+  margin-bottom: 10px;
 }
-.Txt3{
-font-size: 25px;
-margin-bottom: 30px;
+
+.Txt3 {
+  font-size: 25px;
+  margin-bottom: 30px;
 }
-.Link1{
+
+.Link1 {
   display: inline-block;
   padding: 10px 20px;
   min-width: 200px;
@@ -132,11 +152,13 @@ margin-bottom: 30px;
   text-align: center;
   border-radius: 20px;
 }
-.hover1:hover{
+
+.hover1:hover {
   background-color: #D6B264;
   color: #383838;
 }
-.MenuClick{
+
+.MenuClick {
   width: 27px;
   height: 19px;
   background-size: 100% 100%;
@@ -144,7 +166,8 @@ margin-bottom: 30px;
   cursor: pointer;
   position: relative;
 }
-.MenuClick::after{
+
+.MenuClick::after {
   content: "Menu";
   color: #fff;
   position: absolute;
@@ -152,39 +175,46 @@ margin-bottom: 30px;
   top: 3px;
   transition: 0.4s;
 }
-.MenuClick:hover{
+
+.MenuClick:hover {
   background-image: url(../public/menuhover.png);
 }
-.MenuClick:hover::after{
+
+.MenuClick:hover::after {
   color: #D6B264;
 }
-.MainLogo{
+
+.MainLogo {
   max-width: 150px;
 }
-.bg1{
+
+.bg1 {
   background-color: #1D1D1D;
 }
-footer{
 
-}
-.FooterLogo{
+footer {}
+
+.FooterLogo {
   max-width: 200px;
 }
-.FtrT1{
+
+.FtrT1 {
   color: #fff;
   font-size: 20px;
   padding: 30px 0px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 30px;
 }
-.CRow{
+
+.CRow {
   padding-left: 37px;
   position: relative;
   color: #fff;
   margin-bottom: 25px;
   font-family: var(--font-nunito-sans), Arial, Helvetica, sans-serif;
 }
-.CRow.whatsapp:after{
+
+.CRow.whatsapp:after {
   content: "";
   width: 25px;
   height: 25px;
@@ -194,7 +224,8 @@ footer{
   left: 0;
   top: 0;
 }
-.CRow.call:after{
+
+.CRow.call:after {
   content: "";
   width: 25px;
   height: 25px;
@@ -204,7 +235,8 @@ footer{
   left: 0;
   top: 0;
 }
-.CRow.email:after{
+
+.CRow.email:after {
   content: "";
   width: 21px;
   height: 16px;
@@ -214,7 +246,8 @@ footer{
   left: 0;
   top: 0;
 }
-.CRow.location:after{
+
+.CRow.location:after {
   content: "";
   width: 16px;
   height: 23px;
@@ -224,26 +257,32 @@ footer{
   left: 0;
   top: 0;
 }
-.CRow a:hover{
+
+.CRow a:hover {
   color: #D6B264;
 }
-.LinkTitle{
+
+.LinkTitle {
   color: #D6B264;
   margin-bottom: 15px;
 }
-.FtrLnk1{
+
+.FtrLnk1 {
   color: #fff !important;
   display: block;
   margin-bottom: 15px;
   font-family: var(--font-nunito-sans), Arial, Helvetica, sans-serif;
 }
-.FtrLnk1:hover{
+
+.FtrLnk1:hover {
   color: #D6B264 !important;
 }
-.NewsletterBox{
+
+.NewsletterBox {
   position: relative;
 }
-.NewsletterBox input{
+
+.NewsletterBox input {
   background-color: transparent;
   border: none;
   padding: 15px;
@@ -253,7 +292,8 @@ footer{
   outline: none;
   color: #fff;
 }
-.NewsletterBox  button{
+
+.NewsletterBox button {
   background-color: transparent;
   color: #D6B264;
   position: absolute;
@@ -262,56 +302,97 @@ footer{
   border: 0;
   cursor: pointer;
 }
-.NewsletterBox  button:hover{
+
+.NewsletterBox button:hover {
   color: #fff;
 }
-.NewsTxt{
+
+.NewsTxt {
   margin-top: 15px;
   color: #fff;
   opacity: 0.5;
 }
-.FooterBottom{
+
+.FooterBottom {
   padding: 20px 0px;
   background-color: #000;
   color: #fff;
 }
-.FooterBottom a:hover{
+
+.FooterBottom a:hover {
   color: #D6B264;
 }
-.socialMediaLinksFlex{
+
+.socialMediaLinksFlex {
   display: flex;
   justify-content: end;
 }
-.ScIcon{
+
+.ScIcon {
   width: 25px;
   height: 25px;
   display: inline-block;
 }
-.ScIcon.facebook{
-  width:13px;
-  height:22px;
+
+.ScIcon.facebook {
+  width: 13px;
+  height: 22px;
   background-image: url(../public/facebook.png);
 }
-.ScIcon.instagram{
-  width:22px;
-  height:22px;
+
+.ScIcon.instagram {
+  width: 22px;
+  height: 22px;
   background-image: url(../public/instagram.png);
 }
-.ScIcon.tiktok{
-  width:20px;
-  height:22px;
+
+.ScIcon.tiktok {
+  width: 20px;
+  height: 22px;
   background-image: url(../public/tiktok.png);
 }
-.ScIcon.youtube{
-  width:22px;
-  height:22px;
+
+.ScIcon.youtube {
+  width: 22px;
+  height: 22px;
   background-image: url(../public/youtube.png);
 }
-.ScIcon.x{
-  width:22px;
-  height:22px;
+
+.ScIcon.x {
+  width: 22px;
+  height: 22px;
   background-image: url(../public/x.png);
 }
-.socialMediaLinksFlex a{
+
+.socialMediaLinksFlex a {
   margin-left: 15px;
+}
+
+.Link2 {
+  color: #fff;
+  text-align: center;
+  border:1px solid #fff;
+  border-radius:20px;
+  padding:8px 20px;
+  display: inline-block;
+}
+.HeroBanner2Wrap{
+  padding: 25px 0px;
+}
+.FtSliderContent{
+  position: relative;
+}
+.FtSliderContent::after{
+  content: "";
+  width:100%;
+  height: 100%;
+  background-image: url(../public/hbg2.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-size: 100% 100%;
+}
+.BannerItem img{
+  width: 100%;
 }

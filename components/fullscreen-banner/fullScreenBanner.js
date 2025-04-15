@@ -2,11 +2,38 @@
 
 import Link from 'next/link';
 import { motion } from "framer-motion";
-
-export default function FullScreenBanner({ backgroundImage, text1, text2, text3 }) {
+import Image from "next/image";
+import useMediaQuery from "../hooks/useMediaQuery";
+export default function FullScreenBanner({ backgroundImage,backgroundImageMobile, text1, text2, text3 }) {
     const bgUrl = `url("/${backgroundImage}")`;
+    const isDesktop = useMediaQuery("(min-width: 960px)");
     return (
-        <div className='FullScreenBanner' style={{ backgroundImage: bgUrl }}>
+        <div className='FullScreenBanner'>
+            <motion.div
+         initial={{ opacity: 0 }}
+         whileInView={{ opacity: 1 }}
+         transition={{ duration: 0.6, ease: "easeOut" }}
+         viewport={{ once: true, amount: 0.5 }} 
+      >
+            {isDesktop && (
+                <Image
+                    src={`/${backgroundImage}`}
+                    width={1338}
+                    height={714}
+                    layout="responsive"
+                    alt="Takmeel"
+                />
+            )}
+            {!isDesktop && (
+                <Image
+                    src={`/${backgroundImageMobile}`}
+                    width={697}
+                    height={768}
+                    layout="responsive"
+                    alt="Takmeel"
+                />
+            )}
+            </motion.div>
             <div className='FsBannerContent'>
                 <div className='FsBannerContentFlex'>
                     <div className='container'>
