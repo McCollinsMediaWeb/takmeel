@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
-import SliderImage from "../../public/np1.jpg";
-import SliderImagemobile from "../../public/np1mobile.jpg";
 import useMediaQuery from "../hooks/useMediaQuery";
 export default function HomeBanner2({ backgroundImage, backgroundImageMobile, text1, text2, text3 }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
@@ -17,6 +15,10 @@ export default function HomeBanner2({ backgroundImage, backgroundImageMobile, te
         slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 0,
+        autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
         responsive: [
             {
                 breakpoint: 1024,
