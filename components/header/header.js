@@ -33,7 +33,7 @@ export default function Header() {
               
             </div>
             <div className='HeaderBoxRight'>
-              <Link href="/" className='Link2 hover1'>
+              <Link href="/" className='Link4 hover1'>
                Get in Touch
               </Link>
             </div>
