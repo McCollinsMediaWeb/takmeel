@@ -6,6 +6,7 @@ export default function FooterBottom() {
   return (
     <div className='FooterBottom'>
         <div className='container'>
+            <a href='#' className='ChatBoat'>Ask Takmeel</a>
             <div className='row'>
                 <div className='col-md-8'>
                 © Takmeel Real Estate Development L.L.C 2025. All Rights Reserved. &nbsp;<a href='https://www.mccollinsmedia.com/' target='_blank'>Designed & Developed By Mccollins Media</a>

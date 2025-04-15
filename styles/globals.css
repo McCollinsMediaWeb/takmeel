@@ -658,3 +658,20 @@ transition: 0.4s;
   margin-bottom: 10px;
   display: block;
 }
+.ChatBoat{
+  color: #fff;
+  z-index: 9;
+  background-color: #1d1d1d;
+  padding:15px;
+  display: inline-block;
+  position: fixed;
+  bottom: 35px;
+  right: -35px;
+  transform: rotate(-90deg);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.ChatBoat:hover{
+  background-color: #D6B264;
+  color: #1D1D1D !important;
+}
