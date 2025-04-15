@@ -64,7 +64,7 @@ useEffect(() => {
                                     transition={{ duration: 0.6, ease: "easeOut" }}
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
-                                    <Link href="/about-us" className='Link8'>
+                                    <Link href={'/about-us'} className='Link8'>
                                         About Us
                                     </Link>
                                 </motion.div>

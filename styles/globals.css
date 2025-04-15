@@ -675,3 +675,8 @@ transition: 0.4s;
   background-color: #D6B264;
   color: #1D1D1D !important;
 }
+.fixedHeader{
+  position: relative;
+  top: auto;
+  left: auto;
+}
