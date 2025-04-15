@@ -36,13 +36,13 @@ useEffect(() => {
     return (
         <div className='TakmeelMenu'>
 
-            <div className='Backdrop toggleMenu'>&nbsp;</div>
+            <div className='Backdrop BackdropMenu toggleMenu'>&nbsp;</div>
             <div className='Megamenu'>
                 <div>
                     <div className='MenuHd'>
                         <div className='closeBtn toggleMenu'>&nbsp;</div>
                     </div>
-                    <div className='MenuMiddle'>
+                    <div className='MenuMiddle toggleMenu'>
                         <ul>
                             <li className='active'>
                                 <motion.div
@@ -64,7 +64,7 @@ useEffect(() => {
                                     transition={{ duration: 0.6, ease: "easeOut" }}
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
-                                    <Link href="/" className='Link8'>
+                                    <Link href="/about-us" className='Link8'>
                                         About Us
                                     </Link>
                                 </motion.div>

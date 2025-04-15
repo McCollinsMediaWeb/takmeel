@@ -412,7 +412,7 @@ footer {}
 }
 .FtSliderContent .Txt2{
   max-width: 100%;
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 5px;
 }
 .FtSliderContent .Txt3 {
@@ -600,7 +600,7 @@ transition: 0.4s;
 .menu-open .Megamenu{
   left: 0;
 }
-.menu-open .Backdrop{
+.menu-open .BackdropMenu{
   display: block;
 }
 .closeBtn{
