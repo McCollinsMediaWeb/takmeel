@@ -716,3 +716,14 @@ background-image: url(../public/closeblack.png);
 .form-open .ChatBoat{
   display: none;
 }
+header.fixed-class{
+  position: relative;
+  left: auto;
+  top: auto;
+  background-color: #1D1D1D;
+}
+.scrolled header.fixed-class{
+  position: fixed;
+  left: 0;
+  top: 0;
+}

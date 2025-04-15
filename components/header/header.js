@@ -1,10 +1,16 @@
 'use client'; // optional if using interactivity (like menus)
 import TakmeelMenu from './TakmeelMenu';
 import HeaderForm from "./HeaderForm";
+import { usePathname } from 'next/navigation';
+
 
 import Link from 'next/link';
 import { useEffect } from 'react';
 export default function Header() {
+  const pathname = usePathname();
+  const isHome = pathname === '/'; 
+
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -21,7 +27,7 @@ export default function Header() {
   
 
   return (
-    <header>
+    <header className={`MainHeader ${!isHome ? 'fixed-class' : ''}`}>
       <TakmeelMenu/>
       <HeaderForm/>
       <div className='container-fluid'>
