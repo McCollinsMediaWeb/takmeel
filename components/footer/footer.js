@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 
+
 export default function Footer() {
   return (
     <footer className='pd-common bg1'>
@@ -62,6 +63,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+     
     </footer>
   );
 }

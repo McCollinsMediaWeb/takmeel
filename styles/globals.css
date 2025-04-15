@@ -468,6 +468,7 @@ footer {}
   border-radius:20px;
   padding:8px 15px;
   display: inline-block;
+  cursor: pointer;
 }
 .Link5{
   color: #1D1D1D;
@@ -610,6 +611,9 @@ transition: 0.4s;
   background-size: 100% 100%;
   cursor: pointer;
 }
+.closeBtn.black{
+background-image: url(../public/closeblack.png);
+}
 .MenuHd{
   margin-bottom: 60px;
 }
@@ -679,4 +683,36 @@ transition: 0.4s;
   position: relative;
   top: auto;
   left: auto;
+}
+.form-open .Backdrop.BackdropForm{
+  display: block;
+}
+.FormPopUp {
+  max-width: 500px;
+  height: 100vh;
+  overflow:hidden;
+  transition:.4s;
+  height: 100%;
+  z-index: 999;
+  padding:30px 60px;
+  right: -100%;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+}
+.FormPopUp .CfT2{
+  font-size: 23px;
+}
+.FormPopUp .MenuHd {
+  margin-bottom: 20px;
+}
+.form-open .FormPopUp{
+  right: 0;
+}
+.cursor-pointe{
+  cursor: pointer;
+}
+.form-open .ChatBoat{
+  display: none;
 }

@@ -1,6 +1,6 @@
 'use client'; // optional if using interactivity (like menus)
 import TakmeelMenu from './TakmeelMenu';
-
+import HeaderForm from "./HeaderForm";
 
 import Link from 'next/link';
 import { useEffect } from 'react';
@@ -23,6 +23,7 @@ export default function Header() {
   return (
     <header>
       <TakmeelMenu/>
+      <HeaderForm/>
       <div className='container-fluid'>
         <div className='HeaderBox'>
           <div className='HederBoxFlex'>
@@ -36,9 +37,9 @@ export default function Header() {
               
             </div>
             <div className='HeaderBoxRight'>
-              <Link href="/" className='Link4 hover1'>
+              <div className='Link4 hover1 toggleForm cursor-pointer'>
                Get in Touch
-              </Link>
+              </div>
             </div>
           </div>
         </div>

@@ -4,18 +4,7 @@ import Link from 'next/link';
 import { motion } from "framer-motion";
 import { useEffect } from 'react';
 export default function TakmeelMenu() {
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 0) {
-                document.body.classList.add('scrolled');
-            } else {
-                document.body.classList.remove('scrolled');
-            }
-        };
-        window.addEventListener('scroll', handleScroll);
-        handleScroll();
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+
 
 useEffect(() => {
   const toggleButtons = document.querySelectorAll(".toggleMenu");
