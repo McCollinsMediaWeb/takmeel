@@ -3,6 +3,7 @@ import FullScreenBanner from "../components/fullscreen-banner/fullScreenBanner";
 import HomeBanner2 from "../components/HomeBanner2/HomeBanner2";
 import HomeAbout from "@/components/HomeAbout/HomeAbout";
 import SoldOutBox from "@/components/SoldOutBox/SoldOutBox";
+import ContactForm from "@/components/ContactForm/ContactForm";
 export default function Home() {
   return (
     <div>
@@ -14,6 +15,7 @@ export default function Home() {
         <HomeBanner2 backgroundImage="np1.jpg" backgroundImageMobile="np1mobile.jpg" text1="Project Showcase"  text2="Meydan Racecourse Mansion" text3="Embark on a journey through luxury, elegance, and innovation at Meydan Racecourse Mansion—a timeless landmark in TAKMEEL’s portfolio, promising an unparalleled lifestyle experience amidst breathtaking views and unparalleled grandeur."/>
         <HomeAbout/>
         <SoldOutBox/>
+        <ContactForm/>
       </div>
     </div>
   );

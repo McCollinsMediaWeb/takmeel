@@ -72,7 +72,7 @@ header {
 }
 
 .pd-common {
-  padding: 50px 0px;
+  padding: 70px 0px;
 }
 
 @keyframes scrollBackground {
@@ -529,4 +529,45 @@ footer {}
   position: relative;
   bottom: auto;
   margin-top: 15px;
+}
+.CfT1{
+  color: #D6B264;
+  margin-bottom: 10px;
+}
+.CfT2{
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.CfT3{
+  max-width: 800px;
+  margin: 0 auto;
+}
+.FormBox{
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.FormBox input,
+.FormBox textarea{
+  width: 100%;
+  background-color: #F7F7F7;
+  padding: 15px 25px;
+  border-radius: 25px;
+  border: 0px;
+  margin-bottom: 15px;
+  outline: none;
+  box-shadow: none;
+}
+.FormBox button{
+  color: #fff;
+  text-align: center;
+  background-color: #1d1d1d;
+  border:1px solid #fff;
+  border-radius:20px;
+  margin-top: 10px;
+  padding:10px 20px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.4s;
 }
