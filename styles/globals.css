@@ -479,3 +479,32 @@ footer {}
 .SoldOutBox{
   background-color: #F7F7F7;
 }
+.St1{
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.St2{
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.SoldOutBox .col-md-4{
+  background-image: url(../public/g1.png);
+}
+.SldSliderItemDesc{
+  padding: 20px;
+  background-color: #fff;
+}
+.SldSliderItem{
+  margin-right: 25px;
+}
+.SlT1{
+  color: #FF4E4E;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.SlT2{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}

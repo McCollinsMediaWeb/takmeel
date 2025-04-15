@@ -1,51 +1,12 @@
-'use client'; // optional if using interactivity (like menus)
+'use client'; 
 
 import Link from 'next/link';
 import { motion } from "framer-motion";
 import React from "react";
-import Slider from "react-slick";
-import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
 export default function HomeAbout({ backgroundImage, backgroundImageMobile, text1, text2, text3 }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
-    var settings = {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        initialSlide: 0,
-        autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
-        cssEase: "linear",
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    initialSlide: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    };
+    
     return (
         <section className='HomeAbout pd-common'>
             <div className='container text-center'>
