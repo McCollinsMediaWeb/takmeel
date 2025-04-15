@@ -82,6 +82,9 @@ export default function SoldOutBox() {
                                             <div className='SlT1'>SOLD OUT</div>
                                             <div className='SlT2'>Divine Residencies – Arjan</div>
                                             <div className='SlT3'>We present to you the elegant new project by Takmeel Development, Divine Residencies Arjan.</div>
+                                            <div className='text-right'>
+                                                <Link href="/" className='Link6 hover1'>View Property</Link>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -98,6 +101,9 @@ export default function SoldOutBox() {
                                             <div className='SlT1'>SOLD OUT</div>
                                             <div className='SlT2'>Divine Residencies – Arjan</div>
                                             <div className='SlT3'>We present to you the elegant new project by Takmeel Development, Divine Residencies Arjan.</div>
+                                            <div className='text-right'>
+                                                <Link href="/" className='Link6 hover1'>View Property</Link>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -114,6 +120,9 @@ export default function SoldOutBox() {
                                             <div className='SlT1'>SOLD OUT</div>
                                             <div className='SlT2'>Divine Residencies – Arjan</div>
                                             <div className='SlT3'>We present to you the elegant new project by Takmeel Development, Divine Residencies Arjan.</div>
+                                            <div className='text-right'>
+                                                <Link href="/" className='Link6 hover1'>View Property</Link>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -130,6 +139,9 @@ export default function SoldOutBox() {
                                             <div className='SlT1'>SOLD OUT</div>
                                             <div className='SlT2'>Divine Residencies – Arjan</div>
                                             <div className='SlT3'>We present to you the elegant new project by Takmeel Development, Divine Residencies Arjan.</div>
+                                            <div className='text-right'>
+                                                <Link href="/" className='Link6 hover1'>View Property</Link>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
