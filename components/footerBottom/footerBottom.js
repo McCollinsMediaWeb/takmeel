@@ -39,7 +39,7 @@ export default function FooterBottom() {
                                 </Link>
                             </li>
                             <li>
-                                <a href='javascript:void(0);' className='toggleMenu'>
+                                <a href='#' className='toggleMenu'>
                                     <span>
                                         <div className='icon'>
                                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABVklEQVR4nO2WvU7DQBCErwEqfiRX4Blbilyl9YMk8BgEeEsISAHRQOA1CD1orU0UhbUiUSRXzCdd49tZ2Xt760lJCPEvmqY5AnBL8pHkt68pgJvhcHiYo/YPAEqSryR/ogXgheRFTtqwIstkAN5IjoqiOLYFYAxg7nvPmxXalzakqqo7F7wPBoPTzX17tpZ0koM2hOSTH+Uojuha4NJjpjloQ0guLNiONI7o2uDEE37loA2xoG0J7Zh7XmYv2hAfe9aH4zgipbIsrzzhQw7aEJvXnnAeXbq6rs9IfnrMdQ7aEBttPq/tyz/sgllv2vKKLJPN2rY9yEHbi/101pJGP6ZZVVXnOWl78QpNrB99oiwA3NuxbqvIvrRC7JJGNh6y8ZSND5CNT7LxHbLxfcjGJ9n4FZSNF2L3NLLxkI2nbHyAbHySje+Qje9DNj7Jxq+gbLwQIm3hF4wwaS5tVV53AAAAAElFTkSuQmCC" alt="circled-menu"/>

@@ -18,7 +18,7 @@
     .Txt2 {
         font-size: 25px;
         line-height: 1;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
       }
       body{
         font-size: 15px;
@@ -69,5 +69,8 @@
       .closeBtn {
         width: 20px;
         height: 20px;
+      }
+      .Txt1{
+        margin-bottom: 10px;
       }
   }
