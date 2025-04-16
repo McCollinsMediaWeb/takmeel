@@ -2,9 +2,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Nunito_Sans } from "next/font/google";
 
 import "@/styles/bootstrap.css";
-import "@/styles/globals.css";
 import "@/styles/slick-slider/slick/slick.css";
 import "@/styles/slick-slider/slick/slick-theme.css";
+import "@/styles/globals.css";
+import "@/styles/responsive.css";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
