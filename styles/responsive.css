@@ -165,4 +165,7 @@
         justify-content: center;
         margin-top: 15px;
       }
+      .FooterLogo {
+        max-width: 170px;
+      }
   }
