@@ -67,15 +67,15 @@ export default function SoldOutBox() {
                         </motion.div>
                     </div>
                     <div className='col-md-8'>
-                        <div className='SoldOutSlider'>
-                            <Slider {...settings}>
-                                <div>
-                                    <motion.div
-                                        initial={{ opacity: 0, y: 30 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.6, ease: "easeOut" }}
-                                        viewport={{ once: true, amount: 0.5 }}
-                                    >
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, ease: "easeOut" }}
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
+                            <div className='SoldOutSlider'>
+                                <Slider {...settings}>
+                                    <div>
                                         <div className='SldSliderItem'>
                                             <Image
                                                 src={SlImage1}
@@ -93,15 +93,8 @@ export default function SoldOutBox() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </motion.div>
-                                </div>
-                                <div>
-                                    <motion.div
-                                        initial={{ opacity: 0, y: 30 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.6, ease: "easeOut" }}
-                                        viewport={{ once: true, amount: 0.5 }}
-                                    >
+                                    </div>
+                                    <div>
                                         <div className='SldSliderItem'>
                                             <Image
                                                 src={SlImage2}
@@ -119,15 +112,8 @@ export default function SoldOutBox() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </motion.div>
-                                </div>
-                                <div>
-                                    <motion.div
-                                        initial={{ opacity: 0, y: 30 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.6, ease: "easeOut" }}
-                                        viewport={{ once: true, amount: 0.5 }}
-                                    >
+                                    </div>
+                                    <div>
                                         <div className='SldSliderItem'>
                                             <Image
                                                 src={SlImage1}
@@ -145,15 +131,8 @@ export default function SoldOutBox() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </motion.div>
-                                </div>
-                                <div>
-                                    <motion.div
-                                        initial={{ opacity: 0, y: 30 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.6, ease: "easeOut" }}
-                                        viewport={{ once: true, amount: 0.5 }}
-                                    >
+                                    </div>
+                                    <div>
                                         <div className='SldSliderItem'>
                                             <Image
                                                 src={SlImage2}
@@ -171,10 +150,10 @@ export default function SoldOutBox() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </motion.div>
-                                </div>
-                            </Slider>
-                        </div>
+                                    </div>
+                                </Slider>
+                            </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>

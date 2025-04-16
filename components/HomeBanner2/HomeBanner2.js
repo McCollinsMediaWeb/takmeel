@@ -15,10 +15,6 @@ export default function HomeBanner2({ backgroundImage, backgroundImageMobile, te
         slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 0,
-        autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
         responsive: [
             {
                 breakpoint: 1024,

@@ -425,11 +425,11 @@ footer {}
 .BannerTextBox .col-md-4{
   text-align: right;
 }
-.HeroBanner2Wrap .slick-dots li button::before{
+body .slick-dots li button::before{
   color: #1D1D1D;
   font-size: 13px;
 }
-.HeroBanner2Wrap .slick-dots {
+body .slick-dots {
   position: relative;
   bottom: auto;
   margin-top: 15px;
@@ -726,4 +726,72 @@ header.fixed-class{
   position: fixed;
   left: 0;
   top: 0;
+}
+.PageHeaderTp1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HdT1{
+  text-transform: uppercase;
+  color: #D6B264;
+  margin-bottom: 10px;
+}
+.HdT2{
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.HdT3{
+  max-width: 850px;
+  margin: 0 auto;
+  font-size: 25px;
+}
+.PageHeaderTp1{
+  background-image: url(../public/pageheader.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.AbSliderItem .ImageBox{
+  padding: 0px 10px;
+}
+body .slick-next{
+  background-image: url(../public/next.png) !important;
+  background-color: #fff !important;
+  background-size: 100% 100% !important;
+  width: 35px;
+  height: 35px;
+  right: 20px;
+  border-radius:50%;
+  z-index: 1;
+}
+body .slick-prev{
+  background-image: url(../public/prev.png) !important;
+  background-color: #fff !important;
+  background-size: 100% 100% !important;
+  width: 35px;
+  height: 35px;
+  left: 20px;
+  border-radius:50%;
+  z-index: 1;
+}
+body .slick-next:hover,
+body .slick-prev:hover{
+  background-color: #D6B264 !important;
+}
+body .slick-next::before,
+body .slick-prev::before{
+  content: none;
+}
+.slick-slide:last-child .SldSliderItem{
+  margin-right: 0 !important;
+}
+.SoldOutSlider .slick-prev{
+  left: 0 !important;
+}
+.SoldOutSlider .slick-next{
+  right: 0 !important;
+}
+.slick-disabled{
+  display: none !important;
 }

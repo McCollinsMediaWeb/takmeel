@@ -24,8 +24,6 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  
-
   return (
     <header className={`MainHeader ${!isHome ? 'fixed-class' : ''}`}>
       <TakmeelMenu/>
