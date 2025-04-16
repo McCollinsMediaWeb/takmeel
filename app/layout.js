@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Nunito_Sans } from "next/font/google";
+import Head from "next/head";
 
 import "@/styles/bootstrap.css";
 import "@/styles/slick-slider/slick/slick.css";
@@ -35,8 +36,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    
 
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${nunitoSans.variable}`}>
+      <Head>
+          
+          <meta
+            name="viewport"
+            content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
+          />
+          <meta name="theme-color" content="#1D1D1B" />
+          <meta name="msapplication-TileColor" content="#1D1D1B" />
+          <meta name="msapplication-navbutton-color" content="#1D1D1B" />
+          
+        </Head>
       <body>
         <Header />
         <main>{children}</main>
