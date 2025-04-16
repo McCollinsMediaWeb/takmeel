@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import ContactForm from "@/components/ContactForm/ContactForm";
 const projects = [
   { slug: 'project-one', title: 'Project One' },
   { slug: 'project-two', title: 'Project Two' },
@@ -9,15 +9,8 @@ const projects = [
 
 export default function Projects() {
   return (
-    <main>
-      <h1>Our Projects</h1>
-      <ul>
-        {projects.map((project) => (
-          <li key={project.slug}>
-            <Link href={`/projects/${project.slug}`}>{project.title}</Link>
-          </li>
-        ))}
-      </ul>
-    </main>
+    <section>
+      <ContactForm/>
+    </section>
   );
 }
