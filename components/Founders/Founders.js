@@ -183,7 +183,7 @@ export default function Founders() {
                         transition={{ duration: 0.6, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.5 }}
                     >
-                        <div class="OurPeopleBox">
+                        <div className="OurPeopleBox">
                             <Slider {...settings1}>
                                 <div className="FounderItem">
                                     <div className="FounderItemBox">
