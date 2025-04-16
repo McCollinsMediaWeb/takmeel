@@ -115,7 +115,54 @@
         display: none;
       }
       .pd-common {
+        padding:25px 0;
+      }
+      .St2{
+        font-size: 23px;
+      }
+      .St3{
+        margin-bottom: 15px;
+      }
+      .SlT2 {
+        margin-bottom: 5px;
+        font-size: 17px;
+      }
+      .SldSliderItemDesc .text-right{
+        text-align: left !important;
+      }
+      .SoldOutSlider{
+        margin: 0 -15px;
+        overflow: hidden;
+      }
+      .SldSliderItem {
+        margin-right: 15px;
+      }
+      .CfT2{
+        font-size: 23px;
+      }
+      .FtrT1 {
+        color: #fff;
+        border-bottom:
+      1px solid #ffffff1a;
+        margin-bottom: 30px;
         padding:
-      25px 0;
+      20px 0;
+        font-size: 18px;
+      }
+      .FtrRow .col-md-2{
+        max-width: 50%;
+        flex: 0 0 50%;
+      }
+      .NewsletterBox{
+        margin-top: 15px;
+        text-align: center;
+      }
+      .FooterBottom {
+        padding-bottom: 90px;
+        text-align: center;
+      }
+      .socialMediaLinksFlex {
+        justify-content: center;
+        margin-top: 15px;
       }
   }

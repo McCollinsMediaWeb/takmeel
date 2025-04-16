@@ -49,7 +49,7 @@ export default function Footer() {
                 <Link className='FtrLnk1' href="/">Terms of use</Link>
               </div>
             </div>
-            <div className='col-md-4'>
+            <div className='col-md-4 NewsletterBox'>
               <div className='LinkBox'>
                   <div className='LinkTitle'>Stay In The Know</div>
                   <div className='NewsletterBox'>
