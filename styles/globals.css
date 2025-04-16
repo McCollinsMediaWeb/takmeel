@@ -942,3 +942,19 @@ body .slick-prev::before {
 .bottom-bar--list .icon img {
   max-width: 22px;
 }
+.VmT5{
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+}
+.VmT5::after{
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-size: 100% 100%;
+  background-image: url(../public/star.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
