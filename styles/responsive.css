@@ -16,7 +16,7 @@
         position: relative;
       }
     .Txt2 {
-        font-size: 25px;
+        font-size: 23px;
         line-height: 1;
         margin-bottom: 10px;
       }
@@ -72,5 +72,50 @@
       }
       .Txt1{
         margin-bottom: 10px;
+      }
+      .ChatBoat {
+        padding:13px 15px;
+        bottom: 110px;
+      }
+      .HeroBanner2Wrap {
+        padding:0;
+        margin:0 -15px;
+        overflow:hidden;
+      }
+      body .slick-next, body .slick-prev{
+        display: none !important;
+      }
+      .FtSliderContent .Txt2 {
+        font-size: 23px;
+      }
+      .FtSliderContent .Txt3 {
+        margin-bottom: 0;
+        font-size: 15px;
+      }
+      .BannerTextBox .col-md-4 {
+        text-align: left;
+        margin-top: 15px;
+      }
+      body .slick-dots li button::before {
+        font-size: 12px;
+      }
+      .HbT1{
+        font-size: 23px;
+        margin-bottom: 15px;
+      }
+      .HbT2, .HbT3 {
+        margin-bottom: 10px;
+        font-size: 17px;
+      }
+      .HbT4 {
+        margin-bottom: 15px;
+        font-size: 23px;
+      }
+      .HbT4 br{
+        display: none;
+      }
+      .pd-common {
+        padding:
+      25px 0;
       }
   }
