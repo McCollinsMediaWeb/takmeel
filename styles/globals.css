@@ -225,6 +225,18 @@ footer {}
   left: 0;
   top: 0;
 }
+.CRow.whatsapp.a1:after{
+background-image: url(../public/a1.png);
+}
+.CRow.call.a2:after{
+  background-image: url(../public/a2.png);
+  }
+  .CRow.email.a3:after{
+    background-image: url(../public/a3.png);
+    }
+    .CRow.location.a4:after{
+      background-image: url(../public/a4.png);
+      }
 
 .CRow.call:after {
   content: "";
@@ -1085,4 +1097,84 @@ max-width: 100%;
   border: 1px solid #1d1d1b;
   cursor: pointer;
   transition: 0.4s;
+}
+.BlogListingWrap  .BlogItem{
+padding: 15px;
+background-color: #fff;
+}
+.CntPageHead{
+  overflow: hidden;
+  position: relative;
+}
+.CntPageHead img{
+  height: 100% !important;
+  object-fit: cover;
+}
+.CntPageHead:after {
+  content: "";
+  background-image: url(../public/overlay.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.CT1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  color: #fff;
+  font-size: 35px;
+}
+.CntMiddleBox{
+  background-color: #fff;
+}
+.Ct2{
+  color: #D6B264;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.Ct3{
+  font-size: 26px;
+  text-transform: uppercase;
+}
+.ConPage .CRow{
+color: #1d1d1b;
+}
+.CntMiddleBox .FormBox{
+  margin-top: 0;
+}
+.MidRow1{
+  align-items: center;
+  margin-bottom: 30px;
+}
+.LcBoxT1{
+  font-size: 19px;
+  margin-bottom: 7px;
+}
+.LcBoxT2{
+  margin-bottom: 7px;
+}
+.LcBox a{
+  text-decoration: underline !important;
+}
+.Spacer{
+  height: 1px;
+  background-color: #e4e4e4;
+  opacity: .7;
+  margin: 25px 0px;
+}
+.PadBox1{
+  padding: 35px;
+  border-radius: 25px;
+  background-color: #f7f7f7;
 }
