@@ -1041,3 +1041,39 @@ max-width: 100%;
 .FullScreenBanner.Projects::after{
   background-image: url(../public/projectbg.png);
 }
+.BlT1{
+  color: #D6B264;
+  margin-bottom: 5px;
+}
+.BlT2{
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.BlogPostMainArea .container{
+  max-width: 1100px;
+}
+.LatestBlogItem{
+  padding: 20px;
+  background-color: #F7F7F7;
+}
+.LtT1{
+  color: #D6B264;
+  margin-bottom: 5px;
+}
+.LatestBlogImage{
+  margin-bottom: 10px;
+}
+.LtT2{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.BlT3{
+  line-height: 1.5;
+}
+.BlogPostMainArea .row{
+  align-items: center;
+}
+.blogLists .col-md-4{
+  margin-bottom: 30px;
+}
