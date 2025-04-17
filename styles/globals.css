@@ -1077,3 +1077,12 @@ max-width: 100%;
 .blogLists .col-md-4{
   margin-bottom: 30px;
 }
+.ViewAll{
+  margin-top: 40px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #1d1d1b;
+  cursor: pointer;
+  transition: 0.4s;
+}

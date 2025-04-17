@@ -188,6 +188,9 @@ export default function BlogListing() {
                     </div>
                 </div>
             </div>
+            <div className="BlogViewAllBox text-center">
+                <div className="ViewAll hover1">View More</div>
+            </div>
         </div>
     );
 }
