@@ -109,7 +109,7 @@ useEffect(() => {
                                     transition={{ duration: 0.6, ease: "easeOut" }}
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
-                                    <Link href="/" className='Link8'>
+                                    <Link href="/faqs" className='Link8'>
                                         FAQs
                                     </Link>
                                 </motion.div>
@@ -122,7 +122,7 @@ useEffect(() => {
                                     transition={{ duration: 0.6, ease: "easeOut" }}
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
-                                    <Link href="/" className='Link8'>
+                                    <Link href="/privacy-policy" className='Link8'>
                                         Privacy Policies
                                     </Link>
                                 </motion.div>
@@ -135,7 +135,7 @@ useEffect(() => {
                                     transition={{ duration: 0.6, ease: "easeOut" }}
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
-                                    <Link href="/" className='Link8'>
+                                    <Link href="/terms-of-use" className='Link8'>
                                         Terms of use
                                     </Link>
                                 </motion.div>
