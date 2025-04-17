@@ -1012,3 +1012,29 @@ body .slick-prev::before {
   margin: 0 auto;
   margin-top: 30px;
 }
+.w100{
+  width: 100%;
+}
+.PT1{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.PT2{
+  color: #D6B264;
+}
+.FtrProject{
+  margin: 0 5px;
+}
+.FtrProperties{
+margin-top: 30px;
+}
+.centerBlock{
+  justify-content: center;
+  text-align: center;
+}
+.centerBlock .Txt2{
+margin: 0 auto;
+max-width: 100%;
+}
