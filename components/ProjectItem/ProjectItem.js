@@ -8,7 +8,7 @@ export default function ProjectItem({ backgroundImage,backgroundImageMobile, tex
     const bgUrl = `url("/${backgroundImage}")`;
     const isDesktop = useMediaQuery("(min-width: 960px)");
     return (
-        <div className='FullScreenBanner'>
+        <div className='FullScreenBanner Projects'>
             <motion.div
          animate={{ scale: [1, 1.05, 1] }}
          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}

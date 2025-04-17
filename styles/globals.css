@@ -1038,3 +1038,6 @@ margin-top: 30px;
 margin: 0 auto;
 max-width: 100%;
 }
+.FullScreenBanner.Projects::after{
+  background-image: url(../public/projectbg.png);
+}
