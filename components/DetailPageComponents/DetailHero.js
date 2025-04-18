@@ -77,9 +77,14 @@ export default function DetailHero({ backgroundImage, backgroundImageMobile, tex
             />
             <div className='DetSlContentBox '>
                 <div className='container'>
+                    <div className='text-center'>
+                        <div className='PlayIconBox' onClick={() => setOpen(true)}>
+                            <div className='PlayIcon'>&nbsp;</div>
+                        </div>
+                    </div>
                     <div className='row align-items-center'>
                         <div className='col-md-7'>
-                            <div className="Txt1 nunito-text"  onClick={() => setOpen(true)}>Project Showcase</div>
+                            <div className="Txt1 nunito-text">Project Showcase</div>
                             <div className="Txt2 text-uppercase">Meydan Racecourse Mansion</div>
                             <div className="Txt3 nunito-text">AL Barsha South, Dubai</div>
                         </div>
