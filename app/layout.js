@@ -39,7 +39,9 @@ export default function RootLayout({ children }) {
     
 
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${nunitoSans.variable}`}>
-      <Head>
+      
+      <body>
+        <Head>
           
           <meta
             name="viewport"
@@ -50,7 +52,6 @@ export default function RootLayout({ children }) {
           <meta name="msapplication-navbutton-color" content="#1D1D1B" />
           
         </Head>
-      <body>
         <Header />
         <main>{children}</main>
         <Footer />
