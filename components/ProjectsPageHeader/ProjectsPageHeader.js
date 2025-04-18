@@ -55,7 +55,8 @@ export default function ProjectsPageHeader() {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
+                    dots: true,
+                    centerMode:true
                 }
             },
             {
@@ -63,14 +64,16 @@ export default function ProjectsPageHeader() {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    initialSlide: 1
+                    initialSlide: 1,
+                    centerMode:true
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    centerMode:true
                 }
             }
         ]
