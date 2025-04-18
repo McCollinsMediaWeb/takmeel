@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { useEffect } from 'react';
 export default function Header() {
   const pathname = usePathname();
-  const isHome = pathname === '/'; 
+  const isHome = pathname === '/' || pathname === '/detail-page';
 
 
   useEffect(() => {
