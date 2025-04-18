@@ -19,7 +19,7 @@ export default function DetailHero({ backgroundImage, backgroundImageMobile, tex
     const [open, setOpen] = useState(false);
 
     return (
-        <div className='FullScreenBanner' onClick={() => setOpen(true)}>
+        <div className='FullScreenBanner DetHero position-relative'>
             <motion.div
                 animate={{ scale: [1, 1.05, 1] }}
                 transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
@@ -49,7 +49,7 @@ export default function DetailHero({ backgroundImage, backgroundImageMobile, tex
                 close={() => setOpen(false)}
                 plugins={[Video, Thumbnails, Zoom]} // ✅ Include Zoom
                 slides={[
-                    
+
                     {
                         type: "video",
                         width: 1920,
@@ -59,12 +59,12 @@ export default function DetailHero({ backgroundImage, backgroundImageMobile, tex
                         loop: false,
                         controls: true,
                         sources: [
-                          {
-                            src: "/video.mp4",
-                            type: "video",
-                          },
+                            {
+                                src: "/video.mp4",
+                                type: "video",
+                            },
                         ],
-                      },
+                    },
                     { src: "/abslider1.jpg" },
                     { src: "/abslider2.jpg" },
                     { src: "/abslider3.jpg" },
@@ -75,6 +75,24 @@ export default function DetailHero({ backgroundImage, backgroundImageMobile, tex
                     { src: "/main4.jpg" },
                 ]}
             />
+            <div className='DetSlContentBox '>
+                <div className='container'>
+                    <div className='row align-items-center'>
+                        <div className='col-md-7'>
+                            <div className="Txt1 nunito-text"  onClick={() => setOpen(true)}>Project Showcase</div>
+                            <div className="Txt2 text-uppercase">Meydan Racecourse Mansion</div>
+                            <div className="Txt3 nunito-text">AL Barsha South, Dubai</div>
+                        </div>
+                        <div className='col-md-5'>
+                            <div className='ButtonsBox1'>
+                                <a href='#' className='hover1'>Download Brochure</a>
+                                <a href='#' className='hover1'>Download Masterplan</a>
+                                <a href='#' className='toggleForm hover1'>Register Your Interest</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
