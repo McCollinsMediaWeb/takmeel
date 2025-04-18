@@ -60,8 +60,8 @@ export default function DetailHero({ backgroundImage, backgroundImageMobile, tex
                         controls: true,
                         sources: [
                           {
-                            src: "https://www.youtube.com/watch?v=7zihsOI7ZeU",
-                            type: "youtube",
+                            src: "/video.mp4",
+                            type: "video",
                           },
                         ],
                       },

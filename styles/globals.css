@@ -1208,3 +1208,6 @@ color: #1d1d1b;
 .Accordion.active::after{
   content: "-";
 }
+.yarl__carousel{
+background-color: rgba(0, 0, 0, 0.2) !important;
+}
