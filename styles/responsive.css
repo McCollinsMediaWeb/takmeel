@@ -172,4 +172,47 @@
       .FooterLogo {
         max-width: 170px;
       }
+      .HdT2{
+        font-size: 23px;
+      }
+      .PageHeaderTp1{
+        padding: 30px 15px;
+        height: auto !important;
+      }
+      .HdT3 {
+        font-size: 16px;
+      }
+      .PageHeaderTp1 br , 
+      .CfT2 br{
+        display: none;
+      }
+      .VmT1{
+        font-size: 23px;
+      }
+      .VmT2 {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      .VmT3 {
+        margin-bottom: 10px;
+        font-size: 23px;
+      }
+      .VmT4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .FounderName {
+        font-size: 18px;
+      }
+      .FounderPosition {
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
+      .FounderSlider ,
+      .OurPeopleBox {
+        margin-top: 20px;
+        margin-left: -15px;
+        margin-right: -15px;
+        overflow:hidden;
+      }
   }
