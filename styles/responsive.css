@@ -246,4 +246,48 @@
       .blogLists .col-md-4 {
         margin-bottom: 15px;
       }
+      .CntPageHead {
+        height: 55vh !important;
+        text-align: center;
+      }
+      .CT1{
+        padding: 15px;
+        font-size: 23px;
+      }
+      .Ct3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+      .MidRow1 {
+        margin-bottom: 15px;
+      }
+      .PadBox1 {
+       
+        padding: 20px;
+        margin-top: 20px;
+      }
+      .LcBoxT1 {
+        font-size: 16px;
+      }
+      .Spacer {
+        opacity: 1;
+        margin:20px 0;
+      }
+      .Ft1 {
+        margin-bottom: 22px;
+        font-size: 22px;
+      }
+      .Accordion {
+        margin-bottom: 10px;
+        padding:15px 30px 15px 15px;
+        font-size: 16px;
+      }
+      .AccordionAnswer{
+        font-size: 15px;
+        margin-top: 15px;
+      }
+      .Accordion::after {
+        font-size: 22px;
+        right: 10px;
+      }
   }
