@@ -78,25 +78,25 @@ export default function ProjectDetails7({mapimage}) {
                             <div className="BlT2 text-uppercase">EFFORTLESS ACCESS<br/>
                             To All Corners Of The City​</div>
                             <div>
-                                <div class="VmT5 nunito-text">3 MINUTES Hessa Street</div>
+                                <div className="VmT5 nunito-text">3 MINUTES Hessa Street</div>
                             </div>
                             <div>
-                                <div class="VmT5 nunito-text">5 MINUTES Sheikh Mohammed Bin Zayed Rd</div>
+                                <div className="VmT5 nunito-text">5 MINUTES Sheikh Mohammed Bin Zayed Rd</div>
                             </div>
                             <div>
-                                <div class="VmT5 nunito-text">8 MINUTES Dubai Sport City</div>
+                                <div className="VmT5 nunito-text">8 MINUTES Dubai Sport City</div>
                             </div>
                             <div>
-                                <div class="VmT5 nunito-text">8 Minutes From Dubai Hills Mall</div>
+                                <div className="VmT5 nunito-text">8 Minutes From Dubai Hills Mall</div>
                             </div>
                             <div>
-                                <div class="VmT5 nunito-text">25 MINUTES DUBAI INTERNATIONAL AIRPORT</div>
+                                <div className="VmT5 nunito-text">25 MINUTES DUBAI INTERNATIONAL AIRPORT</div>
                             </div>
                             <div>
-                                <div class="VmT5 nunito-text">20 MINUTES Marina Beach</div>
+                                <div className="VmT5 nunito-text">20 MINUTES Marina Beach</div>
                             </div>
                             <div>
-                                <div class="VmT5 nunito-text">20 MINUTES Burj Khalifa</div>
+                                <div className="VmT5 nunito-text">20 MINUTES Burj Khalifa</div>
                             </div>
                             
                         </div>
