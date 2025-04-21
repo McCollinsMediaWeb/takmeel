@@ -1476,13 +1476,21 @@ body .slick-prev::before {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-.ViewBlockIcon{
+/* .View360Box::after{
+  content: "";
   width: 60px;
   height: 30px;
   background-image: url(../public/view.png);
   background-size: 100% 100%;
   margin-bottom: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 4;
 }
+.View360Box::before{
+  content: "360 View";
+} */
 .ViewBlockContent{
   position: absolute;
   left: 0;
@@ -1503,4 +1511,7 @@ body .slick-prev::before {
 }
 .psv-navbar {
   z-index: 6 !important;
+}
+.View360Box .boxC1{
+  height: 70vh !important;
 }

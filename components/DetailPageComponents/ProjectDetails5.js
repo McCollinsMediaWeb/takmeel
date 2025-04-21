@@ -46,8 +46,9 @@ export default function ProjectDetails5() {
                     <div className='text-center PrdTxt2'>
                         Discover a Fully Interactive 360° Panorama
                     </div>
-                    <div className='View360Box'>
+                    <div className='View360Box position-relative'>
                         <div
+                            className="boxC1"
                             ref={viewerRef}
                             id="viewer"
                             style={{ width: '100%', height: '500px' }}
