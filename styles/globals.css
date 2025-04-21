@@ -1497,3 +1497,7 @@ body .slick-prev::before {
   color: #fff;
   cursor: pointer;
 }
+.ViewBlock::after{
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
