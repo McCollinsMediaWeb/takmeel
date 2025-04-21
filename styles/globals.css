@@ -1517,7 +1517,7 @@ body .slick-prev::before {
 }
 .AmnBoxTitle{
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .AmnBoxTitle::after{
 content: "";
@@ -1542,7 +1542,7 @@ opacity: 0.2;
   display: flex;
   width:100%;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .AmnKeyBoxLeft{
   width: 40px;
@@ -1572,7 +1572,7 @@ opacity: 0.2;
   background-image: url(../public/amn5.png);
 }
 .AmnIcon.AmnIcon6{
-  background-image: url(../public/amn5.png);
+  background-image: url(../public/amn6.png);
 }
 .AmnIcon.AmnIcon7{
   background-image: url(../public/amn7.png);
@@ -1611,5 +1611,37 @@ opacity: 0.2;
   background-image: url(../public/amn18.png);
 }
 .AmnBoxWrap{
-  margin-top: 25px;
+  margin-top: 35px;
+}
+.PlanBox{
+  padding: 50px;
+  background-color: #fff;
+  padding-bottom: 0;
+}
+.PlanBoxBottomFlex{
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  padding: 30px 50px 50px 50px;
+}
+.PlanBoxBottomLnk{
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #1d1d1b;
+  transition: 0.4s;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.PlanBoxBottomLnk:hover{
+  background-color: #D6B264;
+}
+.DownloadBtn{
+  width:30px;
+  height: 30px;
+  background-image: url(../public/download.png);
+  background-size: 100% 100%;
+  position: absolute;
+  top: 25px;
+  right:30px;
 }

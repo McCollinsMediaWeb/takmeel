@@ -19,7 +19,7 @@ import image2 from "../../public/abslider2.jpg"
 import image3 from "../../public/abslider3.jpg"
 import image4 from "../../public/abslider3.jpg"
 
-export default function ProjectDetails6() {
+export default function ProjectDetails6({planImage}) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
     var settings = {
@@ -72,7 +72,25 @@ export default function ProjectDetails6() {
                     viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                 >
                     <div className='row PlanRow'>
-                        <div className='col-md-6'>Ijas</div>
+                        <div className='col-md-6'>
+                            <div className='PlanBox'>
+                                <Image
+                                                                src={`/${planImage}`}
+                                                                width={438}
+                                                                height={414}
+                                                                layout="responsive"
+                                                                alt="Takmeel"
+                                                            />
+                            </div>
+                            <div className='PlanBoxBottom'>
+                                <div className='PlanBoxBottomFlex'>
+                                    <div className='PlanBoxBottomLnk hove1'>1 BHK</div>
+                                    <div className='PlanBoxBottomLnk hove1'>2 BHK</div>
+                                    <div className='PlanBoxBottomLnk hove1'>3 BHK</div>
+                                    <a href='#'><div className='DownloadBtn'>&nbsp;</div></a>
+                                </div>
+                            </div>
+                        </div>
                         <div className='col-md-6'>
                             <div className="BlT1 nunito-text text-uppercase">Designed for Living</div>
                             <div className="BlT2 text-uppercase">Create Your Perfect Home Layout​</div>

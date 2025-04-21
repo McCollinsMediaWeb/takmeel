@@ -20,7 +20,7 @@ export default function DetailPage() {
         <ProjectDetails3 mainimage1="amn1.jpg"/>
         <ProjectDetails4/>
         <ProjectDetails5/>
-        <ProjectDetails6/>
+        <ProjectDetails6 planImage="plan1.jpg"/>
         {/* <FAQbox/> */}
         <ContactForm/>
  
