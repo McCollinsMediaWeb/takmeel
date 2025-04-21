@@ -833,6 +833,7 @@ header.fixed-class {
 
 .AbSliderItem .ImageBox {
   padding: 0px 10px;
+  cursor: pointer;
 }
 
 body .slick-next {
@@ -1269,4 +1270,19 @@ background-color: rgba(0, 0, 0, 0.2) !important;
   width: 26px;
   background-image: url(../public/play.png);
   background-size: 100% 100%;
+}
+.PrDetSliderBox{
+  margin-top: 25px;
+}
+.Det2T1{
+  line-height: 1.4;
+}
+.Det2T1.mb{
+  margin-bottom: 10px;
+}
+.ProductDetail2 .container{
+  max-width: 1200px;
+}
+.mb3{
+  margin-bottom: 25px;
 }

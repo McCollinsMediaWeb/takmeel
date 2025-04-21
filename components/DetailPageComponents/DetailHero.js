@@ -77,25 +77,39 @@ export default function DetailHero({ backgroundImage, backgroundImageMobile, tex
             />
             <div className='DetSlContentBox '>
                 <div className='container'>
-                    <div className='text-center'>
-                        <div className='PlayIconBox' onClick={() => setOpen(true)}>
-                            <div className='PlayIcon'>&nbsp;</div>
-                        </div>
-                    </div>
-                    <div className='row align-items-center'>
-                        <div className='col-md-7'>
-                            <div className="Txt1 nunito-text">Project Showcase</div>
-                            <div className="Txt2 text-uppercase">Meydan Racecourse Mansion</div>
-                            <div className="Txt3 nunito-text">AL Barsha South, Dubai</div>
-                        </div>
-                        <div className='col-md-5'>
-                            <div className='ButtonsBox1'>
-                                <a href='#' className='hover1'>Download Brochure</a>
-                                <a href='#' className='hover1'>Download Masterplan</a>
-                                <a href='#' className='toggleForm hover1'>Register Your Interest</a>
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
+                    >
+                        <div className='text-center'>
+                            <div className='PlayIconBox' onClick={() => setOpen(true)}>
+                                <div className='PlayIcon'>&nbsp;</div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
+                    >
+                        <div className='row align-items-center'>
+                            <div className='col-md-7'>
+                                <div className="Txt1 nunito-text">Project Showcase</div>
+                                <div className="Txt2 text-uppercase">Meydan Racecourse Mansion</div>
+                                <div className="Txt3 nunito-text">AL Barsha South, Dubai</div>
+                            </div>
+                            <div className='col-md-5'>
+                                <div className='ButtonsBox1'>
+                                    <a href='#' className='hover1'>Download Brochure</a>
+                                    <a href='#' className='hover1'>Download Masterplan</a>
+                                    <a href='#' className='toggleForm hover1'>Register Your Interest</a>
+                                </div>
+                            </div>
+                        </div>
+                    </motion.div>
                 </div>
             </div>
         </div>
