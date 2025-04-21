@@ -225,18 +225,22 @@ footer {}
   left: 0;
   top: 0;
 }
-.CRow.whatsapp.a1:after{
-background-image: url(../public/a1.png);
+
+.CRow.whatsapp.a1:after {
+  background-image: url(../public/a1.png);
 }
-.CRow.call.a2:after{
+
+.CRow.call.a2:after {
   background-image: url(../public/a2.png);
-  }
-  .CRow.email.a3:after{
-    background-image: url(../public/a3.png);
-    }
-    .CRow.location.a4:after{
-      background-image: url(../public/a4.png);
-      }
+}
+
+.CRow.email.a3:after {
+  background-image: url(../public/a3.png);
+}
+
+.CRow.location.a4:after {
+  background-image: url(../public/a4.png);
+}
 
 .CRow.call:after {
   content: "";
@@ -923,45 +927,52 @@ body .slick-prev::before {
   width: 100%;
   z-index: 99;
   box-shadow: 0 0 9px #0000001f;
-  transition:.3s;
+  transition: .3s;
   background: #fff;
-  border:1px solid #fff;
+  border: 1px solid #fff;
   overflow: hidden;
 }
+
 .bottom-bar {
-  padding:3px 15px;
+  padding: 3px 15px;
   min-height: 60px;
 }
+
 .bottom-bar--list {
-  list-style:none;
-  padding:0;
+  list-style: none;
+  padding: 0;
   display: flex;
   justify-content: space-between;
-  margin:0;
+  margin: 0;
   align-items: center;
 }
-.bottom-bar--list li > a {
-  padding:7px 2px;
+
+.bottom-bar--list li>a {
+  padding: 7px 2px;
   display: block;
   pointer-events: auto;
   text-align: center;
   color: #1d1d1b !important;
 }
-.bottom-bar--list .icon + .text {
+
+.bottom-bar--list .icon+.text {
   margin-top: 6px;
   line-height: 1;
   font-size: 11px;
 }
+
 .bottom-bar--list .icon img {
   max-width: 22px;
 }
-.VmT5{
+
+.VmT5 {
   display: inline-block;
   position: relative;
   padding-left: 35px;
   margin-bottom: 15px;
 }
-.VmT5::after{
+
+.VmT5::after {
   content: "";
   width: 22px;
   height: 22px;
@@ -971,32 +982,39 @@ body .slick-prev::before {
   left: 0;
   top: 0;
 }
-.bg2{
+
+.bg2 {
   background-color: #F7F7F7;
 }
-.FounderSlider{
+
+.FounderSlider {
   max-width: 700px;
   margin: 0 auto;
 }
-.FounderDetails{
+
+.FounderDetails {
   padding: 15px;
   background-color: #1d1d1b;
   color: #fff;
 }
-.FounderName{
+
+.FounderName {
   font-size: 23px;
 }
-.FounderPosition{
+
+.FounderPosition {
   color: #D6B264;
   font-size: 18px;
   margin-bottom: 15px;
 }
-.MoreInfoLink{
+
+.MoreInfoLink {
   color: #fff;
   position: relative;
   display: inline-block;
   padding-right: 25px;
 }
+
 .MoreInfoLink::after {
   content: "";
   width: 12px;
@@ -1007,90 +1025,114 @@ body .slick-prev::before {
   right: 0;
   top: 5px;
 }
-.MoreInfoLink:hover{
+
+.MoreInfoLink:hover {
   color: #D6B264;
 }
-.FounderItemBox{
+
+.FounderItemBox {
   padding: 0 5px;
 }
-.FounderSlider{
+
+.FounderSlider {
   margin-top: 30px;
 }
-.AllTeamImageBox{
+
+.AllTeamImageBox {
   margin: 50px 0px;
 }
-.OurPeopleBox{
+
+.OurPeopleBox {
   max-width: 1000px;
 
   margin: 0 auto;
   margin-top: 30px;
 }
-.w100{
+
+.w100 {
   width: 100%;
 }
-.PT1{
+
+.PT1 {
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 5px;
   margin-top: 15px;
 }
-.PT2{
+
+.PT2 {
   color: #D6B264;
 }
-.FtrProject{
+
+.FtrProject {
   margin: 0 5px;
 }
-.FtrProperties{
-margin-top: 30px;
+
+.FtrProperties {
+  margin-top: 30px;
 }
-.centerBlock{
+
+.centerBlock {
   justify-content: center;
   text-align: center;
 }
-.centerBlock .Txt2{
-margin: 0 auto;
-max-width: 100%;
+
+.centerBlock .Txt2 {
+  margin: 0 auto;
+  max-width: 100%;
 }
-.FullScreenBanner.Projects::after{
+
+.FullScreenBanner.Projects::after {
   background-image: url(../public/projectbg.png);
 }
-.BlT1{
+
+.BlT1 {
   color: #D6B264;
   margin-bottom: 5px;
 }
-.BlT2{
+
+.BlT2 {
   text-transform: uppercase;
   margin-bottom: 10px;
   font-size: 30px;
 }
-.BlogPostMainArea .container{
+
+.BlogPostMainArea .container {
   max-width: 1100px;
 }
-.LatestBlogItem{
+
+.LatestBlogItem {
   padding: 20px;
   background-color: #F7F7F7;
 }
-.LtT1{
+
+.LtT1 {
   color: #D6B264;
   margin-bottom: 5px;
 }
-.LatestBlogImage{
+
+.LatestBlogImage {
   margin-bottom: 10px;
 }
-.LtT2{
+
+.LtT2 {
   font-size: 22px;
   margin-bottom: 10px;
 }
-.BlT3{
+
+.BlT3 {
   line-height: 1.5;
 }
-.BlogPostMainArea .row{
+
+.BlogPostMainArea .row {
   align-items: center;
 }
-.blogLists .col-md-4{
+
+.blogLists .col-md-4 {
   margin-bottom: 30px;
 }
-.ViewAll{
+
+.ViewAll {
   margin-top: 40px;
   display: inline-block;
   padding: 10px 20px;
@@ -1099,18 +1141,22 @@ max-width: 100%;
   cursor: pointer;
   transition: 0.4s;
 }
-.BlogListingWrap  .BlogItem{
-padding: 15px;
-background-color: #fff;
+
+.BlogListingWrap .BlogItem {
+  padding: 15px;
+  background-color: #fff;
 }
-.CntPageHead{
+
+.CntPageHead {
   overflow: hidden;
   position: relative;
 }
-.CntPageHead img{
+
+.CntPageHead img {
   height: 100% !important;
   object-fit: cover;
 }
+
 .CntPageHead:after {
   content: "";
   background-image: url(../public/overlay.png);
@@ -1123,7 +1169,8 @@ background-color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.CT1{
+
+.CT1 {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1136,55 +1183,68 @@ background-color: #fff;
   color: #fff;
   font-size: 35px;
 }
-.CntMiddleBox{
+
+.CntMiddleBox {
   background-color: #fff;
 }
-.Ct2{
+
+.Ct2 {
   color: #D6B264;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
-.Ct3{
+
+.Ct3 {
   font-size: 26px;
   text-transform: uppercase;
 }
-.ConPage .CRow{
-color: #1d1d1b;
+
+.ConPage .CRow {
+  color: #1d1d1b;
 }
-.CntMiddleBox .FormBox{
+
+.CntMiddleBox .FormBox {
   margin-top: 0;
 }
-.MidRow1{
+
+.MidRow1 {
   align-items: center;
   margin-bottom: 30px;
 }
-.LcBoxT1{
+
+.LcBoxT1 {
   font-size: 19px;
   margin-bottom: 7px;
 }
-.LcBoxT2{
+
+.LcBoxT2 {
   margin-bottom: 7px;
 }
-.LcBox a{
+
+.LcBox a {
   text-decoration: underline !important;
 }
-.Spacer{
+
+.Spacer {
   height: 1px;
   background-color: #e4e4e4;
   opacity: .7;
   margin: 25px 0px;
 }
-.PadBox1{
+
+.PadBox1 {
   padding: 35px;
   border-radius: 25px;
   background-color: #f7f7f7;
 }
-.Ft1{
+
+.Ft1 {
   font-size: 30px;
   margin-bottom: 30px;
   text-transform: uppercase;
 }
-.Accordion{
+
+.Accordion {
   background-color: #fff;
   padding: 20px;
   margin-bottom: 15px;
@@ -1193,26 +1253,31 @@ color: #1d1d1b;
   position: relative;
   padding-right: 50px;
 }
-.AccordionAnswer{
+
+.AccordionAnswer {
   color: #D6B264;
   margin-top: 20px;
   font-size: 18px;
 
 }
-.Accordion::after{
+
+.Accordion::after {
   content: "+";
   position: absolute;
   top: 10px;
   right: 20px;
   font-size: 33px;
 }
-.Accordion.active::after{
+
+.Accordion.active::after {
   content: "-";
 }
-.yarl__carousel{
-background-color: rgba(0, 0, 0, 0.2) !important;
+
+.yarl__carousel {
+  background-color: rgba(0, 0, 0, 0.2) !important;
 }
-.DetSlContentBox{
+
+.DetSlContentBox {
   position: absolute;
   left: 0;
   top: 0;
@@ -1224,20 +1289,24 @@ background-color: rgba(0, 0, 0, 0.2) !important;
   z-index: 3;
   padding: 40px 0px;
 }
-.DetSlContentBox .Txt2{
+
+.DetSlContentBox .Txt2 {
   max-width: 100%;
 }
-.FullScreenBanner.DetHero::after{
+
+.FullScreenBanner.DetHero::after {
   background-image: url(../public/projectbg.png);
 }
-.ButtonsBox1{
+
+.ButtonsBox1 {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 15px;
   border-radius: 25px;
   display: flex;
   flex-wrap: nowrap;
 }
-.ButtonsBox1 a{
+
+.ButtonsBox1 a {
   display: inline-block;
   padding: 15px;
   background-color: #1d1d1b;
@@ -1246,10 +1315,12 @@ background-color: rgba(0, 0, 0, 0.2) !important;
   margin-right: 10px;
   text-align: center;
 }
-.ButtonsBox1 a:last-child{
+
+.ButtonsBox1 a:last-child {
   margin-right: 0;
 }
-.PlayIconBox{
+
+.PlayIconBox {
   width: 60px;
   height: 60px;
   border: 1px solid #fff;
@@ -1262,27 +1333,167 @@ background-color: rgba(0, 0, 0, 0.2) !important;
   cursor: pointer;
   transition: 0.4s;
 }
-.PlayIconBox:hover{
+
+.PlayIconBox:hover {
   background-color: #1d1d1b;
 }
-.PlayIcon{
+
+.PlayIcon {
   height: 32px;
   width: 26px;
   background-image: url(../public/play.png);
   background-size: 100% 100%;
 }
-.PrDetSliderBox{
+
+.PrDetSliderBox {
   margin-top: 25px;
 }
-.Det2T1{
+
+.Det2T1 {
   line-height: 1.4;
 }
-.Det2T1.mb{
+
+.Det2T1.mb {
   margin-bottom: 10px;
 }
-.ProductDetail2 .container{
+
+.ProductDetail2 .container {
   max-width: 1200px;
 }
-.mb3{
+
+.mb3 {
   margin-bottom: 25px;
+}
+
+.ProductDetail3::after {
+  content: "";
+  background-image: url(../public/projectbg.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+
+}
+
+.DetBoxContent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.Tst1 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.FeatureBox {
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.FeatureBoxT1 {
+  text-transform: uppercase;
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+
+.FeatureBoxT2 {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.FeatureBoxIcon {
+  width: 52px;
+  height: 52px;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.FeatureBoxIcon.FeatureBoxIcon1 {
+  background-image: url(../public/ft1.png);
+}
+
+.FeatureBoxIcon.FeatureBoxIcon2 {
+  background-image: url(../public/ft2.png);
+}
+
+.FeatureBoxIcon.FeatureBoxIcon3 {
+  background-image: url(../public/ft3.png);
+}
+
+.FeatureBoxIcon.FeatureBoxIcon4 {
+  background-image: url(../public/ft4.png);
+}
+
+.FeatureBoxIcon.FeatureBoxIcon5 {
+  background-image: url(../public/ft5.png);
+}
+
+.FeatureBoxIcon.FeatureBoxIcon6 {
+  background-image: url(../public/ft6.png);
+}
+.ImageWithTextBox{
+  padding: 0 !important;
+  margin: 0 5px;
+}
+.ImageWithTextBox::after ,
+.ViewBlock::after{
+  content: "";
+  background-image: url(../public/projectbg.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.ImageTlBox{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  padding: 20px;
+  z-index: 4;
+}
+.PrdTxt1{
+  margin-bottom: 5px;
+}
+.PrdTxt2{
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.ViewBlockIcon{
+  width: 60px;
+  height: 30px;
+  background-image: url(../public/view.png);
+  background-size: 100% 100%;
+  margin-bottom: 10px;
+}
+.ViewBlockContent{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
 }

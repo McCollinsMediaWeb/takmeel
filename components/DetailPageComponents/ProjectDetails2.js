@@ -19,7 +19,7 @@ import image2 from "../../public/abslider2.jpg"
 import image3 from "../../public/abslider3.jpg"
 import image4 from "../../public/abslider3.jpg"
 
-export default function ProjectDetails2({ mainimage1, mainimage2 }) {
+export default function ProjectDetails2({ mainimage1,mainimage2 }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
     var settings = {
@@ -63,7 +63,7 @@ export default function ProjectDetails2({ mainimage1, mainimage2 }) {
 
     return (
         <div className='position-relative pd-common bg2 ProductDetail2'>
-
+            
             <div className='container'>
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
