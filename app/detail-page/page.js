@@ -10,6 +10,7 @@ import ProjectDetails2 from "@/components/DetailPageComponents/ProjectDetails2";
 import ProjectDetails3 from "@/components/DetailPageComponents/ProjectDetails3";
 import ProjectDetails4 from "@/components/DetailPageComponents/ProjectDetails4";
 import ProjectDetails5 from "@/components/DetailPageComponents/ProjectDetails5";
+import ProjectDetails6 from "@/components/DetailPageComponents/ProjectDetails6";
 export default function DetailPage() {
     return (
       <div>
@@ -19,6 +20,7 @@ export default function DetailPage() {
         <ProjectDetails3 mainimage1="amn1.jpg"/>
         <ProjectDetails4/>
         <ProjectDetails5/>
+        <ProjectDetails6/>
         {/* <FAQbox/> */}
         <ContactForm/>
  
