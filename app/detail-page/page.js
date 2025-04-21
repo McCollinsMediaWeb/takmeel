@@ -6,6 +6,7 @@ import ProjectDetails3 from "@/components/DetailPageComponents/ProjectDetails3";
 import ProjectDetails4 from "@/components/DetailPageComponents/ProjectDetails4";
 import ProjectDetails5 from "@/components/DetailPageComponents/ProjectDetails5";
 import ProjectDetails6 from "@/components/DetailPageComponents/ProjectDetails6";
+import ProjectDetails7 from "@/components/DetailPageComponents/ProjectDetails7";
 export default function DetailPage() {
     return (
       <div>
@@ -16,7 +17,7 @@ export default function DetailPage() {
         <ProjectDetails4/>
         <ProjectDetails5/>
         <ProjectDetails6 planImage="plan1.jpg"/>
- 
+        <ProjectDetails7 mapimage="map1.jpg"/>
       </div>
     );
   }
