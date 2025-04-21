@@ -1501,3 +1501,6 @@ body .slick-prev::before {
   background-image: none;
   background-color: rgba(0, 0, 0, 0.2);
 }
+.psv-navbar {
+  z-index: 6 !important;
+}
