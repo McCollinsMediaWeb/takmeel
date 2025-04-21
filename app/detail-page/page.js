@@ -1,9 +1,4 @@
 'use client';
-import FAQbox from "@/components/FAQbox/FAQbox";
-import ContactForm from "@/components/ContactForm/ContactForm";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import b1 from "../../public/main4.jpg";
 import DetailHero from "@/components/DetailPageComponents/DetailHero";
 import ProjectDetails1 from "@/components/DetailPageComponents/ProjectDetails1";
 import ProjectDetails2 from "@/components/DetailPageComponents/ProjectDetails2";
@@ -21,8 +16,6 @@ export default function DetailPage() {
         <ProjectDetails4/>
         <ProjectDetails5/>
         <ProjectDetails6 planImage="plan1.jpg"/>
-        {/* <FAQbox/> */}
-        <ContactForm/>
  
       </div>
     );
