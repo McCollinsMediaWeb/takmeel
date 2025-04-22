@@ -10,7 +10,7 @@ export default function FullScreenBanner({ backgroundImage,backgroundImageMobile
     return (
         <div className='FullScreenBanner'>
             <motion.div
-         animate={{ scale: [1, 1.05, 1] }}
+         animate={{ scale: [1, 1.10, 1] }}
          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
          viewport={{ once: true, amount: 0.5 }} 
       >
@@ -37,7 +37,7 @@ export default function FullScreenBanner({ backgroundImage,backgroundImageMobile
                 <div className='FsBannerContentFlex'>
                     <div className='container'>
                         <motion.div
-                            initial={{ opacity: 0, y: 30 }}
+                            initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, ease: "easeOut" }}
                             viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
