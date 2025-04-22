@@ -46,7 +46,7 @@ export default function ProjectItem({ backgroundImage,backgroundImageMobile, tex
                                 
                                 <div className='Txt2 text-uppercase'>{text2}</div>
                                 <div className='Txt3 nunito-text'>{text3}</div>
-                                <Link href="/" className='Link1 hover1'>Explore Property</Link>
+                                <Link href="/detail-page" className='Link1 hover1'>Explore Property</Link>
                             </div>
                         </motion.div>
 
