@@ -1653,7 +1653,8 @@ opacity: 0.2;
   margin-bottom: 30px;
   text-transform: uppercase;
 }
-.InputItem input{
+.InputItem input,
+.InputItem select{
   background-color: #fff;
   border-radius: 25px;
   padding: 20px;
@@ -1806,4 +1807,24 @@ opacity: 0.2;
 .FormButton2{
   background-color: #fff;
   border: 1px solid #000;
+}
+.bg3{
+  background-color: #383838;
+}
+.ppT1{
+  color: #D6B264;
+  margin-bottom: 5px;
+}
+.ppT2{
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.propertyFormBox .InputItem input,
+.propertyFormBox .InputItem select{
+  padding: 15px 20px;
+  -webkit-appearance: none;  /* Chrome, Safari, Opera */
+  -moz-appearance: none;     /* Firefox */
+  appearance: none;          /* Standard */
 }
