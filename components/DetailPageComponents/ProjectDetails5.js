@@ -51,19 +51,11 @@ export default function ProjectDetails5() {
                             className="boxC1"
                             ref={viewerRef}
                             id="viewer"
-                            style={{ width: '100%', height: '500px' }}
-                        >
-
-                            {/* {!isFullScreen && (
-                                <div className='ViewBlockContent'>
-                                    <div>
-                                        <div className='ViewBlockIcon'>&nbsp;</div>
-                                        <div className='ViewBlockTxt'>360 View</div>
-                                    </div>
-                                </div>
-                            )} */}
-
-                        </div>
+                            style={{
+                                width: '100%',
+                                height: isDesktop ? '500px' : '300px',
+                            }}
+                        ></div>
                     </div>
                 </motion.div>
             </div>

@@ -340,4 +340,63 @@
         margin-bottom: 20px;
         font-size: 20px;
       }
+      .PlanBoxBottomFlex {
+        padding:20px 20px 20px;
+      }
+      .PlanBox {
+        padding:20px 20px 0;
+      }
+      .ProductDetail3::after{
+        content: none;
+      }
+      .PlanRow .BlT1{
+        padding-top: 20px;
+      }
+      .AmnBoxWrap {
+        margin-top: 20px;
+      }
+      .listItems .col-md-4{
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .ccT1 {
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+      .InputItem input, .InputItem select {
+        color: #1d1d1d;
+        padding:15px 15px 15px 130px;
+      }
+      .InputItem span {
+        font-size: 12px;
+        top: 16px;
+        left: 20px;
+      }
+      .MortageItem {
+        white-space:unset;
+      }
+      .MrT2 {
+        font-size: 21px;
+      }
+      .CCFormRight{
+        background-color: transparent;
+      }
+      .AnswerBox {
+        padding:5px;
+        font-size: 14px;
+      }
+      .LocationRowWrap .BlT2 {
+        margin-bottom: 15px;
+      }
+      .FormButton{
+        padding: 10px;
+      }
+      .ppT2 {
+        margin-bottom: 20px;
+        font-size: 25px;
+      }
+      .propertyFormBox .InputItem input, .propertyFormBox .InputItem select {
+        padding: 12px 20px;
+     
+      }
   }

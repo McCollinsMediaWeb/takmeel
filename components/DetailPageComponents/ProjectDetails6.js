@@ -65,12 +65,7 @@ export default function ProjectDetails6({planImage}) {
         <div className='position-relative pd-common bg2 pt-0'>
 
             <div className='container'>
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
-                    viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
-                >
+               
                     <div className='row PlanRow'>
                         <div className='col-md-6'>
                             <div className='PlanBox'>
@@ -437,7 +432,6 @@ export default function ProjectDetails6({planImage}) {
                             </div>
                         </div>
                     </div>
-                </motion.div>
 
             </div>
 
