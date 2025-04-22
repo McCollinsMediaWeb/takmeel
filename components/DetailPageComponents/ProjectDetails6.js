@@ -1,23 +1,12 @@
 'use client';
 
-import Link from 'next/link';
+
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
-
-import Lightbox from "yet-another-react-lightbox";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import Video from "yet-another-react-lightbox/plugins/video";
-import Zoom from "yet-another-react-lightbox/plugins/zoom"; // ✅ Add zoom plugin
-
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-import Slider from "react-slick";
-import image1 from "../../public/abslider1.jpg"
-import image2 from "../../public/abslider2.jpg"
-import image3 from "../../public/abslider3.jpg"
-import image4 from "../../public/abslider3.jpg"
 
 export default function ProjectDetails6({planImage}) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
