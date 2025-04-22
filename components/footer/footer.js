@@ -35,18 +35,18 @@ export default function Footer() {
               <div className='LinkBox'>
                 <div className='LinkTitle'>Quick Links</div>
                 <Link className='FtrLnk1' href="/">Home</Link>
-                <Link className='FtrLnk1' href="/">About</Link>
-                <Link className='FtrLnk1' href="/">Projects</Link>
-                <Link className='FtrLnk1' href="/">News</Link>
+                <Link className='FtrLnk1' href="/about-us">About</Link>
+                <Link className='FtrLnk1' href="/projects">Projects</Link>
+                <Link className='FtrLnk1' href="/news-updates">News</Link>
               </div>
             </div>
             <div className='col-md-2'>
               <div className='LinkBox'>
                 <div className='LinkTitle'>Help</div>
-                <Link className='FtrLnk1' href="/">Contact Us</Link>
-                <Link className='FtrLnk1' href="/">FAQs</Link>
-                <Link className='FtrLnk1' href="/">Privacy Policies</Link>
-                <Link className='FtrLnk1' href="/">Terms of use</Link>
+                <Link className='FtrLnk1' href="/contact-us">Contact Us</Link>
+                <Link className='FtrLnk1' href="/faqs">FAQs</Link>
+                <Link className='FtrLnk1' href="/privacy-policy">Privacy Policies</Link>
+                <Link className='FtrLnk1' href="/terms-of-use">Terms of use</Link>
               </div>
             </div>
             <div className='col-md-4 NewsletterBox'>
