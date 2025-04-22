@@ -3,8 +3,9 @@
 import Link from 'next/link';
 import { motion } from "framer-motion";
 import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 export default function TakmeelMenu() {
-
+    const pathname = usePathname();
 
 useEffect(() => {
   const toggleButtons = document.querySelectorAll(".toggleMenu");
@@ -33,7 +34,7 @@ useEffect(() => {
                     </div>
                     <div className='MenuMiddle toggleMenu'>
                         <ul>
-                            <li className='active'>
+                            <li className={pathname === '/' ? 'active' : ''}>
                                 <motion.div
                                     initial={{ opacity: 0, y: 30 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -46,7 +47,7 @@ useEffect(() => {
                                 </motion.div>
 
                             </li>
-                            <li>
+                            <li className={pathname === '/about-us' ? 'active' : ''}>
                                 <motion.div
                                     initial={{ opacity: 0, y: 30 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -59,7 +60,7 @@ useEffect(() => {
                                 </motion.div>
 
                             </li>
-                            <li>
+                            <li className={pathname === '/projects' ? 'active' : ''}>
                                 <motion.div
                                     initial={{ opacity: 0, y: 30 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -72,7 +73,7 @@ useEffect(() => {
                                 </motion.div>
 
                             </li>
-                            <li>
+                            <li className={pathname === '/news-updates' ? 'active' : ''}>
                                 <motion.div
                                     initial={{ opacity: 0, y: 30 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -85,7 +86,7 @@ useEffect(() => {
                                 </motion.div>
 
                             </li>
-                            <li>
+                            <li className={pathname === '/contact-us' ? 'active' : ''}>
                                 <motion.div
                                     initial={{ opacity: 0, y: 30 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -100,7 +101,7 @@ useEffect(() => {
                             </li>
                         </ul>
                     </div>
-                    <div className='MenuFtr'>
+                    <div className='MenuFtr toggleMenu'>
                         <ul>
                             <li>
                                 <motion.div

@@ -290,4 +290,54 @@
         font-size: 22px;
         right: 10px;
       }
+      .ButtonsBox1 a {
+        margin-right: 5px;
+        padding:10px;
+        font-size: 12px;
+      }
+      .ButtonsBox1{
+        padding: 10px;
+      }
+      .PlayIcon {
+        width: 20px;
+        height: 25px;
+      }
+      .PlayIconBox {
+        width: 45px;
+        height: 45px;
+        margin:0 auto 20px;
+      }
+      .Det2T1 {
+        line-height: 1.2;
+        margin-bottom: 15px;
+      }
+      .Det2T1.mb{
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
+      .DetBoxContent {
+        width: 100%;
+        height: auto;
+        max-height: 500vh;
+        display: flex;
+        position: relative;
+        top: auto;
+        left: auto;
+        background:#1d1d1d;
+      }
+      .Tst1 {
+        margin-bottom: 20px;
+        font-size: 23px;
+      }
+      .FeatureBoxIcon {
+        margin: auto;
+        margin-bottom: 15px;
+      }
+      .FeatureBoxT1 {
+        font-size: 19px;
+      }
+      .PrdTxt2 {
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
   }
