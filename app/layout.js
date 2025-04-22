@@ -10,6 +10,7 @@ import "@/styles/responsive.css";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
+import Script from "next/script";
 
 
 const geistSans = Geist({
@@ -52,6 +53,22 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${nunitoSans.variable}`}>
       
       <body>
+
+        {/* Tawk.to Script */}
+        <Script id="tawk-to" strategy="afterInteractive">
+          {`
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function() {
+              var s1 = document.createElement("script"),
+                  s0 = document.getElementsByTagName("script")[0];
+              s1.async = true;
+              s1.src = 'https://embed.tawk.to/68072d12561060190ece4dcb/1ipe0g45b';
+              s1.charset = 'UTF-8';
+              s1.setAttribute('crossorigin', '*');
+              s0.parentNode.insertBefore(s1, s0);
+            })();
+          `}
+        </Script>
         
         <Header />
         <main>{children}</main>
