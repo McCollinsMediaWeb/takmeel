@@ -8,7 +8,8 @@ export default function Home() {
   return (
     <div>
       <div>
-        <FullScreenBanner backgroundImage="main1.jpg" backgroundImageMobile="main1mobile.jpg" text1="Now Unveiling"  text2="Takmeel Al Barari Properties" text3="Majan"/>
+        {/* <FullScreenBanner backgroundImage="main1.jpg" backgroundImageMobile="main1mobile.jpg" text1="Now Unveiling"  text2="Takmeel Al Barari Properties" text3="Majan"/> */}
+        <FullScreenBanner backgroundImage="bannerDesktopFirst.jpg" backgroundImageMobile="bannerMobileFirst.jpg" text1="Now Unveiling"  text2="Takmeel Al Barari Properties" text3="Majan"/>
         <FullScreenBanner backgroundImage="main2.jpg" backgroundImageMobile="main2mobile.jpg" text1="Featured Properties"  text2="Divine Residencia" text3="Dubai Studio City"/>
         <FullScreenBanner backgroundImage="main3.jpg" backgroundImageMobile="main3mobile.jpg" text1="Featured Properties"  text2="Divine living" text3="Arjan"/>
         <FullScreenBanner backgroundImage="main4.jpg" backgroundImageMobile="main4mobile.jpg" text1="Featured Properties"  text2="Golf View Living Apartments" text3="Al Zorah, Ajman"/>
