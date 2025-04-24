@@ -97,9 +97,13 @@ export default function DetailHero({ backgroundImage, backgroundImageMobile, tex
                     >
                         <div className='row align-items-center'>
                             <div className='col-md-7'>
-                                <div className="Txt1 nunito-text">{data ? data.subheading : "Project Showcase"}</div>
+                                {/* <div className="Txt1 nunito-text">{data ? data.subheading : "Project Showcase"}</div>
                                 <div className="Txt2 text-uppercase">{data ? data.heading : "Meydan Racecourse Mansion"}</div>
-                                <div className="Txt3 nunito-text">{data ? data.location : "AL Barsha South, Dubai"}</div>
+                                <div className="Txt3 nunito-text">{data ? data.location : "AL Barsha South, Dubai"}</div> */}
+
+                                <div className="Txt1 nunito-text">{text1}</div>
+                                <div className="Txt2 text-uppercase">{text2}</div>
+                                <div className="Txt3 nunito-text">{text3}</div>
                             </div>
                             <div className='col-md-5'>
                                 <div className='ButtonsBox1'>
