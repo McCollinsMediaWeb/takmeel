@@ -19,7 +19,7 @@ import image2 from "../../public/abslider2.jpg"
 import image3 from "../../public/abslider3.jpg"
 import image4 from "../../public/abslider3.jpg"
 
-export default function ProjectDetails7({mapimage}) {
+export default function ProjectDetails7({ mapimage, data }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
     var settings = {
@@ -71,48 +71,60 @@ export default function ProjectDetails7({mapimage}) {
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                 >
-                   <div className='LocationRowWrap'>
-                    <div className='row'>
-                        <div className='col-md-6'>
-                            <div className="BlT1 nunito-text text-uppercase">Takmeel Al Barari Properties</div>
-                            <div className="BlT2 text-uppercase">EFFORTLESS ACCESS<br/>
-                            To All Corners Of The City​</div>
-                            <div>
-                                <div className="VmT5 nunito-text">3 MINUTES Hessa Street</div>
+                    <div className='LocationRowWrap'>
+                        <div className='row'>
+                            <div className='col-md-6'>
+                                <div className="BlT1 nunito-text text-uppercase">Takmeel Al Barari Properties</div>
+                                <div className="BlT2 text-uppercase">EFFORTLESS ACCESS<br />
+                                    To All Corners Of The City​</div>
+
+                                {data.length > 0 ? (
+                                    data.map((line, index) => (
+                                        <div key={index}>
+                                            <div className="VmT5 nunito-text">{line}</div>
+                                        </div>
+                                    ))
+                                ) : (
+                                    <>
+                                        <div>
+                                            <div className="VmT5 nunito-text">3 MINUTES Hessa Street</div>
+                                        </div>
+                                        <div>
+                                            <div className="VmT5 nunito-text">5 MINUTES Sheikh Mohammed Bin Zayed Rd</div>
+                                        </div>
+                                        <div>
+                                            <div className="VmT5 nunito-text">8 MINUTES Dubai Sport City</div>
+                                        </div>
+                                        <div>
+                                            <div className="VmT5 nunito-text">8 Minutes From Dubai Hills Mall</div>
+                                        </div>
+                                        <div>
+                                            <div className="VmT5 nunito-text">25 MINUTES DUBAI INTERNATIONAL AIRPORT</div>
+                                        </div>
+                                        <div>
+                                            <div className="VmT5 nunito-text">20 MINUTES Marina Beach</div>
+                                        </div>
+                                        <div>
+                                            <div className="VmT5 nunito-text">20 MINUTES Burj Khalifa</div>
+                                        </div>
+                                    </>
+                                )}
+
+
                             </div>
-                            <div>
-                                <div className="VmT5 nunito-text">5 MINUTES Sheikh Mohammed Bin Zayed Rd</div>
-                            </div>
-                            <div>
-                                <div className="VmT5 nunito-text">8 MINUTES Dubai Sport City</div>
-                            </div>
-                            <div>
-                                <div className="VmT5 nunito-text">8 Minutes From Dubai Hills Mall</div>
-                            </div>
-                            <div>
-                                <div className="VmT5 nunito-text">25 MINUTES DUBAI INTERNATIONAL AIRPORT</div>
-                            </div>
-                            <div>
-                                <div className="VmT5 nunito-text">20 MINUTES Marina Beach</div>
-                            </div>
-                            <div>
-                                <div className="VmT5 nunito-text">20 MINUTES Burj Khalifa</div>
-                            </div>
-                            
-                        </div>
-                        <div className='col-md-6'>
-                            <div className='MapImageBox'>
-                                <Image
-                                                                                                src={`/${mapimage}`}
-                                                                                                width={719}
-                                                                                                height={509}
-                                                                                                layout="responsive"
-                                                                                                alt="Takmeel"
-                                                                                            />
+                            <div className='col-md-6'>
+                                <div className='MapImageBox'>
+                                    <Image
+                                        src={`/${mapimage}`}
+                                        width={719}
+                                        height={509}
+                                        layout="responsive"
+                                        alt="Takmeel"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
-                   </div>
                 </motion.div>
 
             </div>

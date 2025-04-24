@@ -19,7 +19,7 @@ import image2 from "../../public/abslider2.jpg"
 import image3 from "../../public/abslider3.jpg"
 import image4 from "../../public/abslider3.jpg"
 
-export default function ProjectDetails1() {
+export default function ProjectDetails1({data}) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
     var settings = {
@@ -73,9 +73,9 @@ export default function ProjectDetails1() {
                 >
                     <div className='row'>
                         <div className='col-md-12'>
-                            <div className="BlT1 nunito-text text-uppercase">Now Unveiling</div>
-                            <div className="BlT2 text-uppercase">Divine Living Arjan​</div>
-                            <div className="BlT3">Divine Living Arjan is an exceptional off-plan residential project developed by Takmeel Real Estate Development. Located within the vibrant city of Dubai, provides a sense of tranquil retreat within the bustling urban landscape. With its meticulously designed layouts and beautiful aesthetics, this project promises to attract modern homebuyers looking for spacious living spaces and timeless elegance.</div>
+                            <div className="BlT1 nunito-text text-uppercase">{data ? data.subheading : "Now Unveiling"}</div>
+                            <div className="BlT2 text-uppercase">{data ? data.heading : "Divine Living Arjan"}​</div>
+                            <div className="BlT3">{data ? data.content : "Divine Living Arjan is an exceptional off-plan residential project developed by Takmeel Real Estate Development. Located within the vibrant city of Dubai, provides a sense of tranquil retreat within the bustling urban landscape. With its meticulously designed layouts and beautiful aesthetics, this project promises to attract modern homebuyers looking for spacious living spaces and timeless elegance."}</div>
                         </div>
                         <div className='col-md-12 PrDetSliderBox'>
                             <Slider {...settings}>

@@ -14,7 +14,7 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom"; // ✅ Add zoom plug
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-export default function DetailHero({ backgroundImage, backgroundImageMobile, text1, text2, text3 }) {
+export default function DetailHero({ backgroundImage, backgroundImageMobile, text1, text2, text3, data }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
 
@@ -48,7 +48,7 @@ export default function DetailHero({ backgroundImage, backgroundImageMobile, tex
                 open={open}
                 close={() => setOpen(false)}
                 plugins={[Video, Thumbnails, Zoom]} // ✅ Include Zoom
-                slides={[
+                slides={data.media || [
 
                     {
                         type: "video",
@@ -97,9 +97,9 @@ export default function DetailHero({ backgroundImage, backgroundImageMobile, tex
                     >
                         <div className='row align-items-center'>
                             <div className='col-md-7'>
-                                <div className="Txt1 nunito-text">Project Showcase</div>
-                                <div className="Txt2 text-uppercase">Meydan Racecourse Mansion</div>
-                                <div className="Txt3 nunito-text">AL Barsha South, Dubai</div>
+                                <div className="Txt1 nunito-text">{data ? data.subheading : "Project Showcase"}</div>
+                                <div className="Txt2 text-uppercase">{data ? data.heading : "Meydan Racecourse Mansion"}</div>
+                                <div className="Txt3 nunito-text">{data ? data.location : "AL Barsha South, Dubai"}</div>
                             </div>
                             <div className='col-md-5'>
                                 <div className='ButtonsBox1'>
