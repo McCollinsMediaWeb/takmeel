@@ -1663,7 +1663,7 @@ opacity: 0.2;
   border: 0px solid #e4e4e4;
   outline: none;
   box-shadow: none;
-  padding-left: 150px;
+  padding-left: 160px;
 }
 .InputItem{
   margin-bottom: 15px;
@@ -1827,4 +1827,15 @@ opacity: 0.2;
   -webkit-appearance: none;  /* Chrome, Safari, Opera */
   -moz-appearance: none;     /* Firefox */
   appearance: none;          /* Standard */
+}
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
