@@ -78,7 +78,7 @@ export default function ProjectDetails7({ mapimage, data }) {
                                 <div className="BlT2 text-uppercase">EFFORTLESS ACCESS<br />
                                     To All Corners Of The City​</div>
 
-                                {data.length > 0 ? (
+                                {data?.length > 0 ? (
                                     data.map((line, index) => (
                                         <div key={index}>
                                             <div className="VmT5 nunito-text">{line}</div>
