@@ -2,15 +2,24 @@
 
 import Link from 'next/link';
 import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
 export default function FullScreenBanner({ backgroundImage, backgroundImageMobile, text1, text2, text3, tagline, url }) {
+
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.2,
+    });
+
+
     const bgUrl = `url("/${backgroundImage}")`;
     const isDesktop = useMediaQuery("(min-width: 960px)");
+
     return (
         <div className='FullScreenBanner'>
-            
-                {/* {isDesktop && (
+
+            {/* {isDesktop && (
 <Image
 src={`/${backgroundImage}`}
 width={1338}
@@ -29,7 +38,68 @@ alt="Takmeel"
 />
 )} */}
 
+            <div ref={ref}>
                 {isDesktop ? (
+                    backgroundImage.endsWith(".mp4") ? (
+                        inView && (
+                            <video
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                width="100%"
+                                height="100%"
+                                style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                            >
+                                <source src={`/${backgroundImage}`} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        )
+                    ) : (
+                        <motion.div
+                            animate={{ scale: [1, 1.10, 1] }}
+                            transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
+                            <Image
+                                src={`/${backgroundImage}`}
+                                width={1338}
+                                height={714}
+                                layout="responsive"
+                                alt="Takmeel"
+                                loading="lazy"
+                            />
+                        </motion.div>
+                    )
+                ) : backgroundImageMobile.endsWith(".mp4") ? (
+                    inView && (
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            width="100%"
+                            height="100%"
+                            style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                        >
+                            <source src={`/${backgroundImageMobile}`} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    )
+                ) : (
+                    <Image
+                        src={`/${backgroundImageMobile}`}
+                        width={697}
+                        height={768}
+                        layout="responsive"
+                        alt="Takmeel"
+                        loading="lazy"
+                    />
+                )}
+            </div>
+
+
+            {/* {isDesktop ? (
                     backgroundImage.endsWith(".mp4") ? (
                         <video
                             autoPlay
@@ -79,9 +149,9 @@ alt="Takmeel"
                         layout="responsive"
                         alt="Takmeel"
                     />
-                )}
+                )} */}
 
-           
+
             <div className='FsBannerContent'>
                 <div className='FsBannerContentFlex'>
                     <div className='container'>
