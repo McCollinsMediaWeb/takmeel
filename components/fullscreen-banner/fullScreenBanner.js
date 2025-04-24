@@ -14,16 +14,62 @@ export default function FullScreenBanner({ backgroundImage, backgroundImageMobil
                 transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
                 viewport={{ once: true, amount: 0.5 }}
             >
-                {isDesktop && (
-                    <Image
-                        src={`/${backgroundImage}`}
-                        width={1338}
-                        height={714}
-                        layout="responsive"
-                        alt="Takmeel"
-                    />
-                )}
-                {!isDesktop && (
+                {/* {isDesktop && (
+<Image
+src={`/${backgroundImage}`}
+width={1338}
+height={714}
+layout="responsive"
+alt="Takmeel"
+/>
+)}
+{!isDesktop && (
+<Image
+src={`/${backgroundImageMobile}`}
+width={697}
+height={768}
+layout="responsive"
+alt="Takmeel"
+/>
+)} */}
+
+                {isDesktop ? (
+                    backgroundImage.endsWith(".mp4") ? (
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            width="100%"
+                            height="100%"
+                            style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                        >
+                            <source src={`/${backgroundImage}`} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    ) : (
+                        <Image
+                            src={`/${backgroundImage}`}
+                            width={1338}
+                            height={714}
+                            layout="responsive"
+                            alt="Takmeel"
+                        />
+                    )
+                ) : backgroundImageMobile.endsWith(".mp4") ? (
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        width="100%"
+                        height="100%"
+                        style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                    >
+                        <source src={`/${backgroundImageMobile}`} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                ) : (
                     <Image
                         src={`/${backgroundImageMobile}`}
                         width={697}
@@ -32,6 +78,7 @@ export default function FullScreenBanner({ backgroundImage, backgroundImageMobil
                         alt="Takmeel"
                     />
                 )}
+
             </motion.div>
             <div className='FsBannerContent'>
                 <div className='FsBannerContentFlex'>
@@ -47,8 +94,16 @@ export default function FullScreenBanner({ backgroundImage, backgroundImageMobil
                                 <div className='Txt2 text-uppercase'>{text2}</div>
                                 <div className='Txt3 nunito-text'>{text3}</div>
                                 <div className='Txt17 nunito-text'>{tagline}</div>
-                                {[]}
-                                <Link href={`/detail-page/${url}`} className='Link1 hover1'>Explore Property</Link>
+                                <Link
+                                    href={["takmeel-al-barari-view-properties", "divine-residencia", "divine-living"].includes(url)
+                                        ? `/detail-page/${url}`
+                                        : '/detail-page'}
+                                    className='Link1 hover1'
+                                >
+                                    Explore Property
+                                </Link>
+
+                                {/* <Link href={`/detail-page/${url}`} className='Link1 hover1'>Explore Property</Link> */}
                             </div>
                         </motion.div>
 
