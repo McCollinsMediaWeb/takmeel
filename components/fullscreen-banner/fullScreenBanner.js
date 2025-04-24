@@ -9,11 +9,7 @@ export default function FullScreenBanner({ backgroundImage, backgroundImageMobil
     const isDesktop = useMediaQuery("(min-width: 960px)");
     return (
         <div className='FullScreenBanner'>
-            <motion.div
-                animate={{ scale: [1, 1.10, 1] }}
-                transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-                viewport={{ once: true, amount: 0.5 }}
-            >
+            
                 {/* {isDesktop && (
 <Image
 src={`/${backgroundImage}`}
@@ -48,6 +44,11 @@ alt="Takmeel"
                             Your browser does not support the video tag.
                         </video>
                     ) : (
+                        <motion.div
+                animate={{ scale: [1, 1.10, 1] }}
+                transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+                viewport={{ once: true, amount: 0.5 }}
+            >
                         <Image
                             src={`/${backgroundImage}`}
                             width={1338}
@@ -55,6 +56,7 @@ alt="Takmeel"
                             layout="responsive"
                             alt="Takmeel"
                         />
+                         </motion.div>
                     )
                 ) : backgroundImageMobile.endsWith(".mp4") ? (
                     <video
@@ -79,7 +81,7 @@ alt="Takmeel"
                     />
                 )}
 
-            </motion.div>
+           
             <div className='FsBannerContent'>
                 <div className='FsBannerContentFlex'>
                     <div className='container'>
