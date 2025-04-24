@@ -16,19 +16,43 @@ export default function ProjectDetails5() {
     const [viewer, setViewer] = useState(null);
     const [isFullScreen, setIsFullScreen] = useState(false);
 
+    // useEffect(() => {
+    //     if (viewerRef.current && !viewer) {
+    //         const newViewer = new Viewer({
+    //             container: viewerRef.current,
+    //             panorama: '/360-video.jpg', // ✅ Use path relative to /public
+    //             navbar: ['zoom', 'fullscreen'],
+    //             defaultYaw: 0,
+    //             defaultPitch: 0,
+    //         });
+
+    //         setViewer(newViewer);
+    //     }
+    // }, [viewer]);
+
     useEffect(() => {
-        if (viewerRef.current && !viewer) {
-            const newViewer = new Viewer({
+        let newViewer;
+    
+        if (viewerRef.current) {
+            newViewer = new Viewer({
                 container: viewerRef.current,
-                panorama: '/360-video.jpg', // ✅ Use path relative to /public
+                panorama: '/360-video.jpg',
                 navbar: ['zoom', 'fullscreen'],
                 defaultYaw: 0,
                 defaultPitch: 0,
             });
-
+    
             setViewer(newViewer);
         }
-    }, [viewer]);
+    
+        return () => {
+            if (newViewer) {
+                newViewer.destroy();
+            }
+        };
+    }, []);
+    
+    
 
 
     return (
