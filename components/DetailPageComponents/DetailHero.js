@@ -48,7 +48,7 @@ export default function DetailHero({ backgroundImage, backgroundImageMobile, tex
                 open={open}
                 close={() => setOpen(false)}
                 plugins={[Video, Thumbnails, Zoom]} // ✅ Include Zoom
-                slides={data.media || [
+                slides={data?.media || [
 
                     {
                         type: "video",
