@@ -45,8 +45,8 @@ export default function FullScreenBanner({ backgroundImage, backgroundImageMobil
                             <div>
                                 <div className='Txt1 nunito-text'>{text1}</div>
                                 <div className='Txt2 text-uppercase'>{text2}</div>
-                                <div className='Txt17 nunito-text'>{text3}</div>
-                                <div className='Txt3 nunito-text'>{tagline}</div>
+                                <div className='Txt3 nunito-text'>{text3}</div>
+                                <div className='Txt17 nunito-text'>{tagline}</div>
                                 {[]}
                                 <Link href={`/detail-page/${url}`} className='Link1 hover1'>Explore Property</Link>
                             </div>
