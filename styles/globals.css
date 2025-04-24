@@ -1844,3 +1844,7 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+.FullScreenBanner video{
+  max-height: 100vh !important;
+  object-fit: cover;
+}
