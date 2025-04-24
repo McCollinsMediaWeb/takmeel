@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import { useEffect } from 'react';
 import Slider from "react-slick";
 import Image from "next/image";
-import f1 from "../../public/f1.jpg"
-import f2 from "../../public/f2.jpg"
+// import f1 from "../../public/f1.jpg"
+// import f2 from "../../public/f2.jpg"
+import f1 from "../../public/person2.jpg"
+import f2 from "../../public/person1.jpg"
 // import f3 from "../../public/all-team.jpg"
 import f3 from '../../public/team-photo.jpg'
 import f4 from "../../public/f3.jpg"
