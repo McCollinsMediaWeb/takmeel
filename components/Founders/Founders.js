@@ -5,7 +5,8 @@ import Slider from "react-slick";
 import Image from "next/image";
 import f1 from "../../public/f1.jpg"
 import f2 from "../../public/f2.jpg"
-import f3 from "../../public/all-team.jpg"
+// import f3 from "../../public/all-team.jpg"
+import f3 from '../../public/team-photo.jpg'
 import f4 from "../../public/f3.jpg"
 import f5 from "../../public/f4.jpg"
 import f6 from "../../public/f5.jpg"
