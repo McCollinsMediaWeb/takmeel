@@ -1847,4 +1847,5 @@ input[type=number] {
 .FullScreenBanner video{
   max-height: 100vh !important;
   object-fit: cover;
+  background-position: center center;
 }
