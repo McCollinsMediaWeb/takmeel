@@ -10,7 +10,7 @@ import '@photo-sphere-viewer/core/index.css';
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-export default function ProjectDetails5({panoramaimage}) {
+export default function ProjectDetails5({ panoramaimage }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const viewerRef = useRef(null);
     const [viewer, setViewer] = useState(null);
@@ -32,27 +32,27 @@ export default function ProjectDetails5({panoramaimage}) {
 
     useEffect(() => {
         let newViewer;
-    
+
         if (viewerRef.current) {
             newViewer = new Viewer({
                 container: viewerRef.current,
-                panorama: {panoramaimage},
+                panorama: panoramaimage ,
                 navbar: ['zoom', 'fullscreen'],
                 defaultYaw: 0,
                 defaultPitch: 0,
             });
-    
+
             setViewer(newViewer);
         }
-    
+
         return () => {
             if (newViewer) {
                 newViewer.destroy();
             }
         };
     }, []);
-    
-    
+
+
 
 
     return (
