@@ -27,19 +27,11 @@ export default function DivineResidencia() {
                loop: false,
                controls: true,
              },
-             { src: "Studio Bespoke_Design Living_24.03.2023_Page_13_Image_0001.jpg" },
-             { src: "Studio Bespoke_Design Living_24.03.2023_Page_14_Image_0001.jpg" },
-             { src: "Studio Bespoke_Design Living_24.03.2023_Page_17_Image_0001.jpg" },
-             { src: "Studio Bespoke_Design Living_24.03.2023_Page_31_Image_0001.jpg" },
-             { src: "Studio Bespoke_Design Living_24.03.2023_Page_32_Image_0001.jpg" },
-             { src: "Studio Bespoke_Design Living_24.03.2023_Page_33_Image_0001.jpg" },
-             { src: "Studio Bespoke_Design Living_24.03.2023_Page_34_Image_0001.jpg" },
-             { src: "Studio Bespoke_Design Living_24.03.2023_Page_36_Image_0001.jpg" },
-             { src: "Studio Bespoke_Design Living_24.03.2023_Page_38_Image_0001.jpg" },
-             { src: "Studio Bespoke_Design Living_24.03.2023_Page_41_Image_0001.jpg" },
-             { src: "Studio Bespoke_Design Living_24.03.2023_Page_42_Image_0001.jpg" },
-             { src: "Studio Bespoke_Design Living_24.03.2023_Page_44_Image_0001.jpg" },
-             { src: "Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg" }
+             { src: "d1.jpg" },
+             { src: "d2.jpg" },
+             { src: "d3.jpg" },
+             { src: "d4.jpg" },
+             { src: "d5.jpg" },
            ],
          };
          
@@ -49,20 +41,11 @@ export default function DivineResidencia() {
            text3:
              "Nestled in the heart of Al Zorah, Ajman, Golf View Living offers a unique blend of peace, luxury, and accessibility. Overlooking the lush greens of Al Zorah Golf Course, the serene mangroves, and the Ajman skyline, this new residential development is the perfect escape—without ever leaving the city.",
            GalleryImages: [
-             "Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
-             "Studio Bespoke_Design Living_24.03.2023_Page_13_Image_0001.jpg",
-             "Studio Bespoke_Design Living_24.03.2023_Page_14_Image_0001.jpg",
-             "Studio Bespoke_Design Living_24.03.2023_Page_17_Image_0001.jpg",
-             "Studio Bespoke_Design Living_24.03.2023_Page_31_Image_0001.jpg",
-             "Studio Bespoke_Design Living_24.03.2023_Page_32_Image_0001.jpg",
-             "Studio Bespoke_Design Living_24.03.2023_Page_33_Image_0001.jpg",
-             "Studio Bespoke_Design Living_24.03.2023_Page_34_Image_0001.jpg",
-             "Studio Bespoke_Design Living_24.03.2023_Page_36_Image_0001.jpg",
-             "Studio Bespoke_Design Living_24.03.2023_Page_38_Image_0001.jpg",
-             "Studio Bespoke_Design Living_24.03.2023_Page_41_Image_0001.jpg",
-             "Studio Bespoke_Design Living_24.03.2023_Page_42_Image_0001.jpg",
-             "Studio Bespoke_Design Living_24.03.2023_Page_44_Image_0001.jpg",
-             "Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg",
+             "d1.jpg",
+             "d2.jpg",
+             "d3.jpg",
+             "d4.jpg",
+             "d5.jpg",
            ],
          };
          const DataProjectDetails2 = {
@@ -81,60 +64,24 @@ export default function DivineResidencia() {
              "Nestled in the heart of Al Zorah, Ajman, Golf View Living offers a unique blend of peace, luxury, and accessibility. Overlooking the lush greens of Al Zorah Golf Course, the serene mangroves, and the Ajman skyline, this new residential development is the perfect escape—without ever leaving the city.",
              GalleryImagesWithNames : [
                {
-                 src: "Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
+                 src: "d1.jpg",
                  title: "Welcome Lounge",
                },
                {
-                 src: "Studio Bespoke_Design Living_24.03.2023_Page_13_Image_0001.jpg",
+                 src: "d2.jpg",
                  title: "Lounge",
                },
                {
-                 src: "Studio Bespoke_Design Living_24.03.2023_Page_14_Image_0001.jpg",
+                 src: "d3.jpg",
                  title: "Gym",
                },
                {
-                 src: "Studio Bespoke_Design Living_24.03.2023_Page_17_Image_0001.jpg",
+                 src: "d4.jpg",
                  title: "Kitchen Area",
                },
                {
-                 src: "Studio Bespoke_Design Living_24.03.2023_Page_31_Image_0001.jpg",
+                 src: "d5.jpg",
                  title: "Living Room",
-               },
-               {
-                 src: "Studio Bespoke_Design Living_24.03.2023_Page_32_Image_0001.jpg",
-                 title: "Living Room",
-               },
-               {
-                 src: "Studio Bespoke_Design Living_24.03.2023_Page_33_Image_0001.jpg",
-                 title: "Bathroom",
-               },
-               {
-                 src: "Studio Bespoke_Design Living_24.03.2023_Page_34_Image_0001.jpg",
-                 title: "Bed Room",
-               },
-               {
-                 src: "Studio Bespoke_Design Living_24.03.2023_Page_36_Image_0001.jpg",
-                 title: "Living Room",
-               },
-               {
-                 src: "Studio Bespoke_Design Living_24.03.2023_Page_38_Image_0001.jpg",
-                 title: "Living Room",
-               },
-               {
-                 src: "Studio Bespoke_Design Living_24.03.2023_Page_41_Image_0001.jpg",
-                 title: "Bed Room",
-               },
-               {
-                 src: "Studio Bespoke_Design Living_24.03.2023_Page_42_Image_0001.jpg",
-                 title: "Living Room",
-               },
-               {
-                 src: "Studio Bespoke_Design Living_24.03.2023_Page_44_Image_0001.jpg",
-                 title: "Bed Room",
-               },
-               {
-                 src: "Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg",
-                 title: "Lounge",
                },
              ],
          };
