@@ -411,4 +411,8 @@
       .mtm{
         margin-top: 15px !important;
       }
+      .scrolled.MainHeader {
+        background-color: #1d1d1d !important ;
+        backdrop-filter: blur(50px);
+      }
   }
