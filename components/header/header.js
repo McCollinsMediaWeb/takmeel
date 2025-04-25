@@ -11,21 +11,21 @@ export default function Header() {
   const isHome = pathname === '/' || pathname === '/detail-page';
 
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 0) {
-  //       document.body.classList.add('scrolled');
-  //     } else {
-  //       document.body.classList.remove('scrolled');
-  //     }
-  //   };
-  //   window.addEventListener('scroll', handleScroll);
-  //   handleScroll();
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        document.body.classList.add('scrolledOne');
+      } else {
+        document.body.classList.remove('scrolledOne');
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className={`MainHeader stickyHeader ${!isHome ? 'fixed-class' : ''}`}>
+    <header className={`MainHeader ${!isHome ? 'fixed-class' : ''}`}>
       <TakmeelMenu/>
       <HeaderForm/>
       <div className='container-fluid'>
