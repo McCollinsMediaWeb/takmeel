@@ -79,7 +79,7 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
                         </div>
                         <div className='col-md-12 PrDetSliderBox'>
                             <Slider {...settings}>
-                                {GalleryImages.length > 0 ? (
+                                {GalleryImages?.length > 0 ? (
                                     GalleryImages.map((img) => (
                                         <div className='AbSliderItem' onClick={() => setOpen(true)}>
                                             <div className='ImageBox'><Image
