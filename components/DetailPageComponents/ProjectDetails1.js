@@ -19,7 +19,7 @@ import image2 from "../../public/abslider2.jpg"
 import image3 from "../../public/abslider3.jpg"
 import image4 from "../../public/abslider3.jpg"
 
-export default function ProjectDetails1({data}) {
+export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
     var settings = {
@@ -73,13 +73,90 @@ export default function ProjectDetails1({data}) {
                 >
                     <div className='row'>
                         <div className='col-md-12'>
-                            <div className="BlT1 nunito-text text-uppercase">{data ? data.subheading : "Now Unveiling"}</div>
-                            <div className="BlT2 text-uppercase">{data ? data.heading : "Divine Living Arjan"}​</div>
-                            <div className="BlT3">{data ? data.content : "Divine Living Arjan is an exceptional off-plan residential project developed by Takmeel Real Estate Development. Located within the vibrant city of Dubai, provides a sense of tranquil retreat within the bustling urban landscape. With its meticulously designed layouts and beautiful aesthetics, this project promises to attract modern homebuyers looking for spacious living spaces and timeless elegance."}</div>
+                            <div className="BlT1 nunito-text text-uppercase">{text1}</div>
+                            <div className="BlT2 text-uppercase">{text2}​</div>
+                            <div className="BlT3">{text3}</div>
                         </div>
                         <div className='col-md-12 PrDetSliderBox'>
                             <Slider {...settings}>
-                                <div className='AbSliderItem'  onClick={() => setOpen(true)}>
+                                {GalleryImages.length > 0 ? (
+                                    GalleryImages.map((img) => (
+                                        <div className='AbSliderItem' onClick={() => setOpen(true)}>
+                                            <div className='ImageBox'><Image
+                                                src={`/${img}`}
+                                                width={893}
+                                                height={601}
+                                                layout="responsive"
+                                                alt="Takmeel"
+                                            /></div>
+
+                                        </div>
+                                    ))
+                                ) : (
+                                    <>
+                                        <div className='AbSliderItem' onClick={() => setOpen(true)}>
+                                            <div className='ImageBox'><Image
+                                                src={image1}
+                                                width={893}
+                                                height={601}
+                                                layout="responsive"
+                                                alt="Takmeel"
+                                            /></div>
+
+                                        </div>
+                                        <div className='AbSliderItem' onClick={() => setOpen(true)}>
+                                            <div className='ImageBox'><Image
+                                                src={image2}
+                                                width={893}
+                                                height={601}
+                                                layout="responsive"
+                                                alt="Takmeel"
+                                            /></div>
+
+                                        </div>
+                                        <div className='AbSliderItem' onClick={() => setOpen(true)}>
+                                            <div className='ImageBox'><Image
+                                                src={image3}
+                                                width={893}
+                                                height={601}
+                                                layout="responsive"
+                                                alt="Takmeel"
+                                            /></div>
+
+                                        </div>
+                                        <div className='AbSliderItem' onClick={() => setOpen(true)}>
+                                            <div className='ImageBox'><Image
+                                                src={image1}
+                                                width={893}
+                                                height={601}
+                                                layout="responsive"
+                                                alt="Takmeel"
+                                            /></div>
+
+                                        </div>
+                                        <div className='AbSliderItem' onClick={() => setOpen(true)}>
+                                            <div className='ImageBox'><Image
+                                                src={image2}
+                                                width={893}
+                                                height={601}
+                                                layout="responsive"
+                                                alt="Takmeel"
+                                            /></div>
+
+                                        </div>
+                                        <div className='AbSliderItem' onClick={() => setOpen(true)}>
+                                            <div className='ImageBox'><Image
+                                                src={image3}
+                                                width={893}
+                                                height={601}
+                                                layout="responsive"
+                                                alt="Takmeel"
+                                            /></div>
+
+                                        </div>
+                                    </>
+                                )}
+                                <div className='AbSliderItem' onClick={() => setOpen(true)}>
                                     <div className='ImageBox'><Image
                                         src={image1}
                                         width={893}
@@ -89,7 +166,7 @@ export default function ProjectDetails1({data}) {
                                     /></div>
 
                                 </div>
-                                <div className='AbSliderItem'  onClick={() => setOpen(true)}>
+                                <div className='AbSliderItem' onClick={() => setOpen(true)}>
                                     <div className='ImageBox'><Image
                                         src={image2}
                                         width={893}
@@ -143,34 +220,14 @@ export default function ProjectDetails1({data}) {
                             <Lightbox
                                 open={open}
                                 close={() => setOpen(false)}
-                                plugins={[Video, Thumbnails, Zoom]} // ✅ Include Zoom
+                                plugins={[Video, Thumbnails, Zoom]}
                                 slides={[
-
-                                    {
-                                        type: "video",
-                                        width: 1920,
-                                        height: 1080,
-                                        poster: "abslider3.jpg",
-                                        autoPlay: true,
-                                        loop: false,
-                                        controls: true,
-                                        sources: [
-                                            {
-                                                src: "/video.mp4",
-                                                type: "video",
-                                            },
-                                        ],
-                                    },
-                                    { src: "/abslider1.jpg" },
-                                    { src: "/abslider2.jpg" },
-                                    { src: "/abslider3.jpg" },
-                                    { src: "/abslider4.jpg" },
-                                    { src: "/main1.jpg" },
-                                    { src: "/main2.jpg" },
-                                    { src: "/main3.jpg" },
-                                    { src: "/main4.jpg" },
+                                    ...GalleryImages.map((img) => ({
+                                        src: `/${img}`,
+                                    })),
                                 ]}
                             />
+
                         </div>
                     </div>
                 </motion.div>
