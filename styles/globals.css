@@ -63,7 +63,7 @@ header {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.scrolled header {
+.scrolledOne header {
   /* background-color: rgba(0, 0, 0, 0.5); */
   backdrop-filter: blur(15px);
   background-color: #00000059;
@@ -809,7 +809,7 @@ header.fixed-class {
   background-color: #1D1D1D;
 }
 
-.scrolled header.fixed-class {
+.scrolledOne header.fixed-class {
   position: fixed;
   left: 0;
   top: 0;
