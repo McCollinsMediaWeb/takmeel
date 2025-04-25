@@ -19,7 +19,7 @@ import image2 from "../../public/abslider2.jpg"
 import image3 from "../../public/abslider3.jpg"
 import image4 from "../../public/abslider3.jpg"
 
-export default function ProjectDetails2({ mainimage1,mainimage2 }) {
+export default function ProjectDetails2({ ThumbImage1,ThumbImage2,text1Heading ,text1Desc,text2Heading ,text2Desc }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
     var settings = {
@@ -73,13 +73,14 @@ export default function ProjectDetails2({ mainimage1,mainimage2 }) {
                 >
                     <div className='row align-items-center mb3'>
                         <div className='col-md-6'>
-                            <div className='Det2T1 nunito-text'>
-                                A haven designed for luxurious living and entertainment. As you enter the ground floor, a double-height entrance lobby greets you, leading to formal living and dining areas exuding sophistication. A spacious family living hall with double height creates an inviting ambiance. The floor also hosts an office, a guest bedroom, a master bedroom, and exquisite kitchens designed for both showcasing culinary skills and everyday convenience.
+                            <div className='BlT2 text-uppercase'>{text1Heading}</div>
+                            <div className='Det2T1'>
+                                {text1Desc}
                             </div>
                         </div>
                         <div className='col-md-6'>
                             <Image
-                                src={`/${mainimage1}`}
+                                src={`/${ThumbImage1}`}
                                 width={1338}
                                 height={714}
                                 layout="responsive"
@@ -90,7 +91,7 @@ export default function ProjectDetails2({ mainimage1,mainimage2 }) {
                     <div className='row align-items-center'>
                         <div className='col-md-6'>
                             <Image
-                                src={`/${mainimage2}`}
+                                src={`/${ThumbImage2}`}
                                 width={1338}
                                 height={714}
                                 layout="responsive"
@@ -98,8 +99,10 @@ export default function ProjectDetails2({ mainimage1,mainimage2 }) {
                             />
                         </div>
                         <div className='col-md-6'>
-                            <div className='Det2T1 nunito-text mb'>Ascending to the first floor, discover four master bedrooms adorned with dressing areas and balconies offering panoramic views of the racecourse. A study room and a breakfast kitchen, complemented by a maid’s room, cater to both privacy and convenience.</div>
-                            <div className='Det2T1 nunito-text'>The pinnacle of luxury awaits at every step. Every room in this architectural marvel offers an exclusive view of the racecourse, complemented by meticulously designed landscapes that enhance the overall ambiance. The use of natural cut stone and European interior aesthetics, blending Russian elegance with Italian grace, adds an extraordinary touch to each space.</div>
+                            <div className='BlT2 text-uppercase mtm'>{text2Heading}</div>
+                            <div className='Det2T1'>
+                                {text2Desc}
+                            </div>
                         </div>
 
                     </div>

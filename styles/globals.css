@@ -1360,6 +1360,7 @@ body .slick-prev::before {
 
 .Det2T1 {
   line-height: 1.4;
+  font-size: 23px;
 }
 
 .Det2T1.mb {
@@ -1429,6 +1430,7 @@ body .slick-prev::before {
   background-size: 100% 100%;
   margin: 0 auto;
   margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .FeatureBoxIcon.FeatureBoxIcon1 {

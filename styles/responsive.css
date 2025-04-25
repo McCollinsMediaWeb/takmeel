@@ -310,6 +310,7 @@
       .Det2T1 {
         line-height: 1.2;
         margin-bottom: 15px;
+        font-size: 16px;
       }
       .Det2T1.mb{
         margin-bottom: 15px;
@@ -406,5 +407,8 @@
       .DetSlContentBox{
         align-items: center;
         text-align: center;
+      }
+      .mtm{
+        margin-top: 15px !important;
       }
   }

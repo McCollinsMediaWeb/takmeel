@@ -11,8 +11,8 @@ import CostCalculator from "@/components/DetailPageComponents/CostCalculator";
 import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
 export default function DivineLiving() {
     const detailHeroData = {
-        backgroundImage: "Divine-Residencia-Video.mp4",
-        backgroundImageMobile: "dmobile.jpg",
+        backgroundImage: "bannerDesktopFirst.jpg",
+        backgroundImageMobile: "bannerMobileFirst.jpg",
         text1: "Thoughtfully Designed for Peaceful Living",
         text2: "Divine Living",
         text3: "Arjan, Dubai",
@@ -65,14 +65,86 @@ export default function DivineLiving() {
           "Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg",
         ],
       };
-      
+      const DataProjectDetails2 = {
+        ThumbImage1: "Studio Bespoke_Design Living_24.03.2023_Page_32_Image_0001.jpg",
+        ThumbImage2: "Studio Bespoke_Design Living_24.03.2023_Page_36_Image_0001.jpg",
+        text1Heading: "Spacious Urban Living in Arjan",
+        text1Desc: "This exclusive development features a curated selection of: 1, 2 & 3 Bedroom Apartments ,  Meticulously planned layouts ,  High-quality finishing & sanitary ware World-class materials throughout",
+        text2Heading: "A Family-Friendly Community with Everything You Need",
+        text2Desc: "Enjoy a peaceful lifestyle with convenient access to key destinations: Close to Dubai Miracle Garden & Butterfly Garden , Easy access to Sheikh Zayed Road & Umm Suqeim Street Tranquil ,  surroundings with minimal noise and traffic",
+        
+      };
+      const DataProjectDetails4 = {
+        text1: "Modern Living in the Heart of Al Zorah",
+        text2: "Spectacular Views, Contemporary Comfort",
+        text3:
+          "Nestled in the heart of Al Zorah, Ajman, Golf View Living offers a unique blend of peace, luxury, and accessibility. Overlooking the lush greens of Al Zorah Golf Course, the serene mangroves, and the Ajman skyline, this new residential development is the perfect escape—without ever leaving the city.",
+          GalleryImagesWithNames : [
+            {
+              src: "Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
+              title: "Welcome Lounge",
+            },
+            {
+              src: "Studio Bespoke_Design Living_24.03.2023_Page_13_Image_0001.jpg",
+              title: "Lounge",
+            },
+            {
+              src: "Studio Bespoke_Design Living_24.03.2023_Page_14_Image_0001.jpg",
+              title: "Gym",
+            },
+            {
+              src: "Studio Bespoke_Design Living_24.03.2023_Page_17_Image_0001.jpg",
+              title: "Kitchen Area",
+            },
+            {
+              src: "Studio Bespoke_Design Living_24.03.2023_Page_31_Image_0001.jpg",
+              title: "Living Room",
+            },
+            {
+              src: "Studio Bespoke_Design Living_24.03.2023_Page_32_Image_0001.jpg",
+              title: "Living Room",
+            },
+            {
+              src: "Studio Bespoke_Design Living_24.03.2023_Page_33_Image_0001.jpg",
+              title: "Bathroom",
+            },
+            {
+              src: "Studio Bespoke_Design Living_24.03.2023_Page_34_Image_0001.jpg",
+              title: "Bed Room",
+            },
+            {
+              src: "Studio Bespoke_Design Living_24.03.2023_Page_36_Image_0001.jpg",
+              title: "Living Room",
+            },
+            {
+              src: "Studio Bespoke_Design Living_24.03.2023_Page_38_Image_0001.jpg",
+              title: "Living Room",
+            },
+            {
+              src: "Studio Bespoke_Design Living_24.03.2023_Page_41_Image_0001.jpg",
+              title: "Bed Room",
+            },
+            {
+              src: "Studio Bespoke_Design Living_24.03.2023_Page_42_Image_0001.jpg",
+              title: "Living Room",
+            },
+            {
+              src: "Studio Bespoke_Design Living_24.03.2023_Page_44_Image_0001.jpg",
+              title: "Bed Room",
+            },
+            {
+              src: "Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg",
+              title: "Lounge",
+            },
+          ],
+      };
     return (
         <div>
             <DetailHero {...detailHeroData} />
             <ProjectDetails1  {...DataProjectDetails1} />
-            <ProjectDetails2 mainimage1="prd1.jpg" mainimage2="prd2.jpg" />
-            <ProjectDetails3 mainimage1="amn1.jpg" />
-            <ProjectDetails4 />
+            <ProjectDetails2  {...DataProjectDetails2} />
+            <ProjectDetails3 mainimage1="ovr1.jpg" />
+            <ProjectDetails4  {...DataProjectDetails4}  />
             <ProjectDetails5 />
             <ProjectDetails6 planImage="plan1.jpg" />
             <ProjectDetails7 mapimage="map1.jpg" />
