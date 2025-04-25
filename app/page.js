@@ -20,7 +20,7 @@ export default function Home() {
         <FullScreenBanner backgroundImage="Golf-View-Living-Villa.mp4" backgroundImageMobile="Golf-View-Living-Villa.mp4" text1="Featured Properties"  text2="Golf View Living Villas" text3="Ajman" tagline="Private Villas Surrounded by Nature’s Calm" url="golf-view-living-villas" />
         <FullScreenBanner backgroundImage="meydan.webp" backgroundImageMobile="meydan.webp" text1="Featured Properties"  text2="Meydan Racecourse Mansion" text3="Dubai" tagline="Where Grandeur Meets Precision" url="meydan-racecourse-mansion" />
         <FullScreenBanner backgroundImage="Divine-Residence-Image.jpg" backgroundImageMobile="Divine-Residence-Image.jpg" text1="Featured Properties"  text2="Divine Residencies" text3="Dubai" tagline="Smart Spaces Crafted for Modern Lifestyles" url="divine-residencies" />
-        <HomeBanner2 backgroundImage="np1.jpg" backgroundImageMobile="np1mobile.jpg" text1="Project Showcase"  text2="Meydan Racecourse Mansion" text3="Embark on a journey through luxury, elegance, and innovation at Meydan Racecourse Mansion—a timeless landmark in TAKMEEL’s portfolio, promising an unparalleled lifestyle experience amidst breathtaking views and unparalleled grandeur."/>
+        {/* <HomeBanner2 backgroundImage="np1.jpg" backgroundImageMobile="np1mobile.jpg" text1="Project Showcase"  text2="Meydan Racecourse Mansion" text3="Embark on a journey through luxury, elegance, and innovation at Meydan Racecourse Mansion—a timeless landmark in TAKMEEL’s portfolio, promising an unparalleled lifestyle experience amidst breathtaking views and unparalleled grandeur."/> */}
         <HomeAbout/>2
         <SoldOutBox/>
         <ContactForm/>
