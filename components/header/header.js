@@ -25,7 +25,7 @@ export default function Header() {
   // }, []);
 
   return (
-    <header className={`MainHeader ${!isHome ? 'fixed-class' : ''}`}>
+    <header className={`MainHeader stickyHeader ${!isHome ? 'fixed-class' : ''}`}>
       <TakmeelMenu/>
       <HeaderForm/>
       <div className='container-fluid'>
@@ -38,11 +38,11 @@ export default function Header() {
               <Link href="/">
                 <img src='/logo.png' className='MainLogo' />
               </Link>
-              
+
             </div>
             <div className='HeaderBoxRight'>
               <div className='Link4 hover1 toggleForm cursor-pointer'>
-               Get in Touch
+                Get in Touch
               </div>
             </div>
           </div>

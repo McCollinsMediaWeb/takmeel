@@ -197,13 +197,13 @@ export default function DetailHero({
             type: 'video',
             width: 1920,
             height: 1080,
-            poster: 'abslider3.jpg',
+            // poster: 'abslider3.jpg',
             autoPlay: true,
             loop: false,
             controls: true,
             sources: [
                 {
-                    src: '/video.mp4',
+                    src: '/Divine-Residencia-Video.mp4',
                     type: 'video'
                 }
             ]
@@ -284,7 +284,30 @@ export default function DetailHero({
                 open={open}
                 close={() => setOpen(false)}
                 plugins={[Video, Thumbnails, Zoom]}
-                slides={GalleryMedia && GalleryMedia?.length > 0 ? GalleryMedia : defaultSlides}
+                // slides={GalleryMedia && GalleryMedia?.length > 0 ? GalleryMedia : defaultSlides}
+                // slides={defaultSlides}
+                slides={[
+                    {
+                        type: "video",
+                        width: 1280,
+                        height: 720,
+                        // poster: "/public/poster-image.jpg",
+                        sources: [
+                            {
+                                src: "/Divine-Residencia-Video.mp4",
+                                type: "video/mp4",
+                            },
+                        ],
+                    },
+                    { src: '/abslider1.jpg' },
+                    { src: '/abslider2.jpg' },
+                    { src: '/abslider3.jpg' },
+                    { src: '/abslider4.jpg' },
+                    { src: '/main1.jpg' },
+                    { src: '/main2.jpg' },
+                    { src: '/main3.jpg' },
+                    { src: '/main4.jpg' }
+                ]}
             />
 
             <div className="DetSlContentBox">
