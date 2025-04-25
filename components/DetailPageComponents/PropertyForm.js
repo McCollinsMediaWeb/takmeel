@@ -19,7 +19,7 @@ export default function PropertyForm({ }) {
                     viewport={{ once: true, amount: 0.5 }}
                 >
                     <div className='text-center ppT1 nunito-text'>RGISTER YOUR INTEREST FOR </div>
-                    <div className='text-center ppT2'>takmeel Al Barari Properties</div>
+                    <div className='text-center ppT2'>Get in Touch with Us</div>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
