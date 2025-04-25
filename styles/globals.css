@@ -1866,3 +1866,12 @@ height: 100% !important;
 width: 100% !important;
 object-fit: cover !important;
 }
+
+.no-hover-color {
+  color: inherit;
+  text-decoration: none;
+}
+.no-hover-color:hover {
+  color: inherit;
+  text-decoration: none;
+}

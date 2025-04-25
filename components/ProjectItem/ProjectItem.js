@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { motion } from "framer-motion";
 import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
-export default function ProjectItem({ backgroundImage,backgroundImageMobile, text2, text3 }) {
+export default function ProjectItem({ backgroundImage,backgroundImageMobile, text2, text3, url }) {
     const bgUrl = `url("/${backgroundImage}")`;
     const isDesktop = useMediaQuery("(min-width: 960px)");
     return (
@@ -46,7 +46,7 @@ export default function ProjectItem({ backgroundImage,backgroundImageMobile, tex
                                 
                                 <div className='Txt2 text-uppercase'>{text2}</div>
                                 <div className='Txt3 nunito-text'>{text3}</div>
-                                <Link href="/detail-page" className='Link1 hover1'>Explore Property</Link>
+                                <Link href={`/detail-page/${url}`} className='Link1 hover1'>Explore Property</Link>
                             </div>
                         </motion.div>
 

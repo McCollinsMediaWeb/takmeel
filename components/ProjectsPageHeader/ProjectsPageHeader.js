@@ -7,6 +7,7 @@ import p1 from "../../public/p1.jpg"
 import p2 from "../../public/p2.jpg"
 import p3 from "../../public/p3.jpg"
 import p4 from "../../public/p4.jpg"
+import Link from "next/link";
 
 
 export default function ProjectsPageHeader() {
@@ -56,7 +57,7 @@ export default function ProjectsPageHeader() {
                     slidesToScroll: 1,
                     infinite: true,
                     dots: true,
-                    centerMode:true
+                    centerMode: true
                 }
             },
             {
@@ -65,7 +66,7 @@ export default function ProjectsPageHeader() {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 1,
-                    centerMode:true
+                    centerMode: true
                 }
             },
             {
@@ -73,7 +74,7 @@ export default function ProjectsPageHeader() {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerMode:true
+                    centerMode: true
                 }
             }
         ]
@@ -99,72 +100,141 @@ export default function ProjectsPageHeader() {
                             <div className="FtrProperties">
                                 <Slider {...settings}>
                                     <div>
-                                        <div className="FtrProject">
-                                            <div className="ProjectImage">
-                                                <Image
-                                                    src={p1}
-                                                    width={297}
-                                                    height={166}
-                                                    layout="responsive"
-                                                    alt="Takmeel"
-                                                />
+                                        <Link className="no-hover-color" href="/detail-page/takmeel-al-barari-view-properties">
+                                            <div className="FtrProject">
+                                                <div className="ProjectImage">
+                                                    <Image
+                                                        src={p1}
+                                                        width={297}
+                                                        height={166}
+                                                        layout="responsive"
+                                                        alt="Takmeel"
+                                                    />
+                                                </div>
+                                                <div className="ProjectDetails text-center">
+                                                    <div className="PT1">Takmeel Al Barari View Properties</div>
+                                                    <div className="PT2">Majan, Dubai</div>
+                                                </div>
                                             </div>
-                                            <div className="ProjectDetails text-center">
-                                                <div className="PT1">Divine Residencia</div>
-                                                <div className="PT2">Dubai Studio City</div>
-                                            </div>
-                                        </div>
+                                        </Link>
+
                                     </div>
                                     <div>
-                                        <div className="FtrProject">
-                                            <div className="ProjectImage">
-                                                <Image
-                                                    src={p2}
-                                                    width={297}
-                                                    height={166}
-                                                    layout="responsive"
-                                                    alt="Takmeel"
-                                                />
+                                        <Link className="no-hover-color" href="/detail-page/divine-residencia">
+                                            <div className="FtrProject">
+                                                <div className="ProjectImage">
+                                                    <Image
+                                                        src={p2}
+                                                        width={297}
+                                                        height={166}
+                                                        layout="responsive"
+                                                        alt="Takmeel"
+                                                    />
+                                                </div>
+                                                <div className="ProjectDetails text-center">
+                                                    <div className="PT1">Divine Residencia</div>
+                                                    <div className="PT2">Dubai Studio City, Dubai</div>
+                                                </div>
                                             </div>
-                                            <div className="ProjectDetails text-center">
-                                                <div className="PT1">Divine Residencia</div>
-                                                <div className="PT2">Dubai Studio City</div>
-                                            </div>
-                                        </div>
+                                        </Link>
                                     </div>
                                     <div>
-                                        <div className="FtrProject">
-                                            <div className="ProjectImage">
-                                                <Image
-                                                    src={p3}
-                                                    width={297}
-                                                    height={166}
-                                                    layout="responsive"
-                                                    alt="Takmeel"
-                                                />
+                                        <Link className="no-hover-color" href="/detail-page/divine-living">
+                                            <div className="FtrProject">
+                                                <div className="ProjectImage">
+                                                    <Image
+                                                        src={p3}
+                                                        width={297}
+                                                        height={166}
+                                                        layout="responsive"
+                                                        alt="Takmeel"
+                                                    />
+                                                </div>
+                                                <div className="ProjectDetails text-center">
+                                                    <div className="PT1">Divine Living</div>
+                                                    <div className="PT2">Arjan, Dubai</div>
+                                                </div>
                                             </div>
-                                            <div className="ProjectDetails text-center">
-                                                <div className="PT1">Divine Residencia</div>
-                                                <div className="PT2">Dubai Studio City</div>
-                                            </div>
-                                        </div>
+                                        </Link>
                                     </div>
                                     <div>
-                                        <div className="FtrProject">
-                                            <div className="ProjectImage">
-                                                <Image
-                                                    src={p4}
-                                                    width={297}
-                                                    height={166}
-                                                    layout="responsive"
-                                                    alt="Takmeel"
-                                                />
+                                        <Link className="no-hover-color" href="/detail-page/golf-view-living-apartments">
+                                            <div className="FtrProject">
+                                                <div className="ProjectImage">
+                                                    <Image
+                                                        src={p4}
+                                                        width={297}
+                                                        height={166}
+                                                        layout="responsive"
+                                                        alt="Takmeel"
+                                                    />
+                                                </div>
+                                                <div className="ProjectDetails text-center">
+                                                    <div className="PT1">Golf View Living Apartments</div>
+                                                    <div className="PT2">Ajman</div>
+                                                </div>
                                             </div>
-                                            <div className="ProjectDetails text-center">
-                                                <div className="PT1">Divine Residencia</div>
-                                                <div className="PT2">Dubai Studio City</div>
+                                        </Link>
+                                    </div>
+
+                                    <div>
+                                        <Link className="no-hover-color" href="/detail-page/golf-view-living-villas">
+                                            <div className="FtrProject">
+                                                <div className="ProjectImage">
+                                                    <Image
+                                                        src={p4}
+                                                        width={297}
+                                                        height={166}
+                                                        layout="responsive"
+                                                        alt="Takmeel"
+                                                    />
+                                                </div>
+                                                <div className="ProjectDetails text-center">
+                                                    <div className="PT1">Golf View Living Villas</div>
+                                                    <div className="PT2">Ajman</div>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </Link>
+                                    </div>
+
+                                    <div>
+                                        <Link className="no-hover-color" href="/detail-page/meydan-racecourse-mansion">
+                                            <div className="FtrProject">
+                                                <div className="ProjectImage">
+                                                    <Image
+                                                        src={p4}
+                                                        width={297}
+                                                        height={166}
+                                                        layout="responsive"
+                                                        alt="Takmeel"
+                                                    />
+                                                </div>
+                                                <div className="ProjectDetails text-center">
+                                                    <div className="PT1">Meydan Racecourse Mansion</div>
+                                                    <div className="PT2">Dubai</div>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+
+                                    <div>
+                                        <Link className="no-hover-color" href="/detail-page/divine-residencies">
+                                            <div className="FtrProject">
+                                                <div className="ProjectImage">
+                                                    <Image
+                                                        src={p4}
+                                                        width={297}
+                                                        height={166}
+                                                        layout="responsive"
+                                                        alt="Takmeel"
+                                                    />
+                                                </div>
+                                                <div className="ProjectDetails text-center">
+                                                    <div className="PT1">Divine Residencies</div>
+                                                    <div className="PT2">Dubai</div>
+                                                </div>
+                                            </div>
+                                        </Link>
                                     </div>
                                 </Slider>
                             </div>
