@@ -166,16 +166,7 @@ alt="Takmeel"
                                 <div className='Txt2 text-uppercase'>{text2}</div>
                                 <div className='Txt3 nunito-text'>{text3}</div>
                                 <div className='Txt17 nunito-text'>{tagline}</div>
-                                <Link
-                                    href={["takmeel-al-barari-view-properties", "divine-residencia", "divine-living"].includes(url)
-                                        ? `/detail-page/${url}`
-                                        : '/detail-page'}
-                                    className='Link1 hover1'
-                                >
-                                    Explore Property
-                                </Link>
-
-                                {/* <Link href={`/detail-page/${url}`} className='Link1 hover1'>Explore Property</Link> */}
+                                <Link href={`/detail-page/${url}`} className='Link1 hover1'>Explore Property</Link>
                             </div>
                         </motion.div>
 
