@@ -64,7 +64,7 @@ header {
 }
 
 .scrolled header {
-  background-color: #1D1D1D;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .HeaderBox {
