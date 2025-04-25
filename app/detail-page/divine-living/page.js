@@ -15,29 +15,57 @@ export default function DivineLiving() {
         backgroundImageMobile: "dmobile.jpg",
         text1: "Thoughtfully Designed for Peaceful Living",
         text2: "Divine Living",
-        text3: "Arjan, Dubai"
+        text3: "Arjan, Dubai",
+        GalleryMedia: [
+          {
+            type: "video",
+            src: "/Divine-Residencia-Video.mp4",
+            poster: "/images/Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
+            width: 1920,
+            height: 1080,
+            autoPlay: true,
+            loop: false,
+            controls: true,
+          },
+          { src: "/images/Studio Bespoke_Design Living_24.03.2023_Page_13_Image_0001.jpg" },
+          { src: "/images/Studio Bespoke_Design Living_24.03.2023_Page_14_Image_0001.jpg" },
+          { src: "/images/Studio Bespoke_Design Living_24.03.2023_Page_17_Image_0001.jpg" },
+          { src: "/images/Studio Bespoke_Design Living_24.03.2023_Page_31_Image_0001.jpg" },
+          { src: "/images/Studio Bespoke_Design Living_24.03.2023_Page_32_Image_0001.jpg" },
+          { src: "/images/Studio Bespoke_Design Living_24.03.2023_Page_33_Image_0001.jpg" },
+          { src: "/images/Studio Bespoke_Design Living_24.03.2023_Page_34_Image_0001.jpg" },
+          { src: "/images/Studio Bespoke_Design Living_24.03.2023_Page_36_Image_0001.jpg" },
+          { src: "/images/Studio Bespoke_Design Living_24.03.2023_Page_38_Image_0001.jpg" },
+          { src: "/images/Studio Bespoke_Design Living_24.03.2023_Page_41_Image_0001.jpg" },
+          { src: "/images/Studio Bespoke_Design Living_24.03.2023_Page_42_Image_0001.jpg" },
+          { src: "/images/Studio Bespoke_Design Living_24.03.2023_Page_44_Image_0001.jpg" },
+          { src: "/images/Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg" }
+        ]
       };
+      
       const DataProjectDetails1 = {
         text1: "Modern Living in the Heart of Al Zorah",
         text2: "Spectacular Views, Contemporary Comfort",
-        text3: "Nestled in the heart of Al Zorah, Ajman, Golf View Living offers a unique blend of peace, luxury, and accessibility. Overlooking the lush greens of Al Zorah Golf Course, the serene mangroves, and the Ajman skyline, this new residential development is the perfect escape—without ever leaving the city.",
-        GalleryImages:{
-            "Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
-            "Studio Bespoke_Design Living_24.03.2023_Page_13_Image_0001.jp",
-            "Studio Bespoke_Design Living_24.03.2023_Page_14_Image_0001.jpg",
-            "Studio Bespoke_Design Living_24.03.2023_Page_17_Image_0001.jpg",
-            "Studio Bespoke_Design Living_24.03.2023_Page_31_Image_0001.jpg",
-            "Studio Bespoke_Design Living_24.03.2023_Page_32_Image_0001.jpg",
-            "Studio Bespoke_Design Living_24.03.2023_Page_33_Image_0001.jpg",
-            "Studio Bespoke_Design Living_24.03.2023_Page_34_Image_0001.jpg",
-            "Studio Bespoke_Design Living_24.03.2023_Page_36_Image_0001.jpg",
-            "Studio Bespoke_Design Living_24.03.2023_Page_38_Image_0001.jpg",
-            "Studio Bespoke_Design Living_24.03.2023_Page_41_Image_0001.jpg",
-            "Studio Bespoke_Design Living_24.03.2023_Page_42_Image_0001.jpg",
-            "Studio Bespoke_Design Living_24.03.2023_Page_44_Image_0001.jpg",
-            "Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg",
-        }
+        text3:
+          "Nestled in the heart of Al Zorah, Ajman, Golf View Living offers a unique blend of peace, luxury, and accessibility. Overlooking the lush greens of Al Zorah Golf Course, the serene mangroves, and the Ajman skyline, this new residential development is the perfect escape—without ever leaving the city.",
+        GalleryImages: [
+          "Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
+          "Studio Bespoke_Design Living_24.03.2023_Page_13_Image_0001.jpg",
+          "Studio Bespoke_Design Living_24.03.2023_Page_14_Image_0001.jpg",
+          "Studio Bespoke_Design Living_24.03.2023_Page_17_Image_0001.jpg",
+          "Studio Bespoke_Design Living_24.03.2023_Page_31_Image_0001.jpg",
+          "Studio Bespoke_Design Living_24.03.2023_Page_32_Image_0001.jpg",
+          "Studio Bespoke_Design Living_24.03.2023_Page_33_Image_0001.jpg",
+          "Studio Bespoke_Design Living_24.03.2023_Page_34_Image_0001.jpg",
+          "Studio Bespoke_Design Living_24.03.2023_Page_36_Image_0001.jpg",
+          "Studio Bespoke_Design Living_24.03.2023_Page_38_Image_0001.jpg",
+          "Studio Bespoke_Design Living_24.03.2023_Page_41_Image_0001.jpg",
+          "Studio Bespoke_Design Living_24.03.2023_Page_42_Image_0001.jpg",
+          "Studio Bespoke_Design Living_24.03.2023_Page_44_Image_0001.jpg",
+          "Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg",
+        ],
       };
+      
     return (
         <div>
             <DetailHero {...detailHeroData} />
