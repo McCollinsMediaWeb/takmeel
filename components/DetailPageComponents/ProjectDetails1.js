@@ -79,8 +79,8 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
                         </div>
                         <div className='col-md-12 PrDetSliderBox'>
                             <Slider {...settings}>
-                                {GalleryImages.length > 0 ? (
-                                    GalleryImages.map((img) => (
+                                {GalleryImages?.length > 0 ? (
+                                    GalleryImages?.map((img) => (
                                         <div className='AbSliderItem' onClick={() => setOpen(true)}>
                                             <div className='ImageBox'><Image
                                                 src={`/${img}`}
@@ -222,7 +222,7 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
                                 close={() => setOpen(false)}
                                 plugins={[Video, Thumbnails, Zoom]}
                                 slides={[
-                                    ...GalleryImages.map((img) => ({
+                                    ...GalleryImages?.map((img) => ({
                                         src: `/${img}`,
                                     })),
                                 ]}

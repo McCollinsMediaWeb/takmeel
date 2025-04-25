@@ -284,7 +284,7 @@ export default function DetailHero({
                 open={open}
                 close={() => setOpen(false)}
                 plugins={[Video, Thumbnails, Zoom]}
-                slides={GalleryMedia && GalleryMedia.length > 0 ? GalleryMedia : defaultSlides}
+                slides={GalleryMedia && GalleryMedia?.length > 0 ? GalleryMedia : defaultSlides}
             />
 
             <div className="DetSlContentBox">
