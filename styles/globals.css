@@ -64,7 +64,9 @@ header {
 }
 
 .scrolled header {
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  backdrop-filter: blur(15px);
+  background-color: #00000059;
 }
 
 .HeaderBox {
@@ -644,7 +646,8 @@ body .slick-dots {
 }
 
 .Megamenu {
-  background-color: #000000;
+  backdrop-filter: blur(5px);
+  background-color: #00000059;
   max-width: 500px;
   height: 100vh;
   overflow: hidden;
