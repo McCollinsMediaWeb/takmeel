@@ -10,7 +10,7 @@ import '@photo-sphere-viewer/core/index.css';
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-export default function ProjectDetails5() {
+export default function ProjectDetails5({panoramaimage}) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const viewerRef = useRef(null);
     const [viewer, setViewer] = useState(null);
@@ -36,7 +36,7 @@ export default function ProjectDetails5() {
         if (viewerRef.current) {
             newViewer = new Viewer({
                 container: viewerRef.current,
-                panorama: '/360-video.jpg',
+                panorama: {panoramaimage},
                 navbar: ['zoom', 'fullscreen'],
                 defaultYaw: 0,
                 defaultPitch: 0,
