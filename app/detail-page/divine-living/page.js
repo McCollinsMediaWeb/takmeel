@@ -40,7 +40,7 @@ export default function DivineLiving() {
           { src: "/images/Studio Bespoke_Design Living_24.03.2023_Page_42_Image_0001.jpg" },
           { src: "/images/Studio Bespoke_Design Living_24.03.2023_Page_44_Image_0001.jpg" },
           { src: "/images/Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg" }
-        ]
+        ],
       };
       
       const DataProjectDetails1 = {
