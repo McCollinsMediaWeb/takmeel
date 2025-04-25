@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
+import { useInView } from 'react-intersection-observer';
 
 import Lightbox from "yet-another-react-lightbox";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
@@ -17,32 +18,71 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 export default function DetailHero({ backgroundImage, backgroundImageMobile, text1, text2, text3, data }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
-
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.2,
+    });
     return (
         <div className='FullScreenBanner DetHero position-relative'>
-            <motion.div
-                animate={{ scale: [1, 1.05, 1] }}
-                transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-                viewport={{ once: true, amount: 0.5 }}
-            >
-                {isDesktop ? (
-                    <Image
-                        src={`/${backgroundImage}`}
-                        width={1338}
-                        height={714}
-                        layout="responsive"
-                        alt="Takmeel"
-                    />
-                ) : (
-                    <Image
-                        src={`/${backgroundImageMobile}`}
-                        width={697}
-                        height={768}
-                        layout="responsive"
-                        alt="Takmeel"
-                    />
-                )}
-            </motion.div>
+             <div ref={ref}>
+                            {isDesktop ? (
+                                backgroundImage.endsWith(".mp4") ? (
+                                    inView && (
+                                        <video
+                                            autoPlay
+                                            loop
+                                            muted
+                                            playsInline
+                                            width="100%"
+                                            height="100%"
+                                            style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                                        >
+                                            <source src={`/${backgroundImage}`} type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    )
+                                ) : (
+                                    <motion.div
+                                        animate={{ scale: [1, 1.10, 1] }}
+                                        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+                                        viewport={{ once: true, amount: 0.5 }}
+                                    >
+                                        <Image
+                                            src={`/${backgroundImage}`}
+                                            width={1338}
+                                            height={714}
+                                            layout="responsive"
+                                            alt="Takmeel"
+                                            loading="lazy"
+                                        />
+                                    </motion.div>
+                                )
+                            ) : backgroundImageMobile.endsWith(".mp4") ? (
+                                inView && (
+                                    <video
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                        width="100%"
+                                        height="100%"
+                                        style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                                    >
+                                        <source src={`/${backgroundImageMobile}`} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                )
+                            ) : (
+                                <Image
+                                    src={`/${backgroundImageMobile}`}
+                                    width={697}
+                                    height={768}
+                                    layout="responsive"
+                                    alt="Takmeel"
+                                    loading="lazy"
+                                />
+                            )}
+                        </div>
 
             <Lightbox
                 open={open}

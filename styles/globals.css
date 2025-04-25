@@ -94,6 +94,7 @@ header {
   animation: scrollBackground 10s linear infinite;
   overflow: hidden;
   background-color: #D6B264;
+
 }
 
 .FullScreenBanner:after {
@@ -1848,4 +1849,14 @@ input[type=number] {
   max-height: 100vh !important;
   object-fit: cover;
   background-position: center center;
+}
+.DetHero{
+  height: calc(100vh - 75px);
+}
+
+.DetHero img,
+.DetHero video{
+height: 100% !important;
+width: 100% !important;
+object-fit: cover !important;
 }
