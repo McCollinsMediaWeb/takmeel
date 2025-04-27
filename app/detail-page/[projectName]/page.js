@@ -23,14 +23,14 @@ export default function ProjectDetailPage() {
         "takmeel-al-barari-view-properties": {
             first: {
                 subHeading: "Now Unveiling",
-                heading: "Takmeel Al Barari View Properties",
+                heading: "Takmeel Al Barari View",
                 bannerImage: "",
                 location: "Majan, Dubai",
                 tagline: "Urban Living, Reimagined by Nature"
             },
             second: {
                 subHeading: "Now Unveiling",
-                heading: "Takmeel Al Barari View Properties",
+                heading: "Takmeel Al Barari View",
                 content: "Takmeel’s upcoming project at Al Barari is a tribute to visionary transformation — where untouched wilderness evolves into a luxurious smart living community. Enveloped in nature, yet rooted in innovation, this sanctuary redefines opulence through sustainability and harmony. Wake up to greenery, water, and serenity, just minutes away from the city’s hustle. Barari is not just a place to live — it’s where nature and modern living exist in perfect balance."
             }
         },

@@ -10,14 +10,144 @@ import ProjectDetails7 from "@/components/DetailPageComponents/ProjectDetails7";
 import CostCalculator from "@/components/DetailPageComponents/CostCalculator";
 import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
 export default function MeydanRacecourseMansion() {
+
+    const detailHeroData = {
+        backgroundImage: "meydan.webp",
+        backgroundImageMobile: "bannerMobileFirst.jpg",
+        text1: "Where Grandeur Meets Precision",
+        text2: "Meydan Racecourse Mansion",
+        text3: "Dubai",
+        brochureLink: "/Divine-Residencia/Brochure/Divine Residencia Studio City Brochure.pdf",
+        GalleryMedia: [
+            // {
+            //     type: "video",
+            //     width: 1920,
+            //     height: 1080,
+            //     sources: [
+            //         {
+            //             src: "/Divine-Residencia-Video.mp4",
+            //             type: "video/mp4",
+            //         },
+            //     ],
+            //     autoPlay: true,
+            //     loop: false,
+            //     controls: true,
+            // },
+            { src: "/meydan.webp" },
+            { src: "/Meydan-Racecourse-Mansion/Maydan 01.jpg" },
+            { src: "/Meydan-Racecourse-Mansion/Maydan 02.jpg" },
+            { src: "/Meydan-Racecourse-Mansion/Maydan 03.jpg" },
+            { src: "/Meydan-Racecourse-Mansion/Maydan 04.jpg" },
+            { src: "/Meydan-Racecourse-Mansion/Maydan 05.jpg" },
+            { src: "/Meydan-Racecourse-Mansion/Maydan 06.jpg" },
+            { src: "/Meydan-Racecourse-Mansion/Maydan 07.jpg" },
+            { src: "/Meydan-Racecourse-Mansion/Maydan 08.jpg" },
+            { src: "/Meydan-Racecourse-Mansion/Maydan 09.jpg" },
+            { src: "/Meydan-Racecourse-Mansion/Maydan 10.jpg" },
+        ],
+    };
+
+    const DataProjectDetails1 = {
+        text1: "Modern Living in the Heart of Dubai",
+        text2: "Unmatched Views, Unparalleled Luxury",
+        text3:
+            "Overlooking the iconic Meydan Racecourse, this architectural gem by Takmeel Real Estate defines the pinnacle of bespoke living. The Meydan Racecourse Mansion is more than a home—it’s a statement of timeless elegance, curated for those who desire privacy, prestige, and panoramic views in the heart of Dubai.",
+        GalleryImages: [
+            // "Meydan-Racecourse-Mansion/Maydan 01.jpg",
+            "Meydan-Racecourse-Mansion/Maydan 02.jpg",
+            "Meydan-Racecourse-Mansion/Maydan 03.jpg",
+            "Meydan-Racecourse-Mansion/Maydan 04.jpg",
+            // "Meydan-Racecourse-Mansion/Maydan 05.jpg",
+            "Meydan-Racecourse-Mansion/Maydan 06.jpg",
+            "Meydan-Racecourse-Mansion/Maydan 07.jpg",
+            "Meydan-Racecourse-Mansion/Maydan 08.jpg",
+            "Meydan-Racecourse-Mansion/Maydan 09.jpg",
+            "Meydan-Racecourse-Mansion/Maydan 10.jpg",
+        ],
+    };
+    const DataProjectDetails2 = {
+        ThumbImage1: "Meydan-Racecourse-Mansion/Maydan 01.jpg",
+        ThumbImage2: "Meydan-Racecourse-Mansion/Maydan 05.jpg",
+        text1Heading: "Features That Redefine Opulence",
+        text1Desc: "Central Location – Nestled in Meydan, with seamless city access, Award-Winning Design – European aesthetics with a blend of Russian elegance and Italian grace, Spectacular Views – Uninterrupted racecourse panoramas from every room, Smart Home Features – Intelligent systems for lighting, security, and comfort",
+        text2Heading: "A Mansion that Embodies “The Art of Living”",
+        text2Desc: "Surrounded by lush landscapes and crafted with natural cut stone, this residence is a tranquil sanctuary in a vibrant city. From serene mornings overlooking the turf to intimate evenings in your private cinema—every moment here is extraordinary.",
+
+    };
+    const DataProjectDetails4 = {
+        text1: "Modern Living in the Heart of Al Zorah",
+        text2: "Spectacular Views, Contemporary Comfort",
+        text3:
+            "Nestled in the heart of Al Zorah, Ajman, Golf View Living offers a unique blend of peace, luxury, and accessibility. Overlooking the lush greens of Al Zorah Golf Course, the serene mangroves, and the Ajman skyline, this new residential development is the perfect escape—without ever leaving the city.",
+        GalleryImagesWithNames: [
+            {
+                src: "Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
+                title: "Welcome Lounge",
+            },
+            {
+                src: "Studio Bespoke_Design Living_24.03.2023_Page_13_Image_0001.jpg",
+                title: "Lounge",
+            },
+            {
+                src: "Studio Bespoke_Design Living_24.03.2023_Page_14_Image_0001.jpg",
+                title: "Gym",
+            },
+            {
+                src: "Studio Bespoke_Design Living_24.03.2023_Page_17_Image_0001.jpg",
+                title: "Kitchen Area",
+            },
+            {
+                src: "Studio Bespoke_Design Living_24.03.2023_Page_31_Image_0001.jpg",
+                title: "Living Room",
+            },
+            {
+                src: "Studio Bespoke_Design Living_24.03.2023_Page_32_Image_0001.jpg",
+                title: "Living Room",
+            },
+            {
+                src: "Studio Bespoke_Design Living_24.03.2023_Page_33_Image_0001.jpg",
+                title: "Bathroom",
+            },
+            {
+                src: "Studio Bespoke_Design Living_24.03.2023_Page_34_Image_0001.jpg",
+                title: "Bed Room",
+            },
+            {
+                src: "Studio Bespoke_Design Living_24.03.2023_Page_36_Image_0001.jpg",
+                title: "Living Room",
+            },
+            {
+                src: "Studio Bespoke_Design Living_24.03.2023_Page_38_Image_0001.jpg",
+                title: "Living Room",
+            },
+            {
+                src: "Studio Bespoke_Design Living_24.03.2023_Page_41_Image_0001.jpg",
+                title: "Bed Room",
+            },
+            {
+                src: "Studio Bespoke_Design Living_24.03.2023_Page_42_Image_0001.jpg",
+                title: "Living Room",
+            },
+            {
+                src: "Studio Bespoke_Design Living_24.03.2023_Page_44_Image_0001.jpg",
+                title: "Bed Room",
+            },
+            {
+                src: "Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg",
+                title: "Lounge",
+            },
+        ],
+    };
+
+
     return (
         <div>
-            <DetailHero backgroundImage="main1.jpg" backgroundImageMobile="main1mobile.jpg" text1="Featured Properties" text2="Meydan Racecourse Mansion" text3="Dubai" />
-            <ProjectDetails1 />
-            <ProjectDetails2 mainimage1="prd1.jpg" mainimage2="prd2.jpg" />
+            <DetailHero {...detailHeroData} />
+            <ProjectDetails1  {...DataProjectDetails1} />
+            <ProjectDetails2  {...DataProjectDetails2} />
             <ProjectDetails3 mainimage1="amn1.jpg" />
-            <ProjectDetails4 />
-            <ProjectDetails5 />
+            <ProjectDetails4  {...DataProjectDetails4} />
+            <ProjectDetails5 panoramaimage="/str1.jpg" />
             <ProjectDetails6 planImage="plan1.jpg" />
             <ProjectDetails7 mapimage="map1.jpg" />
             <CostCalculator />

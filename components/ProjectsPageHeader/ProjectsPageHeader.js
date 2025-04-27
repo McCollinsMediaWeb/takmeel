@@ -112,7 +112,7 @@ export default function ProjectsPageHeader() {
                                                     />
                                                 </div>
                                                 <div className="ProjectDetails text-center">
-                                                    <div className="PT1">Takmeel Al Barari View Properties</div>
+                                                    <div className="PT1">Takmeel Al Barari View</div>
                                                     <div className="PT2">Majan, Dubai</div>
                                                 </div>
                                             </div>

@@ -181,6 +181,7 @@ export default function DetailHero({
     text1,
     text2,
     text3,
+    brochureLink = "/Divine-Residencia/Brochure/Divine Residencia Studio City Brochure.pdf",
     GalleryMedia
 }) {
     const isDesktop = useMediaQuery('(min-width: 960px)');
@@ -284,30 +285,29 @@ export default function DetailHero({
                 open={open}
                 close={() => setOpen(false)}
                 plugins={[Video, Thumbnails, Zoom]}
-                // slides={GalleryMedia && GalleryMedia?.length > 0 ? GalleryMedia : defaultSlides}
-                // slides={defaultSlides}
-                slides={[
-                    {
-                        type: "video",
-                        width: 1280,
-                        height: 720,
-                        // poster: "/public/poster-image.jpg",
-                        sources: [
-                            {
-                                src: "/Divine-Residencia-Video.mp4",
-                                type: "video/mp4",
-                            },
-                        ],
-                    },
-                    { src: '/abslider1.jpg' },
-                    { src: '/abslider2.jpg' },
-                    { src: '/abslider3.jpg' },
-                    { src: '/abslider4.jpg' },
-                    { src: '/main1.jpg' },
-                    { src: '/main2.jpg' },
-                    { src: '/main3.jpg' },
-                    { src: '/main4.jpg' }
-                ]}
+                slides={GalleryMedia && GalleryMedia?.length > 0 ? GalleryMedia : defaultSlides}
+                // slides={[
+                //     {
+                //         type: "video",
+                //         width: 1280,
+                //         height: 720,
+                //         // poster: "/public/poster-image.jpg",
+                //         sources: [
+                //             {
+                //                 src: "/Divine-Residencia-Video.mp4",
+                //                 type: "video/mp4",
+                //             },
+                //         ],
+                //     },
+                //     { src: '/abslider1.jpg' },
+                //     { src: '/abslider2.jpg' },
+                //     { src: '/abslider3.jpg' },
+                //     { src: '/abslider4.jpg' },
+                //     { src: '/main1.jpg' },
+                //     { src: '/main2.jpg' },
+                //     { src: '/main3.jpg' },
+                //     { src: '/main4.jpg' }
+                // ]}
             />
 
             <div className="DetSlContentBox">
@@ -346,7 +346,7 @@ export default function DetailHero({
                             </div>
                             <div className='col-md-5'>
                                 <div className='ButtonsBox1'>
-                                    <a href='#' className='hover1'>Download Brochure</a>
+                                    <a href={brochureLink} download className='hover1'>Download Brochure</a>
                                     <a href='#' className='hover1'>Download Masterplan</a>
                                     <a href='#' className='toggleForm hover1'>Register Your Interest</a>
                                 </div>
