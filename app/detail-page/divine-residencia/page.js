@@ -12,7 +12,7 @@ import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
 export default function DivineResidencia() {
   const detailHeroData = {
     backgroundImage: "Divine-Residencia-Video.mp4",
-    backgroundImageMobile: "bannerMobileFirst.jpg",
+    backgroundImageMobile: "bannerMobileThird.jpg",
     text1: "Where Comfort Meets Contemporary Elegance",
     text2: "Divine Residencia",
     text3: "Studio City, Dubai",

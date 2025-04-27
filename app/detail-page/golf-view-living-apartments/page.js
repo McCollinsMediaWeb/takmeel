@@ -12,7 +12,7 @@ import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
 export default function GolfViewLivingApartments() {
   const detailHeroData = {
     backgroundImage: "Divine-Golf-Video.mp4",
-    backgroundImageMobile: "main1mobile.jpg",
+    backgroundImageMobile: "bannerMobileFour.jpg",
     text1: "Your Everyday Escape, Overlooking the Greens",
     text2: "Golf View Living Apartments",
     text3: "Al Zorah, Ajman",

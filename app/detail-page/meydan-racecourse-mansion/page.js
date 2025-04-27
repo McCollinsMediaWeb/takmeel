@@ -13,7 +13,7 @@ export default function MeydanRacecourseMansion() {
 
     const detailHeroData = {
         backgroundImage: "meydan.webp",
-        backgroundImageMobile: "bannerMobileFirst.jpg",
+        backgroundImageMobile: "meydan-mobile.jpg",
         text1: "Where Grandeur Meets Precision",
         text2: "Meydan Racecourse Mansion",
         text3: "Dubai",

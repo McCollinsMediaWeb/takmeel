@@ -13,7 +13,7 @@ export default function DivineResidencies() {
 
     const detailHeroData = {
         backgroundImage: "Divine-Residence-Image.jpg",
-        backgroundImageMobile: "Divine-Residence-Image.jpg",
+        backgroundImageMobile: "Divine-Residence-Image-Mobile.jpg",
         text1: "Smart Spaces Crafted for Modern Lifestyles",
         text2: "Divine Residencies",
         text3: "Dubai",
