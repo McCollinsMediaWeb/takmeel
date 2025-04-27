@@ -18,13 +18,14 @@ export default function Projects() {
       <ProjectItem backgroundImage="pr3.jpg" backgroundImageMobile="pr3m.jpg" text2="Divine Living Arjan​" text3="AL Barsha South, Dubai" />
       <ProjectItem backgroundImage="pr4.jpg" backgroundImageMobile="pr4m.jpg" text2="Divine Golf Residences" text3="Al Zorah, Ajman" />
       <ProjectItem backgroundImage="pr5.jpg" backgroundImageMobile="pr5m.jpg" text2="Meydan Racecourse Mansion" text3="AL Meydan, Nad Al Sheba 1" /> */}
-      <ProjectItem backgroundImage="main1.jpg" backgroundImageMobile="bannerMobileSecondt.jpg" text2="Takmeel Al Barari View" text3="Majan, Dubai" url="takmeel-al-barari-view-properties" />
-      <ProjectItem backgroundImage="main1.jpg" backgroundImageMobile="bannerMobileThird.jpg" text2="Divine Residencia" text3="Dubai Studio City, Dubai" url="divine-residencia" />
+      {/* <ProjectItem backgroundImage="main1.jpg" backgroundImageMobile="bannerMobileSecondt.jpg" text2="Takmeel Al Barari View" text3="Majan, Dubai" url="takmeel-al-barari-view-properties" /> */}
+      <ProjectItem backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg" backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg" text2="Takmeel Al Barari View" text3="Majan, Dubai" url="takmeel-al-barari-view-properties" />
+      <ProjectItem backgroundImage="Divine-Residencia/Divine residencia main facade.jpg" backgroundImageMobile="bannerMobileThird.jpg" text2="Divine Residencia" text3="Dubai Studio City, Dubai" url="divine-residencia" />
       <ProjectItem backgroundImage="bannerDesktopFirst.jpg" backgroundImageMobile="bannerMobileFirst.jpg" text2="Divine living" text3="Arjan, Dubai" url="divine-living" />
-      <ProjectItem backgroundImage="main1.jpg" backgroundImageMobile="bannerMobileFour.jpg" text2="Golf View Living Apartments" text3="Al Zorah, Ajman" url="golf-view-living-apartments" />
-      <ProjectItem backgroundImage="main1.jpg" backgroundImageMobile="Golf-View-Living-Villa.mp4" text2="Golf View Living Villas" text3="Ajman" url="golf-view-living-villas" />
-      <ProjectItem backgroundImage="meydan.webp" backgroundImageMobile="meydan.webp" text2="Meydan Racecourse Mansion" text3="Dubai" url="meydan-racecourse-mansion" />
-      <ProjectItem backgroundImage="Divine-Residence-Image.jpg" backgroundImageMobile="Divine-Residence-Image.jpg" text2="Divine Residencies" text3="Dubai" url="divine-residencies" />
+      <ProjectItem backgroundImage="Divine-Residence-Image.jpg" backgroundImageMobile="Divine-Residence-Image-Mobile.jpg" text2="Divine Residencies" text3="Dubai" url="divine-residencies" />
+      <ProjectItem backgroundImage="meydan.webp" backgroundImageMobile="meydan-mobile.jpg" text2="Meydan Racecourse Mansion" text3="Dubai" url="meydan-racecourse-mansion" />
+      <ProjectItem backgroundImage="Golf-View-Living-Apartments/Golf Apartments 03.jpg" backgroundImageMobile="bannerMobileFour.jpg" text2="Golf View Living Apartments" text3="Al Zorah, Ajman" url="golf-view-living-apartments" />
+      <ProjectItem backgroundImage="Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg" backgroundImageMobile="Golf-View-Living-Villas/divine-golf-villas-Facade-Mobile 03.jpg" text2="Golf View Living Villas" text3="Ajman" url="golf-view-living-villas" />
       <ContactForm />
     </section>
   );

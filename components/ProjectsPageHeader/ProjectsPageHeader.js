@@ -3,10 +3,18 @@ import { motion } from "framer-motion";
 import { useEffect } from 'react';
 import Slider from "react-slick";
 import Image from "next/image";
-import p1 from "../../public/p1.jpg"
-import p2 from "../../public/p2.jpg"
-import p3 from "../../public/p3.jpg"
-import p4 from "../../public/p4.jpg"
+// import p1 from "../../public/p1.jpg"
+// import p2 from "../../public/p2.jpg"
+// import p3 from "../../public/p3.jpg"
+// import p4 from "../../public/p4.jpg"
+
+import p1 from "../../public/Takmeel-Al-Barrari-View/Majan-Cropped 03.jpg";
+import p2 from "../../public/Divine-Residencia/Divine residencia main facade.jpg"
+import p3 from "../../public/bannerDesktopFirst.jpg"
+import p4 from "../../public/Divine-Residence-Image.jpg"
+import p5 from "../../public/meydan-cropped.jpg"
+import p6 from "../../public/Golf-View-Living-Apartments/Golf Apartments 03.jpg"
+import p7 from "../../public/Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg"
 import Link from "next/link";
 
 
@@ -162,7 +170,7 @@ export default function ProjectsPageHeader() {
                                             <div className="FtrProject">
                                                 <div className="ProjectImage">
                                                     <Image
-                                                        src={p4}
+                                                        src={p6}
                                                         width={297}
                                                         height={166}
                                                         layout="responsive"
@@ -182,7 +190,7 @@ export default function ProjectsPageHeader() {
                                             <div className="FtrProject">
                                                 <div className="ProjectImage">
                                                     <Image
-                                                        src={p4}
+                                                        src={p7}
                                                         width={297}
                                                         height={166}
                                                         layout="responsive"
@@ -202,7 +210,7 @@ export default function ProjectsPageHeader() {
                                             <div className="FtrProject">
                                                 <div className="ProjectImage">
                                                     <Image
-                                                        src={p4}
+                                                        src={p5}
                                                         width={297}
                                                         height={166}
                                                         layout="responsive"
