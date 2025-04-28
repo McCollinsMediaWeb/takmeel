@@ -143,7 +143,8 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       "20 MINUTES Burj Khalifa"
     ],
     mapData: {
-      apiKey: "AIzaSyBm9-VXLjf-xBTbQ-L-sFDuQGBKSez8lbc",
+      // apiKey: "AIzaSyBm9-VXLjf-xBTbQ-L-sFDuQGBKSez8lbc",
+      apiKey: "AIzaSyCBtGUl2z4uc5HX9e7eMmzIHalH2a99Oz4",
       center: { lat: 25.029012, lng: 55.238347 },
       zoom: 12,
       styles: [
