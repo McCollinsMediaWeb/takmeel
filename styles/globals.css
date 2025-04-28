@@ -802,8 +802,8 @@ body .slick-dots {
 }
 
 header.fixed-class {
-  /* position: relative; */
-  position: fixed;
+  position: relative;
+  /* position: fixed; */
   left: auto;
   top: auto;
   background-color: #1D1D1D;
