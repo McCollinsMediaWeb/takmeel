@@ -143,89 +143,120 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       "20 MINUTES Burj Khalifa"
     ],
     mapData: {
-      // apiKey: "AIzaSyBm9-VXLjf-xBTbQ-L-sFDuQGBKSez8lbc",
       apiKey: "AIzaSyCBtGUl2z4uc5HX9e7eMmzIHalH2a99Oz4",
-      center: { lat: 25.029012, lng: 55.238347 },
+      center: { lat: 25.05079, lng: 55.24659 },
       zoom: 12,
       styles: [
-        // {
-        //   "featureType": "all",
-        //   "elementType": "geometry.fill",
-        //   "stylers": [{ "color": "#f7f7f7" }]
-        // },
-        // {
-        //   "featureType": "water",
-        //   "elementType": "geometry.fill",
-        //   "stylers": [{ "color": "#c9c9c9" }]
-        // }
         {
           "featureType": "water",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#fce7b7" }
-          ]
-        },
-        {
-          "featureType": "landscape.man_made",
-          "elementType": "geometry.fill",
-          "stylers": [
-            { "color": "#5a593e" }
+            { "color": "#d4f4dd" }  // light greenish water
           ]
         },
         {
           "featureType": "landscape.natural",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#5e7530" }
+            { "color": "#e8f7ea" }  // very light green natural areas
+          ]
+        },
+        {
+          "featureType": "landscape.man_made",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#f0f8f1" }
           ]
         },
         {
           "featureType": "poi.park",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#5e7530" }
+            { "color": "#c0e8c1" }  // soft mint green parks
           ]
         },
         {
           "featureType": "road",
-          "elementType": "geometry",
+          "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#d8c69a" }   /* soft beige for roads */
+            { "color": "#fdf2f2" }  // pale pinkish for normal roads
           ]
         },
         {
           "featureType": "road.highway",
-          "elementType": "geometry",
+          "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#b5a169" }   /* slightly darker for highways */
+            { "color": "#f8d7da" }  // soft red for highways
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#fbe4e6" }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#ffffff" }  // clean white local roads
           ]
         },
         {
           "featureType": "road",
-          "elementType": "labels.text.fill",
+          "elementType": "geometry.stroke",
           "stylers": [
-            { "color": "#5a593e" }
-          ]
-        },
-        {
-          "featureType": "administrative",
-          "elementType": "labels.text.fill",
-          "stylers": [
-            { "color": "#5a593e" }
-          ]
-        },
-        {
-          "featureType": "poi",
-          "elementType": "labels.text.fill",
-          "stylers": [
-            { "color": "#5a593e" }
+            { "color": "#ecb5b9" }
           ]
         },
         {
           "featureType": "transit",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#d8c69a" }
+            { "color": "#f3e8e9" }
+          ]
+        },
+        {
+          "featureType": "poi.business",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#f9faf9" }
+          ]
+        },
+        {
+          "featureType": "administrative",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#f7d6d9" }
+          ]
+        },
+        {
+          "featureType": "administrative",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            { "color": "#a94442" }  // deep elegant red for labels
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            { "color": "#c9302c" }  // stronger red for road labels
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            { "color": "#a94442" }
+          ]
+        },
+        {
+          "featureType": "transit.station",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            { "color": "#a94442" }
           ]
         },
         {
