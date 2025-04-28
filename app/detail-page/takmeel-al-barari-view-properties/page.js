@@ -148,15 +148,92 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       center: { lat: 25.029012, lng: 55.238347 },
       zoom: 12,
       styles: [
-        {
-          "featureType": "all",
-          "elementType": "geometry.fill",
-          "stylers": [{ "color": "#f7f7f7" }]
-        },
+        // {
+        //   "featureType": "all",
+        //   "elementType": "geometry.fill",
+        //   "stylers": [{ "color": "#f7f7f7" }]
+        // },
+        // {
+        //   "featureType": "water",
+        //   "elementType": "geometry.fill",
+        //   "stylers": [{ "color": "#c9c9c9" }]
+        // }
         {
           "featureType": "water",
           "elementType": "geometry.fill",
-          "stylers": [{ "color": "#c9c9c9" }]
+          "stylers": [
+            { "color": "#fce7b7" }
+          ]
+        },
+        {
+          "featureType": "landscape.man_made",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#5a593e" }
+          ]
+        },
+        {
+          "featureType": "landscape.natural",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#5e7530" }
+          ]
+        },
+        {
+          "featureType": "poi.park",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#5e7530" }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "geometry",
+          "stylers": [
+            { "color": "#d8c69a" }   /* soft beige for roads */
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "geometry",
+          "stylers": [
+            { "color": "#b5a169" }   /* slightly darker for highways */
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            { "color": "#5a593e" }
+          ]
+        },
+        {
+          "featureType": "administrative",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            { "color": "#5a593e" }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            { "color": "#5a593e" }
+          ]
+        },
+        {
+          "featureType": "transit",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#d8c69a" }
+          ]
+        },
+        {
+          "featureType": "all",
+          "elementType": "labels.icon",
+          "stylers": [
+            { "visibility": "off" }
+          ]
         }
       ]
     }
