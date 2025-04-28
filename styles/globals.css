@@ -1877,6 +1877,8 @@ object-fit: cover !important;
 }
 .zsiq-float.zsiq-flexM {
   animation: floatAnimation 3s ease-in-out infinite;
+  right: 20px;
+  bottom: 20px;
 }
 .siqcw-drivenby-cont {
     z-index: 0;
