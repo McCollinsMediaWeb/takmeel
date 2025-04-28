@@ -48,14 +48,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    
+
 
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${nunitoSans.variable}`}>
-      
+
       <body>
 
         {/* Tawk.to Script */}
-        <Script id="tawk-to" strategy="afterInteractive">
+        {/* <Script id="tawk-to" strategy="afterInteractive">
           {`
             var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
             (function() {
@@ -68,12 +68,29 @@ export default function RootLayout({ children }) {
               s0.parentNode.insertBefore(s1, s0);
             })();
           `}
+        </Script> */}
+
+        <Script
+          id="zsiq-init"
+          strategy="beforeInteractive"
+        >
+          {`
+          window.$zoho = window.$zoho || {};
+          $zoho.salesiq = $zoho.salesiq || { ready: function() {} };
+        `}
         </Script>
-        
+
+        <Script
+          id="zsiqscript"
+          src="https://salesiq.zohopublic.in/widget?wc=siqd42e964546372063eb47c76bbf42497379120a2771308eb2d1ca6165301d5e33"
+          strategy="lazyOnload"
+          defer
+        />
+
         <Header />
         <main>{children}</main>
         <Footer />
-        <FooterBottom/>
+        <FooterBottom />
       </body>
     </html>
   );
