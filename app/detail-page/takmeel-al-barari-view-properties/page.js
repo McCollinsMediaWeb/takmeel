@@ -129,6 +129,38 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       },
     ],
   };
+
+  const DataProjectDetails7 = {
+    text1: "Takmeel Al Barari View",
+    text2: "EFFORTLESS ACCESS <br/> To All Corners Of The City",
+    landmarks: [
+      "3 MINUTES Hessa Street",
+      "5 MINUTES Sheikh Mohammed Bin Zayed Rd",
+      "8 MINUTES Dubai Sport City",
+      "8 Minutes From Dubai Hills Mall",
+      "25 MINUTES DUBAI INTERNATIONAL AIRPORT",
+      "20 MINUTES Marina Beach",
+      "20 MINUTES Burj Khalifa"
+    ],
+    mapData: {
+      apiKey: "AIzaSyBm9-VXLjf-xBTbQ-L-sFDuQGBKSez8lbc",
+      center: { lat: 25.029012, lng: 55.238347 },
+      zoom: 12,
+      styles: [
+        {
+          "featureType": "all",
+          "elementType": "geometry.fill",
+          "stylers": [{ "color": "#f7f7f7" }]
+        },
+        {
+          "featureType": "water",
+          "elementType": "geometry.fill",
+          "stylers": [{ "color": "#c9c9c9" }]
+        }
+      ]
+    }
+  };
+
   return (
     <div>
       <DetailHero {...detailHeroData} />
@@ -139,7 +171,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       <ProjectDetails5 panoramaimage="/str1.jpg" />
       <ProjectDetails6 planImage="plan1.jpg" />
 
-      <ProjectDetails7 mapimage="map1.jpg" />
+      <ProjectDetails7 mapimage="map1.jpg" {...DataProjectDetails7} />
       <CostCalculator />
       <PropertyForm />
     </div>

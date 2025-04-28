@@ -18,8 +18,9 @@ import image1 from "../../public/abslider1.jpg"
 import image2 from "../../public/abslider2.jpg"
 import image3 from "../../public/abslider3.jpg"
 import image4 from "../../public/abslider3.jpg"
+import MapComponent from '../MapComponent/MapComponent';
 
-export default function ProjectDetails7({ mapimage, data }) {
+export default function ProjectDetails7({ mapimage, text1, text2, landmarks, mapData }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
     var settings = {
@@ -74,12 +75,14 @@ export default function ProjectDetails7({ mapimage, data }) {
                     <div className='LocationRowWrap'>
                         <div className='row'>
                             <div className='col-md-6'>
-                                <div className="BlT1 nunito-text text-uppercase">Takmeel Al Barari Properties</div>
-                                <div className="BlT2 text-uppercase">EFFORTLESS ACCESS<br />
-                                    To All Corners Of The City​</div>
+                                <div className="BlT1 nunito-text text-uppercase">{text1 ? text1 : "Takmeel Al Barari Properties"}</div>
+                                <div
+                                    className="BlT2 text-uppercase"
+                                    dangerouslySetInnerHTML={{ __html: text2 || "EFFORTLESS ACCESS<br /> To All Corners Of The City" }}
+                                ></div>
 
-                                {data?.length > 0 ? (
-                                    data.map((line, index) => (
+                                {landmarks?.length > 0 ? (
+                                    landmarks.map((line, index) => (
                                         <div key={index}>
                                             <div className="VmT5 nunito-text">{line}</div>
                                         </div>
@@ -114,13 +117,17 @@ export default function ProjectDetails7({ mapimage, data }) {
                             </div>
                             <div className='col-md-6'>
                                 <div className='MapImageBox'>
-                                    <Image
+
+                                    {mapData ? (
+                                        <MapComponent {...mapData} />
+                                    ) : (<Image
                                         src={`/${mapimage}`}
                                         width={719}
                                         height={509}
                                         layout="responsive"
                                         alt="Takmeel"
-                                    />
+                                    />)}
+
                                 </div>
                             </div>
                         </div>
