@@ -1897,3 +1897,6 @@ object-fit: cover !important;
     transform: translateY(0);
   }
 }
+#map{
+  border-radius: 20px;
+}
