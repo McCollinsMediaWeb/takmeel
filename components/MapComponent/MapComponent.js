@@ -357,7 +357,7 @@ ${details.website
             <div
                 id="map"
                 style={{
-                    height: isDesktop ? "500px" : "280px",
+                    height: isDesktop ? "600px" : "280px",
                     width: "100%",
                     marginBottom: "20px",
                 }}
