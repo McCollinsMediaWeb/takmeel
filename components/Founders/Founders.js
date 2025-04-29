@@ -251,6 +251,26 @@ export default function Founders() {
                     >
                         <div className="OurPeopleBox">
                             <Slider {...settings1}>
+                            <div className="FounderItem">
+                                    <div className="FounderItemBox">
+                                        <div className="FounderImageBox">
+                                            <Image
+                                                src={f6}
+                                                width={416}
+                                                height={524}
+                                                layout="responsive"
+                                                alt="Takmeel"
+                                            />
+                                        </div>
+                                        <div className="FounderDetails">
+                                            <div className="FounderName">Hamza Asad</div>
+                                            <div className="FounderPosition">Executive Director</div>
+                                            <div className="text-right">
+                                                <a href="#" className="MoreInfoLink nunito-text">More Info</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div className="FounderItem">
                                     <div className="FounderItemBox">
                                         <div className="FounderImageBox">
@@ -291,26 +311,7 @@ export default function Founders() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="FounderItem">
-                                    <div className="FounderItemBox">
-                                        <div className="FounderImageBox">
-                                            <Image
-                                                src={f6}
-                                                width={416}
-                                                height={524}
-                                                layout="responsive"
-                                                alt="Takmeel"
-                                            />
-                                        </div>
-                                        <div className="FounderDetails">
-                                            <div className="FounderName">Hamza Asad</div>
-                                            <div className="FounderPosition">Executive Director</div>
-                                            <div className="text-right">
-                                                <a href="#" className="MoreInfoLink nunito-text">More Info</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </Slider>
                         </div>
                     </motion.div>
