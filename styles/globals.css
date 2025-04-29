@@ -1856,7 +1856,7 @@ input[type=number] {
   background-position: center center;
 }
 .DetHero{
-  height: calc(100vh - 75px);
+  height: 100vh !important;
 }
 
 .DetHero img,
