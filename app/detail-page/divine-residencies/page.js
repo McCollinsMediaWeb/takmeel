@@ -100,60 +100,16 @@ export default function DivineResidencies() {
       "Set amidst the flourishing neighborhood of Arjan, Divine Residencies offers an exceptional lifestyle just steps away from Dubai’s iconic Miracle Garden and Butterfly Garden. Thoughtfully designed and ready for immediate occupancy, this modern residential enclave blends contemporary elegance with everyday convenience. With effortless connectivity to Umm Suqeim Street and key destinations across Dubai, residents enjoy a harmonious fusion of tranquil surroundings and dynamic city living.",
     GalleryImagesWithNames: [
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
-        title: "Welcome Lounge",
+        src: "Divine-Residencies/Residencies 1st project 05.jpg",
+        title: "Exterior",
       },
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_13_Image_0001.jpg",
-        title: "Lounge",
+        src: "Divine-Residencies/Residencies 1st project 03.jpg",
+        title: "Swimming Pool",
       },
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_14_Image_0001.jpg",
-        title: "Gym",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_17_Image_0001.jpg",
-        title: "Kitchen Area",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_31_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_32_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_33_Image_0001.jpg",
-        title: "Bathroom",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_34_Image_0001.jpg",
-        title: "Bed Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_36_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_38_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_41_Image_0001.jpg",
-        title: "Bed Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_42_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_44_Image_0001.jpg",
-        title: "Bed Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg",
-        title: "Lounge",
+        src: "Divine-Residencies/Residencies 1st project 04.jpg",
+        title: "Swimming Pool",
       },
     ],
   };
@@ -290,18 +246,18 @@ export default function DivineResidencies() {
   };
 
 
-    return (
-        <div>
-            <DetailHero {...detailHeroData} />
-            <ProjectDetails1 {...DataProjectDetails1} />
-            <ProjectDetails2 {...DataProjectDetails2} />
-            <ProjectDetails3 mainimage1="ovr5.jpg" data={DataProjectDetails3} />
-            <ProjectDetails4 {...DataProjectDetails4} />
-            {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
-            {/* <ProjectDetails6 planImage="plan1.jpg" /> */}
-            <ProjectDetails7 mapimage="map1.jpg" {...DataProjectDetails7} />
-            <CostCalculator />
-            <PropertyForm />
-        </div>
-    );
+  return (
+    <div>
+      <DetailHero {...detailHeroData} />
+      <ProjectDetails1 {...DataProjectDetails1} />
+      <ProjectDetails2 {...DataProjectDetails2} />
+      <ProjectDetails3 mainimage1="ovr5.jpg" data={DataProjectDetails3} />
+      <ProjectDetails4 {...DataProjectDetails4} />
+      {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
+      {/* <ProjectDetails6 planImage="plan1.jpg" /> */}
+      <ProjectDetails7 mapimage="map1.jpg" {...DataProjectDetails7} />
+      <CostCalculator />
+      <PropertyForm />
+    </div>
+  );
 }
