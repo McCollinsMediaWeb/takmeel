@@ -110,7 +110,7 @@ header {
   z-index: 1;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .FullScreenBanner img {
