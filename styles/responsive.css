@@ -415,4 +415,7 @@
         background-color: #1d1d1d !important ;
         backdrop-filter: blur(50px);
       }
+      #map{
+        margin-top: 15px;
+      }
   }
