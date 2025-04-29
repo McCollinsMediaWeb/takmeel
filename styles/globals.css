@@ -165,20 +165,14 @@ header {
   border-radius: 20px;
 }
 
-.HmLinkBox .Link1 {
-  background-color: #D6B264;
-  color: #1d1d1b;
-}
+
 
 .hover1:hover {
   background-color: #D6B264;
   color: #383838;
 }
 
-.HmLinkBox .Link1:hover {
-  background-color: #fff;
-  color: #D6B264;
-}
+
 
 .MenuClick {
   width: 27px;
