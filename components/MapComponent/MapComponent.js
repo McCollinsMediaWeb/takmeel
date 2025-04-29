@@ -251,10 +251,6 @@ const MapComponent = ({ apiKey, center, zoom, styles, nearByPlaces }) => {
 
                     const contentHtml = `
 <div style="max-width: 300px; font-family: Arial, sans-serif;">
-${photoUrl
-                            ? `<img src="${photoUrl}" style="width: 100%; height: auto; border-radius: 6px; margin-bottom: 8px;" />`
-                            : ""
-                        }
 <h3 style="margin: 0 0 8px; font-size: 18px;">${details.name}</h3>
 <p style="margin: 0 0 6px; font-size: 14px;"><strong>📍 Address:</strong> ${details.formatted_address || "N/A"
                         }</p>
