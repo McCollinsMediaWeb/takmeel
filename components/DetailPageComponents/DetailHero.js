@@ -182,7 +182,9 @@ export default function DetailHero({
     text2,
     text3,
     brochureLink = "/Divine-Residencia/Brochure/Divine Residencia Studio City Brochure.pdf",
-    GalleryMedia
+    GalleryMedia,
+    videoPosterDesktop,
+    videoPosterMobile
 }) {
     const isDesktop = useMediaQuery('(min-width: 960px)');
     const [open, setOpen] = useState(false);
@@ -227,6 +229,7 @@ export default function DetailHero({
                         inView && (
                             <video
                                 autoPlay
+                                poster={videoPosterDesktop}
                                 loop
                                 muted
                                 playsInline
@@ -258,6 +261,7 @@ export default function DetailHero({
                     inView && (
                         <video
                             autoPlay
+                            poster={videoPosterMobile}
                             loop
                             muted
                             playsInline
