@@ -5,13 +5,13 @@ import Slider from "react-slick";
 import Image from "next/image";
 // import f1 from "../../public/f1.jpg"
 // import f2 from "../../public/f2.jpg"
-import f1 from "../../public/person2.jpg"
-import f2 from "../../public/person1.jpg"
+import f1 from "../../public/t2.jpg"
+import f2 from "../../public/t1.jpg"
 // import f3 from "../../public/all-team.jpg"
 import f3 from '../../public/team-photo.jpg'
-import f4 from "../../public/f3.jpg"
-import f5 from "../../public/f4.jpg"
-import f6 from "../../public/f5.jpg"
+import f4 from "../../public/t3.jpg"
+import f5 from "../../public/t4.jpg"
+import f6 from "../../public/t5.jpg"
 export default function Founders() {
 
     var settings = {
@@ -206,7 +206,7 @@ export default function Founders() {
                                             />
                                         </div>
                                         <div className="FounderDetails">
-                                            <div className="FounderName">Rabia Afsheen</div>
+                                            <div className="FounderName">Shohaib</div>
                                             <div className="FounderPosition">Manager HR</div>
                                             <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
@@ -226,7 +226,7 @@ export default function Founders() {
                                             />
                                         </div>
                                         <div className="FounderDetails">
-                                            <div className="FounderName">Rafiq Uz Zaman</div>
+                                            <div className="FounderName">Ashim Mustaq</div>
                                             <div className="FounderPosition">Project Head</div>
                                             <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
