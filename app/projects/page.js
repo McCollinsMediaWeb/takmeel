@@ -20,7 +20,7 @@ export default function Projects() {
       <ProjectItem backgroundImage="pr5.jpg" backgroundImageMobile="pr5m.jpg" text2="Meydan Racecourse Mansion" text3="AL Meydan, Nad Al Sheba 1" /> */}
       {/* <ProjectItem backgroundImage="main1.jpg" backgroundImageMobile="bannerMobileSecondt.jpg" text2="Takmeel Al Barari View" text3="Majan, Dubai" url="takmeel-al-barari-view-properties" /> */}
       <ProjectItem backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg" backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg" text2="Takmeel Al Barari View" text3="Majan, Dubai" url="takmeel-al-barari-view-properties" />
-      <ProjectItem backgroundImage="Divine-Residencia/Divine residencia main facade.jpg" backgroundImageMobile="bannerMobileThird.jpg" text2="Divine Residencia" text3="Dubai Studio City, Dubai" url="divine-residencia" />
+      <ProjectItem backgroundImage="Divine-Residencia/Divine residencia main facade.jpg" backgroundImageMobile="dvk.jpg" text2="Divine Residencia" text3="Dubai Studio City, Dubai" url="divine-residencia" />
       <ProjectItem backgroundImage="bannerDesktopFirst.jpg" backgroundImageMobile="bannerMobileFirst.jpg" text2="Divine living" text3="Arjan, Dubai" url="divine-living" />
       <ProjectItem backgroundImage="Divine-Residence-Image.jpg" backgroundImageMobile="Divine-Residence-Image-Mobile.jpg" text2="Divine Residencies" text3="Dubai" url="divine-residencies" />
       <ProjectItem backgroundImage="meydan.webp" backgroundImageMobile="meydan-mobile.jpg" text2="Meydan Racecourse Mansion" text3="Dubai" url="meydan-racecourse-mansion" />

@@ -421,4 +421,18 @@
       .FixedHeight img{
         height: auto !important;
       }
+      .zsiq-float.zsiq-flexM {
+        bottom: 80px;
+      }
+      .slick-dots li {
+        width: 15px;
+        height: 15px;
+        margin:0 3px;
+      }
+      .FullScreenBanner{
+        min-height: 80vh;
+      }
+      .DetHero {
+        height: auto !important;
+      }
   }
