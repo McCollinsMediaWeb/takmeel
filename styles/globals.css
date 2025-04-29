@@ -101,7 +101,7 @@ header {
 
 .FullScreenBanner:after {
   content: "";
-  background-image: url(../public/overlay.png);
+  /* background-image: url(../public/overlay.png); */
   position: absolute;
   left: 0;
   top: 0;
@@ -110,6 +110,7 @@ header {
   z-index: 1;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .FullScreenBanner img {

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
-export default function FullScreenBanner({ backgroundImage, backgroundImageMobile, text1, text2, text3, tagline, url }) {
+export default function FullScreenBanner({ backgroundImage, backgroundImageMobile, text1, text2, text3, tagline, url , videoPosterDesktop , VideoPosterMobile }) {
 
     const { ref, inView } = useInView({
         triggerOnce: true,
@@ -50,6 +50,7 @@ alt="Takmeel"
                                 width="100%"
                                 height="100%"
                                 style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                                poster={videoPosterDesktop}
                             >
                                 <source src={`/${backgroundImage}`} type="video/mp4" />
                                 Your browser does not support the video tag.
@@ -81,6 +82,7 @@ alt="Takmeel"
                             width="100%"
                             height="100%"
                             style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                            poster={VideoPosterMobile}
                         >
                             <source src={`/${backgroundImageMobile}`} type="video/mp4" />
                             Your browser does not support the video tag.
