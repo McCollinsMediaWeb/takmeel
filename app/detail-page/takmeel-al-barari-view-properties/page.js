@@ -14,7 +14,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
     // backgroundImage: "main1.jpg",
     // backgroundImageMobile: "main1mobile.jpg",
     backgroundImage: "albararidesk.mp4",
-    backgroundImageMobile: "albarabimobile.mp4",
+    backgroundImageMobile: "Takmeel-Al-Barrari-View/Mobile Majan 03.jpg",
     text1: "Urban Living, Reimagined by Nature",
     text2: "Takmeel Al Barari View",
     text3: "Majan, Dubai",
