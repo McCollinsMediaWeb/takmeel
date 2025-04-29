@@ -26,8 +26,7 @@ export default function Footer() {
                   <a href='#' title='Call Us'>info@takmeeluae.com</a>
                 </div>
                 <div className='CRow location'>
-                  <a href='#' title='Call Us'>Office no 706, Building no 8, Bay Square,<br/>
-                  Business Bay, Dubai, United Arab Emirates </a>
+                  <a href='#' title='Call Us'>Office no 706, Building no 8, Bay Square Business bay Dubai, UAE</a>
                 </div>
               </div>
             </div>
