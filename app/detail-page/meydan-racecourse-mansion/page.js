@@ -115,60 +115,16 @@ export default function MeydanRacecourseMansion() {
       "Nestled in the heart of Dubai’s most sought-after enclave, this exquisite mansion by Takmeel Real Estate is a masterpiece of modern opulence and architectural grace. Designed with a seamless blend of contemporary aesthetics and timeless detail, the residence offers expansive living spaces, sun-drenched interiors, and unobstructed skyline views. Whether you're hosting grand soirées under the stars or enjoying quiet reflection beside the infinity pool, every corner of this home is crafted to elevate your lifestyle. Here, luxury isn't just experienced—it's lived.",
     GalleryImagesWithNames: [
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
-        title: "Welcome Lounge",
+        src: "Meydan-Racecourse-Mansion/Maydan 04.jpg",
+        title: "Exterior",
       },
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_13_Image_0001.jpg",
-        title: "Lounge",
+        src: "Meydan-Racecourse-Mansion/Maydan 07.jpg",
+        title: "Swimming Pool",
       },
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_14_Image_0001.jpg",
-        title: "Gym",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_17_Image_0001.jpg",
-        title: "Kitchen Area",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_31_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_32_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_33_Image_0001.jpg",
-        title: "Bathroom",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_34_Image_0001.jpg",
-        title: "Bed Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_36_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_38_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_41_Image_0001.jpg",
-        title: "Bed Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_42_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_44_Image_0001.jpg",
-        title: "Bed Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg",
-        title: "Lounge",
+        src: "Meydan-Racecourse-Mansion/Maydan 10.jpg",
+        title: "Parking bay/slot",
       },
     ],
   };
@@ -303,18 +259,18 @@ export default function MeydanRacecourseMansion() {
   };
 
 
-    return (
-        <div>
-            <DetailHero {...detailHeroData} />
-            <ProjectDetails1  {...DataProjectDetails1} />
-            <ProjectDetails2  {...DataProjectDetails2} />
-            <ProjectDetails3 mainimage1="ovr7.jpg" data={DataProjectDetails3} />
-            <ProjectDetails4  {...DataProjectDetails4} />
-            {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
-            {/* <ProjectDetails6 planImage="plan1.jpg" /> */}
-            <ProjectDetails7 mapimage="map1.jpg" {...DataProjectDetails7} />
-            <CostCalculator />
-            <PropertyForm />
-        </div>
-    );
+  return (
+    <div>
+      <DetailHero {...detailHeroData} />
+      <ProjectDetails1  {...DataProjectDetails1} />
+      <ProjectDetails2  {...DataProjectDetails2} />
+      <ProjectDetails3 mainimage1="ovr7.jpg" data={DataProjectDetails3} />
+      <ProjectDetails4  {...DataProjectDetails4} />
+      {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
+      {/* <ProjectDetails6 planImage="plan1.jpg" /> */}
+      <ProjectDetails7 mapimage="map1.jpg" {...DataProjectDetails7} />
+      <CostCalculator />
+      <PropertyForm />
+    </div>
+  );
 }

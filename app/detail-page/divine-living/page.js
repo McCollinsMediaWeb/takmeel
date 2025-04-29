@@ -44,10 +44,10 @@ export default function DivineLiving() {
   };
 
   const DataProjectDetails1 = {
-    text1: "Modern Living in the Heart of Al Zorah",
-    text2: "Spectacular Views, Contemporary Comfort",
+    text1: "Modern Living in the Heart of Arjan",
+    text2: "Timeless Elegance, Modern Comfort",
     text3:
-      "Nestled in the heart of Al Zorah, Ajman, Golf View Living offers a unique blend of peace, luxury, and accessibility. Overlooking the lush greens of Al Zorah Golf Course, the serene mangroves, and the Ajman skyline, this new residential development is the perfect escape—without ever leaving the city.",
+      "Tucked away in the vibrant district of Arjan, Divine Living offers a perfect balance of luxury and tranquility. Developed by Takmeel Real Estate, this refined residential project is designed for those who seek spacious living, sophisticated interiors, and a peaceful lifestyle—without compromising on urban connectivity.",
     GalleryImages: [
       "Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
       "Studio Bespoke_Design Living_24.03.2023_Page_13_Image_0001.jpg",
@@ -109,10 +109,10 @@ export default function DivineLiving() {
   ];
 
   const DataProjectDetails4 = {
-    text1: "Modern Living in the Heart of Al Zorah",
+    text1: "Spacious Urban Living in Arjan",
     text2: "Spectacular Views, Contemporary Comfort",
     text3:
-      "Nestled in the heart of Al Zorah, Ajman, Golf View Living offers a unique blend of peace, luxury, and accessibility. Overlooking the lush greens of Al Zorah Golf Course, the serene mangroves, and the Ajman skyline, this new residential development is the perfect escape—without ever leaving the city.",
+      "Welcome to Divine Living, where elegance meets everyday comfort in one of Dubai’s most promising neighborhoods—Arjan. Brought to life by Takmeel Real Estate, this exclusive residential development redefines urban living with thoughtfully designed spaces, premium finishes, and a serene environment that offers a welcome escape from the city’s hustle.",
     GalleryImagesWithNames: [
       {
         src: "Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
