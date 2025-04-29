@@ -73,7 +73,7 @@ useEffect(() => {
                                 </motion.div>
 
                             </li>
-                            <li className={pathname === '/news-updates' ? 'active' : ''}>
+                            {/* <li className={pathname === '/news-updates' ? 'active' : ''}>
                                 <motion.div
                                     initial={{ opacity: 0, y: 30 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -85,7 +85,7 @@ useEffect(() => {
                                     </Link>
                                 </motion.div>
 
-                            </li>
+                            </li> */}
                             <li className={pathname === '/contact-us' ? 'active' : ''}>
                                 <motion.div
                                     initial={{ opacity: 0, y: 30 }}

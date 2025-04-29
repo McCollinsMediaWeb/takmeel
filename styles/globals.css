@@ -1913,3 +1913,8 @@ object-fit: cover !important;
   -webkit-box-orient: vertical;  
   overflow: hidden;
 }
+.FixedHeight img{
+  height: 250px !important;
+  overflow: hidden;
+  object-fit: cover !important;
+}

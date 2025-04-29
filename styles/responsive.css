@@ -418,4 +418,7 @@
       #map{
         margin-top: 15px;
       }
+      .FixedHeight img{
+        height: auto !important;
+      }
   }

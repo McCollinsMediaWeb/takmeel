@@ -70,10 +70,10 @@ export default function SoldOutBox() {
                             transition={{ duration: 0.6, ease: "easeOut" }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            <div className='SoldOutSlider'>
+                            <div className='SoldOutSlider FixedHeight'>
                                 <Slider {...settings}>
                                     <div>
-                                        <div className='SldSliderItem'>
+                                        <div className='SldSliderItem '>
                                             <Image
                                                 src={SlImage1}
                                                 width={598}
@@ -110,44 +110,7 @@ export default function SoldOutBox() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div>
-                                        <div className='SldSliderItem'>
-                                            <Image
-                                                src={SlImage1}
-                                                width={598}
-                                                height={311}
-                                                layout="responsive"
-                                                alt="Takmeel"
-                                            />
-                                            <div className='SldSliderItemDesc'>
-                                                <div className='SlT1'>SOLD OUT</div>
-                                                <div className='SlT2'>Divine Residencies – Arjan</div>
-                                                <div className='SlT3'>We present to you the elegant new project by Takmeel Development, Divine Residencies Arjan.</div>
-                                                <div className='text-right'>
-                                                    <Link href="/" className='Link6 hover1'>View Property</Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className='SldSliderItem'>
-                                            <Image
-                                                src={SlImage2}
-                                                width={598}
-                                                height={311}
-                                                layout="responsive"
-                                                alt="Takmeel"
-                                            />
-                                            <div className='SldSliderItemDesc'>
-                                                <div className='SlT1'>SOLD OUT</div>
-                                                <div className='SlT2'>Divine Residencies – Arjan</div>
-                                                <div className='SlT3'>We present to you the elegant new project by Takmeel Development, Divine Residencies Arjan.</div>
-                                                <div className='text-right'>
-                                                    <Link href="/" className='Link6 hover1'>View Property</Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </Slider>
                             </div>
                         </motion.div>
