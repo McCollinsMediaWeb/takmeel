@@ -61,7 +61,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
   const DataProjectDetails2 = {
     ThumbImage1: "Takmeel-Al-Barrari-View/Majan 02.jpg",
     ThumbImage2: "Takmeel-Al-Barrari-View/Majan 04.jpg",
-    text1Heading: "Spacious Urban Living in Arjan",
+    text1Heading: "Spacious Urban Living in Majan",
     text1Desc: "This exclusive development features a curated selection of: 1, 2 & 3 Bedroom Apartments ,  Meticulously planned layouts ,  High-quality finishing & sanitary ware World-class materials throughout",
     text2Heading: "A Family-Friendly Community with Everything You Need",
     text2Desc: "Enjoy a peaceful lifestyle with convenient access to key destinations: Close to Dubai Miracle Garden & Butterfly Garden , Easy access to Sheikh Zayed Road & Umm Suqeim Street Tranquil ,  surroundings with minimal noise and traffic",
@@ -270,7 +270,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       <ProjectDetails2  {...DataProjectDetails2} />
       <ProjectDetails3 mainimage1="ovr1.jpg" />
       <ProjectDetails4  {...DataProjectDetails4} />
-      <ProjectDetails5 panoramaimage="/albararistreet.jpg" />
+      {/* <ProjectDetails5 panoramaimage="/albararistreet.jpg" /> */}
       {/* <ProjectDetails6 planImage="plan1.jpg" /> */}
 
       <ProjectDetails7 mapimage="map1.jpg" {...DataProjectDetails7} />

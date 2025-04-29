@@ -270,8 +270,8 @@ export default function DivineResidencia() {
       <ProjectDetails2  {...DataProjectDetails2} />
       <ProjectDetails3 mainimage1="ovr1.jpg" />
       <ProjectDetails4  {...DataProjectDetails4} />
-      <ProjectDetails5 panoramaimage="/str1.jpg" />
-      <ProjectDetails6 planImage="plan1.jpg" />
+      {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
+      {/* <ProjectDetails6 planImage="plan1.jpg" /> */}
 
       <ProjectDetails7 mapimage="map1.jpg" {...DataProjectDetails7} />
       <CostCalculator />
