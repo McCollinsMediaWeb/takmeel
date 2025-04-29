@@ -108,7 +108,7 @@ export default function DivineResidencia() {
     },
     {
       iconNo: 15,
-      heading: "27/7 Security",
+      heading: "24/7 Security",
       subHeading: "Around-the-clock security services for complete peace of mind"
     },
     {
@@ -117,70 +117,35 @@ export default function DivineResidencia() {
       subHeading: "Constant video surveillance to ensure your safety"
     }
   ];
-  
+
 
   const DataProjectDetails4 = {
-    text1: "Modern Living in the Heart of Al Zorah",
+    text1: "Modern Living in the Heart of Dubai Studio City",
     text2: "Spectacular Views, Contemporary Comfort",
     text3:
-      "Nestled in the heart of Al Zorah, Ajman, Golf View Living offers a unique blend of peace, luxury, and accessibility. Overlooking the lush greens of Al Zorah Golf Course, the serene mangroves, and the Ajman skyline, this new residential development is the perfect escape—without ever leaving the city.",
+      "Nestled in Dubai Studio City A vibrant, family-friendly community with seamless access to major roads and city landmarks.",
     GalleryImagesWithNames: [
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
+        src: "Divine-Residencia/Interior/Divine Residencia Interior 05.jpg",
         title: "Welcome Lounge",
       },
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_13_Image_0001.jpg",
-        title: "Lounge",
+        src: "Divine-Residencia/Interior/Divine Residencia Interior 01.jpg",
+        title: "Corridor",
       },
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_14_Image_0001.jpg",
-        title: "Gym",
+        src: "Divine-Residencia/Interior/Divine Residencia Interior 02.jpg",
+        title: "Living Room",
       },
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_17_Image_0001.jpg",
+        src: "Divine-Residencia/Interior/Divine Residencia Interior 03.jpg",
         title: "Kitchen Area",
       },
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_31_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_32_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_33_Image_0001.jpg",
+        src: "Divine-Residencia/Interior/Divine Residencia Interior 04.jpg",
         title: "Bathroom",
       },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_34_Image_0001.jpg",
-        title: "Bed Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_36_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_38_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_41_Image_0001.jpg",
-        title: "Bed Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_42_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_44_Image_0001.jpg",
-        title: "Bed Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg",
-        title: "Lounge",
-      },
+
     ],
   };
 
