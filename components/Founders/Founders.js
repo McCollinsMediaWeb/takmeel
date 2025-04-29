@@ -215,7 +215,7 @@ export default function Founders() {
                     </div>
 
 
-                    <motion.div
+                    {/* <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -230,7 +230,7 @@ export default function Founders() {
                                 alt="Takmeel"
                             />
                         </div>
-                    </motion.div>
+                    </motion.div> */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
