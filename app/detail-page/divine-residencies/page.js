@@ -295,7 +295,7 @@ export default function DivineResidencies() {
             <DetailHero {...detailHeroData} />
             <ProjectDetails1 {...DataProjectDetails1} />
             <ProjectDetails2 {...DataProjectDetails2} />
-            <ProjectDetails3 mainimage1="amn1.jpg" data={DataProjectDetails3} />
+            <ProjectDetails3 mainimage1="ovr5.jpg" data={DataProjectDetails3} />
             <ProjectDetails4 {...DataProjectDetails4} />
             {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
             {/* <ProjectDetails6 planImage="plan1.jpg" /> */}
