@@ -8,7 +8,7 @@ export default function AboutUs() {
     return (
       <div>
         <PageHeader/>
-        <AboutSlider/>
+        {/* <AboutSlider/> */}
         <AboutVisionMission/>
         <Founders/>
         <ContactForm/>
