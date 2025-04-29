@@ -80,16 +80,16 @@ export default function ProjectDetails7({ mapimage, text1, text2, landmarks, map
                                     className="BlT2 text-uppercase"
                                     dangerouslySetInnerHTML={{ __html: text2 || "EFFORTLESS ACCESS<br /> To All Corners Of The City" }}
                                 ></div>
-<div className='row'>
-                                {landmarks?.length > 0 ? (
-                                    landmarks.map((line, index) => (
+                                <div className='row'>
+                                    {landmarks?.length > 0 ? (
+                                        landmarks.map((line, index) => (
                                             <div key={index} className='col-md-4'>
                                                 <div className="VmT5 nunito-text">{line}</div>
                                             </div>
-                                    ))
-                                ) : (
-                                    <>
-                                        
+                                        ))
+                                    ) : (
+                                        <>
+
                                             <div className='col-md-4'>
                                                 <div className="VmT5 nunito-text">3 MINUTES Hessa Street</div>
                                             </div>
@@ -111,18 +111,18 @@ export default function ProjectDetails7({ mapimage, text1, text2, landmarks, map
                                             <div className='col-md-4'>
                                                 <div className="VmT5 nunito-text">20 MINUTES Burj Khalifa</div>
                                             </div>
-                                       
-                                    </>
-                                )}
 
-</div>
-                                
+                                        </>
+                                    )}
+
+                                </div>
+
 
 
 
                             </div>
                             <div className='col-md-12'>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -131,17 +131,17 @@ export default function ProjectDetails7({ mapimage, text1, text2, landmarks, map
             </div>
             <div className='MapImageBox'>
 
-{mapData ? (
-    <MapComponent {...mapData} />
-) : (<Image
-    src={`/${mapimage}`}
-    width={719}
-    height={509}
-    layout="responsive"
-    alt="Takmeel"
-/>)}
+                {mapData ? (
+                    <MapComponent {...mapData} />
+                ) : (<Image
+                    src={`/${mapimage}`}
+                    width={719}
+                    height={509}
+                    layout="responsive"
+                    alt="Takmeel"
+                />)}
 
-</div>
+            </div>
         </div>
     );
 }
