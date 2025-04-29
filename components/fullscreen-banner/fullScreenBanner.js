@@ -38,7 +38,7 @@ alt="Takmeel"
 />
 )} */}
 
-            <div ref={ref}>
+            <div ref={ref} className=''>
                 {isDesktop ? (
                     backgroundImage.endsWith(".mp4") ? (
                         inView && (
@@ -154,7 +154,7 @@ alt="Takmeel"
                 )} */}
 
 
-            <div className='FsBannerContent'>
+            <div className='FsBannerContent HmLinkBox'>
                 <div className='FsBannerContentFlex'>
                     <div className='container'>
                         <motion.div
