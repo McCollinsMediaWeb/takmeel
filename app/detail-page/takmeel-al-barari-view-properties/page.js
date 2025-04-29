@@ -145,7 +145,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
     mapData: {
       apiKey: "AIzaSyCBtGUl2z4uc5HX9e7eMmzIHalH2a99Oz4",
       center: { lat: 25.05079, lng: 55.24659 },
-      zoom: 12,
+      zoom: 11,
       styles: [
         {
           "featureType": "water",
@@ -266,6 +266,18 @@ export default function TakmeelAlBarariViewPropertiesPage() {
             { "visibility": "off" }
           ]
         }
+      ],
+      nearByPlaces: [
+        { name: "King's College Hospital London", location: { lat: 25.11347333289849, lng: 55.25492898877556 } },
+        { name: "Dunecrest American School", location: { lat: 25.091190585103302, lng: 55.30647784609949 } },
+        { name: "New Earth Cafe", location: { lat: 25.099380109303485, lng: 55.31540940176637 } },
+        { name: "HideOut Al Barari", location: { lat: 25.099574424113847, lng: 55.31581709752857 } },
+        { name: "Mediterranean Garden", location: { lat: 25.096737397233635, lng: 55.31014154332052 } },
+        { name: "Global Village", location: { lat: 25.07341628157727, lng: 55.308393501238776 } },
+        { name: "Cityland Mall", location: { lat: 25.06747303267066, lng: 55.31393249409508 } },
+        { name: "Dubai Outlet Mall", location: { lat: 25.073070634698052, lng: 55.39959151950052 } },
+        { name: "Dubai International Airport", location: { lat: 25.259490296989462, lng: 55.364666407765895 } },
+        { name: "Dubai Mall", location: { lat: 25.20253968228783, lng: 55.278712622706365 } },
       ]
     }
   };
