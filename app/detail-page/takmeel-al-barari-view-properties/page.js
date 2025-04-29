@@ -102,10 +102,10 @@ export default function TakmeelAlBarariViewPropertiesPage() {
   ];
 
   const DataProjectDetails4 = {
-    text1: "Modern Living in the Heart of Al Zorah",
+    text1: "Modern Living in the Heart of Majan",
     text2: "Spectacular Views, Contemporary Comfort",
     text3:
-      "Nestled in the heart of Al Zorah, Ajman, Golf View Living offers a unique blend of peace, luxury, and accessibility. Overlooking the lush greens of Al Zorah Golf Course, the serene mangroves, and the Ajman skyline, this new residential development is the perfect escape—without ever leaving the city.",
+      "Takmeel’s Al Barari project reimagines luxury living—where smart design meets natural beauty. Surrounded by greenery and water features, these 1, 2 & 3-bedroom apartments offer modern layouts, premium finishes, and sustainable living. Just minutes from Dubai Miracle Garden with easy access to Sheikh Zayed Road, this is where peace and connectivity come together in perfect harmony.",
     GalleryImagesWithNames: [
       {
         src: "Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
