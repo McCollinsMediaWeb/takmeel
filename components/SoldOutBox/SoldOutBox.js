@@ -86,7 +86,7 @@ export default function SoldOutBox() {
                                                 <div className='SlT2'>Divine Residencies – Arjan</div>
                                                 <div className='SlT3'>We present to you the elegant new project by Takmeel Development, Divine Residencies Arjan.</div>
                                                 <div className='text-right'>
-                                                    <Link href="/" className='Link6 hover1'>View Property</Link>
+                                                    <Link href="/projects" className='Link6 hover1'>View All</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -102,10 +102,10 @@ export default function SoldOutBox() {
                                             />
                                             <div className='SldSliderItemDesc'>
                                                 <div className='SlT1'>SOLD OUT</div>
-                                                <div className='SlT2'>Divine Residencies – Arjan</div>
-                                                <div className='SlT3'>We present to you the elegant new project by Takmeel Development, Divine Residencies Arjan.</div>
+                                                <div className='SlT2'>Divine Golf Villas Al Zorah</div>
+                                                <div className='SlT3'>Divine Golf Villas are located in the heart of the Al Zorah Golf Course in Ajman, delivering an ideal, peaceful and private lifestyle.</div>
                                                 <div className='text-right'>
-                                                    <Link href="/" className='Link6 hover1'>View Property</Link>
+                                                    <Link href="/projects" className='Link6 hover1'>View All</Link>
                                                 </div>
                                             </div>
                                         </div>
