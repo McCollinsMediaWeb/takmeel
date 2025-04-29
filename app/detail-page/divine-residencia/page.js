@@ -69,6 +69,56 @@ export default function DivineResidencia() {
     text2Desc: "Lush green surroundings ,Abundant natural light, Fresh air circulation, A calming environment that encourages well-being ",
 
   };
+
+  const DataProjectDetails3 = [
+    {
+      iconNo: 8,
+      heading: "Fully Equipped Gym",
+      subHeading: "Stay fit and active with a state-of-the-art gym right in your building"
+    },
+    {
+      iconNo: 9,
+      heading: "Swimming Pool",
+      subHeading: "Enjoy a refreshing swim in a beautifully maintained pool"
+    },
+    {
+      iconNo: 10,
+      heading: "Children's Pool",
+      subHeading: "A safe and fun pool space specially designed for kids"
+    },
+    {
+      iconNo: 11,
+      heading: "Children Play Area",
+      subHeading: "Let kids enjoy their playtime in a safe and engaging environment"
+    },
+    {
+      iconNo: 12,
+      heading: "Landscaped Gardens",
+      subHeading: "Relax and unwind in beautifully landscaped green spaces"
+    },
+    {
+      iconNo: 13,
+      heading: "Covered Parking",
+      subHeading: "Secure and shaded parking for residents and visitors"
+    },
+    {
+      iconNo: 14,
+      heading: "3 Lifts/ Elevators",
+      subHeading: "Quick and convenient access with three modern elevators"
+    },
+    {
+      iconNo: 15,
+      heading: "27/7 Security",
+      subHeading: "Around-the-clock security services for complete peace of mind"
+    },
+    {
+      iconNo: 16,
+      heading: "24/7 CCTV",
+      subHeading: "Constant video surveillance to ensure your safety"
+    }
+  ];
+  
+
   const DataProjectDetails4 = {
     text1: "Modern Living in the Heart of Al Zorah",
     text2: "Spectacular Views, Contemporary Comfort",
@@ -268,7 +318,7 @@ export default function DivineResidencia() {
       <DetailHero {...detailHeroData} />
       <ProjectDetails1  {...DataProjectDetails1} />
       <ProjectDetails2  {...DataProjectDetails2} />
-      <ProjectDetails3 mainimage1="ovr1.jpg" />
+      <ProjectDetails3 mainimage1="ovr1.jpg" data={DataProjectDetails3} />
       <ProjectDetails4  {...DataProjectDetails4} />
       {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
       {/* <ProjectDetails6 planImage="plan1.jpg" /> */}

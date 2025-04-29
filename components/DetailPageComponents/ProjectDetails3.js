@@ -19,7 +19,7 @@ import image2 from "../../public/abslider2.jpg"
 import image3 from "../../public/abslider3.jpg"
 import image4 from "../../public/abslider3.jpg"
 
-export default function ProjectDetails3({ mainimage1, mainimage2 }) {
+export default function ProjectDetails3({ mainimage1, data }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
     var settings = {
@@ -90,60 +90,75 @@ export default function ProjectDetails3({ mainimage1, mainimage2 }) {
                         <div className='FeatureBoxesWrap'>
                             <div className='FeatureBoxes'>
                                 <div className='row'>
-                                    <div className='col-md-4'>
-                                        <div className='FeatureBox'>
-                                            <div className='FeatureBoxIcon FeatureBoxIcon1'>&nbsp;</div>
-                                            <div className='FeatureBoxT1'>We Designed Elements</div>
-                                            <div className='FeatureBoxT2 nunito-text'>EVERY ELEMENT DESIGNED TO FIT A
-                                            WELL-ROUNDED LIFESTYLE</div>
-                                        </div>
-                                    </div>
-                                    <div className='col-md-4'>
-                                        <div className='FeatureBox'>
-                                            <div className='FeatureBoxIcon FeatureBoxIcon2'>&nbsp;</div>
-                                            <div className='FeatureBoxT1'>Al Barari</div>
-                                            <div className='FeatureBoxT2 nunito-text'>Discover The Vibrant And Family-Friendly
-                                            Environment Of Al Barari Dubai.</div>
-                                        </div>
-                                    </div>
-                                    <div className='col-md-4'>
-                                        <div className='FeatureBox'>
-                                            <div className='FeatureBoxIcon FeatureBoxIcon3'>&nbsp;</div>
-                                            <div className='FeatureBoxT1'>WELLROUNDED LIFESTYLE</div>
-                                            <div className='FeatureBoxT2 nunito-text'>Seamlessly Merge Work And Leisure </div>
-                                        </div>
-                                    </div>
+                                    {data?.length > 0 ? (
+                                        data.map((item) => (
+                                            <div className='col-md-4'>
+                                                <div className='FeatureBox'>
+                                                    <div className={`FeatureBoxIcon FeatureBoxIcon${item.iconNo}`}>&nbsp;</div>
+                                                    <div className='FeatureBoxT1'>{item.heading}</div>
+                                                    <div className='FeatureBoxT2 nunito-text'>{item.subHeading}</div>
+                                                </div>
+                                            </div>
+                                        ))
+                                    ) : (
+                                        <>
+                                            <div className='col-md-4'>
+                                                <div className='FeatureBox'>
+                                                    <div className='FeatureBoxIcon FeatureBoxIcon1'>&nbsp;</div>
+                                                    <div className='FeatureBoxT1'>We Designed Elements</div>
+                                                    <div className='FeatureBoxT2 nunito-text'>EVERY ELEMENT DESIGNED TO FIT A
+                                                        WELL-ROUNDED LIFESTYLE</div>
+                                                </div>
+                                            </div>
+                                            <div className='col-md-4'>
+                                                <div className='FeatureBox'>
+                                                    <div className='FeatureBoxIcon FeatureBoxIcon2'>&nbsp;</div>
+                                                    <div className='FeatureBoxT1'>Al Barari</div>
+                                                    <div className='FeatureBoxT2 nunito-text'>Discover The Vibrant And Family-Friendly
+                                                        Environment Of Al Barari Dubai.</div>
+                                                </div>
+                                            </div>
+                                            <div className='col-md-4'>
+                                                <div className='FeatureBox'>
+                                                    <div className='FeatureBoxIcon FeatureBoxIcon3'>&nbsp;</div>
+                                                    <div className='FeatureBoxT1'>WELLROUNDED LIFESTYLE</div>
+                                                    <div className='FeatureBoxT2 nunito-text'>Seamlessly Merge Work And Leisure </div>
+                                                </div>
+                                            </div>
 
-                                    <div className='col-md-4'>
-                                        <div className='FeatureBox'>
-                                            <div className='FeatureBoxIcon FeatureBoxIcon4'>&nbsp;</div>
-                                            <div className='FeatureBoxT1'>We Designed Elements</div>
-                                            <div className='FeatureBoxT2 nunito-text'>EVERY ELEMENT DESIGNED TO FIT A
-                                            WELL-ROUNDED LIFESTYLE</div>
-                                        </div>
-                                    </div>
-                                    <div className='col-md-4'>
-                                        <div className='FeatureBox'>
-                                            <div className='FeatureBoxIcon FeatureBoxIcon5'>&nbsp;</div>
-                                            <div className='FeatureBoxT1'>Al Barari</div>
-                                            <div className='FeatureBoxT2 nunito-text'>Discover The Vibrant And Family-Friendly
-                                            Environment Of Al Barari Dubai.</div>
-                                        </div>
-                                    </div>
-                                    <div className='col-md-4'>
-                                        <div className='FeatureBox'>
-                                            <div className='FeatureBoxIcon FeatureBoxIcon6'>&nbsp;</div>
-                                            <div className='FeatureBoxT1'>WELLROUNDED LIFESTYLE</div>
-                                            <div className='FeatureBoxT2 nunito-text'>Seamlessly Merge Work And Leisure </div>
-                                        </div>
-                                    </div>
+                                            <div className='col-md-4'>
+                                                <div className='FeatureBox'>
+                                                    <div className='FeatureBoxIcon FeatureBoxIcon4'>&nbsp;</div>
+                                                    <div className='FeatureBoxT1'>We Designed Elements</div>
+                                                    <div className='FeatureBoxT2 nunito-text'>EVERY ELEMENT DESIGNED TO FIT A
+                                                        WELL-ROUNDED LIFESTYLE</div>
+                                                </div>
+                                            </div>
+                                            <div className='col-md-4'>
+                                                <div className='FeatureBox'>
+                                                    <div className='FeatureBoxIcon FeatureBoxIcon5'>&nbsp;</div>
+                                                    <div className='FeatureBoxT1'>Al Barari</div>
+                                                    <div className='FeatureBoxT2 nunito-text'>Discover The Vibrant And Family-Friendly
+                                                        Environment Of Al Barari Dubai.</div>
+                                                </div>
+                                            </div>
+                                            <div className='col-md-4'>
+                                                <div className='FeatureBox'>
+                                                    <div className='FeatureBoxIcon FeatureBoxIcon6'>&nbsp;</div>
+                                                    <div className='FeatureBoxT1'>WELLROUNDED LIFESTYLE</div>
+                                                    <div className='FeatureBoxT2 nunito-text'>Seamlessly Merge Work And Leisure </div>
+                                                </div>
+                                            </div>
+                                        </>
+                                    )}
+
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
-                </div>
-            </div>
+                    </motion.div >
+                </div >
+            </div >
 
-        </div>
+        </div >
     );
 }

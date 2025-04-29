@@ -74,6 +74,40 @@ export default function DivineLiving() {
     text2Desc: "Enjoy a peaceful lifestyle with convenient access to key destinations: Close to Dubai Miracle Garden & Butterfly Garden , Easy access to Sheikh Zayed Road & Umm Suqeim Street Tranquil ,  surroundings with minimal noise and traffic",
 
   };
+
+  const DataProjectDetails3 = [
+    {
+      iconNo: 1,
+      heading: "Spectacular Views",
+      subHeading: "The apartment is bright and spacious with spectacular river views"
+    },
+    {
+      iconNo: 2,
+      heading: "Central Location",
+      subHeading: "All you may need is at your doorstep: central location with all infrastructure"
+    },
+    {
+      iconNo: 3,
+      heading: "WELLROUNDED LIFESTYLE",
+      subHeading: "Seamlessly Merge Work And Leisure"
+    },
+    {
+      iconNo: 7,
+      heading: "Smart Apartment",
+      subHeading: "Smart apartment technology designed by famous architecture group"
+    },
+    {
+      iconNo: 4,
+      heading: "We Designed Elements",
+      subHeading: "EVERY ELEMENT DESIGNED TO FIT A WELL-ROUNDED LIFESTYLE"
+    },
+    {
+      iconNo: 5,
+      heading: "Award-Winning Design",
+      subHeading: "The apartment was designed by Lucy De Vito with great attention to details"
+    },
+  ];
+
   const DataProjectDetails4 = {
     text1: "Modern Living in the Heart of Al Zorah",
     text2: "Spectacular Views, Contemporary Comfort",
@@ -274,7 +308,7 @@ export default function DivineLiving() {
       <DetailHero {...detailHeroData} />
       <ProjectDetails1  {...DataProjectDetails1} />
       <ProjectDetails2  {...DataProjectDetails2} />
-      <ProjectDetails3 mainimage1="ovr1.jpg" />
+      <ProjectDetails3 mainimage1="ovr1.jpg" data={DataProjectDetails3} />
       <ProjectDetails4  {...DataProjectDetails4} />
       {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
       {/* <ProjectDetails6 planImage="plan1.jpg" /> */}

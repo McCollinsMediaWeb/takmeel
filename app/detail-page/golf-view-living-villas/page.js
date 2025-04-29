@@ -59,6 +59,40 @@ export default function GolfViewLivingVillas() {
         text2Desc: "20 Limited-Edition Villas, Panoramic Golf Course & Mangrove Views, Minutes from Sandy Beaches, 25 Minutes from Dubai, 20 from Sharjah",
 
     };
+
+    const DataProjectDetails3 = [
+      {
+        iconNo: 1,
+        heading: "Spectacular Views",
+        subHeading: "The apartment is bright and spacious with spectacular river views"
+      },
+      {
+        iconNo: 2,
+        heading: "Central Location",
+        subHeading: "All you may need is at your doorstep: central location with all infrastructure"
+      },
+      {
+        iconNo: 3,
+        heading: "WELLROUNDED LIFESTYLE",
+        subHeading: "Seamlessly Merge Work And Leisure"
+      },
+      {
+        iconNo: 7,
+        heading: "Smart Apartment",
+        subHeading: "Smart apartment technology designed by famous architecture group"
+      },
+      {
+        iconNo: 4,
+        heading: "We Designed Elements",
+        subHeading: "EVERY ELEMENT DESIGNED TO FIT A WELL-ROUNDED LIFESTYLE"
+      },
+      {
+        iconNo: 5,
+        heading: "Award-Winning Design",
+        subHeading: "The apartment was designed by Lucy De Vito with great attention to details"
+      },
+    ];
+
     const DataProjectDetails4 = {
         text1: "Modern Living in the Heart of Al Zorah",
         text2: "Spectacular Views, Contemporary Comfort",
@@ -260,7 +294,7 @@ export default function GolfViewLivingVillas() {
             <DetailHero {...detailHeroData} />
             <ProjectDetails1 {...DataProjectDetails1} />
             <ProjectDetails2 {...DataProjectDetails2} />
-            <ProjectDetails3 mainimage1="amn1.jpg" />
+            <ProjectDetails3 mainimage1="amn1.jpg" data={DataProjectDetails3} />
             <ProjectDetails4 {...DataProjectDetails4} />
             {/* <ProjectDetails5 panoramaimage="/golfstreet.jpg" /> */}
             {/* <ProjectDetails6 planImage="plan1.jpg" /> */}
