@@ -120,13 +120,13 @@ export default function ContactUs() {
                   <div className='CRow location a4'>
                     <div className="LcBox">
                       <div className="LcBoxT1">Dubai</div>
-                      <div className="LcBoxT2">814, Burlington Tower, Business Bay, Dubai.</div>
+                      <div className="LcBoxT2">Office no 706, Building no 8, Bay Square Business bay Dubai, UAE                      </div>
                       <a href="#">Get Direction</a>
                     </div>
                     <div className="Spacer">&nbsp;</div>
                     <div className="LcBox">
                       <div className="LcBoxT1">Ajman</div>
-                      <div className="LcBoxT2">G01, Sheikh Ammar Bin Humaid St. Al Mowaihat 02, Ajman, UAE.</div>
+                      <div className="LcBoxT2">G01, Sheikh Ammar Bin Humaid St. Al Mowaihat 02, Ajman, UAE.</div>
                       <a href="#">Get Direction</a>
                     </div>
                   </div>
