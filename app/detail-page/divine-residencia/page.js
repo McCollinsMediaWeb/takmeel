@@ -9,10 +9,11 @@ import ProjectDetails6 from "@/components/DetailPageComponents/ProjectDetails6";
 import ProjectDetails7 from "@/components/DetailPageComponents/ProjectDetails7";
 import CostCalculator from "@/components/DetailPageComponents/CostCalculator";
 import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
+
 export default function DivineResidencia() {
   const detailHeroData = {
-    backgroundImage: "Divine-Residencia-Video.mp4",
-    backgroundImageMobile: "bannerMobileThird.jpg",
+    backgroundImage: "divinresdesk.mp4",
+    backgroundImageMobile: "divinresmobile.mp4",
     text1: "Where Comfort Meets Contemporary Elegance",
     text2: "Divine Residencia",
     text3: "Studio City, Dubai",

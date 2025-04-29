@@ -1305,9 +1305,7 @@ body .slick-prev::before {
   max-width: 100%;
 }
 
-.FullScreenBanner.DetHero::after {
-  background-image: url(../public/projectbg.png);
-}
+
 
 .ButtonsBox1 {
   background-color: rgba(0, 0, 0, 0.6);
