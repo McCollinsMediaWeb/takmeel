@@ -2046,3 +2046,13 @@ input[type=number] {
   overflow: hidden;
   object-fit: cover !important;
 }
+.MainFoundersDetails{
+  max-width: 1200px;
+  margin: 60px auto;
+}
+.MainFoundersDetails img{
+  border-radius: 20px;
+}
+.MainFoundersDetails .BlT3{
+  font-size: 19px;
+}

@@ -438,4 +438,10 @@
       .slick-slider{
         margin: 0 -15px !important;
       }
+      .row.second{
+        flex-direction: row-reverse;
+      }
+      .MainFoundersDetails .BlT3 {
+        font-size: 16px;
+      }
   }
