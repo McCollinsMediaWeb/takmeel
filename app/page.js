@@ -18,7 +18,7 @@ export default function Home() {
         <FullScreenBanner backgroundImage="Golf-View-Living-Villa.mp4" backgroundImageMobile="Golf-View-Living-Villas/divine-golf-villas-Facade-Mobile 03.jpg" text1="Featured Properties"  text2="Golf View Living Villas" text3="Ajman" tagline="Private Villas Surrounded by Nature’s Calm" url="golf-view-living-villas" />
         {/* <HomeBanner2 backgroundImage="np1.jpg" backgroundImageMobile="np1mobile.jpg" text1="Project Showcase"  text2="Meydan Racecourse Mansion" text3="Embark on a journey through luxury, elegance, and innovation at Meydan Racecourse Mansion—a timeless landmark in TAKMEEL’s portfolio, promising an unparalleled lifestyle experience amidst breathtaking views and unparalleled grandeur."/> */}
         <HomeAbout/>
-        <SoldOutBox/>
+        {/* <SoldOutBox/> */}
         <ContactForm/>
       </div>
     </div>
