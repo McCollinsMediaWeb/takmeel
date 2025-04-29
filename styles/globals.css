@@ -1101,7 +1101,8 @@ body .slick-prev::before {
 }
 
 .FullScreenBanner.Projects::after {
-  background-image: url(../public/projectbg.png);
+  /* background-image: url(../public/projectbg.png); */
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .BlT1 {
