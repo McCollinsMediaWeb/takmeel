@@ -51,12 +51,13 @@ export default function ProjectsPageHeader() {
 
     var settings = {
         dots: true,
-        infinite: false,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
         initialSlide: 0,
-        infinite: false,
+        infinite: true,
+        autoplay: true,               // Enables autoplay
+        autoplaySpeed: 2000,          // Time between slides in milliseconds
         responsive: [
             {
                 breakpoint: 1024,
