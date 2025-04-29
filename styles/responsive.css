@@ -435,4 +435,7 @@
       .DetHero {
         height: auto !important;
       }
+      .slick-slider{
+        margin: 0 -15px !important;
+      }
   }
