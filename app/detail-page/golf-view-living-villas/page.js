@@ -100,60 +100,24 @@ export default function GolfViewLivingVillas() {
       "Discover the perfect harmony of nature, luxury, and modern design at Divine Golf Villas—an exclusive collection of just 20 upscale residences nestled within the prestigious Al Zorah Golf Course in Ajman. Each villa is thoughtfully crafted to blend contemporary architecture with natural beauty, featuring expansive layouts, floor-to-ceiling windows, and seamless indoor-outdoor living. ",
     GalleryImagesWithNames: [
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
-        title: "Welcome Lounge",
+        src: "Golf-View-Living-Villas/Interiors/Golf View Villa 1.jpeg",
+        title: "Bedroom",
       },
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_13_Image_0001.jpg",
-        title: "Lounge",
+        src: "Golf-View-Living-Villas/Interiors/Golf View Villa 2.jpeg",
+        title: "Bedroom",
       },
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_14_Image_0001.jpg",
-        title: "Gym",
+        src: "Golf-View-Living-Villas/Interiors/Golf View Villa 3.jpeg",
+        title: "Bedroom",
       },
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_17_Image_0001.jpg",
-        title: "Kitchen Area",
+        src: "Golf-View-Living-Villas/Interiors/Golf View Villa 4.jpeg",
+        title: "Bedroom",
       },
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_31_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_32_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_33_Image_0001.jpg",
-        title: "Bathroom",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_34_Image_0001.jpg",
-        title: "Bed Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_36_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_38_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_41_Image_0001.jpg",
-        title: "Bed Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_42_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_44_Image_0001.jpg",
-        title: "Bed Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg",
-        title: "Lounge",
+        src: "Golf-View-Living-Villas/Interiors/Golf View Villa 5.jpg",
+        title: "Swimming Pool",
       },
     ],
   };

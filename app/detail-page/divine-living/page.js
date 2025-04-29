@@ -44,10 +44,10 @@ export default function DivineLiving() {
   };
 
   const DataProjectDetails1 = {
-    text1: "Modern Living in the Heart of Al Zorah",
-    text2: "Spectacular Views, Contemporary Comfort",
+    text1: "Modern Living in the Heart of Arjan",
+    text2: "Timeless Elegance, Modern Comfort",
     text3:
-      "Nestled in the heart of Al Zorah, Ajman, Golf View Living offers a unique blend of peace, luxury, and accessibility. Overlooking the lush greens of Al Zorah Golf Course, the serene mangroves, and the Ajman skyline, this new residential development is the perfect escape—without ever leaving the city.",
+      "Tucked away in the vibrant district of Arjan, Divine Living offers a perfect balance of luxury and tranquility. Developed by Takmeel Real Estate, this refined residential project is designed for those who seek spacious living, sophisticated interiors, and a peaceful lifestyle—without compromising on urban connectivity.",
     GalleryImages: [
       "Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
       "Studio Bespoke_Design Living_24.03.2023_Page_13_Image_0001.jpg",
@@ -109,10 +109,10 @@ export default function DivineLiving() {
   ];
 
   const DataProjectDetails4 = {
-    text1: "Modern Living in the Heart of Al Zorah",
+    text1: "Spacious Urban Living in Arjan",
     text2: "Spectacular Views, Contemporary Comfort",
     text3:
-      "Nestled in the heart of Al Zorah, Ajman, Golf View Living offers a unique blend of peace, luxury, and accessibility. Overlooking the lush greens of Al Zorah Golf Course, the serene mangroves, and the Ajman skyline, this new residential development is the perfect escape—without ever leaving the city.",
+      "Welcome to Divine Living, where elegance meets everyday comfort in one of Dubai’s most promising neighborhoods—Arjan. Brought to life by Takmeel Real Estate, this exclusive residential development redefines urban living with thoughtfully designed spaces, premium finishes, and a serene environment that offers a welcome escape from the city’s hustle.",
     GalleryImagesWithNames: [
       {
         src: "Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
@@ -177,11 +177,17 @@ export default function DivineLiving() {
     text1: "Divine Living",
     text2: "EFFORTLESS ACCESS <br/> To All Corners Of The City",
     landmarks: [
-      "Central Location",
-      "All is at Your Doorstep",
-      "Shopping Center — 5 min Walk",
-      "Tube Station and Overground — 5 min Walk",
-      "Good Schools in the Neighbourhood",
+      // "Central Location",
+      // "All is at Your Doorstep",
+      // "Shopping Center — 5 min Walk",
+      // "Tube Station and Overground — 5 min Walk",
+      // "Good Schools in the Neighbourhood",
+      "2 MINUTES To Barsha City Centre",
+      "5 MINUTES To Umm Suqeim Road",
+      "20 MINUTES To Burj Khalifa",
+      "20 MINUTES To Dubai Marina",
+      "20 MINUTES To Al Sufouh Beach",
+      "25 MINUTES Dubai International Airport",
     ],
     mapData: {
       apiKey: "AIzaSyCBtGUl2z4uc5HX9e7eMmzIHalH2a99Oz4",
@@ -288,16 +294,24 @@ export default function DivineLiving() {
         }
       ],
       nearByPlaces: [
-        { name: "King's College Hospital London", place_id: "ChIJ1XhuJe5pXz4RGo-ENO0K6Cs", location: { lat: 25.11347333289849, lng: 55.25492898877556 } },
-        { name: "Dunecrest American School", place_id: "ChIJ41AzRntvXz4R-R6A87ZBfYY", location: { lat: 25.091190585103302, lng: 55.30647784609949 } },
-        { name: "New Earth Cafe", place_id: "ChIJXzBhucplXz4RxzQ-KfL8szg", location: { lat: 25.099380109303485, lng: 55.31540940176637 } },
-        { name: "HideOut Al Barari", place_id: "ChIJtywQsyZlXz4RVBgWuGoZdIk", location: { lat: 25.099574424113847, lng: 55.31581709752857 } },
-        { name: "Mediterranean Garden", place_id: "ChIJX3ac7GNvXz4R5gXVIZ1T1j4", location: { lat: 25.096737397233635, lng: 55.31014154332052 } },
-        { name: "Global Village", place_id: "ChIJFf7go49vXz4RJ6Q_Tvue2Uc", location: { lat: 25.07341628157727, lng: 55.308393501238776 } },
-        { name: "Cityland Mall", place_id: "ChIJMXnawZFvXz4Rtx_7wq9EQjk", location: { lat: 25.06747303267066, lng: 55.31393249409508 } },
-        { name: "Dubai Outlet Mall", place_id: "ChIJdcaW4FRjXz4RhKLN6dkFOu0", location: { lat: 25.073070634698052, lng: 55.39959151950052 } },
+
+        { name: "Barsha City Center", place_id: "ChIJu2gGpY5uXz4RaPjzAPdrM-w", location: { lat: 25.06991148244221, lng: 55.24194821389252 } },
+        { name: "Umm Suqeim Road", place_id: "EixVbW0gU3VxZWltIFN0IC0gRHViYWkgLSBVbml0ZWQgQXJhYiBFbWlyYXRlcyIuKiwKFAoSCYU73_Xka18-Ebew3JRiWt-qEhQKEglFxtlqSUNfPhHpKQArv9DOdA", location: { lat: 25.103562986245, lng: 55.23136628227125 } },
+        { name: "Burj Khalifa", place_id: "ChIJS-JnijRDXz4R4rfO4QLlRf8", location: { lat: 25.197420260687153, lng: 55.274419311110236 } },
+        { name: "Dubai Marina", place_id: "ChIJY2IG66kUXz4RZOB_j8cWtjk", location: { lat: 25.078073420017596, lng: 55.13170118543625 } },
         { name: "Dubai International Airport", place_id: "ChIJaQ4mkwZdXz4R6e5IegDUleY", location: { lat: 25.259490296989462, lng: 55.364666407765895 } },
-        { name: "Dubai Mall", place_id: "ChIJB1zIKShoXz4RnbaTPPup7aU", location: { lat: 25.20253968228783, lng: 55.278712622706365 } },
+
+
+        // { name: "King's College Hospital London", place_id: "ChIJ1XhuJe5pXz4RGo-ENO0K6Cs", location: { lat: 25.11347333289849, lng: 55.25492898877556 } },
+        // { name: "Dunecrest American School", place_id: "ChIJ41AzRntvXz4R-R6A87ZBfYY", location: { lat: 25.091190585103302, lng: 55.30647784609949 } },
+        // { name: "New Earth Cafe", place_id: "ChIJXzBhucplXz4RxzQ-KfL8szg", location: { lat: 25.099380109303485, lng: 55.31540940176637 } },
+        // { name: "HideOut Al Barari", place_id: "ChIJtywQsyZlXz4RVBgWuGoZdIk", location: { lat: 25.099574424113847, lng: 55.31581709752857 } },
+        // { name: "Mediterranean Garden", place_id: "ChIJX3ac7GNvXz4R5gXVIZ1T1j4", location: { lat: 25.096737397233635, lng: 55.31014154332052 } },
+        // { name: "Global Village", place_id: "ChIJFf7go49vXz4RJ6Q_Tvue2Uc", location: { lat: 25.07341628157727, lng: 55.308393501238776 } },
+        // { name: "Cityland Mall", place_id: "ChIJMXnawZFvXz4Rtx_7wq9EQjk", location: { lat: 25.06747303267066, lng: 55.31393249409508 } },
+        // { name: "Dubai Outlet Mall", place_id: "ChIJdcaW4FRjXz4RhKLN6dkFOu0", location: { lat: 25.073070634698052, lng: 55.39959151950052 } },
+        // { name: "Dubai International Airport", place_id: "ChIJaQ4mkwZdXz4R6e5IegDUleY", location: { lat: 25.259490296989462, lng: 55.364666407765895 } },
+        // { name: "Dubai Mall", place_id: "ChIJB1zIKShoXz4RnbaTPPup7aU", location: { lat: 25.20253968228783, lng: 55.278712622706365 } },
       ]
     }
   };
