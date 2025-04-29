@@ -145,125 +145,104 @@ export default function TakmeelAlBarariViewPropertiesPage() {
     mapData: {
       apiKey: "AIzaSyCBtGUl2z4uc5HX9e7eMmzIHalH2a99Oz4",
       center: { lat: 25.05079, lng: 55.24659 },
-      zoom: 11,
+      zoom:13,
       styles: [
         {
           "featureType": "water",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#d4f4dd" }  // light greenish water
+            { "color": "#5fb6c5" }
           ]
         },
         {
           "featureType": "landscape.natural",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#e8f7ea" }  // very light green natural areas
+            { "color": "#dfeee9" }
           ]
         },
         {
           "featureType": "landscape.man_made",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#f0f8f1" }
+            { "color": "#f2f3f2" }
           ]
         },
         {
           "featureType": "poi.park",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#c0e8c1" }  // soft mint green parks
+            { "color": "#b3d4af" }
           ]
         },
         {
           "featureType": "road",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#fdf2f2" }  // pale pinkish for normal roads
-          ]
-        },
-        {
-          "featureType": "road.highway",
-          "elementType": "geometry.fill",
-          "stylers": [
-            { "color": "#f8d7da" }  // soft red for highways
-          ]
-        },
-        {
-          "featureType": "road.arterial",
-          "elementType": "geometry.fill",
-          "stylers": [
-            { "color": "#fbe4e6" }
-          ]
-        },
-        {
-          "featureType": "road.local",
-          "elementType": "geometry.fill",
-          "stylers": [
-            { "color": "#ffffff" }  // clean white local roads
+            { "color": "#ffffff" }
           ]
         },
         {
           "featureType": "road",
           "elementType": "geometry.stroke",
           "stylers": [
-            { "color": "#ecb5b9" }
+            { "visibility": "off" }
           ]
         },
         {
           "featureType": "transit",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#f3e8e9" }
+            { "color": "#e3e4e2" }
           ]
         },
         {
           "featureType": "poi.business",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#f9faf9" }
+            { "color": "#f7f7f7" }
           ]
         },
         {
           "featureType": "administrative",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#f7d6d9" }
+            { "color": "#f2f3f2" }
           ]
         },
         {
           "featureType": "administrative",
           "elementType": "labels.text.fill",
           "stylers": [
-            { "color": "#a94442" }  // deep elegant red for labels
+            { "color": "#666666" }
           ]
         },
         {
           "featureType": "road",
           "elementType": "labels.text.fill",
           "stylers": [
-            { "color": "#c9302c" }  // stronger red for road labels
+            { "color": "#444444" }
           ]
         },
         {
           "featureType": "poi",
           "elementType": "labels.text.fill",
           "stylers": [
-            { "color": "#a94442" }
+            { "color": "#444444" }
           ]
         },
         {
           "featureType": "transit.station",
           "elementType": "labels.text.fill",
           "stylers": [
-            { "color": "#a94442" }
+            { "color": "#444444" }
           ]
         },
         {
           "featureType": "all",
           "elementType": "labels.icon",
           "stylers": [
-            { "visibility": "off" }
+            { "visibility": "on" }
           ]
         }
       ],

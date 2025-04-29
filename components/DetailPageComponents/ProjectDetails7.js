@@ -74,124 +74,74 @@ export default function ProjectDetails7({ mapimage, text1, text2, landmarks, map
                 >
                     <div className='LocationRowWrap'>
                         <div className='row'>
-                            <div className='col-md-6'>
+                            <div className='col-md-12'>
                                 <div className="BlT1 nunito-text text-uppercase">{text1 ? text1 : "Takmeel Al Barari Properties"}</div>
                                 <div
                                     className="BlT2 text-uppercase"
                                     dangerouslySetInnerHTML={{ __html: text2 || "EFFORTLESS ACCESS<br /> To All Corners Of The City" }}
                                 ></div>
-
-                                {/* {landmarks?.length > 0 ? (
+<div className='row'>
+                                {landmarks?.length > 0 ? (
                                     landmarks.map((line, index) => (
-                                        <div key={index}>
-                                            <div className="VmT5 nunito-text">{line}</div>
-                                        </div>
-                                    ))
-                                ) : (
-                                    <>
-                                        <div>
-                                            <div className="VmT5 nunito-text">3 MINUTES Hessa Street</div>
-                                        </div>
-                                        <div>
-                                            <div className="VmT5 nunito-text">5 MINUTES Sheikh Mohammed Bin Zayed Rd</div>
-                                        </div>
-                                        <div>
-                                            <div className="VmT5 nunito-text">8 MINUTES Dubai Sport City</div>
-                                        </div>
-                                        <div>
-                                            <div className="VmT5 nunito-text">8 Minutes From Dubai Hills Mall</div>
-                                        </div>
-                                        <div>
-                                            <div className="VmT5 nunito-text">25 MINUTES DUBAI INTERNATIONAL AIRPORT</div>
-                                        </div>
-                                        <div>
-                                            <div className="VmT5 nunito-text">20 MINUTES Marina Beach</div>
-                                        </div>
-                                        <div>
-                                            <div className="VmT5 nunito-text">20 MINUTES Burj Khalifa</div>
-                                        </div>
-                                    </>
-                                )} */}
-
-
-                                {mapData?.nearByPlaces?.length > 0 ? (
-                                    mapData.nearByPlaces.map((place, index) => (
-                                        // <div key={index}>
-                                        //     <div style={{ marginBottom: '15px', paddingLeft: '35px', display: 'inline-block' }} className=" nunito-text">{place.name}</div>
-                                        // </div>
-                                        <div key={index} style={{ display: 'flex', alignItems: 'center', marginBottom: '15px' }}>
-                                            <div
-                                                style={{
-                                                    width: '24px',
-                                                    height: '24px',
-                                                    borderRadius: '50%',
-                                                    backgroundColor: 'red',
-                                                    color: 'white',
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
-                                                    fontSize: '14px',
-                                                    marginRight: '10px',
-                                                    flexShrink: 0,
-                                                }}
-                                            >
-                                                {index + 1}
+                                            <div key={index} className='col-md-4'>
+                                                <div className="VmT5 nunito-text">{line}</div>
                                             </div>
-                                            <div className="nunito-text">{place.name}</div>
-                                        </div>
-
                                     ))
                                 ) : (
                                     <>
-                                        <div>
-                                            <div className="VmT5 nunito-text">3 MINUTES Hessa Street</div>
-                                        </div>
-                                        <div>
-                                            <div className="VmT5 nunito-text">5 MINUTES Sheikh Mohammed Bin Zayed Rd</div>
-                                        </div>
-                                        <div>
-                                            <div className="VmT5 nunito-text">8 MINUTES Dubai Sport City</div>
-                                        </div>
-                                        <div>
-                                            <div className="VmT5 nunito-text">8 Minutes From Dubai Hills Mall</div>
-                                        </div>
-                                        <div>
-                                            <div className="VmT5 nunito-text">25 MINUTES DUBAI INTERNATIONAL AIRPORT</div>
-                                        </div>
-                                        <div>
-                                            <div className="VmT5 nunito-text">20 MINUTES Marina Beach</div>
-                                        </div>
-                                        <div>
-                                            <div className="VmT5 nunito-text">20 MINUTES Burj Khalifa</div>
-                                        </div>
+                                        
+                                            <div className='col-md-4'>
+                                                <div className="VmT5 nunito-text">3 MINUTES Hessa Street</div>
+                                            </div>
+                                            <div className='col-md-4'>
+                                                <div className="VmT5 nunito-text">5 MINUTES Sheikh Mohammed Bin Zayed Rd</div>
+                                            </div>
+                                            <div className='col-md-4'>
+                                                <div className="VmT5 nunito-text">8 MINUTES Dubai Sport City</div>
+                                            </div>
+                                            <div className='col-md-4'>
+                                                <div className="VmT5 nunito-text">8 Minutes From Dubai Hills Mall</div>
+                                            </div>
+                                            <div className='col-md-4'>
+                                                <div className="VmT5 nunito-text">25 MINUTES DUBAI INTERNATIONAL AIRPORT</div>
+                                            </div>
+                                            <div className='col-md-4'>
+                                                <div className="VmT5 nunito-text">20 MINUTES Marina Beach</div>
+                                            </div>
+                                            <div className='col-md-4'>
+                                                <div className="VmT5 nunito-text">20 MINUTES Burj Khalifa</div>
+                                            </div>
+                                       
                                     </>
                                 )}
 
+</div>
+                                
 
 
 
                             </div>
-                            <div className='col-md-6'>
-                                <div className='MapImageBox'>
-
-                                    {mapData ? (
-                                        <MapComponent {...mapData} />
-                                    ) : (<Image
-                                        src={`/${mapimage}`}
-                                        width={719}
-                                        height={509}
-                                        layout="responsive"
-                                        alt="Takmeel"
-                                    />)}
-
-                                </div>
+                            <div className='col-md-12'>
+                                
                             </div>
                         </div>
                     </div>
                 </motion.div>
 
             </div>
+            <div className='MapImageBox'>
 
+{mapData ? (
+    <MapComponent {...mapData} />
+) : (<Image
+    src={`/${mapimage}`}
+    width={719}
+    height={509}
+    layout="responsive"
+    alt="Takmeel"
+/>)}
+
+</div>
         </div>
     );
 }

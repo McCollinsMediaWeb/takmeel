@@ -1898,7 +1898,7 @@ object-fit: cover !important;
   }
 }
 #map{
-  border-radius: 20px;
+  margin-top: 25px;
 }
 .SlT3{
   display: -webkit-box;
