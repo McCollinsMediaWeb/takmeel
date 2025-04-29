@@ -206,8 +206,8 @@ export default function Founders() {
                                             />
                                         </div>
                                         <div className="FounderDetails">
-                                            <div className="FounderName">Shohaib</div>
-                                            <div className="FounderPosition">Manager HR</div>
+                                            <div className="FounderName">Shohaib Tariq</div>
+                                            <div className="FounderPosition">General Manager</div>
                                             <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
                                             </div>
@@ -227,7 +227,7 @@ export default function Founders() {
                                         </div>
                                         <div className="FounderDetails">
                                             <div className="FounderName">Ashim Mustaq</div>
-                                            <div className="FounderPosition">Project Head</div>
+                                            <div className="FounderPosition">Head of Finance</div>
                                             <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
                                             </div>
