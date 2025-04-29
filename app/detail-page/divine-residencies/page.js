@@ -124,6 +124,137 @@ export default function DivineResidencies() {
         ],
     };
 
+    const DataProjectDetails7 = {
+        text1: "Divine Residencies",
+        text2: "EFFORTLESS ACCESS <br/> To All Corners Of The City",
+        landmarks: [
+          "3 MINUTES Hessa Street",
+          "5 MINUTES Sheikh Mohammed Bin Zayed Rd",
+          "8 MINUTES Dubai Sport City",
+          "8 Minutes From Dubai Hills Mall",
+          "25 MINUTES DUBAI INTERNATIONAL AIRPORT",
+          "20 MINUTES Marina Beach",
+          "20 MINUTES Burj Khalifa"
+        ],
+        mapData: {
+          apiKey: "AIzaSyCBtGUl2z4uc5HX9e7eMmzIHalH2a99Oz4",
+          center: { lat: 25.071258512674074, lng: 55.24881931267348, place_id: "ChIJ3TVOCABvXz4RzKlmKTHDgnw" },
+          zoom: 13,
+          styles: [
+            {
+              "featureType": "water",
+              "elementType": "geometry.fill",
+              "stylers": [
+                { "color": "#5fb6c5" }
+              ]
+            },
+            {
+              "featureType": "landscape.natural",
+              "elementType": "geometry.fill",
+              "stylers": [
+                { "color": "#dfeee9" }
+              ]
+            },
+            {
+              "featureType": "landscape.man_made",
+              "elementType": "geometry.fill",
+              "stylers": [
+                { "color": "#f2f3f2" }
+              ]
+            },
+            {
+              "featureType": "poi.park",
+              "elementType": "geometry.fill",
+              "stylers": [
+                { "color": "#b3d4af" }
+              ]
+            },
+            {
+              "featureType": "road",
+              "elementType": "geometry.fill",
+              "stylers": [
+                { "color": "#ffffff" }
+              ]
+            },
+            {
+              "featureType": "road",
+              "elementType": "geometry.stroke",
+              "stylers": [
+                { "visibility": "off" }
+              ]
+            },
+            {
+              "featureType": "transit",
+              "elementType": "geometry.fill",
+              "stylers": [
+                { "color": "#e3e4e2" }
+              ]
+            },
+            {
+              "featureType": "poi.business",
+              "elementType": "geometry.fill",
+              "stylers": [
+                { "color": "#f7f7f7" }
+              ]
+            },
+            {
+              "featureType": "administrative",
+              "elementType": "geometry.fill",
+              "stylers": [
+                { "color": "#f2f3f2" }
+              ]
+            },
+            {
+              "featureType": "administrative",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                { "color": "#666666" }
+              ]
+            },
+            {
+              "featureType": "road",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                { "color": "#444444" }
+              ]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                { "color": "#444444" }
+              ]
+            },
+            {
+              "featureType": "transit.station",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                { "color": "#444444" }
+              ]
+            },
+            {
+              "featureType": "all",
+              "elementType": "labels.icon",
+              "stylers": [
+                { "visibility": "on" }
+              ]
+            }
+          ],
+          nearByPlaces: [
+            { name: "King's College Hospital London", place_id: "ChIJ1XhuJe5pXz4RGo-ENO0K6Cs", location: { lat: 25.11347333289849, lng: 55.25492898877556 } },
+            { name: "Dunecrest American School", place_id: "ChIJ41AzRntvXz4R-R6A87ZBfYY", location: { lat: 25.091190585103302, lng: 55.30647784609949 } },
+            { name: "New Earth Cafe", place_id: "ChIJXzBhucplXz4RxzQ-KfL8szg", location: { lat: 25.099380109303485, lng: 55.31540940176637 } },
+            { name: "HideOut Al Barari", place_id: "ChIJtywQsyZlXz4RVBgWuGoZdIk", location: { lat: 25.099574424113847, lng: 55.31581709752857 } },
+            { name: "Mediterranean Garden", place_id: "ChIJX3ac7GNvXz4R5gXVIZ1T1j4", location: { lat: 25.096737397233635, lng: 55.31014154332052 } },
+            { name: "Global Village", place_id: "ChIJFf7go49vXz4RJ6Q_Tvue2Uc", location: { lat: 25.07341628157727, lng: 55.308393501238776 } },
+            { name: "Cityland Mall", place_id: "ChIJMXnawZFvXz4Rtx_7wq9EQjk", location: { lat: 25.06747303267066, lng: 55.31393249409508 } },
+            { name: "Dubai Outlet Mall", place_id: "ChIJdcaW4FRjXz4RhKLN6dkFOu0", location: { lat: 25.073070634698052, lng: 55.39959151950052 } },
+            { name: "Dubai International Airport", place_id: "ChIJaQ4mkwZdXz4R6e5IegDUleY", location: { lat: 25.259490296989462, lng: 55.364666407765895 } },
+            { name: "Dubai Mall", place_id: "ChIJB1zIKShoXz4RnbaTPPup7aU", location: { lat: 25.20253968228783, lng: 55.278712622706365 } },
+          ]
+        }
+      };
+
 
     return (
         <div>
@@ -134,7 +265,7 @@ export default function DivineResidencies() {
             <ProjectDetails4 {...DataProjectDetails4} />
             <ProjectDetails5 panoramaimage="/str1.jpg" />
             <ProjectDetails6 planImage="plan1.jpg" />
-            <ProjectDetails7 mapimage="map1.jpg" />
+            <ProjectDetails7 mapimage="map1.jpg" {...DataProjectDetails7} />
             <CostCalculator />
             <PropertyForm />
         </div>

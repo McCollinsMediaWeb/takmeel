@@ -129,6 +129,132 @@ export default function GolfViewLivingApartments() {
       },
     ],
   };
+
+  const DataProjectDetails7 = {
+    text1: "Golf View Living Apartments",
+    text2: "EFFORTLESS ACCESS <br/> To All Corners Of The City",
+    landmarks: [
+      "Al Zorah Ajman",
+      "Contemporary Designs With Top Class Finishing",
+      "Peaceful And Luxiourious Community",
+      "7 MINUTES to Marina 1 Al Zorah",
+      "Top Facilities And Amenities",
+      "10 MINUTES to Al Zohra Beach",
+      "1 MINUTE to Al Zohra Golf Club"
+    ],
+    mapData: {
+      apiKey: "AIzaSyCBtGUl2z4uc5HX9e7eMmzIHalH2a99Oz4",
+      center: { lat: 25.435623597666495, lng: 55.485490181419905, place_id: "ChIJlx5vQQBXXz4RDephFNMrJhI" },
+      zoom: 13,
+      styles: [
+        {
+          "featureType": "water",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#5fb6c5" }
+          ]
+        },
+        {
+          "featureType": "landscape.natural",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#dfeee9" }
+          ]
+        },
+        {
+          "featureType": "landscape.man_made",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#f2f3f2" }
+          ]
+        },
+        {
+          "featureType": "poi.park",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#b3d4af" }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#ffffff" }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "geometry.stroke",
+          "stylers": [
+            { "visibility": "off" }
+          ]
+        },
+        {
+          "featureType": "transit",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#e3e4e2" }
+          ]
+        },
+        {
+          "featureType": "poi.business",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#f7f7f7" }
+          ]
+        },
+        {
+          "featureType": "administrative",
+          "elementType": "geometry.fill",
+          "stylers": [
+            { "color": "#f2f3f2" }
+          ]
+        },
+        {
+          "featureType": "administrative",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            { "color": "#666666" }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            { "color": "#444444" }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            { "color": "#444444" }
+          ]
+        },
+        {
+          "featureType": "transit.station",
+          "elementType": "labels.text.fill",
+          "stylers": [
+            { "color": "#444444" }
+          ]
+        },
+        {
+          "featureType": "all",
+          "elementType": "labels.icon",
+          "stylers": [
+            { "visibility": "on" }
+          ]
+        }
+      ],
+      nearByPlaces: [
+        { name: "Al Zorah Beach", place_id: "ChIJzSHSI55XXz4RMbtHzzcwmAo", location: { lat: 25.42588643843721, lng: 55.44740583620454 } },
+        { name: "Al Zorah Marina 1", place_id: "ChIJH8nugJRXXz4RamkfN_vI-k4", location: { lat: 25.430400966073893, lng: 55.46565267858057 } },
+        { name: "Al Zorah Golf Club", place_id: "ChIJXVH71Qv49T4RH9YdVVZijGc", location: { lat: 25.43284120991059, lng: 55.48761781743727 } },
+      ]
+    }
+  };
+
+
   return (
     <div>
       <DetailHero {...detailHeroData} />
@@ -139,7 +265,7 @@ export default function GolfViewLivingApartments() {
       <ProjectDetails5 panoramaimage="/str1.jpg" />
       <ProjectDetails6 planImage="plan1.jpg" />
 
-      <ProjectDetails7 mapimage="map1.jpg" />
+      <ProjectDetails7 mapimage="map1.jpg" {...DataProjectDetails7} />
       <CostCalculator />
       <PropertyForm />
     </div>
