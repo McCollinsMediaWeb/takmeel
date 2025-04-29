@@ -211,12 +211,13 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
     const [open, setOpen] = useState(false);
     var settings = {
         dots: true,
-        infinite: false,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 3,
         initialSlide: 0,
-        infinite: false,
+        infinite: true,
+        autoplay: true,               // Enables autoplay
+        autoplaySpeed: 2000,          // Time between slides in milliseconds
         responsive: [
             {
                 breakpoint: 1024,

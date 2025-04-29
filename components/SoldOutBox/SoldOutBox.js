@@ -12,7 +12,7 @@ export default function SoldOutBox() {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     var settings = {
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 2,

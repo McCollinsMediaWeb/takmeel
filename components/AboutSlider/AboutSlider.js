@@ -17,12 +17,14 @@ export default function AboutSlider() {
 
     var settings = {
         dots: true,
-        infinite: false,
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 2,
         initialSlide: 0,
-        infinite:false,
+        infinite: true,
+        autoplay: true,               // Enables autoplay
+        autoplaySpeed: 2000,          // Time between slides in milliseconds
+    
         responsive: [
             {
                 breakpoint: 1024,
@@ -31,7 +33,9 @@ export default function AboutSlider() {
                     slidesToScroll: 1,
                     infinite: true,
                     dots: true,
-                    centerMode:true
+                    centerMode: true,
+                    autoplay: true,
+                    autoplaySpeed: 2000
                 }
             },
             {
@@ -40,7 +44,9 @@ export default function AboutSlider() {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 1,
-                    centerMode:true
+                    centerMode: true,
+                    autoplay: true,
+                    autoplaySpeed: 2000
                 }
             },
             {
@@ -48,11 +54,15 @@ export default function AboutSlider() {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerMode:true
+                    centerMode: true,
+                    autoplay: true,
+                    autoplaySpeed: 2000
                 }
             }
         ]
     };
+    
+    
 
 
     return (
