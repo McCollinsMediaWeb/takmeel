@@ -12,6 +12,7 @@ import f3 from '../../public/team-photo.jpg'
 import f4 from "../../public/t3.jpg"
 import f5 from "../../public/t4.jpg"
 import f6 from "../../public/t5.jpg"
+import f7 from "../../public/t6.jpg"
 export default function Founders() {
 
     var settings = {
@@ -56,7 +57,7 @@ export default function Founders() {
         dots: true,
         infinite: false,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         initialSlide: 0,
         infinite: false,
@@ -265,9 +266,9 @@ export default function Founders() {
                                         <div className="FounderDetails">
                                             <div className="FounderName">Hamza Asad</div>
                                             <div className="FounderPosition">Executive Director</div>
-                                            <div className="text-right">
+                                            {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
@@ -285,9 +286,9 @@ export default function Founders() {
                                         <div className="FounderDetails">
                                             <div className="FounderName">Shohaib Tariq</div>
                                             <div className="FounderPosition">General Manager</div>
-                                            <div className="text-right">
+                                            {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
@@ -303,11 +304,31 @@ export default function Founders() {
                                             />
                                         </div>
                                         <div className="FounderDetails">
-                                            <div className="FounderName">Ashim Mustaq</div>
+                                            <div className="FounderName">Asim Mustaq</div>
                                             <div className="FounderPosition">Head of Finance</div>
-                                            <div className="text-right">
+                                            {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
-                                            </div>
+                                            </div> */}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="FounderItem">
+                                    <div className="FounderItemBox">
+                                        <div className="FounderImageBox">
+                                            <Image
+                                                src={f7}
+                                                width={416}
+                                                height={524}
+                                                layout="responsive"
+                                                alt="Takmeel"
+                                            />
+                                        </div>
+                                        <div className="FounderDetails">
+                                            <div className="FounderName">Rabia Afsheen</div>
+                                            <div className="FounderPosition">Head of HR</div>
+                                            {/* <div className="text-right">
+                                                <a href="#" className="MoreInfoLink nunito-text">More Info</a>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>

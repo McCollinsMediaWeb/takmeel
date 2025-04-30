@@ -1022,7 +1022,6 @@ body .slick-prev::before {
 .FounderPosition {
   color: #D6B264;
   font-size: 18px;
-  margin-bottom: 15px;
 }
 
 .MoreInfoLink {
@@ -1060,7 +1059,6 @@ body .slick-prev::before {
 }
 
 .OurPeopleBox {
-  max-width: 1000px;
 
   margin: 0 auto;
   margin-top: 30px;
