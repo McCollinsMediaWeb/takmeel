@@ -122,6 +122,56 @@ export default function TakmeelAlBarariViewPropertiesPage() {
     ],
   };
 
+  const DataProjectDetails6 = [
+    {
+      amenity: "Ground Floor",
+      values: [
+        { iconNo: 25, name: "Co-working space" }
+      ]
+    },
+    {
+      amenity: "Indoor",
+      values: [
+        // { iconNo: 1, name: "Outdoor Showers" },
+        { iconNo: 22, name: "Beach Entry Pool" },
+        { iconNo: 19, name: "Adult Pool" },
+        // { iconNo: 5, name: "Dry Decking Area" },
+        // { iconNo: 6, name: "Wet Decking Area" },
+        { iconNo: 27, name: "Jacuzzi" },
+        // { iconNo: 1, name: "Sunken Setting" },
+        { iconNo: 24, name: "Cabanas" },
+        // { iconNo: 3, name: "Aqua Gym" },
+        { iconNo: 29, name: "Kids Pool" },
+        // { iconNo: 5, name: "Kids Splash Pad" },
+        { iconNo: 28, name: "Kids Play Area" },
+        { iconNo: 32, name: "Outdoor Gym" },
+        // { iconNo: 1, name: "Family Seating Area" },
+        // { iconNo: 2, name: "Casual Setting Area" },
+        { iconNo: 26, name: "Indoor Gym" },
+        // { iconNo: 4, name: "Party Area" },
+        { iconNo: 35, name: "Steam and Sauna Area" },
+        // { iconNo: 6, name: "Zen Garden" },
+      ]
+    },
+    {
+      amenity: "Roof Top",
+      values: [
+        { iconNo: 31, name: "Outdoor Cinema" },
+        { iconNo: 33, name: "Outdoor Shaded Seating" },
+        { iconNo: 34, name: "Smoking Lounge" },
+        { iconNo: 21, name: "BBQ Area" },
+        { iconNo: 37, name: "Yoga Area" },
+        // { iconNo: 6, name: "Seating Area" },
+        // { iconNo: 7, name: "Multi Pourpose Court" },
+        { iconNo: 30, name: "Mini Golf" },
+        { iconNo: 23, name: "Board Games Area" },
+        { iconNo: 36, name: "Table Tennis Court" },
+        { iconNo: 20, name: "Archery Area" },
+        // { iconNo: 5, name: "Observatory Point" },
+      ]
+    }
+  ];
+
   const DataProjectDetails7 = {
     text1: "Takmeel Al Barari View",
     text2: "EFFORTLESS ACCESS <br/> To All Corners Of The City",
@@ -261,7 +311,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       <ProjectDetails3 mainimage1="ovr3.jpg" data={DataProjectDetails3} />
       <ProjectDetails4 {...DataProjectDetails4} />
       {/* <ProjectDetails5 panoramaimage="/albararistreet.jpg" /> */}
-      {/* <ProjectDetails6 planImage="plan1.jpg" /> */}
+      <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
 
       <ProjectDetails7 mapimage="map1.jpg" {...DataProjectDetails7} />
       <CostCalculator />
