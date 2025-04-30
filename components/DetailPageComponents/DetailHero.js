@@ -335,7 +335,7 @@ export default function DetailHero({
 
             <div className="DetSlContentBox">
                 <div className="container">
-                    <motion.div
+                    {/* <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -353,7 +353,7 @@ export default function DetailHero({
                                 <div className="PlayIcon">&nbsp;</div>
                             </div>
                         </div>
-                    </motion.div>
+                    </motion.div> */}
 
 
                     <motion.div
