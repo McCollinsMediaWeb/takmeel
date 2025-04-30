@@ -91,7 +91,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                 {section.values.map((item, index) => (
                                                     <div className='col-md-4' key={index}>
                                                         <motion.div
-                                                            initial={{ opacity: 0, y: 30 }}
+                                                            initial={{ opacity: 0, y: 50 }}
                                                             whileInView={{ opacity: 1, y: 0 }}
                                                             transition={{ duration: 0.6, ease: "easeOut" }}
                                                             viewport={{ once: true, amount: 0.5 }}
@@ -123,7 +123,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                             <div className='row'>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
@@ -140,7 +140,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                 </div>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
@@ -157,7 +157,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                 </div>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
@@ -174,7 +174,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                 </div>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
@@ -191,7 +191,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                 </div>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
@@ -208,7 +208,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                 </div>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
@@ -236,7 +236,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                             <div className='row'>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
@@ -253,7 +253,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                 </div>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
@@ -270,7 +270,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                 </div>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
@@ -287,7 +287,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                 </div>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
@@ -304,7 +304,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                 </div>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
@@ -321,7 +321,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                 </div>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
@@ -349,7 +349,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                             <div className='row'>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
@@ -366,7 +366,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                 </div>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
@@ -383,7 +383,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                 </div>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
@@ -401,7 +401,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                 </div>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
@@ -418,7 +418,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                 </div>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
@@ -436,7 +436,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                 </div>
                                                 <div className='col-md-4'>
                                                     <motion.div
-                                                        initial={{ opacity: 0, y: 30 }}
+                                                        initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
                                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
