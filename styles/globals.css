@@ -942,7 +942,7 @@ body .slick-prev::before {
   font-size: 18px;
   max-width: 900px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .d-only {}
@@ -2125,4 +2125,7 @@ input[type=number] {
 }
 .MainFoundersDetails .BlT3{
   font-size: 19px;
+}
+.pdb0{
+  padding-bottom: 0 !important;
 }
