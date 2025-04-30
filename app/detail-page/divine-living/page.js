@@ -192,7 +192,7 @@ export default function DivineLiving() {
     mapData: {
       apiKey: "AIzaSyCBtGUl2z4uc5HX9e7eMmzIHalH2a99Oz4",
       center: { lat: 25.067353743761142, lng: 55.236491095762375, place_id: "ChIJQcbW76xvXz4R4Q2vA1Uo5Pg" },
-      zoom: 13,
+      zoom: 16,
       styles: [
         {
           "featureType": "water",

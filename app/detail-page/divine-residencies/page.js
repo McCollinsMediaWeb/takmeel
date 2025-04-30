@@ -129,7 +129,7 @@ export default function DivineResidencies() {
     mapData: {
       apiKey: "AIzaSyCBtGUl2z4uc5HX9e7eMmzIHalH2a99Oz4",
       center: { lat: 25.071258512674074, lng: 55.24881931267348, place_id: "ChIJ3TVOCABvXz4RzKlmKTHDgnw" },
-      zoom: 13,
+      zoom: 16,
       styles: [
         {
           "featureType": "water",

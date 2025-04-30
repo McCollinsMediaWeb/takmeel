@@ -164,7 +164,7 @@ export default function DivineResidencia() {
     mapData: {
       apiKey: "AIzaSyCBtGUl2z4uc5HX9e7eMmzIHalH2a99Oz4",
       center: { lat: 25.029342402605465, lng: 55.23834719576115, place_id: "ChIJETuoVABvXz4R7nqf-sjl5t8" },
-      zoom: 13,
+      zoom: 16,
       styles: [
         {
           "featureType": "water",

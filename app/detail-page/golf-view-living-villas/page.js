@@ -137,7 +137,7 @@ export default function GolfViewLivingVillas() {
     mapData: {
       apiKey: "AIzaSyCBtGUl2z4uc5HX9e7eMmzIHalH2a99Oz4",
       center: { lat: 25.433922936221826, lng: 55.496197001038354, place_id: "ChIJvxg0xQj49T4Rkz0le3ztig4" },
-      zoom: 13,
+      zoom: 16,
       styles: [
         {
           "featureType": "water",

@@ -192,7 +192,7 @@ export default function MeydanRacecourseMansion() {
     mapData: {
       apiKey: "AIzaSyCBtGUl2z4uc5HX9e7eMmzIHalH2a99Oz4",
       center: { lat: 25.15800612182485, lng: 55.30082829576547, place_id: "ChIJIbx9lmdoXz4Rv_jGUDj8JOk" },
-      zoom: 13,
+      zoom: 16,
       styles: [
         {
           "featureType": "water",

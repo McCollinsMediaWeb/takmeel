@@ -187,7 +187,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
     mapData: {
       apiKey: "AIzaSyCBtGUl2z4uc5HX9e7eMmzIHalH2a99Oz4",
       center: { lat: 25.09870186724474, lng: 55.31477376221619, place_id: "ChIJ12G_-IllXz4RKnVgYcSWR5M" },
-      zoom: 13,
+      zoom: 16,
       styles: [
         {
           "featureType": "water",
