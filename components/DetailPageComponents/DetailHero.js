@@ -174,6 +174,7 @@ import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 
 import 'yet-another-react-lightbox/styles.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
+import TypingText from '../Animations/TypingText';
 
 export default function DetailHero({
     backgroundImage,
@@ -186,6 +187,24 @@ export default function DetailHero({
     videoPosterDesktop,
     videoPosterMobile
 }) {
+    const containerVariants = {
+        hidden: { opacity: 0, y: 40 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.6,
+                ease: 'easeOut',
+                when: 'beforeChildren',
+                staggerChildren: 0.2,
+            },
+        },
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+    };
     const isDesktop = useMediaQuery('(min-width: 960px)');
     const [open, setOpen] = useState(false);
     const { ref, inView } = useInView({
@@ -336,6 +355,7 @@ export default function DetailHero({
                         </div>
                     </motion.div>
 
+
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -344,9 +364,49 @@ export default function DetailHero({
                     >
                         <div className="row align-items-center">
                             <div className="col-md-7">
-                                <div className="Txt1 nunito-text">{text1}</div>
-                                <div className="Txt2 text-uppercase">{text2}</div>
-                                <div className="Txt3 nunito-text">{text3}</div>
+                            <motion.div
+                                                variants={containerVariants}
+                                                initial="hidden"
+                                                whileInView="visible"
+                                                viewport={{ once: true, amount: 0.5 }}
+                                            >
+                                                <div>
+                                                <motion.div className="" variants={itemVariants}>
+                                                        <motion.div
+                                                            className="Txt1 nunito-text"
+                                                            animate={{ opacity: [1, 0.3, 1] }}
+                                                            transition={{
+                                                                duration: 2,
+                                                                repeat: Infinity,
+                                                                ease: 'easeInOut',
+                                                            }}
+                                                        >
+                                                            {text1}
+                                                        </motion.div>
+                    
+                    
+                                                    </motion.div>
+                    
+                                                    <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
+                                                        <TypingText words={[text2, text2, text2]} speed={200} pause={800} />
+                                                    </motion.div>
+                                                    <motion.div variants={itemVariants}>
+                                                        <motion.div
+                                                            className="Txt3 nunito-text"
+                                                            animate={{ opacity: [1, 0.3, 1] }}
+                                                            transition={{
+                                                                duration: 2,
+                                                                repeat: Infinity,
+                                                                ease: 'easeInOut',
+                                                            }}
+                                                        >
+                                                            {text3}
+                                                        </motion.div>
+                                                    </motion.div>
+                                                    
+                    
+                                                </div>
+                                            </motion.div>
                             </div>
                             <div className='col-md-5'>
                                 <div className='ButtonsBox1'>
@@ -357,6 +417,7 @@ export default function DetailHero({
                             </div>
                         </div>
                     </motion.div>
+                    
                 </div>
             </div>
         </div>
