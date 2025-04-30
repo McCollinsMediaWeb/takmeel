@@ -180,14 +180,14 @@ export default function CostCalculator({ }) {
                                     </div>
                                     <div className='CCNotice3'>This Value Is An Estimate. To Get The Precise Amount, Apply For A Free
                                         Consultation Or Contact Us!</div>
-                                    <div className='FreeCreditWrap'>
+                                    {/* <div className='FreeCreditWrap'>
                                         <div className='FreeCredit'>
                                             <div className='FreeCreditFlex'>
                                                 <div className='FreeCreditFlexLeft'>No PRYPCO Service Fees</div>
                                                 <div className='FreeCreditFlexRight'>Save AED 2,000</div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <div className='formButtonsWrap'>
                                         <div className='FormButtons'>
                                             <div className='FormButton FormButton1'>
