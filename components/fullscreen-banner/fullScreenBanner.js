@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
 import TypingText from '../Animations/TypingText';
-export default function FullScreenBanner({ backgroundImage, backgroundImageMobile, text1, text2, text3, tagline, url , videoPosterDesktop , VideoPosterMobile }) {
+export default function FullScreenBanner({ backgroundImage, backgroundImageMobile, text1, text2, text3, tagline, url, videoPosterDesktop, VideoPosterMobile }) {
 
     const { ref, inView } = useInView({
         triggerOnce: true,
@@ -16,21 +16,21 @@ export default function FullScreenBanner({ backgroundImage, backgroundImageMobil
     const containerVariants = {
         hidden: { opacity: 0, y: 40 },
         visible: {
-          opacity: 1,
-          y: 0,
-          transition: {
-            duration: 0.6,
-            ease: 'easeOut',
-            when: 'beforeChildren',
-            staggerChildren: 0.2,
-          },
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.6,
+                ease: 'easeOut',
+                when: 'beforeChildren',
+                staggerChildren: 0.2,
+            },
         },
-      };
-      
-      const itemVariants = {
+    };
+
+    const itemVariants = {
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
-      };
+    };
     const bgUrl = `url("/${backgroundImage}")`;
     const isDesktop = useMediaQuery("(min-width: 960px)");
 
@@ -175,56 +175,56 @@ alt="Takmeel"
             <div className='FsBannerContent HmLinkBox'>
                 <div className='FsBannerContentFlex'>
                     <div className='container'>
-                    <motion.div
-      variants={containerVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.5 }}
-    >
-      <div>
-        <motion.div className="Txt1 nunito-text" variants={itemVariants}>
-          {text1}
-        </motion.div>
+                        <motion.div
+                            variants={containerVariants}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
+                            <div>
+                                <motion.div className="Txt1 nunito-text" variants={itemVariants}>
+                                    {text1}
+                                </motion.div>
 
-        <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
-          <TypingText words={[text2, text2, text2]} speed={200} pause={800} />
-        </motion.div>
+                                <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
+                                    <TypingText words={[text2, text2, text2]} speed={200} pause={800} />
+                                </motion.div>
 
-        <motion.div
-  className="Txt3 nunito-text"
-  animate={{ opacity: [1, 0.3, 1] }}
-  transition={{
-    duration: 2,
-    repeat: Infinity,
-    ease: 'easeInOut',
-  }}
->
-  {text3}
-</motion.div>
+                                <motion.div
+                                    className="Txt3 nunito-text"
+                                    animate={{ opacity: [1, 0.3, 1] }}
+                                    transition={{
+                                        duration: 2,
+                                        repeat: Infinity,
+                                        ease: 'easeInOut',
+                                    }}
+                                >
+                                    {text3}
+                                </motion.div>
 
-        <motion.div className="Txt17 nunito-text" variants={itemVariants}>
-        <motion.div
-  className="Txt4 nunito-text"
-  animate={{ opacity: [1, 0.3, 1] }}
-  transition={{
-    duration: 2,
-    repeat: Infinity,
-    ease: 'easeInOut',
-  }}
->
-  {tagline}
-</motion.div>
-        
-          
-        </motion.div>
+                                <motion.div className="Txt17 nunito-text" variants={itemVariants}>
+                                    <motion.div
+                                        className="Txt4 nunito-text"
+                                        animate={{ opacity: [1, 0.3, 1] }}
+                                        transition={{
+                                            duration: 2,
+                                            repeat: Infinity,
+                                            ease: 'easeInOut',
+                                        }}
+                                    >
+                                        {tagline}
+                                    </motion.div>
 
-        <motion.div variants={itemVariants}>
-          <Link href={`/detail-page/${url}`} className="Link1 hover1">
-            Explore Property
-          </Link>
-        </motion.div>
-      </div>
-    </motion.div>
+
+                                </motion.div>
+
+                                <motion.div variants={itemVariants}>
+                                    <Link href={`/detail-page/${url}`} className="Link1 hover1">
+                                        Explore Property
+                                    </Link>
+                                </motion.div>
+                            </div>
+                        </motion.div>
 
                     </div>
                 </div>

@@ -4,9 +4,28 @@ import Link from 'next/link';
 import { motion } from "framer-motion";
 import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
+import TypingText from '../Animations/TypingText';
 export default function ProjectItem({ backgroundImage,backgroundImageMobile, text2, text3, url }) {
     const bgUrl = `url("/${backgroundImage}")`;
     const isDesktop = useMediaQuery("(min-width: 960px)");
+    const containerVariants = {
+        hidden: { opacity: 0, y: 40 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.6,
+                ease: 'easeOut',
+                when: 'beforeChildren',
+                staggerChildren: 0.2,
+            },
+        },
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+    };
     return (
         <div className='FullScreenBanner Projects'>
             <motion.div
@@ -44,7 +63,7 @@ export default function ProjectItem({ backgroundImage,backgroundImageMobile, tex
                         >
                             <div>
                                 
-                                <div className='Txt2 text-uppercase'>{text2}</div>
+                                <div className='Txt2 text-uppercase'><TypingText words={[text2, text2, text2]} speed={200} pause={800} /></div>
                                 <div className='Txt3 nunito-text'>{text3}</div>
                                 <Link href={`/detail-page/${url}`} className='Link1 hover1'>Explore Property</Link>
                             </div>
