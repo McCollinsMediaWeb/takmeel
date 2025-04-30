@@ -187,7 +187,8 @@ alt="Takmeel"
                                 </motion.div>
 
                                 <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
-                                    <TypingText words={[text2, text2, text2]} speed={200} pause={800} />
+                                    {text2}
+                                    {/* <TypingText words={[text2, text2, text2]} speed={200} pause={800} /> */}
                                 </motion.div>
                                 <motion.div variants={itemVariants}>
                                     <motion.div
@@ -195,7 +196,6 @@ alt="Takmeel"
                                         animate={{ opacity: [1, 0.3, 1] }}
                                         transition={{
                                             duration: 2,
-                                            repeat: Infinity,
                                             ease: 'easeInOut',
                                         }}
                                     >
@@ -208,7 +208,6 @@ alt="Takmeel"
                                         animate={{ opacity: [1, 0.3, 1] }}
                                         transition={{
                                             duration: 2,
-                                            repeat: Infinity,
                                             ease: 'easeInOut',
                                         }}
                                     >
