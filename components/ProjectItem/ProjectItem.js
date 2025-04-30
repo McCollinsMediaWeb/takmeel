@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
 import TypingText from '../Animations/TypingText';
-export default function ProjectItem({ backgroundImage,backgroundImageMobile, text2, text3, url }) {
+export default function ProjectItem({ backgroundImage,backgroundImageMobile,text1, text2, text3,tagline , url }) {
     const bgUrl = `url("/${backgroundImage}")`;
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const containerVariants = {
@@ -55,19 +55,57 @@ export default function ProjectItem({ backgroundImage,backgroundImageMobile, tex
             <div className='FsBannerContent'>
                 <div className='FsBannerContentFlex centerBlock'>
                     <div className='container'>
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, ease: "easeOut" }}
-                            viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
+                    <motion.div
+                            variants={containerVariants}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.5 }}
                         >
                             <div>
-                                
-                                <div className='Txt2 text-uppercase'><TypingText words={[text2, text2, text2]} speed={200} pause={800} /></div>
-                                <div className='Txt3 nunito-text'>{text3}</div>
-                                <Link href={`/detail-page/${url}`} className='Link1 hover1'>Explore Property</Link>
+                                <motion.div className="Txt1 nunito-text" variants={itemVariants}>
+                                    {text1}
+                                </motion.div>
+
+                                <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
+                                    <TypingText words={[text2, text2, text2]} speed={200} pause={800} />
+                                </motion.div>
+
+                                <motion.div
+                                    className="Txt3 nunito-text"
+                                    animate={{ opacity: [1, 0.3, 1] }}
+                                    transition={{
+                                        duration: 2,
+                                        repeat: Infinity,
+                                        ease: 'easeInOut',
+                                    }}
+                                >
+                                    {text3}
+                                </motion.div>
+
+                                <motion.div className="Txt17 nunito-text" variants={itemVariants}>
+                                    <motion.div
+                                        className="Txt4 nunito-text"
+                                        animate={{ opacity: [1, 0.3, 1] }}
+                                        transition={{
+                                            duration: 2,
+                                            repeat: Infinity,
+                                            ease: 'easeInOut',
+                                        }}
+                                    >
+                                        {tagline}
+                                    </motion.div>
+
+
+                                </motion.div>
+
+                                <motion.div variants={itemVariants}>
+                                    <Link href={`/detail-page/${url}`} className="Link1 hover1">
+                                        Explore Property
+                                    </Link>
+                                </motion.div>
                             </div>
                         </motion.div>
+
 
                     </div>
                 </div>
