@@ -96,7 +96,7 @@ export default function Founders() {
         <section className="pd-common FoundersBlock bg2">
             <div className="container">
                 <div>
-                    <motion.div
+                    {/* <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -107,7 +107,7 @@ export default function Founders() {
                             <div className="CfT2">The Visionaries Behind Takmeel<br />
                                 Shaping the Future of Real Estate</div>
                         </div>
-                    </motion.div>
+                    </motion.div> */}
 
                     {/* <div className="FounderSlider">
                             <Slider {...settings}>
@@ -154,7 +154,7 @@ export default function Founders() {
                             </Slider>
                         </div> */}
 
-                    <div className="MainFoundersDetails">
+                    {/* <div className="MainFoundersDetails">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -215,7 +215,7 @@ export default function Founders() {
                                 </div>
                             </div>
                         </motion.div>
-                    </div>
+                    </div> */}
 
 
                     {/* <motion.div
@@ -254,6 +254,46 @@ export default function Founders() {
                     >
                         <div className="OurPeopleBox">
                             <Slider {...settings1}>
+                            <div className="FounderItem">
+                                    <div className="FounderItemBox">
+                                        <div className="FounderImageBox">
+                                            <Image
+                                                src={f1}
+                                                width={416}
+                                                height={524}
+                                                layout="responsive"
+                                                alt="Takmeel"
+                                            />
+                                        </div>
+                                        <div className="FounderDetails">
+                                            <div className="FounderName">Mian Asad Bashir</div>
+                                            <div className="FounderPosition">Founder & Chairman</div>
+                                            {/* <div className="text-right">
+                                                <a href="#" className="MoreInfoLink nunito-text">More Info</a>
+                                            </div> */}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="FounderItem">
+                                    <div className="FounderItemBox">
+                                        <div className="FounderImageBox">
+                                            <Image
+                                                src={f2}
+                                                width={416}
+                                                height={524}
+                                                layout="responsive"
+                                                alt="Takmeel"
+                                            />
+                                        </div>
+                                        <div className="FounderDetails">
+                                            <div className="FounderName">Sheikh Tariq Ali</div>
+                                            <div className="FounderPosition">Managing Director</div>
+                                            {/* <div className="text-right">
+                                                <a href="#" className="MoreInfoLink nunito-text">More Info</a>
+                                            </div> */}
+                                        </div>
+                                    </div>
+                                </div>
                             <div className="FounderItem">
                                     <div className="FounderItemBox">
                                         <div className="FounderImageBox">
