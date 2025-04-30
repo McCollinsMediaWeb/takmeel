@@ -254,6 +254,18 @@ footer {}
   background-image: url(../public/a3.png);
 }
 
+.contact-email:before {
+  content: "";
+  background-image: url("/a3.png"); /* Corrected path for public folder */
+  display: inline-block;
+  width: 22px;
+  height: 16px;
+  margin-right: 5px;
+  vertical-align: middle; /* Aligns with text vertically */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .CRow.location.a4:after {
   background-image: url(../public/a4.png);
 }

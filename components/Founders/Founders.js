@@ -178,6 +178,7 @@ export default function Founders() {
                                 <div className="col-md-8">
                                     <div className="BlT1 nunito-text text-uppercase">FOUNDER & CHAIRMAN</div>
                                     <div className="BlT2 text-uppercase">Mian Asad Bashir</div>
+                                    <div className="CfT1 nunito-text contact-email">asad.bashir@takmeeluae.com</div>
                                     <div className="BlT3">Mian Asad Bashir is a distinguished entrepreneur and the visionary Founder and Chairman of Takmeel Real Estate Development, a leading force in the UAE’s real estate sector. With over two decades of extensive experience, he has been a driving catalyst in reshaping Ajman’s urban landscape. Under his leadership, Takmeel has successfully delivered numerous residential and apartment projects, setting new benchmarks for quality and innovation in the industry. Mr. Asad’s strategic foresight and unwavering commitment to excellence have firmly positioned Takmeel as a trusted name in real estate development. His continued dedication to raising standards of living through exceptional projects underscores his status as a key leader in the UAE’s real estate community.</div>
                                 </div>
                             </div>
@@ -193,6 +194,7 @@ export default function Founders() {
                                 <div className="col-md-8">
                                     <div className="BlT1 nunito-text text-uppercase">MANAGING DIRECTOR</div>
                                     <div className="BlT2 text-uppercase">Sheikh Tariq Ali</div>
+                                    <div className="CfT1 nunito-text contact-email">tariq.ali@takmeeluae.com</div>
                                     <div className="BlT3">
 
                                         Sheikh Tariq Ali serves as the Managing Director of Takmeel Real Estate Development, bringing exceptional expertise, strategic insight, and a refined design sensibility to the organization. Initially joining Takmeel as an investing partner, Sheikh Tariq has been instrumental in broadening the company’s vision and elevating the standards of its developments. His leadership has been key in ensuring Takmeel’s projects not only meet but consistently exceed market expectations, emphasizing innovation, aesthetic excellence, and superior quality. Through his dedication and forward-thinking approach, Sheikh Tariq continues to shape Takmeel’s dynamic portfolio, reinforcing the company’s reputation as a leader in the UAE’s real estate development landscape.
