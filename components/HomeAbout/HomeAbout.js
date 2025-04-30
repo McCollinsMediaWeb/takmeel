@@ -8,7 +8,7 @@ export default function HomeAbout({ backgroundImage, backgroundImageMobile, text
     const isDesktop = useMediaQuery("(min-width: 960px)");
     
     return (
-        <section className='HomeAbout pd-common'>
+        <section className='HomeAbout pd-common bg2'>
             <div className='container text-center'>
                 <div className='HomeAboutContent'>
                     <motion.div
