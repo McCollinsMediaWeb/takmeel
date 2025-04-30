@@ -189,22 +189,22 @@ alt="Takmeel"
                                 <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
                                     <TypingText words={[text2, text2, text2]} speed={200} pause={800} />
                                 </motion.div>
-
-                                <motion.div
-                                    className="Txt3 nunito-text"
-                                    animate={{ opacity: [1, 0.3, 1] }}
-                                    transition={{
-                                        duration: 2,
-                                        repeat: Infinity,
-                                        ease: 'easeInOut',
-                                    }}
-                                >
-                                    {text3}
-                                </motion.div>
-
-                                <motion.div className="Txt17 nunito-text" variants={itemVariants}>
+                                <motion.div variants={itemVariants}>
                                     <motion.div
-                                        className="Txt4 nunito-text"
+                                        className="Txt3 nunito-text"
+                                        animate={{ opacity: [1, 0.3, 1] }}
+                                        transition={{
+                                            duration: 2,
+                                            repeat: Infinity,
+                                            ease: 'easeInOut',
+                                        }}
+                                    >
+                                        {text3}
+                                    </motion.div>
+                                </motion.div>
+                                <motion.div className="" variants={itemVariants}>
+                                    <motion.div
+                                        className="Txt17 nunito-text"
                                         animate={{ opacity: [1, 0.3, 1] }}
                                         transition={{
                                             duration: 2,
