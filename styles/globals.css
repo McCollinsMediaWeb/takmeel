@@ -1702,6 +1702,64 @@ body .slick-prev::before {
   background-image: url(../public/amn18.png);
 }
 
+.AmnIcon.AmnIcon19 {
+  background-image: url(../public/Icons/Takmeel_Icons_Adult\ Pool.png);
+}
+
+.AmnIcon.AmnIcon20 {
+  background-image: url(../public/Icons/Takmeel_Icons_Archery\ Area.png);
+}
+.AmnIcon.AmnIcon21 {
+  background-image: url(../public/Icons/Takmeel_Icons_BBQ\ Area.png);
+}
+.AmnIcon.AmnIcon22 {
+  background-image: url(../public/Icons/Takmeel_Icons_Beach\ Entry\ Pool.png);
+}
+.AmnIcon.AmnIcon23 {
+  background-image: url(../public/Icons/Takmeel_Icons_Board\ Games\ Area.png);
+}
+.AmnIcon.AmnIcon24 {
+  background-image: url(../public/Icons/Takmeel_Icons_Cabanas.png);
+}
+.AmnIcon.AmnIcon25 {
+  background-image: url(../public/Icons/Takmeel_Icons_Co-working\ space.png);
+}.AmnIcon.AmnIcon26 {
+  background-image: url(../public/Icons/Takmeel_Icons_Indoor\ Gym.png);
+}
+.AmnIcon.AmnIcon27 {
+  background-image: url(../public/Icons/Takmeel_Icons_Jacuzzi.png);
+}
+.AmnIcon.AmnIcon28 {
+  background-image: url(../public/Icons/Takmeel_Icons_Kids\ Play\ Area.png);
+}
+.AmnIcon.AmnIcon29 {
+  background-image: url(../public/Icons/Takmeel_Icons_Kids\ Pool.png);
+}
+.AmnIcon.AmnIcon30 {
+  background-image: url(../public/Icons/Takmeel_Icons_Mini\ Golf.png);
+}
+.AmnIcon.AmnIcon31 {
+  background-image: url(../public/Icons/Takmeel_Icons_Outdoor\ Cinema.png);
+}
+.AmnIcon.AmnIcon32 {
+  background-image: url(../public/Icons/Takmeel_Icons_Outdoor\ Gym.png);
+}
+.AmnIcon.AmnIcon33 {
+  background-image: url(../public/Icons/Takmeel_Icons_Outdoor\ Shaded\ Seating.png);
+}
+.AmnIcon.AmnIcon34 {
+  background-image: url(../public/Icons/Takmeel_Icons_Smoking\ Lounge.png);
+}
+.AmnIcon.AmnIcon35 {
+  background-image: url(../public/Icons/Takmeel_Icons_Steam\ and\ Sauna\ Area.png);
+}
+.AmnIcon.AmnIcon36 {
+  background-image: url(../public/Icons/Takmeel_Icons_Table\ Tennis\ Court.png);
+}
+.AmnIcon.AmnIcon37 {
+  background-image: url(../public/Icons/Takmeel_Icons_Yoga\ Area.png);
+}
+
 .AmnBoxWrap {
   margin-top: 35px;
 }
