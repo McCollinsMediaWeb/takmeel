@@ -13,7 +13,24 @@ export default function FullScreenBanner({ backgroundImage, backgroundImageMobil
         threshold: 0.2,
     });
 
-
+    const containerVariants = {
+        hidden: { opacity: 0, y: 40 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.6,
+            ease: 'easeOut',
+            when: 'beforeChildren',
+            staggerChildren: 0.2,
+          },
+        },
+      };
+      
+      const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+      };
     const bgUrl = `url("/${backgroundImage}")`;
     const isDesktop = useMediaQuery("(min-width: 960px)");
 
@@ -158,23 +175,56 @@ alt="Takmeel"
             <div className='FsBannerContent HmLinkBox'>
                 <div className='FsBannerContentFlex'>
                     <div className='container'>
-                        <motion.div
-                            initial={{ opacity: 0, y: 40 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, ease: "easeOut" }}
-                            viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
-                        >
-                            <div>
-                                <div className='Txt1 nunito-text'>{text1}</div>
-                                <div className='Txt2 text-uppercase'>
-                                    
-                                    <TypingText words={[text2, text2, text2]} speed={200} pause={800} />
-                                </div>
-                                <div className='Txt3 nunito-text'>{text3}</div>
-                                <div className='Txt17 nunito-text'>{tagline}</div>
-                                <Link href={`/detail-page/${url}`} className='Link1 hover1'>Explore Property</Link>
-                            </div>
-                        </motion.div>
+                    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+    >
+      <div>
+        <motion.div className="Txt1 nunito-text" variants={itemVariants}>
+          {text1}
+        </motion.div>
+
+        <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
+          <TypingText words={[text2, text2, text2]} speed={200} pause={800} />
+        </motion.div>
+
+        <motion.div
+  className="Txt3 nunito-text"
+  animate={{ opacity: [1, 0.3, 1] }}
+  transition={{
+    duration: 2,
+    repeat: Infinity,
+    ease: 'easeInOut',
+  }}
+>
+  {text3}
+</motion.div>
+
+        <motion.div className="Txt17 nunito-text" variants={itemVariants}>
+        <motion.div
+  className="Txt4 nunito-text"
+  animate={{ opacity: [1, 0.3, 1] }}
+  transition={{
+    duration: 2,
+    repeat: Infinity,
+    ease: 'easeInOut',
+  }}
+>
+  {tagline}
+</motion.div>
+        
+          
+        </motion.div>
+
+        <motion.div variants={itemVariants}>
+          <Link href={`/detail-page/${url}`} className="Link1 hover1">
+            Explore Property
+          </Link>
+        </motion.div>
+      </div>
+    </motion.div>
 
                     </div>
                 </div>
