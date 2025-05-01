@@ -172,18 +172,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
         src: "majan1/30.jpg",
         title: "Gym Area",
       },
-      {
-        src: "majan1/22.jpg",
-        title: "Living Area",
-      },
-      {
-        src: "majan1/23.jpg",
-        title: "Living Area",
-      },
-      {
-        src: "majan1/24.jpg",
-        title: "Living Area",
-      },
+     
       {
         src: "majan1/37.jpg",
         title: "Living Area",
@@ -198,6 +187,18 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       },
       {
         src: "majan1/48.jpg",
+        title: "Kitchen Area",
+      },
+      {
+        src: "majan1/56.jpg",
+        title: "Bedroom Area",
+      },
+      {
+        src: "majan1/57.jpg",
+        title: "Bedroom Area",
+      },
+      {
+        src: "majan1/59.jpg",
         title: "Kitchen Area",
       },
       
