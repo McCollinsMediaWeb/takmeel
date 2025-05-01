@@ -68,29 +68,34 @@ export default function GolfViewLivingApartments() {
 
   const DataProjectDetails3 = [
     {
-      iconNo: 18,
-      heading: "Fully Equipped Gym",
-      subHeading: "Stay fit and active with a state-of-the-art gym right in your building"
+      iconNo: 1,
+      heading: "Spectacular Views",
+      subHeading: "The apartment is bright and spacious with spectacular river views"
     },
     {
-      iconNo: 17,
-      heading: "Swimming Pool",
-      subHeading: "Enjoy a refreshing swim in a beautifully maintained pool"
+      iconNo: 2,
+      heading: "Central Location",
+      subHeading: "All you may need is at your doorstep: central location with all infrastructure"
     },
     {
-      iconNo: 20,
-      heading: "Children's Pool",
-      subHeading: "A safe and fun pool space specially designed for kids"
+      iconNo: 3,
+      heading: "WELLROUNDED LIFESTYLE",
+      subHeading: "Seamlessly Merge Work And Leisure"
     },
     {
-      iconNo: 19,
-      heading: "Children's Play Area",
-      subHeading: "Let kids enjoy their playtime in a safe and engaging environment"
+      iconNo: 7,
+      heading: "Smart Apartment",
+      subHeading: "Smart apartment technology designed by famous architecture group"
     },
     {
-      iconNo: 21,
-      heading: "Landscaped Gardens",
-      subHeading: "Relax and unwind in beautifully landscaped green spaces"
+      iconNo: 4,
+      heading: "We Designed Elements",
+      subHeading: "EVERY ELEMENT DESIGNED TO FIT A WELL-ROUNDED LIFESTYLE"
+    },
+    {
+      iconNo: 5,
+      heading: "Award-Winning Design",
+      subHeading: "The apartment was designed by Lucy De Vito with great attention to details"
     },
   ];
 
@@ -115,6 +120,24 @@ export default function GolfViewLivingApartments() {
       },
     ],
   };
+
+  const DataProjectDetails6 = [
+    {
+      amenity: "Indoor",
+      values: [
+        { iconNo: 19, name: "Swimming Pool" },
+        { iconNo: 29, name: "Children's Pool" },
+        { iconNo: 28, name: "Children's Play Area" },
+        { iconNo: 26, name: "Indoor Gym" },
+      ]
+    },
+    {
+      amenity: "Outdoor",
+      values: [
+        { iconNo: 38, name: "Landscaped Garden" },
+      ]
+    }
+  ];
 
   const DataProjectDetails7 = {
     text1: "Golf View Living Apartments",
@@ -249,7 +272,7 @@ export default function GolfViewLivingApartments() {
       <ProjectDetails3 mainimage1="ovr6.jpg" data={DataProjectDetails3} />
       <ProjectDetails4  {...DataProjectDetails4} />
       {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
-      {/* <ProjectDetails6 planImage="plan1.jpg" /> */}
+      <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
 
       <ProjectDetails7 mapimage="map1.jpg" {...DataProjectDetails7} />
       <CostCalculator />

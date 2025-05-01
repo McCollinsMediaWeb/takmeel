@@ -70,80 +70,52 @@ export default function DivineResidencia() {
 
   };
 
-  // const DataProjectDetails3 = [
-  //   {
-  //     iconNo: 8,
-  //     heading: "Fully Equipped Gym",
-  //     subHeading: "Stay fit and active with a state-of-the-art gym right in your building"
-  //   },
-  //   {
-  //     iconNo: 9,
-  //     heading: "Swimming Pool",
-  //     subHeading: "Enjoy a refreshing swim in a beautifully maintained pool"
-  //   },
-  //   {
-  //     iconNo: 10,
-  //     heading: "Children's Pool",
-  //     subHeading: "A safe and fun pool space specially designed for kids"
-  //   },
-  //   {
-  //     iconNo: 11,
-  //     heading: "Children Play Area",
-  //     subHeading: "Let kids enjoy their playtime in a safe and engaging environment"
-  //   },
-  //   {
-  //     iconNo: 12,
-  //     heading: "Landscaped Gardens",
-  //     subHeading: "Relax and unwind in beautifully landscaped green spaces"
-  //   },
-  //   {
-  //     iconNo: 13,
-  //     heading: "Covered Parking",
-  //     subHeading: "Secure and shaded parking for residents and visitors"
-  //   },
-  //   {
-  //     iconNo: 14,
-  //     heading: "3 Lifts/ Elevators",
-  //     subHeading: "Quick and convenient access with three modern elevators"
-  //   },
-  //   {
-  //     iconNo: 15,
-  //     heading: "24/7 Security",
-  //     subHeading: "Around-the-clock security services for complete peace of mind"
-  //   },
-  //   {
-  //     iconNo: 16,
-  //     heading: "24/7 CCTV",
-  //     subHeading: "Constant video surveillance to ensure your safety"
-  //   }
-  // ];
-
   const DataProjectDetails3 = [
     {
-      iconNo: 18,
+      iconNo: 8,
       heading: "Fully Equipped Gym",
       subHeading: "Stay fit and active with a state-of-the-art gym right in your building"
     },
     {
-      iconNo: 17,
+      iconNo: 9,
       heading: "Swimming Pool",
       subHeading: "Enjoy a refreshing swim in a beautifully maintained pool"
     },
     {
-      iconNo: 20,
+      iconNo: 10,
       heading: "Children's Pool",
       subHeading: "A safe and fun pool space specially designed for kids"
     },
     {
-      iconNo: 19,
-      heading: "Children's Play Area",
+      iconNo: 11,
+      heading: "Children Play Area",
       subHeading: "Let kids enjoy their playtime in a safe and engaging environment"
     },
     {
-      iconNo: 21,
+      iconNo: 12,
       heading: "Landscaped Gardens",
       subHeading: "Relax and unwind in beautifully landscaped green spaces"
     },
+    {
+      iconNo: 13,
+      heading: "Covered Parking",
+      subHeading: "Secure and shaded parking for residents and visitors"
+    },
+    {
+      iconNo: 14,
+      heading: "3 Lifts/ Elevators",
+      subHeading: "Quick and convenient access with three modern elevators"
+    },
+    {
+      iconNo: 15,
+      heading: "24/7 Security",
+      subHeading: "Around-the-clock security services for complete peace of mind"
+    },
+    {
+      iconNo: 16,
+      heading: "24/7 CCTV",
+      subHeading: "Constant video surveillance to ensure your safety"
+    }
   ];
 
 
@@ -176,6 +148,24 @@ export default function DivineResidencia() {
 
     ],
   };
+
+  const DataProjectDetails6 = [
+    {
+      amenity: "Indoor",
+      values: [
+        { iconNo: 19, name: "Swimming Pool" },
+        { iconNo: 29, name: "Children's Pool" },
+        { iconNo: 28, name: "Children's Play Area" },
+        { iconNo: 26, name: "Indoor Gym" },
+      ]
+    },
+    {
+      amenity: "Outdoor",
+      values: [
+        { iconNo: 38, name: "Landscaped Garden" },
+      ]
+    }
+  ];
 
   const DataProjectDetails7 = {
     text1: "Divine Residencia",
@@ -314,7 +304,7 @@ export default function DivineResidencia() {
       <ProjectDetails3 mainimage1="ovr2.jpg" data={DataProjectDetails3} />
       <ProjectDetails4  {...DataProjectDetails4} />
       {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
-      {/* <ProjectDetails6 planImage="plan1.jpg" /> */}
+      <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
 
       <ProjectDetails7 mapimage="map1.jpg" {...DataProjectDetails7} />
       <CostCalculator />
