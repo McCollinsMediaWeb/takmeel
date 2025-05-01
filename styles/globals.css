@@ -2142,5 +2142,6 @@ input[type=number] {
 }
 .FxdHgtImage img,
 .AbSliderItem img{
-  height: 450px !important;
+  height: 400px !important;
+  object-fit: cover;
 }
