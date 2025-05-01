@@ -100,15 +100,63 @@ export default function DivineResidencies() {
       "Set amidst the flourishing neighborhood of Arjan, Divine Residencies offers an exceptional lifestyle just steps away from Dubai’s iconic Miracle Garden and Butterfly Garden. Thoughtfully designed and ready for immediate occupancy, this modern residential enclave blends contemporary elegance with everyday convenience. With effortless connectivity to Umm Suqeim Street and key destinations across Dubai, residents enjoy a harmonious fusion of tranquil surroundings and dynamic city living.",
     GalleryImagesWithNames: [
       {
-        src: "Divine-Residencies/Residencies 1st project 05.jpg",
-        title: "Exterior",
+        src: "Divine-Residencies/Interior/Main-picture.jpg",
+        title: "Pool Area",
       },
       {
-        src: "Divine-Residencies/Residencies 1st project 03.jpg",
-        title: "Swimming Pool",
+        src: "Divine-Residencies/Interior/2.jpg",
+        title: "Garden Area",
       },
       {
-        src: "Divine-Residencies/Residencies 1st project 04.jpg",
+        src: "Divine-Residencies/Interior/3-1.jpg",
+        title: "Living Room",
+      },
+      {
+        src: "Divine-Residencies/Interior/4.jpg",
+        title: "Living Room",
+      },
+      {
+        src: "Divine-Residencies/Interior/5-1.jpg",
+        title: "Living Room",
+      },
+      {
+        src: "Divine-Residencies/Interior/6-1.jpg",
+        title: "Kitchen Area",
+      },
+      {
+        src: "Divine-Residencies/Interior/7-1.jpg",
+        title: "Living Room",
+      },
+      {
+        src: "Divine-Residencies/Interior/8.jpg",
+        title: "Bedroom",
+      },
+      {
+        src: "Divine-Residencies/Interior/9.jpg",
+        title: "Living Room",
+      },
+      {
+        src: "Divine-Residencies/Interior/10.jpg",
+        title: "Apartment Hallway",
+      },
+      {
+        src: "Divine-Residencies/Interior/11.jpg",
+        title: "Living Room",
+      },
+      {
+        src: "Divine-Residencies/Interior/12.jpg",
+        title: "Dining Area",
+      },
+      {
+        src: "Divine-Residencies/Interior/13.jpg",
+        title: "Bedroom",
+      },
+      {
+        src: "Divine-Residencies/Interior/14.jpg",
+        title: "Bathroom",
+      },
+      {
+        src: "Divine-Residencies/Interior/1.jpg",
         title: "Swimming Pool",
       },
     ],
