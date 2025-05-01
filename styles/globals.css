@@ -138,7 +138,7 @@ header {
 }
 
 .Txt2 {
-  font-size: 48px;
+  font-size: 55px;
   max-width: 100%;
   margin-bottom: 10px;
 }
@@ -532,6 +532,7 @@ body .slick-dots {
   padding: 8px 15px;
   display: inline-block;
   cursor: pointer;
+  background: rgba(0,0,0,0.4);
 }
 
 .Link5 {
@@ -2077,6 +2078,7 @@ input[type=number] {
   animation: floatAnimation 3s ease-in-out infinite;
   right: 20px;
   bottom: 20px;
+  border: 2px solid #fff;
 }
 
 .siqcw-drivenby-cont {

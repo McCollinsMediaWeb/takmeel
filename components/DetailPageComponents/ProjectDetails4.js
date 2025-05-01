@@ -61,7 +61,7 @@ export default function ProjectDetails4({ text1, text2, text3, GalleryImagesWith
     };
 
     return (
-        <div className='position-relative pd-common'>
+        <div className='position-relative pd-common bg2'>
 
             <div className='container'>
                 <motion.div
