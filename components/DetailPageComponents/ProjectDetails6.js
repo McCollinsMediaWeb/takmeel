@@ -82,7 +82,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                             transition={{ duration: 0.6, ease: "easeOut" }}
                                                             viewport={{ once: true, amount: 0.5 }}
                                                         >
-                        <div className="BlT1 nunito-text text-uppercase">Designed for Living</div>
+                        <div className="BlT1 nunito-text text-uppercase">AMENITIES AND FACILITIES</div>
                         <div className="BlT2 text-uppercase">Create Your Perfect Home Layout​</div>
 </motion.div>
                         {data?.length > 0 ? (
