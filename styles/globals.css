@@ -2140,6 +2140,7 @@ input[type=number] {
 .VisionMissionBox .VmT5{
   font-size: 18px;
 }
-.FxdHgtImage img{
+.FxdHgtImage img,
+.AbSliderItem img{
   height: 450px !important;
 }
