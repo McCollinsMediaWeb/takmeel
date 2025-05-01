@@ -49,14 +49,12 @@ export default function TakmeelAlBarariViewPropertiesPage() {
     text2: "From Desert Dreams to a Living Wilderness",
     text3:
       "Takmeel’s upcoming project at Al Barari is a tribute to visionary transformation — where untouched wilderness evolves into a luxurious smart living community. Enveloped in nature, yet rooted in innovation, this sanctuary redefines opulence through sustainability and harmony. Wake up to greenery, water, and serenity, just minutes away from the city’s hustle. Barari is not just a place to live — it’s where nature and modern living exist in perfect balance.",
-    GalleryImages: [
-      // "Takmeel-Al-Barrari-View/Majan 03.jpg",
-      // "Takmeel-Al-Barrari-View/Majan 02.jpg",
-      // "Takmeel-Al-Barrari-View/Majan 04.jpg",
-      "Takmeel-Al-Barrari-View/AL Barari Majan Building Model_2.jpg",
-      "Takmeel-Al-Barrari-View/AL Barari Majan Building Model_3 1.jpg",
-      "Takmeel-Al-Barrari-View/AL Barari Majan Building Model_3 2.jpg",
-    ],
+    // GalleryImages: [
+    //   "Takmeel-Al-Barrari-View/AL Barari Majan Building Model_2.jpg",
+    //   "Takmeel-Al-Barrari-View/AL Barari Majan Building Model_3 1.jpg",
+    //   "Takmeel-Al-Barrari-View/AL Barari Majan Building Model_3 2.jpg",
+    // ],
+    GalleryImages: [],
   };
   const DataProjectDetails2 = {
     ThumbImage1: "Takmeel-Al-Barrari-View/Majan 02.jpg",
@@ -106,21 +104,21 @@ export default function TakmeelAlBarariViewPropertiesPage() {
     text2: "Spectacular Views, Contemporary Comfort",
     text3:
       "Takmeel’s Al Barari project reimagines luxury living—where smart design meets natural beauty. Surrounded by greenery and water features, these 1, 2 & 3-bedroom apartments offer modern layouts, premium finishes, and sustainable living. Just minutes from Dubai Miracle Garden with easy access to Sheikh Zayed Road, this is where peace and connectivity come together in perfect harmony.",
-    // GalleryImagesWithNames: [
-    //   {
-    //     src: "Takmeel-Al-Barrari-View/AL Barari Majan Building Model_2.jpg",
-    //     title: "Exterior",
-    //   },
-    //   {
-    //     src: "Takmeel-Al-Barrari-View/Majan Slide 04.jpg",
-    //     title: "Rooftop",
-    //   },
-    //   {
-    //     src: "Takmeel-Al-Barrari-View/AL Barari Majan Building Model_3 2.jpg",
-    //     title: "Parking Area",
-    //   },
-    // ],
-    GalleryImagesWithNames: []
+    GalleryImagesWithNames: [
+      {
+        src: "Takmeel-Al-Barrari-View/AL Barari Majan Building Model_2.jpg",
+        title: "Exterior",
+      },
+      {
+        src: "Takmeel-Al-Barrari-View/Majan Slide 04.jpg",
+        title: "Rooftop",
+      },
+      {
+        src: "Takmeel-Al-Barrari-View/AL Barari Majan Building Model_3 2.jpg",
+        title: "Parking Area",
+      },
+    ],
+    // GalleryImagesWithNames: []
   };
 
   const DataProjectDetails6 = [

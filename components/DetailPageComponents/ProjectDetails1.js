@@ -265,128 +265,39 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
                             <div className="BlT2 text-uppercase">{text2}​</div>
                             <div className="BlT3">{text3}</div>
                         </div>
-                        <div className='col-md-12 PrDetSliderBox'>
-                            <Slider {...settings}>
 
-                                {GalleryImages?.length > 0 ? (
-                                    GalleryImages?.map((img) => (
-                                        <div className='AbSliderItem' onClick={() => setOpen(true)}>
-                                            <div className='ImageBox'><Image
-                                                src={`/${img}`}
-                                                width={893}
-                                                height={601}
-                                                layout="responsive"
-                                                alt="Takmeel"
-                                            /></div>
+
+
+                        {GalleryImages?.length > 0 ? (
+                            <div className='col-md-12 PrDetSliderBox'>
+                                <Slider {...settings}>
+                                    {GalleryImages?.map((img, index) => (
+                                        <div className='AbSliderItem' key={index} onClick={() => setOpen(true)}>
+                                            <div className='ImageBox'>
+                                                <Image
+                                                    src={`/${img}`}
+                                                    width={893}
+                                                    height={601}
+                                                    layout="responsive"
+                                                    alt="Takmeel"
+                                                />
+                                            </div>
                                         </div>
-                                    ))
-                                ) : (
-                                    <>
-                                        <div className='AbSliderItem' onClick={() => setOpen(true)}>
-                                            <div className='ImageBox'><Image
-                                                src={image1}
-                                                width={893}
-                                                height={601}
-                                                layout="responsive"
-                                                alt="Takmeel"
-                                            /></div>
+                                    ))}
+                                </Slider>
 
-                                        </div>
-                                        <div className='AbSliderItem' onClick={() => setOpen(true)}>
-                                            <div className='ImageBox'><Image
-                                                src={image2}
-                                                width={893}
-                                                height={601}
-                                                layout="responsive"
-                                                alt="Takmeel"
-                                            /></div>
-
-                                        </div>
-                                        <div className='AbSliderItem' onClick={() => setOpen(true)}>
-                                            <div className='ImageBox'><Image
-                                                src={image3}
-                                                width={893}
-                                                height={601}
-                                                layout="responsive"
-                                                alt="Takmeel"
-                                            /></div>
-
-                                        </div>
-                                        <div className='AbSliderItem' onClick={() => setOpen(true)}>
-                                            <div className='ImageBox'><Image
-                                                src={image1}
-                                                width={893}
-                                                height={601}
-                                                layout="responsive"
-                                                alt="Takmeel"
-                                            /></div>
-
-                                        </div>
-                                        <div className='AbSliderItem' onClick={() => setOpen(true)}>
-                                            <div className='ImageBox'><Image
-                                                src={image2}
-                                                width={893}
-                                                height={601}
-                                                layout="responsive"
-                                                alt="Takmeel"
-                                            /></div>
-
-                                        </div>
-                                        <div className='AbSliderItem' onClick={() => setOpen(true)}>
-                                            <div className='ImageBox'><Image
-                                                src={image3}
-                                                width={893}
-                                                height={601}
-                                                layout="responsive"
-                                                alt="Takmeel"
-                                            /></div>
-
-                                        </div>
-                                    </>
-                                )}
-
-
-
-                            </Slider>
-                            <Lightbox
-                                open={open}
-                                close={() => setOpen(false)}
-                                plugins={[Video, Thumbnails, Zoom]}
-                                slides={
-                                    GalleryImages?.length > 0
-                                        ? GalleryImages.map((img) => ({
+                                <Lightbox
+                                    open={open}
+                                    close={() => setOpen(false)}
+                                    plugins={[Video, Thumbnails, Zoom]}
+                                    slides={
+                                        GalleryImages.map((img) => ({
                                             src: `/${img}`,
                                         }))
-                                        : [
-                                            {
-                                                type: "video",
-                                                width: 1920,
-                                                height: 1080,
-                                                poster: "abslider3.jpg",
-                                                autoPlay: true,
-                                                loop: false,
-                                                controls: true,
-                                                sources: [
-                                                    {
-                                                        src: "/video.mp4",
-                                                        type: "video",
-                                                    },
-                                                ],
-                                            },
-                                            { src: "/abslider1.jpg" },
-                                            { src: "/abslider2.jpg" },
-                                            { src: "/abslider3.jpg" },
-                                            { src: "/abslider4.jpg" },
-                                            { src: "/main1.jpg" },
-                                            { src: "/main2.jpg" },
-                                            { src: "/main3.jpg" },
-                                            { src: "/main4.jpg" },
-                                        ]
-                                }
-                            />
-
-
-                        </div>
+                                    }
+                                />
+                            </div>
+                        ) : null}
                     </div>
                 </motion.div>
 
