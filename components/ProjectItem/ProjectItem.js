@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
 import TypingText from '../Animations/TypingText';
-export default function ProjectItem({ backgroundImage,backgroundImageMobile,text1, text2, text3,tagline , url,projectStatus }) {
+export default function ProjectItem({ backgroundImage, backgroundImageMobile, text1, text2, text3, tagline, url, projectStatus }) {
     const bgUrl = `url("/${backgroundImage}")`;
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const containerVariants = {
@@ -29,42 +29,48 @@ export default function ProjectItem({ backgroundImage,backgroundImageMobile,text
     return (
         <div className='FullScreenBanner Projects'>
             <motion.div
-         animate={{ scale: [1, 1.05, 1] }}
-         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-         viewport={{ once: true, amount: 0.5 }} 
-      >
-            {isDesktop && (
-                <Image
-                    src={`/${backgroundImage}`}
-                    width={1338}
-                    height={714}
-                    layout="responsive"
-                    alt="Takmeel"
-                />
-            )}
-            {!isDesktop && (
-                <Image
-                    src={`/${backgroundImageMobile}`}
-                    width={697}
-                    height={768}
-                    layout="responsive"
-                    alt="Takmeel"
-                />
-            )}
+                animate={{ scale: [1, 1.05, 1] }}
+                transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+                viewport={{ once: true, amount: 0.5 }}
+            >
+                {isDesktop && (
+                    <Image
+                        src={`/${backgroundImage}`}
+                        width={1338}
+                        height={714}
+                        layout="responsive"
+                        alt="Takmeel"
+                    />
+                )}
+                {!isDesktop && (
+                    <Image
+                        src={`/${backgroundImageMobile}`}
+                        width={697}
+                        height={768}
+                        layout="responsive"
+                        alt="Takmeel"
+                    />
+                )}
             </motion.div>
             <div className='FsBannerContent'>
                 <div className='FsBannerContentFlex centerBlock'>
                     <div className='container'>
-                    <motion.div
+                        <motion.div
                             variants={containerVariants}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.5 }}
                         >
                             <div>
+                                {projectStatus && (
+                                    <motion.div className="Txt1" variants={itemVariants}>
+                                        <div>
+                                            <span className="PrStatus">{projectStatus}</span>
+                                        </div>
+                                    </motion.div>
+                                )}
                                 <motion.div className="Txt1" variants={itemVariants}>
-                                    <div><span className='PrStatus'>{projectStatus}</span></div>
-                                    {text1} 
+                                    {text1}
                                 </motion.div>
 
 
@@ -98,7 +104,7 @@ export default function ProjectItem({ backgroundImage,backgroundImageMobile,text
 
 
                                 </motion.div>
-                                
+
 
                                 <motion.div variants={itemVariants}>
                                     <Link href={`/detail-page/${url}`} className="Link1 hover1">
