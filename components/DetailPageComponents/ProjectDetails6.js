@@ -51,12 +51,12 @@ export default function ProjectDetails6({ planImage, data }) {
     };
 
     return (
-        <div className='position-relative pd-common bg2'>
+        <div className='position-relative pd-common bg2 pt-0'>
 
             <div className='container'>
 
                 <div className='row PlanRow'>
-                    <div className='col-md-6'>
+                    <div className='col-md-12 d-none'>
                         <div className='PlanBox'>
                             <Image
                                 src={`/${planImage}`}
@@ -75,16 +75,29 @@ export default function ProjectDetails6({ planImage, data }) {
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-6'>
+                    <div className='col-md-12'>
+                    <motion.div
+                                                            initial={{ opacity: 0, y: 50 }}
+                                                            whileInView={{ opacity: 1, y: 0 }}
+                                                            transition={{ duration: 0.6, ease: "easeOut" }}
+                                                            viewport={{ once: true, amount: 0.5 }}
+                                                        >
                         <div className="BlT1 nunito-text text-uppercase">Designed for Living</div>
                         <div className="BlT2 text-uppercase">Create Your Perfect Home Layout​</div>
-
+</motion.div>
                         {data?.length > 0 ? (
                             data?.map((section, idx) => (
                                 <div className='AmnBoxWrap' key={idx}>
+                                    <motion.div
+                                                            initial={{ opacity: 0, y: 50 }}
+                                                            whileInView={{ opacity: 1, y: 0 }}
+                                                            transition={{ duration: 0.6, ease: "easeOut" }}
+                                                            viewport={{ once: true, amount: 0.5 }}
+                                                        >
                                     <div className='AmnBoxTitle'>
                                         <span className='AmnBoxTitleSpan'>{section.amenity}</span>
                                     </div>
+                                    </motion.div>
                                     <div className='AmnBoxLists'>
                                         <div className='listItems'>
                                             <div className='row'>

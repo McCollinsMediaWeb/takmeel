@@ -63,7 +63,7 @@ export default function ProjectDetails7({ mapimage, text1, text2, landmarks, map
     };
 
     return (
-        <div className='position-relative pd-common'>
+        <div className='position-relative pd-common pb-0'>
 
             <div className='container'>
                 <motion.div

@@ -193,28 +193,28 @@ export default function TakmeelAlBarariViewPropertiesPage() {
           "featureType": "water",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#5fb6c5" }
+            { "color": "#7bc4c4" }
           ]
         },
         {
           "featureType": "landscape.natural",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#dfeee9" }
+            { "color": "#e2ece6" }
           ]
         },
         {
           "featureType": "landscape.man_made",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#f2f3f2" }
+            { "color": "#f5f5f5" }
           ]
         },
         {
           "featureType": "poi.park",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#b3d4af" }
+            { "color": "#b6d6b6" }
           ]
         },
         {
@@ -235,49 +235,49 @@ export default function TakmeelAlBarariViewPropertiesPage() {
           "featureType": "transit",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#e3e4e2" }
+            { "color": "#e6e6e6" }
           ]
         },
         {
           "featureType": "poi.business",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#f7f7f7" }
+            { "color": "#f0f0f0" }
           ]
         },
         {
           "featureType": "administrative",
           "elementType": "geometry.fill",
           "stylers": [
-            { "color": "#f2f3f2" }
+            { "color": "#eeeeee" }
           ]
         },
         {
           "featureType": "administrative",
           "elementType": "labels.text.fill",
           "stylers": [
-            { "color": "#666666" }
+            { "color": "#777777" }
           ]
         },
         {
           "featureType": "road",
           "elementType": "labels.text.fill",
           "stylers": [
-            { "color": "#444444" }
+            { "color": "#5a5a5a" }
           ]
         },
         {
           "featureType": "poi",
           "elementType": "labels.text.fill",
           "stylers": [
-            { "color": "#444444" }
+            { "color": "#555555" }
           ]
         },
         {
           "featureType": "transit.station",
           "elementType": "labels.text.fill",
           "stylers": [
-            { "color": "#444444" }
+            { "color": "#555555" }
           ]
         },
         {

@@ -447,4 +447,24 @@
       .VisionMissionBox .VmT5{
         font-size: 16px;
       }
+      .BlT3 {
+        font-size: 16px;
+      }
+      .PrDetSliderBox {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+      .AmnBoxTitle span{
+        font-size: 18px;
+      }
+      .AmnIcon {
+        width: 40px;
+        height: 40px;
+      }
+      .AmnKeyBoxLeft {
+        width: 50px;
+      }
+      .AmnKeyBoxRight {
+        font-size: 16px;
+      }
   }

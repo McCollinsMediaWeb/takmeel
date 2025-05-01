@@ -28,7 +28,7 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.2;
 }
 
@@ -508,12 +508,12 @@ body .slick-dots {
 }
 
 .HbT2 {
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 20px;
 }
 
 .HbT3 {
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 20px;
 }
 
@@ -533,6 +533,7 @@ body .slick-dots {
   display: inline-block;
   cursor: pointer;
   background: rgba(0,0,0,0.4);
+  font-size: 16px;
 }
 
 .Link5 {
@@ -1153,6 +1154,7 @@ body .slick-prev::before {
 
 .BlT3 {
   line-height: 1.5;
+  font-size: 19px;
 }
 
 .BlogPostMainArea .row {
@@ -1376,6 +1378,8 @@ body .slick-prev::before {
 
 .PrDetSliderBox {
   margin-top: 25px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .Det2T1 {
@@ -1619,7 +1623,7 @@ body .slick-prev::before {
   display: inline-block;
   z-index: 2;
   padding-right: 20px;
-  font-size: 20px;
+  font-size: 30px;
   text-transform: uppercase;
 }
 
@@ -1631,17 +1635,18 @@ body .slick-prev::before {
 }
 
 .AmnKeyBoxLeft {
-  width: 40px;
+  width: 70px;
   flex-shrink: 0;
 }
 
 .AmnKeyBoxRight {
   flex: 1;
+  font-size: 22px;
 }
 
 .AmnIcon {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   background-size: 100% 100%;
 }
 
@@ -2104,6 +2109,7 @@ input[type=number] {
 #map {
   margin-top: 25px;
   height: 100vh !important;
+  margin-bottom: 0 !important;
 }
 
 .SlT3 {
