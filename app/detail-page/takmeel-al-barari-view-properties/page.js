@@ -13,7 +13,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
   const detailHeroData = {
     // backgroundImage: "main1.jpg",
     // backgroundImageMobile: "main1mobile.jpg",
-    backgroundImage: "tkdesk.mp4",
+    backgroundImage: "tkdesk1.mp4",
     backgroundImageMobile: "Takmeel-Al-Barrari-View/Mobile Majan 03.jpg",
     text1: "Urban Living, Reimagined by Nature",
     text2: "Divine Al Barari",
