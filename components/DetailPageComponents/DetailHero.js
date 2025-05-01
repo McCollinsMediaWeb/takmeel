@@ -309,28 +309,6 @@ export default function DetailHero({
                 close={() => setOpen(false)}
                 plugins={[Video, Thumbnails, Zoom]}
                 slides={GalleryMedia && GalleryMedia?.length > 0 ? GalleryMedia : defaultSlides}
-                // slides={[
-                //     {
-                //         type: "video",
-                //         width: 1280,
-                //         height: 720,
-                //         // poster: "/public/poster-image.jpg",
-                //         sources: [
-                //             {
-                //                 src: "/Divine-Residencia-Video.mp4",
-                //                 type: "video/mp4",
-                //             },
-                //         ],
-                //     },
-                //     { src: '/abslider1.jpg' },
-                //     { src: '/abslider2.jpg' },
-                //     { src: '/abslider3.jpg' },
-                //     { src: '/abslider4.jpg' },
-                //     { src: '/main1.jpg' },
-                //     { src: '/main2.jpg' },
-                //     { src: '/main3.jpg' },
-                //     { src: '/main4.jpg' }
-                // ]}
             />
 
             <div className="DetSlContentBox">
@@ -355,68 +333,69 @@ export default function DetailHero({
                         </div>
                     </motion.div> */}
 
+                    {text2 !== "Takmeel Al Barari View" && (
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, ease: 'easeOut' }}
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
+                            <div className="row align-items-center">
+                                <div className="col-md-7">
+                                    <motion.div
+                                        variants={containerVariants}
+                                        initial="hidden"
+                                        whileInView="visible"
+                                        viewport={{ once: true, amount: 0.5 }}
+                                    >
+                                        <div>
+                                            <motion.div className="" variants={itemVariants}>
+                                                <motion.div
+                                                    className="Txt1 nunito-text"
+                                                    animate={{ opacity: [1, 0.3, 1] }}
+                                                    transition={{
+                                                        duration: 2,
+                                                        ease: 'easeInOut',
+                                                    }}
+                                                >
+                                                    {text1}
+                                                </motion.div>
 
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, ease: 'easeOut' }}
-                        viewport={{ once: true, amount: 0.5 }}
-                    >
-                        <div className="row align-items-center">
-                            <div className="col-md-7">
-                            <motion.div
-                                                variants={containerVariants}
-                                                initial="hidden"
-                                                whileInView="visible"
-                                                viewport={{ once: true, amount: 0.5 }}
-                                            >
-                                                <div>
-                                                <motion.div className="" variants={itemVariants}>
-                                                        <motion.div
-                                                            className="Txt1 nunito-text"
-                                                            animate={{ opacity: [1, 0.3, 1] }}
-                                                            transition={{
-                                                                duration: 2,
-                                                                ease: 'easeInOut',
-                                                            }}
-                                                        >
-                                                            {text1}
-                                                        </motion.div>
-                    
-                    
-                                                    </motion.div>
-                    
-                                                    <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
-                                                        {text2}
-                                                        {/* <TypingText words={[text2, text2, text2]} speed={200} pause={800} /> */}
-                                                    </motion.div>
-                                                    <motion.div variants={itemVariants}>
-                                                        <motion.div
-                                                            className="Txt3 nunito-text"
-                                                            animate={{ opacity: [1, 0.3, 1] }}
-                                                            transition={{
-                                                                duration: 2,
-                                                                ease: 'easeInOut',
-                                                            }}
-                                                        >
-                                                            {text3}
-                                                        </motion.div>
-                                                    </motion.div>
-                                                    
-                    
-                                                </div>
+
                                             </motion.div>
-                            </div>
-                            <div className='col-md-5'>
-                                <div className='ButtonsBox1'>
-                                    <a href={brochureLink} download className='hover1'>Download Brochure</a>
-                                    <a href='#' className='hover1'>Download Masterplan</a>
-                                    <a href='#' className='toggleForm hover1'>Register Your Interest</a>
+
+                                            <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
+                                                {text2}
+                                                {/* <TypingText words={[text2, text2, text2]} speed={200} pause={800} /> */}
+                                            </motion.div>
+                                            <motion.div variants={itemVariants}>
+                                                <motion.div
+                                                    className="Txt3 nunito-text"
+                                                    animate={{ opacity: [1, 0.3, 1] }}
+                                                    transition={{
+                                                        duration: 2,
+                                                        ease: 'easeInOut',
+                                                    }}
+                                                >
+                                                    {text3}
+                                                </motion.div>
+                                            </motion.div>
+
+
+                                        </div>
+                                    </motion.div>
+                                </div>
+                                <div className='col-md-5'>
+                                    <div className='ButtonsBox1'>
+                                        <a href={brochureLink} download className='hover1'>Download Brochure</a>
+                                        <a href='#' className='hover1'>Download Masterplan</a>
+                                        <a href='#' className='toggleForm hover1'>Register Your Interest</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </motion.div>
-                    
+                        </motion.div>
+                    )}
+
                 </div>
             </div>
         </div>
