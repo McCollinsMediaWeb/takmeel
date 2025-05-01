@@ -402,7 +402,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       {/* <ProjectDetails5 panoramaimage="/albararistreet.jpg" /> */}
       <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
 
-      <ProjectDetails7 mapimage="map1.jpg" {...DataProjectDetails7} />
+      <ProjectDetails7 mapimage="newmap1.jpg" {...DataProjectDetails7} />
       <CostCalculator />
       <PropertyForm />
     </div>

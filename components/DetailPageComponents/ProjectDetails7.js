@@ -130,7 +130,7 @@ export default function ProjectDetails7({ mapimage, text1, text2, landmarks, map
 
             </div>
             <div className='MapImageBox'>
-
+{/* 
                 {mapData ? (
                     <MapComponent {...mapData} />
                 ) : (<Image
@@ -139,7 +139,15 @@ export default function ProjectDetails7({ mapimage, text1, text2, landmarks, map
                     height={509}
                     layout="responsive"
                     alt="Takmeel"
-                />)}
+                />)} */}
+
+<Image
+                    src={`/${mapimage}`}
+                    width={1920}
+                    height={1026}
+                    layout="responsive"
+                    alt="Takmeel"
+                />
 
             </div>
         </div>

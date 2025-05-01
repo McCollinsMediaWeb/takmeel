@@ -93,7 +93,7 @@ export default function Founders() {
     };
 
     return (
-        <section className="pd-common FoundersBlock bg2">
+        <section className="pd-common FoundersBlock">
             <div className="container">
                 <div>
                     {/* <motion.div
