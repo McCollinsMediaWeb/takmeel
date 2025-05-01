@@ -467,4 +467,7 @@
       .AmnKeyBoxRight {
         font-size: 16px;
       }
+      .FxdHgtImage img{
+        height: 200px !important;
+      }
   }
