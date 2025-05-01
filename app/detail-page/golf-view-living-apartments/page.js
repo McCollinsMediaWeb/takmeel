@@ -68,34 +68,29 @@ export default function GolfViewLivingApartments() {
 
   const DataProjectDetails3 = [
     {
-      iconNo: 1,
-      heading: "Spectacular Views",
-      subHeading: "The apartment is bright and spacious with spectacular river views"
+      iconNo: 18,
+      heading: "Fully Equipped Gym",
+      subHeading: "Stay fit and active with a state-of-the-art gym right in your building"
     },
     {
-      iconNo: 2,
-      heading: "Central Location",
-      subHeading: "All you may need is at your doorstep: central location with all infrastructure"
+      iconNo: 17,
+      heading: "Swimming Pool",
+      subHeading: "Enjoy a refreshing swim in a beautifully maintained pool"
     },
     {
-      iconNo: 3,
-      heading: "WELLROUNDED LIFESTYLE",
-      subHeading: "Seamlessly Merge Work And Leisure"
+      iconNo: 20,
+      heading: "Children's Pool",
+      subHeading: "A safe and fun pool space specially designed for kids"
     },
     {
-      iconNo: 7,
-      heading: "Smart Apartment",
-      subHeading: "Smart apartment technology designed by famous architecture group"
+      iconNo: 19,
+      heading: "Children's Play Area",
+      subHeading: "Let kids enjoy their playtime in a safe and engaging environment"
     },
     {
-      iconNo: 4,
-      heading: "We Designed Elements",
-      subHeading: "EVERY ELEMENT DESIGNED TO FIT A WELL-ROUNDED LIFESTYLE"
-    },
-    {
-      iconNo: 5,
-      heading: "Award-Winning Design",
-      subHeading: "The apartment was designed by Lucy De Vito with great attention to details"
+      iconNo: 21,
+      heading: "Landscaped Gardens",
+      subHeading: "Relax and unwind in beautifully landscaped green spaces"
     },
   ];
 

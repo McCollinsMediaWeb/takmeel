@@ -76,27 +76,27 @@ export default function ProjectDetails6({ planImage, data }) {
                         </div>
                     </div>
                     <div className='col-md-12'>
-                    <motion.div
-                                                            initial={{ opacity: 0, y: 50 }}
-                                                            whileInView={{ opacity: 1, y: 0 }}
-                                                            transition={{ duration: 0.6, ease: "easeOut" }}
-                                                            viewport={{ once: true, amount: 0.5 }}
-                                                        >
-                        <div className="BlT1 nunito-text text-uppercase">AMENITIES AND FACILITIES</div>
-                        <div className="BlT2 text-uppercase">Create Your Perfect Home Layout​</div>
-</motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, ease: "easeOut" }}
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
+                            <div className="BlT1 nunito-text text-uppercase">AMENITIES AND FACILITIES</div>
+                            <div className="BlT2 text-uppercase">Create Your Perfect Home Layout​</div>
+                        </motion.div>
                         {data?.length > 0 ? (
                             data?.map((section, idx) => (
                                 <div className='AmnBoxWrap' key={idx}>
                                     <motion.div
-                                                            initial={{ opacity: 0, y: 50 }}
-                                                            whileInView={{ opacity: 1, y: 0 }}
-                                                            transition={{ duration: 0.6, ease: "easeOut" }}
-                                                            viewport={{ once: true, amount: 0.5 }}
-                                                        >
-                                    <div className='AmnBoxTitle'>
-                                        <span className='AmnBoxTitleSpan'>{section.amenity}</span>
-                                    </div>
+                                        initial={{ opacity: 0, y: 50 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.6, ease: "easeOut" }}
+                                        viewport={{ once: true, amount: 0.5 }}
+                                    >
+                                        <div className='AmnBoxTitle'>
+                                            <span className='AmnBoxTitleSpan'>{section.amenity}</span>
+                                        </div>
                                     </motion.div>
                                     <div className='AmnBoxLists'>
                                         <div className='listItems'>

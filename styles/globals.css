@@ -1521,6 +1521,22 @@ body .slick-prev::before {
   background-image: url(../public/cctv-icon.png);
 }
 
+.FeatureBoxIcon.FeatureBoxIcon17 {
+  background-image: url(../public/Icons/Takmeel_Icons_Adult\ Pool.png);
+}
+.FeatureBoxIcon.FeatureBoxIcon18 {
+  background-image: url(../public/Icons/Takmeel_Icons_Indoor\ Gym.png);
+}
+.FeatureBoxIcon.FeatureBoxIcon19 {
+  background-image: url(../public/Icons/Takmeel_Icons_Kids\ Play\ Area.png);
+}
+.FeatureBoxIcon.FeatureBoxIcon20 {
+  background-image: url(../public/Icons/Takmeel_Icons_Kids\ Pool.png);
+}
+.FeatureBoxIcon.FeatureBoxIcon21 {
+  background-image: url(../public/Icons/Takmeel_Icons_Landscaped-\ Gardens.png);
+}
+
 .ImageWithTextBox {
   padding: 0 !important;
   margin: 0 5px;

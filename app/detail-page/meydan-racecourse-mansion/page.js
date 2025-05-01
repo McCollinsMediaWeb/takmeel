@@ -75,36 +75,64 @@ export default function MeydanRacecourseMansion() {
 
   };
 
+  // const DataProjectDetails3 = [
+  //   {
+  //     iconNo: 1,
+  //     heading: "Spectacular Views",
+  //     subHeading: "The apartment is bright and spacious with spectacular river views"
+  //   },
+  //   {
+  //     iconNo: 2,
+  //     heading: "Central Location",
+  //     subHeading: "All you may need is at your doorstep: central location with all infrastructure"
+  //   },
+  //   {
+  //     iconNo: 3,
+  //     heading: "WELLROUNDED LIFESTYLE",
+  //     subHeading: "Seamlessly Merge Work And Leisure"
+  //   },
+  //   {
+  //     iconNo: 7,
+  //     heading: "Smart Apartment",
+  //     subHeading: "Smart apartment technology designed by famous architecture group"
+  //   },
+  //   {
+  //     iconNo: 4,
+  //     heading: "We Designed Elements",
+  //     subHeading: "EVERY ELEMENT DESIGNED TO FIT A WELL-ROUNDED LIFESTYLE"
+  //   },
+  //   {
+  //     iconNo: 5,
+  //     heading: "Award-Winning Design",
+  //     subHeading: "The apartment was designed by Lucy De Vito with great attention to details"
+  //   },
+  // ];
+
   const DataProjectDetails3 = [
     {
-      iconNo: 1,
-      heading: "Spectacular Views",
-      subHeading: "The apartment is bright and spacious with spectacular river views"
+      iconNo: 18,
+      heading: "Fully Equipped Gym",
+      subHeading: "Stay fit and active with a state-of-the-art gym right in your building"
     },
     {
-      iconNo: 2,
-      heading: "Central Location",
-      subHeading: "All you may need is at your doorstep: central location with all infrastructure"
+      iconNo: 17,
+      heading: "Swimming Pool",
+      subHeading: "Enjoy a refreshing swim in a beautifully maintained pool"
     },
     {
-      iconNo: 3,
-      heading: "WELLROUNDED LIFESTYLE",
-      subHeading: "Seamlessly Merge Work And Leisure"
+      iconNo: 20,
+      heading: "Children's Pool",
+      subHeading: "A safe and fun pool space specially designed for kids"
     },
     {
-      iconNo: 7,
-      heading: "Smart Apartment",
-      subHeading: "Smart apartment technology designed by famous architecture group"
+      iconNo: 19,
+      heading: "Children's Play Area",
+      subHeading: "Let kids enjoy their playtime in a safe and engaging environment"
     },
     {
-      iconNo: 4,
-      heading: "We Designed Elements",
-      subHeading: "EVERY ELEMENT DESIGNED TO FIT A WELL-ROUNDED LIFESTYLE"
-    },
-    {
-      iconNo: 5,
-      heading: "Award-Winning Design",
-      subHeading: "The apartment was designed by Lucy De Vito with great attention to details"
+      iconNo: 21,
+      heading: "Landscaped Gardens",
+      subHeading: "Relax and unwind in beautifully landscaped green spaces"
     },
   ];
 
@@ -131,39 +159,18 @@ export default function MeydanRacecourseMansion() {
 
   const DataProjectDetails6 = [
     {
-      amenity: "Ground Floor",
-      values: [
-        { iconNo: 25, name: "Co-working space" }
-      ]
-    },
-    {
       amenity: "Indoor",
       values: [
-        // { iconNo: 1, name: "Outdoor Showers" },
-        { iconNo: 22, name: "Beach Entry Pool" },
-        { iconNo: 19, name: "Adult Pool" },
-        // { iconNo: 5, name: "Dry Decking Area" },
-        // { iconNo: 6, name: "Wet Decking Area" },
-        { iconNo: 27, name: "Jacuzzi" },
-        // { iconNo: 1, name: "Sunken Setting" },
-        { iconNo: 24, name: "Cabanas" },
-        // { iconNo: 3, name: "Aqua Gym" },
-        { iconNo: 29, name: "Kids Pool" },
-        // { iconNo: 5, name: "Kids Splash Pad" },
-        { iconNo: 28, name: "Kids Play Area" },
-        { iconNo: 32, name: "Outdoor Gym" },
-        // { iconNo: 1, name: "Family Seating Area" },
-        // { iconNo: 2, name: "Casual Setting Area" },
+        { iconNo: 19, name: "Swimming Pool" },
+        { iconNo: 29, name: "Children's Pool" },
+        { iconNo: 28, name: "Children's Play Area" },
         { iconNo: 26, name: "Indoor Gym" },
-        // { iconNo: 4, name: "Party Area" },
-        { iconNo: 35, name: "Steam and Sauna Area" },
-        // { iconNo: 6, name: "Zen Garden" },
       ]
     },
     {
-      amenity: "Roof Top",
+      amenity: "Outdoor",
       values: [
-        { iconNo: 31, name: "Outdoor Cinema" },
+        { iconNo: 31, name: "Landscaped Garden" },
         { iconNo: 33, name: "Outdoor Shaded Seating" },
         { iconNo: 34, name: "Smoking Lounge" },
         { iconNo: 21, name: "BBQ Area" },
