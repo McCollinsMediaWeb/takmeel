@@ -13,10 +13,10 @@ export default function TakmeelAlBarariViewPropertiesPage() {
   const detailHeroData = {
     // backgroundImage: "main1.jpg",
     // backgroundImageMobile: "main1mobile.jpg",
-    backgroundImage: "albararidesk.mp4",
+    backgroundImage: "tkdesk.mp4",
     backgroundImageMobile: "Takmeel-Al-Barrari-View/Mobile Majan 03.jpg",
     text1: "Urban Living, Reimagined by Nature",
-    text2: "Takmeel Al Barari View",
+    text2: "Divine Al Barari",
     text3: "Majan, Dubai",
     videoPosterDesktop: "Takmeel-Al-Barrari-View/Majan 03.jpg",
     videoPosterMobile: "Takmeel-Al-Barrari-View/Mobile Majan 03.jpg",
@@ -50,15 +50,21 @@ export default function TakmeelAlBarariViewPropertiesPage() {
     text3:
       "Takmeel’s upcoming project at Al Barari is a tribute to visionary transformation — where untouched wilderness evolves into a luxurious smart living community. Enveloped in nature, yet rooted in innovation, this sanctuary redefines opulence through sustainability and harmony. Wake up to greenery, water, and serenity, just minutes away from the city’s hustle. Barari is not just a place to live — it’s where nature and modern living exist in perfect balance.",
     GalleryImages: [
+      "am1.jpg",
+      "am2.jpg",
+      "am3.jpg",
+      "am4.jpg",
+      "am55.jpg",
+      "am6.jpg",
       "m1.jpg",
       "m2.jpg",
-      "Takmeel-Al-Barrari-View/AL Barari Majan Building Model_3 2.jpg",
-    ],
-    GalleryImages: [],
+      "m3.jpg",
+      
+    ]
   };
   const DataProjectDetails2 = {
-    ThumbImage1: "Takmeel-Al-Barrari-View/Majan 02.jpg",
-    ThumbImage2: "Takmeel-Al-Barrari-View/Majan 04.jpg",
+    ThumbImage1: "grd2.jpg",
+    ThumbImage2: "grd3.jpg",
     text1Heading: "Spacious Urban Living in Majan",
     text1Desc: "This exclusive development features a curated selection of: 1, 2 & 3 Bedroom Apartments , Meticulously planned layouts , High-quality finishing & sanitary ware World-class materials throughout",
     text2Heading: "A Family-Friendly Community with Everything You Need",
@@ -172,7 +178,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
   ];
 
   const DataProjectDetails7 = {
-    text1: "Takmeel Al Barari View",
+    text1: "Divine Al Barari",
     text2: "EFFORTLESS ACCESS <br/> To All Corners Of The City",
     landmarks: [
       "3 MINUTES Hessa Street",
@@ -307,7 +313,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       <DetailHero {...detailHeroData} />
       <ProjectDetails1 {...DataProjectDetails1} />
       <ProjectDetails2 {...DataProjectDetails2} />
-      <ProjectDetails3 mainimage1="ovr3.jpg" data={DataProjectDetails3} />
+      <ProjectDetails3 mainimage1="ak2.jpg" data={DataProjectDetails3} />
       <ProjectDetails4 {...DataProjectDetails4} />
       {/* <ProjectDetails5 panoramaimage="/albararistreet.jpg" /> */}
       <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />

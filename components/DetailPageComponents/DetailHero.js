@@ -333,7 +333,7 @@ export default function DetailHero({
                         </div>
                     </motion.div> */}
 
-                    {text2 !== "Takmeel Al Barari View" && (
+                    {text2 !== "Divine Al Barari" && (
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
