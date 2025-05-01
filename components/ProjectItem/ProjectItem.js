@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
 import TypingText from '../Animations/TypingText';
-export default function ProjectItem({ backgroundImage,backgroundImageMobile,text1, text2, text3,tagline , url }) {
+export default function ProjectItem({ backgroundImage,backgroundImageMobile,text1, text2, text3,tagline , url,projectStatus }) {
     const bgUrl = `url("/${backgroundImage}")`;
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const containerVariants = {
@@ -62,9 +62,11 @@ export default function ProjectItem({ backgroundImage,backgroundImageMobile,text
                             viewport={{ once: true, amount: 0.5 }}
                         >
                             <div>
-                                <motion.div className="Txt1 nunito-text" variants={itemVariants}>
-                                    {text1}
+                                <motion.div className="Txt1" variants={itemVariants}>
+                                    <div><span className='PrStatus'>{projectStatus}</span></div>
+                                    {text1} 
                                 </motion.div>
+
 
                                 <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
                                     {/* <TypingText words={[text2, text2, text2]} speed={200} pause={800} /> */}
@@ -96,6 +98,7 @@ export default function ProjectItem({ backgroundImage,backgroundImageMobile,text
 
 
                                 </motion.div>
+                                
 
                                 <motion.div variants={itemVariants}>
                                     <Link href={`/detail-page/${url}`} className="Link1 hover1">

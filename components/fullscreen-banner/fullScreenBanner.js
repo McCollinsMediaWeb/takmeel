@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
 import TypingText from '../Animations/TypingText';
-export default function FullScreenBanner({ backgroundImage, backgroundImageMobile, text1, text2, text3, tagline, url, videoPosterDesktop, VideoPosterMobile }) {
+export default function FullScreenBanner({ backgroundImage, backgroundImageMobile, text1, text2, text3, tagline, url, videoPosterDesktop, VideoPosterMobile ,projectStatus}) {
 
     const { ref, inView } = useInView({
         triggerOnce: true,
@@ -216,7 +216,21 @@ alt="Takmeel"
 
 
                                 </motion.div>
+                                <motion.div className="" variants={itemVariants}>
+                                    <motion.div
+                                        className="Txt18 nunito-text"
+                                        animate={{ opacity: [1, 0.3, 1] }}
+                                        transition={{
+                                            duration: 2,
+                                            ease: 'easeInOut',
+                                        }}
+                                    >
+                                        {projectStatus}
+                                    </motion.div>
 
+
+                                </motion.div>
+                                
                                 <motion.div variants={itemVariants}>
                                     <Link href={`/detail-page/${url}`} className="Link1 hover1">
                                         Explore Property

@@ -185,7 +185,8 @@ export default function DetailHero({
     brochureLink = "/Divine-Residencia/Brochure/Divine Residencia Studio City Brochure.pdf",
     GalleryMedia,
     videoPosterDesktop,
-    videoPosterMobile
+    videoPosterMobile,
+    projectStatus
 }) {
     const containerVariants = {
         hidden: { opacity: 0, y: 40 },
@@ -333,7 +334,7 @@ export default function DetailHero({
                         </div>
                     </motion.div> */}
 
-                    {text2 !== "Divine Al Barari" && (
+                    {/* {text2 !== "Divine Al Barari" && ( */}
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -394,7 +395,7 @@ export default function DetailHero({
                                 </div>
                             </div>
                         </motion.div>
-                    )}
+                    {/* )} */}
 
                 </div>
             </div>
