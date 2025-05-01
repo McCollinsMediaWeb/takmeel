@@ -66,7 +66,7 @@ export default function AboutSlider() {
 
 
     return (
-        <section>
+        <section className='pd-common'>
             <div className='container'>
                 <motion.div
                                             initial={{ opacity: 0, y: 50 }}
