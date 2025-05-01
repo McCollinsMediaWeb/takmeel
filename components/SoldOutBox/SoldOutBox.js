@@ -83,8 +83,8 @@ export default function SoldOutBox() {
                                             />
                                             <div className='SldSliderItemDesc'>
                                                 <div className='SlT1'>SOLD OUT</div>
-                                                <div className='SlT2'>Divine Residencies – Arjan</div>
-                                                <div className='SlT3'>We present to you the elegant new project by Takmeel Development, Divine Residencies Arjan.</div>
+                                                <div className='SlT2'>Divine Residences – Arjan</div>
+                                                <div className='SlT3'>We present to you the elegant new project by Takmeel Development, Divine Residences Arjan.</div>
                                                 <div className='text-right'>
                                                     <Link href="/projects" className='Link6 hover1'>View All</Link>
                                                 </div>

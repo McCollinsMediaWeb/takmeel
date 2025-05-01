@@ -15,7 +15,7 @@ export default function DivineResidencies() {
     backgroundImage: "Divine-Residence-Image.jpg",
     backgroundImageMobile: "Divine-Residence-Image-Mobile.jpg",
     text1: "Smart Spaces Crafted for Modern Lifestyles",
-    text2: "Divine Residencies",
+    text2: "Divine Residences",
     text3: "Dubai",
     GalleryMedia: [
       // {
@@ -43,7 +43,7 @@ export default function DivineResidencies() {
     text1: "Modern Living in a Lush Urban Setting",
     text2: "Spectacular Views, Contemporary Comfort",
     text3:
-      "Located in the heart of Arjan and just moments from the world-famous Dubai Miracle Garden and Butterfly Garden, Divine Residencies is a ready-to-move-in residential project crafted for comfort, convenience, and contemporary living. With seamless access to Umm Suqeim Street and major city landmarks, this community strikes the perfect balance between natural serenity and urban vibrance.",
+      "Located in the heart of Arjan and just moments from the world-famous Dubai Miracle Garden and Butterfly Garden, Divine Residences is a ready-to-move-in residential project crafted for comfort, convenience, and contemporary living. With seamless access to Umm Suqeim Street and major city landmarks, this community strikes the perfect balance between natural serenity and urban vibrance.",
     GalleryImages: [
       "Divine-Residencies/Residencies 1st project 03.jpg",
       "Divine-Residencies/Residencies 1st project 04.jpg",
@@ -97,7 +97,7 @@ export default function DivineResidencies() {
     text1: "Modern Living in the Heart of Dubai",
     text2: "Spectacular Views, Contemporary Comfort",
     text3:
-      "Set amidst the flourishing neighborhood of Arjan, Divine Residencies offers an exceptional lifestyle just steps away from Dubai’s iconic Miracle Garden and Butterfly Garden. Thoughtfully designed and ready for immediate occupancy, this modern residential enclave blends contemporary elegance with everyday convenience. With effortless connectivity to Umm Suqeim Street and key destinations across Dubai, residents enjoy a harmonious fusion of tranquil surroundings and dynamic city living.",
+      "Set amidst the flourishing neighborhood of Arjan, Divine Residences offers an exceptional lifestyle just steps away from Dubai’s iconic Miracle Garden and Butterfly Garden. Thoughtfully designed and ready for immediate occupancy, this modern residential enclave blends contemporary elegance with everyday convenience. With effortless connectivity to Umm Suqeim Street and key destinations across Dubai, residents enjoy a harmonious fusion of tranquil surroundings and dynamic city living.",
     GalleryImagesWithNames: [
       {
         src: "Divine-Residencies/Interior/Main-picture.jpg",
@@ -163,7 +163,7 @@ export default function DivineResidencies() {
   };
 
   const DataProjectDetails7 = {
-    text1: "Divine Residencies",
+    text1: "Divine Residences",
     text2: "EFFORTLESS ACCESS <br/> To All Corners Of The City",
     landmarks: [
       "3 MINUTES Hessa Street",

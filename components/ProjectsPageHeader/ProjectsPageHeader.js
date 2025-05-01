@@ -239,7 +239,7 @@ export default function ProjectsPageHeader() {
                                                     />
                                                 </div>
                                                 <div className="ProjectDetails text-center">
-                                                    <div className="PT1">Divine Residencies</div>
+                                                    <div className="PT1">Divine Residences</div>
                                                     <div className="PT2">Dubai</div>
                                                 </div>
                                             </div>
