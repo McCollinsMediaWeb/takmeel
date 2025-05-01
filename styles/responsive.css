@@ -471,4 +471,7 @@
       .AbSliderItem img{
         height: 200px !important;
       }
+      .PrStatus{
+        margin-bottom: 8px;
+      }
   }
