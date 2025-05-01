@@ -49,11 +49,11 @@ export default function TakmeelAlBarariViewPropertiesPage() {
     text2: "From Desert Dreams to a Living Wilderness",
     text3:
       "Takmeel’s upcoming project at Al Barari is a tribute to visionary transformation — where untouched wilderness evolves into a luxurious smart living community. Enveloped in nature, yet rooted in innovation, this sanctuary redefines opulence through sustainability and harmony. Wake up to greenery, water, and serenity, just minutes away from the city’s hustle. Barari is not just a place to live — it’s where nature and modern living exist in perfect balance.",
-    // GalleryImages: [
-    //   "Takmeel-Al-Barrari-View/AL Barari Majan Building Model_2.jpg",
-    //   "Takmeel-Al-Barrari-View/AL Barari Majan Building Model_3 1.jpg",
-    //   "Takmeel-Al-Barrari-View/AL Barari Majan Building Model_3 2.jpg",
-    // ],
+    GalleryImages: [
+      "m1.jpg",
+      "m2.jpg",
+      "Takmeel-Al-Barrari-View/AL Barari Majan Building Model_3 2.jpg",
+    ],
     GalleryImages: [],
   };
   const DataProjectDetails2 = {
