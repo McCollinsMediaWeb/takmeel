@@ -112,17 +112,90 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       "Takmeel’s Al Barari project reimagines luxury living—where smart design meets natural beauty. Surrounded by greenery and water features, these 1, 2 & 3-bedroom apartments offer modern layouts, premium finishes, and sustainable living. Just minutes from Dubai Miracle Garden with easy access to Sheikh Zayed Road, this is where peace and connectivity come together in perfect harmony.",
     GalleryImagesWithNames: [
       {
-        src: "Takmeel-Al-Barrari-View/AL Barari Majan Building Model_2.jpg",
+        src: "majan1/20.jpg",
+        title: "Living Area",
+      },
+      {
+        src: "grd1.jpg",
         title: "Exterior",
       },
       {
-        src: "Takmeel-Al-Barrari-View/Majan Slide 04.jpg",
-        title: "Rooftop",
+        src: "majan1/28.jpg",
+        title: "Gym Area",
       },
       {
-        src: "Takmeel-Al-Barrari-View/AL Barari Majan Building Model_3 2.jpg",
-        title: "Parking Area",
+        src: "majan1/34.jpg",
+        title: "Lounge Area",
       },
+      {
+        src: "majan1/46.jpg",
+        title: "Kitchen Area",
+      },
+      {
+        src: "majan1/49.jpg",
+        title: "Bedroom Area",
+      },
+      {
+        src: "majan1/54.jpg",
+        title: "Washroom Area",
+      },
+      {
+        src: "majan1/55.jpg",
+        title: "Washroom Area",
+      },
+      {
+        src: "majan1/51.jpg",
+        title: "Bedroom Area",
+      },
+      {
+        src: "majan1/52.jpg",
+        title: "Bedroom Area",
+      },
+      {
+        src: "majan1/35.jpg",
+        title: "Common Whashroom Area",
+      },
+      {
+        src: "majan1/36.jpg",
+        title: "Living Area",
+      },
+      {
+        src: "majan1/29.jpg",
+        title: "Gym Area",
+      },
+      {
+        src: "majan1/30.jpg",
+        title: "Gym Area",
+      },
+      {
+        src: "majan1/22.jpg",
+        title: "Living Area",
+      },
+      {
+        src: "majan1/23.jpg",
+        title: "Living Area",
+      },
+      {
+        src: "majan1/24.jpg",
+        title: "Living Area",
+      },
+      {
+        src: "majan1/37.jpg",
+        title: "Living Area",
+      },
+      {
+        src: "majan1/38.jpg",
+        title: "Living Area",
+      },
+      {
+        src: "majan1/47.jpg",
+        title: "Kitchen Area",
+      },
+      {
+        src: "majan1/48.jpg",
+        title: "Kitchen Area",
+      },
+      
     ],
     // GalleryImagesWithNames: []
   };
@@ -310,11 +383,17 @@ export default function TakmeelAlBarariViewPropertiesPage() {
 
   return (
     <div>
+      <div className="BrariBox">
       <DetailHero {...detailHeroData} />
+      </div>
+      <div className="FxdHgtImage">
       <ProjectDetails1 {...DataProjectDetails1} />
+      </div>
       <ProjectDetails2 {...DataProjectDetails2} />
       <ProjectDetails3 mainimage1="ak2.jpg" data={DataProjectDetails3} />
+      <div className="FxdHgtImage">
       <ProjectDetails4 {...DataProjectDetails4} />
+      </div>
       {/* <ProjectDetails5 panoramaimage="/albararistreet.jpg" /> */}
       <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
 
