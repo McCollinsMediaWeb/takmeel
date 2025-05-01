@@ -1,7 +1,7 @@
 'use client'; // optional if using interactivity (like menus)
 import { motion } from "framer-motion";
 import { useEffect } from 'react';
-export default function AboutVisionMission() {
+export default function AboutVisionMission2() {
 
 
 

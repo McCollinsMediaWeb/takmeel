@@ -50,10 +50,15 @@ export default function TakmeelAlBarariViewPropertiesPage() {
     text3:
       "Takmeel’s upcoming project at Al Barari is a tribute to visionary transformation — where untouched wilderness evolves into a luxurious smart living community. Enveloped in nature, yet rooted in innovation, this sanctuary redefines opulence through sustainability and harmony. Wake up to greenery, water, and serenity, just minutes away from the city’s hustle. Barari is not just a place to live — it’s where nature and modern living exist in perfect balance.",
     GalleryImages: [
-      "am1.jpg",
-      "am2.jpg",
+      "majan1/1.jpg",
+      "majan1/2.jpg",
+      "majan1/3.jpg",
+      "majan1/4.jpg",
       "am3.jpg",
       "am4.jpg",
+      "am1.jpg",
+      "am2.jpg",
+      
       "am55.jpg",
       "am6.jpg",
       "m1.jpg",
@@ -389,7 +394,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       <div className="FxdHgtImage">
       <ProjectDetails1 {...DataProjectDetails1} />
       </div>
-      <ProjectDetails2 {...DataProjectDetails2} />
+      {/* <ProjectDetails2 {...DataProjectDetails2} /> */}
       <ProjectDetails3 mainimage1="ak2.jpg" data={DataProjectDetails3} />
       <div className="FxdHgtImage">
       <ProjectDetails4 {...DataProjectDetails4} />

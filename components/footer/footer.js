@@ -9,7 +9,9 @@ export default function Footer() {
       <div className='container'>
         <div className='text-center container'>
             <img className='FooterLogo' src="/footerlogo.png"/>
-            <div className='FtrT1 text-uppercase'>Urban Living, Reimagined by Nature</div>
+            <div className='FtrT1 text-uppercase'>
+              {/* Urban Living, Reimagined by Nature */}&nbsp;
+              </div>
         </div>
         <div className='FtrRow'>
           <div className='row'>
