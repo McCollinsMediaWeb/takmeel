@@ -7,7 +7,7 @@ import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
 import TypingText from '../Animations/TypingText';
 
-export default function MainMapComponent({ MapImageDesk, MapImageMobile , MapURL}) {
+export default function MainMapComponent({ MapImageDesk, MapImageMobile, MapURL }) {
 
     const { ref, inView } = useInView({
         triggerOnce: true,
@@ -32,30 +32,42 @@ export default function MainMapComponent({ MapImageDesk, MapImageMobile , MapURL
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
     };
-    
+
     const isDesktop = useMediaQuery("(min-width: 960px)");
 
     return (
         <div>
-            {isDesktop ? (
-                    <Image
-                    src={`/${MapImageDesk}`}
-                    width={697}
-                    height={768}
-                    layout="responsive"
-                    alt="Takmeel"
-                />
+            <motion.div
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+            >
+                {isDesktop ? (
+                    <motion.div className="" variants={itemVariants}>
+                        <Image
+                            src={`/${MapImageDesk}`}
+                            width={697}
+                            height={768}
+                            layout="responsive"
+                            alt="Takmeel"
+                        />
+                    </motion.div>
+
                 ) : (
-                    <Image
-                        src={`/${MapImageMobile}`}
-                        width={697}
-                        height={768}
-                        layout="responsive"
-                        alt="Takmeel"
-                    />
+                    <motion.div className="" variants={itemVariants}>
+                        <Image
+                            src={`/${MapImageMobile}`}
+                            width={697}
+                            height={768}
+                            layout="responsive"
+                            alt="Takmeel"
+                        />
+                    </motion.div>
+
                 )}
 
-
+            </motion.div>
         </div>
     );
 }
