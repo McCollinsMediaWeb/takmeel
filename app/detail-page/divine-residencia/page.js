@@ -306,7 +306,7 @@ export default function DivineResidencia() {
       {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
       <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
 
-      <ProjectDetails7 mapimage="mapdvr.jpg" {...DataProjectDetails7} />
+      <ProjectDetails7 mapimage="mapdvr.jpg" mobileMapImage="mobile3.jpg" {...DataProjectDetails7} />
       <CostCalculator />
       <PropertyForm />
     </div>
