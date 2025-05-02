@@ -1336,6 +1336,7 @@ body .slick-prev::before {
   border-radius: 25px;
   display: flex;
   flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .ButtonsBox1 a {
