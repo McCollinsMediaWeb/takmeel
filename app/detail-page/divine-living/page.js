@@ -72,9 +72,9 @@ export default function DivineLiving() {
     ThumbImage1: "Studio Bespoke_Design Living_24.03.2023_Page_32_Image_0001.jpg",
     ThumbImage2: "Studio Bespoke_Design Living_24.03.2023_Page_36_Image_0001.jpg",
     text1Heading: "Spacious Urban Living in Arjan",
-    text1Desc: "This exclusive development features a curated selection of: 1, 2 & 3 Bedroom Apartments ,  Meticulously planned layouts ,  High-quality finishing & sanitary ware World-class materials throughout",
+    text1Desc: "This exclusive development features a curated selection of 1, 2, and 3-bedroom apartments. Each residence offers meticulously planned layouts, high-quality finishing and sanitary ware, and world-class materials throughout, ensuring both comfort and elegance.",
     text2Heading: "A Family-Friendly Community with Everything You Need",
-    text2Desc: "Enjoy a peaceful lifestyle with convenient access to key destinations: Close to Dubai Miracle Garden & Butterfly Garden , Easy access to Sheikh Zayed Road & Umm Suqeim Street Tranquil ,  surroundings with minimal noise and traffic",
+    text2Desc: "Located in a central area with everything at your doorstep, the development boasts an award-winning design by Lucy De Vito. Apartments are equipped with smart home technology and modern automation, and feature bright, spacious interiors with spectacular views of the community.",
 
   };
 

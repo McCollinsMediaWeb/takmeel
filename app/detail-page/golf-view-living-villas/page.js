@@ -47,8 +47,11 @@ export default function GolfViewLivingVillas() {
     text3:
       "Discover a lifestyle of peace and privacy in the heart of Ajman’s prestigious Al Zorah Golf Course. Surrounded by panoramic fairways and lush mangroves, Divine Golf Villas is a limited collection of 20 high-end residences offering spacious interiors, modern architecture, and nature-integrated design—just 25 minutes from Dubai International Airport.",
     GalleryImages: [
-      "Golf-View-Living-Villas/divine-golf-villas-Facade 01.jpg",
-      "Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg",
+      "golf/1.jpg",
+      "golf/2.jpg",
+      "golf/3.jpg",
+      "golf/4.jpg",
+      "golf/5.jpg",
       // "Golf-View-Living-Villas/Golf View Villas 1.jpg",
       // "Golf-View-Living-Villas/Golf View Villas 2.jpg",
     ],
