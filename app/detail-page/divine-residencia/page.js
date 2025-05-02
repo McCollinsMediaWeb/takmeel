@@ -168,8 +168,8 @@ export default function DivineResidencia() {
   ];
 
   const DataProjectDetails7 = {
-    text1: "Divine Residencia",
-    text2: "EFFORTLESS ACCESS <br/> To All Corners Of The City",
+    text1: "EFFORTLESS ACCESS TO ALL CORNERS OF THE CITY",
+    text2: "Nestled in a prime location, Studio City enjoys seamless connectivity to major highways like Hessa Street and Sheikh Mohammed Bin Zayed Road, enjoying effortless access to all corners of the city.",
     landmarks: [
       "3 MINUTES Hessa Street",
       "5 MINUTES Sheikh Mohammed Bin Zayed Rd",
@@ -306,7 +306,7 @@ export default function DivineResidencia() {
       {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
       <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
 
-      <ProjectDetails7 mapimage="map1.jpg" {...DataProjectDetails7} />
+      <ProjectDetails7 mapimage="mapdvr.jpg" {...DataProjectDetails7} />
       <CostCalculator />
       <PropertyForm />
     </div>

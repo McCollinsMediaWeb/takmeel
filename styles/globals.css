@@ -2173,3 +2173,16 @@ input[type=number] {
   margin-bottom: 15px;
   font-size: 15px;
 }
+.BlT1A{
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.BlT2B{
+  font-size: 19px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}

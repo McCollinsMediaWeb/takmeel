@@ -257,8 +257,8 @@ export default function TakmeelAlBarariViewPropertiesPage() {
   ];
 
   const DataProjectDetails7 = {
-    text1: "Divine Al Barari",
-    text2: "EFFORTLESS ACCESS <br/> To All Corners Of The City",
+    text1: "EFFORTLESS ACCESS TO ALL CORNERS OF THE CITY",
+    text2: "Nestled in a prime location, Studio City enjoys seamless connectivity to major highways like Hessa Street and Sheikh Mohammed Bin Zayed Road, enjoying effortless access to all corners of the city.",
     landmarks: [
       "3 MINUTES Hessa Street",
       "5 MINUTES Sheikh Mohammed Bin Zayed Rd",

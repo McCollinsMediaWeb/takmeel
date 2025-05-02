@@ -23,6 +23,24 @@ import MapComponent from '../MapComponent/MapComponent';
 export default function ProjectDetails7({ mapimage, text1, text2, landmarks, mapData }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
+    const containerVariants = {
+        hidden: { opacity: 0, y: 40 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.6,
+                ease: 'easeOut',
+                when: 'beforeChildren',
+                staggerChildren: 0.2,
+            },
+        },
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+    };
     var settings = {
         dots: true,
         infinite: false,
@@ -75,12 +93,28 @@ export default function ProjectDetails7({ mapimage, text1, text2, landmarks, map
                     <div className='LocationRowWrap'>
                         <div className='row'>
                             <div className='col-md-12'>
-                                <div className="BlT1 nunito-text text-uppercase">{text1 ? text1 : "Takmeel Al Barari Properties"}</div>
-                                <div
-                                    className="BlT2 text-uppercase"
-                                    dangerouslySetInnerHTML={{ __html: text2 || "EFFORTLESS ACCESS<br /> To All Corners Of The City" }}
-                                ></div>
-                                <div className='row'>
+                                <motion.div
+                                    variants={containerVariants}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: true, amount: 0.5 }}
+                                >
+                                    <div>
+                                        <motion.div className="" variants={itemVariants}>
+                                            <div className="BlT1A">{text1 ? text1 : "Takmeel Al Barari Properties"}</div>
+                                        </motion.div>
+
+                                        <motion.div className="" variants={itemVariants}>
+                                            <div
+                                                className="BlT2B text-uppercase"
+                                                dangerouslySetInnerHTML={{ __html: text2 || "EFFORTLESS ACCESS  To All Corners Of The City" }}
+                                            ></div>
+                                        </motion.div>
+                                    </div>
+                                </motion.div>
+
+
+                                {/* <div className='row'>
                                     {landmarks?.length > 0 ? (
                                         landmarks.map((line, index) => (
                                             <div key={index} className='col-md-4'>
@@ -115,13 +149,10 @@ export default function ProjectDetails7({ mapimage, text1, text2, landmarks, map
                                         </>
                                     )}
 
-                                </div>
+                                </div> */}
 
 
 
-
-                            </div>
-                            <div className='col-md-12'>
 
                             </div>
                         </div>
@@ -130,24 +161,49 @@ export default function ProjectDetails7({ mapimage, text1, text2, landmarks, map
 
             </div>
             <div className='MapImageBox'>
-{/* 
-                {mapData ? (
-                    <MapComponent {...mapData} />
-                ) : (<Image
-                    src={`/${mapimage}`}
-                    width={719}
-                    height={509}
-                    layout="responsive"
-                    alt="Takmeel"
-                />)} */}
 
-<Image
+            {mapimage ? (
+    <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+    >
+        <div>
+            <motion.div className="" variants={itemVariants}>
+                <Image
                     src={`/${mapimage}`}
                     width={1920}
                     height={1026}
                     layout="responsive"
                     alt="Takmeel"
                 />
+            </motion.div>
+        </div>
+    </motion.div>
+) : (
+    <div>
+        <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+    >
+        <div>
+            <motion.div className="" variants={itemVariants}>
+                <Image
+                    src={`newmap1.jpg`}
+                    width={1920}
+                    height={1026}
+                    layout="responsive"
+                    alt="Takmeel"
+                />
+            </motion.div>
+        </div>
+    </motion.div>
+    </div>
+)}
+
 
             </div>
         </div>
