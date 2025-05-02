@@ -257,8 +257,8 @@ export default function TakmeelAlBarariViewPropertiesPage() {
   ];
 
   const DataProjectDetails7 = {
-    text1: "EFFORTLESS ACCESS TO ALL CORNERS OF THE CITY",
-    text2: "Nestled in a prime location, Studio City enjoys seamless connectivity to major highways like Hessa Street and Sheikh Mohammed Bin Zayed Road, enjoying effortless access to all corners of the city.",
+    text1: "IMMERSED IN NATURE, CONNECTED TO THE CITY",
+    text2: "Surrounded by lush landscapes and tranquil walkways, Divine Al Barari offers an oasis of calm amidst Dubai’s vibrant pace. This serene community combines peaceful living with exceptional connectivity—ensuring seamless access to every part of the city.",
     landmarks: [
       "3 MINUTES Hessa Street",
       "5 MINUTES Sheikh Mohammed Bin Zayed Rd",
@@ -403,7 +403,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       {/* <ProjectDetails5 panoramaimage="/albararistreet.jpg" /> */}
       <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
 
-      <ProjectDetails7 mapimage="newnewmap1.jpg" {...DataProjectDetails7} />
+      <ProjectDetails7 mapimage="mapalb.jpg" {...DataProjectDetails7} />
       <CostCalculator />
       <PropertyForm />
     </div>
