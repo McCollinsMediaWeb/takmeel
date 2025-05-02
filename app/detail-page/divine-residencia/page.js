@@ -64,9 +64,9 @@ export default function DivineResidencia() {
     ThumbImage1: "Divine-Residencia/Divine-Residencia 06.jpg",
     ThumbImage2: "Divine-Residencia/Divine-Residencia 07.jpg",
     text1Heading: "Residences That Reflect You",
-    text1Desc: "A curated collection of 1, 2 & 3-bedroom apartments crafted for a modern, balanced lifestyle: Thoughtful layouts with dedicated study rooms, Natural light & cross ventilation, Elegant interiors using premium materials, Sophisticated finishes for a timeless design ",
+    text1Desc: "A curated collection of 1, 2 & 3-bedroom apartments crafted for a modern, balanced lifestyle: thoughtful layouts with dedicated study rooms, natural light & cross ventilation, elegant interiors using premium materials, Sophisticated finishes for a timeless design ",
     text2Heading: "Live Close to Nature",
-    text2Desc: "Lush green surroundings ,Abundant natural light, Fresh air circulation, A calming environment that encourages well-being ",
+    text2Desc: "Lush green surroundings ,abundant natural light, Fresh air circulation, a calming environment that encourages well-being ",
 
   };
 
