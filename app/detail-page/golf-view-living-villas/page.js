@@ -54,9 +54,9 @@ export default function GolfViewLivingVillas() {
     ThumbImage1: "Golf-View-Living-Villas/Golf View Villas 1.jpg",
     ThumbImage2: "Golf-View-Living-Villas/Golf View Villas 2.jpg",
     text1Heading: "Villas Crafted for Modern Family Living",
-    text1Desc: "Elegant double-height entrances, Expansive ground floor living and dining areas with direct golf course views, Large kitchens with pantry and service access, Private landscaped gardens and shaded rooftop terraces, Study/office space, maid’s room, guest bathroom, Upstairs: Master suite + 2 ensuite bedrooms + family lounge, Private pool with deck area, Covered garage with attached driver’s room",
+    text1Desc: "Each villa welcomes you with an elegant double-height entrance, leading into expansive ground floor living and dining areas that open directly onto golf course views. The large kitchens come equipped with a pantry and service access, while private landscaped gardens and shaded rooftop terraces provide serene outdoor spaces.",
     text2Heading: "Project Highlights",
-    text2Desc: "20 Limited-Edition Villas, Panoramic Golf Course & Mangrove Views, Minutes from Sandy Beaches, 25 Minutes from Dubai, 20 from Sharjah",
+    text2Desc: "This exclusive development offers just 20 limited-edition villas, each designed to capture panoramic views of the golf course and surrounding mangroves. Located just minutes from sandy beaches and only 25 minutes from Dubai and 20 from Sharjah, the project blends convenience with natural beauty.",
 
   };
 
