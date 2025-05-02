@@ -1385,6 +1385,7 @@ body .slick-prev::before {
 .Det2T1 {
   line-height: 1.4;
   font-size: 20px;
+  text-align: justify;
 }
 
 .Det2T1.mb {
