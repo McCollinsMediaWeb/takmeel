@@ -348,7 +348,7 @@ export default function DivineLiving() {
       {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
       <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
 
-      <ProjectDetails7 mapimage="mapdvl.jpg"  mobileMapImage="mobile1.jpg" {...DataProjectDetails7} />
+      <ProjectDetails7 mapimage="dldesk.jpg"  mobileMapImage="dlmob.jpg" {...DataProjectDetails7} />
       <CostCalculator />
       <PropertyForm />
     </div>
