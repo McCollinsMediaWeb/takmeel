@@ -37,7 +37,7 @@ export default function HeaderForm() {
                     >
                         <div className='CfT1'>WE ARE HERE TO HELP</div>
                         <div className='CfT2'>Get in Touch with Us</div>
-                        <div className='CfT3'>Should this property pique your interest, we encourage you to schedule a private viewing at your earliest convenience. Our portfolio encompasses a diverse selection of distinguished residences</div>
+                        <div className='CfT3'>Should this property pique your interest, we encourage you to schedule a private viewing at your earliest convenience. Our portfolio encompasses a diverse selection of distinguished residences.</div>
                         <div className='FormBox'>
                             <div className='row'>
                                 <div className='col-md-12'>
