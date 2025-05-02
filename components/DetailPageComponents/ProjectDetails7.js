@@ -20,7 +20,7 @@ import image3 from "../../public/abslider3.jpg"
 import image4 from "../../public/abslider3.jpg"
 import MapComponent from '../MapComponent/MapComponent';
 
-export default function ProjectDetails7({ mapimage, text1, text2, landmarks, mapData, MapImageMobile }) {
+export default function ProjectDetails7({ mapimage, text1, text2, landmarks, mapData, mobileMapImage }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
     const containerVariants = {
@@ -189,7 +189,7 @@ export default function ProjectDetails7({ mapimage, text1, text2, landmarks, map
 
                         <motion.div className="" variants={itemVariants}>
                             <Image
-                                src={`/${MapImageMobile}`}
+                                src={`/${mobileMapImage}`}
                                 width={697}
                                 height={768}
                                 layout="responsive"
