@@ -17,6 +17,9 @@ export default function DivineResidencies() {
     text1: "Smart Spaces Crafted for Modern Lifestyles",
     text2: "Divine Residences",
     text3: "Dubai",
+    brochureLink: null,
+    masterPlanLink: null,
+    registerInterest: null,
     GalleryMedia: [
       // {
       //     type: "video",

@@ -16,6 +16,9 @@ export default function DivineLiving() {
     text1: "Thoughtfully Designed for Peaceful Living",
     text2: "Divine Living",
     text3: "Arjan, Dubai",
+    brochureLink: "/Divine-Living/Brochure/Divine Living Arjan Brochure.pdf",
+    masterPlanLink: null,
+    registerInterest: null,
     GalleryMedia: [
       {
         type: "video",

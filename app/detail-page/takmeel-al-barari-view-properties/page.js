@@ -18,6 +18,9 @@ export default function TakmeelAlBarariViewPropertiesPage() {
     text1: "Urban Living, Reimagined by Nature",
     text2: "Divine Al Barari",
     text3: "Majan, Dubai",
+    brochureLink: null,
+    masterPlanLink: null,
+    registerInterest: null,
     videoPosterDesktop: "Takmeel-Al-Barrari-View/Majan 03.jpg",
     videoPosterMobile: "Takmeel-Al-Barrari-View/Mobile Majan 03.jpg",
     GalleryMedia: [
@@ -58,13 +61,13 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       "am4.jpg",
       "am1.jpg",
       "am2.jpg",
-      
+
       "am55.jpg",
       "am6.jpg",
       "m1.jpg",
       "m2.jpg",
       "m3.jpg",
-      
+
     ]
   };
   const DataProjectDetails2 = {
@@ -172,7 +175,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
         src: "majan1/30.jpg",
         title: "Gym Area",
       },
-     
+
       {
         src: "majan1/37.jpg",
         title: "Living Area",
@@ -201,7 +204,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
         src: "majan1/59.jpg",
         title: "Kitchen Area",
       },
-      
+
     ],
     // GalleryImagesWithNames: []
   };
@@ -390,10 +393,10 @@ export default function TakmeelAlBarariViewPropertiesPage() {
   return (
     <div>
       <div className="BrariBox">
-      <DetailHero {...detailHeroData} />
+        <DetailHero {...detailHeroData} />
       </div>
       <div className="FxdHgtImage">
-      <ProjectDetails1 {...DataProjectDetails1} />
+        <ProjectDetails1 {...DataProjectDetails1} />
       </div>
       {/* <ProjectDetails2 {...DataProjectDetails2} /> */}
       <ProjectDetails7 mapimage="mapalb.jpg" {...DataProjectDetails7} />

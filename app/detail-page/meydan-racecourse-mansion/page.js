@@ -17,7 +17,9 @@ export default function MeydanRacecourseMansion() {
     text1: "Where Grandeur Meets Precision",
     text2: "Meydan Racecourse Mansion",
     text3: "Dubai",
-    brochureLink: "/Divine-Residencia/Brochure/Divine Residencia Studio City Brochure.pdf",
+    brochureLink: null,
+    masterPlanLink: null,
+    registerInterest: null,
     GalleryMedia: [
       // {
       //     type: "video",

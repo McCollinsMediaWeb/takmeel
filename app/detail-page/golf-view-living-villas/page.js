@@ -16,6 +16,9 @@ export default function GolfViewLivingVillas() {
     text1: "Private Villas Surrounded by Nature’s Calm",
     text2: "Golf View Living Villas",
     text3: "Ajman",
+    brochureLink: null,
+    masterPlanLink: null,
+    registerInterest: null,
     GalleryMedia: [
       {
         type: "video",

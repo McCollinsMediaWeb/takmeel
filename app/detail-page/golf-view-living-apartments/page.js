@@ -16,6 +16,9 @@ export default function GolfViewLivingApartments() {
     text1: "Your Everyday Escape, Overlooking the Greens",
     text2: "Golf View Living Apartments",
     text3: "Al Zorah, Ajman",
+    brochureLink: null,
+    masterPlanLink: null,
+    registerInterest: null,
     GalleryMedia: [
       {
         type: "video",

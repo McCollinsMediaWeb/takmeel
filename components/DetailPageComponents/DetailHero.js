@@ -182,7 +182,9 @@ export default function DetailHero({
     text1,
     text2,
     text3,
-    brochureLink = "/Divine-Residencia/Brochure/Divine Residencia Studio City Brochure.pdf",
+    brochureLink,
+    masterPlanLink,
+    registerInterest,
     GalleryMedia,
     videoPosterDesktop,
     videoPosterMobile,
@@ -335,66 +337,81 @@ export default function DetailHero({
                     </motion.div> */}
 
                     {/* {text2 !== "Divine Al Barari" && ( */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 50 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, ease: 'easeOut' }}
-                            viewport={{ once: true, amount: 0.5 }}
-                        >
-                            <div className="row align-items-center">
-                                <div className="col-md-7">
-                                    <motion.div
-                                        variants={containerVariants}
-                                        initial="hidden"
-                                        whileInView="visible"
-                                        viewport={{ once: true, amount: 0.5 }}
-                                    >
-                                        <div>
-                                            <motion.div className="" variants={itemVariants}>
-                                                <motion.div
-                                                    className="Txt1 nunito-text"
-                                                    animate={{ opacity: [1, 0.3, 1] }}
-                                                    transition={{
-                                                        duration: 2,
-                                                        ease: 'easeInOut',
-                                                    }}
-                                                >
-                                                    {text1}
-                                                </motion.div>
-
-
-                                            </motion.div>
-
-                                            <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
-                                                {text2}
-                                                {/* <TypingText words={[text2, text2, text2]} speed={200} pause={800} /> */}
-                                            </motion.div>
-                                            <motion.div variants={itemVariants}>
-                                                <motion.div
-                                                    className="Txt3 nunito-text"
-                                                    animate={{ opacity: [1, 0.3, 1] }}
-                                                    transition={{
-                                                        duration: 2,
-                                                        ease: 'easeInOut',
-                                                    }}
-                                                >
-                                                    {text3}
-                                                </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, ease: 'easeOut' }}
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
+                        <div className="row align-items-center">
+                            <div className="col-md-7">
+                                <motion.div
+                                    variants={containerVariants}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: true, amount: 0.5 }}
+                                >
+                                    <div>
+                                        <motion.div className="" variants={itemVariants}>
+                                            <motion.div
+                                                className="Txt1 nunito-text"
+                                                animate={{ opacity: [1, 0.3, 1] }}
+                                                transition={{
+                                                    duration: 2,
+                                                    ease: 'easeInOut',
+                                                }}
+                                            >
+                                                {text1}
                                             </motion.div>
 
 
-                                        </div>
-                                    </motion.div>
-                                </div>
+                                        </motion.div>
+
+                                        <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
+                                            {text2}
+                                            {/* <TypingText words={[text2, text2, text2]} speed={200} pause={800} /> */}
+                                        </motion.div>
+                                        <motion.div variants={itemVariants}>
+                                            <motion.div
+                                                className="Txt3 nunito-text"
+                                                animate={{ opacity: [1, 0.3, 1] }}
+                                                transition={{
+                                                    duration: 2,
+                                                    ease: 'easeInOut',
+                                                }}
+                                            >
+                                                {text3}
+                                            </motion.div>
+                                        </motion.div>
+
+
+                                    </div>
+                                </motion.div>
+                            </div>
+                            {(brochureLink || masterPlanLink || registerInterest) && (
                                 <div className='col-md-5'>
                                     <div className='ButtonsBox1'>
-                                        <a href={brochureLink} download className='hover1'>Download Brochure</a>
-                                        <a href='#' className='hover1'>Download Masterplan</a>
-                                        <a href='#' className='toggleForm hover1'>Register Your Interest</a>
+                                        {brochureLink && (
+                                            <a href={brochureLink} download className='hover1'>
+                                                Download Brochure
+                                            </a>
+                                        )}
+                                        {masterPlanLink && (
+                                            <a href='#' className='hover1'>
+                                                Download Masterplan
+                                            </a>
+                                        )}
+                                        {registerInterest && (
+                                            <a href='#' className='toggleForm hover1'>
+                                                Register Your Interest
+                                            </a>
+                                        )}
                                     </div>
                                 </div>
-                            </div>
-                        </motion.div>
+                            )}
+
+                        </div>
+                    </motion.div>
                     {/* )} */}
 
                 </div>
