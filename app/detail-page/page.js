@@ -19,7 +19,7 @@ export default function DetailPage() {
         <ProjectDetails4/>
         <ProjectDetails5/>
         <ProjectDetails6 planImage="plan1.jpg"/>
-        <ProjectDetails7 mapimage="map1.jpg"/>
+        <ProjectDetails7 mapimage="newmap1.jpg"/>
         <CostCalculator/>
         <PropertyForm/>
       </div>

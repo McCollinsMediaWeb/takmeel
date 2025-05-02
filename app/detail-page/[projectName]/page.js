@@ -159,7 +159,7 @@ export default function ProjectDetailPage() {
             <ProjectDetails4 />
             <ProjectDetails5 />
             <ProjectDetails6 planImage="plan1.jpg" />
-            <ProjectDetails7 mapimage="map1.jpg" data={currentProject.locatioHighLights} />
+            <ProjectDetails7 mapimage="newmap1.jpg" data={currentProject.locatioHighLights} />
             <CostCalculator />
             <PropertyForm />
         </div>

@@ -192,7 +192,7 @@ export default function ProjectDetails7({ mapimage, text1, text2, landmarks, map
         <div>
             <motion.div className="" variants={itemVariants}>
                 <Image
-                    src={`newmap1.jpg`}
+                    src={`newnewmap1.jpg`}
                     width={1920}
                     height={1026}
                     layout="responsive"
