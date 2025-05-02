@@ -398,9 +398,9 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       {/* <ProjectDetails2 {...DataProjectDetails2} /> */}
       <ProjectDetails7 mapimage="mapalb.jpg" {...DataProjectDetails7} />
       {/* <ProjectDetails3 mainimage1="ak2.jpg" data={DataProjectDetails3} /> */}
-      <div className="FxdHgtImage">
+      {/* <div className="FxdHgtImage">
       <ProjectDetails4 {...DataProjectDetails4} />
-      </div>
+      </div> */}
       {/* <ProjectDetails5 panoramaimage="/albararistreet.jpg" /> */}
       <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
 
