@@ -172,6 +172,7 @@ export default function GolfViewLivingVillas() {
   ];
 
   const DataProjectDetails7 = {
+    // mapimage: "newmap1.jpg",
     text1: "Golf View Living Villas",
     text2: "EFFORTLESS ACCESS <br/> To All Corners Of The City",
     landmarks: [
@@ -311,7 +312,7 @@ export default function GolfViewLivingVillas() {
             <ProjectDetails4 {...DataProjectDetails4} />
             {/* <ProjectDetails5 panoramaimage="/golfstreet.jpg" /> */}
             <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
-            <ProjectDetails7 mapimage="newmap1.jpg" {...DataProjectDetails7} />
+            <ProjectDetails7 {...DataProjectDetails7} />
             <CostCalculator />
             <PropertyForm />
         </div>

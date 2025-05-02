@@ -162,47 +162,48 @@ export default function ProjectDetails7({ mapimage, text1, text2, landmarks, map
             </div>
             <div className='MapImageBox'>
 
-            {mapimage ? (
-    <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-    >
-        <div>
-            <motion.div className="" variants={itemVariants}>
-                <Image
-                    src={`/${mapimage}`}
-                    width={1920}
-                    height={1026}
-                    layout="responsive"
-                    alt="Takmeel"
-                />
-            </motion.div>
-        </div>
-    </motion.div>
-) : (
-    <div>
-        <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-    >
-        <div>
-            <motion.div className="" variants={itemVariants}>
-                <Image
-                    src={`newmap1.jpg`}
-                    width={1920}
-                    height={1026}
-                    layout="responsive"
-                    alt="Takmeel"
-                />
-            </motion.div>
-        </div>
-    </motion.div>
-    </div>
-)}
+                {mapimage ? (
+                    <motion.div
+                        variants={containerVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
+                        <div>
+                            <motion.div className="" variants={itemVariants}>
+                                <Image
+                                    src={`/${mapimage}`}
+                                    width={1920}
+                                    height={1026}
+                                    layout="responsive"
+                                    alt="Takmeel"
+                                />
+                            </motion.div>
+                        </div>
+                    </motion.div>
+                ) : (
+                    // <div>
+                    //     <motion.div
+                    //         variants={containerVariants}
+                    //         initial="hidden"
+                    //         whileInView="visible"
+                    //         viewport={{ once: true, amount: 0.5 }}
+                    //     >
+                    //         <div>
+                    //             <motion.div className="" variants={itemVariants}>
+                    //                 <Image
+                    //                     src={`newmap1.jpg`}
+                    //                     width={1920}
+                    //                     height={1026}
+                    //                     layout="responsive"
+                    //                     alt="Takmeel"
+                    //                 />
+                    //             </motion.div>
+                    //         </div>
+                    //     </motion.div>
+                    // </div>
+                    <MapComponent {...mapData} />
+                )}
 
 
             </div>
