@@ -22,7 +22,7 @@ export default function HomeAbout({ backgroundImage, backgroundImageMobile, text
                         <div className='HbT3'>Every Takmeel home is a masterpiece, blending elegance, innovation, and timeless design in some of the most coveted locations. Backed by a team of industry experts, we bring a seamless, personalized approach to real estate—ensuring your journey to finding the perfect home is nothing short of extraordinary.</div>
                         <div className='HbT4'>Your dream home isn’t just a vision<br />
                             it’s waiting for you at Takmeel.</div>
-                        <Link href="/" className='Link5 hover1'>Read More</Link>
+                        <Link href="/about-us" className='Link5 hover1'>Read More</Link>
                     </motion.div>
                 </div>
             </div>
