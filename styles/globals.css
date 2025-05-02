@@ -184,14 +184,14 @@ header {
   position: relative;
 }
 
-.MenuClick::after {
+/* .MenuClick::after {
   content: "Menu";
   color: #fff;
   position: absolute;
   left: 40px;
   top: 3px;
   transition: 0.4s;
-}
+} */
 
 .MenuClick:hover {
   background-image: url(../public/menuhover.png);
