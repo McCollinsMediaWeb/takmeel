@@ -13,7 +13,7 @@ import f4 from "../../public/t3.jpg"
 import f5 from "../../public/t4.jpg"
 import f6 from "../../public/t5.jpg"
 import f7 from "../../public/t6.jpg"
-import f8 from "../../public/t9.jpg"
+import f8 from "../../public/rf.jpg"
 export default function Founders() {
 
     var settings = {
