@@ -13,6 +13,7 @@ import f4 from "../../public/t3.jpg"
 import f5 from "../../public/t4.jpg"
 import f6 from "../../public/t5.jpg"
 import f7 from "../../public/t6.jpg"
+import f8 from "../../public/t9.jpg"
 export default function Founders() {
 
     var settings = {
@@ -296,6 +297,7 @@ export default function Founders() {
                                         </div>
                                     </div>
                                 </div>
+                               
                             <div className="FounderItem">
                                     <div className="FounderItemBox">
                                         <div className="FounderImageBox">
@@ -370,6 +372,26 @@ export default function Founders() {
                                         <div className="FounderDetails">
                                             <div className="FounderName">Rabia Afsheen</div>
                                             <div className="FounderPosition">Head of HR</div>
+                                            {/* <div className="text-right">
+                                                <a href="#" className="MoreInfoLink nunito-text">More Info</a>
+                                            </div> */}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="FounderItem">
+                                    <div className="FounderItemBox">
+                                        <div className="FounderImageBox">
+                                            <Image
+                                                src={f8}
+                                                width={416}
+                                                height={524}
+                                                layout="responsive"
+                                                alt="Takmeel"
+                                            />
+                                        </div>
+                                        <div className="FounderDetails">
+                                            <div className="FounderName">Rafique Zaman</div>
+                                            <div className="FounderPosition">Head of Project</div>
                                             {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
                                             </div> */}
