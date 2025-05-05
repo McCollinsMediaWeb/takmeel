@@ -167,6 +167,44 @@ export default function ProjectsPageHeader() {
                                         </Link>
                                     </div>
                                     <div>
+                                        <Link className="no-hover-color" href="/detail-page/divine-residencies">
+                                            <div className="FtrProject">
+                                                <div className="ProjectImage">
+                                                    <Image
+                                                        src={p4}
+                                                        width={297}
+                                                        height={166}
+                                                        layout="responsive"
+                                                        alt="Takmeel"
+                                                    />
+                                                </div>
+                                                <div className="ProjectDetails text-center">
+                                                    <div className="PT1">Divine Residences</div>
+                                                    <div className="PT2">Dubai</div>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <Link className="no-hover-color" href="/detail-page/meydan-racecourse-mansion">
+                                            <div className="FtrProject">
+                                                <div className="ProjectImage">
+                                                    <Image
+                                                        src={p5}
+                                                        width={297}
+                                                        height={166}
+                                                        layout="responsive"
+                                                        alt="Takmeel"
+                                                    />
+                                                </div>
+                                                <div className="ProjectDetails text-center">
+                                                    <div className="PT1">Meydan Racecourse Mansion</div>
+                                                    <div className="PT2">Dubai</div>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    <div>
                                         <Link className="no-hover-color" href="/detail-page/golf-view-living-apartments">
                                             <div className="FtrProject">
                                                 <div className="ProjectImage">
@@ -206,45 +244,9 @@ export default function ProjectsPageHeader() {
                                         </Link>
                                     </div>
 
-                                    <div>
-                                        <Link className="no-hover-color" href="/detail-page/meydan-racecourse-mansion">
-                                            <div className="FtrProject">
-                                                <div className="ProjectImage">
-                                                    <Image
-                                                        src={p5}
-                                                        width={297}
-                                                        height={166}
-                                                        layout="responsive"
-                                                        alt="Takmeel"
-                                                    />
-                                                </div>
-                                                <div className="ProjectDetails text-center">
-                                                    <div className="PT1">Meydan Racecourse Mansion</div>
-                                                    <div className="PT2">Dubai</div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </div>
+                                    
 
-                                    <div>
-                                        <Link className="no-hover-color" href="/detail-page/divine-residencies">
-                                            <div className="FtrProject">
-                                                <div className="ProjectImage">
-                                                    <Image
-                                                        src={p4}
-                                                        width={297}
-                                                        height={166}
-                                                        layout="responsive"
-                                                        alt="Takmeel"
-                                                    />
-                                                </div>
-                                                <div className="ProjectDetails text-center">
-                                                    <div className="PT1">Divine Residences</div>
-                                                    <div className="PT2">Dubai</div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </div>
+                                    
                                 </Slider>
                             </div>
                         </motion.div>
