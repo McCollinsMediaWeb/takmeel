@@ -20,6 +20,46 @@ import image2 from "../../public/as2.jpg"
 export default function ProjectDetails4({ text1, text2, text3, GalleryImagesWithNames }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
+    const sliderRef = useRef(null);
+    const slickRef = useRef(null);
+    const [inView, setInView] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setInView(true);
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        const currentSlider = sliderRef.current;
+
+        if (currentSlider) {
+            observer.observe(currentSlider);
+        }
+
+        return () => {
+            if (currentSlider) {
+                observer.unobserve(currentSlider);
+            }
+        };
+    }, []);
+
+
+    useEffect(() => {
+        if (inView && slickRef.current) {
+            slickRef.current.slickPlay();
+        }
+    }, [inView]);
+
+    useEffect(() => {
+        if (slickRef.current) {
+            slickRef.current.slickPause();
+        }
+    }, []);
+
     var settings = {
         dots: true,
         speed: 500,
@@ -77,8 +117,8 @@ export default function ProjectDetails4({ text1, text2, text3, GalleryImagesWith
                             <div className="BlT3">{text3}</div>
                         </div>
                         {GalleryImagesWithNames?.length > 0 && (
-                            <div className='col-md-12 PrDetSliderBox'>
-                                <Slider {...settings}>
+                            <div className='col-md-12 PrDetSliderBox' ref={sliderRef}>
+                                <Slider ref={slickRef} {...settings}>
                                     {GalleryImagesWithNames.map((img, index) => (
                                         <div key={index} className='AbSliderItem' onClick={() => setOpen(true)}>
                                             <div className='ImageBox position-relative ImageWithTextBox'>
