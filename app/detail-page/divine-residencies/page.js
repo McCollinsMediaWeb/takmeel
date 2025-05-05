@@ -36,9 +36,9 @@ export default function DivineResidencies() {
       //     controls: true,
       // },
       // { src: "/Divine-Residence-Image.jpg" },
-      { src: "/Divine-Residencies/Residencies 1st project 03.jpg" },
-      { src: "/Divine-Residencies/Residencies 1st project 04.jpg" },
-      { src: "/Divine-Residencies/Residencies 1st project 05.jpg" },
+      { src: "Divine-Residencies/Interior/Main-picture.jpg" },
+      { src: "Divine-Residencies/Interior/2.jpg" },
+      { src: "Divine-Residencies/Interior/10.jpg" },
     ],
   };
 
@@ -48,9 +48,10 @@ export default function DivineResidencies() {
     text3:
       "Located in the heart of Arjan and just moments from the world-famous Dubai Miracle Garden and Butterfly Garden, Divine Residences is a ready-to-move-in residential project crafted for comfort, convenience, and contemporary living. With seamless access to Umm Suqeim Street and major city landmarks, this community strikes the perfect balance between natural serenity and urban vibrance.",
     GalleryImages: [
-      "Divine-Residencies/Residencies 1st project 03.jpg",
-      "Divine-Residencies/Residencies 1st project 04.jpg",
-      "Divine-Residencies/Residencies 1st project 05.jpg"
+      "Divine-Residencies/Interior/Main-picture.jpg",
+      "Divine-Residencies/Interior/2.jpg",
+      
+      "Divine-Residencies/Interior/1.jpg",
     ],
   };
   const DataProjectDetails2 = {
@@ -102,14 +103,7 @@ export default function DivineResidencies() {
     text3:
       "Set amidst the flourishing neighborhood of Arjan, Divine Residences offers an exceptional lifestyle just steps away from Dubai’s iconic Miracle Garden and Butterfly Garden. Thoughtfully designed and ready for immediate occupancy, this modern residential enclave blends contemporary elegance with everyday convenience. With effortless connectivity to Umm Suqeim Street and key destinations across Dubai, residents enjoy a harmonious fusion of tranquil surroundings and dynamic city living.",
     GalleryImagesWithNames: [
-      {
-        src: "Divine-Residencies/Interior/Main-picture.jpg",
-        title: "Pool Area",
-      },
-      {
-        src: "Divine-Residencies/Interior/2.jpg",
-        title: "Garden Area",
-      },
+      
       {
         src: "Divine-Residencies/Interior/3-1.jpg",
         title: "Living Room",
@@ -153,14 +147,6 @@ export default function DivineResidencies() {
       {
         src: "Divine-Residencies/Interior/13.jpg",
         title: "Bedroom",
-      },
-      {
-        src: "Divine-Residencies/Interior/14.jpg",
-        title: "Bathroom",
-      },
-      {
-        src: "Divine-Residencies/Interior/1.jpg",
-        title: "Swimming Pool",
       },
     ],
   };
