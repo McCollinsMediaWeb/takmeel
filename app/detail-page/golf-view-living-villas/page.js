@@ -53,8 +53,6 @@ export default function GolfViewLivingVillas() {
       "gf/4.jpg",
       "gf/2.jpg",
       "gf/3.jpg",
-      
-      "gf/5.jpg",
       "gf/6.jpg",
       "golf/1.jpg",
       "golf/2.jpg",
@@ -142,24 +140,36 @@ export default function GolfViewLivingVillas() {
       "Discover the perfect harmony of nature, luxury, and modern design at Divine Golf Villas—an exclusive collection of just 20 upscale residences nestled within the prestigious Al Zorah Golf Course in Ajman. Each villa is thoughtfully crafted to blend contemporary architecture with natural beauty, featuring expansive layouts, floor-to-ceiling windows, and seamless indoor-outdoor living. ",
     GalleryImagesWithNames: [
       {
-        src: "aw1.jpg",
-        title: "Bedroom Area",
-      },
-      {
-        src: "aw2.jpg",
+        src: "gf/29.jpg",
         title: "Living Room Area",
       },
       {
-        src: "aw3.jpg",
-        title: "Bedroom Area",
+        src: "gf/30.jpg",
+        title: "Living Room Area",
       },
       {
-        src: "aw4.jpg",
-        title: "Living Room",
+        src: "gf/21.jpg",
+        title: "Living Room Area",
       },
       {
-        src: "aw5.jpg",
+        src: "gf/23.jpg",
         title: "Bed Room",
+      },
+      {
+        src: "gf/25.jpg",
+        title: "Bed Room",
+      },
+      {
+        src: "gf/26.jpg",
+        title: "Bed Room",
+      },
+      {
+        src: "gf/27.jpg",
+        title: "Dining Area",
+      },
+      {
+        src: "gf/28.jpg",
+        title: "Kitchen Area",
       },
     ],
   };
