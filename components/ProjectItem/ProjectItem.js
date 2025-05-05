@@ -52,6 +52,44 @@ export default function ProjectItem({ backgroundImage, backgroundImageMobile, te
                     />
                 )}
             </motion.div>
+            <div className='LottieBox'>
+            <div className="LottieBox">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1920 1080"
+    width="1920"
+    height="1080"
+    style={{
+      width: "100%",
+      height: "100%",
+      transform: "translate3d(0px, 0px, 0px)",
+      contentVisibility: "visible",
+    }}
+    preserveAspectRatio="xMidYMid slice"
+  >
+    <defs>
+      <clipPath id="lottieClip">
+        <rect width="1920" height="1080" x="0" y="0" />
+      </clipPath>
+    </defs>
+    <g clipPath="url(#lottieClip)">
+      <g
+        transform="matrix(2.067357063293457,0,0,2.067357063293457,372.9828,187.6878)"
+        opacity="0.345777"
+      >
+        <g transform="translate(283.715,279.797)" opacity="1">
+          <path
+            fill="white"
+            fillOpacity="1"
+            d="M-301.29593,291.24173 C-301.29593,291.24173 -172.19296,389.69254 -172.19296,389.69254 C-164.36296,334.09653 -57.84375,123.53041 -0.68075,6.07441 C57.26525,123.53041 158.92421,334.09653 166.75421,389.69254 C166.75421,389.69254 298.15762,286.31998 298.15762,286.31998 C260.5726,231.50699 112.98322,-74.07642 0.22322,-312.90442 C-112.53577,-74.07642 -257.44595,236.42873 -301.29593,291.24173z"
+          />
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+
+            </div>
             <div className='FsBannerContent'>
                 <div className='FsBannerContentFlex centerBlock'>
                     <div className='container'>
