@@ -23,7 +23,7 @@ export default function AboutSlider() {
         initialSlide: 0,
         infinite: true,
         autoplay: true,               // Enables autoplay
-        autoplaySpeed: 3500          // Time between slides in milliseconds
+        autoplaySpeed: 3500 ,         // Time between slides in milliseconds
     
         responsive: [
             {
@@ -35,7 +35,7 @@ export default function AboutSlider() {
                     dots: true,
                     centerMode: true,
                     autoplay: true,
-                    autoplaySpeed: 2000
+                    autoplaySpeed: 2000,
                 }
             },
             {
@@ -46,7 +46,7 @@ export default function AboutSlider() {
                     initialSlide: 1,
                     centerMode: true,
                     autoplay: true,
-                    autoplaySpeed: 2000
+                    autoplaySpeed: 2000,
                 }
             },
             {
@@ -56,7 +56,7 @@ export default function AboutSlider() {
                     slidesToScroll: 1,
                     centerMode: true,
                     autoplay: true,
-                    autoplaySpeed: 2000
+                    autoplaySpeed: 2000,
                 }
             }
         ]

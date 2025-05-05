@@ -57,7 +57,7 @@ export default function ProjectsPageHeader() {
         initialSlide: 0,
         infinite: true,
         autoplay: true,               // Enables autoplay
-        autoplaySpeed: 3500          // Time between slides in milliseconds
+        autoplaySpeed: 3500  ,        // Time between slides in milliseconds
         responsive: [
             {
                 breakpoint: 1024,

@@ -23,7 +23,7 @@ export default function Founders() {
         initialSlide: 0,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 3500
+        autoplaySpeed: 3500,
         responsive: [
             {
                 breakpoint: 1024,
