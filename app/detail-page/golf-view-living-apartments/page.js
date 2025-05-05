@@ -55,9 +55,10 @@ export default function GolfViewLivingApartments() {
       // "Golf-View-Living-Apartments/Golf Apartments 03.jpg",
       // "Golf-View-Living-Apartments/golf-views-emaar-south-gallery.jpg",
       // "Golf-View-Living-Apartments/golf-views-emaar-south-gallery-03.jpg",
-      "Golf-View-Living-Apartments/DSC08102.jpg",
-      "Golf-View-Living-Apartments/DSC08109.jpg",
-      "Golf-View-Living-Apartments/DSC08122.jpg",
+      "gl1.jpg",
+      "gl2.jpg",
+      "gl4.jpg",
+      "gl3.jpg",
     ],
   };
   const DataProjectDetails2 = {
