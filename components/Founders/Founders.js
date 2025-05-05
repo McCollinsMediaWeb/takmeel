@@ -17,12 +17,13 @@ export default function Founders() {
 
     var settings = {
         dots: true,
-        infinite: false,
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 2,
         initialSlide: 0,
-        infinite: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3500
         responsive: [
             {
                 breakpoint: 1024,
@@ -55,12 +56,13 @@ export default function Founders() {
     };
     var settings1 = {
         dots: true,
-        infinite: false,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         initialSlide: 0,
-        infinite: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3500,
         responsive: [
             {
                 breakpoint: 1024,

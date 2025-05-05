@@ -260,7 +260,7 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
         initialSlide: 0,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3500
         responsive: [
             {
                 breakpoint: 1024,
