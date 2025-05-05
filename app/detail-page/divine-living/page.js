@@ -52,19 +52,9 @@ export default function DivineLiving() {
     text3:
       "Tucked away in the vibrant district of Arjan, Divine Living offers a perfect balance of luxury and tranquility. Developed by Takmeel Real Estate, this refined residential project is designed for those who seek spacious living, sophisticated interiors, and a peaceful lifestyle—without compromising on urban connectivity.",
     GalleryImages: [
-      "Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
-      "Studio Bespoke_Design Living_24.03.2023_Page_13_Image_0001.jpg",
+      "dl1.jpg",
+      "dl2.jpg",
       "Studio Bespoke_Design Living_24.03.2023_Page_14_Image_0001.jpg",
-      "Studio Bespoke_Design Living_24.03.2023_Page_17_Image_0001.jpg",
-      "Studio Bespoke_Design Living_24.03.2023_Page_31_Image_0001.jpg",
-      "Studio Bespoke_Design Living_24.03.2023_Page_32_Image_0001.jpg",
-      "Studio Bespoke_Design Living_24.03.2023_Page_33_Image_0001.jpg",
-      "Studio Bespoke_Design Living_24.03.2023_Page_34_Image_0001.jpg",
-      "Studio Bespoke_Design Living_24.03.2023_Page_36_Image_0001.jpg",
-      "Studio Bespoke_Design Living_24.03.2023_Page_38_Image_0001.jpg",
-      "Studio Bespoke_Design Living_24.03.2023_Page_41_Image_0001.jpg",
-      "Studio Bespoke_Design Living_24.03.2023_Page_42_Image_0001.jpg",
-      "Studio Bespoke_Design Living_24.03.2023_Page_44_Image_0001.jpg",
       "Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg",
     ],
   };
@@ -118,60 +108,24 @@ export default function DivineLiving() {
       "Welcome to Divine Living, where elegance meets everyday comfort in one of Dubai’s most promising neighborhoods—Arjan. Brought to life by Takmeel Real Estate, this exclusive residential development redefines urban living with thoughtfully designed spaces, premium finishes, and a serene environment that offers a welcome escape from the city’s hustle.",
     GalleryImagesWithNames: [
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_12_Image_0001.jpg",
-        title: "Welcome Lounge",
+        src: "dl3.jpg",
+        title: "Living Area",
       },
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_13_Image_0001.jpg",
-        title: "Lounge",
+        src: "dl4.jpg",
+        title: "Living Area",
       },
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_14_Image_0001.jpg",
-        title: "Gym",
+        src: "dl5.jpg",
+        title: "Lounge Area",
       },
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_17_Image_0001.jpg",
-        title: "Kitchen Area",
+        src: "dl6.jpg",
+        title: "Living Area",
       },
       {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_31_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_32_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_33_Image_0001.jpg",
-        title: "Bathroom",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_34_Image_0001.jpg",
-        title: "Bed Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_36_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_38_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_41_Image_0001.jpg",
-        title: "Bed Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_42_Image_0001.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_44_Image_0001.jpg",
-        title: "Bed Room",
-      },
-      {
-        src: "Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg",
-        title: "Lounge",
+        src: "dl7.jpg",
+        title: "Bedroom Area",
       },
     ],
   };

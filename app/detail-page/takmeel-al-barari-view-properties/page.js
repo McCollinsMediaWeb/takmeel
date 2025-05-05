@@ -61,11 +61,9 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       "am4.jpg",
       "am1.jpg",
       "am2.jpg",
-
       "am55.jpg",
       "am6.jpg",
       "m1.jpg",
-      "m2.jpg",
       "m3.jpg",
 
     ]

@@ -51,12 +51,11 @@ export default function DivineResidencia() {
     text3:
       "At Divine Residencia, every element has been thoughtfully designed to enhance your everyday living experience. Located in the heart of Dubai Studio City, this project blends comfort, nature, and functionality—offering a vibrant lifestyle for individuals, couples, and families.",
     GalleryImages: [
-      "Divine-Residencia/Divine residencia main facade.jpg",
-      "Divine-Residencia/Divine Residencia Studio City 01.jpg",
-      "Divine-Residencia/Divine Residencia Studio City 02.jpg",
-      "Divine-Residencia/Divine Residencia Studio City 03.jpg",
-      "Divine-Residencia/Divine Residencia Studio City 04.jpg",
-      "Divine-Residencia/Divine-Residencia 06.jpg",
+      "ad1.jpg",
+      "ad2.jpg",
+      "ad3.jpg",
+      "ad5.jpg",
+      
       // "Divine-Residencia/Divine-Residencia 07.jpg"
     ],
   };
@@ -134,16 +133,12 @@ export default function DivineResidencia() {
         title: "Corridor",
       },
       {
-        src: "Divine-Residencia/Interior/Divine Residencia Interior 02.jpg",
+        src: "ad6.jpg",
         title: "Living Room",
       },
       {
         src: "Divine-Residencia/Interior/Divine Residencia Interior 03.jpg",
         title: "Kitchen Area",
-      },
-      {
-        src: "Divine-Residencia/Interior/Divine Residencia Interior 04.jpg",
-        title: "Bathroom",
       },
 
     ],
