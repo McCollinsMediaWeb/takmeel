@@ -209,6 +209,49 @@ import image4 from "../../public/abslider3.jpg"
 export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
+    const sliderRef = useRef(null);
+    const slickRef = useRef(null);
+    const [inView, setInView] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setInView(true);
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        const currentSlider = sliderRef.current;
+
+        if (currentSlider) {
+            observer.observe(currentSlider);
+        }
+
+        return () => {
+            if (currentSlider) {
+                observer.unobserve(currentSlider);
+            }
+        };
+    }, []);
+
+
+    useEffect(() => {
+        if (inView && slickRef.current) {
+            slickRef.current.slickPlay();
+        }
+    }, [inView]);
+
+    useEffect(() => {
+        if (slickRef.current) {
+            slickRef.current.slickPause();
+        }
+    }, []);
+
+
+
+
     var settings = {
         dots: true,
         speed: 500,
@@ -216,8 +259,8 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
         slidesToScroll: 3,
         initialSlide: 0,
         infinite: true,
-        autoplay: true,               // Enables autoplay
-        autoplaySpeed: 2000,          // Time between slides in milliseconds
+        autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [
             {
                 breakpoint: 1024,
@@ -269,8 +312,8 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
 
 
                         {GalleryImages?.length > 0 ? (
-                            <div className='col-md-12 PrDetSliderBox'>
-                                <Slider {...settings}>
+                            <div className='col-md-12 PrDetSliderBox' ref={sliderRef}>
+                                <Slider ref={slickRef} {...settings}>
                                     {GalleryImages?.map((img, index) => (
                                         <div className='AbSliderItem' key={index} onClick={() => setOpen(true)}>
                                             <div className='ImageBox'>
@@ -291,7 +334,7 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
                                     close={() => setOpen(false)}
                                     plugins={[Video, Thumbnails, Zoom]}
                                     slides={
-                                        GalleryImages.map((img) => ({
+                                        GalleryImages?.map((img) => ({
                                             src: `/${img}`,
                                         }))
                                     }
