@@ -32,5 +32,6 @@ export default function Home() {
         <ContactForm/>
       </div>
     </div>
+    
   );
 }
