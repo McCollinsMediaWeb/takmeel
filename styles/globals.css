@@ -2189,3 +2189,15 @@ input[type=number] {
   margin: 0 auto;
   margin-bottom: 20px;
 }
+
+.LottieBox {
+  z-index: 4;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  width: 102%;
+  height: 102%;
+  display: flex;
+  position: absolute;
+  inset:-1%;
+}

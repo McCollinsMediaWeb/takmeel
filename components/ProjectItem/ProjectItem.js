@@ -52,44 +52,57 @@ export default function ProjectItem({ backgroundImage, backgroundImageMobile, te
                     />
                 )}
             </motion.div>
-            <div className='LottieBox'>
-            <div className="LottieBox">
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1920 1080"
-    width="1920"
-    height="1080"
-    style={{
-      width: "100%",
-      height: "100%",
-      transform: "translate3d(0px, 0px, 0px)",
-      contentVisibility: "visible",
-    }}
-    preserveAspectRatio="xMidYMid slice"
-  >
-    <defs>
-      <clipPath id="lottieClip">
-        <rect width="1920" height="1080" x="0" y="0" />
-      </clipPath>
-    </defs>
-    <g clipPath="url(#lottieClip)">
+            <motion.div
+  className="LottieBox"
+  initial={{ scale: 0.5, opacity: 0 }}
+  whileInView={{ scale: 1, opacity: 1 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  viewport={{ once: true, amount: 0.5 }}
+>
+<motion.svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1920 1080"
+  width="1920"
+  height="1080"
+  style={{
+    width: "100%",
+    height: "100%",
+    transform: "translate3d(0px, 0px, 0px)",
+    contentVisibility: "visible",
+  }}
+  preserveAspectRatio="xMidYMid slice"
+  initial={{ scale: 0.5, opacity: 0 }}
+  whileInView={{ scale: 1, opacity: 1 }}
+  transition={{ duration: 1.2, ease: "easeOut" }}
+  viewport={{ once: true, amount: 0.5 }}
+>
+  <defs>
+    <clipPath id="__lottie_element_4">
+      <rect width="1920" height="1080" x="0" y="0" />
+    </clipPath>
+  </defs>
+  <g clipPath="url(#__lottie_element_4)">
+    <g
+      style={{ display: "block" }}
+      transform="matrix(2.2685699462890625,0,0,2.2685699462890625,315.89569091796875,39.41706085205078)"
+      opacity="0.6751911926152834"
+    >
       <g
-        transform="matrix(2.067357063293457,0,0,2.067357063293457,372.9828,187.6878)"
-        opacity="0.345777"
+        opacity="1"
+        transform="matrix(1,0,0,1,283.7149963378906,279.7969970703125)"
       >
-        <g transform="translate(283.715,279.797)" opacity="1">
-          <path
-            fill="white"
-            fillOpacity="1"
-            d="M-301.29593,291.24173 C-301.29593,291.24173 -172.19296,389.69254 -172.19296,389.69254 C-164.36296,334.09653 -57.84375,123.53041 -0.68075,6.07441 C57.26525,123.53041 158.92421,334.09653 166.75421,389.69254 C166.75421,389.69254 298.15762,286.31998 298.15762,286.31998 C260.5726,231.50699 112.98322,-74.07642 0.22322,-312.90442 C-112.53577,-74.07642 -257.44595,236.42873 -301.29593,291.24173z"
-          />
-        </g>
+        <path
+          fill="rgb(255,255,255)"
+          fillOpacity="1"
+          d=" M-443.5587463378906,326.24810791015625 C-443.5587463378906,326.24810791015625 -171.9290008544922,480.8274230957031 -171.9290008544922,480.8274230957031 C-164.0989990234375,425.2314147949219 -58.40119552612305,215.11109924316406 -1.238194227218628,97.65538787841797 C56.70780563354492,215.11109924316406 158.38278198242188,425.2314147949219 166.2130889892578,480.8274230957031 C166.2130889892578,480.8274230957031 442.46368408203125,312.55322265625 442.46368408203125,312.55322265625 C404.8786926269531,257.74053955078125 107.8816146850586,-418.8755798339844 -4.878383159637451,-657.7035522460938 C-117.63738250732422,-418.8755798339844 -399.708740234375,271.4353942871094 -443.5587463378906,326.24810791015625z"
+        />
       </g>
     </g>
-  </svg>
-</div>
+  </g>
+</motion.svg>
 
-            </div>
+</motion.div>
+
             <div className='FsBannerContent'>
                 <div className='FsBannerContentFlex centerBlock'>
                     <div className='container'>
