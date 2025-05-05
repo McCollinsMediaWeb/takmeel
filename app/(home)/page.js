@@ -1,6 +1,6 @@
 
-import FullScreenBanner from "../components/fullscreen-banner/fullScreenBanner";
-import HomeBanner2 from "../components/HomeBanner2/HomeBanner2";
+import FullScreenBanner from "@/components/fullscreen-banner/fullScreenBanner";
+import HomeBanner2 from "@/components/HomeBanner2/HomeBanner2";
 import HomeAbout from "@/components/HomeAbout/HomeAbout";
 import SoldOutBox from "@/components/SoldOutBox/SoldOutBox";
 import ContactForm from "@/components/ContactForm/ContactForm";

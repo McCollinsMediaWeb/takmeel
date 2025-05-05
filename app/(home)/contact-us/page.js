@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useEffect } from 'react';
 import Image from "next/image";
 import FAQbox from "@/components/FAQbox/FAQbox";
-import b1 from "../../public/cnt.jpg";
+import b1 from "../../../public/cnt.jpg";
 export default function ContactUs() {
 
   useEffect(() => {

@@ -3,7 +3,7 @@ import FAQbox from "@/components/FAQbox/FAQbox";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import b1 from "../../public/main3.jpg";
+import b1 from "../../../public/main3.jpg";
 export default function PrivacyPolicy() {
     return (
       <div>

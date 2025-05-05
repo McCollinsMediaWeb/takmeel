@@ -11,7 +11,9 @@
   "dependencies": {
     "@photo-sphere-viewer/core": "^5.13.2",
     "framer-motion": "^12.6.5",
+    "mongodb": "^6.16.0",
     "next": "15.3.0",
+    "next-auth": "^4.24.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-intersection-observer": "^9.16.0",

@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 import blogimage from "../../public/blmain.jpg"
 export default function LatestBlog() {
   return (
-      <div className="BlogPostMainArea pd-common">
-        <motion.div
-                                    initial={{ opacity: 0, y: 50 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
-                                    viewport={{ once: true, amount: 0.5 }}
-                                >
+    <div className="BlogPostMainArea pd-common">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.5 }}
+      >
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -41,7 +41,7 @@ export default function LatestBlog() {
             </div>
           </div>
         </div>
-        </motion.div>
-      </div>
+      </motion.div>
+    </div>
   );
 }
