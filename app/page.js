@@ -26,7 +26,7 @@ export default function Home() {
       <ProjectItem backgroundImage="maydan.jpg" backgroundImageMobile="meydan-mobile.jpg" text1="Project Showcase"  text2="Meydan Racecourse Mansion" text3="Dubai" tagline="Where Grandeur Meets Precision" url="meydan-racecourse-mansion"  />
       <ProjectItem backgroundImage="Golf-View-Living-Apartments/Golf Apartments 03.jpg" backgroundImageMobile="bannerMobileFour.jpg" text1="Featured Properties"  text2="Golf View Living Apartments" text3="Al Zorah, Ajman" tagline="Your Everyday Escape, Overlooking the Greens" url="golf-view-living-apartments"  projectStatus="Sold Out" />
       <ProjectItem backgroundImage="Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg" backgroundImageMobile="Golf-View-Living-Villas/divine-golf-villas-Facade-Mobile 03.jpg" text1="Featured Properties"  text2="Golf View Living Villas" text3="Ajman" tagline="Private Villas Surrounded by Nature’s Calm" url="golf-view-living-villas"  projectStatus="Sold Out"  />
-        <MainMapComponent MapImageDesk="map3.svg" MapImageMobile="darkmapmob.jpg" />
+        <MainMapComponent MapImageDesk="map4.svg" MapImageMobile="darkmapmob.jpg" />
         <HomeAbout/>
         {/* <SoldOutBox/> */}
         <ContactForm/>
