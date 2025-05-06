@@ -56,7 +56,302 @@ export default function ContactUs() {
           </motion.div>
         </div>
       </section>
+
+
+
+      <section className='ContactForm pd-common' style={{ backgroundColor: '#1A1A1A' }} >
+        <div className='container'>
+          <div className='text-center'>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
+            >
+              <div className='CfT1'>CONTACT US</div>
+              <div className='CfT2' style={{ color: "#F7F7F7" }} >Get in Touch with Us</div>
+              <div className='CfT3' style={{ color: "#F7F7F7" }} >Need to sell or buy a property? Just get in touch and we will deal with everything else. You’ve made a great choice getting in touch with us.</div>
+              <div className='FormBox'>
+                <div className='row'>
+                  <div className='col-md-6'>
+                    <input type="text" placeholder='First Name' />
+                  </div>
+                  <div className='col-md-6'>
+                    <input type="text" placeholder='Last Name' />
+                  </div>
+                  <div className='col-md-6'>
+                    <input type="text" placeholder='Phone Number' />
+                  </div>
+                  <div className='col-md-6'>
+                    <input type="text" placeholder='Email Address' />
+                  </div>
+                  <div className='col-md-12'>
+                    <textarea rows={6} placeholder='Message'></textarea>
+                  </div>
+                  <div className='col-md-12'>
+                    <button className='hover1'>Send Enquiry</button>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+
       <section className="CntMiddleBox pd-common">
+        <style>
+          {`
+            @media (max-width: 768px) {
+              .responsive-call-box {
+                width: 100% !important;
+                margin-bottom: 15px;
+            }
+              .contact-team-header{
+                margin: 0 auto;
+              }
+            }
+          `}
+        </style>
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.5 }}
+          >
+
+            <div className="row">
+              <div className='CfT2 contact-team-header'>Contact Our Team</div>
+              {/* <div className="col-md-12 PadBox1"> */}
+              <div className="col-md-12" style={{ marginTop: '40px' }}>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "30px",
+                  }}
+                >
+                  {/* Timings Section */}
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      borderBottom: "1px solid #eaeaea",
+                      paddingBottom: "20px",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <div
+                      className="responsive-call-box"
+                      style={{
+                        width: "50%",
+                        minWidth: "150px",
+                        paddingRight: "20px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          color: "#333",
+                          fontSize: "18px"
+                        }}
+                        className="CfT1"
+                      >
+                        TIMINGS
+                      </div>
+                    </div>
+                    <div
+                      style={{
+                        flex: "1",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "10px",
+                      }}
+                    >
+                      <div>
+                        <p style={{ margin: "0", fontWeight: "500" }}>Monday - Friday</p>
+                        <p style={{ margin: "0", color: "#666" }}>8:30 AM to 5:30 PM</p>
+                      </div>
+                      <div>
+                        <p style={{ margin: "0", fontWeight: "500" }}>Saturday</p>
+                        <p style={{ margin: "0", color: "#666" }}>8:30 AM to 12:30 PM</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Call Us Section */}
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      borderBottom: "1px solid #eaeaea",
+                      paddingBottom: "20px",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <div
+                      className="responsive-call-box"
+                      style={{
+                        width: "50%",
+                        minWidth: "150px",
+                        paddingRight: "20px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          color: "#333",
+                          fontSize: "18px"
+                        }}
+                        className="CfT1"
+                      >
+                        CALL US
+                      </div>
+                    </div>
+                    <div
+                      style={{
+                        flex: "1",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "10px",
+                      }}
+                    >
+                      <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                        <span style={{ fontSize: "20px" }}>
+                          <img src="/whatsapp-black-icon.png" />
+                        </span>
+                        <a href="tel:+971523749615" style={{ color: "#333", textDecoration: "none" }}>
+                          +971 523749615
+                        </a>
+                      </div>
+                      <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                        <span style={{ fontSize: "20px" }}>
+                          <img src="/call-black-icon.png" />
+                        </span>
+                        <a href="tel:+97145531916" style={{ color: "#333", textDecoration: "none" }}>
+                          +971 45531916
+                        </a>
+                        <span style={{ color: "#666" }}>|</span>
+                        <a href="tel:+97145655099" style={{ color: "#333", textDecoration: "none" }}>
+                          +971 45655099
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Email Section */}
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      borderBottom: "1px solid #eaeaea",
+                      paddingBottom: "20px",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <div
+                      className="responsive-call-box"
+                      style={{
+                        width: "50%",
+                        minWidth: "150px",
+                        paddingRight: "20px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          color: "#333",
+                          fontSize: "18px"
+                        }}
+                        className="CfT1"
+                      >
+                        EMAIL
+                      </div>
+                    </div>
+                    <div
+                      style={{
+                        flex: "1",
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "10px",
+                      }}
+                    >
+                      <a href="mailto:info@takmeeluae.com" style={{ color: "#333", textDecoration: "none" }}>
+                        Info@Takmeeluae.Com
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Visit Us Section */}
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      paddingBottom: "20px",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <div
+                      className="responsive-call-box"
+                      style={{
+                        width: "50%",
+                        minWidth: "150px",
+                        paddingRight: "20px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          color: "#333",
+                          fontSize: "18px"
+                        }}
+                        className="CfT1"
+                      >
+                        VISIT US
+                      </div>
+                    </div>
+                    <div
+                      style={{
+                        flex: "1",
+                        display: "flex",
+                        flexDirection: "row",
+                        gap: "40px",
+                        flexWrap: "wrap",
+                      }}
+                    >
+                      <div style={{ flex: "1", minWidth: "250px" }}>
+                        <h4 style={{ margin: "0 0 10px 0", fontSize: "18px", fontWeight: "600" }}>Dubai</h4>
+                        <p style={{ margin: "0 0 10px 0", color: "#666", lineHeight: "1.5" }}>
+                          814, Burlington Tower,
+                          <br />
+                          Business Bay, Dubai.
+                        </p>
+                        <a href="#" style={{ color: "#333", textDecoration: "none", fontWeight: "500" }}>
+                          Get Direction
+                        </a>
+                      </div>
+                      <div style={{ flex: "1", minWidth: "250px" }}>
+                        <h4 style={{ margin: "0 0 10px 0", fontSize: "18px", fontWeight: "600" }}>Ajman</h4>
+                        <p style={{ margin: "0 0 10px 0", color: "#666", lineHeight: "1.5" }}>
+                          G01, Sheikh Ammar Bin Humaid St.
+                          <br />
+                          Al Mowaihat 02, Ajman, UAE.
+                        </p>
+                        <a href="#" style={{ color: "#333", textDecoration: "none", fontWeight: "500" }}>
+                          Get Direction
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+
+
+
+
+      {/* <section className="CntMiddleBox pd-common">
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -135,8 +430,10 @@ export default function ContactUs() {
             </div>
           </motion.div>
         </div>
-      </section>
-      <FAQbox/>
+      </section> */}
+
+
+      <FAQbox />
     </div>
   );
 }
