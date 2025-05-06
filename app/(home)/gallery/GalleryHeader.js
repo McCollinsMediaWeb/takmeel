@@ -59,7 +59,7 @@ export default function GalleryHeader({
     }
 
     return (
-        <div className="FullScreenBanner Projects">
+        <div className="FullScreenBanner Projects VideoD">
             {backgroundVideo ? (
                 <video
                     src={`/${backgroundVideo}`}
