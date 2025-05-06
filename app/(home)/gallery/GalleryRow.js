@@ -59,12 +59,13 @@ export default function GalleryRow({ text1, GalleryImages }) {
     var settings = {
         dots: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 3,
         initialSlide: 0,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 3500,
+        autoplaySpeed: 2500,
+        centerMode: true,
         responsive: [
             {
                 breakpoint: 1024,
