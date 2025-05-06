@@ -1,19 +1,26 @@
-// import { useState } from 'react';
+// import { useEffect, useState } from 'react';
 // import styles from '../news.module.css';
 
-// function AddNewsForm({ setCreateNewPage, setDataChanged }) {
-//     const [file, setFile] = useState(null);
-//     const [date, setDate] = useState(new Date().toLocaleDateString('en-US', {
+// function AddNewsForm({
+//     setCreateNewPage,
+//     setDataChanged,
+//     editMode = false,
+//     newsToEdit = null
+// }) {
+//     const defaultDate = new Date().toLocaleDateString('en-US', {
 //         month: 'long',
 //         day: 'numeric',
 //         year: 'numeric'
-//     }));
-//     const [category, setCategory] = useState('');
-//     const [newsHeading, setNewsHeading] = useState('');
-//     const [newsContent, setNewsContent] = useState('');
-//     const [visibility, setVisibility] = useState(true);
+//     });
+
+//     const [file, setFile] = useState(null);
+//     const [date, setDate] = useState(newsToEdit?.date || defaultDate);
+//     const [category, setCategory] = useState(newsToEdit?.category || '');
+//     const [newsHeading, setNewsHeading] = useState(newsToEdit?.heading || '');
+//     const [newsContent, setNewsContent] = useState(newsToEdit?.content || '');
+//     const [visibility, setVisibility] = useState(newsToEdit?.visibility ?? true);
 //     const [isSubmitting, setIsSubmitting] = useState(false);
-//     const [previewUrl, setPreviewUrl] = useState(null);
+//     const [previewUrl, setPreviewUrl] = useState(newsToEdit?.coverImage || null);
 
 //     const imgUpload = async (file) => {
 //         const formData = new FormData();
@@ -26,8 +33,7 @@
 //                 body: formData,
 //             });
 //             const data = await response.json();
-
-//             return data.secure_url; // Use `secure_url` instead of `eager[0].secure_url` for simplicity
+//             return data.secure_url;
 //         } catch (error) {
 //             console.error("Error uploading image:", error);
 //             throw error;
@@ -39,10 +45,10 @@
 //         setIsSubmitting(true);
 
 //         try {
-//             let imageUrl = null;
+//             let imageUrl = previewUrl;
 
 //             if (file) {
-//                 imageUrl = await imgUpload(file); // Upload image to Cloudinary
+//                 imageUrl = await imgUpload(file);
 //             }
 
 //             const payload = {
@@ -54,32 +60,37 @@
 //                 visibility
 //             };
 
-//             const response = await fetch('/api/news', {
-//                 method: 'POST',
-//                 headers: {
-//                     'Content-Type': 'application/json',
-//                 },
-//                 body: JSON.stringify(payload),
-//             });
+//             const response = await fetch(
+//                 editMode ? `/api/news/${newsToEdit._id}` : '/api/news',
+//                 {
+//                     method: editMode ? 'PUT' : 'POST',
+//                     headers: {
+//                         'Content-Type': 'application/json',
+//                     },
+//                     body: JSON.stringify(payload),
+//                 }
+//             );
 
 //             if (response.ok) {
-//                 alert('News posted successfully!');
+//                 alert(editMode ? 'News updated successfully!' : 'News posted successfully!');
 //                 setCreateNewPage(false);
+//                 setDataChanged((value) => !value);
 //             } else {
 //                 const err = await response.text();
-//                 alert('Failed to post news: ' + err);
+//                 alert((editMode ? 'Failed to update news: ' : 'Failed to post news: ') + err);
 //             }
 //         } catch (error) {
-//             alert('Error posting news: ' + error.message);
+//             alert('Error: ' + error.message);
 //         } finally {
 //             setIsSubmitting(false);
-//             setDataChanged((value) => !value)
 //         }
 //     };
 
 //     return (
 //         <section className={styles.formCard}>
-//             <h2 className={styles.formTitle}>Add New News</h2>
+//             <h2 className={styles.formTitle}>
+//                 {editMode ? 'Edit News' : 'Add New News'}
+//             </h2>
 //             <form className={styles.basicForm} onSubmit={handleSubmit}>
 //                 <div className={styles.fileInput}>
 //                     <label htmlFor="coverImage" className={styles.fileInputLabel}>Choose Cover Image</label>
@@ -103,7 +114,7 @@
 //                     <span className={styles.fileInputText}>{file ? file.name : 'No file chosen'}</span>
 //                 </div>
 
-//                 {file && previewUrl && (
+//                 {previewUrl && (
 //                     <div className={styles.imagePreviewWrapper}>
 //                         <img src={previewUrl} alt="Preview" className={styles.imagePreview} />
 //                         <button
@@ -184,7 +195,9 @@
 //                 </div>
 
 //                 <button type="submit" className={styles.signInButton} disabled={isSubmitting}>
-//                     {isSubmitting ? 'Publishing...' : 'Publish News'}
+//                     {isSubmitting
+//                         ? (editMode ? 'Updating...' : 'Publishing...')
+//                         : (editMode ? 'Update News' : 'Publish News')}
 //                 </button>
 //                 <button type="button" onClick={() => setCreateNewPage(prev => !prev)} className={styles.cancelButton}>
 //                     Cancel
@@ -196,8 +209,11 @@
 
 // export default AddNewsForm;
 
-import { useEffect, useState } from 'react';
+
+
+import { useEffect, useRef, useState } from 'react';
 import styles from '../news.module.css';
+import Editor from './Editor';
 
 function AddNewsForm({
     setCreateNewPage,
@@ -215,7 +231,9 @@ function AddNewsForm({
     const [date, setDate] = useState(newsToEdit?.date || defaultDate);
     const [category, setCategory] = useState(newsToEdit?.category || '');
     const [newsHeading, setNewsHeading] = useState(newsToEdit?.heading || '');
+    // const [newsContent, setNewsContent] = useState('');
     const [newsContent, setNewsContent] = useState(newsToEdit?.content || '');
+    const [newsSubHeading, setNewsSubHeading] = useState(newsToEdit?.subheading || '');
     const [visibility, setVisibility] = useState(newsToEdit?.visibility ?? true);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [previewUrl, setPreviewUrl] = useState(newsToEdit?.coverImage || null);
@@ -245,8 +263,9 @@ function AddNewsForm({
         try {
             let imageUrl = previewUrl;
 
-            // If user chose a new file, upload it
+            // Upload image if file is selected
             if (file) {
+                // Make sure the upload function returns the image URL
                 imageUrl = await imgUpload(file);
             }
 
@@ -255,12 +274,13 @@ function AddNewsForm({
                 date,
                 category,
                 heading: newsHeading,
+                subheading: newsSubHeading,
                 content: newsContent,
-                visibility
+                visibility,
             };
 
             const response = await fetch(
-                editMode ? `/api/news/${newsToEdit._id}` : '/api/news',
+                editMode ? `/api/news/${newsToEdit?._id}` : '/api/news', // Safely check if newsToEdit exists
                 {
                     method: editMode ? 'PUT' : 'POST',
                     headers: {
@@ -275,15 +295,18 @@ function AddNewsForm({
                 setCreateNewPage(false);
                 setDataChanged((value) => !value);
             } else {
-                const err = await response.text();
-                alert((editMode ? 'Failed to update news: ' : 'Failed to post news: ') + err);
+                // Handle error response
+                const err = await response.json(); // Try to parse response as JSON
+                alert((editMode ? 'Failed to update news: ' : 'Failed to post news: ') + (err.message || err.error || 'Unknown error'));
             }
         } catch (error) {
+            // Catch network or unexpected errors
             alert('Error: ' + error.message);
         } finally {
             setIsSubmitting(false);
         }
     };
+
 
     return (
         <section className={styles.formCard}>
@@ -370,16 +393,22 @@ function AddNewsForm({
                 </div>
 
                 <div className={styles.formGroup}>
-                    <label htmlFor="newsContent">News Content</label>
+                    <label htmlFor="newsContent">News Subheading</label>
                     <textarea
                         id="newsContent"
                         className={styles.formControl}
                         rows="6"
-                        placeholder="Enter the news article content here..."
+                        placeholder="Enter news subheading"
                         style={{ height: "auto", minHeight: "150px" }}
-                        value={newsContent}
-                        onChange={(e) => setNewsContent(e.target.value)}
+                        value={newsSubHeading}
+                        onChange={(e) => setNewsSubHeading(e.target.value)}
                     ></textarea>
+                </div>
+
+                <div className={styles.formGroup}>
+                    <label htmlFor="newsContent">News Content</label>
+                    <Editor value={newsContent} onChange={setNewsContent} />
+
                 </div>
 
                 <div className={styles.formGroup}>

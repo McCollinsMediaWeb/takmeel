@@ -2244,3 +2244,9 @@ input[type=number] {
 .galleryBoxRow.container-fluid{
   padding: 30px 15px;
 }
+.BlT3 img {
+  padding: 10px;
+}
+.ql-align-center{
+  text-align: center;
+}

@@ -114,7 +114,9 @@ export async function POST(req) {
         const client = await clientPromise;
         const db = client.db("Takmeel");
 
-        const { coverImage, date, category, heading, content, visibility } = body;
+        console.log('Body', body)
+
+        const { coverImage, date, category, heading, subheading, content, visibility } = body;
 
         // Insert with timestamp
         await db.collection("news").insertOne({
@@ -122,6 +124,7 @@ export async function POST(req) {
             date,
             category,
             heading,
+            subheading,
             content,
             visibility,
             createdAt: new Date(), // timestamp
@@ -179,51 +182,54 @@ export async function DELETE(req) {
 }
 
 // PUT METHOD (EDIT)
-export async function PUT(req) {
-    try {
-        const body = await req.json();
-        const { id, coverImage, date, category, heading, content, visibility } = body;
+// export async function PUT(req) {
+//     try {
+//         const body = await req.json();
+//         const { coverImage, date, category, heading, subheading, content, visibility } = body;
 
-        if (!id) {
-            return NextResponse.json(
-                { success: false, message: "Missing news ID" },
-                { status: 400 }
-            );
-        }
+//         console.log("body", body);
 
-        const client = await clientPromise;
-        const db = client.db("Takmeel");
+//         if (!id) {
+//             return NextResponse.json(
+//                 { success: false, message: "Missing news ID" },
+//                 { status: 400 }
+//             );
+//         }
 
-        const result = await db.collection("news").updateOne(
-            { _id: new ObjectId(id) },
-            {
-                $set: {
-                    coverImage,
-                    date,
-                    category,
-                    heading,
-                    content,
-                    visibility,
-                },
-            }
-        );
+//         const client = await clientPromise;
+//         const db = client.db("Takmeel");
 
-        if (result.matchedCount === 0) {
-            return NextResponse.json(
-                { success: false, message: "News not found" },
-                { status: 404 }
-            );
-        }
+//         const result = await db.collection("news").updateOne(
+//             { _id: new ObjectId(id) },
+//             {
+//                 $set: {
+//                     coverImage,
+//                     date,
+//                     category,
+//                     heading,
+//                     subheading,
+//                     content,
+//                     visibility,
+//                 },
+//             }
+//         );
 
-        return NextResponse.json({
-            success: true,
-            message: "News updated",
-        });
-    } catch (error) {
-        console.error("Error updating news:", error);
-        return NextResponse.json(
-            { success: false, message: "Failed to update news", error },
-            { status: 500 }
-        );
-    }
-}
+//         if (result.matchedCount === 0) {
+//             return NextResponse.json(
+//                 { success: false, message: "News not found" },
+//                 { status: 404 }
+//             );
+//         }
+
+//         return NextResponse.json({
+//             success: true,
+//             message: "News updated",
+//         });
+//     } catch (error) {
+//         console.error("Error updating news:", error);
+//         return NextResponse.json(
+//             { success: false, message: "Failed to update news", error },
+//             { status: 500 }
+//         );
+//     }
+// }

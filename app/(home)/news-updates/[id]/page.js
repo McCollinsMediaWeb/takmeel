@@ -2,9 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
-import ProjectDetails1 from '@/components/DetailPageComponents/ProjectDetails1';
 import { useGlobalData } from '@/context/GlobalDataContext';
-import DetailHero from '@/components/DetailPageComponents/DetailHero';
 import useMediaQuery from '@/components/hooks/useMediaQuery';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -31,14 +29,6 @@ const NewsDetails = () => {
     }, [id, news]);
 
     if (!id || !currentNews) return <div>Loading...</div>;
-
-    const dataProps = {
-        text1: `${currentNews.date} | ${currentNews.category}`,
-        text2: currentNews.heading,
-        text3: currentNews.content,
-        GalleryImages: [],
-    };
-
 
     return (
         <div>
@@ -76,7 +66,31 @@ const NewsDetails = () => {
                     </div>
                 </div>
             </div>
-            <ProjectDetails1 {...dataProps} />
+
+
+            <div className='position-relative pd-common'>
+
+                <div className='container'>
+                    {/* <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.5 }}
+                    > */}
+                    <div className='row'>
+                        <div className='col-md-12'>
+                            <div className="BlT1 nunito-text text-uppercase">{`${currentNews.date} | ${currentNews.category}`}</div>
+                            <div className="BlT2 text-uppercase">{currentNews.heading}​</div>
+                            <div className="BlT3">{currentNews.subheading}</div>
+                            <div style={{ marginTop: '25px' }} className="BlT3" dangerouslySetInnerHTML={{ __html: currentNews.content }} />
+                        </div>
+                    </div>
+                    {/* </motion.div> */}
+
+                </div>
+
+            </div>
+
         </div>
     );
 };

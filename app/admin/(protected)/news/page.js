@@ -61,7 +61,8 @@ export default function Forms() {
                     </div>
                     <div className={sidebarStyles.userProfile}>
                         <div className={sidebarStyles.avatar}>
-                            <img src="https://avatar.iran.liara.run/public/boy?username=Ash" alt="User Avatar" />
+                            {/* <img src="https://avatar.iran.liara.run/public/boy?username=Ash" alt="User Avatar" /> */}
+                            <img src="/Avatar Men.png" alt="User Avatar" />
                             <span className={sidebarStyles.statusIndicator}></span>
                         </div>
                         <div className={sidebarStyles.userInfo}>
