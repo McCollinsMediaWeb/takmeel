@@ -2169,12 +2169,21 @@ input[type=number] {
 }
 .PrStatus{
   display: inline-block;
-  background-color: #b5123c;
+ /* background-color: #b5123c;
   color: #fff;
   padding: 5px 10px;
   border-radius: 20px;
   margin-bottom: 15px;
   font-size: 15px;
+  position: relative; */
+
+  background-image: url(../public/sold.png);
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+  display: inline-block;
+  background-size: 100% 100%;
+
 }
 .BlT1A{
   text-align: center;
