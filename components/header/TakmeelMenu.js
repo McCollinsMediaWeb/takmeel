@@ -21,6 +21,7 @@ export default function TakmeelMenu() {
             toggleButtons.forEach((btn) => btn.removeEventListener("click", toggleClass));
         };
     }, []);
+    
 
 
     return (
