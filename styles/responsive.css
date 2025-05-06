@@ -490,4 +490,11 @@
         height: 50px;
       
       }
+      .TxtBig{
+        font-size: 80px;
+      }
+      .SmallSizeTxt{
+        font-size: 17px;
+        max-width: 90%;
+      }
   }
