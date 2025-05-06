@@ -7,20 +7,20 @@ import { usePathname } from 'next/navigation';
 export default function TakmeelMenu() {
     const pathname = usePathname();
 
-useEffect(() => {
-  const toggleButtons = document.querySelectorAll(".toggleMenu");
+    useEffect(() => {
+        const toggleButtons = document.querySelectorAll(".toggleMenu");
 
-  const toggleClass = () => {
-    document.body.classList.toggle("menu-open");
-  };
+        const toggleClass = () => {
+            document.body.classList.toggle("menu-open");
+        };
 
-  toggleButtons.forEach((btn) => btn.addEventListener("click", toggleClass));
+        toggleButtons.forEach((btn) => btn.addEventListener("click", toggleClass));
 
-  // Cleanup
-  return () => {
-    toggleButtons.forEach((btn) => btn.removeEventListener("click", toggleClass));
-  };
-}, []);
+        // Cleanup
+        return () => {
+            toggleButtons.forEach((btn) => btn.removeEventListener("click", toggleClass));
+        };
+    }, []);
 
 
     return (
@@ -81,7 +81,7 @@ useEffect(() => {
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <Link href={'/gallery'} className='Link8'>
-                                       Gallery
+                                        Gallery
                                     </Link>
                                 </motion.div>
 
@@ -95,6 +95,19 @@ useEffect(() => {
                                 >
                                     <Link href={'/news-updates'} className='Link8'>
                                         News & Updates
+                                    </Link>
+                                </motion.div>
+
+                            </li>
+                            <li className={pathname === '/career' ? 'active' : ''}>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.5 }}
+                                >
+                                    <Link href={'/career'} className='Link8'>
+                                        Career
                                     </Link>
                                 </motion.div>
 
