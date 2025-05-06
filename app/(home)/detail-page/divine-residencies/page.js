@@ -56,7 +56,7 @@ export default function DivineResidencies() {
     ],
   };
   const DataProjectDetails2 = {
-    ThumbImage1: "Divine-Residencies/Residencies 1st project 03.jpg",
+    ThumbImage1: "res1.jpg",
     ThumbImage2: "Divine-Residencies/Residencies 1st project 04.jpg",
     text1Heading: "A Curated Collection of Residences",
     text1Desc: "Studios, 1 & 2 Bedroom Apartments, Bright, open layouts designed for modern lifestyles, Spacious balconies with community views, Thoughtfully selected color palettes for effortless interior styling",
