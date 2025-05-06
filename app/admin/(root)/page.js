@@ -20,6 +20,7 @@ export default function Home() {
 
     useEffect(() => {
         const fetchNews = async () => {
+            setLoading(true);
             try {
                 const response = await fetch('/api/news?dashboard=true');
                 const result = await response.json();
@@ -178,7 +179,7 @@ export default function Home() {
                                 <h2>Recent News</h2>
                                 <a href="/admin/news">Show All</a>
                             </div>
-                            <NewsTable newsData={newsData} />
+                            <NewsTable newsData={newsData} loading={loading} />
                             {/* <div className={styles.tableContainer}>
                                 <table className={styles.dataTable}>
                                     <thead>

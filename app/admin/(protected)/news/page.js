@@ -24,6 +24,7 @@ export default function Forms() {
 
     useEffect(() => {
         const fetchNews = async () => {
+            setLoading(true);
             try {
                 const response = await fetch('/api/news');
                 const result = await response.json();
@@ -112,7 +113,7 @@ export default function Forms() {
                                         <h2>News & Updates</h2>
                                         <button type="button" onClick={() => setCreateNewPage(prev => !prev)} className={styles.signInButton}>Add New News</button>
                                     </div>
-                                    <NewsTable newsData={newsData} setDataChanged={setDataChanged} setCreateNewPage={setCreateNewPage} setNewsToEdit={setNewsToEdit} />
+                                    <NewsTable newsData={newsData} setDataChanged={setDataChanged} setCreateNewPage={setCreateNewPage} setNewsToEdit={setNewsToEdit} loading={loading} />
                                 </section>
                             )}
                         </div>

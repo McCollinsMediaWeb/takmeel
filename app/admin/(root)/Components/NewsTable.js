@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import styles from '../styles.module.css';
 
-function NewsTable({ newsData, setDataChanged, setCreateNewPage, setNewsToEdit }) {
+function NewsTable({ newsData, setDataChanged, setCreateNewPage, setNewsToEdit, loading }) {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedNewsId, setSelectedNewsId] = useState(null);
 
@@ -51,37 +51,44 @@ function NewsTable({ newsData, setDataChanged, setCreateNewPage, setNewsToEdit }
 
     return (
         <div className={styles.tableContainer}>
-            <table className={styles.dataTable}>
-                <thead>
-                    <tr>
-                        <th>Cover Image</th>
-                        <th>Date</th>
-                        <th>Category</th>
-                        <th>Heading</th>
-                        <th>Status</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {newsData?.map((news, index) => (
-                        <tr key={news._id}>
-                            <td><img src={news.coverImage} alt="Cover" width={60} /></td>
-                            <td>{news.date}</td>
-                            <td>{news.category}</td>
-                            <td>{news.heading}</td>
-                            <td>
-                                <span className={news.visibility ? styles.statusVisible : styles.statusHidden}>
-                                    {news.visibility ? "Visible" : "Hidden"}
-                                </span>
-                            </td>
-                            <td>
-                                <button className={styles.editButton} onClick={() => handleEditClick(news)}>Edit</button>
-                                <button className={styles.deleteButton} onClick={() => handleDeleteClick(news._id)}>Delete</button>
-                            </td>
+
+            {loading ? (
+                <div className={styles.spinnerContainer}>
+                    <div className={styles.spinner}></div>
+                </div>
+            ) : (
+                <table className={styles.dataTable}>
+                    <thead>
+                        <tr>
+                            <th>Cover Image</th>
+                            <th>Date</th>
+                            <th>Category</th>
+                            <th>Heading</th>
+                            <th>Status</th>
+                            <th>Actions</th>
                         </tr>
-                    ))}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        {newsData?.map((news, index) => (
+                            <tr key={news._id}>
+                                <td><img src={news.coverImage} alt="Cover" width={60} /></td>
+                                <td>{news.date}</td>
+                                <td>{news.category}</td>
+                                <td>{news.heading}</td>
+                                <td>
+                                    <span className={news.visibility ? styles.statusVisible : styles.statusHidden}>
+                                        {news.visibility ? "Visible" : "Hidden"}
+                                    </span>
+                                </td>
+                                <td>
+                                    <button className={styles.editButton} onClick={() => handleEditClick(news)}>Edit</button>
+                                    <button className={styles.deleteButton} onClick={() => handleDeleteClick(news._id)}>Delete</button>
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            )}
 
             {isOpen && (
                 <div className={styles.modalOverlay}>

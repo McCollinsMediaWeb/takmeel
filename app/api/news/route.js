@@ -2,6 +2,46 @@ import { NextResponse } from "next/server";
 import clientPromise from "@/lib/db";
 import { ObjectId } from "mongodb";
 
+// export async function GET(req) {
+//     try {
+//         const client = await clientPromise;
+//         const db = client.db("Takmeel");
+
+//         const url = new URL(req.url);
+//         const isDashboard = url.searchParams.get("dashboard");
+
+//         const newsCollection = db.collection("news");
+
+//         let news;
+
+//         if (isDashboard === "true") {
+//             // Get latest 5 news for dashboard
+//             news = await newsCollection
+//                 .find({})
+//                 .sort({ createdAt: -1 }) // assuming `date` is sortable
+//                 .limit(5)
+//                 .toArray();
+//         } else {
+//             // Get all news for main page
+//             news = await newsCollection
+//                 .find({})
+//                 .sort({ createdAt: -1 })
+//                 .toArray();
+//         }
+
+//         return NextResponse.json({
+//             success: true,
+//             data: news,
+//         });
+//     } catch (error) {
+//         console.error("Error fetching news:", error);
+//         return NextResponse.json(
+//             { success: false, message: "Failed to fetch news", error },
+//             { status: 500 }
+//         );
+//     }
+// }
+
 export async function GET(req) {
     try {
         const client = await clientPromise;
@@ -13,25 +53,41 @@ export async function GET(req) {
         const newsCollection = db.collection("news");
 
         let news;
+        let totalCount = 0;
 
         if (isDashboard === "true") {
-            // Get latest 5 news for dashboard
-            news = await newsCollection
-                .find({})
-                .sort({ createdAt: 1 }) // assuming `date` is sortable
+            news = await newsCollection.find({})
+                .sort({ createdAt: -1 })
                 .limit(5)
                 .toArray();
         } else {
-            // Get all news for main page
-            news = await newsCollection
-                .find({})
-                .sort({ createdAt: 1 })
+            // const page = parseInt(url.searchParams.get("page") || "1");
+            // const limit = parseInt(url.searchParams.get("limit") || "10");
+            // const skip = (page - 1) * limit;
+
+            const page = parseInt(url.searchParams.get("page") || "1");
+            const limit = parseInt(url.searchParams.get("limit") || "10");
+            const skip = parseInt(url.searchParams.get("skip") || "0");
+
+            totalCount = await newsCollection.countDocuments(); // total news
+
+            // news = await newsCollection.find({})
+            //     .sort({ createdAt: -1 })
+            //     .skip(skip)
+            //     .limit(limit)
+            //     .toArray();
+
+            news = await newsCollection.find({})
+                .sort({ createdAt: -1 })
+                .skip(skip)
+                .limit(limit)
                 .toArray();
         }
 
         return NextResponse.json({
             success: true,
             data: news,
+            totalCount, // optional, for UI if needed
         });
     } catch (error) {
         console.error("Error fetching news:", error);
@@ -41,6 +97,8 @@ export async function GET(req) {
         );
     }
 }
+
+
 
 export async function POST(req) {
     try {

@@ -11,6 +11,7 @@ import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 import Script from "next/script";
+import { GlobalDataProvider } from "@/context/GlobalDataContext";
 
 
 const geistSans = Geist({
@@ -53,9 +54,10 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${nunitoSans.variable}`}>
 
       <body>
+        <GlobalDataProvider>
 
-        {/* Tawk.to Script */}
-        {/* <Script id="tawk-to" strategy="afterInteractive">
+          {/* Tawk.to Script */}
+          {/* <Script id="tawk-to" strategy="afterInteractive">
           {`
             var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
             (function() {
@@ -70,27 +72,29 @@ export default function RootLayout({ children }) {
           `}
         </Script> */}
 
-        <Script
-          id="zsiq-init"
-          strategy="beforeInteractive"
-        >
-          {`
+          <Script
+            id="zsiq-init"
+            strategy="beforeInteractive"
+          >
+            {`
           window.$zoho = window.$zoho || {};
           $zoho.salesiq = $zoho.salesiq || { ready: function() {} };
         `}
-        </Script>
+          </Script>
 
-        <Script
-          id="zsiqscript"
-          src="https://salesiq.zohopublic.in/widget?wc=siqd42e964546372063eb47c76bbf42497379120a2771308eb2d1ca6165301d5e33"
-          strategy="lazyOnload"
-          defer
-        />
+          <Script
+            id="zsiqscript"
+            src="https://salesiq.zohopublic.in/widget?wc=siqd42e964546372063eb47c76bbf42497379120a2771308eb2d1ca6165301d5e33"
+            strategy="lazyOnload"
+            defer
+          />
 
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <FooterBottom />
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <FooterBottom />
+
+        </GlobalDataProvider>
       </body>
     </html>
   );

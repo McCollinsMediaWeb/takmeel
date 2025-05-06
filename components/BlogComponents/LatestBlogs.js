@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { motion } from "framer-motion";
 
 import blogimage from "../../public/blmain.jpg"
-export default function LatestBlog() {
+export default function LatestBlog({ blog }) {
   return (
     <div className="BlogPostMainArea pd-common">
       <motion.div
@@ -23,7 +23,8 @@ export default function LatestBlog() {
             <div className="col-md-6 bg2 LatestBlogItem">
               <div className="LatestBlogImage">
                 <Image
-                  src={blogimage}
+                  // src={blogimage}
+                  src={blog?.coverImage}
                   width={478}
                   height={253}
                   layout="responsive"
@@ -31,11 +32,18 @@ export default function LatestBlog() {
                 />
               </div>
               <div className="LatestBlogDesc">
-                <div className="LtT1 nunito-text">OCTOBER 23, 2022 | REAL ESTATE</div>
+                {/* <div className="LtT1 nunito-text">OCTOBER 23, 2022 | REAL ESTATE</div>
                 <div className="LtT2">Investments In Financial Future Ten Steps For Independence</div>
                 <div className="LtT3">Lion View features a shared outdoor relaxation area with sun loungers, wet lounge, braai area, solar-heated saltwater infinity pool.</div>
                 <div className="text-right">
                   <Link href="/" className='Link6 hover1'>Read More</Link>
+                </div> */}
+
+                <div className="LtT1 nunito-text" style={{ textTransform: 'uppercase' }}>{blog?.date} | {blog?.category}</div>
+                <div className="LtT2">{blog?.heading}</div>
+                <div className="LtT3">{blog?.content}</div>
+                <div className="text-right">
+                  <Link href={`/news-updates/${blog._id}`} className='Link6 hover1'>Read More</Link>
                 </div>
               </div>
             </div>
