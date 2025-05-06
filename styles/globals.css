@@ -2210,3 +2210,11 @@ input[type=number] {
   position: absolute;
   inset:-1%;
 }
+.TxtBig{
+  font-size: 150px;
+}
+.SmallSizeTxt{
+  font-size: 19px;
+  max-width: 80%;
+  margin: 0 auto;
+}

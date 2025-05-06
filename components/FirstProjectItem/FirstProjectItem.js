@@ -103,61 +103,6 @@ export default function FirstProjectItem({
             <div className="FsBannerContent">
                 <div className="FsBannerContentFlex centerBlock">
                     <div className="container">
-                        {/* <motion.div
-                            variants={containerVariants}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true, amount: 0.5 }}
-                        >
-                            <div>
-                                {projectStatus && (
-                                    <motion.div className="Txt1" variants={itemVariants}>
-                                        <div>
-                                            <span className="PrStatus">{projectStatus}</span>
-                                        </div>
-                                    </motion.div>
-                                )}
-                                <motion.div className="Txt1" variants={itemVariants}>
-                                    {text1}
-                                </motion.div>
-
-                                <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
-                                    {text2}
-                                </motion.div>
-                                <motion.div variants={itemVariants}>
-                                    <motion.div
-                                        className="Txt3 nunito-text"
-                                        animate={{ opacity: [1, 0.3, 1] }}
-                                        transition={{
-                                            duration: 2,
-                                            ease: "easeInOut",
-                                        }}
-                                    >
-                                        {text3}
-                                    </motion.div>
-                                </motion.div>
-                                <motion.div className="" variants={itemVariants}>
-                                    <motion.div
-                                        className="Txt17 nunito-text"
-                                        animate={{ opacity: [1, 0.3, 1] }}
-                                        transition={{
-                                            duration: 2,
-                                            ease: "easeInOut",
-                                        }}
-                                    >
-                                        {tagline}
-                                    </motion.div>
-                                </motion.div>
-
-                                <motion.div variants={itemVariants}>
-                                    <Link href={`/${url}`} className="Link1 hover1">
-                                        View projects
-                                    </Link>
-                                </motion.div>
-                            </div>
-                        </motion.div> */}
-
-
                         <motion.div
                             variants={containerVariants}
                             initial="hidden"
@@ -175,7 +120,7 @@ export default function FirstProjectItem({
                                 {phase === "initial" && (
                                     <motion.div
                                         key="initial-text2"
-                                        className="Txt2 text-uppercase"
+                                        className="Txt2 text-uppercase TxtBig"
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
                                         exit={{ opacity: 0 }}
@@ -189,7 +134,7 @@ export default function FirstProjectItem({
                                 {phase === "transition" && (
                                     <motion.div
                                         key="fade-out-text2"
-                                        className="Txt2 text-uppercase"
+                                        className="Txt2 text-uppercase TxtBig"
                                         initial={{ opacity: 1 }}
                                         animate={{ opacity: 0 }}
                                         transition={{ duration: 1 }}
@@ -209,7 +154,7 @@ export default function FirstProjectItem({
                                             THE ART OF ELEVATION
                                         </motion.div>
 
-                                        <motion.div className="Txt3 nunito-text" variants={itemVariants}>
+                                        <motion.div className="Txt3 nunito-text SmallSizeTxt" variants={itemVariants}>
                                             {text3}
                                         </motion.div>
 
