@@ -508,4 +508,11 @@
         margin-bottom: 15px;
         font-size: 18px;
       }
+      .galleryBoxRow.container-fluid {
+        padding:20px 15px;
+      }
+      .galleryBoxRow .BlT2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
   }
