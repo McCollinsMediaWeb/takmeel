@@ -100,7 +100,7 @@ export default function FirstProjectItem({
 
 
 
-            <div className="FsBannerContent">
+            <div className="FsBannerContent VideoD">
                 <div className="FsBannerContentFlex centerBlock">
                     <div className="container">
                         <motion.div
