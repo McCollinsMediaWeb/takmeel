@@ -59,14 +59,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       "majan1/3.jpg",
       "majan1/4.jpg",
       "am3.jpg",
-      "am4.jpg",
-      "am1.jpg",
-      "am2.jpg",
-      "am55.jpg",
-      "am6.jpg",
-      "m1.jpg",
-      "m3.jpg",
-
+     
     ]
   };
   const DataProjectDetails2 = {
@@ -119,12 +112,34 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       "Takmeel’s Al Barari project reimagines luxury living—where smart design meets natural beauty. Surrounded by greenery and water features, these 1, 2 & 3-bedroom apartments offer modern layouts, premium finishes, and sustainable living. Just minutes from Dubai Miracle Garden with easy access to Sheikh Zayed Road, this is where peace and connectivity come together in perfect harmony.",
     GalleryImagesWithNames: [
       {
-        src: "majan1/20.jpg",
+        src: "am1.jpg",
+        title: "Kitchen Area",
+      },
+      {
+        src: "am2.jpg",
+        title: "Kitchen Area",
+      },
+      {
+        src: "am55.jpg",
         title: "Living Area",
       },
       {
-        src: "grd1.jpg",
-        title: "Exterior",
+        src: "am6.jpg",
+        title: "Lounge Area",
+      },
+      {
+        src: "m1.jpg",
+        title: "Bedroom Area",
+      },
+      {
+        src: "m3.jpg",
+        title: "Living Area",
+      },
+
+
+      {
+        src: "majan1/20.jpg",
+        title: "Living Area",
       },
       {
         src: "majan1/28.jpg",
@@ -147,20 +162,8 @@ export default function TakmeelAlBarariViewPropertiesPage() {
         title: "Washroom Area",
       },
       {
-        src: "majan1/55.jpg",
-        title: "Washroom Area",
-      },
-      {
-        src: "majan1/51.jpg",
-        title: "Bedroom Area",
-      },
-      {
         src: "majan1/52.jpg",
         title: "Bedroom Area",
-      },
-      {
-        src: "majan1/35.jpg",
-        title: "Common Whashroom Area",
       },
       {
         src: "majan1/36.jpg",
@@ -207,6 +210,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
     ],
     // GalleryImagesWithNames: []
   };
+
 
   const DataProjectDetails6 = [
     {
@@ -398,15 +402,16 @@ export default function TakmeelAlBarariViewPropertiesPage() {
         <ProjectDetails1 {...DataProjectDetails1} />
       </div>
       {/* <ProjectDetails2 {...DataProjectDetails2} /> */}
-      
+      <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
+      <div className="FxdHgtImage">
+      <ProjectDetails4 {...DataProjectDetails4} />
+      </div>
       <ProjectDetails7 mapimage="alm.jpg" mobileMapImage="almob.jpg" {...DataProjectDetails7} />
       
       {/* <ProjectDetails3 mainimage1="ak2.jpg" data={DataProjectDetails3} /> */}
-      {/* <div className="FxdHgtImage">
-      <ProjectDetails4 {...DataProjectDetails4} />
-      </div> */}
+      
       {/* <ProjectDetails5 panoramaimage="/albararistreet.jpg" /> */}
-      <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
+      
 
       {/* <ProjectDetails7 mapimage="mapalb.jpg" {...DataProjectDetails7} /> */}
       <CostCalculator />

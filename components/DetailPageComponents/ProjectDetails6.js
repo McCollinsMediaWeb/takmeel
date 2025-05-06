@@ -51,7 +51,7 @@ export default function ProjectDetails6({ planImage, data }) {
     };
 
     return (
-        <div className='position-relative pd-common bg2 pt-0'>
+        <div className='position-relative pd-common bg2'>
 
             <div className='container'>
 
