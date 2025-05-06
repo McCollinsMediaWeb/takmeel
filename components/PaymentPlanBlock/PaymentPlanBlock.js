@@ -21,7 +21,7 @@ export default function PaymentPlanBlock() {
         visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
     }
     return (
-        <div className="PaymentBlock pd-common bg2">
+        <div className="PaymentBlock pd-common">
             <div className="container">
                 <motion.div
                     variants={containerVariants}
@@ -59,7 +59,7 @@ export default function PaymentPlanBlock() {
 
                 <div className="row PaymentBlockRow">
                     <div className="col-md-4">
-                        <div className="PayBlockBx">
+                        <div className="PayBlockBx bg2">
                             <motion.div
                                 variants={containerVariants}
                                 initial="hidden"
@@ -89,11 +89,11 @@ export default function PaymentPlanBlock() {
                                             }}
                                         >
                                            <div className="PaymentDetBox">
-                                                <div className="PaymentDetBoxT1 VmT5">15% Booking</div>
-                                                <div className="PaymentDetBoxT1 VmT5">1% Per month X 42 months</div>
-                                                <div className="PaymentDetBoxT1 VmT5">10% on 12th Month</div>
-                                                <div className="PaymentDetBoxT1 VmT5">5% on 18th Month</div>
-                                                <div className="PaymentDetBoxT1 VmT5">0.5% per month X 60 months</div>
+                                                <div className="PaymentDetBoxT1 VmT5">10% on booking</div>
+                                                <div className="PaymentDetBoxT1 VmT5">10% after 2 months of booking</div>
+                                                <div className="PaymentDetBoxT1 VmT5">10% after 7-month of booking</div>
+                                                <div className="PaymentDetBoxT1 VmT5">10% after 12 month of booking</div>
+                                                <div className="PaymentDetBoxT1 VmT5">60% on after completion hand over</div>
                                            </div>
                                         </motion.div>
                                     </motion.div>
@@ -103,7 +103,7 @@ export default function PaymentPlanBlock() {
                         </div>
                     </div>
                     <div className="col-md-4">
-                        <div className="PayBlockBx">
+                        <div className="PayBlockBx bg2">
                             <motion.div
                                 variants={containerVariants}
                                 initial="hidden"
@@ -133,11 +133,11 @@ export default function PaymentPlanBlock() {
                                             }}
                                         >
                                            <div className="PaymentDetBox">
-                                                <div className="PaymentDetBoxT1 VmT5">20% Booking</div>
-                                                <div className="PaymentDetBoxT1 VmT5">1% Per month X 42 months</div>
-                                                <div className="PaymentDetBoxT1 VmT5">10% on 12th Month</div>
-                                                <div className="PaymentDetBoxT1 VmT5">5% on 18th Month</div>
-                                                <div className="PaymentDetBoxT1 VmT5">0.5% per month X 50 months</div>
+                                                <div className="PaymentDetBoxT1 VmT5">10% on booking</div>
+                                                <div className="PaymentDetBoxT1 VmT5">10% after 2 months of booking</div>
+                                                <div className="PaymentDetBoxT1 VmT5">10% after 7-month of booking</div>
+                                                <div className="PaymentDetBoxT1 VmT5">10% after 12 month of booking</div>
+                                                <div className="PaymentDetBoxT1 VmT5">60% on after completion hand over</div>
                                            </div>
                                         </motion.div>
                                     </motion.div>

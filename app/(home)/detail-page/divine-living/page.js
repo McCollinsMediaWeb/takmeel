@@ -9,6 +9,7 @@ import ProjectDetails6 from "@/components/DetailPageComponents/ProjectDetails6";
 import ProjectDetails7 from "@/components/DetailPageComponents/ProjectDetails7";
 import CostCalculator from "@/components/DetailPageComponents/CostCalculator";
 import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
+import PaymentPlanBlock from "@/components/PaymentPlanBlock/PaymentPlanBlock";
 export default function DivineLiving() {
   const detailHeroData = {
     backgroundImage: "bannerDesktopFirst.jpg",
@@ -298,8 +299,10 @@ export default function DivineLiving() {
       <ProjectDetails1  {...DataProjectDetails1} />
       <ProjectDetails2  {...DataProjectDetails2} />
       {/* <ProjectDetails3 mainimage1="ovr1.jpg" data={DataProjectDetails3} /> */}
+      <PaymentPlanBlock/>
       <ProjectDetails4  {...DataProjectDetails4} />
       {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
+      
       <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
 
       <ProjectDetails7 mapimage="dldesk.jpg"  mobileMapImage="dlmob.jpg" {...DataProjectDetails7} />
