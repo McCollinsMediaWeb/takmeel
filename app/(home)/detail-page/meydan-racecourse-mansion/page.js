@@ -56,7 +56,7 @@ export default function MeydanRacecourseMansion() {
       "Overlooking the iconic Meydan Racecourse, this architectural gem by Takmeel Real Estate defines the pinnacle of bespoke living. The Meydan Racecourse Mansion is more than a home—it’s a statement of timeless elegance, curated for those who desire privacy, prestige, and panoramic views in the heart of Dubai.",
     GalleryImages: [
       // "Meydan-Racecourse-Mansion/Maydan 01.jpg",
-      "Meydan-Racecourse-Mansion/Maydan 02.jpg",
+      // "Meydan-Racecourse-Mansion/Maydan 02.jpg",
       "Meydan-Racecourse-Mansion/Maydan 03.jpg",
       "Meydan-Racecourse-Mansion/Maydan 04.jpg",
       // "Meydan-Racecourse-Mansion/Maydan 05.jpg",
@@ -69,7 +69,7 @@ export default function MeydanRacecourseMansion() {
   };
   const DataProjectDetails2 = {
     ThumbImage1: "Meydan-Racecourse-Mansion/Maydan 01.jpg",
-    ThumbImage2: "Meydan-Racecourse-Mansion/Maydan 05.jpg",
+    ThumbImage2: "md1.jpg",
     text1Heading: "Features That Redefine Opulence",
     text1Desc: "Central Location – Nestled in Meydan, with seamless city access, Award-Winning Design – European aesthetics with a blend of Russian elegance and Italian grace, Spectacular Views – Uninterrupted racecourse panoramas from every room, Smart Home Features – Intelligent systems for lighting, security, and comfort",
     text2Heading: "A Mansion that Embodies “The Art of Living”",
