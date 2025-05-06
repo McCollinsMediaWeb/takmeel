@@ -2242,11 +2242,25 @@ input[type=number] {
   height: 20px;
 }
 .galleryBoxRow.container-fluid{
-  padding: 30px 15px;
+  padding: 60px 15px;
 }
 .BlT3 img {
   padding: 10px;
 }
 .ql-align-center{
   text-align: center;
+}
+.galleryBoxRow  .row{
+  margin: 0 -5px;
+}
+.galleryBoxRow .col-md-4{
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+.galleryBoxRow img{
+  cursor: pointer;
+}
+.galleryBoxRow  .BlT2{
+font-size: 30px;
+margin-bottom: 30px;
 }
