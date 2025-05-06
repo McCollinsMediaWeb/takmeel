@@ -26,7 +26,8 @@ function ProfilePopover({ name }) {
                 className={styles.userAction}
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <img src="https://avatar.iran.liara.run/public/boy?username=Ash" alt="User Avatar" />
+                {/* <img src="https://avatar.iran.liara.run/public/boy?username=Ash" alt="User Avatar" /> */}
+                <img src="/Avatar Men.png" alt="User Avatar" />
                 <span>{name}</span>
                 <span className={styles.arrow}>▼</span>
             </div>
@@ -34,7 +35,8 @@ function ProfilePopover({ name }) {
             {isOpen && (
                 <div className={styles.profilePopover}>
                     <div className={styles.profileHeader}>
-                        <img src="https://avatar.iran.liara.run/public/boy?username=Ash" alt="User Avatar" />
+                        {/* <img src="https://avatar.iran.liara.run/public/boy?username=Ash" alt="User Avatar" /> */}
+                        <img src="/Avatar Men.png" alt="User Avatar" />
                         <div>
                             <h4>{name}</h4>
                             <p>Admin</p>

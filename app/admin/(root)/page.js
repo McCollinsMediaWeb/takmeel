@@ -111,7 +111,8 @@ export default function Home() {
                     </div>
                     <div className={styles.userProfile}>
                         <div className={styles.avatar}>
-                            <img src="https://avatar.iran.liara.run/public/boy?username=Ash" alt="User Avatar" />
+                            {/* <img src="https://avatar.iran.liara.run/public/boy?username=Ash" alt="User Avatar" /> */}
+                            <img src="/Avatar Men.png" alt="User Avatar" />
                             <span className={styles.statusIndicator}></span>
                         </div>
                         <div className={styles.userInfo}>
