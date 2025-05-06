@@ -2178,8 +2178,8 @@ input[type=number] {
   position: relative; */
 
   background-image: url(../public/sold.png);
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   z-index: 1;
   display: inline-block;
   background-size: 100% 100%;
@@ -2199,17 +2199,7 @@ input[type=number] {
   margin-bottom: 20px;
 }
 
-.LottieBox {
-  z-index: 4;
-  object-fit: cover;
-  justify-content: center;
-  align-items: center;
-  width: 102%;
-  height: 102%;
-  display: flex;
-  position: absolute;
-  inset:-1%;
-}
+
 .TxtBig{
   font-size: 150px;
 }
