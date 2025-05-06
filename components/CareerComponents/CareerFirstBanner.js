@@ -134,7 +134,7 @@ export default function CareerFirstBanner() {
                                 className="position-relative"
                             >
                                 {/* Grey background box */}
-                                <div className="grey-box"></div>
+                                {/* <div className="grey-box"></div> */}
 
                                 {/* Image container with proper positioning */}
                                 <div className="image-container">
