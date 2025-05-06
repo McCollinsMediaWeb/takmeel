@@ -392,6 +392,12 @@ footer {}
   background-image: url(../public/instagram.png);
 }
 
+.ScIcon.linkedIn {
+  width: 23px;
+  height: 23px;
+  background-image: url(../public/linkedin-icon.png);
+}
+
 .ScIcon.tiktok {
   width: 20px;
   height: 22px;

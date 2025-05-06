@@ -78,7 +78,7 @@ export default function FAQbox() {
                         transition={{ duration: 0.6, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.5 }}
                     >
-                        <div className="Ft1">Find the Answers to Your Queries</div>
+                        <div className="Ft1">Frequently Asked Questions</div>
                     </motion.div>
                 </div>
                 <div className="Accordionitems">

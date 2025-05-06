@@ -18,7 +18,7 @@ export default function PropertyForm({ }) {
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.5 }}
                 >
-                    <div className='text-center ppT1 nunito-text'>REGISTER YOUR INTEREST FOR </div>
+                    <div className='text-center ppT1 nunito-text'>REGISTER YOUR INTEREST</div>
                     <div className='text-center ppT2'>Get in Touch with Us</div>
                 </motion.div>
                 <motion.div
