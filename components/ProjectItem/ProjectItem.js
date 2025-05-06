@@ -401,6 +401,7 @@ import Image from "next/image"
 import { usePathname } from "next/navigation"
 import useMediaQuery from "../hooks/useMediaQuery"
 
+
 export default function ProjectItem({
     backgroundImage,
     backgroundImageMobile,
@@ -412,6 +413,30 @@ export default function ProjectItem({
     projectStatus,
     backgroundVideo = null
 }) {
+    const [startLoop, setStartLoop] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setStartLoop(true), 1000); // wait for pop animation to complete
+        return () => clearTimeout(timer);
+    }, []);
+
+    const variants = {
+        slideInUp: {
+            y: [100, 0], // slide up from 100px below
+            opacity: [0, 1],
+            transition: { duration: 1, ease: "easeOut" }
+        },
+        loop: {
+            scale: [1, 1.05, 1],
+            transition: {
+                duration: 10,
+                repeat: Infinity,
+                ease: "easeInOut"
+            }
+        }
+    };
+    
+
     const containerRef = useRef(null)
     const isDesktop = useMediaQuery("(min-width: 960px)")
 
@@ -460,30 +485,31 @@ export default function ProjectItem({
                 />
             ) : (
                 <motion.div
-                    animate={{ scale: [1, 1.05, 1] }}
-                    transition={{ duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-                    viewport={{ once: true, amount: 0.5 }}
-                >
-                    {isDesktop ? (
-                        <Image
-                            src={`/${backgroundImage}`}
-                            width={1338}
-                            height={714}
-                            layout="responsive"
-                            alt="Takmeel"
-                            loading="lazy"
-                        />
-                    ) : (
-                        <Image
-                            src={`/${backgroundImageMobile}`}
-                            width={697}
-                            height={768}
-                            layout="responsive"
-                            alt="Takmeel"
-                            loading="lazy"
-                        />
-                    )}
-                </motion.div>
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
+            {isDesktop ? (
+                <Image
+                    src={`/${backgroundImage}`}
+                    width={1338}
+                    height={714}
+                    layout="responsive"
+                    alt="Takmeel"
+                    loading="lazy"
+                />
+            ) : (
+                <Image
+                    src={`/${backgroundImageMobile}`}
+                    width={697}
+                    height={768}
+                    layout="responsive"
+                    alt="Takmeel"
+                    loading="lazy"
+                />
+            )}
+        </motion.div>
             )}
 
 

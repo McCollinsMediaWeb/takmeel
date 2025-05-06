@@ -1,6 +1,8 @@
 'use client'; // optional if using interactivity (like menus)
 import { motion } from "framer-motion";
 import { useEffect } from 'react';
+import f3 from '../../public/team-photo.jpg'
+import Image from "next/image";
 export default function AboutVisionMission2() {
       // Container animation variants
       const containerVariants = {
@@ -26,6 +28,23 @@ export default function AboutVisionMission2() {
         <section className="pd-common VisionMissionBox bg2">
             <div className="container">
                 <div className="text-center">
+                    
+                <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
+                        <div className="AllTeamImageBox">
+                            <Image
+                                src={f3}
+                                width={1240}
+                                height={580}
+                                layout="responsive"
+                                alt="Takmeel"
+                            />
+                        </div>
+                    </motion.div>
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
