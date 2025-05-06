@@ -9,6 +9,7 @@ import ProjectDetails6 from "@/components/DetailPageComponents/ProjectDetails6";
 import ProjectDetails7 from "@/components/DetailPageComponents/ProjectDetails7";
 import CostCalculator from "@/components/DetailPageComponents/CostCalculator";
 import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
+import PaymentPlanBlock from "@/components/PaymentPlanBlock/PaymentPlanBlock";
 export default function TakmeelAlBarariViewPropertiesPage() {
   const detailHeroData = {
     // backgroundImage: "main1.jpg",
@@ -397,7 +398,9 @@ export default function TakmeelAlBarariViewPropertiesPage() {
         <ProjectDetails1 {...DataProjectDetails1} />
       </div>
       {/* <ProjectDetails2 {...DataProjectDetails2} /> */}
+      <PaymentPlanBlock/>
       <ProjectDetails7 mapimage="alm.jpg" mobileMapImage="almob.jpg" {...DataProjectDetails7} />
+      
       {/* <ProjectDetails3 mainimage1="ak2.jpg" data={DataProjectDetails3} /> */}
       {/* <div className="FxdHgtImage">
       <ProjectDetails4 {...DataProjectDetails4} />
