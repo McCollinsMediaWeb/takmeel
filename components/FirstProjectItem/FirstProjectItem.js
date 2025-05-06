@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState, useEffect } from "react"
-import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion"
+import { motion, useScroll, useTransform, useMotionValueEvent, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
@@ -20,6 +20,23 @@ export default function FirstProjectItem({
 }) {
     const containerRef = useRef(null)
     const isDesktop = useMediaQuery("(min-width: 960px)")
+
+
+    const [phase, setPhase] = useState("initial") // 'initial' -> 'transition' -> 'final'
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setPhase("transition") // begin fade-out
+            setTimeout(() => {
+                setPhase("final") // show full content
+            }, 1000) // wait for fade-out to finish
+        }, 4000) // 4s display of 'Takmeel'
+
+        return () => clearTimeout(timer)
+    }, [])
+
+
+
 
 
     const containerVariants = {
@@ -43,17 +60,6 @@ export default function FirstProjectItem({
 
     return (
         <div className="FullScreenBanner Projects">
-            {/* <motion.div
-                animate={{ scale: [1, 1.05, 1] }}
-                transition={{ duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-                viewport={{ once: true, amount: 0.5 }}
-            >
-                {isDesktop && <Image src={`/${backgroundImage}`} width={1338} height={714} layout="responsive" alt="Takmeel" />}
-                {!isDesktop && (
-                    <Image src={`/${backgroundImageMobile}`} width={697} height={768} layout="responsive" alt="Takmeel" />
-                )}
-            </motion.div> */}
-
             {backgroundVideo ? (
                 <video
                     src={`/${backgroundVideo}`}
@@ -97,7 +103,7 @@ export default function FirstProjectItem({
             <div className="FsBannerContent">
                 <div className="FsBannerContentFlex centerBlock">
                     <div className="container">
-                        <motion.div
+                        {/* <motion.div
                             variants={containerVariants}
                             initial="hidden"
                             whileInView="visible"
@@ -149,7 +155,79 @@ export default function FirstProjectItem({
                                     </Link>
                                 </motion.div>
                             </div>
+                        </motion.div> */}
+
+
+                        <motion.div
+                            variants={containerVariants}
+                            initial="hidden"
+                            animate="visible"
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
+                            <div>
+                                {projectStatus && (
+                                    <motion.div className="Txt1" variants={itemVariants}>
+                                        <div><span className="PrStatus">{projectStatus}</span></div>
+                                    </motion.div>
+                                )}
+
+                                {/* PHASE 1: Only show 'Takmeel' */}
+                                {phase === "initial" && (
+                                    <motion.div
+                                        key="initial-text2"
+                                        className="Txt2 text-uppercase"
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        exit={{ opacity: 0 }}
+                                        transition={{ duration: 1 }}
+                                    >
+                                        {text2}
+                                    </motion.div>
+                                )}
+
+                                {/* PHASE 2: Fade-out animation */}
+                                {phase === "transition" && (
+                                    <motion.div
+                                        key="fade-out-text2"
+                                        className="Txt2 text-uppercase"
+                                        initial={{ opacity: 1 }}
+                                        animate={{ opacity: 0 }}
+                                        transition={{ duration: 1 }}
+                                    >
+                                        {text2}
+                                    </motion.div>
+                                )}
+
+                                {/* PHASE 3: Show rest of content with new title */}
+                                {phase === "final" && (
+                                    <>
+                                        <motion.div className="Txt1" variants={itemVariants}>
+                                            {text1}
+                                        </motion.div>
+
+                                        <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
+                                            THE ART OF ELEVATION
+                                        </motion.div>
+
+                                        <motion.div className="Txt3 nunito-text" variants={itemVariants}>
+                                            {text3}
+                                        </motion.div>
+
+                                        <motion.div className="Txt17 nunito-text" variants={itemVariants}>
+                                            {tagline}
+                                        </motion.div>
+
+                                        <motion.div variants={itemVariants}>
+                                            <Link href={`/${url}`} className="Link1 hover1">
+                                                View projects
+                                            </Link>
+                                        </motion.div>
+                                    </>
+                                )}
+                            </div>
                         </motion.div>
+
+
                     </div>
                 </div>
             </div>
