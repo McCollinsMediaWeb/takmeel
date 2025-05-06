@@ -164,7 +164,7 @@ export default function FirstProjectItem({
 
                                         <motion.div variants={itemVariants}>
                                             <Link href={`/${url}`} className="Link1 hover1">
-                                                View projects
+                                                Explore our projects
                                             </Link>
                                         </motion.div>
                                     </>
