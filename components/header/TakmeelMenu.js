@@ -73,6 +73,19 @@ useEffect(() => {
                                 </motion.div>
 
                             </li>
+                            <li className={pathname === '/gallery' ? 'active' : ''}>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.5 }}
+                                >
+                                    <Link href={'/gallery'} className='Link8'>
+                                       Gallery
+                                    </Link>
+                                </motion.div>
+
+                            </li>
                             <li className={pathname === '/news-updates' ? 'active' : ''}>
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
