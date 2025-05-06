@@ -55,8 +55,10 @@ export default function GolfViewLivingApartments() {
       // "Golf-View-Living-Apartments/Golf Apartments 03.jpg",
       // "Golf-View-Living-Apartments/golf-views-emaar-south-gallery.jpg",
       // "Golf-View-Living-Apartments/golf-views-emaar-south-gallery-03.jpg",
-      "gl1.jpg",
-      "gl2.jpg",
+      // "gl1.jpg",
+      // "gl2.jpg",
+      "Golf-View-Living-Apartments/Golf-View-Living-Apartment-Image01.jpg",
+      "Golf-View-Living-Apartments/Golf-View-Living-Apartment-Image02.jpg",
       "gl4.jpg",
       "gl3.jpg",
     ],
@@ -278,7 +280,7 @@ export default function GolfViewLivingApartments() {
       {/* <ProjectDetails3 mainimage1="ovr6.jpg" data={DataProjectDetails3} /> */}
       <ProjectDetails4  {...DataProjectDetails4} />
       {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
-      
+
 
       <ProjectDetails7 {...DataProjectDetails7} />
       <CostCalculator />
