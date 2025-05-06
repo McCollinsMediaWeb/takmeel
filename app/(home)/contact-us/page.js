@@ -66,11 +66,11 @@ export default function ContactUs() {
           >
             <div className="row MidRow1">
               <div className="col-md-6">
-                <div className="Ct2 nunito-text">Contact us</div>
+                <div className="Ct2">Contact us</div>
                 <div className="Ct3">Get in Touch with Us</div>
               </div>
               <div className="col-md-6">
-                <div className="Ct4 nunito-text">Need to sell or buy a property? Just get in touch and we will deal with everything else. You’ve made a great choice getting in touch with us.</div>
+                <div className="Ct4">Need to sell or buy a property? Just get in touch and we will deal with everything else. You’ve made a great choice getting in touch with us.</div>
               </div>
             </div>
           </motion.div>
