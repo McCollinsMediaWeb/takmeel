@@ -328,11 +328,12 @@ export default function GolfViewLivingVillas() {
         <div>
             <DetailHero {...detailHeroData} />
             <ProjectDetails1 {...DataProjectDetails1} />
+            <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
             <ProjectDetails2 {...DataProjectDetails2} />
             {/* <ProjectDetails3 mainimage1="ovr4.jpg" data={DataProjectDetails3} /> */}
             <ProjectDetails4 {...DataProjectDetails4} />
             {/* <ProjectDetails5 panoramaimage="/golfstreet.jpg" /> */}
-            <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
+            
             <ProjectDetails7 {...DataProjectDetails7} />
             <CostCalculator />
             <PropertyForm />
