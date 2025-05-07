@@ -172,8 +172,8 @@ export default function DivineResidencies() {
 
   const DataProjectDetails7 = {
     // mapimage: "newmap1.jpg",
-    text1: "Divine Residences",
-    text2: "EFFORTLESS ACCESS <br/> To All Corners Of The City",
+    text1: "EFFORTLESS ACCESS TO ALL CORNERS OF THE CITY",
+    text2: "The community features residential complexes, commercial buildings and retail developments. Although residential and peaceful, the luxurious residences offer direct and quick access to Sheikh Zayed Road and Umm Suqeim Street allowing fast reach to the whole city.",
     landmarks: [
       "3 MINUTES Hessa Street",
       "5 MINUTES Sheikh Mohammed Bin Zayed Rd",
@@ -313,7 +313,7 @@ export default function DivineResidencies() {
       <ProjectDetails4 {...DataProjectDetails4} />
       {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
 
-      <ProjectDetails7 {...DataProjectDetails7} />
+      <ProjectDetails7 mapimage="drdesk.jpg" mobileMapImage="drmob.jpg" {...DataProjectDetails7} />
       <CostCalculator />
       <PropertyForm projectName="Divine Residencies" />
     </div>

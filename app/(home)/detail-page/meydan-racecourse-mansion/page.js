@@ -151,8 +151,8 @@ export default function MeydanRacecourseMansion() {
 
   const DataProjectDetails7 = {
     // mapimage: "newmap1.jpg",
-    text1: "Meydan Racecourse Mansion",
-    text2: "EFFORTLESS ACCESS <br/> To All Corners Of The City",
+    text1: "EFFORTLESS ACCESS TO ALL CORNERS OF THE CITY",
+    text2: "The community features residential complexes, commercial buildings and retail developments. Although residential and peaceful, the luxurious residences offer direct and quick access to Sheikh Zayed Road and Umm Suqeim Street allowing fast reach to the whole city.",
     landmarks: [
       "Meydan Racecourse Mansion",
       "Contemporary Designs With Top Class Finishing",
@@ -289,7 +289,7 @@ export default function MeydanRacecourseMansion() {
       {/* <ProjectDetails3 mainimage1="ovr7.jpg" data={DataProjectDetails3} /> */}
       <ProjectDetails4  {...DataProjectDetails4} />
       {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
-      <ProjectDetails7 {...DataProjectDetails7} />
+      <ProjectDetails7 mapimage="mydesk.jpg" mobileMapImage="mymob.jpg"  {...DataProjectDetails7} />
       <CostCalculator />
       <PropertyForm projectName="Meydan Racecourse Mansion" />
     </div>
