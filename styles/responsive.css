@@ -485,11 +485,7 @@
         min-height: auto;
         overflow:hidden;
       }
-      .PrStatus{
-        width: 40px;
-        height: 40px;
       
-      }
       .TxtBig{
         font-size: 80px;
       }
@@ -533,5 +529,13 @@
       .PayBlockBxHdr.VmT5::after{
         width: 18px;
         height: 18px;
+      }
+      .PrStatus {
+        padding: 8px 10px 8px 25px;
+        font-size: 13px;
+      }
+      .PrStatus::before {
+        width: 7px;
+        height: 7px;
       }
   }

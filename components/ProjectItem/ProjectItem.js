@@ -527,7 +527,7 @@ export default function ProjectItem({
                                 {projectStatus && (
                                     <motion.div className="Txt1" variants={itemVariants}>
                                         <div>
-                                            <span className="PrStatus">&nbsp;</span>
+                                            <span className="PrStatus">{projectStatus}</span>
                                         </div>
                                     </motion.div>
                                 )}

@@ -2177,21 +2177,33 @@ input[type=number] {
 }
 .PrStatus{
   display: inline-block;
- /* background-color: #b5123c;
-  color: #fff;
-  padding: 5px 10px;
+ /* background-color: #b5123c; */
+ background-color: #fff;
+ color: #1d1d1b;
+  padding: 8px 15px;
   border-radius: 20px;
   margin-bottom: 15px;
   font-size: 15px;
-  position: relative; */
+  position: relative;
 
-  background-image: url(../public/soldout.svg);
+padding-left: 30px;
+  /* background-image: url(../public/soldout.svg);
   width: 60px;
   height: 60px;
   z-index: 1;
   display: inline-block;
-  background-size: 100% 100%;
+  background-size: 100% 100%; */
 
+}
+.PrStatus::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  background-color: #b5123c;
 }
 .BlT1A{
   text-align: center;
@@ -2280,13 +2292,13 @@ margin-bottom: 30px;
 }
 .galleryBoxRow .slick-dots li {
   width: 30px;
-  height: 5px;
+  height: 4px;
 }
 .galleryBoxRow .slick-dots li button{
   width: 30px;
-  height: 5px;
+  height: 4px;
   background-color: #1d1d1b; 
-  opacity: 0.5;
+  opacity: 0.3;
   padding: 0;
   border-radius: 5px;
 }
