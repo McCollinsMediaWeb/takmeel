@@ -152,7 +152,7 @@ export default function MeydanRacecourseMansion() {
   const DataProjectDetails7 = {
     // mapimage: "newmap1.jpg",
     text1: "EFFORTLESS ACCESS TO ALL CORNERS OF THE CITY",
-    text2: "The community features residential complexes, commercial buildings and retail developments. Although residential and peaceful, the luxurious residences offer direct and quick access to Sheikh Zayed Road and Umm Suqeim Street allowing fast reach to the whole city.",
+    text2: "The community features residential complexes, commercial buildings and retail developments. Although residential and peaceful, the luxurious residences offer direct and quick access to Sheikh Zayed Road and Umm Suqeim Street allowing fast reach to the whole city.",
     landmarks: [
       "Meydan Racecourse Mansion",
       "Contemporary Designs With Top Class Finishing",
