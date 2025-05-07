@@ -264,7 +264,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
 
   const DataProjectDetails7 = {
     text1: "IMMERSED IN NATURE, CONNECTED TO THE CITY",
-    text2: "Surrounded by lush landscapes and tranquil walkways, Divine Al Barari offers an oasis of calm amidst Dubai’s vibrant pace. This serene community combines peaceful living with exceptional connectivity—ensuring seamless access to every part of the city.",
+    text2: "Surrounded by lush landscapes and tranquil walkways, Divine Al Barari offers an oasis of calm amidst Dubai’s vibrant pace. This serene community combines peaceful living with exceptional connectivity—ensuring seamless access to every part of the city.",
     landmarks: [
       "3 MINUTES Hessa Street",
       "5 MINUTES Sheikh Mohammed Bin Zayed Rd",
@@ -406,7 +406,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       <div className="FxdHgtImage">
       <ProjectDetails4 {...DataProjectDetails4} />
       </div>
-      <ProjectDetails7 mapimage="alm.jpg" mobileMapImage="almob.jpg" {...DataProjectDetails7} />
+      <ProjectDetails7 mapimage="alnew.jpg" mobileMapImage="alnewmob.jpg" {...DataProjectDetails7} />
       
       {/* <ProjectDetails3 mainimage1="ak2.jpg" data={DataProjectDetails3} /> */}
       
