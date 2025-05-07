@@ -284,7 +284,7 @@ export default function GolfViewLivingApartments() {
 
       <ProjectDetails7 {...DataProjectDetails7} />
       <CostCalculator />
-      <PropertyForm />
+      <PropertyForm projectName="Golf View Living Apartments" />
     </div>
   );
 }

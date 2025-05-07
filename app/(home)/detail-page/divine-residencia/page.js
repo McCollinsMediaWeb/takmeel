@@ -309,7 +309,7 @@ export default function DivineResidencia() {
 
       <ProjectDetails7 mapimage="rcddesk.jpg" mobileMapImage="rcdmob.jpg" {...DataProjectDetails7} />
       <CostCalculator />
-      <PropertyForm />
+      <PropertyForm projectName="Divine Residencia" />
     </div>
   );
 }

@@ -51,7 +51,7 @@ export default function DivineResidencies() {
     GalleryImages: [
       "Divine-Residencies/Interior/Main-picture.jpg",
       "Divine-Residencies/Interior/2.jpg",
-      
+
       "Divine-Residencies/Interior/1.jpg",
     ],
   };
@@ -104,7 +104,7 @@ export default function DivineResidencies() {
     text3:
       "Set amidst the flourishing neighborhood of Arjan, Divine Residences offers an exceptional lifestyle just steps away from Dubai’s iconic Miracle Garden and Butterfly Garden. Thoughtfully designed and ready for immediate occupancy, this modern residential enclave blends contemporary elegance with everyday convenience. With effortless connectivity to Umm Suqeim Street and key destinations across Dubai, residents enjoy a harmonious fusion of tranquil surroundings and dynamic city living.",
     GalleryImagesWithNames: [
-      
+
       {
         src: "Divine-Residencies/Interior/3-1.jpg",
         title: "Living Room",
@@ -312,10 +312,10 @@ export default function DivineResidencies() {
       {/* <ProjectDetails3 mainimage1="ovr5.jpg" data={DataProjectDetails3} /> */}
       <ProjectDetails4 {...DataProjectDetails4} />
       {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
-      
+
       <ProjectDetails7 {...DataProjectDetails7} />
       <CostCalculator />
-      <PropertyForm />
+      <PropertyForm projectName="Divine Residencies" />
     </div>
   );
 }

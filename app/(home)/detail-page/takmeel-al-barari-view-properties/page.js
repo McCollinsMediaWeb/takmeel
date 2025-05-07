@@ -415,7 +415,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
 
       {/* <ProjectDetails7 mapimage="mapalb.jpg" {...DataProjectDetails7} /> */}
       <CostCalculator />
-      <PropertyForm />
+      <PropertyForm projectName="Divine Al Barari" />
     </div>
   );
 }
