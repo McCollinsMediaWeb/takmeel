@@ -5,9 +5,21 @@ import React, { useRef, useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 export default function GetInTouchForm() {
 
+    const initialForm = {
+        firstName: '',
+        lastName: '',
+        phone: '',
+        email: '',
+        // file: ''
+    };
+
     const [selectedFile, setSelectedFile] = useState(null);
     const [isDragging, setIsDragging] = useState(false);
     const fileInputRef = useRef(null);
+    const [formData, setFormData] = useState(initialForm);
+    const [errors, setErrors] = useState({});
+    const [loading, setLoading] = useState(false);
+    const [submitted, setSubmitted] = useState(false);
 
     const handleFileChange = (e) => {
         const file = e.target.files[0];
@@ -15,6 +27,7 @@ export default function GetInTouchForm() {
             // Check if the file type is valid (PDF, DOC, DOCX)
             if (['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'].includes(file.type)) {
                 setSelectedFile(file);
+                setErrors(prev => ({ ...prev, file: '' }));
             } else {
                 alert('Please upload a valid CV file (PDF, DOC, or DOCX).');
             }
@@ -38,6 +51,7 @@ export default function GetInTouchForm() {
         const file = e.dataTransfer.files[0];
         if (file && ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'].includes(file.type)) {
             setSelectedFile(file);
+            setErrors(prev => ({ ...prev, file: '' }));
         } else {
             alert('Please upload a valid CV file (PDF, DOC, or DOCX).');
         }
@@ -49,41 +63,144 @@ export default function GetInTouchForm() {
         }
     };
 
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+        setErrors(prev => ({ ...prev, [name]: '' }));
+    };
 
-    // const [selectedFiles, setSelectedFiles] = useState([])
-    // const [isDragging, setIsDragging] = useState(false)
-    // const fileInputRef = useRef(null)
-
-    // const handleFileChange = (e) => {
-    //     if (e.target.files && e.target.files.length > 0) {
-    //         setSelectedFiles(Array.from(e.target.files))
+    // const validate = () => {
+    //     const newErrors = {};
+    //     for (let field in formData) {
+    //         if (!formData[field]?.trim()) {
+    //             newErrors[field] = 'This field is required';
+    //         }
     //     }
-    // }
+    //     setErrors(newErrors);
+    //     return Object.keys(newErrors).length === 0;
+    // };
 
-    // const handleDragOver = (e) => {
-    //     e.preventDefault()
-    //     setIsDragging(true)
-    // }
+    const validate = () => {
+        const newErrors = {};
 
-    // const handleDragLeave = (e) => {
-    //     e.preventDefault()
-    //     setIsDragging(false)
-    // }
+        for (let field in formData) {
+            if (!formData[field]?.trim()) {
+                newErrors[field] = 'This field is required';
+            }
+        }
 
-    // const handleDrop = (e) => {
-    //     e.preventDefault()
-    //     setIsDragging(false)
+        if (!selectedFile) {
+            newErrors.file = 'This field is required';
+        }
 
-    //     if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
-    //         setSelectedFiles(Array.from(e.dataTransfer.files))
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
+    };
+
+
+
+    const errorStyle = {
+        color: 'red',
+        fontSize: '13px',
+        marginTop: '4px',
+        marginBottom: '10px',
+    };
+
+    const infoStyle = {
+        fontSize: '14px',
+        marginTop: '10px',
+    };
+
+    // const fileUpload = async (file) => {
+    //     const cvData = new FormData();
+    //     cvData.append("file", file);
+    //     cvData.append("upload_preset", "takmeelwebsite");
+
+    //     try {
+    //         const response = await fetch("https://api.cloudinary.com/v1_1/dje8fshak/raw/upload", {
+    //             method: "POST",
+    //             body: cvData,
+    //         });
+    //         const data = await response.json();
+    //         return data.secure_url; // This is the file URL
+    //     } catch (error) {
+    //         console.error("Error uploading CV to Cloudinary:", error);
+    //         throw error;
     //     }
-    // }
+    // };
 
-    // const openFileDialog = () => {
-    //     if (fileInputRef.current) {
-    //         fileInputRef.current.click()
-    //     }
-    // }
+    const fileUpload = async (file) => {
+        const formData = new FormData();
+        formData.append("file", file);
+        formData.append("upload_preset", "takmeelwebsite");
+
+        try {
+            const response = await fetch("https://api.cloudinary.com/v1_1/dje8fshak/raw/upload", {
+                method: "POST",
+                body: formData,
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(data.error?.message || "Upload failed");
+            }
+
+            // Use raw URL (correct for PDFs and non-image files)
+            return data.secure_url;
+
+        } catch (error) {
+            console.error("Error uploading CV to Cloudinary:", error);
+            throw error;
+        }
+    };
+
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setSubmitted(false);
+
+        if (!validate()) return;
+
+        setLoading(true);
+        try {
+            let cvUrl = "";
+            if (selectedFile) {
+                cvUrl = await fileUpload(selectedFile); // Upload to Cloudinary
+                console.log("cvUrl", cvUrl);
+            }
+
+            const payload = {
+                ...formData,
+                cvUrl, // include Cloudinary URL
+            };
+
+            const response = await fetch('/api/contacts/careers', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload),
+            });
+
+            if (response.ok) {
+                setSubmitted(true);
+                setFormData(initialForm);
+                setSelectedFile(null);
+            } else {
+                alert("Failed to submit the form.");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("An error occurred.");
+        } finally {
+            setLoading(false);
+        }
+    };
+
+
 
     return (
         <section className='ContactForm pd-common'>
@@ -98,23 +215,26 @@ export default function GetInTouchForm() {
                         {/* <div className='CfT1'>WE ARE HERE TO HELP</div> */}
                         <div className='CfT2'>Let's Get In Touch</div>
                         <div className='CfT3'>Please provide the details, and we’ll get back to you.</div>
-                        <div className='FormBox'>
+                        {/* <div className='FormBox'> */}
+                        <form className='FormBox' onSubmit={handleSubmit}>
                             <div className='row'>
-                                <div className='col-md-6'>
-                                    <input type="text" placeholder='First Name' />
-                                </div>
-                                <div className='col-md-6'>
-                                    <input type="text" placeholder='Last Name' />
-                                </div>
-                                <div className='col-md-6'>
-                                    <input type="text" placeholder='Phone Number' />
-                                </div>
-                                <div className='col-md-6'>
-                                    <input type="text" placeholder='Email Address' />
-                                </div>
-                                {/* <div className='col-md-12'>
-                                    <textarea placeholder='Message'></textarea>
-                                </div> */}
+                                {[
+                                    { label: 'First Name', name: 'firstName' },
+                                    { label: 'Last Name', name: 'lastName' },
+                                    { label: 'Phone Number', name: 'phone' },
+                                    { label: 'Email Address', name: 'email' },
+                                ].map(({ label, name }) => (
+                                    <div className='col-md-6' key={name}>
+                                        <input
+                                            type="text"
+                                            name={name}
+                                            placeholder={label}
+                                            value={formData[name]}
+                                            onChange={handleChange}
+                                        />
+                                        {errors[name] && <div style={errorStyle}>{errors[name]}</div>}
+                                    </div>
+                                ))}
 
                                 <div className="col-md-12">
                                     <div onDragOver={handleDragOver}
@@ -157,9 +277,17 @@ export default function GetInTouchForm() {
                                             style={{ display: "none" }}
                                             onChange={handleFileChange}
                                             accept=".pdf, .doc, .docx"
+                                            name="file"
                                         />
 
                                     </div>
+
+                                    {errors.file && (
+                                        <div style={{ color: "red", fontSize: "14px", marginBottom: "24px" }}>
+                                            {errors.file}
+                                        </div>
+                                    )}
+
                                 </div>
 
                                 {/* {selectedFiles.length > 0 && (
@@ -198,11 +326,29 @@ export default function GetInTouchForm() {
                                     </div>
                                 )}
 
-                                <div className='col-md-12'>
+                                {/* <div className='col-md-12'>
                                     <button className='hover1'>Send Enquiry</button>
+                                </div> */}
+
+                                <div className='col-md-12'>
+                                    <button className='hover1' type="submit" disabled={loading}>
+                                        {loading ? 'Submitting...' : 'Send Enquiry'}
+                                    </button>
+
+                                    {submitted && (
+                                        <div style={{ ...infoStyle, color: 'green' }}>
+                                            ✅ Form submitted successfully!
+                                        </div>
+                                    )}
+                                    {loading && (
+                                        <div style={{ ...infoStyle, color: '#007bff' }}>
+                                            Please wait while we submit your request...
+                                        </div>
+                                    )}
                                 </div>
                             </div>
-                        </div>
+                        </form>
+                        {/* </div> */}
                     </motion.div>
                 </div>
             </div>
