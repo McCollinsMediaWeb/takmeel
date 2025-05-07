@@ -4,6 +4,9 @@ import { useEffect, useState } from 'react';
 import Image from "next/image";
 import FAQbox from "@/components/FAQbox/FAQbox";
 import b1 from "../../../public/cnt.jpg";
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
+
 export default function ContactUs() {
 
   const initialForm = {
@@ -151,7 +154,7 @@ export default function ContactUs() {
                   {[
                     { label: 'First Name', name: 'firstName' },
                     { label: 'Last Name', name: 'lastName' },
-                    { label: 'Phone Number', name: 'phone' },
+                    // { label: 'Phone Number', name: 'phone' },
                     { label: 'Email Address', name: 'email' },
                   ].map(({ label, name }) => (
                     <div className='col-md-6' key={name}>
@@ -165,6 +168,24 @@ export default function ContactUs() {
                       {errors[name] && <div style={errorStyle}>{errors[name]}</div>}
                     </div>
                   ))}
+
+                  <div className='col-md-6'>
+                    <PhoneInput
+                      placeholder="Enter phone number"
+                      value={formData.phone}
+                      defaultCountry="AE"
+                      onChange={(value) => {
+                        setFormData((prev) => ({
+                          ...prev,
+                          phone: value,
+                        }));
+                        setErrors((prev) => ({ ...prev, phone: '' }));
+                      }}
+                      className="CustomPhoneInput" />
+
+                    {errors.phone && <div style={errorStyle}>{errors.phone}</div>}
+                  </div>
+
                   {/* <div className='col-md-6'>
                     <input type="text" placeholder='First Name' />
                   </div>

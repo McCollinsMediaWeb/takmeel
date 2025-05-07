@@ -5,6 +5,8 @@ import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import useMediaQuery from "../hooks/useMediaQuery";
 import countries from '../../public/countries.json';
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
 
 export default function PropertyForm({ projectName }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
@@ -108,7 +110,7 @@ export default function PropertyForm({ projectName }) {
                             {[
                                 { name: 'firstName', placeholder: 'First Name' },
                                 { name: 'lastName', placeholder: 'Last Name' },
-                                { name: 'phone', placeholder: 'Phone Number' },
+                                // { name: 'phone', placeholder: 'Phone Number' },
                                 { name: 'email', placeholder: 'Email' }
                             ].map(({ name, placeholder }) => (
                                 <div className='col-md-6' key={name}>
@@ -124,6 +126,25 @@ export default function PropertyForm({ projectName }) {
                                     </div>
                                 </div>
                             ))}
+
+                            <div className='col-md-6'>
+                                <div className='position-relative'>
+                                    <PhoneInput
+                                        placeholder="Enter phone number"
+                                        value={formData.phone}
+                                        defaultCountry="AE"
+                                        onChange={(value) => {
+                                            setFormData((prev) => ({
+                                                ...prev,
+                                                phone: value,
+                                            }));
+                                            setErrors((prev) => ({ ...prev, phone: '' }));
+                                        }}
+                                        className="CustomPhoneInput"
+                                         />
+                                    {errors.phone && <div style={errorStyle}>{errors.phone}</div>}
+                                </div>
+                            </div>
 
 
                             <div className='col-md-6'>

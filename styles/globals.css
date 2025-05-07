@@ -257,12 +257,14 @@ footer {}
 
 .contact-email:before {
   content: "";
-  background-image: url("/a3.png"); /* Corrected path for public folder */
+  background-image: url("/a3.png");
+  /* Corrected path for public folder */
   display: inline-block;
   width: 22px;
   height: 16px;
   margin-right: 5px;
-  vertical-align: middle; /* Aligns with text vertically */
+  vertical-align: middle;
+  /* Aligns with text vertically */
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -539,7 +541,7 @@ body .slick-dots {
   padding: 8px 15px;
   display: inline-block;
   cursor: pointer;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   font-size: 16px;
 }
 
@@ -639,7 +641,10 @@ body .slick-dots {
   margin-top: 30px;
 }
 
-.FormBox input,
+/* .FormBox input, */
+.FormBox input[type="text"],
+.FormBox input[type="number"],
+.FormBox input[type="email"],
 .FormBox textarea {
   width: 100%;
   background-color: #F7F7F7;
@@ -650,6 +655,33 @@ body .slick-dots {
   outline: none;
   box-shadow: none;
 }
+
+/* Override styles for react-phone-number-input */
+.CustomPhoneInput {
+  width: 100%;
+  background-color: #F7F7F7;
+  padding: 15px 25px;
+  border-radius: 25px;
+  border: 0px;
+  margin-bottom: 15px;
+  outline: none;
+  box-shadow: none;
+  font-size: 16px;
+}
+
+/* Style dropdown and input field */
+.CustomPhoneInput input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  outline: none;
+}
+
+/* Optional: style the flag dropdown */
+.CustomPhoneInput .PhoneInputCountry {
+  margin-right: 10px;
+}
+
 
 .FormBox button {
   color: #fff;
@@ -1533,15 +1565,19 @@ body .slick-prev::before {
 .FeatureBoxIcon.FeatureBoxIcon17 {
   background-image: url(../public/Icons/Takmeel_Icons_Adult\ Pool.png);
 }
+
 .FeatureBoxIcon.FeatureBoxIcon18 {
   background-image: url(../public/Icons/Takmeel_Icons_Indoor\ Gym.png);
 }
+
 .FeatureBoxIcon.FeatureBoxIcon19 {
   background-image: url(../public/Icons/Takmeel_Icons_Kids\ Play\ Area.png);
 }
+
 .FeatureBoxIcon.FeatureBoxIcon20 {
   background-image: url(../public/Icons/Takmeel_Icons_Kids\ Pool.png);
 }
+
 .FeatureBoxIcon.FeatureBoxIcon21 {
   background-image: url(../public/Icons/Takmeel_Icons_Landscaped-\ Gardens.png);
 }
@@ -1754,56 +1790,75 @@ body .slick-prev::before {
 .AmnIcon.AmnIcon20 {
   background-image: url(../public/Icons/Takmeel_Icons_Archery\ Area.png);
 }
+
 .AmnIcon.AmnIcon21 {
   background-image: url(../public/Icons/Takmeel_Icons_BBQ\ Area.png);
 }
+
 .AmnIcon.AmnIcon22 {
   background-image: url(../public/Icons/Takmeel_Icons_Beach\ Entry\ Pool.png);
 }
+
 .AmnIcon.AmnIcon23 {
   background-image: url(../public/Icons/Takmeel_Icons_Board\ Games\ Area.png);
 }
+
 .AmnIcon.AmnIcon24 {
   background-image: url(../public/Icons/Takmeel_Icons_Cabanas.png);
 }
+
 .AmnIcon.AmnIcon25 {
   background-image: url(../public/Icons/Takmeel_Icons_Co-working\ space.png);
-}.AmnIcon.AmnIcon26 {
+}
+
+.AmnIcon.AmnIcon26 {
   background-image: url(../public/Icons/Takmeel_Icons_Indoor\ Gym.png);
 }
+
 .AmnIcon.AmnIcon27 {
   background-image: url(../public/Icons/Takmeel_Icons_Jacuzzi.png);
 }
+
 .AmnIcon.AmnIcon28 {
   background-image: url(../public/Icons/Takmeel_Icons_Kids\ Play\ Area.png);
 }
+
 .AmnIcon.AmnIcon29 {
   background-image: url(../public/Icons/Takmeel_Icons_Kids\ Pool.png);
 }
+
 .AmnIcon.AmnIcon30 {
   background-image: url(../public/Icons/Takmeel_Icons_Mini\ Golf.png);
 }
+
 .AmnIcon.AmnIcon31 {
   background-image: url(../public/Icons/Takmeel_Icons_Outdoor\ Cinema.png);
 }
+
 .AmnIcon.AmnIcon32 {
   background-image: url(../public/Icons/Takmeel_Icons_Outdoor\ Gym.png);
 }
+
 .AmnIcon.AmnIcon33 {
   background-image: url(../public/Icons/Takmeel_Icons_Outdoor\ Shaded\ Seating.png);
 }
+
 .AmnIcon.AmnIcon34 {
   background-image: url(../public/Icons/Takmeel_Icons_Smoking\ Lounge.png);
 }
+
 .AmnIcon.AmnIcon35 {
   background-image: url(../public/Icons/Takmeel_Icons_Steam\ and\ Sauna\ Area.png);
 }
+
 .AmnIcon.AmnIcon36 {
   background-image: url(../public/Icons/Takmeel_Icons_Table\ Tennis\ Court.png);
 }
+
 .AmnIcon.AmnIcon37 {
   background-image: url(../public/Icons/Takmeel_Icons_Yoga\ Area.png);
 }
+
 .AmnIcon.AmnIcon38 {
   background-image: url(../public/Icons/Takmeel_Icons_Landscaped-\ Gardens.png);
 }
@@ -2057,7 +2112,10 @@ body .slick-prev::before {
   text-transform: uppercase;
 }
 
-.propertyFormBox .InputItem input,
+/* .propertyFormBox .InputItem input, */
+.propertyFormBox .InputItem input[type="text"],
+.propertyFormBox .InputItem input[type="number"],
+.propertyFormBox .InputItem input[type="email"],
 .propertyFormBox .InputItem select {
   padding: 15px 20px;
   -webkit-appearance: none;
@@ -2154,39 +2212,46 @@ input[type=number] {
   overflow: hidden;
   object-fit: cover !important;
 }
-.MainFoundersDetails{
+
+.MainFoundersDetails {
   max-width: 1200px;
   margin: 60px auto;
 }
-.MainFoundersDetails img{
+
+.MainFoundersDetails img {
   border-radius: 20px;
 }
-.MainFoundersDetails .BlT3{
+
+.MainFoundersDetails .BlT3 {
   font-size: 19px;
 }
-.pdb0{
+
+.pdb0 {
   padding-bottom: 0 !important;
 }
-.VisionMissionBox .VmT5{
+
+.VisionMissionBox .VmT5 {
   font-size: 18px;
 }
+
 .FxdHgtImage img,
-.AbSliderItem img{
+.AbSliderItem img {
   height: 400px !important;
   object-fit: cover;
 }
-.PrStatus{
+
+.PrStatus {
   display: inline-block;
- /* background-color: #b5123c; */
- background-color: #fff;
- color: #1d1d1b;
+  /* background-color: #b5123c; */
+  background-color: #fff;
+  color: #1d1d1b;
   padding: 8px 15px;
   border-radius: 20px;
   margin-bottom: 15px;
   font-size: 15px;
   position: relative;
 
-padding-left: 30px;
+  padding-left: 30px;
   /* background-image: url(../public/soldout.svg);
   width: 60px;
   height: 60px;
@@ -2195,7 +2260,8 @@ padding-left: 30px;
   background-size: 100% 100%; */
 
 }
-.PrStatus::before{
+
+.PrStatus::before {
   content: "";
   width: 10px;
   height: 10px;
@@ -2205,12 +2271,14 @@ padding-left: 30px;
   left: 10px;
   background-color: #b5123c;
 }
-.BlT1A{
+
+.BlT1A {
   text-align: center;
   font-size: 35px;
   margin-bottom: 10px;
 }
-.BlT2B{
+
+.BlT2B {
   font-size: 19px;
   line-height: 1.5;
   text-align: center;
@@ -2220,91 +2288,112 @@ padding-left: 30px;
 }
 
 
-.TxtBig{
+.TxtBig {
   font-size: 150px;
 }
-.SmallSizeTxt{
+
+.SmallSizeTxt {
   font-size: 19px;
   max-width: 70%;
   margin: 0 auto;
 }
-.PaymentBlockRow{
+
+.PaymentBlockRow {
   justify-content: center;
   margin-top: 30px;
 }
-.PayBlockBxHdr{
+
+.PayBlockBxHdr {
   font-size: 20px;
   text-transform: capitalize;
   margin: 0 !important;
 }
-.PayBlockBx{
+
+.PayBlockBx {
   padding: 20px;
   border-radius: 20px;
   text-align: center;
   margin-bottom: 25px;
 }
-.PaymentDetBoxT1{
+
+.PaymentDetBoxT1 {
   font-size: 19px;
   margin-bottom: 15px;
 }
-.PaymentDetBox .PaymentDetBoxT1:last-child{
+
+.PaymentDetBox .PaymentDetBoxT1:last-child {
   margin-bottom: 0;
 }
-.PaymentDetBox .VmT5{
+
+.PaymentDetBox .VmT5 {
   padding-left: 25px;
   display: block;
 }
-.PaymentDetBox .VmT5::after{
+
+.PaymentDetBox .VmT5::after {
   width: 19px;
   height: 20px;
 }
-.galleryBoxRow.container-fluid{
+
+.galleryBoxRow.container-fluid {
   padding: 60px 0px;
 }
+
 .BlT3 img {
   padding: 10px;
 }
-.ql-align-center{
+
+.ql-align-center {
   text-align: center;
 }
-.galleryBoxRow  .row{
+
+.galleryBoxRow .row {
   margin: 0 -5px;
 }
-.galleryBoxRow .col-md-4{
+
+.galleryBoxRow .col-md-4 {
   padding: 0 5px;
   margin-bottom: 10px;
 }
-.galleryBoxRow img{
+
+.galleryBoxRow img {
   cursor: pointer;
 }
-.galleryBoxRow  .BlT2{
-font-size: 30px;
-margin-bottom: 30px;
+
+.galleryBoxRow .BlT2 {
+  font-size: 30px;
+  margin-bottom: 30px;
 }
-.CntMiddleBox .container{
+
+.CntMiddleBox .container {
   max-width: 1200px;
 }
-.GalleryImageBox{
+
+.GalleryImageBox {
   padding: 8px;
   margin: 0 5px;
   background-color: #fff;
   border-radius: 10px;
 }
+
 .galleryBoxRow .slick-dots li {
   width: 30px;
   height: 4px;
 }
-.galleryBoxRow .slick-dots li button{
+
+.galleryBoxRow .slick-dots li button {
   width: 30px;
   height: 4px;
-  background-color: #1d1d1b; 
+  background-color: #1d1d1b;
   opacity: 0.3;
   padding: 0;
   border-radius: 5px;
 }
-.galleryBoxRow .slick-dots li button::before{
+
+.galleryBoxRow .slick-dots li button::before {
   content: none;
 }
-.galleryBoxRow .slick-dots li.slick-active button{
-opacity: 1;
+
+.galleryBoxRow .slick-dots li.slick-active button {
+  opacity: 1;
 }

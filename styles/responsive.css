@@ -1,541 +1,695 @@
 @media only screen and (max-width: 1000px) {
-    .m-only {
-        display: block !important;
-      }
-      .d-only {
-        display: none !important;
-      }
-      .menu-open .m-only,
-        .form-open  .m-only{
-        display: none !important;
-        }
-    body {
-        position: relative;
-        overflow-x: hidden !important;
-      }
-      html {
-        width: 100%;
-        height: 100%;
-        overflow-x: hidden;
-        position: relative;
-      }
-    .Txt2 {
-        font-size: 22px;
-        line-height: 1;
-        margin-bottom: 10px;
-      }
-      body{
-        font-size: 15px;
-      }
-      .Link1 {
-        min-width: 120px;
-        padding:8px 20px;
-      }
-      .Txt3{
-        margin-bottom: 10px;
-        font-size: 18px;
-      }
-      .HeaderBox {
-        padding:10px 0px;
-      }
-      .Link4 {
-        padding:6px 10px;
-        font-size: 13px;
-      }
-      .MenuClick::after{
-        content: none;
-      }
-      .MenuClick {
-        width: 24px;
-        height: 17px;
-      }
-      .MenuMiddle ul a {
-        margin-bottom: 15px;
-        font-size: 19px;
-      }
-      .MenuHd {
-        margin-bottom: 40px;
-      }
-      .MenuMiddle {
-        margin-bottom: 40px;
-      }
-      .FormPopUp{
-        padding: 20px;
-      }
-      .FormBox input, 
-      .FormBox textarea {
-        margin-bottom: 10px;
-        padding:13px 20px;
-      }
-      .FormPopUp .CfT2 {
-        font-size: 20px;
-      }
-      .closeBtn {
-        width: 20px;
-        height: 20px;
-      }
-      .Txt1{
-        margin-bottom: 10px;
-      }
-      .ChatBoat {
-        padding:13px 15px;
-        bottom: 110px;
-      }
-      .HeroBanner2Wrap {
-        padding:0;
-        margin:0 -15px;
-        overflow:hidden;
-      }
-      body .slick-next, body .slick-prev{
-        display: none !important;
-      }
-      .FtSliderContent .Txt2 {
-        font-size: 22px;
-      }
-      .FtSliderContent .Txt3 {
-        margin-bottom: 0;
-        font-size: 15px;
-      }
-      .BannerTextBox .col-md-4 {
-        text-align: left;
-        margin-top: 15px;
-      }
-      body .slick-dots li button::before {
-        font-size: 12px;
-      }
-      .HbT1{
-        font-size: 22px;
-        margin-bottom: 15px;
-      }
-      .HbT2, .HbT3 {
-        margin-bottom: 10px;
-        font-size: 17px;
-      }
-      .HbT4 {
-        margin-bottom: 15px;
-        font-size: 22px;
-      }
-      .HbT4 br{
-        display: none;
-      }
-      .pd-common {
-        padding:25px 0;
-      }
-      .St2{
-        font-size: 22px;
-      }
-      .St3{
-        margin-bottom: 15px;
-      }
-      .SlT2 {
-        margin-bottom: 5px;
-        font-size: 17px;
-      }
-      .SldSliderItemDesc .text-right{
-        text-align: left !important;
-      }
-      .SoldOutSlider{
-        margin: 0 -15px;
-        overflow: hidden;
-      }
-      .SldSliderItem {
-        margin-right: 15px;
-      }
-      .CfT2{
-        font-size: 22px;
-      }
-      .FtrT1 {
-        color: #fff;
-        border-bottom:
-      1px solid #ffffff1a;
-        margin-bottom: 30px;
-        padding:
-      20px 0;
-        font-size: 18px;
-      }
-      .FtrRow .col-md-2{
-        max-width: 50%;
-        flex: 0 0 50%;
-      }
-      .NewsletterBox{
-        margin-top: 15px;
-        text-align: center;
-      }
-      .FooterBottom {
-        padding-bottom: 90px;
-        text-align: center;
-      }
-      .socialMediaLinksFlex {
-        justify-content: center;
-        margin-top: 15px;
-      }
-      .FooterLogo {
-        max-width: 170px;
-      }
-      .HdT2{
-        font-size: 22px;
-      }
-      .PageHeaderTp1{
-        padding: 30px 15px;
-        height: auto !important;
-      }
-      .HdT3 {
-        font-size: 16px;
-      }
-      .PageHeaderTp1 br , 
-      .CfT2 br{
-        display: none;
-      }
-      .VmT1{
-        font-size: 22px;
-      }
-      .VmT2 {
-        font-size: 16px;
-        margin-bottom: 20px;
-      }
-      .VmT3 {
-        margin-bottom: 10px;
-        font-size: 22px;
-      }
-      .VmT4 {
-        font-size: 16px;
-        margin-bottom: 10px;
-      }
-      .FounderName {
-        font-size: 18px;
-      }
-      .FounderPosition {
-        margin-bottom: 5px;
-        font-size: 16px;
-      }
-      .FounderSlider ,
-      .OurPeopleBox {
-        margin-top: 20px;
-        margin-left: -15px;
-        margin-right: -15px;
-        overflow:hidden;
-      }
-      .PT1 {
-        margin-top: 10px;
-        margin-bottom: 5px;
-        font-size: 18px;
-      }
-      .FtrProperties{
-        margin-top: 20px;
-        margin-left: -15px;
-        margin-right: -15px;
-      }
-      .BlT2{
-        font-size: 22px;
-      }
-      .BlT3 {
-        margin-bottom: 10px;
-      }
-      .LtT2 {
-        font-size: 18px;
-      }
-      .BlogPostWrap .text-right{
-        text-align: left !important;
-      }
-      .Link6{
-        padding: 8px 15px;
-      }
-      .ViewAll{
-        margin-top: 20px;
-      }
-      .blogLists .col-md-4 {
-        margin-bottom: 15px;
-      }
-      .CntPageHead {
-        height: 55vh !important;
-        text-align: center;
-      }
-      .CT1{
-        padding: 15px;
-        font-size: 23px;
-      }
-      .Ct3 {
-        font-size: 22px;
-        margin-bottom: 10px;
-      }
-      .MidRow1 {
-        margin-bottom: 15px;
-      }
-      .PadBox1 {
-       
-        padding: 20px;
-        margin-top: 20px;
-      }
-      .LcBoxT1 {
-        font-size: 16px;
-      }
-      .Spacer {
-        opacity: 1;
-        margin:20px 0;
-      }
-      .Ft1 {
-        margin-bottom: 22px;
-        font-size: 22px;
-      }
-      .Accordion {
-        margin-bottom: 10px;
-        padding:15px 30px 15px 15px;
-        font-size: 16px;
-      }
-      .AccordionAnswer{
-        font-size: 15px;
-        margin-top: 15px;
-      }
-      .Accordion::after {
-        font-size: 22px;
-        right: 10px;
-      }
-      .ButtonsBox1 a {
-        margin-right: 5px;
-        padding:10px;
-        font-size: 12px;
-      }
-      .ButtonsBox1{
-        padding: 10px;
-      }
-      .PlayIcon {
-        width: 20px;
-        height: 25px;
-      }
-      .PlayIconBox {
-        width: 45px;
-        height: 45px;
-        margin:0 auto 20px;
-      }
-      .Det2T1 {
-        line-height: 1.2;
-        margin-bottom: 15px;
-        font-size: 16px;
-      }
-      .Det2T1.mb{
-        margin-bottom: 15px;
-        margin-top: 15px;
-      }
-      .DetBoxContent {
-        width: 100%;
-        height: auto;
-        max-height: 500vh;
-        display: flex;
-        position: relative;
-        top: auto;
-        left: auto;
-        background:#1d1d1d;
-      }
-      .Tst1 {
-        margin-bottom: 20px;
-        font-size: 23px;
-      }
-      .FeatureBoxIcon {
-        margin: auto;
-        margin-bottom: 15px;
-      }
-      .FeatureBoxT1 {
-        font-size: 19px;
-      }
-      .PrdTxt2 {
-        margin-bottom: 20px;
-        font-size: 20px;
-      }
-      .PlanBoxBottomFlex {
-        padding:20px 20px 20px;
-      }
-      .PlanBox {
-        padding:20px 20px 0;
-      }
-      .ProductDetail3::after{
-        content: none;
-      }
-      .PlanRow .BlT1{
-        padding-top: 20px;
-      }
-      .AmnBoxWrap {
-        margin-top: 20px;
-      }
-      .listItems .col-md-4{
-        flex: 0 0 50%;
-        max-width: 50%;
-      }
-      .ccT1 {
-        margin-bottom: 20px;
-        font-size: 20px;
-      }
-      .InputItem input, .InputItem select {
-        color: #1d1d1d;
-        padding:15px 15px 15px 130px;
-      }
-      .InputItem span {
-        font-size: 12px;
-        top: 16px;
-        left: 20px;
-      }
-      .MortageItem {
-        white-space:unset;
-      }
-      .MrT2 {
-        font-size: 21px;
-      }
-      .CCFormRight{
-        background-color: transparent;
-      }
-      .AnswerBox {
-        padding:5px;
-        font-size: 14px;
-      }
-      .LocationRowWrap .BlT2 {
-        margin-bottom: 15px;
-      }
-      .FormButton{
-        padding: 10px;
-      }
-      .ppT2 {
-        margin-bottom: 20px;
-        font-size: 25px;
-      }
-      .propertyFormBox .InputItem input, .propertyFormBox .InputItem select {
-        padding: 12px 20px;
-     
-      }
-      .Txt17 {
-        margin-bottom: 15px;
-        font-size: 17px;
-      }
-      .DetSlContentBox{
-        align-items: center;
-        text-align: center;
-      }
-      .mtm{
-        margin-top: 15px !important;
-      }
-      .scrolledOne.MainHeader {
-        background-color: #1d1d1d !important ;
-        backdrop-filter: blur(50px);
-      }
-      #map{
-        margin-top: 15px;
-      }
-      .FixedHeight img{
-        height: auto !important;
-      }
-      .zsiq-float.zsiq-flexM {
-        bottom: 80px;
-      }
-      .slick-dots li {
-        width: 15px;
-        height: 15px;
-        margin:0 3px;
-      }
-      .FullScreenBanner{
-        min-height: 80vh;
-      }
-      .DetHero {
-        height: auto !important;
-      }
-      .slick-slider{
-        margin: 0 -15px !important;
-      }
-      .row.second{
-        flex-direction: row-reverse;
-      }
-      .MainFoundersDetails .BlT3 {
-        font-size: 16px;
-      }
-      .VisionMissionBox .VmT5{
-        font-size: 16px;
-      }
-      .BlT3 {
-        font-size: 16px;
-      }
-      .PrDetSliderBox {
-        margin-left: 0px;
-        margin-right: 0px;
-      }
-      .AmnBoxTitle span{
-        font-size: 18px;
-      }
-      .AmnIcon {
-        width: 40px;
-        height: 40px;
-      }
-      .AmnKeyBoxLeft {
-        width: 50px;
-      }
-      .AmnKeyBoxRight {
-        font-size: 16px;
-      }
-      .FxdHgtImage img ,
-      .AbSliderItem img{
-        height: 200px !important;
-      }
-      .PrStatus{
-        margin-bottom: 8px;
-      }
-      .BlT1A {
-        font-size: 22px;
-      }
-      .BlT2B {
-        font-size: 16px;
-        margin-bottom: 15px;
-      }
-      .FullScreenBanner {
-        min-height: auto;
-        overflow:hidden;
-      }
-      
-      .TxtBig{
-        font-size: 80px;
-      }
-      .SmallSizeTxt{
-        font-size: 17px;
-        max-width: 90%;
-      }
-      .PayBlockBx{
-        padding: 15px;
-        margin-bottom: 15px;
-      }
-      .PayBlockBxHdr{
-        font-size: 15px;
-      }
-      .PaymentDetBoxT1 {
-        margin-bottom: 15px;
-        font-size: 18px;
-      }
-      .galleryBoxRow.container-fluid {
-        padding:20px 15px;
-      }
-      .galleryBoxRow .BlT2 {
-        font-size: 20px;
-        margin-bottom: 15px;
-      }
-      .VideoD .Txt2{
-        font-size: 25px;
-      }
-      .SmallSizeTxt {
-        max-width: 90%;
-        font-size: 16px;
-        margin:10px auto;
-      }
-      .FullScreenBanner video {
-        min-height: 90vh !important;
-        max-height: 90vh !important;
-      }
-      .galleryBoxRow .slick-dots{
-        display: none !important;
-      }
-      .PayBlockBxHdr.VmT5::after{
-        width: 18px;
-        height: 18px;
-      }
-      .PrStatus {
-        padding: 8px 10px 8px 25px;
-        font-size: 13px;
-      }
-      .PrStatus::before {
-        width: 7px;
-        height: 7px;
-      }
+  .m-only {
+    display: block !important;
   }
+
+  .d-only {
+    display: none !important;
+  }
+
+  .menu-open .m-only,
+  .form-open .m-only {
+    display: none !important;
+  }
+
+  body {
+    position: relative;
+    overflow-x: hidden !important;
+  }
+
+  html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .Txt2 {
+    font-size: 22px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+  .Link1 {
+    min-width: 120px;
+    padding: 8px 20px;
+  }
+
+  .Txt3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .HeaderBox {
+    padding: 10px 0px;
+  }
+
+  .Link4 {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .MenuClick::after {
+    content: none;
+  }
+
+  .MenuClick {
+    width: 24px;
+    height: 17px;
+  }
+
+  .MenuMiddle ul a {
+    margin-bottom: 15px;
+    font-size: 19px;
+  }
+
+  .MenuHd {
+    margin-bottom: 40px;
+  }
+
+  .MenuMiddle {
+    margin-bottom: 40px;
+  }
+
+  .FormPopUp {
+    padding: 20px;
+  }
+
+  /* .FormBox input, */
+  .FormBox input[type="text"],
+  .FormBox input[type="number"],
+  .FormBox input[type="email"],
+  .FormBox textarea {
+    margin-bottom: 10px;
+    padding: 13px 20px;
+  }
+
+  .CustomPhoneInput {
+    margin-bottom: 10px;
+    padding: 13px 20px;
+  }
+
+  .FormPopUp .CfT2 {
+    font-size: 20px;
+  }
+
+  .closeBtn {
+    width: 20px;
+    height: 20px;
+  }
+
+  .Txt1 {
+    margin-bottom: 10px;
+  }
+
+  .ChatBoat {
+    padding: 13px 15px;
+    bottom: 110px;
+  }
+
+  .HeroBanner2Wrap {
+    padding: 0;
+    margin: 0 -15px;
+    overflow: hidden;
+  }
+
+  body .slick-next,
+  body .slick-prev {
+    display: none !important;
+  }
+
+  .FtSliderContent .Txt2 {
+    font-size: 22px;
+  }
+
+  .FtSliderContent .Txt3 {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+
+  .BannerTextBox .col-md-4 {
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  body .slick-dots li button::before {
+    font-size: 12px;
+  }
+
+  .HbT1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .HbT2,
+  .HbT3 {
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+
+  .HbT4 {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+
+  .HbT4 br {
+    display: none;
+  }
+
+  .pd-common {
+    padding: 25px 0;
+  }
+
+  .St2 {
+    font-size: 22px;
+  }
+
+  .St3 {
+    margin-bottom: 15px;
+  }
+
+  .SlT2 {
+    margin-bottom: 5px;
+    font-size: 17px;
+  }
+
+  .SldSliderItemDesc .text-right {
+    text-align: left !important;
+  }
+
+  .SoldOutSlider {
+    margin: 0 -15px;
+    overflow: hidden;
+  }
+
+  .SldSliderItem {
+    margin-right: 15px;
+  }
+
+  .CfT2 {
+    font-size: 22px;
+  }
+
+  .FtrT1 {
+    color: #fff;
+    border-bottom:
+      1px solid #ffffff1a;
+    margin-bottom: 30px;
+    padding:
+      20px 0;
+    font-size: 18px;
+  }
+
+  .FtrRow .col-md-2 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+
+  .NewsletterBox {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .FooterBottom {
+    padding-bottom: 90px;
+    text-align: center;
+  }
+
+  .socialMediaLinksFlex {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .FooterLogo {
+    max-width: 170px;
+  }
+
+  .HdT2 {
+    font-size: 22px;
+  }
+
+  .PageHeaderTp1 {
+    padding: 30px 15px;
+    height: auto !important;
+  }
+
+  .HdT3 {
+    font-size: 16px;
+  }
+
+  .PageHeaderTp1 br,
+  .CfT2 br {
+    display: none;
+  }
+
+  .VmT1 {
+    font-size: 22px;
+  }
+
+  .VmT2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .VmT3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .VmT4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .FounderName {
+    font-size: 18px;
+  }
+
+  .FounderPosition {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  .FounderSlider,
+  .OurPeopleBox {
+    margin-top: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+    overflow: hidden;
+  }
+
+  .PT1 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+  .FtrProperties {
+    margin-top: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .BlT2 {
+    font-size: 22px;
+  }
+
+  .BlT3 {
+    margin-bottom: 10px;
+  }
+
+  .LtT2 {
+    font-size: 18px;
+  }
+
+  .BlogPostWrap .text-right {
+    text-align: left !important;
+  }
+
+  .Link6 {
+    padding: 8px 15px;
+  }
+
+  .ViewAll {
+    margin-top: 20px;
+  }
+
+  .blogLists .col-md-4 {
+    margin-bottom: 15px;
+  }
+
+  .CntPageHead {
+    height: 55vh !important;
+    text-align: center;
+  }
+
+  .CT1 {
+    padding: 15px;
+    font-size: 23px;
+  }
+
+  .Ct3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .MidRow1 {
+    margin-bottom: 15px;
+  }
+
+  .PadBox1 {
+
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .LcBoxT1 {
+    font-size: 16px;
+  }
+
+  .Spacer {
+    opacity: 1;
+    margin: 20px 0;
+  }
+
+  .Ft1 {
+    margin-bottom: 22px;
+    font-size: 22px;
+  }
+
+  .Accordion {
+    margin-bottom: 10px;
+    padding: 15px 30px 15px 15px;
+    font-size: 16px;
+  }
+
+  .AccordionAnswer {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .Accordion::after {
+    font-size: 22px;
+    right: 10px;
+  }
+
+  .ButtonsBox1 a {
+    margin-right: 5px;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .ButtonsBox1 {
+    padding: 10px;
+  }
+
+  .PlayIcon {
+    width: 20px;
+    height: 25px;
+  }
+
+  .PlayIconBox {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto 20px;
+  }
+
+  .Det2T1 {
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .Det2T1.mb {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .DetBoxContent {
+    width: 100%;
+    height: auto;
+    max-height: 500vh;
+    display: flex;
+    position: relative;
+    top: auto;
+    left: auto;
+    background: #1d1d1d;
+  }
+
+  .Tst1 {
+    margin-bottom: 20px;
+    font-size: 23px;
+  }
+
+  .FeatureBoxIcon {
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .FeatureBoxT1 {
+    font-size: 19px;
+  }
+
+  .PrdTxt2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .PlanBoxBottomFlex {
+    padding: 20px 20px 20px;
+  }
+
+  .PlanBox {
+    padding: 20px 20px 0;
+  }
+
+  .ProductDetail3::after {
+    content: none;
+  }
+
+  .PlanRow .BlT1 {
+    padding-top: 20px;
+  }
+
+  .AmnBoxWrap {
+    margin-top: 20px;
+  }
+
+  .listItems .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .ccT1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .InputItem input,
+  .InputItem select {
+    color: #1d1d1d;
+    padding: 15px 15px 15px 130px;
+  }
+
+  .InputItem span {
+    font-size: 12px;
+    top: 16px;
+    left: 20px;
+  }
+
+  .MortageItem {
+    white-space: unset;
+  }
+
+  .MrT2 {
+    font-size: 21px;
+  }
+
+  .CCFormRight {
+    background-color: transparent;
+  }
+
+  .AnswerBox {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .LocationRowWrap .BlT2 {
+    margin-bottom: 15px;
+  }
+
+  .FormButton {
+    padding: 10px;
+  }
+
+  .ppT2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .propertyFormBox .InputItem input,
+  .propertyFormBox .InputItem select {
+    padding: 12px 20px;
+
+  }
+
+  .Txt17 {
+    margin-bottom: 15px;
+    font-size: 17px;
+  }
+
+  .DetSlContentBox {
+    align-items: center;
+    text-align: center;
+  }
+
+  .mtm {
+    margin-top: 15px !important;
+  }
+
+  .scrolledOne.MainHeader {
+    background-color: #1d1d1d !important;
+    backdrop-filter: blur(50px);
+  }
+
+  #map {
+    margin-top: 15px;
+  }
+
+  .FixedHeight img {
+    height: auto !important;
+  }
+
+  .zsiq-float.zsiq-flexM {
+    bottom: 80px;
+  }
+
+  .slick-dots li {
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+  }
+
+  .FullScreenBanner {
+    min-height: 80vh;
+  }
+
+  .DetHero {
+    height: auto !important;
+  }
+
+  .slick-slider {
+    margin: 0 -15px !important;
+  }
+
+  .row.second {
+    flex-direction: row-reverse;
+  }
+
+  .MainFoundersDetails .BlT3 {
+    font-size: 16px;
+  }
+
+  .VisionMissionBox .VmT5 {
+    font-size: 16px;
+  }
+
+  .BlT3 {
+    font-size: 16px;
+  }
+
+  .PrDetSliderBox {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .AmnBoxTitle span {
+    font-size: 18px;
+  }
+
+  .AmnIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .AmnKeyBoxLeft {
+    width: 50px;
+  }
+
+  .AmnKeyBoxRight {
+    font-size: 16px;
+  }
+
+  .FxdHgtImage img,
+  .AbSliderItem img {
+    height: 200px !important;
+  }
+
+  .PrStatus {
+    margin-bottom: 8px;
+  }
+
+  .BlT1A {
+    font-size: 22px;
+  }
+
+  .BlT2B {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .FullScreenBanner {
+    min-height: auto;
+    overflow: hidden;
+  }
+
+  .TxtBig {
+    font-size: 80px;
+  }
+
+  .SmallSizeTxt {
+    font-size: 17px;
+    max-width: 90%;
+  }
+
+  .PayBlockBx {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .PayBlockBxHdr {
+    font-size: 15px;
+  }
+
+  .PaymentDetBoxT1 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .galleryBoxRow.container-fluid {
+    padding: 20px 15px;
+  }
+
+  .galleryBoxRow .BlT2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .VideoD .Txt2 {
+    font-size: 25px;
+  }
+
+  .SmallSizeTxt {
+    max-width: 90%;
+    font-size: 16px;
+    margin: 10px auto;
+  }
+
+  .FullScreenBanner video {
+    min-height: 90vh !important;
+    max-height: 90vh !important;
+  }
+
+  .galleryBoxRow .slick-dots {
+    display: none !important;
+  }
+
+  .PayBlockBxHdr.VmT5::after {
+    width: 18px;
+    height: 18px;
+  }
+
+  .PrStatus {
+    padding: 8px 10px 8px 25px;
+    font-size: 13px;
+  }
+
+  .PrStatus::before {
+    width: 7px;
+    height: 7px;
+  }
+}

@@ -161,6 +161,8 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import countries from '../../public/countries.json';
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
 
 export default function ContactForm() {
     const isDesktop = useMediaQuery("(min-width: 960px)");
@@ -177,6 +179,7 @@ export default function ContactForm() {
     const [errors, setErrors] = useState({});
     const [loading, setLoading] = useState(false);
     const [submitted, setSubmitted] = useState(false);
+    // const [phone, setPhone] = useState();
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -259,7 +262,6 @@ export default function ContactForm() {
                                 {[
                                     { label: 'First Name', name: 'firstName' },
                                     { label: 'Last Name', name: 'lastName' },
-                                    { label: 'Phone Number', name: 'phone' },
                                     { label: 'Email Address', name: 'email' },
                                 ].map(({ label, name }) => (
                                     <div className='col-md-6' key={name}>
@@ -273,6 +275,23 @@ export default function ContactForm() {
                                         {errors[name] && <div style={errorStyle}>{errors[name]}</div>}
                                     </div>
                                 ))}
+
+                                <div className='col-md-6'>
+                                    <PhoneInput
+                                        placeholder="Enter phone number"
+                                        value={formData.phone}
+                                        defaultCountry="AE"
+                                        onChange={(value) => {
+                                            setFormData((prev) => ({
+                                                ...prev,
+                                                phone: value,
+                                            }));
+                                            setErrors((prev) => ({ ...prev, phone: '' }));
+                                        }}
+                                        className="CustomPhoneInput" />
+
+                                    {errors.phone && <div style={errorStyle}>{errors.phone}</div>}
+                                </div>
 
                                 <div className='col-md-12'>
                                     <textarea
