@@ -132,7 +132,10 @@ export default function GalleryRow({ text1, GalleryImages }) {
         </div>
     );
 })}
-                <Lightbox
+                
+
+            </Slider>
+            <Lightbox
                     open={open}
                     close={() => setOpen(false)}
                     plugins={[Video, Thumbnails, Zoom]}
@@ -142,8 +145,6 @@ export default function GalleryRow({ text1, GalleryImages }) {
                         }))
                     }
                 />
-
-            </Slider>
         </div>
     )
 }

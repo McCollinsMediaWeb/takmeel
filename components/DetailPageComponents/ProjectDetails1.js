@@ -212,6 +212,7 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
     const sliderRef = useRef(null);
     const slickRef = useRef(null);
     const [inView, setInView] = useState(false);
+    
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -312,7 +313,7 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
 
 
                         {GalleryImages?.length > 0 ? (
-                            <div className='col-md-12 PrDetSliderBox' ref={sliderRef}>
+                            <div className='col-md-12 PrDetSliderBox FxdHgtImage' ref={sliderRef}>
                                 <Slider ref={slickRef} {...settings}>
                                     {GalleryImages?.map((img, index) => (
                                         <div className='AbSliderItem' key={index} onClick={() => setOpen(true)}>
