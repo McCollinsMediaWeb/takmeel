@@ -76,27 +76,10 @@ export default function PaymentPlanBlock() {
                                                 ease: "easeInOut",
                                             }}
                                         >
-                                            <div className="PayBlockBxHdr">PDC</div>
+                                            <div className="PayBlockBxHdr VmT5">10% on booking</div>
                                         </motion.div>
                                     </motion.div>
-                                    <motion.div className="" variants={itemVariants}>
-                                        <motion.div
-                                            className=""
-                                            animate={{ opacity: [1, 0.3, 1] }}
-                                            transition={{
-                                                duration: 2,
-                                                ease: "easeInOut",
-                                            }}
-                                        >
-                                           <div className="PaymentDetBox">
-                                                <div className="PaymentDetBoxT1 VmT5">10% on booking</div>
-                                                <div className="PaymentDetBoxT1 VmT5">10% after 2 months of booking</div>
-                                                <div className="PaymentDetBoxT1 VmT5">10% after 7-month of booking</div>
-                                                <div className="PaymentDetBoxT1 VmT5">10% after 12 month of booking</div>
-                                                <div className="PaymentDetBoxT1 VmT5">60% on after completion hand over</div>
-                                           </div>
-                                        </motion.div>
-                                    </motion.div>
+                                   
                                 </div>
                             </motion.div>
                             
@@ -120,7 +103,115 @@ export default function PaymentPlanBlock() {
                                                 ease: "easeInOut",
                                             }}
                                         >
-                                            <div className="PayBlockBxHdr">Non-PDC</div>
+                                            <div className="PayBlockBxHdr VmT5">10% after 2 months of booking</div>
+                                        </motion.div>
+                                    </motion.div>
+                                   
+                                </div>
+                            </motion.div>
+                            
+                        </div>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="PayBlockBx bg2">
+                            <motion.div
+                                variants={containerVariants}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, amount: 0.5 }}
+                            >
+                                <div>
+                                    <motion.div variants={itemVariants}>
+                                        <motion.div
+                                            className=""
+                                            animate={{ opacity: [1, 0.3, 1] }}
+                                            transition={{
+                                                duration: 2,
+                                                ease: "easeInOut",
+                                            }}
+                                        >
+                                            <div className="PayBlockBxHdr VmT5">10% after 7-month of booking</div>
+                                        </motion.div>
+                                    </motion.div>
+                                   
+                                </div>
+                            </motion.div>
+                            
+                        </div>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="PayBlockBx bg2">
+                            <motion.div
+                                variants={containerVariants}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, amount: 0.5 }}
+                            >
+                                <div>
+                                    <motion.div variants={itemVariants}>
+                                        <motion.div
+                                            className=""
+                                            animate={{ opacity: [1, 0.3, 1] }}
+                                            transition={{
+                                                duration: 2,
+                                                ease: "easeInOut",
+                                            }}
+                                        >
+                                            <div className="PayBlockBxHdr VmT5">10% after 12 month of booking</div>
+                                        </motion.div>
+                                    </motion.div>
+                                   
+                                </div>
+                            </motion.div>
+                            
+                        </div>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="PayBlockBx bg2">
+                            <motion.div
+                                variants={containerVariants}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, amount: 0.5 }}
+                            >
+                                <div>
+                                    <motion.div variants={itemVariants}>
+                                        <motion.div
+                                            className=""
+                                            animate={{ opacity: [1, 0.3, 1] }}
+                                            transition={{
+                                                duration: 2,
+                                                ease: "easeInOut",
+                                            }}
+                                        >
+                                            <div className="PayBlockBxHdr VmT5">60% on after completion hand over</div>
+                                        </motion.div>
+                                    </motion.div>
+                                   
+                                </div>
+                            </motion.div>
+                            
+                        </div>
+                    </div>
+                    {/* <div className="col-md-4">
+                        <div className="PayBlockBx bg2">
+                            <motion.div
+                                variants={containerVariants}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, amount: 0.5 }}
+                            >
+                                <div>
+                                    <motion.div variants={itemVariants}>
+                                        <motion.div
+                                            className=""
+                                            animate={{ opacity: [1, 0.3, 1] }}
+                                            transition={{
+                                                duration: 2,
+                                                ease: "easeInOut",
+                                            }}
+                                        >
+                                            <div className="PayBlockBxHdr VmT5">Non-PDC</div>
                                         </motion.div>
                                     </motion.div>
                                     <motion.div className="" variants={itemVariants}>
@@ -145,7 +236,7 @@ export default function PaymentPlanBlock() {
                             </motion.div>
                             
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
