@@ -502,7 +502,7 @@
         margin-bottom: 15px;
       }
       .PayBlockBxHdr{
-        font-size: 20px;
+        font-size: 15px;
       }
       .PaymentDetBoxT1 {
         margin-bottom: 15px;
@@ -529,5 +529,9 @@
       }
       .galleryBoxRow .slick-dots{
         display: none !important;
+      }
+      .PayBlockBxHdr.VmT5::after{
+        width: 18px;
+        height: 18px;
       }
   }
