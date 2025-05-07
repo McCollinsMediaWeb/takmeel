@@ -2279,3 +2279,21 @@ margin-bottom: 30px;
   background-color: #fff;
   border-radius: 10px;
 }
+.galleryBoxRow .slick-dots li {
+  width: 30px;
+  height: 5px;
+}
+.galleryBoxRow .slick-dots li button{
+  width: 30px;
+  height: 5px;
+  background-color: #1d1d1b; 
+  opacity: 0.5;
+  padding: 0;
+  border-radius: 5px;
+}
+.galleryBoxRow .slick-dots li button::before{
+  content: none;
+}
+.galleryBoxRow .slick-dots li.slick-active button{
+opacity: 1;
+}

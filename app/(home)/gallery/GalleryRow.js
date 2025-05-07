@@ -102,7 +102,7 @@ export default function GalleryRow({ text1, GalleryImages }) {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
+                viewport={{ once: true }} // triggers when 50% of it is in view
             >
                 <div className="Txt1 nunito-text text-center mb-1">TAKMEEL</div>
                 <div className="BlT2 text-uppercase text-center">{text1}</div>
@@ -116,7 +116,7 @@ export default function GalleryRow({ text1, GalleryImages }) {
                 variants={randomVariant}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true }}
             >
                 <div className="GalleryImageBox">
                     <Image

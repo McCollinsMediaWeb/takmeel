@@ -527,4 +527,7 @@
         min-height: 90vh !important;
         max-height: 90vh !important;
       }
+      .galleryBoxRow .slick-dots{
+        display: none !important;
+      }
   }
