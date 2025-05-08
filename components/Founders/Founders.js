@@ -221,7 +221,7 @@ export default function Founders() {
                     </div> */}
 
 
-                    
+
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -242,148 +242,196 @@ export default function Founders() {
                     >
                         <div className="OurPeopleBox">
                             <Slider {...settings1}>
-                            <div className="FounderItem">
-                                    <div className="FounderItemBox">
-                                        <div className="FounderImageBox">
-                                            <Image
-                                                src={f1}
-                                                width={416}
-                                                height={524}
-                                                layout="responsive"
-                                                alt="Takmeel"
-                                            />
-                                        </div>
-                                        <div className="FounderDetails">
-                                            <div className="FounderName">Mian Asad Bashir</div>
-                                            <div className="FounderPosition">Founder & Chairman</div>
-                                            {/* <div className="text-right">
+                                <motion.div
+                                   initial= {{ opacity: 0 }}
+                                   whileInView= {{ opacity: 1 }}
+                                   transition= {{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+                                   viewport= {{ once: false, amount: 0.5 }}
+                                >
+                                    <div className="FounderItem">
+                                        <div className="FounderItemBox">
+                                            <div className="FounderImageBox">
+                                                <Image
+                                                    src={f1}
+                                                    width={416}
+                                                    height={524}
+                                                    layout="responsive"
+                                                    alt="Takmeel"
+                                                />
+                                            </div>
+                                            <div className="FounderDetails">
+                                                <div className="FounderName">Mian Asad Bashir</div>
+                                                <div className="FounderPosition">Founder & Chairman</div>
+                                                {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
                                             </div> */}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="FounderItem">
-                                    <div className="FounderItemBox">
-                                        <div className="FounderImageBox">
-                                            <Image
-                                                src={f2}
-                                                width={416}
-                                                height={524}
-                                                layout="responsive"
-                                                alt="Takmeel"
-                                            />
-                                        </div>
-                                        <div className="FounderDetails">
-                                            <div className="FounderName">Sheikh Tariq Ali</div>
-                                            <div className="FounderPosition">Managing Director</div>
-                                            {/* <div className="text-right">
+                                </motion.div>
+                                <motion.div
+                                        initial= {{ opacity: 0, scale: 0.95 }}
+                                        whileInView= {{ opacity: 1, scale:1 }}
+                                        transition= {{ duration: 0.7, ease: "easeInOut", delay: 0.2 }}
+                                        viewport= {{ once: false, amount: 0.5 }}
+                                >
+                                    <div className="FounderItem">
+                                        <div className="FounderItemBox">
+                                            <div className="FounderImageBox">
+                                                <Image
+                                                    src={f2}
+                                                    width={416}
+                                                    height={524}
+                                                    layout="responsive"
+                                                    alt="Takmeel"
+                                                />
+                                            </div>
+                                            <div className="FounderDetails">
+                                                <div className="FounderName">Sheikh Tariq Ali</div>
+                                                <div className="FounderPosition">Managing Director</div>
+                                                {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
                                             </div> */}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                               
-                            <div className="FounderItem">
-                                    <div className="FounderItemBox">
-                                        <div className="FounderImageBox">
-                                            <Image
-                                                src={f6}
-                                                width={416}
-                                                height={524}
-                                                layout="responsive"
-                                                alt="Takmeel"
-                                            />
-                                        </div>
-                                        <div className="FounderDetails">
-                                            <div className="FounderName">Hamza Asad</div>
-                                            <div className="FounderPosition">Executive Director</div>
-                                            {/* <div className="text-right">
+                                </motion.div>
+                                <motion.div
+                                    initial= {{ opacity: 0, x: -30 }}
+                                    whileInView= {{ opacity: 1, x: 0 }}
+                                    transition= {{ duration: 0.8, ease: "anticipate", delay: 0.15 }}
+                                    viewport= {{ once: false, amount: 0.5 }}
+                                >
+                                    <div className="FounderItem">
+                                        <div className="FounderItemBox">
+                                            <div className="FounderImageBox">
+                                                <Image
+                                                    src={f6}
+                                                    width={416}
+                                                    height={524}
+                                                    layout="responsive"
+                                                    alt="Takmeel"
+                                                />
+                                            </div>
+                                            <div className="FounderDetails">
+                                                <div className="FounderName">Hamza Asad</div>
+                                                <div className="FounderPosition">Executive Director</div>
+                                                {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
                                             </div> */}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="FounderItem">
-                                    <div className="FounderItemBox">
-                                        <div className="FounderImageBox">
-                                            <Image
-                                                src={f4}
-                                                width={416}
-                                                height={524}
-                                                layout="responsive"
-                                                alt="Takmeel"
-                                            />
-                                        </div>
-                                        <div className="FounderDetails">
-                                            <div className="FounderName">Shohaib Tariq</div>
-                                            <div className="FounderPosition">General Manager</div>
-                                            {/* <div className="text-right">
+                                </motion.div>
+                                <motion.div
+                                     initial= {{ opacity: 0, rotate: -5 }}
+                                     whileInView=  {{ opacity: 1, rotate: 0 }}
+                                     transition=  {{ duration: 0.6, ease: "easeInOut", delay: 0.2}}
+                                     viewport=  {{ once: false, amount: 0.5 }}
+                                >
+                                    <div className="FounderItem">
+                                        <div className="FounderItemBox">
+                                            <div className="FounderImageBox">
+                                                <Image
+                                                    src={f4}
+                                                    width={416}
+                                                    height={524}
+                                                    layout="responsive"
+                                                    alt="Takmeel"
+                                                />
+                                            </div>
+                                            <div className="FounderDetails">
+                                                <div className="FounderName">Shohaib Tariq</div>
+                                                <div className="FounderPosition">General Manager</div>
+                                                {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
                                             </div> */}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="FounderItem">
-                                    <div className="FounderItemBox">
-                                        <div className="FounderImageBox">
-                                            <Image
-                                                src={f5}
-                                                width={416}
-                                                height={524}
-                                                layout="responsive"
-                                                alt="Takmeel"
-                                            />
-                                        </div>
-                                        <div className="FounderDetails">
-                                            <div className="FounderName">Asim Mustaq</div>
-                                            <div className="FounderPosition">Head of Finance</div>
-                                            {/* <div className="text-right">
+                                </motion.div>
+                                <motion.div
+                                    initial= {{ opacity: 0, scale: 0.9 }}
+                                    whileInView= {{ opacity: 1, scale: 1 }}
+                                    transition=  {{ duration: 0.7, ease: "backOut", delay: 0.3 }}
+                                    viewport=  {{ once: false, amount: 0.5 }}
+                                >
+                                    <div className="FounderItem">
+                                        <div className="FounderItemBox">
+                                            <div className="FounderImageBox">
+                                                <Image
+                                                    src={f5}
+                                                    width={416}
+                                                    height={524}
+                                                    layout="responsive"
+                                                    alt="Takmeel"
+                                                />
+                                            </div>
+                                            <div className="FounderDetails">
+                                                <div className="FounderName">Asim Mustaq</div>
+                                                <div className="FounderPosition">Head of Finance</div>
+                                                {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
                                             </div> */}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="FounderItem">
-                                    <div className="FounderItemBox">
-                                        <div className="FounderImageBox">
-                                            <Image
-                                                src={f7}
-                                                width={416}
-                                                height={524}
-                                                layout="responsive"
-                                                alt="Takmeel"
-                                            />
-                                        </div>
-                                        <div className="FounderDetails">
-                                            <div className="FounderName">Rabia Afsheen</div>
-                                            <div className="FounderPosition">Head of HR</div>
-                                            {/* <div className="text-right">
+                                </motion.div>
+                                <motion.div
+                                    initial= {{ opacity: 0, y: -20 }}
+                                    whileInView= {{ opacity: 1, y: 0 }}
+                                    transition= {{ duration: 0.6, ease: "circOut", delay: 0.1 }}
+                                    viewport= {{ once: false, amount: 0.5 }}
+                                >
+                                    <div className="FounderItem">
+                                        <div className="FounderItemBox">
+                                            <div className="FounderImageBox">
+                                                <Image
+                                                    src={f7}
+                                                    width={416}
+                                                    height={524}
+                                                    layout="responsive"
+                                                    alt="Takmeel"
+                                                />
+                                            </div>
+                                            <div className="FounderDetails">
+                                                <div className="FounderName">Rabia Afsheen</div>
+                                                <div className="FounderPosition">Head of HR</div>
+                                                {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
                                             </div> */}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="FounderItem">
-                                    <div className="FounderItemBox">
-                                        <div className="FounderImageBox">
-                                            <Image
-                                                src={f8}
-                                                width={416}
-                                                height={524}
-                                                layout="responsive"
-                                                alt="Takmeel"
-                                            />
-                                        </div>
-                                        <div className="FounderDetails">
-                                            <div className="FounderName">Rafique Zaman</div>
-                                            <div className="FounderPosition">Head of Project</div>
-                                            {/* <div className="text-right">
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1}}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.5 }}
+                                >
+                                    <div className="FounderItem">
+                                        <div className="FounderItemBox">
+                                            <div className="FounderImageBox">
+                                                <Image
+                                                    src={f8}
+                                                    width={416}
+                                                    height={524}
+                                                    layout="responsive"
+                                                    alt="Takmeel"
+                                                />
+                                            </div>
+                                            <div className="FounderDetails">
+                                                <div className="FounderName">Rafique Zaman</div>
+                                                <div className="FounderPosition">Head of Project</div>
+                                                {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
                                             </div> */}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                
+                                </motion.div>
+
                             </Slider>
                         </div>
                     </motion.div>
