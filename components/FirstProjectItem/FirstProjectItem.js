@@ -151,7 +151,7 @@ export default function FirstProjectItem({
                                         </motion.div>
 
                                         <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
-                                            THE ART OF ELEVATION
+                                        Crafted for Inspired Living
                                         </motion.div>
 
                                         <motion.div className="Txt3 nunito-text SmallSizeTxt" variants={itemVariants}>
