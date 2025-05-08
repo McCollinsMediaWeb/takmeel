@@ -57,7 +57,7 @@ export default function Founders() {
     };
     var settings1 = {
         dots: true,
-        speed: 500,
+        speed: 1000,
         slidesToShow: 4,
         slidesToScroll: 2,
         initialSlide: 0,
@@ -243,10 +243,10 @@ export default function Founders() {
                         <div className="OurPeopleBox">
                             <Slider {...settings1}>
                                 <motion.div
-                                   initial= {{ opacity: 0 }}
-                                   whileInView= {{ opacity: 1 }}
-                                   transition= {{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-                                   viewport= {{ once: false, amount: 0.5 }}
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1}}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <div className="FounderItem">
                                         <div className="FounderItemBox">
@@ -270,10 +270,10 @@ export default function Founders() {
                                     </div>
                                 </motion.div>
                                 <motion.div
-                                        initial= {{ opacity: 0, scale: 0.95 }}
-                                        whileInView= {{ opacity: 1, scale:1 }}
-                                        transition= {{ duration: 0.7, ease: "easeInOut", delay: 0.2 }}
-                                        viewport= {{ once: false, amount: 0.5 }}
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1}}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <div className="FounderItem">
                                         <div className="FounderItemBox">
@@ -297,10 +297,10 @@ export default function Founders() {
                                     </div>
                                 </motion.div>
                                 <motion.div
-                                    initial= {{ opacity: 0, x: -30 }}
-                                    whileInView= {{ opacity: 1, x: 0 }}
-                                    transition= {{ duration: 0.8, ease: "anticipate", delay: 0.15 }}
-                                    viewport= {{ once: false, amount: 0.5 }}
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1}}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <div className="FounderItem">
                                         <div className="FounderItemBox">
@@ -324,10 +324,10 @@ export default function Founders() {
                                     </div>
                                 </motion.div>
                                 <motion.div
-                                     initial= {{ opacity: 0, rotate: -5 }}
-                                     whileInView=  {{ opacity: 1, rotate: 0 }}
-                                     transition=  {{ duration: 0.6, ease: "easeInOut", delay: 0.2}}
-                                     viewport=  {{ once: false, amount: 0.5 }}
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1}}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <div className="FounderItem">
                                         <div className="FounderItemBox">
@@ -351,10 +351,10 @@ export default function Founders() {
                                     </div>
                                 </motion.div>
                                 <motion.div
-                                    initial= {{ opacity: 0, scale: 0.9 }}
-                                    whileInView= {{ opacity: 1, scale: 1 }}
-                                    transition=  {{ duration: 0.7, ease: "backOut", delay: 0.3 }}
-                                    viewport=  {{ once: false, amount: 0.5 }}
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1}}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <div className="FounderItem">
                                         <div className="FounderItemBox">
@@ -378,10 +378,10 @@ export default function Founders() {
                                     </div>
                                 </motion.div>
                                 <motion.div
-                                    initial= {{ opacity: 0, y: -20 }}
-                                    whileInView= {{ opacity: 1, y: 0 }}
-                                    transition= {{ duration: 0.6, ease: "circOut", delay: 0.1 }}
-                                    viewport= {{ once: false, amount: 0.5 }}
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1}}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <div className="FounderItem">
                                         <div className="FounderItemBox">

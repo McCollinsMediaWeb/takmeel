@@ -22,7 +22,7 @@ export default function Faqs() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.5 }}
           >
-            Freaquently Asked Questions
+            Frequently Asked Questions
           </motion.div>
         </div>
       </section>
