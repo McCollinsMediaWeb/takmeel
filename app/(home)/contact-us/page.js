@@ -480,7 +480,7 @@ export default function ContactUs() {
                         <span style={{ fontSize: "20px" }}>
                           <img src="/whatsapp-black-icon.png" />
                         </span>
-                        <a href="tel:+971523749615" style={{ color: "#333", textDecoration: "none" }}>
+                        <a href="https://wa.me/971523749615?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties" style={{ color: "#333", textDecoration: "none" }}>
                           +971 523749615
                         </a>
                       </div>
