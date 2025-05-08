@@ -2435,8 +2435,8 @@ transition: 0.5s;
 .DifBox1 .row:last-child {
   margin-bottom: 0;
 }
-.form-open #zsalesiq ,
-.menu-open  #zsalesiq {
+.form-open [data-id="zsalesiq"],
+.menu-open [data-id="zsalesiq"] {
   display: none !important;
 }
 .FormPopUp textarea{
