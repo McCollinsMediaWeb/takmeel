@@ -2435,4 +2435,11 @@ transition: 0.5s;
 .DifBox1 .row:last-child {
   margin-bottom: 0;
 }
+.form-open #zsalesiq ,
+.menu-open  #zsalesiq {
+  display: none !important;
+}
+.FormPopUp textarea{
+  max-height: 80px;
+}
 
