@@ -57,13 +57,13 @@ export default function Founders() {
     };
     var settings1 = {
         dots: true,
-        speed: 1000,
+        speed: 2500,
         slidesToShow: 4,
         slidesToScroll: 2,
         initialSlide: 0,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 3500,
+        autoplaySpeed: 2500,
         responsive: [
             {
                 breakpoint: 1024,
