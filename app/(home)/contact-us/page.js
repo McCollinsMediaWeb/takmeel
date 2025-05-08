@@ -376,11 +376,10 @@ export default function ContactUs() {
           >
             <div className='CfT2 contact-team-header'>Contact Our Team</div>
             <div className="row"  >
-              {/* <div className='CfT2 contact-team-header'>Contact Our Team</div> */}
               {/* <div className="col-md-12 PadBox1"> */}
 
-              <div className="col-md-6" style={{ marginTop: '30px' }}>
-                <MapComponent {...mapData} />
+              <div className="col-md-6" style={{ marginTop: '19px'}}>
+                <MapComponent {...mapData} desktopHeight="600px" />
               </div>
 
 

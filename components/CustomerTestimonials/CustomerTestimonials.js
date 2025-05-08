@@ -63,21 +63,29 @@ export default function CustomerTestimonials({ heading, subheading, testimonials
     }
 
     // Filter for slider (images only) and lightbox (videos only)
-    const coverImages = testimonials.filter(item => item.type === "image")
-    const videoSlides = testimonials
-        .filter(item => item.type === "video")
-        .map(item => ({
-            type: "video",
-            sources: [
-                {
-                    src: `/${item.src}`,
-                    type: "video/mp4",
-                },
-            ],
-            alt: item.alt,
-            autoplay: true,
-            controls: true,
-        }));
+    const coverImages = testimonials.map(item => ({
+        src: item.poster,
+        alt: item.alt
+    }));
+
+    const videoSlides = testimonials.map(item => ({
+        type: "video",
+        sources: [
+            {
+                src: `/${item.src}`,
+                type: "video/mp4",
+            },
+        ],
+        poster: `/${item.poster}`,
+        alt: item.alt,
+        autoPlay: true,
+        loop: false,
+        controls: true,
+        props: {
+            muted: true,
+            playsInline: true,
+        },
+    }));
 
     return (
         <div className="galleryBoxRow pd-common container-fluid bg2">

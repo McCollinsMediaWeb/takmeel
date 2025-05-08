@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 
-const MapComponent = ({ apiKey, center, zoom, styles, nearByPlaces }) => {
+const MapComponent = ({ apiKey, center, zoom, styles, nearByPlaces, desktopHeight = "630px" }) => {
     const [isScriptLoaded, setIsScriptLoaded] = useState(false);
     const isDesktop = useMediaQuery("(min-width: 960px)");
 
@@ -353,7 +353,7 @@ ${details.website
             <div
                 id="map"
                 style={{
-                    height: isDesktop ? "630px" : "280px",
+                    height: isDesktop ? desktopHeight : "280px",
                     width: "100%",
                     marginBottom: "20px",
                 }}

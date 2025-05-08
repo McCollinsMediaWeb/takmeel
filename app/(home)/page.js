@@ -9,19 +9,45 @@ import MainMapComponent from "@/components/MainMapComponent/MainMapComponent";
 import FirstProjectItem from "@/components/FirstProjectItem/FirstProjectItem";
 import CustomerTestimonials from "@/components/CustomerTestimonials/CustomerTestimonials";
 export default function Home() {
+  // const GalleryData2 = {
+  //   heading: "Takmeel – A Voice of Trust",
+  //   subheading: "What Our Clients Say About Us",
+  //   testimonials: [
+  //     { type: "image", src: "t1cover.jpg", alt: "Client 1 Testimonial" },
+  //     { type: "image", src: "t2cover.jpg", alt: "Client 2 Testimonial" },
+  //     { type: "image", src: "t3cover.jpg", alt: "Client 3 Testimonial" },
+  //     { type: "video", src: "t1.mp4", alt: "Client 1 Video Testimonial" },
+  //     { type: "video", src: "t2.mp4", alt: "Client 2 Video Testimonial" },
+  //     { type: "video", src: "t3.mp4", alt: "Client 3 Video Testimonial" }
+  //   ]
+  // };
+
   const GalleryData2 = {
     heading: "Takmeel – A Voice of Trust",
     subheading: "What Our Clients Say About Us",
     testimonials: [
-      { type: "image", src: "t1cover.jpg", alt: "Client 1 Testimonial" },
-      { type: "image", src: "t2cover.jpg", alt: "Client 2 Testimonial" },
-      { type: "image", src: "t3cover.jpg", alt: "Client 3 Testimonial" },
-      { type: "video", src: "t1.mp4", alt: "Client 1 Video Testimonial" },
-      { type: "video", src: "t2.mp4", alt: "Client 2 Video Testimonial" },
-      { type: "video", src: "t3.mp4", alt: "Client 3 Video Testimonial" }
+      {
+        type: "video",
+        src: "t1.mp4",
+        alt: "Client 1 Video Testimonial",
+        poster: "t1cover.jpg"
+      },
+      {
+        type: "video",
+        src: "t2.mp4",
+        alt: "Client 2 Video Testimonial",
+        poster: "t2cover.jpg"
+      },
+      {
+        type: "video",
+        src: "t3.mp4",
+        alt: "Client 3 Video Testimonial",
+        poster: "t3cover.jpg"
+      }
     ]
   };
-  
+
+
   return (
     <div>
       <div>
@@ -44,10 +70,10 @@ export default function Home() {
         <ProjectItem backgroundImage="Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg" backgroundImageMobile="Golf-View-Living-Villas/divine-golf-villas-Facade-Mobile 03.jpg" text1="Featured Properties" text2="Golf View Living Villas" text3="Ajman" tagline="Private Villas Surrounded by Nature’s Calm" url="golf-view-living-villas" projectStatus="Sold Out" />
         <MainMapComponent MapImageDesk="map6.svg" MapImageMobile="mapmobile.svg" />
         <HomeAbout />
-       
+
         {/* <SoldOutBox/> */}
         <ContactForm />
-        <CustomerTestimonials  {...GalleryData2}/>
+        <CustomerTestimonials  {...GalleryData2} />
       </div>
     </div>
 
