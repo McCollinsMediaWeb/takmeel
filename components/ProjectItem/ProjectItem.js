@@ -524,6 +524,10 @@ export default function ProjectItem({
                             viewport={{ once: true, amount: 0.5 }}
                         >
                             <div>
+                               
+                                <motion.div className="Txt1" variants={itemVariants}>
+                                    {text1}
+                                </motion.div>
                                 {projectStatus && (
                                     <motion.div className="Txt1" variants={itemVariants}>
                                         <div>
@@ -531,10 +535,6 @@ export default function ProjectItem({
                                         </div>
                                     </motion.div>
                                 )}
-                                <motion.div className="Txt1" variants={itemVariants}>
-                                    {text1}
-                                </motion.div>
-
                                 <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
                                     {text2}
                                 </motion.div>

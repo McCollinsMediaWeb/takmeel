@@ -17,9 +17,9 @@ export default function FooterBottom() {
                                 <a href='https://www.facebook.com/TakmeelRealEstateDevelopmentLLC' target='_blank'><span className='ScIcon facebook'>&nbsp;</span></a>
                                 <a href='https://www.instagram.com/takmeelrealestatedevelopment/' target='_blank'><span className='ScIcon instagram'>&nbsp;</span></a>
                                 <a href='https://www.linkedin.com/company/takmeel-real-estate-development/?viewAsMember=true' target='_blank'><span className='ScIcon linkedIn'>&nbsp;</span></a>
-                                {/* <a href='#' target='_blank'><span className='ScIcon tiktok'>&nbsp;</span></a>
-                                <a href='#' target='_blank'><span className='ScIcon youtube'>&nbsp;</span></a>
-                                <a href='#' target='_blank'><span className='ScIcon x'>&nbsp;</span></a> */}
+                                {/* <a href='#' target='_blank'><span className='ScIcon tiktok'>&nbsp;</span></a> */}
+                                <a href='https://www.youtube.com/@takmeelrealestatedeveloper9001/featured' target='_blank'><span className='ScIcon youtube'>&nbsp;</span></a>
+                                {/* <a href='#' target='_blank'><span className='ScIcon x'>&nbsp;</span></a> */}
                             </div>
                         </div>
                     </div>

@@ -1369,12 +1369,12 @@ body .slick-prev::before {
 
 
 .ButtonsBox1 {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 15px;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  /* padding: 15px; */
   border-radius: 25px;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: end;
 }
 
 .ButtonsBox1 a {
@@ -2245,13 +2245,13 @@ input[type=number] {
   /* background-color: #b5123c; */
   background-color: #fff;
   color: #1d1d1b;
-  padding: 8px 15px;
+  padding: 7px 12px;
   border-radius: 20px;
-  margin-bottom: 15px;
+  margin: 0px 0px 5px 0px;
   font-size: 15px;
   position: relative;
 
-  padding-left: 30px;
+  padding-left: 25px;
   /* background-image: url(../public/soldout.svg);
   width: 60px;
   height: 60px;
@@ -2263,8 +2263,8 @@ input[type=number] {
 
 .PrStatus::before {
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   position: absolute;
   top: 11px;
@@ -2405,4 +2405,16 @@ input[type=number] {
 }
 .AbsPos:hover{
   background-color: rgba(29, 29, 27, 1);
+}
+
+@media only screen and (max-width: 1200px) {
+  .HeaderBoxLeft,
+  .HeaderBoxRight{
+    flex: 0 0 250px;
+    max-width: 250px;
+  }
+  .HeaderBoxRight{
+    display: flex;
+    justify-content: end;
+  }
 }
