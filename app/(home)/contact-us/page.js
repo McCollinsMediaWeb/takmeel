@@ -353,7 +353,7 @@ export default function ContactUs() {
       </section>
 
 
-      <section className="CntMiddleBox pd-common">
+      <section className="pd-common">
         <style>
           {`
             @media (max-width: 768px) {
@@ -374,23 +374,23 @@ export default function ContactUs() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.5 }}
           >
-            <div className='CfT2 contact-team-header'>Contact Our Team</div>
-            <div className="row"  >
+
+            <div className="row" style={{ display: 'flex', alignItems: 'center', minHeight: '100vh', justifyContent: 'space-between' }} >
               {/* <div className="col-md-12 PadBox1"> */}
 
-              <div className="col-md-6" style={{ marginTop: '19px'}}>
-                <MapComponent {...mapData} desktopHeight="600px" />
+              <div className="col-md-5">
+                <MapComponent {...mapData} desktopHeight="800px" />
               </div>
 
 
-              <div className="col-md-6" style={{ marginTop: '40px' }}>
-
-
+              <div className="col-md-6">
+                <div className='CfT2 contact-team-header mb-5'>Contact Our Team</div>
                 <div
                   style={{
                     display: "flex",
                     flexDirection: "column",
                     gap: "30px",
+                    marginTop: '20px'
                   }}
                 >
                   {/* Timings Section */}
