@@ -59,7 +59,7 @@ export default function GolfViewLivingApartments() {
       // "gl2.jpg",
       "Golf-View-Living-Apartments/Golf-View-Living-Apartment-Image01.jpg",
       "Golf-View-Living-Apartments/Golf-View-Living-Apartment-Image02.jpg",
-      "gl4.jpg",
+      "glf1.jpg",
       "gl3.jpg",
     ],
   };
