@@ -139,20 +139,21 @@ export default function DivineLiving() {
 
   const DataProjectDetails6 = [
     {
-      amenity: "Indoor",
+      // amenity: "Indoor",
       values: [
         { iconNo: 19, name: "Swimming Pool" },
         { iconNo: 29, name: "Children's Pool" },
         { iconNo: 28, name: "Children's Play Area" },
         { iconNo: 26, name: "Indoor Gym" },
-      ]
-    },
-    {
-      amenity: "Outdoor",
-      values: [
         { iconNo: 38, name: "Landscaped Garden" },
       ]
-    }
+    },
+    // {
+    //   amenity: "Outdoor",
+    //   values: [
+    //     { iconNo: 38, name: "Landscaped Garden" },
+    //   ]
+    // }
   ];
 
   const DataProjectDetails7 = {
@@ -302,19 +303,19 @@ export default function DivineLiving() {
   return (
     <div>
       <DetailHero {...detailHeroData} />
-            <ProjectDetails1  {...DataProjectDetails1} />
-            <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
-            <PaymentPlanBlock/>
-            <ProjectDetails2  {...DataProjectDetails2} />
-            {/* <ProjectDetails3 mainimage1="ovr2.jpg" data={DataProjectDetails3} /> */}
-            
-            <ProjectDetails4  {...DataProjectDetails4} />
-            {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
-           
-      
-            <ProjectDetails7 mapimage="dldesk.jpg" mobileMapImage="dlmob.jpg" {...DataProjectDetails7} />
-            <CostCalculator />
-            <PropertyForm projectName="Divine Living" />
+      <ProjectDetails1  {...DataProjectDetails1} />
+      <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
+      <PaymentPlanBlock />
+      <ProjectDetails2  {...DataProjectDetails2} />
+      {/* <ProjectDetails3 mainimage1="ovr2.jpg" data={DataProjectDetails3} /> */}
+
+      <ProjectDetails4  {...DataProjectDetails4} />
+      {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
+
+
+      <ProjectDetails7 mapimage="dldesk.jpg" mobileMapImage="dlmob.jpg" {...DataProjectDetails7} />
+      <CostCalculator />
+      <PropertyForm projectName="Divine Living" />
     </div>
   );
 }
