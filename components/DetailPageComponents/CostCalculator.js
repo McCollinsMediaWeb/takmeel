@@ -333,12 +333,32 @@ export default function CostCalculator({ }) {
 
                             <div className='formButtonsWrap'>
                                 <div className='FormButtons'>
-                                    <div className='FormButton FormButton1'>
+                                    <div className='FormButton FormButton1 toggleForm'>
                                         <span className='position-relative'>Apply Now<span className='btn1'>&nbsp;</span></span>
                                     </div>
-                                    <div className='FormButton FormButton2'>
+                                    {/* <div onClick={() => window.open("https://wa.me/971523749615?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties")} className='FormButton FormButton2'>
                                         <span className='position-relative'><span className='btn2'>&nbsp;</span>WhatsApp</span>
-                                    </div>
+                                    </div> */}
+
+                                    <a
+                                        href="https://wa.me/971523749615?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="FormButton FormButton2"
+                                        style={{
+                                            textDecoration: 'none',
+                                            color: 'inherit',
+                                            cursor: 'pointer',
+                                            display: 'inline-block',
+                                        }}
+                                    >
+                                        <span className="position-relative">
+                                            <span className="btn2">&nbsp;</span>
+                                            WhatsApp
+                                        </span>
+                                    </a>
+
+
                                 </div>
                             </div>
                         </div>
