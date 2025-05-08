@@ -210,7 +210,7 @@ export default function AboutVisionMission2() {
                                 viewport={{ once: true, amount: 0.5 }}
                             >
                                 <Image
-                                    src="/abt5.jpg"
+                                    src="/abt6.jpg"
                                     width={1000}
                                     height={562}
                                     layout="responsive"
