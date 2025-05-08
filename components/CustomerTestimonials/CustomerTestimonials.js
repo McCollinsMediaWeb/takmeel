@@ -68,9 +68,16 @@ export default function CustomerTestimonials({ heading, subheading, testimonials
         .filter(item => item.type === "video")
         .map(item => ({
             type: "video",
-            src: `/${item.src}`,
-            alt: item.alt
-        }))
+            sources: [
+                {
+                    src: `/${item.src}`,
+                    type: "video/mp4",
+                },
+            ],
+            alt: item.alt,
+            autoplay: true,
+            controls: true,
+        }));
 
     return (
         <div className="galleryBoxRow pd-common container-fluid bg2">

@@ -94,7 +94,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                         viewport={{ once: true, amount: 0.5 }}
                                     >
-                                        <div className="AmnBoxTitle">
+                                        {/* <div className="AmnBoxTitle">
                                             {section?.amenity ? (
                                                 <span className="AmnBoxTitleSpan">{section.amenity}</span>
                                             ) : (
@@ -102,7 +102,13 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     Placeholder
                                                 </span>
                                             )}
-                                        </div>
+                                        </div> */}
+
+                                        {section?.amenity && (
+                                            <div className="AmnBoxTitle">
+                                                <span className="AmnBoxTitleSpan">{section.amenity}</span>
+                                            </div>
+                                        )}
                                     </motion.div>
                                     <div className='AmnBoxLists'>
                                         <div className='listItems'>

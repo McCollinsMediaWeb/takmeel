@@ -6,6 +6,7 @@ import FAQbox from "@/components/FAQbox/FAQbox";
 import b1 from "../../../public/cnt.jpg";
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
+import MapComponent from "@/components/MapComponent/MapComponent";
 
 export default function ContactUs() {
 
@@ -110,6 +111,115 @@ export default function ContactUs() {
     fontSize: '14px',
     marginTop: '10px',
   };
+
+  const mapData = {
+    apiKey: "AIzaSyCBtGUl2z4uc5HX9e7eMmzIHalH2a99Oz4",
+    center: { lat: 25.184791188866857, lng: 55.279302562882066, place_id: "ChIJGZZhWYtpXz4RJ_-KcyiQQYI" },
+    zoom: 10,
+    styles: [
+      {
+        "featureType": "water",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "color": "#5fb6c5" }
+        ]
+      },
+      {
+        "featureType": "landscape.natural",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "color": "#dfeee9" }
+        ]
+      },
+      {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "color": "#f2f3f2" }
+        ]
+      },
+      {
+        "featureType": "poi.park",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "color": "#b3d4af" }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "color": "#ffffff" }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "geometry.stroke",
+        "stylers": [
+          { "visibility": "off" }
+        ]
+      },
+      {
+        "featureType": "transit",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "color": "#e3e4e2" }
+        ]
+      },
+      {
+        "featureType": "poi.business",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "color": "#f7f7f7" }
+        ]
+      },
+      {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+          { "color": "#f2f3f2" }
+        ]
+      },
+      {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          { "color": "#666666" }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          { "color": "#444444" }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          { "color": "#444444" }
+        ]
+      },
+      {
+        "featureType": "transit.station",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          { "color": "#444444" }
+        ]
+      },
+      {
+        "featureType": "all",
+        "elementType": "labels.icon",
+        "stylers": [
+          { "visibility": "on" }
+        ]
+      }
+    ],
+    nearByPlaces: [
+      { name: "Sheikh Ammar Bin Humaid St", place_id: "EjlTaGVpa2ggQW1tYXIgQmluIEh1bWFpZCBTdCAtIEFqbWFuIC0gVW5pdGVkIEFyYWIgRW1pcmF0ZXMiLiosChQKEglFE_Ecw_f1PhGmK-GgfIWUIBIUChIJHwyp6rZXXz4RerixWbtcrRE", location: { lat: 25.423142001648724, lng: 55.514235100948774 } },
+    ]
+  }
 
   return (
     <div>
@@ -264,11 +374,19 @@ export default function ContactUs() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.5 }}
           >
-
-            <div className="row">
-              <div className='CfT2 contact-team-header'>Contact Our Team</div>
+            <div className='CfT2 contact-team-header'>Contact Our Team</div>
+            <div className="row"  >
+              {/* <div className='CfT2 contact-team-header'>Contact Our Team</div> */}
               {/* <div className="col-md-12 PadBox1"> */}
-              <div className="col-md-12" style={{ marginTop: '40px' }}>
+
+              <div className="col-md-6" style={{ marginTop: '30px' }}>
+                <MapComponent {...mapData} />
+              </div>
+
+
+              <div className="col-md-6" style={{ marginTop: '40px' }}>
+
+
                 <div
                   style={{
                     display: "flex",
@@ -289,7 +407,7 @@ export default function ContactUs() {
                     <div
                       className="responsive-call-box"
                       style={{
-                        width: "50%",
+                        width: "43%",
                         minWidth: "150px",
                         paddingRight: "20px",
                       }}
@@ -336,7 +454,7 @@ export default function ContactUs() {
                     <div
                       className="responsive-call-box"
                       style={{
-                        width: "50%",
+                        width: "43%",
                         minWidth: "150px",
                         paddingRight: "20px",
                       }}
@@ -395,7 +513,7 @@ export default function ContactUs() {
                     <div
                       className="responsive-call-box"
                       style={{
-                        width: "50%",
+                        width: "43%",
                         minWidth: "150px",
                         paddingRight: "20px",
                       }}
@@ -436,7 +554,7 @@ export default function ContactUs() {
                     <div
                       className="responsive-call-box"
                       style={{
-                        width: "50%",
+                        width: "43%",
                         minWidth: "150px",
                         paddingRight: "20px",
                       }}
@@ -463,14 +581,15 @@ export default function ContactUs() {
                       <div style={{ flex: "1", minWidth: "250px" }}>
                         <h4 style={{ margin: "0 0 10px 0", fontSize: "18px", fontWeight: "600" }}>Dubai</h4>
                         <p style={{ margin: "0 0 10px 0", color: "#666", lineHeight: "1.5" }}>
-                          814, Burlington Tower,
+                          Office No. 706, Building No. 8,
                           <br />
-                          Business Bay, Dubai.
+                          Bay Square, Business Bay, Dubai, UAE.
                         </p>
-                        <a href="#" style={{ color: "#333", textDecoration: "none", fontWeight: "500" }}>
+                        <a href="https://maps.app.goo.gl/kqhWDZuo1m5pVXsV9" style={{ color: "#333", textDecoration: "none", fontWeight: "500" }}>
                           Get Direction
                         </a>
                       </div>
+
                       <div style={{ flex: "1", minWidth: "250px" }}>
                         <h4 style={{ margin: "0 0 10px 0", fontSize: "18px", fontWeight: "600" }}>Ajman</h4>
                         <p style={{ margin: "0 0 10px 0", color: "#666", lineHeight: "1.5" }}>
@@ -478,14 +597,18 @@ export default function ContactUs() {
                           <br />
                           Al Mowaihat 02, Ajman, UAE.
                         </p>
-                        <a href="#" style={{ color: "#333", textDecoration: "none", fontWeight: "500" }}>
+                        <a href="https://maps.app.goo.gl/b3EXFcSGJEprVeB29" style={{ color: "#333", textDecoration: "none", fontWeight: "500" }}>
                           Get Direction
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
+
+
               </div>
+
+
             </div>
           </motion.div>
         </div>
