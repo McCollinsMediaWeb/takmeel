@@ -385,6 +385,7 @@
 
   .ButtonsBox1 {
     padding: 10px;
+    justify-content: center;
   }
 
   .PlayIcon {
