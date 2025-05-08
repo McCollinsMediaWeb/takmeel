@@ -56,7 +56,7 @@ export default function AboutVisionMission() {
                                     <div>
                                     
                                         <motion.div className="" variants={itemVariants}>
-                                        <div className="VmT1 text-left">
+                                        <div className="VmT1 text-left mtm1">
                                     Beyond Boundaries.<br />
                                     Quality and Creativity in Every Project.
                                 </div>
