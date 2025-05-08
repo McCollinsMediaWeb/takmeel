@@ -611,6 +611,10 @@
 
   .PrStatus {
     margin-bottom: 8px;
+    left: auto;
+    top: auto;
+    position: relative;
+    transform: none;
   }
 
   .BlT1A {

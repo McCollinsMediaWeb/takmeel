@@ -2258,6 +2258,10 @@ input[type=number] {
   z-index: 1;
   display: inline-block;
   background-size: 100% 100%; */
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: rotate(-90deg);
 
 }
 
