@@ -220,7 +220,7 @@ export default function ProjectDetails7({ mapimage, text1, text2, landmarks, map
                     //         </div>
                     //     </motion.div>
                     // </div>
-                    <MapComponent {...mapData} />
+                    <MapComponent {...mapData} desktopHeight="100vh" />
                 )}
 
 
