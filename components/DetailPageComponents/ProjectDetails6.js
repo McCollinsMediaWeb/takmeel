@@ -94,8 +94,14 @@ export default function ProjectDetails6({ planImage, data }) {
                                         transition={{ duration: 0.6, ease: "easeOut" }}
                                         viewport={{ once: true, amount: 0.5 }}
                                     >
-                                        <div className='AmnBoxTitle'>
-                                            <span className='AmnBoxTitleSpan'>{section.amenity}</span>
+                                        <div className="AmnBoxTitle">
+                                            {section?.amenity ? (
+                                                <span className="AmnBoxTitleSpan">{section.amenity}</span>
+                                            ) : (
+                                                <span style={{ visibility: "hidden", height: "20px", display: "inline-block" }}>
+                                                    Placeholder
+                                                </span>
+                                            )}
                                         </div>
                                     </motion.div>
                                     <div className='AmnBoxLists'>

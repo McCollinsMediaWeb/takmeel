@@ -129,20 +129,21 @@ export default function GolfViewLivingApartments() {
 
   const DataProjectDetails6 = [
     {
-      amenity: "Indoor",
+      // amenity: "Indoor",
       values: [
         { iconNo: 19, name: "Swimming Pool" },
         { iconNo: 29, name: "Children's Pool" },
         { iconNo: 28, name: "Children's Play Area" },
         { iconNo: 26, name: "Indoor Gym" },
-      ]
-    },
-    {
-      amenity: "Outdoor",
-      values: [
         { iconNo: 38, name: "Landscaped Garden" },
       ]
-    }
+    },
+    // {
+    //   amenity: "Outdoor",
+    //   values: [
+    //     { iconNo: 38, name: "Landscaped Garden" },
+    //   ]
+    // }
   ];
 
   const DataProjectDetails7 = {
