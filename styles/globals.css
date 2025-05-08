@@ -2397,3 +2397,12 @@ input[type=number] {
 .galleryBoxRow .slick-dots li.slick-active button {
   opacity: 1;
 }
+.AbsPos{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: rgba(29, 29, 27, 0.7);
+}
+.AbsPos:hover{
+  background-color: rgba(29, 29, 27, 1);
+}
