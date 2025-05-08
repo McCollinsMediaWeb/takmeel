@@ -142,7 +142,7 @@ export default function AboutVisionMission2() {
                                 <div>
 
                                     <motion.div className="" variants={itemVariants}>
-                                        <div className="VmT1 text-left">
+                                        <div className="VmT1 text-left mtm1">
                                             Takmeel Vision
                                         </div>
                                     </motion.div>
@@ -157,7 +157,7 @@ export default function AboutVisionMission2() {
 
                         </div>
                     </div>
-                    <div className="row align-items-center">
+                    <div className="row align-items-center ColumnReverseMob">
                         <div className="col-md-6">
                             <motion.div
                                 variants={containerVariants}
@@ -168,13 +168,13 @@ export default function AboutVisionMission2() {
                                 <div>
 
                                     <motion.div className="" variants={itemVariants}>
-                                        <div className="VmT1 text-left">
+                                        <div className="VmT1 text-left mtm1">
                                             Takmeel Mission
                                         </div>
                                     </motion.div>
 
                                     <motion.div className="" variants={itemVariants}>
-                                        <div className="VmT2 nunito-text mb-0 text-left">Takmeel's Mission is to develop sustainable and intelligently designed environments that blend elegance with functionality. With a focus on quality, innovation, and long-term value, Takmeel aims to enhance everyday living experiences while contributing meaningfully to the future of urban development.</div>
+                                        <div className="VmT2 nunito-text mb-0 text-left ">Takmeel's Mission is to develop sustainable and intelligently designed environments that blend elegance with functionality. With a focus on quality, innovation, and long-term value, Takmeel aims to enhance everyday living experiences while contributing meaningfully to the future of urban development.</div>
 
                                     </motion.div>
                                 </div>
@@ -229,7 +229,7 @@ export default function AboutVisionMission2() {
                                 <div>
 
                                     <motion.div className="" variants={itemVariants}>
-                                        <div className="VmT1 text-left">
+                                        <div className="VmT1 text-left mtm1">
                                             Our Values
                                         </div>
                                     </motion.div>

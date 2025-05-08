@@ -692,4 +692,17 @@
     width: 7px;
     height: 7px;
   }
+  .DifBox1 .row {
+    margin-bottom: 15px;
+  }
+  .mtm1{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .ColumnReverseMob{
+    flex-direction: column-reverse !important;
+  }
+  .DifBox1 .text-left {
+    text-align: center !important;
+  }
 }
