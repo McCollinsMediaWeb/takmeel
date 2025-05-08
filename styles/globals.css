@@ -95,7 +95,7 @@ header {
   background-repeat: repeat-y;
   animation: scrollBackground 10s linear infinite;
   overflow: hidden;
-  background-color: #D6B264;
+  background-color: #fff;
 
 }
 
