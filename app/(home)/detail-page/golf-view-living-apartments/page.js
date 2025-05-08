@@ -64,8 +64,8 @@ export default function GolfViewLivingApartments() {
     ],
   };
   const DataProjectDetails2 = {
-    ThumbImage1: "Golf-View-Living-Apartments/golf-views-emaar-south-gallery-03.jpg",
-    ThumbImage2: "Golf-View-Living-Apartments/golf-views-emaar-south-gallery.jpg",
+    ThumbImage1: "Golf-View-Living-Apartments/1.jpg",
+    ThumbImage2: "Golf-View-Living-Apartments/2.jpg",
     text1Heading: "Spacious Urban Living in Al Zorah",
     text1Desc: "This thoughtfully designed community features two G+5 buildings with a curated selection of: 1, 2 & 3 Bedroom Apartments, Contemporary layouts, Top-class finishes, Spacious interiors with spectacular views ",
     text2Heading: "A Peaceful, Luxurious Community",

@@ -2408,7 +2408,9 @@ input[type=number] {
 .AbsPos:hover {
   background-color: rgba(29, 29, 27, 1);
 }
-
+.ImageTlBox{
+  display: none;
+}
 @media only screen and (min-width: 1200px) {
 
   .HeaderBoxLeft,
@@ -2426,7 +2428,9 @@ input[type=number] {
 .DifBox1 .row {
   margin-bottom: 45px;
 }
-
+.ImageWithTextBox::after{
+  content: none !important;
+}
 .DifBox1 .row:last-child {
   margin-bottom: 0;
 }
