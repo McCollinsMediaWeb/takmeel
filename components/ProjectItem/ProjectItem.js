@@ -517,6 +517,7 @@ export default function ProjectItem({
             <div className="FsBannerContent">
                 <div className="FsBannerContentFlex centerBlock">
                     <div className="container">
+                        
                         <motion.div
                             variants={containerVariants}
                             initial="hidden"
@@ -529,11 +530,11 @@ export default function ProjectItem({
                                     {text1}
                                 </motion.div>
                                 {projectStatus && (
-                                    <motion.div className="Txt1" variants={itemVariants}>
-                                        <div>
+                                    // <motion.div className="Txt1" variants={itemVariants}>
+                                        <div className="Txt1">
                                             <span className="PrStatus">{projectStatus}</span>
                                         </div>
-                                    </motion.div>
+                                    // </motion.div>
                                 )}
                                 <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
                                     {text2}

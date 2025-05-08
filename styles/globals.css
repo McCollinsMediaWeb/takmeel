@@ -2245,33 +2245,30 @@ input[type=number] {
   /* background-color: #b5123c; */
   background-color: #fff;
   color: #1d1d1b;
-  padding: 7px 12px;
+  padding: 6px 12px;
   border-radius: 20px;
   margin: 0px 0px 5px 0px;
-  font-size: 15px;
+  font-size: 14px;
   position: relative;
-
-  padding-left: 25px;
+transition: 0.5s;
+  padding-left: 23px;
   /* background-image: url(../public/soldout.svg);
   width: 60px;
   height: 60px;
   z-index: 1;
   display: inline-block;
   background-size: 100% 100%; */
-  position: absolute;
-  left: 0px;
-  top: 50%;
-  transform: rotate(-90deg);
+
 
 }
 
 .PrStatus::before {
   content: "";
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   position: absolute;
-  top: 11px;
+  top: 10px;
   left: 10px;
   background-color: #b5123c;
 }
