@@ -2418,3 +2418,10 @@ input[type=number] {
     justify-content: end;
   }
 }
+
+.DifBox1 .row{
+  margin-bottom: 45px;
+}
+.DifBox1 .row:last-child{
+  margin-bottom: 0;
+}

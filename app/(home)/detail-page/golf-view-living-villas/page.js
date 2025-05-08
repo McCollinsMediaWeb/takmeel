@@ -54,7 +54,7 @@ export default function GolfViewLivingVillas() {
       "gf/2.jpg",
       // "gf/3.jpg",
       
-      "golf/1.jpg",
+      // "golf/1.jpg",
       "golf/2.jpg",
       
       
