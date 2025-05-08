@@ -18,17 +18,18 @@ export default function Footer() {
             <div className='col-md-4'>
               <div className='contactDetailBox'>
                 <div className='CRow whatsapp'>
-                  <a href='#' title='Whatsapp Us'>+971 523749615</a>
+                  <a target="_blank" href='https://wa.me/971523749615?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties
+' title='Whatsapp Us'>+971 523749615</a>
                 </div>
                 <div className='CRow call'>
-                  <a href='#' title='Call Us'>+971 45531916</a>&nbsp;,&nbsp;
-                  <a href='#' title='Call Us'>+971 45655099</a>
+                  <a href='tel:+971 45531916' title='Call Us'>+971 45531916</a>&nbsp;,&nbsp;
+                  <a href='tel:+971 45655099' title='Call Us'>+971 45655099</a>
                 </div>
                 <div className='CRow email'>
-                  <a href='#' title='Call Us'>info@takmeeluae.com</a>
+                  <a href='mailto:info@takmeeluae.com' title='Call Us'>info@takmeeluae.com</a>
                 </div>
                 <div className='CRow location'>
-                  <a href='#' title='Call Us'>Office no 706, Building no 8, Bay Square Business bay Dubai, UAE</a>
+                  <a href='https://maps.app.goo.gl/UtBJrv8Qw1DjwXsi9' target='_blank' title='Call Us'>Office no 706, Building no 8, Bay Square Business bay Dubai, UAE</a>
                 </div>
               </div>
             </div>
