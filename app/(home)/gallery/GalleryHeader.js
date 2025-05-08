@@ -151,11 +151,13 @@ export default function GalleryHeader({
                                         </motion.div>
 
                                         <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
-                                        ELEVATED LIVING, CAPTURED IN FRAME
+                                        Crafted for Inspired Living
+
+
                                         </motion.div>
 
                                         <motion.div className="Txt3 nunito-text SmallSizeTxt" variants={itemVariants}>
-                                        Step into a visual journey through Takmeel  where architectural artistry meets natural beauty. Each image reflects a commitment to design excellence, serene living, and a lifestyle beyond the ordinary. Discover the moments, moods, and masterpieces that define our vision.
+                                        Where purposeful design and visionary innovation converge to create spaces that inspire, elevate, and redefine modern living.
                                         </motion.div>
                                     </>
                                 )}

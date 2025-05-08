@@ -84,10 +84,11 @@ export default function GalleryPage() {
       "gallery2/18.jpg",
      
     ]
+
   };
   return (
     <div>
-      <GalleryHeader  backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg" backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"  backgroundVideo="Takmeel Main Banner Video.mp4" />
+      <GalleryHeader  backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg" backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"  backgroundVideo="tt2.mp4" />
       <GalleryRow  {...GalleryData}/>
       <div className="bg2">
       <GalleryRow  {...GalleryData2}/>
