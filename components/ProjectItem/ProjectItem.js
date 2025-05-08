@@ -530,11 +530,11 @@ export default function ProjectItem({
                                     {text1}
                                 </motion.div>
                                 {projectStatus && (
-                                    // <motion.div className="Txt1" variants={itemVariants}>
+                                    <motion.div className="Txt1" variants={itemVariants}>
                                         <div className="Txt1">
                                             <span className="PrStatus">{projectStatus}</span>
                                         </div>
-                                    // </motion.div>
+                                    </motion.div>
                                 )}
                                 <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
                                     {text2}
