@@ -219,7 +219,8 @@ function AddNewsForm({
     setCreateNewPage,
     setDataChanged,
     editMode = false,
-    newsToEdit = null
+    newsToEdit = null,
+    setNewsToEdit
 }) {
     const defaultDate = new Date().toLocaleDateString('en-US', {
         month: 'long',
@@ -304,6 +305,15 @@ function AddNewsForm({
             alert('Error: ' + error.message);
         } finally {
             setIsSubmitting(false);
+            setFile(null);
+            setDate(defaultDate);
+            setCategory('');
+            setNewsHeading('');
+            setNewsContent('');
+            setNewsSubHeading('');
+            setVisibility(true);
+            setPreviewUrl(null);
+            setNewsToEdit(null);
         }
     };
 
@@ -332,6 +342,7 @@ function AddNewsForm({
                                 reader.readAsDataURL(selectedFile);
                             }
                         }}
+                        required
                     />
                     <span className={styles.fileInputText}>{file ? file.name : 'No file chosen'}</span>
                 </div>
@@ -363,6 +374,7 @@ function AddNewsForm({
                             className={styles.formControl}
                             value={date}
                             onChange={(e) => setDate(e.target.value)}
+                            required
                         />
                         <small className={styles.formText}>Format: October 23, 2022</small>
                     </div>
@@ -376,6 +388,7 @@ function AddNewsForm({
                             placeholder="e.g. REAL ESTATE"
                             value={category}
                             onChange={(e) => setCategory(e.target.value)}
+                            required
                         />
                     </div>
                 </div>
@@ -389,6 +402,7 @@ function AddNewsForm({
                         placeholder="Enter news headline"
                         value={newsHeading}
                         onChange={(e) => setNewsHeading(e.target.value)}
+                        required
                     />
                 </div>
 
@@ -402,6 +416,7 @@ function AddNewsForm({
                         style={{ height: "auto", minHeight: "150px" }}
                         value={newsSubHeading}
                         onChange={(e) => setNewsSubHeading(e.target.value)}
+                        required
                     ></textarea>
                 </div>
 

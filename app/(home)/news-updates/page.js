@@ -1,18 +1,19 @@
-"use client";
+// "use client";
 
-import LatestBlog from "@/components/BlogComponents/LatestBlogs";
-import BlogListing from "@/components/BlogComponents/BlogListing";
-import { useGlobalData } from "@/context/GlobalDataContext";
+import { getMetaTags } from "@/lib/getMetaTags";
+import NewsAndUpdatesClient from "./NewsUpdatesClient";
+import MetaInjector from "@/components/Meta/MetaInjector";
 
-export default function NewsAndUpdates() {
-  const { news } = useGlobalData();
-  const latest = news?.[0];
-  const rest = news?.slice(1);
+export default async function NewsAndUpdates() {
+  const metaTags = await getMetaTags("/news-updates");
+  if (metaTags.length === 0 || !metaTags[0].metaContent) {
+    console.warn("No meta tags found, using default");
+  }
 
   return (
-    <section className="BlogPostWrap">
-      {latest && <LatestBlog blog={latest} />}
-      {rest && rest.length > 0 && <BlogListing blogs={rest} />}
-    </section>
+    <>
+      <MetaInjector metaContent={metaTags[0].metaContent} />
+      <NewsAndUpdatesClient />
+    </>
   );
 }

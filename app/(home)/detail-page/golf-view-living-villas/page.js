@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 import DetailHero from "@/components/DetailPageComponents/DetailHero";
 import ProjectDetails1 from "@/components/DetailPageComponents/ProjectDetails1";
 import ProjectDetails2 from "@/components/DetailPageComponents/ProjectDetails2";
@@ -9,7 +9,15 @@ import ProjectDetails6 from "@/components/DetailPageComponents/ProjectDetails6";
 import ProjectDetails7 from "@/components/DetailPageComponents/ProjectDetails7";
 import CostCalculator from "@/components/DetailPageComponents/CostCalculator";
 import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
-export default function GolfViewLivingVillas() {
+import { getMetaTags } from "@/lib/getMetaTags";
+import MetaInjector from "@/components/Meta/MetaInjector";
+
+export default async function GolfViewLivingVillas() {
+  const metaTags = await getMetaTags("/detail-page/golf-view-living-villas");
+  if (metaTags.length === 0 || !metaTags[0].metaContent) {
+    console.warn("No meta tags found, using default");
+  }
+
   const detailHeroData = {
     backgroundImage: "Divine golf villas_landscape.mp4",
     backgroundImageMobile: "Golf-View-Living-Villas/divine-golf-villas-Facade-Mobile 03.jpg",
@@ -53,11 +61,11 @@ export default function GolfViewLivingVillas() {
       // "gf/4.jpg",
       "gf/2.jpg",
       // "gf/3.jpg",
-      
+
       // "golf/1.jpg",
       "golf/2.jpg",
-      
-      
+
+
       // "Golf-View-Living-Villas/Golf View Villas 1.jpg",
       // "Golf-View-Living-Villas/Golf View Villas 2.jpg",
     ],
@@ -325,19 +333,22 @@ export default function GolfViewLivingVillas() {
     }
   };
 
-    return (
-        <div>
-            <DetailHero {...detailHeroData} />
-            <ProjectDetails1 {...DataProjectDetails1} />
-            <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
-            <ProjectDetails2 {...DataProjectDetails2} />
-            {/* <ProjectDetails3 mainimage1="ovr4.jpg" data={DataProjectDetails3} /> */}
-            <ProjectDetails4 {...DataProjectDetails4} />
-            {/* <ProjectDetails5 panoramaimage="/golfstreet.jpg" /> */}
-            
-            <ProjectDetails7 {...DataProjectDetails7} />
-            {/* <CostCalculator /> */}
-            <PropertyForm projectName="Golf View Living Villas" />
-        </div>
-    );
+  return (
+    <>
+      <MetaInjector metaContent={metaTags[0].metaContent} />
+      <div>
+        <DetailHero {...detailHeroData} />
+        <ProjectDetails1 {...DataProjectDetails1} />
+        <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
+        <ProjectDetails2 {...DataProjectDetails2} />
+        {/* <ProjectDetails3 mainimage1="ovr4.jpg" data={DataProjectDetails3} /> */}
+        <ProjectDetails4 {...DataProjectDetails4} />
+        {/* <ProjectDetails5 panoramaimage="/golfstreet.jpg" /> */}
+
+        <ProjectDetails7 {...DataProjectDetails7} />
+        {/* <CostCalculator /> */}
+        <PropertyForm projectName="Golf View Living Villas" />
+      </div>
+    </>
+  );
 }

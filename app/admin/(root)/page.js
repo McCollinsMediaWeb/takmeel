@@ -142,6 +142,15 @@ export default function Home() {
                                     <span>News</span>
                                 </li>
                             </Link>
+                            <Link
+                                href="/admin/meta-tags"
+                                style={{ textDecoration: 'none' }}
+                            >
+                                <li className={`${pathname === '/admin/meta-tags' ? styles.active : ''}`}>
+                                    <span className={styles.icon}>🏷️</span>
+                                    <span>Meta Tags</span>
+                                </li>
+                            </Link>
                         </ul>
                     </nav>
                 </div>

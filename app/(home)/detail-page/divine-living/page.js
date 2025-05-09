@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 import DetailHero from "@/components/DetailPageComponents/DetailHero";
 import ProjectDetails1 from "@/components/DetailPageComponents/ProjectDetails1";
 import ProjectDetails2 from "@/components/DetailPageComponents/ProjectDetails2";
@@ -10,7 +10,14 @@ import ProjectDetails7 from "@/components/DetailPageComponents/ProjectDetails7";
 import CostCalculator from "@/components/DetailPageComponents/CostCalculator";
 import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
 import PaymentPlanBlock from "@/components/PaymentPlanBlock/PaymentPlanBlock";
-export default function DivineLiving() {
+import { getMetaTags } from "@/lib/getMetaTags";
+import MetaInjector from "@/components/Meta/MetaInjector";
+
+export default async function DivineLiving() {
+  const metaTags = await getMetaTags("/detail-page/divine-living");
+  if (metaTags.length === 0 || !metaTags[0].metaContent) {
+    console.warn("No meta tags found, using default");
+  }
   const detailHeroData = {
     backgroundImage: "bannerDesktopFirst.jpg",
     backgroundImageMobile: "bannerMobileFirst.jpg",
@@ -301,21 +308,24 @@ export default function DivineLiving() {
 
 
   return (
-    <div>
-      <DetailHero {...detailHeroData} />
-      <ProjectDetails1  {...DataProjectDetails1} />
-      <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
-      <PaymentPlanBlock />
-      <ProjectDetails2  {...DataProjectDetails2} />
-      {/* <ProjectDetails3 mainimage1="ovr2.jpg" data={DataProjectDetails3} /> */}
+    <>
+      <MetaInjector metaContent={metaTags[0].metaContent} />
+      <div>
+        <DetailHero {...detailHeroData} />
+        <ProjectDetails1  {...DataProjectDetails1} />
+        <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
+        <PaymentPlanBlock />
+        <ProjectDetails2  {...DataProjectDetails2} />
+        {/* <ProjectDetails3 mainimage1="ovr2.jpg" data={DataProjectDetails3} /> */}
 
-      <ProjectDetails4  {...DataProjectDetails4} />
-      {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
+        <ProjectDetails4  {...DataProjectDetails4} />
+        {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
 
 
-      <ProjectDetails7 mapimage="new2.jpg" mobileMapImage="new2m.jpg" {...DataProjectDetails7} />
-      <CostCalculator />
-      <PropertyForm projectName="Divine Living" />
-    </div>
+        <ProjectDetails7 mapimage="new2.jpg" mobileMapImage="new2m.jpg" {...DataProjectDetails7} />
+        <CostCalculator />
+        <PropertyForm projectName="Divine Living" />
+      </div>
+    </>
   );
 }

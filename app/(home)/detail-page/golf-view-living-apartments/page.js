@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 import DetailHero from "@/components/DetailPageComponents/DetailHero";
 import ProjectDetails1 from "@/components/DetailPageComponents/ProjectDetails1";
 import ProjectDetails2 from "@/components/DetailPageComponents/ProjectDetails2";
@@ -9,7 +9,14 @@ import ProjectDetails6 from "@/components/DetailPageComponents/ProjectDetails6";
 import ProjectDetails7 from "@/components/DetailPageComponents/ProjectDetails7";
 import CostCalculator from "@/components/DetailPageComponents/CostCalculator";
 import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
-export default function GolfViewLivingApartments() {
+import MetaInjector from "@/components/Meta/MetaInjector";
+import { getMetaTags } from "@/lib/getMetaTags";
+
+export default async function GolfViewLivingApartments() {
+  const metaTags = await getMetaTags("/detail-page/golf-view-living-apartments");
+  if (metaTags.length === 0 || !metaTags[0].metaContent) {
+    console.warn("No meta tags found, using default");
+  }
   const detailHeroData = {
     backgroundImage: "Divine golf apartments_landscape.mp4",
     backgroundImageMobile: "bannerMobileFour.jpg",
@@ -273,19 +280,22 @@ export default function GolfViewLivingApartments() {
 
 
   return (
-    <div>
-      <DetailHero {...detailHeroData} />
-      <ProjectDetails1  {...DataProjectDetails1} />
-      <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
-      <ProjectDetails2  {...DataProjectDetails2} />
-      {/* <ProjectDetails3 mainimage1="ovr6.jpg" data={DataProjectDetails3} /> */}
-      <ProjectDetails4  {...DataProjectDetails4} />
-      {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
+    <>
+      <MetaInjector metaContent={metaTags[0].metaContent} />
+      <div>
+        <DetailHero {...detailHeroData} />
+        <ProjectDetails1  {...DataProjectDetails1} />
+        <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
+        <ProjectDetails2  {...DataProjectDetails2} />
+        {/* <ProjectDetails3 mainimage1="ovr6.jpg" data={DataProjectDetails3} /> */}
+        <ProjectDetails4  {...DataProjectDetails4} />
+        {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
 
 
-      <ProjectDetails7 {...DataProjectDetails7} />
-      {/* <CostCalculator /> */}
-      <PropertyForm projectName="Golf View Living Apartments" />
-    </div>
+        <ProjectDetails7 {...DataProjectDetails7} />
+        {/* <CostCalculator /> */}
+        <PropertyForm projectName="Golf View Living Apartments" />
+      </div>
+    </>
   );
 }

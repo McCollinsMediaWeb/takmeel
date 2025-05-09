@@ -1,4 +1,4 @@
-
+"use client";
 
 import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion"
 export default function PaymentPlanBlock() {
@@ -79,10 +79,10 @@ export default function PaymentPlanBlock() {
                                             <div className="PayBlockBxHdr VmT5">10% on booking</div>
                                         </motion.div>
                                     </motion.div>
-                                   
+
                                 </div>
                             </motion.div>
-                            
+
                         </div>
                     </div>
                     <div className="col-md-4">
@@ -106,10 +106,10 @@ export default function PaymentPlanBlock() {
                                             <div className="PayBlockBxHdr VmT5">10% after 2 months of booking</div>
                                         </motion.div>
                                     </motion.div>
-                                   
+
                                 </div>
                             </motion.div>
-                            
+
                         </div>
                     </div>
                     <div className="col-md-4">
@@ -133,10 +133,10 @@ export default function PaymentPlanBlock() {
                                             <div className="PayBlockBxHdr VmT5">10% after 7-month of booking</div>
                                         </motion.div>
                                     </motion.div>
-                                   
+
                                 </div>
                             </motion.div>
-                            
+
                         </div>
                     </div>
                     <div className="col-md-4">
@@ -160,10 +160,10 @@ export default function PaymentPlanBlock() {
                                             <div className="PayBlockBxHdr VmT5">10% after 12 month of booking</div>
                                         </motion.div>
                                     </motion.div>
-                                   
+
                                 </div>
                             </motion.div>
-                            
+
                         </div>
                     </div>
                     <div className="col-md-4">
@@ -187,10 +187,10 @@ export default function PaymentPlanBlock() {
                                             <div className="PayBlockBxHdr VmT5">60% on after completion hand over</div>
                                         </motion.div>
                                     </motion.div>
-                                   
+
                                 </div>
                             </motion.div>
-                            
+
                         </div>
                     </div>
                     {/* <div className="col-md-4">

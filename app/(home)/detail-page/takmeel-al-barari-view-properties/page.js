@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 import DetailHero from "@/components/DetailPageComponents/DetailHero";
 import ProjectDetails1 from "@/components/DetailPageComponents/ProjectDetails1";
 import ProjectDetails2 from "@/components/DetailPageComponents/ProjectDetails2";
@@ -10,7 +10,15 @@ import ProjectDetails7 from "@/components/DetailPageComponents/ProjectDetails7";
 import CostCalculator from "@/components/DetailPageComponents/CostCalculator";
 import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
 import PaymentPlanBlock from "@/components/PaymentPlanBlock/PaymentPlanBlock";
-export default function TakmeelAlBarariViewPropertiesPage() {
+import { getMetaTags } from "@/lib/getMetaTags";
+import MetaInjector from "@/components/Meta/MetaInjector";
+
+export default async function TakmeelAlBarariViewPropertiesPage() {
+  const metaTags = await getMetaTags("/detail-page/takmeel-al-barari-view-properties");
+  if (metaTags.length === 0 || !metaTags[0].metaContent) {
+    console.warn("No meta tags found, using default");
+  }
+
   const detailHeroData = {
     // backgroundImage: "main1.jpg",
     // backgroundImageMobile: "main1mobile.jpg",
@@ -59,7 +67,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       "majan1/3.jpg",
       "majan1/4.jpg",
       "am3.jpg",
-     
+
     ]
   };
   const DataProjectDetails2 = {
@@ -394,28 +402,31 @@ export default function TakmeelAlBarariViewPropertiesPage() {
   };
 
   return (
-    <div>
-      <div className="BrariBox">
-        <DetailHero {...detailHeroData} />
-      </div>
-      <div className="FxdHgtImage">
-        <ProjectDetails1 {...DataProjectDetails1} />
-      </div>
-      {/* <ProjectDetails2 {...DataProjectDetails2} /> */}
-      <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
-      <div className="FxdHgtImage">
-      <ProjectDetails4 {...DataProjectDetails4} />
-      </div>
-      <ProjectDetails7 mapimage="new1.jpg" mobileMapImage="new1m.jpg" {...DataProjectDetails7} />
-      
-      {/* <ProjectDetails3 mainimage1="ak2.jpg" data={DataProjectDetails3} /> */}
-      
-      {/* <ProjectDetails5 panoramaimage="/albararistreet.jpg" /> */}
-      
+    <>
+      <MetaInjector metaContent={metaTags[0].metaContent} />
+      <div>
+        <div className="BrariBox">
+          <DetailHero {...detailHeroData} />
+        </div>
+        <div className="FxdHgtImage">
+          <ProjectDetails1 {...DataProjectDetails1} />
+        </div>
+        {/* <ProjectDetails2 {...DataProjectDetails2} /> */}
+        <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
+        <div className="FxdHgtImage">
+          <ProjectDetails4 {...DataProjectDetails4} />
+        </div>
+        <ProjectDetails7 mapimage="new1.jpg" mobileMapImage="new1m.jpg" {...DataProjectDetails7} />
 
-      {/* <ProjectDetails7 mapimage="mapalb.jpg" {...DataProjectDetails7} /> */}
-      <CostCalculator />
-      <PropertyForm projectName="Divine Al Barari" />
-    </div>
+        {/* <ProjectDetails3 mainimage1="ak2.jpg" data={DataProjectDetails3} /> */}
+
+        {/* <ProjectDetails5 panoramaimage="/albararistreet.jpg" /> */}
+
+
+        {/* <ProjectDetails7 mapimage="mapalb.jpg" {...DataProjectDetails7} /> */}
+        <CostCalculator />
+        <PropertyForm projectName="Divine Al Barari" />
+      </div>
+    </>
   );
 }

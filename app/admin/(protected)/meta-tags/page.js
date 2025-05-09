@@ -3,33 +3,33 @@
 // pages/forms.js
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
-import styles from './news.module.css';
+import styles from './meta.module.css';
 import sidebarStyles from '../../(root)/styles.module.css';
 import Link from 'next/link';
 import { useSession } from 'next-auth/react';
 import { redirect, usePathname } from 'next/navigation';
 import ProfilePopover from '../../(root)/Components/ProfilePopover';
-import AddNewsForm from './Components/addNewsForm';
-import NewsTable from '../../(root)/Components/NewsTable';
+import AddMetaTagsForm from './Components/addMetaTagForm';
+import MetaTagsTable from '../../(root)/Components/MetaTagsTable';
 
-export default function Forms() {
+export default function MetaTags() {
     // State for handling form inputs if needed
     const { data: session } = useSession();
     const pathname = usePathname();
-    const [createNewPage, setCreateNewPage] = useState(false);
-    const [newsData, setNewsData] = useState([]);
+    const [createNewMetaTag, setCreateNewMetaTag] = useState(false);
+    const [metaTagsData, setMetaTagsData] = useState([]);
     const [loading, setLoading] = useState(false);
     const [dataChanged, setDataChanged] = useState(false);
-    const [newsToEdit, setNewsToEdit] = useState(null);
+    const [metaTagToEdit, setMetaTagToEdit] = useState(null);
 
     useEffect(() => {
-        const fetchNews = async () => {
+        const fetchMetaTag = async () => {
             setLoading(true);
             try {
-                const response = await fetch('/api/news');
+                const response = await fetch('/api/meta-tags');
                 const result = await response.json();
                 if (result.success) {
-                    setNewsData(result.data);
+                    setMetaTagsData(result.data);
                 } else {
                     console.error("Failed to fetch news");
                 }
@@ -40,7 +40,7 @@ export default function Forms() {
             }
         };
 
-        fetchNews();
+        fetchMetaTag();
     }, [dataChanged]);
 
     if (!session?.user) {
@@ -94,8 +94,8 @@ export default function Forms() {
                                 href="/admin/meta-tags"
                                 style={{ textDecoration: 'none' }}
                             >
-                                <li className={`${pathname === '/admin/meta-tags' ? styles.active : ''}`}>
-                                    <span className={styles.icon}>🏷️</span>
+                                <li className={`${pathname === '/admin/meta-tags' ? sidebarStyles.active : ''}`}>
+                                    <span className={sidebarStyles.icon}>🏷️</span>
                                     <span>Meta Tags</span>
                                 </li>
                             </Link>
@@ -115,15 +115,15 @@ export default function Forms() {
                     <div className={sidebarStyles.content}>
                         <div className={styles.formsRow}>
 
-                            {createNewPage ? <AddNewsForm setCreateNewPage={setCreateNewPage} setDataChanged={setDataChanged} editMode={!!newsToEdit}
-                                newsToEdit={newsToEdit} setNewsToEdit={setNewsToEdit} /> : (
+                            {createNewMetaTag ? <AddMetaTagsForm setCreateNewMetaTag={setCreateNewMetaTag} setDataChanged={setDataChanged} editMode={!!metaTagToEdit}
+                                metaTagToEdit={metaTagToEdit} setMetaTagToEdit={setMetaTagToEdit} /> : (
 
                                 <section className={styles.recentNews}>
                                     <div className={styles.sectionHeader}>
-                                        <h2>News & Updates</h2>
-                                        <button type="button" onClick={() => setCreateNewPage(prev => !prev)} className={styles.signInButton}>Add New News</button>
+                                        <h2>Meta Tags</h2>
+                                        <button type="button" onClick={() => setCreateNewMetaTag(prev => !prev)} className={styles.signInButton}>Add New Meta Tag</button>
                                     </div>
-                                    <NewsTable newsData={newsData} setDataChanged={setDataChanged} setCreateNewPage={setCreateNewPage} setNewsToEdit={setNewsToEdit} loading={loading} />
+                                    <MetaTagsTable metaTagsData={metaTagsData} setDataChanged={setDataChanged} setCreateNewMetaTag={setCreateNewMetaTag} setMetaTagToEdit={setMetaTagToEdit} loading={loading} />
                                 </section>
                             )}
                         </div>

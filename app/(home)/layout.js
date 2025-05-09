@@ -32,18 +32,18 @@ const nunitoSans = Nunito_Sans({
 
 
 
-export const metadata = {
-  title: "Takmeel",
-  description: "Exceeding Expectations About Takmeel Discover Takmeel Real Estate Development, where your dream home awaits its grand unveiling. Welcome to Takmeel Real Estate Development L.L.C, where your dream home becomes a breathtaking reality. Established in 2017, we set out with a single goal: to design and build extraordinary residences and stunning apartments that transcend the ordinary,...",
-  themeColor: "#1D1D1B",
-  viewport: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
-  applicationName: "Takmeel",
-  manifest: "/manifest.json",
-  other: {
-    "msapplication-TileColor": "#1D1D1B",
-    "msapplication-navbutton-color": "#1D1D1B",
-  }
-};
+// export const metadata = {
+//   title: "Takmeel",
+//   description: "Exceeding Expectations About Takmeel Discover Takmeel Real Estate Development, where your dream home awaits its grand unveiling. Welcome to Takmeel Real Estate Development L.L.C, where your dream home becomes a breathtaking reality. Established in 2017, we set out with a single goal: to design and build extraordinary residences and stunning apartments that transcend the ordinary,...",
+//   themeColor: "#1D1D1B",
+//   viewport: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+//   applicationName: "Takmeel",
+//   manifest: "/manifest.json",
+//   other: {
+//     "msapplication-TileColor": "#1D1D1B",
+//     "msapplication-navbutton-color": "#1D1D1B",
+//   }
+// };
 
 
 
