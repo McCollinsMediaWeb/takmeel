@@ -11,7 +11,7 @@ import CostCalculator from "@/components/DetailPageComponents/CostCalculator";
 import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
 export default function GolfViewLivingApartments() {
   const detailHeroData = {
-    backgroundImage: "Divine-Golf-Video.mp4",
+    backgroundImage: "Divine golf apartments_landscape.mp4",
     backgroundImageMobile: "bannerMobileFour.jpg",
     text1: "Your Everyday Escape, Overlooking the Greens",
     text2: "Golf View Living Apartments",
