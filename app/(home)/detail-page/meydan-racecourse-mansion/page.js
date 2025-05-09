@@ -291,7 +291,7 @@ export default function MeydanRacecourseMansion() {
       <ProjectDetails4  {...DataProjectDetails4} />
       {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
       <ProjectDetails7 mapimage="mydesk.jpg" mobileMapImage="mymob1.jpg"  {...DataProjectDetails7} />
-      <CostCalculator />
+      {/* /<CostCalculator /> */}
       <PropertyForm projectName="Meydan Racecourse Mansion" />
     </div>
   );

@@ -264,9 +264,9 @@ export default function GolfViewLivingApartments() {
         }
       ],
       nearByPlaces: [
-        { name: "Al Zorah Beach", place_id: "ChIJzSHSI55XXz4RMbtHzzcwmAo", location: { lat: 25.42588643843721, lng: 55.44740583620454 } },
-        { name: "Al Zorah Marina 1", place_id: "ChIJH8nugJRXXz4RamkfN_vI-k4", location: { lat: 25.430400966073893, lng: 55.46565267858057 } },
-        { name: "Al Zorah Golf Club", place_id: "ChIJXVH71Qv49T4RH9YdVVZijGc", location: { lat: 25.43284120991059, lng: 55.48761781743727 } },
+        // { name: "Al Zorah Beach", place_id: "ChIJzSHSI55XXz4RMbtHzzcwmAo", location: { lat: 25.42588643843721, lng: 55.44740583620454 } },
+        // { name: "Al Zorah Marina 1", place_id: "ChIJH8nugJRXXz4RamkfN_vI-k4", location: { lat: 25.430400966073893, lng: 55.46565267858057 } },
+        // { name: "Al Zorah Golf Club", place_id: "ChIJXVH71Qv49T4RH9YdVVZijGc", location: { lat: 25.43284120991059, lng: 55.48761781743727 } },
       ]
     }
   };
@@ -284,7 +284,7 @@ export default function GolfViewLivingApartments() {
 
 
       <ProjectDetails7 {...DataProjectDetails7} />
-      <CostCalculator />
+      {/* <CostCalculator /> */}
       <PropertyForm projectName="Golf View Living Apartments" />
     </div>
   );
