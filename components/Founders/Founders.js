@@ -242,12 +242,7 @@ export default function Founders() {
                     >
                         <div className="OurPeopleBox">
                             <Slider {...settings1}>
-                                <motion.div
-                                    initial={{ opacity: 0 }}
-                                    whileInView={{ opacity: 1}}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
-                                    viewport={{ once: false, amount: 0.5 }}
-                                >
+                                
                                     <div className="FounderItem">
                                         <div className="FounderItemBox">
                                             <div className="FounderImageBox">
@@ -268,13 +263,8 @@ export default function Founders() {
                                             </div>
                                         </div>
                                     </div>
-                                </motion.div>
-                                <motion.div
-                                    initial={{ opacity: 0 }}
-                                    whileInView={{ opacity: 1}}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
-                                    viewport={{ once: false, amount: 0.5 }}
-                                >
+                               
+                                
                                     <div className="FounderItem">
                                         <div className="FounderItemBox">
                                             <div className="FounderImageBox">
@@ -295,13 +285,6 @@ export default function Founders() {
                                             </div>
                                         </div>
                                     </div>
-                                </motion.div>
-                                <motion.div
-                                    initial={{ opacity: 0 }}
-                                    whileInView={{ opacity: 1}}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
-                                    viewport={{ once: false, amount: 0.5 }}
-                                >
                                     <div className="FounderItem">
                                         <div className="FounderItemBox">
                                             <div className="FounderImageBox">
@@ -322,13 +305,7 @@ export default function Founders() {
                                             </div>
                                         </div>
                                     </div>
-                                </motion.div>
-                                <motion.div
-                                    initial={{ opacity: 0 }}
-                                    whileInView={{ opacity: 1}}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
-                                    viewport={{ once: false, amount: 0.5 }}
-                                >
+                                
                                     <div className="FounderItem">
                                         <div className="FounderItemBox">
                                             <div className="FounderImageBox">
@@ -349,13 +326,7 @@ export default function Founders() {
                                             </div>
                                         </div>
                                     </div>
-                                </motion.div>
-                                <motion.div
-                                    initial={{ opacity: 0 }}
-                                    whileInView={{ opacity: 1}}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
-                                    viewport={{ once: false, amount: 0.5 }}
-                                >
+                                
                                     <div className="FounderItem">
                                         <div className="FounderItemBox">
                                             <div className="FounderImageBox">
@@ -376,13 +347,7 @@ export default function Founders() {
                                             </div>
                                         </div>
                                     </div>
-                                </motion.div>
-                                <motion.div
-                                    initial={{ opacity: 0 }}
-                                    whileInView={{ opacity: 1}}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
-                                    viewport={{ once: false, amount: 0.5 }}
-                                >
+                               
                                     <div className="FounderItem">
                                         <div className="FounderItemBox">
                                             <div className="FounderImageBox">
@@ -403,13 +368,7 @@ export default function Founders() {
                                             </div>
                                         </div>
                                     </div>
-                                </motion.div>
-                                <motion.div
-                                    initial={{ opacity: 0 }}
-                                    whileInView={{ opacity: 1}}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
-                                    viewport={{ once: false, amount: 0.5 }}
-                                >
+                                
                                     <div className="FounderItem">
                                         <div className="FounderItemBox">
                                             <div className="FounderImageBox">
@@ -430,7 +389,7 @@ export default function Founders() {
                                             </div>
                                         </div>
                                     </div>
-                                </motion.div>
+                               
 
                             </Slider>
                         </div>

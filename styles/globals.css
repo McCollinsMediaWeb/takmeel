@@ -2442,4 +2442,14 @@ transition: 0.5s;
 .FormPopUp textarea{
   max-height: 80px;
 }
-
+.LottieLayer{
+  z-index: 4;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  width: 102%;
+  height: 102%;
+  display: flex;
+  position: absolute;
+  inset: -1%;
+}
