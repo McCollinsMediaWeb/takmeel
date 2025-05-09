@@ -530,13 +530,7 @@ export default function ProjectItem({
                                     <motion.div className="Txt1" variants={itemVariants}>
                                         {text1}
                                     </motion.div>
-                                    {projectStatus && (
-                                        <motion.div className="Txt1" variants={itemVariants}>
-                                            <div className="Txt1">
-                                                <span className="PrStatus">{projectStatus}</span>
-                                            </div>
-                                        </motion.div>
-                                    )}
+                                    
                                     <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
                                         {text2}
                                     </motion.div>
@@ -570,6 +564,13 @@ export default function ProjectItem({
                                             Explore Property
                                         </Link>
                                     </motion.div>
+                                    {projectStatus && (
+                                        <motion.div className="Txt1" variants={itemVariants}>
+                                            <div className="Txt1">
+                                                <span className="PrStatus">{projectStatus}</span>
+                                            </div>
+                                        </motion.div>
+                                    )}
                                 </div>
                             </motion.div>
                         </div>
