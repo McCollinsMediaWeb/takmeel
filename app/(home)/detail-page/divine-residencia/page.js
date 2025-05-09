@@ -308,7 +308,7 @@ export default function DivineResidencia() {
       {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
      
 
-      <ProjectDetails7 mapimage="rcddesk.jpg" mobileMapImage="rcdmob.jpg" {...DataProjectDetails7} />
+      <ProjectDetails7 mapimage="new4.jpg" mobileMapImage="new4m.jpg" {...DataProjectDetails7} />
       <CostCalculator />
       <PropertyForm projectName="Divine Residencia" />
     </div>
