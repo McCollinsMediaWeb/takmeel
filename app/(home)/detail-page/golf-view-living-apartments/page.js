@@ -134,7 +134,7 @@ export default function GolfViewLivingApartments() {
         { iconNo: 19, name: "Swimming Pool" },
         { iconNo: 29, name: "Children's Pool" },
         { iconNo: 28, name: "Children's Play Area" },
-        { iconNo: 26, name: "Indoor Gym" },
+        // { iconNo: 26, name: "Indoor Gym" },
         { iconNo: 38, name: "Landscaped Garden" },
       ]
     },
