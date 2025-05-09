@@ -12,7 +12,7 @@ import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
 export default function DivineResidencies() {
 
   const detailHeroData = {
-    backgroundImage: "tr.jpg",
+    backgroundImage: "r.jpg",
     backgroundImageMobile: "Divine-Residence-Image-Mobile.jpg",
     text1: "Smart Spaces Crafted for Modern Lifestyles",
     text2: "Divine Residences",
@@ -314,7 +314,7 @@ export default function DivineResidencies() {
       <ProjectDetails4 {...DataProjectDetails4} />
       {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
 
-      <ProjectDetails7 mapimage="drdesk.jpg" mobileMapImage="drmob.jpg" {...DataProjectDetails7} />
+      <ProjectDetails7 mapimage="new3.jpg" mobileMapImage="new3m.jpg" {...DataProjectDetails7} />
       <CostCalculator />
       <PropertyForm projectName="Divine Residencies" />
     </div>
