@@ -406,7 +406,7 @@ export default function TakmeelAlBarariViewPropertiesPage() {
       <div className="FxdHgtImage">
       <ProjectDetails4 {...DataProjectDetails4} />
       </div>
-      <ProjectDetails7 mapimage="alnew.jpg" mobileMapImage="alnewmob.jpg" {...DataProjectDetails7} />
+      <ProjectDetails7 mapimage="new1.jpg" mobileMapImage="new1m.jpg" {...DataProjectDetails7} />
       
       {/* <ProjectDetails3 mainimage1="ak2.jpg" data={DataProjectDetails3} /> */}
       
