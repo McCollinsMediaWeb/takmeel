@@ -342,7 +342,6 @@ function AddNewsForm({
                                 reader.readAsDataURL(selectedFile);
                             }
                         }}
-                        required
                     />
                     <span className={styles.fileInputText}>{file ? file.name : 'No file chosen'}</span>
                 </div>

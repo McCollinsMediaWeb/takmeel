@@ -69,7 +69,7 @@ export async function GET(req) {
             const limit = parseInt(url.searchParams.get("limit") || "10");
             const skip = parseInt(url.searchParams.get("skip") || "0");
 
-            totalCount = await newsCollection.countDocuments(); // total news
+            totalCount = await newsCollection.countDocuments({ visibility: true });
 
             // news = await newsCollection.find({})
             //     .sort({ createdAt: -1 })
@@ -77,7 +77,7 @@ export async function GET(req) {
             //     .limit(limit)
             //     .toArray();
 
-            news = await newsCollection.find({})
+            news = await newsCollection.find({ visibility: true })
                 .sort({ createdAt: -1 })
                 .skip(skip)
                 .limit(limit)
