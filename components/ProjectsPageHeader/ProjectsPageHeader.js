@@ -57,7 +57,7 @@ export default function ProjectsPageHeader() {
         initialSlide: 0,
         infinite: true,
         autoplay: true,               // Enables autoplay
-        autoplaySpeed: 3500  ,        // Time between slides in milliseconds
+        autoplaySpeed: 3500,        // Time between slides in milliseconds
         responsive: [
             {
                 breakpoint: 1024,
@@ -91,9 +91,9 @@ export default function ProjectsPageHeader() {
 
 
     return (
-        <section className='PageHeaderTp1 screenWidth ScreenHeight'>
+        <section className='PageHeaderTp1 custom-section-flexible'>
             <div className="w100">
-                <div className='container'>
+                <div className='container custom-container-flexible'>
                     <div className='PageHdContent text-center'>
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
@@ -244,9 +244,9 @@ export default function ProjectsPageHeader() {
                                         </Link>
                                     </div>
 
-                                    
 
-                                    
+
+
                                 </Slider>
                             </div>
                         </motion.div>

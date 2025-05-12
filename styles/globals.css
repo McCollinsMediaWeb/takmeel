@@ -2467,3 +2467,13 @@ input[type=number] {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.custom-container-flexible{
+  max-width: 90%;
+}
+
+.custom-section-flexible{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 90vh;
+}
