@@ -33,9 +33,9 @@ export default function PageHeader() {
     }, []);
 
     return (
-        <section className='PageHeaderTp1 screenWidth ScreenHeight'>
+        <section className='PageHeaderTp1 custom-section-flexible'>
             <div>
-                <div className='container'>
+                <div className='container custom-container-flexible'>
                     <div className='PageHdContent text-center'>
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
