@@ -2250,7 +2250,7 @@ input[type=number] {
   margin: 20px 0px 0px 0px;
   font-size: 14px;
   position: relative;
-transition: 0.5s;
+  transition: 0.5s;
   padding-left: 23px;
   /* background-image: url(../public/soldout.svg);
   width: 60px;
@@ -2409,9 +2409,11 @@ transition: 0.5s;
 .AbsPos:hover {
   background-color: rgba(29, 29, 27, 1);
 }
-.ImageTlBox{
+
+.ImageTlBox {
   display: none;
 }
+
 @media only screen and (min-width: 1200px) {
 
   .HeaderBoxLeft,
@@ -2429,20 +2431,25 @@ transition: 0.5s;
 .DifBox1 .row {
   margin-bottom: 45px;
 }
-.ImageWithTextBox::after{
+
+.ImageWithTextBox::after {
   content: none !important;
 }
+
 .DifBox1 .row:last-child {
   margin-bottom: 0;
 }
+
 .form-open [data-id="zsalesiq"],
 .menu-open [data-id="zsalesiq"] {
   display: none !important;
 }
-.FormPopUp textarea{
+
+.FormPopUp textarea {
   max-height: 80px;
 }
-.LottieLayer{
+
+.LottieLayer {
   z-index: 4;
   object-fit: cover;
   justify-content: center;
@@ -2452,4 +2459,11 @@ transition: 0.5s;
   display: flex;
   position: absolute;
   inset: -1%;
+}
+
+.truncate-3-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

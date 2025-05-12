@@ -42,7 +42,7 @@ export default function BlogListing({ blogs }) {
                                         <div className="LatestBlogDesc">
                                             <div className="LtT1 nunito-text" style={{ textTransform: 'uppercase' }}>{blog?.date} | {blog?.category}</div>
                                             <div className="LtT2">{blog?.heading}</div>
-                                            <div className="LtT3">{blog?.subheading}</div>
+                                            <div className="LtT3 truncate-3-lines">{blog?.subheading}</div>
                                             <div className="text-right">
                                                 <Link href={`/news-updates/${blog._id}`} className='Link6 hover1'>Read More</Link>
                                             </div>
