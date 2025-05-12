@@ -8,13 +8,13 @@ import Image from "next/image";
 // import p3 from "../../public/p3.jpg"
 // import p4 from "../../public/p4.jpg"
 
-import p1 from "../../public/Takmeel-Al-Barrari-View/Majan-Cropped 03.jpg";
-import p2 from "../../public/Divine-Residencia/Divine residencia main facade.jpg"
-import p3 from "../../public/bannerDesktopFirst.jpg"
-import p4 from "../../public/Divine-Residence-Image.jpg"
-import p5 from "../../public/meydan-cropped.jpg"
-import p6 from "../../public/Golf-View-Living-Apartments/Golf Apartments 03.jpg"
-import p7 from "../../public/Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg"
+import p1 from "../../public/Takmeel-Al-Barrari-View/Majan 03.jpg";
+import p2 from "../../public/k1.jpg"
+import p3 from "../../public/k2.jpg"
+import p4 from "../../public/k3.jpg"
+import p5 from "../../public/k4.jpg"
+import p6 from "../../public/k5.jpg"
+import p7 from "../../public/k6.jpg"
 import Link from "next/link";
 
 
