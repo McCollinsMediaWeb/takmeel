@@ -1318,7 +1318,7 @@ body .slick-prev::before {
 }
 
 .Accordion {
-  background-color: #fff;
+  background-color: #d6b264;
   padding: 20px;
   margin-bottom: 15px;
   font-size: 18px;
@@ -1326,7 +1326,9 @@ body .slick-prev::before {
   position: relative;
   padding-right: 50px;
 }
-
+.AccordionQuestion{
+  font-weight: 600;
+}
 .AccordionAnswer {
   margin-top: 20px;
   font-size: 18px;

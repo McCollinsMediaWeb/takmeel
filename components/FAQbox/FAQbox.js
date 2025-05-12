@@ -13,59 +13,54 @@ export default function FAQbox() {
     };
     const accordionItems = [
         {
-            question: "By Law, Can You Buy Properties In Dubai?",
+            question: "What types of properties does Takmeel UAE Properties offer?",
             answer:
-                "I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.",
+                "Takmeel UAE Properties offers a wide range of real estate options including residential apartments, villas, commercial spaces, off-plan projects, and investment properties across the UAE.",
         },
         {
-            question: "Can Foreigners/Expats Buy Houses In Dubai?",
+            question: "Is Takmeel UAE Properties licensed to operate in the UAE?",
             answer:
-                "I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.",
+                "Yes, Takmeel UAE Properties is a fully licensed and RERA-registered real estate agency, operating legally and ethically within the UAE market.",
         },
         {
-            question: "I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One. Is This Possible?",
+            question: "How can I schedule a property viewing with Takmeel?",
             answer:
-                "I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.",
+                "You can schedule a viewing by contacting us via phone, WhatsApp, email, or by filling out a request form on our website. Our agents will coordinate a convenient time based on your availability.",
         },
         {
-            question: "Can I Rent A Unit In One Of DP/Meraas Projects?",
+            question: "Does Takmeel UAE Properties assist with property management services?",
             answer:
-                "I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.",
+                "Yes, we provide end-to-end property management services including tenant placement, rent collection, maintenance coordination, and legal compliance.",
         },
         {
-            question: "What Documents Are Required To Register The Property With DLD?",
+            question: "Can international buyers purchase property through Takmeel?",
             answer:
-                "I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.",
+                "Absolutely. We assist international clients with buying property in designated freehold areas in the UAE and guide them through the entire legal and financial process.",
         },
         {
-            question: "What Is Oqood/Initial Agreement Of Property Sale?",
+            question: "What are the payment plan options for off-plan properties?",
             answer:
-                "I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.",
+                "Off-plan properties often come with flexible post-handover payment plans. We work directly with top developers to offer installment options that fit your budget.",
         },
         {
-            question: "The Property Is Mortgaged. Will I Still Receive My Title Deed?",
+            question: "Does Takmeel provide legal or mortgage assistance for property purchases?",
             answer:
-                "I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.",
+                "Yes, we work with a network of trusted mortgage brokers and legal advisors to ensure a smooth and secure property purchase experience.",
         },
         {
-            question: "The Property Is Mortgaged. Will I Still Receive My Title Deed?",
+            question: "How does Takmeel help landlords rent out their properties?",
             answer:
-                "I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.",
+                "We market your property across major platforms, screen tenants, handle documentation, and manage the lease process to ensure timely occupancy and rental income.",
         },
         {
-            question: "I’d Like To Carry Out Some Modifications To The Unit. Is An NOC Required?",
+            question: "What areas in the UAE does Takmeel specialize in?",
             answer:
-                "I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.",
+                "We specialize in key real estate markets across Dubai, Abu Dhabi, Sharjah, and Ajman, including popular communities like Downtown Dubai, Dubai Marina, JVC, Business Bay, and more.",
         },
         {
-            question: "How To Apply For A Modification NOC?",
+            question: "How can I get in touch with a Takmeel property advisor?",
             answer:
-                "I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.",
-        },
-        {
-            question: "I’m Planning To Resell My Property. Do I, As The Seller, Need A No Objection Certificate (NOC)?",
-            answer:
-                "I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.I Purchased An Off-Plan Unit, But I’m Interested In Upgrading To A Larger One.",
+                "You can reach us via our official website, call us directly, or visit our office. Our property consultants are ready to assist you with expert guidance and support.",
         },
     ];
     return (
