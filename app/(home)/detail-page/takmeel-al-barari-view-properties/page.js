@@ -123,10 +123,10 @@ export default async function TakmeelAlBarariViewPropertiesPage() {
         src: "am1.jpg",
         title: "Kitchen Area",
       },
-      {
-        src: "am2.jpg",
-        title: "Kitchen Area",
-      },
+      // {
+      //   src: "am2.jpg",
+      //   title: "Kitchen Area",
+      // },
       {
         src: "am55.jpg",
         title: "Living Area",
@@ -135,10 +135,10 @@ export default async function TakmeelAlBarariViewPropertiesPage() {
         src: "am6.jpg",
         title: "Lounge Area",
       },
-      {
-        src: "m1.jpg",
-        title: "Bedroom Area",
-      },
+      // {
+      //   src: "m1.jpg",
+      //   title: "Bedroom Area",
+      // },
       {
         src: "m3.jpg",
         title: "Living Area",
@@ -153,14 +153,14 @@ export default async function TakmeelAlBarariViewPropertiesPage() {
         src: "majan1/28.jpg",
         title: "Gym Area",
       },
-      {
-        src: "majan1/34.jpg",
-        title: "Lounge Area",
-      },
-      {
-        src: "majan1/46.jpg",
-        title: "Kitchen Area",
-      },
+      // {
+      //   src: "majan1/34.jpg",
+      //   title: "Lounge Area",
+      // },
+      // {
+      //   src: "majan1/46.jpg",
+      //   title: "Kitchen Area",
+      // },
       {
         src: "majan1/49.jpg",
         title: "Bedroom Area",
@@ -181,10 +181,10 @@ export default async function TakmeelAlBarariViewPropertiesPage() {
         src: "majan1/29.jpg",
         title: "Gym Area",
       },
-      {
-        src: "majan1/30.jpg",
-        title: "Gym Area",
-      },
+      // {
+      //   src: "majan1/30.jpg",
+      //   title: "Gym Area",
+      // },
 
       {
         src: "majan1/37.jpg",
@@ -194,10 +194,10 @@ export default async function TakmeelAlBarariViewPropertiesPage() {
         src: "majan1/38.jpg",
         title: "Living Area",
       },
-      {
-        src: "majan1/47.jpg",
-        title: "Kitchen Area",
-      },
+      // {
+      //   src: "majan1/47.jpg",
+      //   title: "Kitchen Area",
+      // },
       {
         src: "majan1/48.jpg",
         title: "Kitchen Area",
