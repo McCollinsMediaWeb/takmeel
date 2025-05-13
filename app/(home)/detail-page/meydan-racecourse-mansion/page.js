@@ -73,7 +73,7 @@ export default async function MeydanRacecourseMansion() {
       "Meydan-Racecourse-Mansion/Maydan 12.png",
       // "Meydan-Racecourse-Mansion/Maydan 08.jpg",
       "Meydan-Racecourse-Mansion/Maydan 09.jpg",
-      "Meydan-Racecourse-Mansion/Maydan 10.jpg",
+      // "Meydan-Racecourse-Mansion/Maydan 10.jpg",
     ],
   };
   const DataProjectDetails2 = {

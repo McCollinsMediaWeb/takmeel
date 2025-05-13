@@ -65,7 +65,7 @@ export default async function DivineLiving() {
       // "Studio Bespoke_Design Living_24.03.2023_Page_14_Image_0001.jpg",
       // "Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg",
       "Divine-Living/Divine-Living-Image01.jpg",
-      "Divine-Living/Divine-Living-Image02.jpg",
+      // "Divine-Living/Divine-Living-Image02.jpg",
       "Divine-Living/Divine-Living-Image03.jpg",
       "Divine-Living/Divine-Living-Image04.jpg",
       "Divine-Living/Divine-Living-Image05.jpg",
