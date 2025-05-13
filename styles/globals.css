@@ -101,7 +101,6 @@ header {
 
 .FullScreenBanner:after {
   content: "";
-  /* background-image: url(../public/overlay.png); */
   position: absolute;
   left: 0;
   top: 0;
@@ -117,6 +116,7 @@ header {
   max-height: 100vh;
   animation: scrollBackground 10s linear infinite;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .FsBannerContentFlex {
@@ -130,7 +130,11 @@ header {
   color: #fff;
   align-items: center;
 }
-
+.FsBannerContentFlex1 {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: rgb(255, 255, 255);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
 .Txt1 {
   color: #D6B264;
   margin-bottom: 15px;
@@ -2478,4 +2482,8 @@ input[type=number] {
   padding-top: 0px;
   padding-bottom: 0px;
   min-height: 90vh;
+}
+.FullScreenBanner {
+    transform-style: preserve-3d;
+    will-change: transform;
 }
