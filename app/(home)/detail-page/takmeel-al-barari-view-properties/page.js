@@ -230,7 +230,7 @@ export default async function TakmeelAlBarariViewPropertiesPage() {
     {
       amenity: "Indoor",
       values: [
-        // { iconNo: 1, name: "Outdoor Showers" },
+        { iconNo: 39, name: "Outdoor Showers" },
         { iconNo: 22, name: "Beach Entry Pool" },
         { iconNo: 19, name: "Adult Pool" },
         // { iconNo: 5, name: "Dry Decking Area" },

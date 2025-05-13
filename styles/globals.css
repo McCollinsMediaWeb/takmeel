@@ -1869,6 +1869,10 @@ body .slick-prev::before {
   background-image: url(../public/Icons/Takmeel_Icons_Landscaped-\ Gardens.png);
 }
 
+.AmnIcon.AmnIcon39 {
+  background-image: url(../public/Icons/Takmeel_Icons_Outdoor\ Shower.png);
+}
+
 .AmnBoxWrap {
   margin-top: 35px;
 }
