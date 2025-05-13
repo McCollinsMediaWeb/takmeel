@@ -131,6 +131,22 @@ export default async function GolfViewLivingApartments() {
         src: "Golf-View-Living-Apartments/DSC08102.jpg",
         title: "Kitchen Area",
       },
+      {
+        src: "Golf-View-Living-Apartments/Image01.jpg",
+        title: "Kitchen Area",
+      },
+      {
+        src: "Golf-View-Living-Apartments/Image02.jpg",
+        title: "Kitchen Area",
+      },
+      {
+        src: "Golf-View-Living-Apartments/Image03.jpg",
+        title: "Kitchen Area",
+      },
+      {
+        src: "Golf-View-Living-Apartments/Image04.jpg",
+        title: "Kitchen Area",
+      },
     ],
   };
 
