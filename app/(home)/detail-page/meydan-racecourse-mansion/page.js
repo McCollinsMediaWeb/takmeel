@@ -64,8 +64,8 @@ export default async function MeydanRacecourseMansion() {
     GalleryImages: [
       // "Meydan-Racecourse-Mansion/Maydan 01.jpg",
       // "Meydan-Racecourse-Mansion/Maydan 02.jpg",
-      "Meydan-Racecourse-Mansion/Maydan 03.jpg",
-      "Meydan-Racecourse-Mansion/Maydan 04.jpg",
+      // "Meydan-Racecourse-Mansion/Maydan 03.jpg",
+      // "Meydan-Racecourse-Mansion/Maydan 04.jpg",
       // "Meydan-Racecourse-Mansion/Maydan 05.jpg",
       "Meydan-Racecourse-Mansion/Maydan 06.jpg",
       "Meydan-Racecourse-Mansion/Maydan 07.jpg",

@@ -129,10 +129,10 @@ export default async function DivineLiving() {
         src: "dl4.jpg",
         title: "Living Area",
       },
-      {
-        src: "dl5.jpg",
-        title: "Lounge Area",
-      },
+      // {
+      //   src: "dl5.jpg",
+      //   title: "Lounge Area",
+      // },
       {
         src: "dl6.jpg",
         title: "Living Area",
