@@ -67,9 +67,11 @@ export default async function MeydanRacecourseMansion() {
       // "Meydan-Racecourse-Mansion/Maydan 03.jpg",
       // "Meydan-Racecourse-Mansion/Maydan 04.jpg",
       // "Meydan-Racecourse-Mansion/Maydan 05.jpg",
-      "Meydan-Racecourse-Mansion/Maydan 06.jpg",
-      "Meydan-Racecourse-Mansion/Maydan 07.jpg",
-      "Meydan-Racecourse-Mansion/Maydan 08.jpg",
+      // "Meydan-Racecourse-Mansion/Maydan 06.jpg",
+      // "Meydan-Racecourse-Mansion/Maydan 07.jpg",
+      "Meydan-Racecourse-Mansion/Maydan 11.png",
+      "Meydan-Racecourse-Mansion/Maydan 12.png",
+      // "Meydan-Racecourse-Mansion/Maydan 08.jpg",
       "Meydan-Racecourse-Mansion/Maydan 09.jpg",
       "Meydan-Racecourse-Mansion/Maydan 10.jpg",
     ],
@@ -124,6 +126,18 @@ export default async function MeydanRacecourseMansion() {
       "Nestled in the heart of Dubai’s most sought-after enclave, this exquisite mansion by Takmeel Real Estate is a masterpiece of modern opulence and architectural grace. Designed with a seamless blend of contemporary aesthetics and timeless detail, the residence offers expansive living spaces, sun-drenched interiors, and unobstructed skyline views. Whether you're hosting grand soirées under the stars or enjoying quiet reflection beside the infinity pool, every corner of this home is crafted to elevate your lifestyle. Here, luxury isn't just experienced—it's lived.",
     GalleryImagesWithNames: [
       {
+        src: "Meydan-Racecourse-Mansion/Maydan 06.jpg",
+        title: ""
+      },
+      // {
+      //   src: "Meydan-Racecourse-Mansion/Maydan 07.jpg",
+      //   title: ""
+      // },
+      // {
+      //   src: "Meydan-Racecourse-Mansion/Maydan 08.jpg",
+      //   title: ""
+      // },
+      {
         src: "Meydan-Racecourse-Mansion/Maydan 04.jpg",
         title: "Exterior",
       },
@@ -131,10 +145,10 @@ export default async function MeydanRacecourseMansion() {
         src: "Meydan-Racecourse-Mansion/Maydan 07.jpg",
         title: "Swimming Pool",
       },
-      {
-        src: "Meydan-Racecourse-Mansion/Maydan 10.jpg",
-        title: "Parking bay/slot",
-      },
+      // {
+      //   src: "Meydan-Racecourse-Mansion/Maydan 10.jpg",
+      //   title: "Parking bay/slot",
+      // },
     ],
   };
 
