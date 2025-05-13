@@ -530,7 +530,7 @@ export default function ProjectItem({
                                     <motion.div className="Txt1" variants={itemVariants}>
                                         {text1}
                                     </motion.div>
-                                    
+
                                     <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
                                         {text2}
                                     </motion.div>
@@ -559,11 +559,14 @@ export default function ProjectItem({
                                         </motion.div>
                                     </motion.div>
 
-                                    <motion.div variants={itemVariants}>
-                                        <Link href={`/detail-page/${url}`} className="Link1 hover1">
-                                            Explore Property
-                                        </Link>
-                                    </motion.div>
+                                    {url !== "takmeel-al-barari-view-properties" && (
+                                        <motion.div variants={itemVariants}>
+                                            <Link href={`/detail-page/${url}`} className="Link1 hover1">
+                                                Explore Property
+                                            </Link>
+                                        </motion.div>
+                                    )}
+
                                     {projectStatus && (
                                         <motion.div className="Txt1" variants={itemVariants}>
                                             <div className="Txt1">
