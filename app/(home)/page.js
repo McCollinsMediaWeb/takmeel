@@ -53,6 +53,22 @@ export default async function Home() {
       }
     ]
   };
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Set up full-page scroll behavior
+    gsap.utils.toArray('.section').forEach((section, index) => {
+      gsap.to(section, {
+        scrollTrigger: {
+          trigger: section,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true,
+          pin: true, // Pin the section during scroll
+        },
+      });
+    });
+  }, []);
 
 
   return (
@@ -98,14 +114,22 @@ export default async function Home() {
             <div className="section">
               <ProjectItem backgroundImage="Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg" backgroundImageMobile="Golf-View-Living-Villas/divine-golf-villas-Facade-Mobile 03.jpg" text1="Featured Properties" text2="Golf View Living Villas" text3="Ajman" tagline="Private Villas Surrounded by Nature’s Calm" url="golf-view-living-villas" projectStatus="Sold Out" />
             </div>
+
+            <div className="section">
+              <MainMapComponent MapImageDesk="map6.svg" MapImageMobile="mapmobile.svg" />
+            </div>
+            <div className="section">
+              <HomeAbout />
+            </div>
+
+            {/* <SoldOutBox/> */}
+            <div className="section">
+              <ContactForm />
+            </div>
+            <div className="section">
+              <CustomerTestimonials  {...GalleryData2} />
+            </div>
           </FullpageWrapper>
-
-          <MainMapComponent MapImageDesk="map6.svg" MapImageMobile="mapmobile.svg" />
-          <HomeAbout />
-
-          {/* <SoldOutBox/> */}
-          <ContactForm />
-          <CustomerTestimonials  {...GalleryData2} />
         </div>
       </div>
     </>

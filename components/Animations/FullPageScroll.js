@@ -1,27 +1,40 @@
-// components/FullpageWrapper.js
-"use client";
+"use client"; // Make sure this is a client component
 
-import { useEffect } from "react";
-import fullpage from "fullpage.js";
-import "fullpage.js/dist/fullpage.min.css";
+import { useEffect } from 'react';
+import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
-export default function FullpageWrapper({ children }) {
+const FullPageScroll = () => {
   useEffect(() => {
-    new fullpage("#fullpage", {
-      autoScrolling: true,
-      scrollHorizontally: true,
-      navigation: true,
-      scrollingSpeed: 700,
-    });
+    gsap.registerPlugin(ScrollTrigger);
 
-    return () => {
-      fullpage.destroy("all");
-    };
+    // Set up full-page scroll behavior
+    gsap.utils.toArray('.section').forEach((section) => {
+      gsap.to(section, {
+        scrollTrigger: {
+          trigger: section,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true,
+          pin: true, // Pin the section during scroll
+        },
+      });
+    });
   }, []);
 
   return (
-    <div id="fullpage">
-      {children}
+    <div>
+      <div className="section" style={{ backgroundColor: 'lightblue' }}>
+        Section 1
+      </div>
+      <div className="section" style={{ backgroundColor: 'lightgreen' }}>
+        Section 2
+      </div>
+      <div className="section" style={{ backgroundColor: 'lightcoral' }}>
+        Section 3
+      </div>
     </div>
   );
-}
+};
+
+export default FullPageScroll;
