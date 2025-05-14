@@ -71,11 +71,7 @@ export default function FirstProjectItem({
                     style={{ width: '100%' }}
                 />
             ) : (
-                <motion.div
-                    animate={{ scale: [1, 1.05, 1] }}
-                    transition={{ duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-                    viewport={{ once: true, amount: 0.5 }}
-                >
+                <div>
                     {isDesktop ? (
                         <Image
                             src={`/${backgroundImage}`}
@@ -95,7 +91,7 @@ export default function FirstProjectItem({
                             loading="lazy"
                         />
                     )}
-                </motion.div>
+                </div>
             )}
 
 
