@@ -14,7 +14,7 @@ import MainMapComponent from "@/components/MainMapComponent/MainMapComponent";
 import FirstProjectItem from "@/components/FirstProjectItem/FirstProjectItem";
 import CustomerTestimonials from "@/components/CustomerTestimonials/CustomerTestimonials";
 
-const FullPageScroll = () => {
+const FullPageScroll = ({ children }) => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -32,19 +32,21 @@ const FullPageScroll = () => {
     });
   }, []);
 
-  return (
-    <div>
-      <div className="section" style={{ backgroundColor: 'lightblue' }}>
-        Section 1
-      </div>
-      <div className="section" style={{ backgroundColor: 'lightgreen' }}>
-        Section 2
-      </div>
-      <div className="section" style={{ backgroundColor: 'lightcoral' }}>
-        Section 3
-      </div>
-    </div>
-  );
+  // return (
+  //   <div>
+  //     <div className="section" style={{ backgroundColor: 'lightblue' }}>
+  //       Section 1
+  //     </div>
+  //     <div className="section" style={{ backgroundColor: 'lightgreen' }}>
+  //       Section 2
+  //     </div>
+  //     <div className="section" style={{ backgroundColor: 'lightcoral' }}>
+  //       Section 3
+  //     </div>
+  //   </div>
+  // );
+
+  return <div>{children}</div>;
 };
 
 export default FullPageScroll;

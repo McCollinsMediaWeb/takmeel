@@ -10,7 +10,9 @@ import FirstProjectItem from "@/components/FirstProjectItem/FirstProjectItem";
 import CustomerTestimonials from "@/components/CustomerTestimonials/CustomerTestimonials";
 import MetaInjector from "@/components/Meta/MetaInjector";
 import { getMetaTags } from "@/lib/getMetaTags";
-import FullpageWrapper from "@/components/Animations/FullPageScroll";
+// import FullpageWrapper from "@/components/Animations/FullPageScroll";
+import FullPageScroll from "@/components/Animations/FullPageScroll";
+
 export default async function Home() {
   const metaTags = await getMetaTags("/");
   if (metaTags.length === 0 || !metaTags[0].metaContent) {
@@ -53,22 +55,22 @@ export default async function Home() {
       }
     ]
   };
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
 
-    // Set up full-page scroll behavior
-    gsap.utils.toArray('.section').forEach((section, index) => {
-      gsap.to(section, {
-        scrollTrigger: {
-          trigger: section,
-          start: 'top top',
-          end: 'bottom top',
-          scrub: true,
-          pin: true, // Pin the section during scroll
-        },
-      });
-    });
-  }, []);
+  //   // Set up full-page scroll behavior
+  //   gsap.utils.toArray('.section').forEach((section, index) => {
+  //     gsap.to(section, {
+  //       scrollTrigger: {
+  //         trigger: section,
+  //         start: 'top top',
+  //         end: 'bottom top',
+  //         scrub: true,
+  //         pin: true, // Pin the section during scroll
+  //       },
+  //     });
+  //   });
+  // }, []);
 
 
   return (
@@ -85,7 +87,7 @@ export default async function Home() {
         <FullScreenBanner backgroundImage="Divine-Golf-Video.mp4" backgroundImageMobile="bannerMobileFour.jpg" text1="Featured Properties"  text2="Golf View Living Apartments" text3="Al Zorah, Ajman" tagline="Your Everyday Escape, Overlooking the Greens" url="golf-view-living-apartments" />
         <FullScreenBanner backgroundImage="Golf-View-Living-Villa.mp4" backgroundImageMobile="Golf-View-Living-Villas/divine-golf-villas-Facade-Mobile 03.jpg" text1="Featured Properties"  text2="Golf View Living Villas" text3="Ajman" tagline="Private Villas Surrounded by Nature’s Calm" url="golf-view-living-villas" /> */}
           {/* <HomeBanner2 backgroundImage="np1.jpg" backgroundImageMobile="np1mobile.jpg" text1="Project Showcase"  text2="Meydan Racecourse Mansion" text3="Embark on a journey through luxury, elegance, and innovation at Meydan Racecourse Mansion—a timeless landmark in TAKMEEL’s portfolio, promising an unparalleled lifestyle experience amidst breathtaking views and unparalleled grandeur."/> */}
-          <FullpageWrapper>
+          <FullPageScroll>
             <div className="section">
 
               <FirstProjectItem backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg" backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg" text1="" text2="TAKMEEL" text3="Where purposeful design and visionary innovation converge to create spaces that inspire, elevate, and redefine modern living." tagline="" url="projects" backgroundVideo="tt2.mp4" />
@@ -129,7 +131,7 @@ export default async function Home() {
             <div className="section">
               <CustomerTestimonials  {...GalleryData2} />
             </div>
-          </FullpageWrapper>
+          </FullPageScroll>
         </div>
       </div>
     </>
