@@ -12,6 +12,8 @@ import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
 import PaymentPlanBlock from "@/components/PaymentPlanBlock/PaymentPlanBlock";
 import { getMetaTags } from "@/lib/getMetaTags";
 import MetaInjector from "@/components/Meta/MetaInjector";
+import Footer from "@/components/footer/footer";
+import FooterBottom from "@/components/footerBottom/footerBottom";
 
 export default async function DivineLiving() {
   const metaTags = await getMetaTags("/detail-page/divine-living");
@@ -325,6 +327,8 @@ export default async function DivineLiving() {
         <ProjectDetails7 mapimage="new2.jpg" mobileMapImage="new2m.jpg" {...DataProjectDetails7} />
         <CostCalculator />
         <PropertyForm projectName="Divine Living" />
+        <Footer />
+        <FooterBottom />
       </div>
     </>
   );

@@ -12,6 +12,8 @@ import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
 import PaymentPlanBlock from "@/components/PaymentPlanBlock/PaymentPlanBlock";
 import { getMetaTags } from "@/lib/getMetaTags";
 import MetaInjector from "@/components/Meta/MetaInjector";
+import Footer from "@/components/footer/footer";
+import FooterBottom from "@/components/footerBottom/footerBottom";
 
 export default async function TakmeelAlBarariViewPropertiesPage() {
   const metaTags = await getMetaTags("/detail-page/takmeel-al-barari-view-properties");
@@ -426,6 +428,8 @@ export default async function TakmeelAlBarariViewPropertiesPage() {
         {/* <ProjectDetails7 mapimage="mapalb.jpg" {...DataProjectDetails7} /> */}
         <CostCalculator />
         <PropertyForm projectName="Divine Al Barari" />
+        <Footer />
+        <FooterBottom />
       </div>
     </>
   );

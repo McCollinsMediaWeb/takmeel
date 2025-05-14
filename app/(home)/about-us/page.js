@@ -6,6 +6,8 @@ import AboutVisionMission2 from "@/components/AboutVisionMission/AboutVisionMiss
 import Founders from "@/components/Founders/Founders";
 import { getMetaTags } from "@/lib/getMetaTags";
 import MetaInjector from "@/components/Meta/MetaInjector";
+import Footer from "@/components/footer/footer";
+import FooterBottom from "@/components/footerBottom/footerBottom";
 
 export default async function AboutUs() {
   const metaTags = await getMetaTags("/about-us");
@@ -24,6 +26,8 @@ export default async function AboutUs() {
         <Founders />
         <AboutVisionMission2 />
         <ContactForm />
+        <Footer />
+        <FooterBottom />
       </div>
     </>
   );

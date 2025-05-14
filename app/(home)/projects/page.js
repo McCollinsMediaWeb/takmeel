@@ -3,6 +3,8 @@ import ProjectsPageHeader from "@/components/ProjectsPageHeader/ProjectsPageHead
 import ProjectItem from "@/components/ProjectItem/ProjectItem";
 import { getMetaTags } from "@/lib/getMetaTags";
 import MetaInjector from "@/components/Meta/MetaInjector";
+import Footer from "@/components/footer/footer";
+import FooterBottom from "@/components/footerBottom/footerBottom";
 
 export default async function Projects() {
   const metaTags = await getMetaTags("/projects");
@@ -32,6 +34,8 @@ export default async function Projects() {
         <ProjectItem backgroundImage="Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg" backgroundImageMobile="Golf-View-Living-Villas/divine-golf-villas-Facade-Mobile 03.jpg" text1="Featured Properties" text2="Golf View Living Villas" text3="Ajman" tagline="Private Villas Surrounded by Nature’s Calm" url="golf-view-living-villas" projectStatus="Sold Out" />
 
         <ContactForm />
+        <Footer />
+        <FooterBottom />
       </section>
     </>
   );

@@ -7,6 +7,8 @@ import b1 from "../../../public/main4.jpg";
 import { getMetaTags } from "@/lib/getMetaTags";
 import MetaInjector from "@/components/Meta/MetaInjector";
 import FAQBanner from "@/components/FAQbox/FAQBanner";
+import Footer from "@/components/footer/footer";
+import FooterBottom from "@/components/footerBottom/footerBottom";
 
 export default async function Faqs() {
   const metaTags = await getMetaTags("/faqs");
@@ -21,6 +23,8 @@ export default async function Faqs() {
         <FAQBanner />
         <FAQbox />
         <ContactForm />
+        <Footer />
+        <FooterBottom />
       </div>
     </>
   );

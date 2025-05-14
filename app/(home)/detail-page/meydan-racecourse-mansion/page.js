@@ -11,6 +11,8 @@ import CostCalculator from "@/components/DetailPageComponents/CostCalculator";
 import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
 import MetaInjector from "@/components/Meta/MetaInjector";
 import { getMetaTags } from "@/lib/getMetaTags";
+import Footer from "@/components/footer/footer";
+import FooterBottom from "@/components/footerBottom/footerBottom";
 
 export default async function MeydanRacecourseMansion() {
   const metaTags = await getMetaTags("/detail-page/meydan-racecourse-mansion");
@@ -316,6 +318,8 @@ export default async function MeydanRacecourseMansion() {
         <ProjectDetails7 mapimage="new5.jpg" mobileMapImage="new5m.jpg"  {...DataProjectDetails7} />
         {/* /<CostCalculator /> */}
         <PropertyForm projectName="Meydan Racecourse Mansion" />
+        <Footer />
+        <FooterBottom />
       </div>
     </>
   );

@@ -1,6 +1,8 @@
 import CareerFirstBanner from "@/components/CareerComponents/CareerFirstBanner";
 import GetInTouchForm from "@/components/CareerComponents/GetInTouchForm";
 import WhyWorkTogether from "@/components/CareerComponents/WhyWorkTogether";
+import Footer from "@/components/footer/footer";
+import FooterBottom from "@/components/footerBottom/footerBottom";
 import MetaInjector from "@/components/Meta/MetaInjector";
 import { getMetaTags } from "@/lib/getMetaTags";
 
@@ -18,6 +20,8 @@ export default async function Careers() {
                 <CareerFirstBanner />
                 <WhyWorkTogether />
                 <GetInTouchForm />
+                <Footer />
+                <FooterBottom />
             </div>
         </>
     );

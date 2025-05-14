@@ -4,10 +4,12 @@ import ContactForm from "@/components/ContactForm/ContactForm";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import b1 from "../../../public/main1.jpg";
+import Footer from "@/components/footer/footer";
+import FooterBottom from "@/components/footerBottom/footerBottom";
 export default function TermsOfUse() {
-    return (
-      <div>
-        <section className='CntPageHead screenWidth ScreenHeight'>
+  return (
+    <div>
+      <section className='CntPageHead screenWidth ScreenHeight'>
         <Image
           src={b1}
           width={1464}
@@ -22,12 +24,13 @@ export default function TermsOfUse() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.5 }}
           >
-          Terms Of Use
+            Terms Of Use
           </motion.div>
         </div>
       </section>
-        <ContactForm/>
-      </div>
-    );
-  }
-  
+      <ContactForm />
+      <Footer />
+      <FooterBottom />
+    </div>
+  );
+}

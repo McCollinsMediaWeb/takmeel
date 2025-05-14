@@ -11,6 +11,8 @@ import CostCalculator from "@/components/DetailPageComponents/CostCalculator";
 import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
 import MetaInjector from "@/components/Meta/MetaInjector";
 import { getMetaTags } from "@/lib/getMetaTags";
+import Footer from "@/components/footer/footer";
+import FooterBottom from "@/components/footerBottom/footerBottom";
 
 export default async function GolfViewLivingApartments() {
   const metaTags = await getMetaTags("/detail-page/golf-view-living-apartments");
@@ -311,6 +313,8 @@ export default async function GolfViewLivingApartments() {
         <ProjectDetails7 {...DataProjectDetails7} />
         {/* <CostCalculator /> */}
         <PropertyForm projectName="Golf View Living Apartments" />
+        <Footer />
+        <FooterBottom />
       </div>
     </>
   );

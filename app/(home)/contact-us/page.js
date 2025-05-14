@@ -5,6 +5,8 @@ import OurOffice from "./OurOffice";
 import ContactUsBanner from "./ContactUsBanner";
 import MetaInjector from "@/components/Meta/MetaInjector";
 import { getMetaTags } from "@/lib/getMetaTags";
+import Footer from "@/components/footer/footer";
+import FooterBottom from "@/components/footerBottom/footerBottom";
 
 export default async function ContactUs() {
   const metaTags = await getMetaTags("/contact-us");
@@ -100,6 +102,8 @@ export default async function ContactUs() {
         </div>
       </section> */}
         <FAQbox />
+        <Footer />
+        <FooterBottom />
       </div>
     </>
   );

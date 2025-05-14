@@ -4,6 +4,8 @@ import ContactForm from "@/components/ContactForm/ContactForm";
 import GalleryClient from "./GalleryClient";
 import { getMetaTags } from "@/lib/getMetaTags";
 import MetaInjector from "@/components/Meta/MetaInjector";
+import Footer from "@/components/footer/footer";
+import FooterBottom from "@/components/footerBottom/footerBottom";
 
 export default async function GalleryPage() {
   const metaTags = await getMetaTags("/gallery");
@@ -18,6 +20,8 @@ export default async function GalleryPage() {
         <GalleryHeader backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg" backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg" backgroundVideo="tt2.mp4" />
         <GalleryClient />
         <ContactForm />
+        <Footer />
+        <FooterBottom />
       </div>
     </>
   );

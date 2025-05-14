@@ -131,11 +131,13 @@ header {
   color: #fff;
   align-items: center;
 }
+
 .FsBannerContentFlex1 {
   background-color: rgba(0, 0, 0, 0.25);
   color: rgb(255, 255, 255);
   transition: background-color 0.2s ease, color 0.2s ease;
 }
+
 .Txt1 {
   color: #D6B264;
   margin-bottom: 15px;
@@ -1331,9 +1333,11 @@ body .slick-prev::before {
   position: relative;
   padding-right: 50px;
 }
-.AccordionQuestion{
+
+.AccordionQuestion {
   font-weight: 600;
 }
+
 .AccordionAnswer {
   margin-top: 20px;
   font-size: 18px;
@@ -2478,23 +2482,48 @@ input[type=number] {
   overflow: hidden;
 }
 
-.custom-container-flexible{
+.custom-container-flexible {
   max-width: 90%;
 }
 
-.custom-section-flexible{
+.custom-section-flexible {
   padding-top: 0px;
   padding-bottom: 0px;
   min-height: 90vh;
 }
+
 .FullScreenBanner {
-    transform-style: preserve-3d;
-    will-change: transform;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 
-.snap-container {
+.snap-container {}
 
+.snap-section {}
+
+#vibe-stack {
+  scroll-snap-type: y mandatory;
+  /* height: 100vh; */
+  /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
 }
 
-.snap-section {
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.snap-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.snap-div {
+  height: fit-content;
+  scroll-snap-align: center;
 }
