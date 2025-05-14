@@ -4,6 +4,16 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
+import FullScreenBanner from "@/components/fullscreen-banner/fullScreenBanner";
+import HomeBanner2 from "@/components/HomeBanner2/HomeBanner2";
+import HomeAbout from "@/components/HomeAbout/HomeAbout";
+import SoldOutBox from "@/components/SoldOutBox/SoldOutBox";
+import ContactForm from "@/components/ContactForm/ContactForm";
+import ProjectItem from "@/components/ProjectItem/ProjectItem";
+import MainMapComponent from "@/components/MainMapComponent/MainMapComponent";
+import FirstProjectItem from "@/components/FirstProjectItem/FirstProjectItem";
+import CustomerTestimonials from "@/components/CustomerTestimonials/CustomerTestimonials";
+
 const FullPageScroll = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
