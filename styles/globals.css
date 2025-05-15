@@ -1195,8 +1195,12 @@ body .slick-prev::before {
 }
 
 .LtT2 {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 10px;
+    display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
 
 .BlT3 {
@@ -2533,4 +2537,21 @@ body {
 .snap-div {
   height: fit-content;
   scroll-snap-align: center;
+}
+.LatestBlogImage img{
+  height: 350px !important;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.BlogItem{
+  border-radius: 15px;
+}
+.wrapLogo{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  max-width: 150px;
+}
+.wrapLogo img.LogoKlhaleeg{
+height: auto !important;
 }

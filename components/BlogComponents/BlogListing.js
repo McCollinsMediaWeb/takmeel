@@ -20,7 +20,45 @@ export default function BlogListing({ blogs }) {
             <div className="blogLists">
                 <div className="container">
                     <div className="row">
-
+                        <div className="col-md-4">
+                            <motion.div
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    viewport={{ once: true, amount: 0.5 }}
+                                >
+                                    <div className="BlogItem FtrItem">
+                                        <div className="LatestBlogImage position-relative">
+                                            <Image
+                                                src="/t2.jpg"
+                                                width={364}
+                                                height={253}
+                                                layout="responsive"
+                                                alt="Takmeel"
+                                            />
+                                            <div className="wrapLogo">
+                                                <Image
+                                                src="/klg.jpg"
+                                                width={900}
+                                                height={208}
+                                                layout="responsive"
+                                                alt="Takmeel"
+                                                className="LogoKlhaleeg"
+                                            />
+                                            </div>
+                                            
+                                        </div>
+                                        <div className="LatestBlogDesc">
+                                            <div className="LtT1 nunito-text" style={{ textTransform: 'uppercase' }}>Featured Article</div>
+                                            <div className="LtT2">Understanding 2024 — What to expect in 2025: Demystifying Dubai’s off-plan real estate boom</div>
+                                            <div className="LtT3 truncate-3-lines">Few markets have captured the global investor’s imagination quite like Dubai’s off-plan real estate sector. In 2024, this segment didn’t just grow — it evolved. The year was marked not by the kind of speculative frenzy that once defined the emirate’s real estate landscape, but by measured, confident strides rooted in transparency, smart planning, and a growing maturity in both buyer behavior and developer offerings.</div>
+                                            <div className="text-right">
+                                                <a target="_blank" href="https://www.khaleejtimes.com/business-technology-review/understanding-2024-what-to-expect-in-2025-demystifying-dubais-off-plan-real-estate-boom?_refresh=true" className='Link6 hover1'>Read in Khaleej Times</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </motion.div>
+                        </div>
                         {blogs?.map((blog) => (
                             <div className="col-md-4" key={blog?._id}>
                                 <motion.div

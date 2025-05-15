@@ -967,4 +967,7 @@
   .custom-section-flexible {
     min-height: 50vh;
   }
+  .LatestBlogImage img{
+  height: 200px !important;
+  }
 }
