@@ -1,13 +1,17 @@
-import { Geist, Geist_Mono, Nunito_Sans } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
+import { Nunito_Sans } from "next/font/google";
+import Head from "next/head";
 
-import Header from "@/components/header/header";
-import { GlobalDataProvider } from "@/context/GlobalDataContext";
 import "@/styles/bootstrap.css";
+import "@/styles/slick-slider/slick/slick.css";
+import "@/styles/slick-slider/slick/slick-theme.css";
 import "@/styles/globals.css";
 import "@/styles/responsive.css";
-import "@/styles/slick-slider/slick/slick-theme.css";
-import "@/styles/slick-slider/slick/slick.css";
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
+import FooterBottom from "@/components/footerBottom/footerBottom";
 import Script from "next/script";
+import { GlobalDataProvider } from "@/context/GlobalDataContext";
 
 
 const geistSans = Geist({

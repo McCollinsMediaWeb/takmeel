@@ -1,10 +1,9 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 
 export default function FirstProjectItem({

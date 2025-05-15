@@ -1,17 +1,13 @@
 
-import FullScreenBanner from "@/components/fullscreen-banner/fullScreenBanner";
-import HomeBanner2 from "@/components/HomeBanner2/HomeBanner2";
-import HomeAbout from "@/components/HomeAbout/HomeAbout";
-import SoldOutBox from "@/components/SoldOutBox/SoldOutBox";
 import ContactForm from "@/components/ContactForm/ContactForm";
-import ProjectItem from "@/components/ProjectItem/ProjectItem";
-import MainMapComponent from "@/components/MainMapComponent/MainMapComponent";
-import FirstProjectItem from "@/components/FirstProjectItem/FirstProjectItem";
 import CustomerTestimonials from "@/components/CustomerTestimonials/CustomerTestimonials";
+import HomeAbout from "@/components/HomeAbout/HomeAbout";
+import MainMapComponent from "@/components/MainMapComponent/MainMapComponent";
 import MetaInjector from "@/components/Meta/MetaInjector";
+import ProjectItem from "@/components/ProjectItem/ProjectItem";
 import { getMetaTags } from "@/lib/getMetaTags";
 // import FullpageWrapper from "@/components/Animations/FullPageScroll";
-import FullPageScroll from "@/components/Animations/FullPageScroll";
+import Banner from "@/components/FirstProjectItem/Banner";
 import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 
@@ -142,11 +138,11 @@ export default async function Home() {
       <MetaInjector metaContent={metaTags[0].metaContent} />
 
 
-
+  
       <div id="vibe-stack">
         <div className="snap-wrapper">
-          <div className="snap-div">
-            <FirstProjectItem
+          <div className="snap-div banner-snap">
+         <Banner
               backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg"
               backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"
               text1=""
@@ -155,7 +151,10 @@ export default async function Home() {
               tagline=""
               url="projects"
               backgroundVideo="tt2.mp4"
-            />
+            /> 
+          </div>
+          <div>
+            <h1>Hello Kasem</h1>
           </div>
           <div className="snap-div">
             <ProjectItem
