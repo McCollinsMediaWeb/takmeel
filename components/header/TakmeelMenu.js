@@ -39,7 +39,7 @@ export default function TakmeelMenu() {
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    transition={{ duration: 1, ease: "easeOut" }}
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <Link href="/" className='Link8'>
@@ -52,7 +52,7 @@ export default function TakmeelMenu() {
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    transition={{ duration: 1, ease: "easeOut" }}
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <Link href={'/about-us'} className='Link8'>
@@ -65,7 +65,7 @@ export default function TakmeelMenu() {
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    transition={{ duration: 1, ease: "easeOut" }}
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <Link href={'/projects'} className='Link8'>
@@ -78,7 +78,7 @@ export default function TakmeelMenu() {
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    transition={{ duration: 1, ease: "easeOut" }}
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <Link href={'/gallery'} className='Link8'>
@@ -91,7 +91,7 @@ export default function TakmeelMenu() {
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    transition={{ duration: 1, ease: "easeOut" }}
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <Link href={'/news-updates'} className='Link8'>
@@ -104,7 +104,7 @@ export default function TakmeelMenu() {
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    transition={{ duration: 1, ease: "easeOut" }}
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <Link href={'/contact-us'} className='Link8'>
@@ -121,7 +121,7 @@ export default function TakmeelMenu() {
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    transition={{ duration: 1, ease: "easeOut" }}
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <Link href="/careers" className='Link8'>
@@ -134,7 +134,7 @@ export default function TakmeelMenu() {
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    transition={{ duration: 1, ease: "easeOut" }}
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <Link href="/faqs" className='Link8'>
@@ -147,7 +147,7 @@ export default function TakmeelMenu() {
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    transition={{ duration: 1, ease: "easeOut" }}
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <Link href="/privacy-policy" className='Link8'>
@@ -160,7 +160,7 @@ export default function TakmeelMenu() {
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
+                                    transition={{ duration: 1, ease: "easeOut" }}
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <Link href="/terms-of-use" className='Link8'>

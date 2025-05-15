@@ -68,7 +68,7 @@ export default function ProjectDetails2({ ThumbImage1,ThumbImage2,text1Heading ,
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    transition={{ duration: 1, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                 >
                     <div className='row align-items-center mb3'>
