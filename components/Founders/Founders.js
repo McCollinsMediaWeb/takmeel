@@ -18,13 +18,13 @@ export default function Founders() {
 
     var settings = {
         dots: true,
-        speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        speed: 2500,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         initialSlide: 0,
         infinite: true,
-        autoplay: true,
-        autoplaySpeed: 3500,
+        autoplay: true,               // Enables autoplay
+        autoplaySpeed: 2500,
         responsive: [
             {
                 breakpoint: 1024,
@@ -100,13 +100,13 @@ export default function Founders() {
 
     var settings1 = {
         dots: true,
-        speed: 2500,
+        speed: 3000,
         slidesToShow: 4,
-        slidesToScroll: 2,
+        slidesToScroll: 4,
         initialSlide: 0,
         infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2500,
+        autoplay: true,               // Enables autoplay
+        autoplaySpeed: 3000,
         responsive: [
             {
                 breakpoint: 1024,
