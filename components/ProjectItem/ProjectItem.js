@@ -518,7 +518,7 @@ export default function ProjectItem({
                                 variants={containerVariants}
                                 initial="hidden"
                                 whileInView="visible"
-                                viewport={{ once: true, amount: 0.5 }}
+                                viewport={{ once: false, amount: 0.5 }}
                             >
                                 <div>
 
