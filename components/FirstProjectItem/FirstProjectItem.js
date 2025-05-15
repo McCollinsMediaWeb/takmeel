@@ -1,11 +1,11 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react"
-import { motion, useScroll, useTransform, useMotionValueEvent, AnimatePresence } from "framer-motion"
-import Link from "next/link"
-import Image from "next/image"
-import { usePathname } from "next/navigation"
-import useMediaQuery from "../hooks/useMediaQuery"
+import { useRef, useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 export default function FirstProjectItem({
     backgroundImage,
@@ -18,32 +18,27 @@ export default function FirstProjectItem({
     projectStatus,
     backgroundVideo = null
 }) {
-    const containerRef = useRef(null)
-    const isDesktop = useMediaQuery("(min-width: 960px)")
+    const containerRef = useRef(null);
+    const isDesktop = useMediaQuery("(min-width: 960px)");
 
-
-    const [phase, setPhase] = useState("initial") // 'initial' -> 'transition' -> 'final'
+    const [phase, setPhase] = useState("initial"); // 'initial' -> 'transition' -> 'final'
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            setPhase("transition") // begin fade-out
+            setPhase("transition"); // begin fade-out
             setTimeout(() => {
-                setPhase("final") // show full content
-            }, 1000) // wait for fade-out to finish
-        }, 4000) // 4s display of 'Takmeel'
+                setPhase("final"); // show full content
+            }, 1000); // wait for fade-out to finish
+        }, 4000); // 4s display of 'Takmeel'
 
-        return () => clearTimeout(timer)
-    }, [])
+        return () => clearTimeout(timer);
+    }, []);
 
-
-
-
-
+    // Fade-only animations
     const containerVariants = {
-        hidden: { opacity: 0, y: 40 },
+        hidden: { opacity: 0 },
         visible: {
             opacity: 1,
-            y: 0,
             transition: {
                 duration: 0.6,
                 ease: "easeOut",
@@ -51,12 +46,12 @@ export default function FirstProjectItem({
                 staggerChildren: 0.2,
             },
         },
-    }
+    };
 
     const itemVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-    }
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { duration: 0.5, ease: "easeOut" } },
+    };
 
     return (
         <div className="FullScreenBanner Projects">
@@ -93,8 +88,6 @@ export default function FirstProjectItem({
                     )}
                 </div>
             )}
-
-
 
             <div className="FsBannerContent VideoD">
                 <div className="FsBannerContentFlex centerBlock">
@@ -147,7 +140,7 @@ export default function FirstProjectItem({
                                         </motion.div>
 
                                         <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
-                                        Crafted for Inspired Living
+                                            Crafted for Inspired Living
                                         </motion.div>
 
                                         <motion.div className="Txt3 nunito-text SmallSizeTxt" variants={itemVariants}>
@@ -167,12 +160,9 @@ export default function FirstProjectItem({
                                 )}
                             </div>
                         </motion.div>
-
-
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
-
