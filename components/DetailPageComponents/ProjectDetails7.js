@@ -44,11 +44,13 @@ export default function ProjectDetails7({ mapimage, text1, text2, landmarks, map
     var settings = {
         dots: true,
         infinite: false,
-        speed: 500,
+        speed: 2500,
         slidesToShow: 3,
         slidesToScroll: 3,
         initialSlide: 0,
         infinite: false,
+        autoplay: true,
+        autoplaySpeed: 2500,
         responsive: [
             {
                 breakpoint: 1024,
