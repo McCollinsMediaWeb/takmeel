@@ -11,23 +11,44 @@ export default function Header() {
   const isHome = pathname === '/' || pathname.startsWith('/detail-page/');
 
 
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 0) {
+  //       document.body.classList.add('scrolledOne');
+  //     } else {
+  //       document.body.classList.remove('scrolledOne');
+  //     }
+  //   };
+  //   window.addEventListener('scroll', handleScroll);
+  //   handleScroll();
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, []);
+
   useEffect(() => {
+    const vibeStack = document.querySelector(".vibe-stack");
+    if (!vibeStack) return;
+
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        document.body.classList.add('scrolledOne');
+      if (vibeStack.scrollTop > 0) {
+        vibeStack.classList.add("scrolledOne");
       } else {
-        document.body.classList.remove('scrolledOne');
+        vibeStack.classList.remove("scrolledOne");
       }
     };
-    window.addEventListener('scroll', handleScroll);
-    handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    vibeStack.addEventListener("scroll", handleScroll);
+    handleScroll(); // run on mount
+
+    return () => {
+      vibeStack.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+
 
   return (
     <header className={`MainHeader ${!isHome ? 'fixed-class' : ''}`}>
-      <TakmeelMenu/>
-      <HeaderForm/>
+      <TakmeelMenu />
+      <HeaderForm />
       <div className='container-fluid'>
         <div className='HeaderBox'>
           <div className='HederBoxFlex'>

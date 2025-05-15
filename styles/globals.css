@@ -2501,11 +2501,18 @@ input[type=number] {
 
 .snap-section {}
 
-#vibe-stack {
-  scroll-snap-type: y mandatory;
+.vibe-stack {
+  /* scroll-snap-type: y mandatory; */
   /* height: 100vh; */
   /* overflow-y: scroll; */
   /* overflow-x: hidden; */
+
+  height: 100vh;
+  /* Or any fixed height */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+  scroll-snap-type: y mandatory;
+  /* Your existing snap */
 }
 
 

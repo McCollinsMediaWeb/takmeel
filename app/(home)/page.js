@@ -143,7 +143,7 @@ export default async function Home() {
 
 
 
-      <div id="vibe-stack">
+      {/* <div id="vibe-stack"> */}
         <div className="snap-wrapper">
           <div className="snap-div">
             <FirstProjectItem
@@ -247,7 +247,7 @@ export default async function Home() {
 
           {/* More snapping sections */}
         </div>
-      </div>
+      {/* </div> */}
 
       {/* <ProjectItem
         backgroundImage="r.jpg"
