@@ -65,8 +65,8 @@ header {
 
 .scrolledOne header {
   /* background-color: rgba(0, 0, 0, 0.5); */
-  backdrop-filter: blur(15px);
-  background-color: #00000059;
+  backdrop-filter: blur(15px) !important;
+  background-color: #00000059 !important;
 }
 
 .HeaderBox {
