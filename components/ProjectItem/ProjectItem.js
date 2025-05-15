@@ -424,7 +424,7 @@ export default function ProjectItem({
         slideInUp: {
             y: [100, 0], // slide up from 100px below
             opacity: [0, 1],
-            transition: { duration: 1, ease: "easeOut" }
+            transition: { duration: 0.8, ease: "easeOut" }
         },
         loop: {
             scale: [1, 1.05, 1],

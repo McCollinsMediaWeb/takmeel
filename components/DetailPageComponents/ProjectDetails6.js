@@ -79,7 +79,7 @@ export default function ProjectDetails6({ planImage, data }) {
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, ease: "easeOut" }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
                             <div className="BlT1 nunito-text text-uppercase">AMENITIES AND FACILITIES</div>
@@ -91,7 +91,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                     <motion.div
                                         initial={{ opacity: 0, y: 50 }}
                                         whileInView={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 1, ease: "easeOut" }}
+                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                         viewport={{ once: true, amount: 0.5 }}
                                     >
                                         {/* <div className="AmnBoxTitle">
@@ -118,7 +118,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                         <motion.div
                                                             initial={{ opacity: 0, y: 50 }}
                                                             whileInView={{ opacity: 1, y: 0 }}
-                                                            transition={{ duration: 1, ease: "easeOut" }}
+                                                            transition={{ duration: 0.8, ease: "easeOut" }}
                                                             viewport={{ once: true, amount: 0.5 }}
                                                         >
                                                             <div className='AmnKeyBox'>
@@ -150,7 +150,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>
@@ -167,7 +167,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>
@@ -184,7 +184,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>
@@ -201,7 +201,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>
@@ -218,7 +218,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>
@@ -235,7 +235,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>
@@ -263,7 +263,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>
@@ -280,7 +280,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>
@@ -297,7 +297,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>
@@ -314,7 +314,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>
@@ -331,7 +331,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>
@@ -348,7 +348,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>
@@ -376,7 +376,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>
@@ -393,7 +393,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>
@@ -410,7 +410,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>
@@ -428,7 +428,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>
@@ -445,7 +445,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>
@@ -463,7 +463,7 @@ export default function ProjectDetails6({ planImage, data }) {
                                                     <motion.div
                                                         initial={{ opacity: 0, y: 50 }}
                                                         whileInView={{ opacity: 1, y: 0 }}
-                                                        transition={{ duration: 1, ease: "easeOut" }}
+                                                        transition={{ duration: 0.8, ease: "easeOut" }}
                                                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                                                     >
                                                         <div className='AmnKeyBox'>

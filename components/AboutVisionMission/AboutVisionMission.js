@@ -20,7 +20,7 @@ export default function AboutVisionMission() {
 
     const itemVariants = {
         hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
     }
 
     return (
@@ -33,7 +33,7 @@ export default function AboutVisionMission() {
                             <motion.div
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }}
-                                transition={{ duration: 1, ease: "easeOut" }}
+                                transition={{ duration: 0.8, ease: "easeOut" }}
                                 viewport={{ once: true, amount: 0.5 }}
                             >
                                 <Image
