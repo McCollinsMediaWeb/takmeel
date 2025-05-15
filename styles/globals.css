@@ -2542,6 +2542,7 @@ body {
   height: 350px !important;
   object-fit: cover;
   border-radius: 15px;
+  margin-bottom: 10px;
 }
 .BlogItem{
   border-radius: 15px;
