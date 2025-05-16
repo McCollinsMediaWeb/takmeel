@@ -123,7 +123,8 @@ export default function AboutVisionMission2() {
                                 viewport={{ once: true, amount: 0.5 }}
                             >
                                 <Image
-                                    src="/abt3.jpg"
+                                    // src="/abt3.jpg"
+                                    src="/vision-image-2.jpg"
                                     width={1000}
                                     height={562}
                                     layout="responsive"
@@ -190,7 +191,8 @@ export default function AboutVisionMission2() {
                                 viewport={{ once: true, amount: 0.5 }}
                             >
                                 <Image
-                                    src="/abt4.jpg"
+                                    // src="/abt4.jpg"
+                                    src="/mission-image-2.jpg"
                                     width={1000}
                                     height={562}
                                     layout="responsive"
