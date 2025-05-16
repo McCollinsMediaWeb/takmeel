@@ -196,7 +196,7 @@ export default async function Home() {
         </div>
         <div className="snap-div">
           <ProjectItem
-            backgroundImage="r.jpg"
+            backgroundImage="klt.jpg"
             backgroundImageMobile="Divine-Residence-Image-Mobile.jpg"
             text1="Featured Properties"
             text2="Divine Residences"

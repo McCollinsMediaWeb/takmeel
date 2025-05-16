@@ -21,7 +21,7 @@ export default async function DivineResidencies() {
   }
 
   const detailHeroData = {
-    backgroundImage: "r.jpg",
+    backgroundImage: "klt.jpg",
     backgroundImageMobile: "Divine-Residence-Image-Mobile.jpg",
     text1: "Smart Spaces Crafted for Modern Lifestyles",
     text2: "Divine Residences",
