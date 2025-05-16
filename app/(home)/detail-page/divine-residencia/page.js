@@ -156,6 +156,18 @@ export default async function DivineResidencia() {
         src: "Divine-Residencia/Interior/Divine Residencia Interior 03.jpg",
         title: "Kitchen Area",
       },
+      {
+        src: "dv4.jpg",
+        title: "Washroom Area",
+      },
+      {
+        src: "dv5.jpg",
+        title: "Washroom Area",
+      },
+      {
+        src: "dv6.jpg",
+        title: "Washroom Area",
+      },
 
     ],
   };
