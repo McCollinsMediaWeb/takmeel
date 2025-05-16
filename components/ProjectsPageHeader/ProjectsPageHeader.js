@@ -168,7 +168,7 @@ export default function ProjectsPageHeader() {
                                         </Link>
                                     </div>
                                     <div>
-                                        <Link className="no-hover-color" href="/detail-page/divine-residencies">
+                                        <Link className="no-hover-color" href="/detail-page/divine-residences">
                                             <div className="FtrProject">
                                                 <div className="ProjectImage">
                                                     <Image
