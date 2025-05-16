@@ -13,6 +13,10 @@ export default function NewsAndUpdatesClient() {
         <section className="BlogPostWrap">
             {latest && <LatestBlog blog={latest} />}
             {rest && rest.length > 0 && <BlogListing blogs={rest} />}
+
+            {/* <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-7659e170-6a8a-44ef-8efb-c398b7349c05" data-elfsight-app-lazy></div> */}
         </section>
+
     );
 }
