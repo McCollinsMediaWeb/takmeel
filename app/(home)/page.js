@@ -162,7 +162,7 @@ export default async function Home() {
             backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg"
             backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"
             text1="Coming Soon"
-            text2="To Al Barari"
+            text2="Al Barari"
             text3="Majan, Dubai"
             tagline="Urban Living, Reimagined by Nature"
             url="takmeel-al-barari-view-properties"
