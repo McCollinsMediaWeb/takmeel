@@ -62,13 +62,14 @@ export default function ProjectDetails4({ text1, text2, text3, GalleryImagesWith
 
     var settings = {
         dots: true,
-        speed: 2500,
+        speed: 8000,
         slidesToShow: 3,
         slidesToScroll: 3,
         initialSlide: 0,
         infinite: true,
         autoplay: true,               // Enables autoplay
-        autoplaySpeed: 2500,          // Time between slides in milliseconds
+        autoplaySpeed: 0,
+        CssEase:'linear',         // Time between slides in milliseconds
         responsive: [
             {
                 breakpoint: 1024,

@@ -255,13 +255,14 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
 
     var settings = {
         dots: true,
-        speed: 2500,
+        speed: 8000,
         slidesToShow: 3,
         slidesToScroll: 3,
         initialSlide: 0,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 0,
+        CssEase:'linear',
         responsive: [
             {
                 breakpoint: 1024,

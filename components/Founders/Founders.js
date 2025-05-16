@@ -100,14 +100,14 @@ export default function Founders() {
 
     var settings1 = {
         dots: true,
-        speed: 8000,
+        speed: 9000,
         slidesToShow: 4,
         slidesToScroll: 4,
-        initialSlide: 0,
         infinite: true,
         autoplay: true,               // Enables autoplay
         autoplaySpeed: 0,
         CssEase:'linear',
+          pauseOnHover: true,
         responsive: [
             {
                 breakpoint: 1024,
