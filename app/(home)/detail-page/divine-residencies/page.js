@@ -58,7 +58,10 @@ export default async function DivineResidencies() {
     text3:
       "Located in the heart of Arjan and just moments from the world-famous Dubai Miracle Garden and Butterfly Garden, Divine Residences is a ready-to-move-in residential project crafted for comfort, convenience, and contemporary living. With seamless access to Umm Suqeim Street and major city landmarks, this community strikes the perfect balance between natural serenity and urban vibrance.",
     GalleryImages: [
-      "Divine-Residencies/Interior/Main-picture.jpg",
+      // "Divine-Residencies/Interior/Main-picture.jpg",
+      "rd1.jpg",
+      "rd2.jpg",
+      "rd3.jpg",
       "Divine-Residencies/Interior/2.jpg",
 
       "Divine-Residencies/Interior/1.jpg",
