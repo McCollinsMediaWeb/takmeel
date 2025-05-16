@@ -61,11 +61,16 @@ export default async function DivineResidencia() {
       "At Divine Residencia, every element has been thoughtfully designed to enhance your everyday living experience. Located in the heart of Dubai Studio City, this project blends comfort, nature, and functionality—offering a vibrant lifestyle for individuals, couples, and families.",
     GalleryImages: [
       // "ad1.jpg",
+      "dv1.jpg",
+      "dv3.jpg",
+      "dv2.jpg",
       "Divine-Residencia/Divine-Residencia-Image02.jpg",
       "ad2.jpg",
+      
+      
       // "ad3.jpg",
-      "Divine-Residencia/Divine-Residencia-Image01.jpg",
-      "ad5.jpg",
+      // "Divine-Residencia/Divine-Residencia-Image01.jpg",
+      // "ad5.jpg",
 
       // "Divine-Residencia/Divine-Residencia 07.jpg"
     ],
