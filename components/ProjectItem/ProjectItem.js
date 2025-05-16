@@ -6,7 +6,6 @@ import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
 import useMediaQuery from "../hooks/useMediaQuery"
-import useInView from "../hooks/useInView"
 
 
 export default function ProjectItem({
