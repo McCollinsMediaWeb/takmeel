@@ -69,7 +69,7 @@ export default async function DivineResidencies() {
   };
   const DataProjectDetails2 = {
     ThumbImage1: "res1.jpg",
-    ThumbImage2: "Divine-Residencies/Residencies 1st project 04.jpg",
+    ThumbImage2: "sv1.jpg",
     text1Heading: "A Curated Collection of Residences",
     text1Desc: "Studios, 1 & 2 Bedroom Apartments, Bright, open layouts designed for modern lifestyles, Spacious balconies with community views, Thoughtfully selected color palettes for effortless interior styling",
     text2Heading: "Prime Connectivity & Comfort",
@@ -133,10 +133,10 @@ export default async function DivineResidencies() {
         src: "Divine-Residencies/Interior/6-1.jpg",
         title: "Kitchen Area",
       },
-      {
-        src: "Divine-Residencies/Interior/7-1.jpg",
-        title: "Living Room",
-      },
+      // {
+      //   src: "Divine-Residencies/Interior/7-1.jpg",
+      //   title: "Living Room",
+      // },
       {
         src: "Divine-Residencies/Interior/8.jpg",
         title: "Bedroom",
