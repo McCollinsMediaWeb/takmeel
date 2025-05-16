@@ -66,10 +66,14 @@ export default async function GolfViewLivingApartments() {
       // "Golf-View-Living-Apartments/golf-views-emaar-south-gallery-03.jpg",
       // "gl1.jpg",
       // "gl2.jpg",
-      "Golf-View-Living-Apartments/Golf-View-Living-Apartment-Image01.jpg",
-      "Golf-View-Living-Apartments/Golf-View-Living-Apartment-Image02.jpg",
-      "glf1.jpg",
-      "gl3.jpg",
+      // "Golf-View-Living-Apartments/Golf-View-Living-Apartment-Image01.jpg",
+      // "Golf-View-Living-Apartments/Golf-View-Living-Apartment-Image02.jpg",
+      // "glf1.jpg",
+      // "gl3.jpg",
+      "gv1.jpg",
+      "gv2.jpg",
+      "gv3.jpg",
+      "gv4.jpg",
     ],
   };
   const DataProjectDetails2 = {
