@@ -976,4 +976,7 @@
   .FullScreenBanner img{
     height: 100vh !important;
   }
+  .FullScreenBanner{
+    height: auto;
+  }
 }
