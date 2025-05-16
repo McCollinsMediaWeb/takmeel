@@ -17,7 +17,9 @@ import Slider from "react-slick";
 
 export default function GalleryRow({ text1, GalleryImages }) {
 
- const slickRef = useRef(null);
+    const slickRef = useRef(null);
+    const sliderRef = useRef(null);
+    const [inView, setInView] = useState(false);
     const [open, setOpen] = useState(false);
     const containerVariants = {
         hidden: { opacity: 0, y: 40 },
@@ -63,7 +65,7 @@ export default function GalleryRow({ text1, GalleryImages }) {
         slidesToScroll: 3,
         initialSlide: 0,
         infinite: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2500,
         centerMode: true,
         responsive: [
@@ -96,6 +98,47 @@ export default function GalleryRow({ text1, GalleryImages }) {
             }
         ]
     };
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setInView(true);
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        const currentSlider = sliderRef.current;
+
+        if (currentSlider) {
+            observer.observe(currentSlider);
+        }
+
+        return () => {
+            if (currentSlider) {
+                observer.unobserve(currentSlider);
+            }
+        };
+    }, []);
+
+    useEffect(() => {
+        let timer;
+        if (inView && slickRef.current) {
+            // Start autoplay after 2 seconds delay
+            timer = setTimeout(() => {
+                slickRef.current.slickPlay();
+            }, 2000);
+        } else {
+            // If out of view, pause autoplay immediately
+            if (slickRef.current) slickRef.current.slickPause();
+        }
+
+        // Clear timer on cleanup to avoid memory leaks
+        return () => clearTimeout(timer);
+    }, [inView]);
+
+
     return (
         <div className="galleryBoxRow pd-common container-fluid bg2">
             <motion.div
@@ -107,44 +150,46 @@ export default function GalleryRow({ text1, GalleryImages }) {
                 <div className="Txt1 nunito-text text-center mb-1">TAKMEEL</div>
                 <div className="BlT2 text-uppercase text-center">{text1}</div>
             </motion.div>
-            <Slider ref={slickRef} {...settings}>
-            {GalleryImages?.map((img, index) => {
-    const randomVariant = animationVariants[Math.floor(Math.random() * animationVariants.length)];
-    return (
-        <div key={index} className="" onClick={() => setOpen(true)}>
-            <motion.div
-                variants={randomVariant}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-            >
-                <div className="GalleryImageBox">
-                    <Image
-                        src={`/${img}`}
-                        width={2000}
-                        height={1125}
-                        layout="responsive"
-                        alt="Takmeel"
-                        loading="lazy"
-                    />
-                </div>
-            </motion.div>
-        </div>
-    );
-})}
-                
+            <div ref={sliderRef} >
+                <Slider ref={slickRef} {...settings}>
+                    {GalleryImages?.map((img, index) => {
+                        const randomVariant = animationVariants[Math.floor(Math.random() * animationVariants.length)];
+                        return (
+                            <div key={index} className="" onClick={() => setOpen(true)}>
+                                <motion.div
+                                    variants={randomVariant}
+                                    initial="hidden"
+                                    whileInView="visible"
+                                    viewport={{ once: true }}
+                                >
+                                    <div className="GalleryImageBox">
+                                        <Image
+                                            src={`/${img}`}
+                                            width={2000}
+                                            height={1125}
+                                            layout="responsive"
+                                            alt="Takmeel"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                </motion.div>
+                            </div>
+                        );
+                    })}
 
-            </Slider>
+
+                </Slider>
+            </div>
             <Lightbox
-                    open={open}
-                    close={() => setOpen(false)}
-                    plugins={[Video, Thumbnails, Zoom]}
-                    slides={
-                        GalleryImages?.map((img) => ({
-                            src: `/${img}`,
-                        }))
-                    }
-                />
+                open={open}
+                close={() => setOpen(false)}
+                plugins={[Video, Thumbnails, Zoom]}
+                slides={
+                    GalleryImages?.map((img) => ({
+                        src: `/${img}`,
+                    }))
+                }
+            />
         </div>
     )
 }

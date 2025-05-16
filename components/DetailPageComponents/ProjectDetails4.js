@@ -48,17 +48,33 @@ export default function ProjectDetails4({ text1, text2, text3, GalleryImagesWith
     }, []);
 
 
-    useEffect(() => {
-        if (inView && slickRef.current) {
-            slickRef.current.slickPlay();
-        }
-    }, [inView]);
+    // useEffect(() => {
+    //     if (inView && slickRef.current) {
+    //         slickRef.current.slickPlay();
+    //     }
+    // }, [inView]);
+
+    // useEffect(() => {
+    //     if (slickRef.current) {
+    //         slickRef.current.slickPause();
+    //     }
+    // }, []);
 
     useEffect(() => {
-        if (slickRef.current) {
-            slickRef.current.slickPause();
+        let timer;
+        if (inView && slickRef.current) {
+            // Start autoplay after 2 seconds delay
+            timer = setTimeout(() => {
+                slickRef.current.slickPlay();
+            }, 2000);
+        } else {
+            // If out of view, pause autoplay immediately
+            if (slickRef.current) slickRef.current.slickPause();
         }
-    }, []);
+
+        // Clear timer on cleanup to avoid memory leaks
+        return () => clearTimeout(timer);
+    }, [inView]);
 
     var settings = {
         dots: true,
@@ -67,9 +83,9 @@ export default function ProjectDetails4({ text1, text2, text3, GalleryImagesWith
         slidesToScroll: 3,
         initialSlide: 0,
         infinite: true,
-        autoplay: true,               // Enables autoplay
+        // autoplay: true,
         autoplaySpeed: 0,
-        CssEase:'linear',         // Time between slides in milliseconds
+        CssEase: 'linear',         // Time between slides in milliseconds
         responsive: [
             {
                 breakpoint: 1024,

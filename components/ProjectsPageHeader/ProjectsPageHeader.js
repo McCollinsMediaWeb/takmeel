@@ -1,6 +1,6 @@
 'use client'; // optional if using interactivity (like menus)
 import { motion } from "framer-motion";
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Slider from "react-slick";
 import Image from "next/image";
 // import p1 from "../../public/p1.jpg"
@@ -19,6 +19,10 @@ import Link from "next/link";
 
 
 export default function ProjectsPageHeader() {
+
+    const sliderRef = useRef(null);
+    const slickRef = useRef(null);
+    const [inView, setInView] = useState(false);
 
     useEffect(() => {
         const screenWidth = window.innerWidth;
@@ -49,6 +53,46 @@ export default function ProjectsPageHeader() {
         return () => window.removeEventListener('resize', updateHeights);
     }, []);
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setInView(true);
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        const currentSlider = sliderRef.current;
+
+        if (currentSlider) {
+            observer.observe(currentSlider);
+        }
+
+        return () => {
+            if (currentSlider) {
+                observer.unobserve(currentSlider);
+            }
+        };
+    }, []);
+
+
+    useEffect(() => {
+        let timer;
+        if (inView && slickRef.current) {
+            // Start autoplay after 2 seconds delay
+            timer = setTimeout(() => {
+                slickRef.current.slickPlay();
+            }, 2000);
+        } else {
+            // If out of view, pause autoplay immediately
+            if (slickRef.current) slickRef.current.slickPause();
+        }
+
+        // Clear timer on cleanup to avoid memory leaks
+        return () => clearTimeout(timer);
+    }, [inView]);
+
     var settings = {
         dots: true,
         speed: 8000,
@@ -56,9 +100,9 @@ export default function ProjectsPageHeader() {
         slidesToScroll: 3,
         initialSlide: 0,
         infinite: true,
-        autoplay: true,               // Enables autoplay
+        // autoplay: true,
         autoplaySpeed: 0,
-        CssEase:'linear',
+        CssEase: 'linear',
         responsive: [
             {
                 breakpoint: 1024,
@@ -107,8 +151,8 @@ export default function ProjectsPageHeader() {
                                 Discover Our<br />
                                 Featured Properties
                             </div>
-                            <div className="FtrProperties">
-                                <Slider {...settings}>
+                            <div className="FtrProperties" ref={sliderRef}>
+                                <Slider ref={slickRef} {...settings}>
                                     {/* <div>
                                         <Link className="no-hover-color" href="/detail-page/takmeel-al-barari-view-properties">
                                             <div className="FtrProject">

@@ -2,10 +2,20 @@
 
 import Link from 'next/link';
 import { motion } from "framer-motion";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
+
+const bgImages = [
+    'Takmeel-Al-Barrari-View/Majan 03.jpg',
+    'Divine-Residencia/Divine residencia main facade.jpg',
+    'bannerDesktopFirst.jpg',
+    'klt.jpg',
+    'maydan.jpg',
+    'Golf-View-Living-Apartments/Golf Apartments 03.jpg'
+]
 export default function TakmeelMenu() {
     const pathname = usePathname();
+    const [active, setActive] = useState(0);
 
     useEffect(() => {
         const toggleButtons = document.querySelectorAll(".toggleMenu");
@@ -21,21 +31,47 @@ export default function TakmeelMenu() {
             toggleButtons.forEach((btn) => btn.removeEventListener("click", toggleClass));
         };
     }, []);
-    
 
 
     return (
         <div className='TakmeelMenu'>
 
-            <div className='Backdrop BackdropMenu toggleMenu'>&nbsp;</div>
+            <div className='Backdrop BackdropMenu toggleMenu BackdropSlide'
+                style={{
+                    zIndex:999,
+                    backgroundImage: `url('${bgImages[active]}')`
+                }}
+            >&nbsp;</div>
+
+            {/* <motion.div
+                className="Backdrop BackdropMenu toggleMenu"
+                style={{
+                    backgroundImage: `url('${bgImages[active]}')`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    width: '100vw',
+                    height: '100vh',
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    zIndex: -1,
+                }}
+                key={bgImages[active]} // important for re-triggering motion animation
+                initial={{ backgroundPositionX: '-100%' }}
+                animate={{ backgroundPositionX: 'center' }}
+                transition={{ duration: 1.2, ease: 'easeOut' }}
+            /> */}
+
+
             <div className='Megamenu'>
                 <div>
                     <div className='MenuHd'>
                         <div className='closeBtn toggleMenu'>&nbsp;</div>
                     </div>
-                    <div className='MenuMiddle toggleMenu'>
+                    {/* <div className='MenuMiddle toggleMenu'>
                         <ul>
-                            <li className={pathname === '/' ? 'active' : ''}>
+                            <li className={pathname === '/' ? 'active' : ''} onHover={setActive(0)} >
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -48,7 +84,7 @@ export default function TakmeelMenu() {
                                 </motion.div>
 
                             </li>
-                            <li className={pathname === '/about-us' ? 'active' : ''}>
+                            <li className={pathname === '/about-us' ? 'active' : ''}  onHover={setActive(1)}>
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -61,7 +97,7 @@ export default function TakmeelMenu() {
                                 </motion.div>
 
                             </li>
-                            <li className={pathname === '/projects' ? 'active' : ''}>
+                            <li className={pathname === '/projects' ? 'active' : ''}  onHover={setActive(2)}>
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -74,7 +110,7 @@ export default function TakmeelMenu() {
                                 </motion.div>
 
                             </li>
-                            <li className={pathname === '/gallery' ? 'active' : ''}>
+                            <li className={pathname === '/gallery' ? 'active' : ''}  onHover={setActive(3)}>
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -87,7 +123,7 @@ export default function TakmeelMenu() {
                                 </motion.div>
 
                             </li>
-                            <li className={pathname === '/news-updates' ? 'active' : ''}>
+                            <li className={pathname === '/news-updates' ? 'active' : ''}  onHover={setActive(4)}>
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -100,7 +136,7 @@ export default function TakmeelMenu() {
                                 </motion.div>
 
                             </li>
-                            <li className={pathname === '/contact-us' ? 'active' : ''}>
+                            <li className={pathname === '/contact-us' ? 'active' : ''}  onHover={setActive(5)}>
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -114,7 +150,40 @@ export default function TakmeelMenu() {
 
                             </li>
                         </ul>
+                    </div> */}
+
+
+                    <div className="MenuMiddle toggleMenu">
+                        <ul>
+                            {[
+                                { path: '/', label: 'Home' },
+                                { path: '/about-us', label: 'About Us' },
+                                { path: '/projects', label: 'Projects' },
+                                { path: '/gallery', label: 'Gallery' },
+                                { path: '/news-updates', label: 'News & Updates' },
+                                { path: '/contact-us', label: 'Contact Us' },
+                            ].map((item, index) => (
+                                <li
+                                    key={item.path}
+                                    className={pathname === item.path ? 'active' : ''}
+                                    onMouseEnter={() => setActive(index)}
+                                >
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 50 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.8, ease: 'easeOut' }}
+                                        viewport={{ once: false, amount: 0.5 }}
+                                    >
+                                        <Link href={item.path} className="Link8">
+                                            {item.label}
+                                        </Link>
+                                    </motion.div>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
+
+
                     <div className='MenuFtr toggleMenu'>
                         <ul>
                             <li>

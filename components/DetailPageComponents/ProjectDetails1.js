@@ -212,7 +212,7 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
     const sliderRef = useRef(null);
     const slickRef = useRef(null);
     const [inView, setInView] = useState(false);
-    
+
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -238,17 +238,33 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
     }, []);
 
 
-    useEffect(() => {
-        if (inView && slickRef.current) {
-            slickRef.current.slickPlay();
-        }
-    }, [inView]);
+    // useEffect(() => {
+    //     if (inView && slickRef.current) {
+    //         slickRef.current.slickPlay();
+    //     }
+    // }, [inView]);
+
+    // useEffect(() => {
+    //     if (slickRef.current) {
+    //         slickRef.current.slickPause();
+    //     }
+    // }, []);
 
     useEffect(() => {
-        if (slickRef.current) {
-            slickRef.current.slickPause();
+        let timer;
+        if (inView && slickRef.current) {
+            // Start autoplay after 2 seconds delay
+            timer = setTimeout(() => {
+                slickRef.current.slickPlay();
+            }, 2000);
+        } else {
+            // If out of view, pause autoplay immediately
+            if (slickRef.current) slickRef.current.slickPause();
         }
-    }, []);
+
+        // Clear timer on cleanup to avoid memory leaks
+        return () => clearTimeout(timer);
+    }, [inView]);
 
 
 
@@ -260,9 +276,9 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
         slidesToScroll: 3,
         initialSlide: 0,
         infinite: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 0,
-        CssEase:'linear',
+        CssEase: 'linear',
         responsive: [
             {
                 breakpoint: 1024,

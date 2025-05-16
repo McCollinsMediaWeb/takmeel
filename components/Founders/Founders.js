@@ -85,17 +85,34 @@ export default function Founders() {
     }, []);
 
 
-    useEffect(() => {
-        if (inView && slickRef.current) {
-            slickRef.current.slickPlay();
-        }
-    }, [inView]);
+    // useEffect(() => {
+    //     if (inView && slickRef.current) {
+    //         slickRef.current.slickPlay();
+    //     }
+    // }, [inView]);
+
+    // useEffect(() => {
+    //     if (slickRef.current) {
+    //         slickRef.current.slickPause();
+    //     }
+    // }, []);
 
     useEffect(() => {
-        if (slickRef.current) {
-            slickRef.current.slickPause();
+        let timer;
+        if (inView && slickRef.current) {
+            // Start autoplay after 2 seconds delay
+            timer = setTimeout(() => {
+                slickRef.current.slickPlay();
+            }, 2000);
+        } else {
+            // If out of view, pause autoplay immediately
+            if (slickRef.current) slickRef.current.slickPause();
         }
-    }, []);
+
+        // Clear timer on cleanup to avoid memory leaks
+        return () => clearTimeout(timer);
+    }, [inView]);
+
 
 
     var settings1 = {
@@ -104,10 +121,10 @@ export default function Founders() {
         slidesToShow: 4,
         slidesToScroll: 4,
         infinite: true,
-        autoplay: true,               // Enables autoplay
+        // autoplay: true,
         autoplaySpeed: 0,
-        CssEase:'linear',
-          pauseOnHover: true,
+        CssEase: 'linear',
+        pauseOnHover: true,
         responsive: [
             {
                 breakpoint: 1024,

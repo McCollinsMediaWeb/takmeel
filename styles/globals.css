@@ -2642,3 +2642,23 @@ body {
 .fade-in-up.visible {
   transform: translateY(0) translateZ(0);
 }
+
+
+.BackdropSlide {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -100% center;
+  animation: slideBg 5s ease-out forwards;
+}
+
+@keyframes slideBg {
+  0% {
+    background-position: -100% center;
+  }
+
+  100% {
+    background-position: center;
+  }
+}

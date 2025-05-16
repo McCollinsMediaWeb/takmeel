@@ -124,7 +124,7 @@ export default function AboutVisionMission2() {
                             >
                                 <Image
                                     // src="/abt3.jpg"
-                                    src="/vision-image-2.jpg"
+                                    src="/vision-image.jpg"
                                     width={1000}
                                     height={562}
                                     layout="responsive"
@@ -192,7 +192,7 @@ export default function AboutVisionMission2() {
                             >
                                 <Image
                                     // src="/abt4.jpg"
-                                    src="/mission-image-2.jpg"
+                                    src="/mission-image.jpg"
                                     width={1000}
                                     height={562}
                                     layout="responsive"
