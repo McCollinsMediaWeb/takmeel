@@ -2491,9 +2491,9 @@ input[type=number] {
 }
 
 .custom-section-flexible {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  min-height: 90vh;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  /* min-height: 90vh; */
 }
 
 .FullScreenBanner {
