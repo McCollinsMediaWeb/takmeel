@@ -21,7 +21,7 @@ export default async function MeydanRacecourseMansion() {
   }
 
   const detailHeroData = {
-    backgroundImage: "meydan.webp",
+    backgroundImage: "maydan.jpg",
     backgroundImageMobile: "meydan-mobile.jpg",
     text1: "Where Grandeur Meets Precision",
     text2: "Meydan Racecourse Mansion",
