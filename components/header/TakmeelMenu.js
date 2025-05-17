@@ -1,7 +1,7 @@
 'use client'; // optional if using interactivity (like menus)
 
 import Link from 'next/link';
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
@@ -17,6 +17,9 @@ const bgImages = [
 export default function TakmeelMenu() {
     const pathname = usePathname();
     const [active, setActive] = useState(0);
+
+    const [prevImage, setPrevImage] = useState(null);
+    const [currentImage, setCurrentImage] = useState(bgImages[active]);
 
     useEffect(() => {
         const toggleButtons = document.querySelectorAll(".toggleMenu");
@@ -36,49 +39,109 @@ export default function TakmeelMenu() {
     const [imageLoaded, setImageLoaded] = useState(false);
 
     useEffect(() => {
-  setImageLoaded(false); // Trigger fade-in on image change
-}, [active]);
+        setImageLoaded(false); // Trigger fade-in on image change
+    }, [active]);
+
+
+    useEffect(() => {
+        if (bgImages[active] !== currentImage) {
+            setPrevImage(currentImage);
+            setCurrentImage(bgImages[active]);
+        }
+    }, [active, bgImages, currentImage]);
 
 
     return (
         <div className='TakmeelMenu'>
 
-            <div className='Backdrop BackdropMenu toggleMenu BackdropSlide'
+            {/* <div className='Backdrop BackdropMenu toggleMenu BackdropSlide'
                 style={{
-                    zIndex:999,
-                    // backgroundImage: `url('${bgImages[active]}')`
+                    zIndex: 999,
                 }}
             >
                 <Image
-  key={bgImages[active]} // re-mounts the Image on each change
-  src={bgImages[active]}
-  alt="Background"
-  fill
-  className={`image12 ${imageLoaded ? 'loaded' : ''}`}
-  style={{ objectFit: 'cover', zIndex: 10 }}
-  onLoadingComplete={() => setImageLoaded(true)}
-/>
-            </div>
+                    key={bgImages[active]} // re-mounts the Image on each change
+                    src={bgImages[active]}
+                    alt="Background"
+                    fill
+                    className={`image12 ${imageLoaded ? 'loaded' : ''}`}
+                    style={{ objectFit: 'cover', zIndex: 10 }}
+                    onLoadingComplete={() => setImageLoaded(true)}
+                />
+            </div> */}
 
-            {/* <motion.div
-                className="Backdrop BackdropMenu toggleMenu"
-                style={{
-                    backgroundImage: `url('${bgImages[active]}')`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                    width: '100vw',
-                    height: '100vh',
-                    position: 'fixed',
-                    top: 0,
-                    left: 0,
-                    zIndex: -1,
-                }}
-                key={bgImages[active]} // important for re-triggering motion animation
-                initial={{ backgroundPositionX: '-100%' }}
-                animate={{ backgroundPositionX: 'center' }}
-                transition={{ duration: 1.2, ease: 'easeOut' }}
-            /> */}
+            {/* <div
+                className="Backdrop BackdropMenu toggleMenu BackdropSlide"
+                style={{ position: 'relative', zIndex: 999 }}
+            >
+                <AnimatePresence mode="wait">
+                    <motion.div
+                        key={bgImages[active]}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 1 }}
+                        style={{
+                            position: 'absolute',
+                            inset: 0,
+                            zIndex: 10,
+                        }}
+                    >
+                        <Image
+                            src={bgImages[active]}
+                            alt="Background"
+                            fill
+                            style={{ objectFit: 'cover' }}
+                            priority
+                        />
+                    </motion.div>
+                </AnimatePresence>
+            </div> */}
+
+
+            <div
+                className="Backdrop BackdropMenu toggleMenu BackdropSlide"
+            >
+                {/* Outgoing image (fades out) */}
+                <AnimatePresence>
+                    {prevImage && prevImage !== currentImage && (
+                        <motion.div
+                            key={prevImage}
+                            initial={{ opacity: 1 }}
+                            animate={{ opacity: 0 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 1 }}
+                            style={{ position: 'absolute', inset: 0, zIndex: 9 }}
+                            onAnimationComplete={() => setPrevImage(null)} // remove after fade
+                        >
+                            <Image
+                                src={prevImage}
+                                alt="Previous Background"
+                                fill
+                                style={{ objectFit: 'cover' }}
+                                priority
+                            />
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+
+                {/* Incoming image (fades in) */}
+                <motion.div
+                    key={currentImage}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1 }}
+                    style={{ position: 'absolute', inset: 0, zIndex: 10 }}
+                >
+                    <Image
+                        src={currentImage}
+                        alt="Current Background"
+                        fill
+                        style={{ objectFit: 'cover' }}
+                        priority
+                    />
+                </motion.div>
+            </div>
 
 
             <div className='Megamenu'>
@@ -183,7 +246,6 @@ export default function TakmeelMenu() {
                                 <li
                                     key={item.path}
                                     className={pathname === item.path ? 'active' : ''}
-                                    onMouseEnter={() => setActive(index)}
                                 >
                                     <motion.div
                                         initial={{ opacity: 0, y: 50 }}
@@ -191,7 +253,7 @@ export default function TakmeelMenu() {
                                         transition={{ duration: 0.8, ease: 'easeOut' }}
                                         viewport={{ once: false, amount: 0.5 }}
                                     >
-                                        <Link href={item.path} className="Link8">
+                                        <Link style={{ width: 'fit-content;' }} href={item.path} className="Link8" onMouseEnter={() => setActive(index)}>
                                             {item.label}
                                         </Link>
                                     </motion.div>
