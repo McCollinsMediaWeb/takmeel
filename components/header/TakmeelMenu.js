@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 
 const bgImages = [
-    'Takmeel-Al-Barrari-View/Majan 03.jpg',
+    'bannerDesktopFirst.jpg',
     'Divine-Residencia/Divine residencia main facade.jpg',
     'bannerDesktopFirst.jpg',
     'klt.jpg',

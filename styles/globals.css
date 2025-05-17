@@ -709,7 +709,9 @@ body .slick-dots {
   top: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(15px) !important;
+  background-color: #00000059 !important;
+  background-size: cover;
   z-index: 99;
   cursor: pointer;
   display: none;
