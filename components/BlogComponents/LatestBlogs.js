@@ -60,7 +60,7 @@ export default function LatestBlog({ blog }) {
                 <div className="LtT2">Understanding 2024 — What to expect in 2025: Demystifying Dubai’s off-plan real estate boom</div>
                 <div className="LtT3 truncate-3-lines">Few markets have captured the global investor’s imagination quite like Dubai’s off-plan real estate sector. In 2024, this segment didn’t just grow — it evolved. The year was marked not by the kind of speculative frenzy that once defined the emirate’s real estate landscape, but by measured, confident strides rooted in transparency, smart planning, and a growing maturity in both buyer behavior and developer offerings.</div>
                 <div className="text-right">
-                  <a target="_blank" href="https://www.khaleejtimes.com/business-technology-review/understanding-2024-what-to-expect-in-2025-demystifying-dubais-off-plan-real-estate-boom?_refresh=true" className='Link6 hover1'>Read in Khaleej Times</a>
+                  <a target="_blank" href="https://www.khaleejtimes.com/business-technology-review/understanding-2024-what-to-expect-in-2025-demystifying-dubais-off-plan-real-estate-boom?_refresh=true" className='Link6 hover1'>Read More</a>
                 </div>
               </div>
             </div>
