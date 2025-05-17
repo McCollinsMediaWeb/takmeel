@@ -715,6 +715,7 @@ body .slick-dots {
   z-index: 99;
   cursor: pointer;
   display: none;
+  overflow: hidden;
 }
 
 .Megamenu {
@@ -2671,7 +2672,12 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0;
-  transition: opacity 1.2s var(--easeInEaseOutCubic);
   z-index: 10;
+  height: 100vh !important;
+  object-fit: cover;
+   opacity: 0;
+  transition: opacity 1.2s var(--easeInEaseOutCubic);
+}
+.image12.loaded {
+  opacity: 1;
 }

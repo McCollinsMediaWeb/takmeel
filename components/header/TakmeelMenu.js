@@ -4,14 +4,15 @@ import Link from 'next/link';
 import { motion } from "framer-motion";
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 const bgImages = [
-    'bannerDesktopFirst.jpg',
-    'Divine-Residencia/Divine residencia main facade.jpg',
-    'bannerDesktopFirst.jpg',
-    'klt.jpg',
-    'maydan.jpg',
-    'Golf-View-Living-Apartments/Golf Apartments 03.jpg'
+    '/bannerDesktopFirst.jpg',
+    '/Divine-Residencia/Divine residencia main facade.jpg',
+    '/bannerDesktopFirst.jpg',
+    '/klt.jpg',
+    '/maydan.jpg',
+    '/Golf-View-Living-Apartments/Golf Apartments 03.jpg'
 ]
 export default function TakmeelMenu() {
     const pathname = usePathname();
@@ -32,6 +33,12 @@ export default function TakmeelMenu() {
         };
     }, []);
 
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    useEffect(() => {
+  setImageLoaded(false); // Trigger fade-in on image change
+}, [active]);
+
 
     return (
         <div className='TakmeelMenu'>
@@ -39,9 +46,19 @@ export default function TakmeelMenu() {
             <div className='Backdrop BackdropMenu toggleMenu BackdropSlide'
                 style={{
                     zIndex:999,
-                    backgroundImage: `url('${bgImages[active]}')`
+                    // backgroundImage: `url('${bgImages[active]}')`
                 }}
-            >&nbsp;</div>
+            >
+                <Image
+  key={bgImages[active]} // re-mounts the Image on each change
+  src={bgImages[active]}
+  alt="Background"
+  fill
+  className={`image12 ${imageLoaded ? 'loaded' : ''}`}
+  style={{ objectFit: 'cover', zIndex: 10 }}
+  onLoadingComplete={() => setImageLoaded(true)}
+/>
+            </div>
 
             {/* <motion.div
                 className="Backdrop BackdropMenu toggleMenu"
