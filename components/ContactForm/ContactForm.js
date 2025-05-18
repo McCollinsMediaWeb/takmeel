@@ -156,13 +156,11 @@
 
 'use client';
 
-import Link from 'next/link';
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import { useState } from "react";
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
 import useMediaQuery from "../hooks/useMediaQuery";
-import countries from '../../public/countries.json';
-import 'react-phone-number-input/style.css'
-import PhoneInput from 'react-phone-number-input'
 
 export default function ContactForm() {
     const isDesktop = useMediaQuery("(min-width: 960px)");
@@ -242,7 +240,7 @@ export default function ContactForm() {
     };
 
     return (
-        <section className='ContactForm pd-common'>
+        <section className='ContactForm pd-common ContactFormSection'>
             <div className='container'>
                 <div className='text-center'>
                     <motion.div

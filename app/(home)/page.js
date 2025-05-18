@@ -1,15 +1,9 @@
 
-import ContactForm from "@/components/ContactForm/ContactForm";
-import CustomerTestimonials from "@/components/CustomerTestimonials/CustomerTestimonials";
-import HomeAbout from "@/components/HomeAbout/HomeAbout";
-import MainMapComponent from "@/components/MainMapComponent/MainMapComponent";
 import MetaInjector from "@/components/Meta/MetaInjector";
-import ProjectItem from "@/components/ProjectItem/ProjectItem";
 import { getMetaTags } from "@/lib/getMetaTags";
 // import FullpageWrapper from "@/components/Animations/FullPageScroll";
-import Banner from "@/components/FirstProjectItem/Banner";
-import Footer from "@/components/footer/footer";
-import FooterBottom from "@/components/footerBottom/footerBottom";
+
+import HomePageItem from "@/components/Home/HomePageItem";
 
 export default async function Home() {
   const metaTags = await getMetaTags("/");
@@ -139,114 +133,7 @@ export default async function Home() {
 
 
   
-      <div id="vibe-stack">
-        <div className="snap-wrapper">
-          <div className="snap-div banner-snap">
-         <Banner
-              backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg"
-              backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"
-              text1=""
-              text2="TAKMEEL"
-              text3="Where purposeful design and visionary innovation converge to create spaces that inspire, elevate, and redefine modern living."
-              tagline=""
-              url="projects"
-              backgroundVideo="tt2.mp4"
-            /> 
-          </div>
-          <div>
-            <h1>Hello Kasem</h1>
-          </div>
-          <div className="snap-div">
-            <ProjectItem
-              backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg"
-              backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"
-              text1="Coming Soon"
-              text2="To Al Barari"
-              text3="Majan, Dubai"
-              tagline="Urban Living, Reimagined by Nature"
-              url="takmeel-al-barari-view-properties"
-              backgroundVideo="tkdesk1.mp4"
-            />
-          </div>
-          <div className="snap-div">
-            <ProjectItem
-              backgroundImage="Divine-Residencia/Divine residencia main facade.jpg"
-              backgroundImageMobile="dvk.jpg"
-              text1="Featured Properties"
-              text2="Divine Residencia"
-              text3="Dubai Studio City, Dubai"
-              tagline="Where Comfort Meets Contemporary Elegance"
-              url="divine-residencia"
-              projectStatus="Sold Out"
-            />
-          </div>
-
-          <div className="snap-div">
-            <ProjectItem
-              backgroundImage="bannerDesktopFirst.jpg"
-              backgroundImageMobile="bannerMobileFirst.jpg"
-              text1="Featured Properties"
-              text2="Divine Living"
-              text3="Arjan, Dubai"
-              tagline="Thoughtfully Designed for Peaceful Living"
-              url="divine-living"
-              projectStatus="Sold Out"
-            />
-          </div>
-          <div className="snap-div">
-            <ProjectItem
-              backgroundImage="r.jpg"
-              backgroundImageMobile="Divine-Residence-Image-Mobile.jpg"
-              text1="Featured Properties"
-              text2="Divine Residences"
-              text3="Dubai"
-              tagline="Smart Spaces Crafted for Modern Lifestyles"
-              url="divine-residencies"
-              projectStatus="Sold Out"
-            />
-          </div>
-
-          <div className="snap-div">
-            <ProjectItem backgroundImage="maydan.jpg" backgroundImageMobile="meydan-mobile.jpg" text1="Project Showcase" text2="Meydan Racecourse Mansion" text3="Dubai" tagline="Where Grandeur Meets Precision" url="meydan-racecourse-mansion" />
-          </div>
-
-          <div className="snap-div">
-            <ProjectItem backgroundImage="Golf-View-Living-Apartments/Golf Apartments 03.jpg" backgroundImageMobile="bannerMobileFour.jpg" text1="Featured Properties" text2="Golf View Living Apartments" text3="Al Zorah, Ajman" tagline="Your Everyday Escape, Overlooking the Greens" url="golf-view-living-apartments" projectStatus="Sold Out" />
-          </div>
-
-
-          <div className="snap-div">
-            <ProjectItem backgroundImage="Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg" backgroundImageMobile="Golf-View-Living-Villas/divine-golf-villas-Facade-Mobile 03.jpg" text1="Featured Properties" text2="Golf View Living Villas" text3="Ajman" tagline="Private Villas Surrounded by Nature’s Calm" url="golf-view-living-villas" projectStatus="Sold Out" />
-          </div>
-
-          <div className="snap-div">
-            <MainMapComponent MapImageDesk="map6.svg" MapImageMobile="mapmobile.svg" />
-          </div>
-
-          <div className="snap-div">
-            <HomeAbout />
-          </div>
-
-          <div className="snap-div">
-            <ContactForm />
-          </div>
-
-          <div className="snap-div">
-            <CustomerTestimonials  {...GalleryData2} />
-
-          </div>
-
-          <div className="snap-div">
-            <Footer />
-            <FooterBottom />
-          </div>
-
-
-
-
-          {/* More snapping sections */}
-        </div>
-      </div>
+      <HomePageItem/>
 
       {/* <ProjectItem
         backgroundImage="r.jpg"

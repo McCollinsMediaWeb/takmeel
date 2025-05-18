@@ -1,11 +1,9 @@
 'use client'; // optional if using interactivity (like menus)
 
-import Link from 'next/link';
 import { motion } from "framer-motion";
-import { useInView } from 'react-intersection-observer';
 import Image from "next/image";
+import { useInView } from 'react-intersection-observer';
 import useMediaQuery from "../hooks/useMediaQuery";
-import TypingText from '../Animations/TypingText';
 
 export default function MainMapComponent({ MapImageDesk, MapImageMobile, MapURL }) {
 
@@ -36,7 +34,7 @@ export default function MainMapComponent({ MapImageDesk, MapImageMobile, MapURL 
     const isDesktop = useMediaQuery("(min-width: 960px)");
 
     return (
-        <div>
+        <div className="childWrapper">
             <motion.div
                 variants={containerVariants}
                 initial="hidden"
@@ -45,6 +43,7 @@ export default function MainMapComponent({ MapImageDesk, MapImageMobile, MapURL 
             >
                 {isDesktop ? (
                     <motion.div className="" variants={itemVariants}>
+                        {/* <div style={{ position: 'relative', width: '100%', height: '400px' }}>
                         <Image
                             src={`/${MapImageDesk}`}
                             width={697}
@@ -52,6 +51,15 @@ export default function MainMapComponent({ MapImageDesk, MapImageMobile, MapURL 
                             layout="responsive"
                             alt="Takmeel"
                         />
+                        </div> */}
+                        <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
+                            <Image
+                                src={`/${MapImageDesk}`}
+                                alt="Takmeel"
+                                fill
+                                style={{ objectFit: 'cover' }}
+                            />
+                        </div>
                     </motion.div>
 
                 ) : (

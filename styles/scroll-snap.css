@@ -1,0 +1,7 @@
+html,
+body {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  height: auto;
+}
