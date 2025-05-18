@@ -1,16 +1,15 @@
 'use client'; 
 
-import Link from 'next/link';
 import { motion } from "framer-motion";
-import React from "react";
+import Link from 'next/link';
 import useMediaQuery from "../hooks/useMediaQuery";
 export default function HomeAbout({ backgroundImage, backgroundImageMobile, text1, text2, text3 }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     
     return (
-        <section className='HomeAbout pd-common bg2'>
-            <div className='container text-center'>
-                <div className='HomeAboutContent'>
+        <section className='HomeAbout pd-common bg2 childWrapper'>
+            <div className='container text-center height100p'>
+                <div className='HomeAboutContent HomeAboutItem'>
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
