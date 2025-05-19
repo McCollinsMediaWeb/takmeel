@@ -2645,6 +2645,7 @@ body {
 
 .menu-open .BackdropSlide {
   left: 0;
+  z-index: 999;
 }
 
 @keyframes slideBg {
