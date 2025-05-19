@@ -2753,3 +2753,6 @@ body {
   justify-content: center;
   height: 100%;
 }
+.zsiq-float-tooltip{
+  display: none !important;
+}
