@@ -150,7 +150,7 @@ export default function FirstProjectItem({
         yPercent: -80,
         transformOrigin: 'center bottom',
         ease: 'none',
-        duration: 0.6
+        duration: 0.4
       });
 
       tl.to(scrollArrowRef.current, {
@@ -160,7 +160,7 @@ export default function FirstProjectItem({
         y: 10,
         transformOrigin: 'center middle',
         ease: 'none',
-        duration: 0.7
+        duration: 0.5
       });
 
       tl.to(scrollArrowRef.current, {
@@ -170,7 +170,7 @@ export default function FirstProjectItem({
         y: 1500,
         transformOrigin: 'center middle',
         ease: 'none',
-        duration: 0.2
+        duration: 0.5
       });
 
     }, bannerRefItem);

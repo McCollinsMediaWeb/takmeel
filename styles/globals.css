@@ -2718,6 +2718,9 @@ body {
   max-height: none !important;
   shape-rendering: geometricPrecision;
 }
+.FullScreenBanner img.scrollArrow {
+  height: auto !important;
+}
 /* PAGE SECTION */
 
 .pageSection {
