@@ -17,8 +17,8 @@ export default function NewsAndUpdatesClient() {
                 <LatestBlog />
                 {news && news.length > 0 && <BlogListing blogs={news} />}
             </section>
-            <section className="BlogPostWrap">
-                <div className="container">
+            <section className="BlogPostWrap pd-common">
+                <div className="container1">
                     <script src="https://static.elfsight.com/platform/platform.js" async></script>
                     <div class="elfsight-app-7659e170-6a8a-44ef-8efb-c398b7349c05" data-elfsight-app-lazy></div>
                 </div>
