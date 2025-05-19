@@ -11,18 +11,18 @@ export default function Header() {
   const isHome = pathname === '/' || pathname.startsWith('/detail-page/') || pathname === '/about-us' || pathname === '/gallery';
 
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 0) {
-  //       document.body.classList.add('scrolledOne');
-  //     } else {
-  //       document.body.classList.remove('scrolledOne');
-  //     }
-  //   };
-  //   window.addEventListener('scroll', handleScroll);
-  //   handleScroll();
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        document.body.classList.add('scrolledOne');
+      } else {
+        document.body.classList.remove('scrolledOne');
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // useEffect(() => {
   //   const vibeStack = document.querySelector(".vibe-stack");
@@ -44,26 +44,26 @@ export default function Header() {
   //   };
   // }, []);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const vibeStack = document.querySelector(".vibe-stack");
-      if (!vibeStack) return;
-  
-      if (window.scrollY > 0) {
-        vibeStack.classList.add("scrolledOne");
-      } else {
-        vibeStack.classList.remove("scrolledOne");
-      }
-    };
-  
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Run on mount
-  
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-  
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const vibeStack = document.querySelector(".vibe-stack");
+  //     if (!vibeStack) return;
+
+  //     if (window.scrollY > 0) {
+  //       vibeStack.classList.add("scrolledOne");
+  //     } else {
+  //       vibeStack.classList.remove("scrolledOne");
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   handleScroll(); // Run on mount
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
 
 
   return (
