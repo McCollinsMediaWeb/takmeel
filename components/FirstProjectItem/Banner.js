@@ -73,7 +73,7 @@ export default function FirstProjectItem({
 
     ScrollTrigger.create({
       trigger: bannerContainer,
-      start: 'top+=60% top',
+      start: 'top+=100% top',
       onEnter: () => {
         if (bannerContent) {
           bannerContent.style.color = '#000';
@@ -137,29 +137,37 @@ export default function FirstProjectItem({
       });
 
       tl.to(scrollArrowRef.current, {
-        scale: 1,
+        scale: 0,
         opacity: 0,
         yPercent: 0,
         transformOrigin: 'center bottom',
         ease: 'none',
-        duration: 0.3
+        duration: 0.1
+      });
+      tl.to(scrollArrowRef.current, {
+        scale: 0.8,
+        opacity: 1,
+        yPercent: -80,
+        transformOrigin: 'center bottom',
+        ease: 'none',
+        duration: 0.6
       });
 
       tl.to(scrollArrowRef.current, {
-        scale: 6,
-        yPercent: 50,
-        opacity: 0.4,
+        scale: 3,
+        yPercent: -20,
+        opacity: 0.6,
         y: 10,
         transformOrigin: 'center middle',
         ease: 'none',
-        duration: 0.5
+        duration: 0.7
       });
 
       tl.to(scrollArrowRef.current, {
-        scale: 15,
-        yPercent: 250,
+        scale: 40,
+        yPercent: 50,
         opacity: 0.9,
-        y: 500,
+        y: 1500,
         transformOrigin: 'center middle',
         ease: 'none',
         duration: 0.2
@@ -206,6 +214,7 @@ export default function FirstProjectItem({
                             alt="Takmeel"
                             loading="lazy"
                         />
+                       
                     )}
                 </div>
             )}
@@ -284,24 +293,21 @@ export default function FirstProjectItem({
                         </motion.div>
                         </div>
                     </div>
+                  <div className="arrowContainer">
                     <div className="arrowWrapper">
-                    <svg
+                        <Image
                         ref={scrollArrowRef}
                         className="scrollArrow"
-                        viewBox="0 0 224.5 206.6"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                     <g>
-                        <path fill="#ffffff" d="M7.2,83.3C10.9,79.7,90.7,11,96.9,5.8c6.2-5.1,20.6-9.6,30.1-0.8s80.7,69.6,89.9,78.3
-                          c9.2,8.7,10.4,25.8,0.7,34.1c-9.7,8.3-22.1,9.6-30.9,2.4c-8.7-7.3-74.4-64.2-74.4-64.2s-63.5,55.3-71.9,62.2
-                          c-8.5,7-24.3,10.9-33.9-1.2S-1.3,91.6,7.2,83.3z"/>
-                        <path fill="#ffffff" d="M7.2,165.2c3.6-3.6,83.5-72.3,89.7-77.4c6.2-5.1,20.6-9.6,30.1-0.8s80.7,69.6,89.9,78.3
-                          c9.2,8.7,10.4,25.8,0.7,34.1c-9.7,8.3-22.1,9.6-30.9,2.4c-8.7-7.3-74.4-64.2-74.4-64.2s-63.5,55.3-71.9,62.2s-24.3,10.9-33.9-1.2
-                          S-1.3,173.6,7.2,165.2z"/>
-                      </g>
-                      </svg>
-                     
-                    </div>
+                            src={`/bannerLogo.png`}
+                            width={439}
+                            height={1205}
+                            layout="responsive"
+                            alt="Takmeel"
+                            loading="lazy"
+                        />
+                    
+                  </div>
+                </div>
                 </div>
             </div>
         </div>
