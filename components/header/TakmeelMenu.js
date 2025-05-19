@@ -238,7 +238,7 @@ export default function TakmeelMenu() {
                             {[
                                 { path: '/', label: 'Home' },
                                 { path: '/about-us', label: 'Our Story' },
-                                { path: '/projects', label: 'Our Creations' },
+                                { path: '/projects', label: 'Signature Projects' },
                                 { path: '/gallery', label: 'Visual Journey' },
                                 { path: '/news-updates', label: 'News & Updates' },
                                 { path: '/contact-us', label: 'Let\'s Connect' },
