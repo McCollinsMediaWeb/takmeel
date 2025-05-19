@@ -24,25 +24,46 @@ export default function Header() {
   //   return () => window.removeEventListener('scroll', handleScroll);
   // }, []);
 
-  useEffect(() => {
-    const vibeStack = document.querySelector(".vibe-stack");
-    if (!vibeStack) return;
+  // useEffect(() => {
+  //   const vibeStack = document.querySelector(".vibe-stack");
+  //   if (!vibeStack) return;
 
+  //   const handleScroll = () => {
+  //     if (vibeStack.scrollTop > 0) {
+  //       vibeStack.classList.add("scrolledOne");
+  //     } else {
+  //       vibeStack.classList.remove("scrolledOne");
+  //     }
+  //   };
+
+  //   vibeStack.addEventListener("scroll", handleScroll);
+  //   handleScroll();
+
+  //   return () => {
+  //     vibeStack.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
-      if (vibeStack.scrollTop > 0) {
+      const vibeStack = document.querySelector(".vibe-stack");
+      if (!vibeStack) return;
+  
+      if (window.scrollY > 0) {
         vibeStack.classList.add("scrolledOne");
       } else {
         vibeStack.classList.remove("scrolledOne");
       }
     };
-
-    vibeStack.addEventListener("scroll", handleScroll);
-    handleScroll(); // run on mount
-
+  
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Run on mount
+  
     return () => {
-      vibeStack.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  
 
 
   return (
