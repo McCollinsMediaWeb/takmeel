@@ -77,8 +77,8 @@ export default async function GolfViewLivingApartments() {
     ],
   };
   const DataProjectDetails2 = {
-    ThumbImage1: "Golf-View-Living-Apartments/1.jpg",
-    ThumbImage2: "Golf-View-Living-Apartments/2.jpg",
+    ThumbImage1: "Golf-View-Living-Apartments/gl2.jpg",
+    ThumbImage2: "Golf-View-Living-Apartments/gl1.jpg",
     text1Heading: "Spacious Urban Living in Al Zorah",
     text1Desc: "This thoughtfully designed community features two G+5 buildings with a curated selection of: 1, 2 & 3 Bedroom Apartments, Contemporary layouts, Top-class finishes, Spacious interiors with spectacular views ",
     text2Heading: "A Peaceful, Luxurious Community",
@@ -125,34 +125,47 @@ export default async function GolfViewLivingApartments() {
       "Nestled in the heart of Al Zorah, Ajman, Golf View Living offers a unique blend of peace, luxury, and accessibility. Overlooking the lush greens of Al Zorah Golf Course, the serene mangroves, and the Ajman skyline, this new residential development is the perfect escape—without ever leaving the city.",
     GalleryImagesWithNames: [
 
+      // {
+      //   src: "Golf-View-Living-Apartments/DSC08109.jpg",
+      //   title: "Living Room",
+      // },
+      // {
+      //   src: "Golf-View-Living-Apartments/DSC08122.jpg",
+      //   title: "Living Room",
+      // },
+      // {
+      //   src: "Golf-View-Living-Apartments/DSC08102.jpg",
+      //   title: "Kitchen Area",
+      // },
+      // {
+      //   src: "Golf-View-Living-Apartments/Image01.jpg",
+      //   title: "Kitchen Area",
+      // },
+      // {
+      //   src: "Golf-View-Living-Apartments/Image02.jpg",
+      //   title: "Kitchen Area",
+      // },
+      // {
+      //   src: "Golf-View-Living-Apartments/Image03.jpg",
+      //   title: "Kitchen Area",
+      // },
       {
-        src: "Golf-View-Living-Apartments/DSC08109.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Golf-View-Living-Apartments/DSC08122.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Golf-View-Living-Apartments/DSC08102.jpg",
+        src: "Golf-View-Living-Apartments/gl3.jpg",
         title: "Kitchen Area",
       },
       {
-        src: "Golf-View-Living-Apartments/Image01.jpg",
+        src: "Golf-View-Living-Apartments/gl4.jpg",
         title: "Kitchen Area",
       },
       {
-        src: "Golf-View-Living-Apartments/Image02.jpg",
+        src: "Golf-View-Living-Apartments/gl5.jpg",
         title: "Kitchen Area",
       },
       {
-        src: "Golf-View-Living-Apartments/Image03.jpg",
+        src: "Golf-View-Living-Apartments/gl6.jpg",
         title: "Kitchen Area",
       },
-      {
-        src: "Golf-View-Living-Apartments/Image04.jpg",
-        title: "Kitchen Area",
-      },
+      
     ],
   };
 
