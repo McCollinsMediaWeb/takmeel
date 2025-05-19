@@ -237,11 +237,11 @@ export default function TakmeelMenu() {
                         <ul>
                             {[
                                 { path: '/', label: 'Home' },
-                                { path: '/about-us', label: 'About Us' },
-                                { path: '/projects', label: 'Projects' },
-                                { path: '/gallery', label: 'Gallery' },
+                                { path: '/about-us', label: 'Our Story' },
+                                { path: '/projects', label: 'Our Creations' },
+                                { path: '/gallery', label: 'Visual Journey' },
                                 { path: '/news-updates', label: 'News & Updates' },
-                                { path: '/contact-us', label: 'Contact Us' },
+                                { path: '/contact-us', label: 'Let\'s Connect' },
                             ].map((item, index) => (
                                 <li
                                     key={item.path}

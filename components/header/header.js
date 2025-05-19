@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { useEffect } from 'react';
 export default function Header() {
   const pathname = usePathname();
-  const isHome = pathname === '/' || pathname.startsWith('/detail-page/');
+  const isHome = pathname === '/' || pathname.startsWith('/detail-page/') || pathname === '/about-us';
 
 
   // useEffect(() => {
