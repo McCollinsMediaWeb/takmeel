@@ -115,6 +115,7 @@ header {
   animation: scrollBackground 10s linear infinite;
   overflow: hidden;
   object-fit: cover;
+  height: 100vh !important;
 }
 
 .FsBannerContentFlex {
@@ -2635,10 +2636,11 @@ body {
   background-position: -100% center;
   animation: slideBg 5s ease-out forwards; */
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 999;
   transition: 1s;
   left: -100%;
+  overflow: hidden;
 }
 
 .menu-open .BackdropSlide {
@@ -2755,4 +2757,9 @@ body {
 }
 .zsiq-float-tooltip{
   display: none !important;
+}
+.Backdrop img{
+  height: 100vh !important;
+  object-fit: cover;
+  overflow: hidden;
 }

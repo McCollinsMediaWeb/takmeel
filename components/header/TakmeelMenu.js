@@ -9,9 +9,9 @@ import Image from 'next/image';
 const bgImages = [
     '/bannerDesktopFirst.jpg',
     '/Divine-Residencia/Divine residencia main facade.jpg',
-    '/bannerDesktopFirst.jpg',
-    '/klt.jpg',
-    '/maydan.jpg',
+    '/Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg',
+    '/d1.jpg',
+    '/ak2.jpg',
     '/Golf-View-Living-Apartments/Golf Apartments 03.jpg'
 ]
 export default function TakmeelMenu() {
