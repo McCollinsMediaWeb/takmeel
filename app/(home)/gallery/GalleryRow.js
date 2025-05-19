@@ -58,15 +58,19 @@ export default function GalleryRow({ text1, GalleryImages }) {
             visible: { opacity: 1, rotate: 0, transition: { duration: 0.8, ease: "easeOut" } },
         },
     ];
+    const fadeVariant = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 0.6, ease: 'easeOut' } },
+};
     var settings = {
         dots: true,
-        speed: 500,
+        speed: 6000,
         slidesToShow: 2,
         slidesToScroll: 3,
         initialSlide: 0,
         infinite: true,
         // autoplay: true,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 0,
         centerMode: true,
         responsive: [
             {
@@ -150,18 +154,19 @@ export default function GalleryRow({ text1, GalleryImages }) {
                 <div className="Txt1 nunito-text text-center mb-1">TAKMEEL</div>
                 <div className="BlT2 text-uppercase text-center">{text1}</div>
             </motion.div>
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: true }} // triggers when 50% of it is in view
+            >
             <div ref={sliderRef} >
                 <Slider ref={slickRef} {...settings}>
                     {GalleryImages?.map((img, index) => {
                         const randomVariant = animationVariants[Math.floor(Math.random() * animationVariants.length)];
                         return (
                             <div key={index} className="" onClick={() => setOpen(true)}>
-                                <motion.div
-                                    variants={randomVariant}
-                                    initial="hidden"
-                                    whileInView="visible"
-                                    viewport={{ once: true }}
-                                >
+                                
                                     <div className="GalleryImageBox">
                                         <Image
                                             src={`/${img}`}
@@ -172,7 +177,6 @@ export default function GalleryRow({ text1, GalleryImages }) {
                                             loading="lazy"
                                         />
                                     </div>
-                                </motion.div>
                             </div>
                         );
                     })}
@@ -180,6 +184,7 @@ export default function GalleryRow({ text1, GalleryImages }) {
 
                 </Slider>
             </div>
+            </motion.div>
             <Lightbox
                 open={open}
                 close={() => setOpen(false)}
