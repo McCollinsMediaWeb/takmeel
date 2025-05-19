@@ -71,7 +71,7 @@ export default async function GolfViewLivingApartments() {
       // "glf1.jpg",
       // "gl3.jpg",
       "gr1.jpg",
-      "gv2.jpg",
+      // "gv2.jpg",
       "gv3.jpg",
       "gv4.jpg",
     ],
