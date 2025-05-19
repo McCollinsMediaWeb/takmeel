@@ -64,18 +64,9 @@ export default async function MeydanRacecourseMansion() {
     text3:
       "Overlooking the iconic Meydan Racecourse, this architectural gem by Takmeel Real Estate defines the pinnacle of bespoke living. The Meydan Racecourse Mansion is more than a home—it’s a statement of timeless elegance, curated for those who desire privacy, prestige, and panoramic views in the heart of Dubai.",
     GalleryImages: [
-      // "Meydan-Racecourse-Mansion/Maydan 01.jpg",
-      // "Meydan-Racecourse-Mansion/Maydan 02.jpg",
-      // "Meydan-Racecourse-Mansion/Maydan 03.jpg",
-      // "Meydan-Racecourse-Mansion/Maydan 04.jpg",
-      // "Meydan-Racecourse-Mansion/Maydan 05.jpg",
-      // "Meydan-Racecourse-Mansion/Maydan 06.jpg",
-      // "Meydan-Racecourse-Mansion/Maydan 07.jpg",
-      "Meydan-Racecourse-Mansion/Maydan 11.png",
-      "Meydan-Racecourse-Mansion/Maydan 12.png",
-      // "Meydan-Racecourse-Mansion/Maydan 08.jpg",
-      "Meydan-Racecourse-Mansion/Maydan 09.jpg",
-      // "Meydan-Racecourse-Mansion/Maydan 10.jpg",
+      "my1.jpg",
+       "my2.jpg",
+        "my3.jpg",
     ],
   };
   const DataProjectDetails2 = {
