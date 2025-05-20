@@ -8,6 +8,7 @@ import { getMetaTags } from "@/lib/getMetaTags";
 import MetaInjector from "@/components/Meta/MetaInjector";
 import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
+import AboutUsHeader from "./AboutUsHeader";
 
 export default async function AboutUs() {
   const metaTags = await getMetaTags("/about-us");
@@ -20,7 +21,8 @@ export default async function AboutUs() {
     <>
       <MetaInjector metaContent={metaTags[0].metaContent} />
       <div>
-        <PageHeader />
+        {/* <PageHeader /> */}
+        <AboutUsHeader backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg" backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg" backgroundVideo="ttk1.mp4" />
         {/* <AboutSlider/> */}
         <AboutVisionMission />
         <Founders />

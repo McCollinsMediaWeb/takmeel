@@ -18,13 +18,13 @@ export default function Founders() {
 
     var settings = {
         dots: true,
-        speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        speed: 2500,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         initialSlide: 0,
         infinite: true,
-        autoplay: true,
-        autoplaySpeed: 3500,
+        autoplay: true,               // Enables autoplay
+        autoplaySpeed: 2500,
         responsive: [
             {
                 breakpoint: 1024,
@@ -85,28 +85,46 @@ export default function Founders() {
     }, []);
 
 
-    useEffect(() => {
-        if (inView && slickRef.current) {
-            slickRef.current.slickPlay();
-        }
-    }, [inView]);
+    // useEffect(() => {
+    //     if (inView && slickRef.current) {
+    //         slickRef.current.slickPlay();
+    //     }
+    // }, [inView]);
+
+    // useEffect(() => {
+    //     if (slickRef.current) {
+    //         slickRef.current.slickPause();
+    //     }
+    // }, []);
 
     useEffect(() => {
-        if (slickRef.current) {
-            slickRef.current.slickPause();
+        let timer;
+        if (inView && slickRef.current) {
+            // Start autoplay after 2 seconds delay
+            timer = setTimeout(() => {
+                slickRef.current.slickPlay();
+            }, 2000);
+        } else {
+            // If out of view, pause autoplay immediately
+            if (slickRef.current) slickRef.current.slickPause();
         }
-    }, []);
+
+        // Clear timer on cleanup to avoid memory leaks
+        return () => clearTimeout(timer);
+    }, [inView]);
+
 
 
     var settings1 = {
         dots: true,
-        speed: 2500,
+        speed: 9000,
         slidesToShow: 4,
-        slidesToScroll: 2,
-        initialSlide: 0,
+        slidesToScroll: 4,
         infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2500,
+        // autoplay: true,
+        autoplaySpeed: 0,
+        CssEase: 'linear',
+        pauseOnHover: true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -145,7 +163,7 @@ export default function Founders() {
                     {/* <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.5 }}
                     >
                         <div className="text-center">
@@ -204,7 +222,7 @@ export default function Founders() {
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, ease: "easeOut" }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
                             <div className="row align-items-center">
@@ -232,7 +250,7 @@ export default function Founders() {
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, ease: "easeOut" }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
                             <div className="row align-items-center second">
@@ -268,7 +286,7 @@ export default function Founders() {
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.5 }}
                     >
                         <div className="text-center">
@@ -280,7 +298,7 @@ export default function Founders() {
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.5 }}
                     >
                         <div className="OurPeopleBox" ref={sliderRef}>

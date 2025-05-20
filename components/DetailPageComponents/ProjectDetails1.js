@@ -68,7 +68,7 @@
 //                 <motion.div
 //                     initial={{ opacity: 0, y: 50 }}
 //                     whileInView={{ opacity: 1, y: 0 }}
-//                     transition={{ duration: 0.6, ease: "easeOut" }}
+//                     transition={{ duration: 0.8, ease: "easeOut" }}
 //                     viewport={{ once: true, amount: 0.5 }}
 //                 >
 //                     <div className='row'>
@@ -212,7 +212,7 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
     const sliderRef = useRef(null);
     const slickRef = useRef(null);
     const [inView, setInView] = useState(false);
-    
+
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -238,30 +238,47 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
     }, []);
 
 
-    useEffect(() => {
-        if (inView && slickRef.current) {
-            slickRef.current.slickPlay();
-        }
-    }, [inView]);
+    // useEffect(() => {
+    //     if (inView && slickRef.current) {
+    //         slickRef.current.slickPlay();
+    //     }
+    // }, [inView]);
+
+    // useEffect(() => {
+    //     if (slickRef.current) {
+    //         slickRef.current.slickPause();
+    //     }
+    // }, []);
 
     useEffect(() => {
-        if (slickRef.current) {
-            slickRef.current.slickPause();
+        let timer;
+        if (inView && slickRef.current) {
+            // Start autoplay after 2 seconds delay
+            timer = setTimeout(() => {
+                slickRef.current.slickPlay();
+            }, 2000);
+        } else {
+            // If out of view, pause autoplay immediately
+            if (slickRef.current) slickRef.current.slickPause();
         }
-    }, []);
+
+        // Clear timer on cleanup to avoid memory leaks
+        return () => clearTimeout(timer);
+    }, [inView]);
 
 
 
 
     var settings = {
         dots: true,
-        speed: 2500,
+        speed: 8000,
         slidesToShow: 3,
         slidesToScroll: 3,
         initialSlide: 0,
         infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2500,
+        // autoplay: true,
+        autoplaySpeed: 0,
+        CssEase: 'linear',
         responsive: [
             {
                 breakpoint: 1024,
@@ -295,19 +312,19 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
     const animationVariants = [
         {
             hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+            visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
         },
         {
             hidden: { opacity: 0, scale: 0.8 },
-            visible: { opacity: 1, scale: 1, transition: { duration: 0.6, ease: "easeOut" } },
+            visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeOut" } },
         },
         {
             hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
+            visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
         },
         {
             hidden: { opacity: 0, rotate: -10 },
-            visible: { opacity: 1, rotate: 0, transition: { duration: 0.6, ease: "easeOut" } },
+            visible: { opacity: 1, rotate: 0, transition: { duration: 0.8, ease: "easeOut" } },
         },
     ];
 
@@ -318,7 +335,7 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.5 }}
                 >
                     <div className='row'>

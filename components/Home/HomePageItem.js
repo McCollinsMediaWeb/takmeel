@@ -133,7 +133,7 @@ export default function HomePageItem() {
             backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg"
             backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"
             text1="Coming Soon"
-            text2="To Al Barari"
+            text2="Al Barari"
             text3="Majan, Dubai"
             tagline="Urban Living, Reimagined by Nature"
             url="takmeel-al-barari-view-properties"
@@ -178,7 +178,7 @@ export default function HomePageItem() {
         className='pageSection'
       >
       <ProjectItem
-          backgroundImage="r.jpg"
+          backgroundImage="klt.jpg"
           backgroundImageMobile="Divine-Residence-Image-Mobile.jpg"
           text1="Featured Properties"
           text2="Divine Residences"

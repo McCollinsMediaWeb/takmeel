@@ -63,8 +63,8 @@ header {
 
 .scrolledOne header {
   /* background-color: rgba(0, 0, 0, 0.5); */
-  backdrop-filter: blur(15px);
-  background-color: #00000059;
+  backdrop-filter: blur(15px) !important;
+  background-color: #00000059 !important;
 }
 
 .HeaderBox {
@@ -115,6 +115,7 @@ header {
   animation: scrollBackground 10s linear infinite;
   overflow: hidden;
   object-fit: cover;
+  height: 100vh !important;
 }
 
 .FsBannerContentFlex {
@@ -702,10 +703,14 @@ body .slick-dots {
   top: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(15px) !important;
+  background-color: #00000059 !important;
+  /* background-color: #000 !important; */
+  background-size: cover;
   z-index: 99;
   cursor: pointer;
   display: none;
+  overflow: hidden;
 }
 
 .Megamenu {
@@ -1188,8 +1193,12 @@ body .slick-prev::before {
 }
 
 .LtT2 {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .BlT3 {
@@ -2472,9 +2481,9 @@ input[type="number"] {
 }
 
 .custom-section-flexible {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  min-height: 90vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* min-height: 90vh; */
 }
 
 .FullScreenBanner {
@@ -2497,8 +2506,8 @@ input[type="number"] {
 
 html,
 body {
-  height: 100%;
-  margin: 0;
+  /* height: 100%; */
+  /* margin: 0; */
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -2512,6 +2521,157 @@ body {
 .snap-div {
   height: fit-content;
   scroll-snap-align: center;
+}
+
+.LatestBlogImage img {
+  height: 350px !important;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.BlogItem {
+  border-radius: 15px;
+}
+
+.wrapLogo {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  max-width: 150px;
+}
+
+.wrapLogo img.LogoKlhaleeg {
+  height: auto !important;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+    /* Adjust based on duplicate content */
+  }
+}
+
+.ticker-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.ticker {
+  display: inline-block;
+  white-space: nowrap;
+  animation: ticker-scroll 20s linear infinite;
+}
+
+
+
+/* Animation phases */
+.Txt2 {
+  /* transition: opacity 1s ease-in-out; */
+  /* opacity: 1; */
+}
+
+.phase-initial .Txt2 {
+  opacity: 1;
+}
+
+.phase-transition .Txt2 {
+  opacity: 0;
+}
+
+/* .phase-final .Txt2 {
+  display: none;
+} */
+
+.phase-final .Txt2:not(.final-txt2) {
+  display: none;
+}
+
+.final-txt2 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Final content fade-in */
+.phase-final .final-content>div {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.fade-in-up {
+  transform: translateY(30px) translateZ(0);
+  transition: transform 0.6s ease;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.fade-in-up.visible {
+  transform: translateY(0) translateZ(0);
+}
+
+
+.BackdropSlide {
+  /* width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -100% center;
+  animation: slideBg 5s ease-out forwards; */
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  transition: 1s;
+  left: -100%;
+  overflow: hidden;
+}
+
+.menu-open .BackdropSlide {
+  left: 0;
+  z-index: 999;
+}
+
+@keyframes slideBg {
+  0% {
+    background-position: -100% center;
+  }
+
+  100% {
+    background-position: center;
+  }
+}
+:root {
+  --easeInEaseOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.image12 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100vh !important;
+  object-fit: cover;
+   opacity: 0;
+  transition: opacity 1.2s var(--easeInEaseOutCubic);
+}
+.image12.loaded {
+  opacity: 1;
 }
 
 /* ......... START ARROW ANIMATION ........... */
@@ -2619,4 +2779,12 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+.zsiq-float-tooltip{
+  display: none !important;
+}
+.Backdrop img{
+  height: 100vh !important;
+  object-fit: cover;
+  overflow: hidden;
 }

@@ -62,16 +62,15 @@ export default async function DivineLiving() {
     text3:
       "Tucked away in the vibrant district of Arjan, Divine Living offers a perfect balance of luxury and tranquility. Developed by Takmeel Real Estate, this refined residential project is designed for those who seek spacious living, sophisticated interiors, and a peaceful lifestyle—without compromising on urban connectivity.",
     GalleryImages: [
-      // "dl1.jpg",
-      // "dl2.jpg",
-      // "Studio Bespoke_Design Living_24.03.2023_Page_14_Image_0001.jpg",
-      // "Studio Bespoke_Design Living_24.03.2023_Page_11_Image_0001.jpg",
+      "s1.jpg",
+      "s2.jpg",
+      "s3.jpg",
       "Divine-Living/Divine-Living-Image01.jpg",
-      // "Divine-Living/Divine-Living-Image02.jpg",
-      "Divine-Living/Divine-Living-Image03.jpg",
-      "Divine-Living/Divine-Living-Image04.jpg",
-      "Divine-Living/Divine-Living-Image05.jpg",
-      "Divine-Living/Divine-Living-Image06.jpg",
+      
+      // "Divine-Living/Divine-Living-Image03.jpg",
+      // "Divine-Living/Divine-Living-Image04.jpg",
+      // "Divine-Living/Divine-Living-Image05.jpg",
+      // "Divine-Living/Divine-Living-Image06.jpg",
     ],
   };
   const DataProjectDetails2 = {
@@ -141,6 +140,26 @@ export default async function DivineLiving() {
       },
       {
         src: "dl7.jpg",
+        title: "Bedroom Area",
+      },
+      {
+        src: "ds2.jpg",
+        title: "Bedroom Area",
+      },
+      {
+        src: "ds3.jpg",
+        title: "Bedroom Area",
+      },
+      {
+        src: "ds1.jpg",
+        title: "Bedroom Area",
+      },
+      {
+        src: "ds4.jpg",
+        title: "Bedroom Area",
+      },
+      {
+        src: "ds5.jpg",
         title: "Bedroom Area",
       },
     ],

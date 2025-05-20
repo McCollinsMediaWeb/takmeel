@@ -91,7 +91,7 @@ export default function PropertyForm({ projectName }) {
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.5 }}
                 >
                     <div className='text-center ppT1 nunito-text'>REGISTER YOUR INTEREST</div>
@@ -100,7 +100,7 @@ export default function PropertyForm({ projectName }) {
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.5 }}
                 >
                     {/* <div className='propertyFormBox'> */}
