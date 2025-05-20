@@ -154,15 +154,15 @@ export default async function GolfViewLivingApartments() {
       // },
       {
         src: "Golf-View-Living-Apartments/gl3.jpg",
-        title: "Kitchen Area",
+        title: "Living Area",
       },
       {
         src: "Golf-View-Living-Apartments/gl4.jpg",
-        title: "Kitchen Area",
+        title: "Living Area",
       },
       {
         src: "Golf-View-Living-Apartments/gl5.jpg",
-        title: "Kitchen Area",
+        title: "Bedroom Area",
       },
       {
         src: "Golf-View-Living-Apartments/gl6.jpg",

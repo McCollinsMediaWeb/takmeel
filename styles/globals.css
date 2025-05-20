@@ -1610,12 +1610,10 @@ body .slick-prev::before {
 }
 
 .ImageTlBox {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  color: #fff;
+
+  background-color: #fff;
   padding: 20px;
-  z-index: 4;
+  font-size: 23px;
 }
 
 .PrdTxt1 {
@@ -2419,9 +2417,7 @@ input[type="number"] {
   background-color: rgba(29, 29, 27, 1);
 }
 
-.ImageTlBox {
-  display: none;
-}
+
 
 @media only screen and (min-width: 1200px) {
   .HeaderBoxLeft,

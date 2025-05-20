@@ -979,4 +979,8 @@
   .FullScreenBanner{
     height: auto;
   }
+  .ImageTlBox {
+    padding: 15px;
+    font-size: 18px;
+  }
 }

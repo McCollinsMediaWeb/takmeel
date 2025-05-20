@@ -145,23 +145,23 @@ export default async function DivineLiving() {
       },
       {
         src: "ds2.jpg",
-        title: "Bedroom Area",
+        title: "Washroom Area",
       },
       {
         src: "ds3.jpg",
-        title: "Bedroom Area",
+        title: "Washroom Area",
       },
       {
         src: "ds1.jpg",
-        title: "Bedroom Area",
+        title: "Corridor",
       },
       {
         src: "ds4.jpg",
-        title: "Bedroom Area",
+        title: "Washroom Area",
       },
       {
         src: "ds5.jpg",
-        title: "Bedroom Area",
+        title: "Washroom Area",
       },
     ],
   };

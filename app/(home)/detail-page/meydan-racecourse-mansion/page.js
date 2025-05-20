@@ -120,7 +120,7 @@ export default async function MeydanRacecourseMansion() {
     GalleryImagesWithNames: [
       {
         src: "Meydan-Racecourse-Mansion/Maydan 06.jpg",
-        title: ""
+        title: "Swimming Pool"
       },
       // {
       //   src: "Meydan-Racecourse-Mansion/Maydan 07.jpg",
@@ -132,7 +132,7 @@ export default async function MeydanRacecourseMansion() {
       // },
       {
         src: "Meydan-Racecourse-Mansion/Maydan 04.jpg",
-        title: "Exterior",
+        title: "Swimming Pool",
       },
       {
         src: "Meydan-Racecourse-Mansion/Maydan 07.jpg",

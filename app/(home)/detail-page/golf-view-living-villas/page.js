@@ -161,19 +161,19 @@ export default async function GolfViewLivingVillas() {
       },
       {
         src: "vv4.jpg",
-        title: "Living Room Area",
+        title: "Bedroom Area",
       },
       {
         src: "vv5.jpg",
-        title: "Living Room Area",
+        title: "Bedroom Area",
       },
       {
         src: "vv6.jpg",
-        title: "Living Room Area",
+        title: "Bedroom Area",
       },
       {
         src: "vv7.jpg",
-        title: "Living Room Area",
+        title: "Bedroom Area",
       },
       {
         src: "vv8.jpg",

@@ -184,7 +184,7 @@ export default function HomePageItem() {
           text2="Divine Residences"
           text3="Dubai"
           tagline="Smart Spaces Crafted for Modern Lifestyles"
-          url="divine-residencies"
+          url="divine-residences"
           projectStatus="Sold Out"
         />
       </section>
