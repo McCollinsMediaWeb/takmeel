@@ -1,6 +1,6 @@
 'use client'; // optional if using interactivity (like menus)
 import { motion } from "framer-motion";
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Slider from "react-slick";
 import Image from "next/image";
 // import p1 from "../../public/p1.jpg"
@@ -11,7 +11,7 @@ import Image from "next/image";
 import p1 from "../../public/Takmeel-Al-Barrari-View/Majan 03.jpg";
 import p2 from "../../public/k1.jpg"
 import p3 from "../../public/k2.jpg"
-import p4 from "../../public/k3.jpg"
+import p4 from "../../public/k7.jpg"
 import p5 from "../../public/k4.jpg"
 import p6 from "../../public/k5.jpg"
 import p7 from "../../public/k6.jpg"
@@ -19,6 +19,10 @@ import Link from "next/link";
 
 
 export default function ProjectsPageHeader() {
+
+    const sliderRef = useRef(null);
+    const slickRef = useRef(null);
+    const [inView, setInView] = useState(false);
 
     useEffect(() => {
         const screenWidth = window.innerWidth;
@@ -49,15 +53,56 @@ export default function ProjectsPageHeader() {
         return () => window.removeEventListener('resize', updateHeights);
     }, []);
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setInView(true);
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        const currentSlider = sliderRef.current;
+
+        if (currentSlider) {
+            observer.observe(currentSlider);
+        }
+
+        return () => {
+            if (currentSlider) {
+                observer.unobserve(currentSlider);
+            }
+        };
+    }, []);
+
+
+    useEffect(() => {
+        let timer;
+        if (inView && slickRef.current) {
+            // Start autoplay after 2 seconds delay
+            timer = setTimeout(() => {
+                slickRef.current.slickPlay();
+            }, 2000);
+        } else {
+            // If out of view, pause autoplay immediately
+            if (slickRef.current) slickRef.current.slickPause();
+        }
+
+        // Clear timer on cleanup to avoid memory leaks
+        return () => clearTimeout(timer);
+    }, [inView]);
+
     var settings = {
         dots: true,
-        speed: 2500,
+        speed: 8000,
         slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToScroll: 3,
         initialSlide: 0,
         infinite: true,
-        autoplay: true,               // Enables autoplay
-        autoplaySpeed: 2500,        // Time between slides in milliseconds
+        // autoplay: true,
+        autoplaySpeed: 0,
+        CssEase: 'linear',
         responsive: [
             {
                 breakpoint: 1024,
@@ -98,7 +143,7 @@ export default function ProjectsPageHeader() {
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, ease: "easeOut" }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
                             viewport={{ once: false, amount: 0.5 }} // triggers when 50% of it is in view
                         >
                             <div className='HdT1 nunito-text'>Projects</div>
@@ -106,8 +151,8 @@ export default function ProjectsPageHeader() {
                                 Discover Our<br />
                                 Featured Properties
                             </div>
-                            <div className="FtrProperties">
-                                <Slider {...settings}>
+                            <div className="FtrProperties" ref={sliderRef}>
+                                <Slider ref={slickRef} {...settings}>
                                     {/* <div>
                                         <Link className="no-hover-color" href="/detail-page/takmeel-al-barari-view-properties">
                                             <div className="FtrProject">
@@ -167,7 +212,7 @@ export default function ProjectsPageHeader() {
                                         </Link>
                                     </div>
                                     <div>
-                                        <Link className="no-hover-color" href="/detail-page/divine-residencies">
+                                        <Link className="no-hover-color" href="/detail-page/divine-residences">
                                             <div className="FtrProject">
                                                 <div className="ProjectImage">
                                                     <Image

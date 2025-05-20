@@ -32,7 +32,7 @@ export default function AboutVisionMission2() {
         //         <motion.div
         //                 initial={{ opacity: 0, y: 50 }}
         //                 whileInView={{ opacity: 1, y: 0 }}
-        //                 transition={{ duration: 0.6, ease: "easeOut" }}
+        //                 transition={{ duration: 0.8, ease: "easeOut" }}
         //                 viewport={{ once: true, amount: 0.5 }}
         //             >
         //                 <div className="AllTeamImageBox">
@@ -48,7 +48,7 @@ export default function AboutVisionMission2() {
         //             <motion.div
         //                 initial={{ opacity: 0, y: 50 }}
         //                 whileInView={{ opacity: 1, y: 0 }}
-        //                 transition={{ duration: 0.6, ease: "easeOut" }}
+        //                 transition={{ duration: 0.8, ease: "easeOut" }}
         //                 viewport={{ once: true, amount: 0.5 }}
         //             >
 
@@ -119,11 +119,12 @@ export default function AboutVisionMission2() {
                             <motion.div
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6, ease: "easeOut" }}
+                                transition={{ duration: 0.8, ease: "easeOut" }}
                                 viewport={{ once: true, amount: 0.5 }}
                             >
                                 <Image
-                                    src="/abt3.jpg"
+                                    // src="/abt3.jpg"
+                                    src="/vision-image.jpg"
                                     width={1000}
                                     height={562}
                                     layout="responsive"
@@ -186,11 +187,12 @@ export default function AboutVisionMission2() {
                             <motion.div
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6, ease: "easeOut" }}
+                                transition={{ duration: 0.8, ease: "easeOut" }}
                                 viewport={{ once: true, amount: 0.5 }}
                             >
                                 <Image
-                                    src="/abt4.jpg"
+                                    // src="/abt4.jpg"
+                                    src="/mission-image.jpg"
                                     width={1000}
                                     height={562}
                                     layout="responsive"
@@ -206,7 +208,7 @@ export default function AboutVisionMission2() {
                             <motion.div
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6, ease: "easeOut" }}
+                                transition={{ duration: 0.8, ease: "easeOut" }}
                                 viewport={{ once: true, amount: 0.5 }}
                             >
                                 <Image

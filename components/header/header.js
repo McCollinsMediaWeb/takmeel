@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { useEffect } from 'react';
 export default function Header() {
   const pathname = usePathname();
-  const isHome = pathname === '/' || pathname.startsWith('/detail-page/');
+  const isHome = pathname === '/' || pathname.startsWith('/detail-page/') || pathname === '/about-us' || pathname === '/gallery';
 
 
   useEffect(() => {
@@ -24,10 +24,52 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // useEffect(() => {
+  //   const vibeStack = document.querySelector(".vibe-stack");
+  //   if (!vibeStack) return;
+
+  //   const handleScroll = () => {
+  //     if (vibeStack.scrollTop > 0) {
+  //       vibeStack.classList.add("scrolledOne");
+  //     } else {
+  //       vibeStack.classList.remove("scrolledOne");
+  //     }
+  //   };
+
+  //   vibeStack.addEventListener("scroll", handleScroll);
+  //   handleScroll();
+
+  //   return () => {
+  //     vibeStack.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const vibeStack = document.querySelector(".vibe-stack");
+  //     if (!vibeStack) return;
+
+  //     if (window.scrollY > 0) {
+  //       vibeStack.classList.add("scrolledOne");
+  //     } else {
+  //       vibeStack.classList.remove("scrolledOne");
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   handleScroll(); // Run on mount
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
+
+
   return (
     <header className={`MainHeader ${!isHome ? 'fixed-class' : ''}`}>
-      <TakmeelMenu/>
-      <HeaderForm/>
+      <TakmeelMenu />
+      <HeaderForm />
       <div className='container-fluid'>
         <div className='HeaderBox'>
           <div className='HederBoxFlex'>

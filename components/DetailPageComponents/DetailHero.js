@@ -120,7 +120,7 @@
 //                     <motion.div
 //                         initial={{ opacity: 0, y: 50 }}
 //                         whileInView={{ opacity: 1, y: 0 }}
-//                         transition={{ duration: 0.6, ease: "easeOut" }}
+//                         transition={{ duration: 0.8, ease: "easeOut" }}
 //                         viewport={{ once: true, amount: 0.5 }}
 //                     >
 //                         <div className='text-center'>
@@ -132,7 +132,7 @@
 //                     <motion.div
 //                         initial={{ opacity: 0, y: 50 }}
 //                         whileInView={{ opacity: 1, y: 0 }}
-//                         transition={{ duration: 0.6, ease: "easeOut" }}
+//                         transition={{ duration: 0.8, ease: "easeOut" }}
 //                         viewport={{ once: true, amount: 0.5 }}
 //                     >
 //                         <div className='row align-items-center'>
@@ -175,6 +175,7 @@ import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 import 'yet-another-react-lightbox/styles.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
 import TypingText from '../Animations/TypingText';
+import CatalogueForm from '../ContactForm/CatalogueForm';
 
 export default function DetailHero({
     backgroundImage,
@@ -210,6 +211,7 @@ export default function DetailHero({
     };
     const isDesktop = useMediaQuery('(min-width: 960px)');
     const [open, setOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
     const { ref, inView } = useInView({
         triggerOnce: true,
         threshold: 0.2
@@ -244,14 +246,47 @@ export default function DetailHero({
     ];
 
     return (
-        <div className="FullScreenBanner DetHero position-relative">
-            <div ref={ref}>
-                {isDesktop ? (
-                    backgroundImage.endsWith('.mp4') ? (
+        <>
+            <div className="FullScreenBanner DetHero position-relative">
+                <div ref={ref}>
+                    {isDesktop ? (
+                        backgroundImage.endsWith('.mp4') ? (
+                            inView && (
+                                <video
+                                    autoPlay
+                                    poster={videoPosterDesktop}
+                                    loop
+                                    muted
+                                    playsInline
+                                    width="100%"
+                                    height="100%"
+                                    style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+                                >
+                                    <source src={formatSrc(backgroundImage)} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            )
+                        ) : (
+                            <motion.div
+                                animate={{ scale: [1, 1.1, 1] }}
+                                transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
+                                viewport={{ once: true, amount: 0.5 }}
+                            >
+                                <Image
+                                    src={formatSrc(backgroundImage)}
+                                    width={1338}
+                                    height={714}
+                                    layout="responsive"
+                                    alt="Takmeel"
+                                    loading="lazy"
+                                />
+                            </motion.div>
+                        )
+                    ) : backgroundImageMobile.endsWith('.mp4') ? (
                         inView && (
                             <video
                                 autoPlay
-                                poster={videoPosterDesktop}
+                                poster={videoPosterMobile}
                                 loop
                                 muted
                                 playsInline
@@ -259,64 +294,32 @@ export default function DetailHero({
                                 height="100%"
                                 style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
                             >
-                                <source src={formatSrc(backgroundImage)} type="video/mp4" />
+                                <source src={formatSrc(backgroundImageMobile)} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         )
                     ) : (
-                        <motion.div
-                            animate={{ scale: [1, 1.1, 1] }}
-                            transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-                            viewport={{ once: true, amount: 0.5 }}
-                        >
-                            <Image
-                                src={formatSrc(backgroundImage)}
-                                width={1338}
-                                height={714}
-                                layout="responsive"
-                                alt="Takmeel"
-                                loading="lazy"
-                            />
-                        </motion.div>
-                    )
-                ) : backgroundImageMobile.endsWith('.mp4') ? (
-                    inView && (
-                        <video
-                            autoPlay
-                            poster={videoPosterMobile}
-                            loop
-                            muted
-                            playsInline
-                            width="100%"
-                            height="100%"
-                            style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
-                        >
-                            <source src={formatSrc(backgroundImageMobile)} type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
-                    )
-                ) : (
-                    <Image
-                        src={formatSrc(backgroundImageMobile)}
-                        width={697}
-                        height={768}
-                        layout="responsive"
-                        alt="Takmeel"
-                        loading="lazy"
-                    />
-                )}
-            </div>
+                        <Image
+                            src={formatSrc(backgroundImageMobile)}
+                            width={697}
+                            height={768}
+                            layout="responsive"
+                            alt="Takmeel"
+                            loading="lazy"
+                        />
+                    )}
+                </div>
 
-            <Lightbox
-                open={open}
-                close={() => setOpen(false)}
-                plugins={[Video, Thumbnails, Zoom]}
-                slides={GalleryMedia && GalleryMedia?.length > 0 ? GalleryMedia : defaultSlides}
-            />
+                <Lightbox
+                    open={open}
+                    close={() => setOpen(false)}
+                    plugins={[Video, Thumbnails, Zoom]}
+                    slides={GalleryMedia && GalleryMedia?.length > 0 ? GalleryMedia : defaultSlides}
+                />
 
-            <div className="DetSlContentBox">
-                <div className="container">
-                    {/* <motion.div
+                <div className="DetSlContentBox">
+                    <div className="container">
+                        {/* <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -336,86 +339,104 @@ export default function DetailHero({
                         </div>
                     </motion.div> */}
 
-                    {/* {text2 !== "Divine Al Barari" && ( */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, ease: 'easeOut' }}
-                        viewport={{ once: true, amount: 0.5 }}
-                    >
-                        <div className="row align-items-center">
-                            <div className="col-md-7">
-                                <motion.div
-                                    variants={containerVariants}
-                                    initial="hidden"
-                                    whileInView="visible"
-                                    viewport={{ once: true, amount: 0.5 }}
-                                >
-                                    <div>
-                                        <motion.div className="" variants={itemVariants}>
-                                            <motion.div
-                                                className="Txt1 nunito-text"
-                                                animate={{ opacity: [1, 0.3, 1] }}
-                                                transition={{
-                                                    duration: 2,
-                                                    ease: 'easeInOut',
-                                                }}
-                                            >
-                                                {text1}
+                        {/* {text2 !== "Divine Al Barari" && ( */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, ease: 'easeOut' }}
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
+                            <div className="row align-items-center">
+                                <div className="col-md-7">
+                                    <motion.div
+                                        variants={containerVariants}
+                                        initial="hidden"
+                                        whileInView="visible"
+                                        viewport={{ once: true, amount: 0.5 }}
+                                    >
+                                        <div>
+                                            <motion.div className="" variants={itemVariants}>
+                                                <motion.div
+                                                    className="Txt1 nunito-text"
+                                                    animate={{ opacity: [1, 0.3, 1] }}
+                                                    transition={{
+                                                        duration: 2,
+                                                        ease: 'easeInOut',
+                                                    }}
+                                                >
+                                                    {text1}
+                                                </motion.div>
+
+
+                                            </motion.div>
+
+                                            <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
+                                                {text2}
+                                                {/* <TypingText words={[text2, text2, text2]} speed={200} pause={800} /> */}
+                                            </motion.div>
+                                            <motion.div variants={itemVariants}>
+                                                <motion.div
+                                                    className="Txt3 nunito-text"
+                                                    animate={{ opacity: [1, 0.3, 1] }}
+                                                    transition={{
+                                                        duration: 2,
+                                                        ease: 'easeInOut',
+                                                    }}
+                                                >
+                                                    {text3}
+                                                </motion.div>
                                             </motion.div>
 
 
-                                        </motion.div>
-
-                                        <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
-                                            {text2}
-                                            {/* <TypingText words={[text2, text2, text2]} speed={200} pause={800} /> */}
-                                        </motion.div>
-                                        <motion.div variants={itemVariants}>
-                                            <motion.div
-                                                className="Txt3 nunito-text"
-                                                animate={{ opacity: [1, 0.3, 1] }}
-                                                transition={{
-                                                    duration: 2,
-                                                    ease: 'easeInOut',
-                                                }}
-                                            >
-                                                {text3}
-                                            </motion.div>
-                                        </motion.div>
-
-
-                                    </div>
-                                </motion.div>
-                            </div>
-                            {(brochureLink || masterPlanLink || registerInterest) && (
-                                <div className='col-md-5'>
-                                    <div className='ButtonsBox1'>
-                                        {brochureLink && (
-                                            <a href={brochureLink} download className='hover1'>
-                                                Download Brochure
-                                            </a>
-                                        )}
-                                        {masterPlanLink && (
-                                            <a href='#' className='hover1'>
-                                                Download Masterplan
-                                            </a>
-                                        )}
-                                        {registerInterest && (
-                                            <a href='#' className='toggleForm hover1'>
-                                                Register Your Interest
-                                            </a>
-                                        )}
-                                    </div>
+                                        </div>
+                                    </motion.div>
                                 </div>
-                            )}
+                                {(brochureLink || masterPlanLink || registerInterest) && (
+                                    <div className='col-md-5'>
+                                        <div className='ButtonsBox1'>
+                                            {brochureLink && (
+                                                // <a href={brochureLink} download className='hover1'>
+                                                //     Download Brochure
+                                                // </a>
 
-                        </div>
-                    </motion.div>
-                    {/* )} */}
+                                                <a onClick={() => setIsOpen(!isOpen)} className='hover1' style={{ cursor: 'pointer' }}>
+                                                    Download Brochure
+                                                </a>
+                                            )}
+                                            {masterPlanLink && (
+                                                <a href='#' className='hover1'>
+                                                    Download Masterplan
+                                                </a>
+                                            )}
+                                            {registerInterest && (
+                                                <a href='#' className='toggleForm hover1'>
+                                                    Register Your Interest
+                                                </a>
+                                            )}
+                                        </div>
+                                    </div>
+                                )}
 
+                            </div>
+                        </motion.div>
+                        {/* )} */}
+
+                    </div>
                 </div>
             </div>
-        </div>
+
+
+
+            {isOpen && (
+                <div style={{ position: 'fixed', top: 0, left: 0, width: "100%", height: "100%", background: "rgba(0, 0, 0, 0.6)", display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 999 }}>
+                    {/* <div style={{ background: 'white', padding: '20px', borderRadius: '10px', maxWidth: '500px', width: '100%', boxShadow: '0 0 15px rgba(0, 0, 0, 0.3)', textAlign: 'center' }}>
+                        <p>Are you sure you want to delete this item? This action cannot be undone.</p>
+                        <div>
+                        </div>
+                    </div> */}
+                    <CatalogueForm isOpen={isOpen} setIsOpen={setIsOpen} brochureLink={brochureLink} sourcePage={text2} />
+                </div>
+            )}
+        </>
     );
 }

@@ -15,13 +15,13 @@ import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 
 export default async function DivineResidencies() {
-  const metaTags = await getMetaTags("/detail-page/divine-residencies");
+  const metaTags = await getMetaTags("/detail-page/divine-residences");
   if (metaTags.length === 0 || !metaTags[0].metaContent) {
     console.warn("No meta tags found, using default");
   }
 
   const detailHeroData = {
-    backgroundImage: "r.jpg",
+    backgroundImage: "klt.jpg",
     backgroundImageMobile: "Divine-Residence-Image-Mobile.jpg",
     text1: "Smart Spaces Crafted for Modern Lifestyles",
     text2: "Divine Residences",
@@ -46,9 +46,9 @@ export default async function DivineResidencies() {
       //     controls: true,
       // },
       // { src: "/Divine-Residence-Image.jpg" },
-      { src: "Divine-Residencies/Interior/Main-picture.jpg" },
-      { src: "Divine-Residencies/Interior/2.jpg" },
-      { src: "Divine-Residencies/Interior/10.jpg" },
+      { src: "Divine-Residences/Interior/Main-picture.jpg" },
+      { src: "Divine-Residences/Interior/2.jpg" },
+      { src: "Divine-Residences/Interior/10.jpg" },
     ],
   };
 
@@ -58,15 +58,18 @@ export default async function DivineResidencies() {
     text3:
       "Located in the heart of Arjan and just moments from the world-famous Dubai Miracle Garden and Butterfly Garden, Divine Residences is a ready-to-move-in residential project crafted for comfort, convenience, and contemporary living. With seamless access to Umm Suqeim Street and major city landmarks, this community strikes the perfect balance between natural serenity and urban vibrance.",
     GalleryImages: [
-      "Divine-Residencies/Interior/Main-picture.jpg",
-      "Divine-Residencies/Interior/2.jpg",
+      // "Divine-Residences/Interior/Main-picture.jpg",
+      "rd1.jpg",
+      "rd2.jpg",
+      "rd3.jpg",
+      "Divine-Residences/Interior/2.jpg",
 
-      "Divine-Residencies/Interior/1.jpg",
+      "Divine-Residences/Interior/1.jpg",
     ],
   };
   const DataProjectDetails2 = {
     ThumbImage1: "res1.jpg",
-    ThumbImage2: "Divine-Residencies/Residencies 1st project 04.jpg",
+    ThumbImage2: "sv1.jpg",
     text1Heading: "A Curated Collection of Residences",
     text1Desc: "Studios, 1 & 2 Bedroom Apartments, Bright, open layouts designed for modern lifestyles, Spacious balconies with community views, Thoughtfully selected color palettes for effortless interior styling",
     text2Heading: "Prime Connectivity & Comfort",
@@ -115,47 +118,47 @@ export default async function DivineResidencies() {
     GalleryImagesWithNames: [
 
       {
-        src: "Divine-Residencies/Interior/3-1.jpg",
+        src: "Divine-Residences/Interior/3-1.jpg",
         title: "Living Room",
       },
       {
-        src: "Divine-Residencies/Interior/4.jpg",
+        src: "Divine-Residences/Interior/4.jpg",
         title: "Living Room",
       },
       {
-        src: "Divine-Residencies/Interior/5-1.jpg",
+        src: "Divine-Residences/Interior/5-1.jpg",
         title: "Living Room",
       },
       {
-        src: "Divine-Residencies/Interior/6-1.jpg",
+        src: "Divine-Residences/Interior/6-1.jpg",
         title: "Kitchen Area",
       },
+      // {
+      //   src: "Divine-Residences/Interior/7-1.jpg",
+      //   title: "Living Room",
+      // },
       {
-        src: "Divine-Residencies/Interior/7-1.jpg",
-        title: "Living Room",
-      },
-      {
-        src: "Divine-Residencies/Interior/8.jpg",
+        src: "Divine-Residences/Interior/8.jpg",
         title: "Bedroom",
       },
       {
-        src: "Divine-Residencies/Interior/9.jpg",
+        src: "Divine-Residences/Interior/9.jpg",
         title: "Living Room",
       },
       {
-        src: "Divine-Residencies/Interior/10.jpg",
+        src: "Divine-Residences/Interior/10.jpg",
         title: "Apartment Hallway",
       },
       {
-        src: "Divine-Residencies/Interior/11.jpg",
+        src: "Divine-Residences/Interior/11.jpg",
         title: "Living Room",
       },
       {
-        src: "Divine-Residencies/Interior/12.jpg",
+        src: "Divine-Residences/Interior/12.jpg",
         title: "Dining Area",
       },
       {
-        src: "Divine-Residencies/Interior/13.jpg",
+        src: "Divine-Residences/Interior/13.jpg",
         title: "Bedroom",
       },
     ],
@@ -315,7 +318,11 @@ export default async function DivineResidencies() {
 
   return (
     <>
-      <MetaInjector metaContent={metaTags[0].metaContent} />
+      {/* <MetaInjector metaContent={metaTags[0].metaContent} /> */}
+      {metaTags[0]?.metaContent && (
+        <MetaInjector metaContent={metaTags[0].metaContent} />
+      )}
+
       <div>
         <DetailHero {...detailHeroData} />
         <ProjectDetails1 {...DataProjectDetails1} />
