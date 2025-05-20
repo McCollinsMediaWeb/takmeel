@@ -74,7 +74,7 @@ export default function FirstProjectItem({
 
     ScrollTrigger.create({
       trigger: bannerContainer,
-      start: 'top+=100% top',
+      start: 'top+=60% top',
       onEnter: () => {
         if (bannerContent) {
           bannerContent.style.color = '#000';
@@ -91,7 +91,7 @@ export default function FirstProjectItem({
 
     ScrollTrigger.create({
         trigger: bannerContainer,
-        start: 'top+=60% top',
+        start: 'top+=50% top',
         onEnter: () => {
           if (videoElement) {
             videoElement.style.position = 'fixed';
@@ -134,7 +134,7 @@ export default function FirstProjectItem({
         scrollTrigger: {
           trigger: bannerBgRefItem,
           start: 'top top',
-          end: '+=100%',
+          end: '+=70%',
           scrub: 1
         }
       });
@@ -183,33 +183,43 @@ export default function FirstProjectItem({
         duration: 0.1
       });
       tl.to(scrollArrowRef.current, {
-        scale: 0.8,
+        scale: 0.5,
         opacity: 1,
         yPercent: -80,
         transformOrigin: 'center bottom',
         ease: 'none',
-        duration: 0.4
+        duration: 1.4
       });
      
       tl.to(scrollArrowRef.current, {
-        scale: 3,
-        yPercent: -20,
-        opacity: 0.6,
+        scale: 1,
+        yPercent: -70,
+        opacity: 1,
         y: 10,
         transformOrigin: 'center middle',
         ease: 'none',
-        duration: 0.5
+        duration: 0.8
       });
-
+     
       tl.to(scrollArrowRef.current, {
-        scale: 40,
-        yPercent: 50,
-        opacity: 0.9,
-        y: 1500,
+        scale: 1,
+        yPercent: -70,
+        opacity: 1,
+        y: 10,
         transformOrigin: 'center middle',
         ease: 'none',
-        duration: 0.5
+        duration: 0.8
       });
+
+      // tl.to(scrollArrowRef.current, {
+      //   scale: 40,
+      //   yPercent: -80,
+      //   opacity: 0.9,
+      //   y: 10,
+      //   transformOrigin: 'center middle',
+      //   ease: 'none',
+      //   duration: 0.5
+      // });
 
     }, bannerRefItem);
 
