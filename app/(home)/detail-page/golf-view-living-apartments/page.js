@@ -318,7 +318,7 @@ export default async function GolfViewLivingApartments() {
     <>
       <MetaInjector metaContent={metaTags[0].metaContent} />
       <div>
-        <DetailHero {...detailHeroData} />
+        <DetailHero {...detailHeroData} projectStatus="Sold Out" />
         <ProjectDetails1  {...DataProjectDetails1} />
         <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
         <ProjectDetails2  {...DataProjectDetails2} />

@@ -324,7 +324,7 @@ export default async function DivineResidencia() {
     <>
       <MetaInjector metaContent={metaTags[0].metaContent} />
       <div>
-        <DetailHero {...detailHeroData} />
+        <DetailHero {...detailHeroData}  projectStatus="Sold Out"/>
         <ProjectDetails1  {...DataProjectDetails1} />
         <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
         <PaymentPlanBlock />

@@ -355,7 +355,9 @@ export default function DetailHero({
                                         viewport={{ once: true, amount: 0.5 }}
                                     >
                                         <div>
+
                                             <motion.div className="" variants={itemVariants}>
+
                                                 <motion.div
                                                     className="Txt1 nunito-text"
                                                     animate={{ opacity: [1, 0.3, 1] }}
@@ -386,7 +388,20 @@ export default function DetailHero({
                                                     {text3}
                                                 </motion.div>
                                             </motion.div>
-
+                                            {projectStatus && (
+                                                <motion.div
+                                                    className="Txt1 nunito-text"
+                                                    animate={{ opacity: [1, 0.3, 1] }}
+                                                    transition={{
+                                                        duration: 2,
+                                                        ease: 'easeInOut',
+                                                    }}
+                                                >
+                                                    <div className="Txt1">
+                                                        <span className="PrStatus">{projectStatus}</span>
+                                                    </div>
+                                                </motion.div>
+                                            )}
 
                                         </div>
                                     </motion.div>
