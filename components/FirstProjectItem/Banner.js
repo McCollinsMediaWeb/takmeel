@@ -25,6 +25,7 @@ export default function FirstProjectItem({
      const bannerRef = useRef(null);
     const bannerContentRef = useRef(null);
     const scrollArrowRef = useRef(null);
+    const scrollBg = useRef(null);
     const contentInnerRef = useRef(null);
     const videoRef = useRef(null);
     const isDesktop = useMediaQuery("(min-width: 960px)");
@@ -123,6 +124,42 @@ export default function FirstProjectItem({
 
   // Arrow Animation
 
+
+
+   useLayoutEffect(() => {
+    const bannerBgRefItem = bannerRef.current;
+
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: bannerBgRefItem,
+          start: 'top top',
+          end: '+=100%',
+          scrub: 1
+        }
+      });
+     
+     tl.to(scrollBg.current, {
+        opacity: 0,
+        yPercent: 0,
+        transformOrigin: 'center bottom',
+        ease: 'none',
+        duration: 1
+      });
+     tl.to(scrollBg.current, {
+        opacity: 0.9,
+        yPercent: 0,
+        transformOrigin: 'center bottom',
+        ease: 'none',
+        duration: 1
+      });
+
+    }, bannerBgRefItem);
+
+
+    return () => ctx.revert();
+  }, []);
+
   useLayoutEffect(() => {
     const bannerRefItem = bannerRef.current;
 
@@ -136,6 +173,7 @@ export default function FirstProjectItem({
         }
       });
 
+     
       tl.to(scrollArrowRef.current, {
         scale: 0,
         opacity: 0,
@@ -152,7 +190,7 @@ export default function FirstProjectItem({
         ease: 'none',
         duration: 0.4
       });
-
+     
       tl.to(scrollArrowRef.current, {
         scale: 3,
         yPercent: -20,
@@ -294,11 +332,12 @@ export default function FirstProjectItem({
                         </div>
                     </div>
                   <div className="arrowContainer">
+                  <div className="arrowBg" ref={scrollBg}></div>
                     <div className="arrowWrapper">
                         <Image
                         ref={scrollArrowRef}
                         className="scrollArrow"
-                            src={`/bannerLogo.png`}
+                            src={`/bannerLogoLg.png`}
                             width={439}
                             height={1205}
                             layout="responsive"

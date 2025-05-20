@@ -1,15 +1,13 @@
 
-import MetaInjector from "@/components/Meta/MetaInjector";
-import { getMetaTags } from "@/lib/getMetaTags";
 // import FullpageWrapper from "@/components/Animations/FullPageScroll";
 
 import HomePageItem from "@/components/Home/HomePageItem";
 
 export default async function Home() {
-  const metaTags = await getMetaTags("/");
-  if (metaTags.length === 0 || !metaTags[0].metaContent) {
-    console.warn("No meta tags found, using default");
-  }
+  // const metaTags = await getMetaTags("/");
+  // if (metaTags.length === 0 || !metaTags[0].metaContent) {
+  //   console.warn("No meta tags found, using default");
+  // }
   // const GalleryData2 = {
   //   heading: "Takmeel – A Voice of Trust",
   //   subheading: "What Our Clients Say About Us",
@@ -129,7 +127,8 @@ export default async function Home() {
     // </>
 
     <>
-      <MetaInjector metaContent={metaTags[0].metaContent} />
+      {/* <MetaInjector metaContent={metaTags[0].metaContent} /> */}
+
   
       <HomePageItem/>
 
