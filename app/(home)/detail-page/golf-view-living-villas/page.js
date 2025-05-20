@@ -78,8 +78,8 @@ export default async function GolfViewLivingVillas() {
     ],
   };
   const DataProjectDetails2 = {
-    ThumbImage1: "Golf-View-Living-Villas/Golf View Villas 1.jpg",
-    ThumbImage2: "Golf-View-Living-Villas/Golf View Villas 2.jpg",
+    ThumbImage1: "vv1.jpg",
+    ThumbImage2: "vv2.jpg",
     text1Heading: "Villas Crafted for Modern Family Living",
     text1Desc: "Each villa welcomes you with an elegant double-height entrance, leading into expansive ground floor living and dining areas that open directly onto golf course views. The large kitchens come equipped with a pantry and service access, while private landscaped gardens and shaded rooftop terraces provide serene outdoor spaces.",
     text2Heading: "Project Highlights",
@@ -154,38 +154,55 @@ export default async function GolfViewLivingVillas() {
     text3:
       "Discover the perfect harmony of nature, luxury, and modern design at Divine Golf Villas—an exclusive collection of just 20 upscale residences nestled within the prestigious Al Zorah Golf Course in Ajman. Each villa is thoughtfully crafted to blend contemporary architecture with natural beauty, featuring expansive layouts, floor-to-ceiling windows, and seamless indoor-outdoor living. ",
     GalleryImagesWithNames: [
+      
       {
-        src: "gf/29.jpg",
+        src: "vv3.jpg",
         title: "Living Room Area",
       },
       {
-        src: "gf/30.jpg",
+        src: "vv4.jpg",
         title: "Living Room Area",
       },
       {
-        src: "gf/21.jpg",
+        src: "vv5.jpg",
         title: "Living Room Area",
       },
       {
-        src: "gf/23.jpg",
-        title: "Bed Room",
+        src: "vv6.jpg",
+        title: "Living Room Area",
       },
       {
-        src: "gf/25.jpg",
-        title: "Bed Room",
+        src: "vv7.jpg",
+        title: "Living Room Area",
       },
-      {
-        src: "gf/26.jpg",
-        title: "Bed Room",
-      },
-      {
-        src: "gf/27.jpg",
-        title: "Dining Area",
-      },
-      {
-        src: "gf/28.jpg",
-        title: "Kitchen Area",
-      },
+      // {
+      //   src: "gf/30.jpg",
+      //   title: "Living Room Area",
+      // },
+      // {
+      //   src: "gf/21.jpg",
+      //   title: "Living Room Area",
+      // },
+      // {
+      //   src: "gf/23.jpg",
+      //   title: "Bed Room",
+      // },
+      // {
+      //   src: "gf/25.jpg",
+      //   title: "Bed Room",
+      // },
+      // {
+      //   src: "gf/26.jpg",
+      //   title: "Bed Room",
+      // },
+      // {
+      //   src: "gf/27.jpg",
+      //   title: "Dining Area",
+      // },
+      // {
+      //   src: "gf/28.jpg",
+      //   title: "Kitchen Area",
+      // },
     ],
   };
 
