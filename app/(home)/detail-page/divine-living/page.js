@@ -66,6 +66,7 @@ export default async function DivineLiving() {
       "s2.jpg",
       "s3.jpg",
       "Divine-Living/Divine-Living-Image01.jpg",
+      "pool.jpg",
       
       // "Divine-Living/Divine-Living-Image03.jpg",
       // "Divine-Living/Divine-Living-Image04.jpg",
