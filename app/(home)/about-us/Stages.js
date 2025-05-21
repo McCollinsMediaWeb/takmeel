@@ -59,7 +59,7 @@ export default function Stages() {
                     viewport={{ once: true, amount: 0.5 }}
                 >
                     <div className="text-center">
-                        <div className="CfT1 nunito-text">Stages of Takmeel Properties</div>
+                        <div className="CfT1 nunito-text">Stages of Takmeel Development</div>
                         <div className="CfT2">A Purpose-Driven Journey of Creating Excellence, <br />Shaping Skylines, and Enriching Communities</div>
                     </div>
                 </motion.div>

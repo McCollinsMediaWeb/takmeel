@@ -13,14 +13,14 @@ export default function FAQbox() {
     };
     const accordionItems = [
         {
-            question: "What types of properties does Takmeel UAE Properties offer?",
+            question: "What types of properties does Takmeel Development Properties offer?",
             answer:
-                "Takmeel UAE Properties offers a wide range of real estate options including residential apartments, villas, commercial spaces, off-plan projects, and investment properties across the UAE.",
+                "Takmeel Development Properties offers a wide range of real estate options including residential apartments, villas, commercial spaces, off-plan projects, and investment properties across the UAE.",
         },
         {
-            question: "Is Takmeel UAE Properties licensed to operate in the UAE?",
+            question: "Is Takmeel Development Properties licensed to operate in the UAE?",
             answer:
-                "Yes, Takmeel UAE Properties is a fully licensed and RERA-registered real estate agency, operating legally and ethically within the UAE market.",
+                "Yes, Takmeel Development Properties is a fully licensed and RERA-registered real estate agency, operating legally and ethically within the UAE market.",
         },
         {
             question: "How can I schedule a property viewing with Takmeel?",
@@ -28,7 +28,7 @@ export default function FAQbox() {
                 "You can schedule a viewing by contacting us via phone, WhatsApp, email, or by filling out a request form on our website. Our agents will coordinate a convenient time based on your availability.",
         },
         {
-            question: "Does Takmeel UAE Properties assist with property management services?",
+            question: "Does Takmeel Development Properties assist with property management services?",
             answer:
                 "Yes, we provide end-to-end property management services including tenant placement, rent collection, maintenance coordination, and legal compliance.",
         },
