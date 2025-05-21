@@ -123,6 +123,15 @@ export default async function DivineLiving() {
     text3:
       "Welcome to Divine Living, where elegance meets everyday comfort in one of Dubai’s most promising neighborhoods—Arjan. Brought to life by Takmeel Real Estate, this exclusive residential development redefines urban living with thoughtfully designed spaces, premium finishes, and a serene environment that offers a welcome escape from the city’s hustle.",
     GalleryImagesWithNames: [
+      
+      {
+        src: "dvn1.jpg",
+        title: "Kitchen Area",
+      },
+      {
+        src: "dvn1.jpg",
+        title: "Kitchen Area",
+      },
       {
         src: "dl3.jpg",
         title: "Living Area",
