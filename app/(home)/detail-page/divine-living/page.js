@@ -129,7 +129,7 @@ export default async function DivineLiving() {
         title: "Kitchen Area",
       },
       {
-        src: "dvn1.jpg",
+        src: "dvn2.jpg",
         title: "Kitchen Area",
       },
       {
