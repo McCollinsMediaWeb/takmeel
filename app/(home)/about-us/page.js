@@ -9,6 +9,8 @@ import MetaInjector from "@/components/Meta/MetaInjector";
 import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 import AboutUsHeader from "./AboutUsHeader";
+import Stages from "./Stages";
+import OurValues from "./OurValues";
 
 export default async function AboutUs() {
   const metaTags = await getMetaTags("/about-us");
@@ -26,7 +28,9 @@ export default async function AboutUs() {
         {/* <AboutSlider/> */}
         <AboutVisionMission />
         <Founders />
+        <Stages/>
         <AboutVisionMission2 />
+        <OurValues/>
         <ContactForm />
         <Footer />
         <FooterBottom />

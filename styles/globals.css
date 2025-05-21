@@ -2811,3 +2811,57 @@ body {
   object-fit: cover;
   overflow: hidden;
 }
+.StageItemImge{
+  width: 60px;
+  height: 60px;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.StageItemT1{
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.StageItemT2{
+  font-size: 18px;
+}
+.StageItemImge.image1{
+  background-image: url(../public/investment.png);
+}
+.StageItemImge.image2{
+  background-image: url(../public/design.png);
+}
+.StageItemImge.image3{
+  background-image: url(../public/development.png);
+}
+.StageItemImge.image4{
+  background-image: url(../public/sale.png);
+}
+.StageItemImge.image5{
+  background-image: url(../public/marketing.png);
+}
+.StageItemImge.image6{
+  background-image: url(../public/delivery.png);
+}
+.StageItemImge.image7{
+  background-image: url(../public/integrity.png);
+}
+.StageItemImge.image8{
+  background-image: url(../public/innovation.png);
+}
+.StageItemImge.image9{
+  background-image: url(../public/excellence.png);
+}
+.StageItemImge.image10{
+  background-image: url(../public/respect.png);
+}
+.StageItemImge.image11{
+  background-image: url(../public/authenticity.png);
+}
+.StageItemImge.image13{
+  background-image: url(../public/collaboration.png);
+}
+.StageItemBox{
+  margin-top: 40px;
+}

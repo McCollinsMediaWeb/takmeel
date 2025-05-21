@@ -993,4 +993,7 @@
   .LanguageSwitcher{
     line-height: 1;
   }
+  .StageItemT1 {
+    font-size: 20px;
+  }
 }
