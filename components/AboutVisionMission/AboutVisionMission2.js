@@ -149,7 +149,9 @@ export default function AboutVisionMission2() {
                                     </motion.div>
 
                                     <motion.div className="" variants={itemVariants}>
-                                        <div className="VmT2 nunito-text mb-0 text-left">Takmeel's Vision is to transform the urban landscape by creating thoughtfully designed spaces that prioritize innovation, sustainability, and human connection. By anticipating the needs of tomorrow’s communities, Takmeel envisions vibrant, inclusive environments where people thrive and lifestyles evolve in harmony with progress.</div>
+                                        <div className="VmT2 nunito-text mb-0 text-left">
+                                            Takmeel's Vision is to shape the future of real estate through a steadfast commitment to Excellence, Integrity, and Innovation. By developing exceptional properties that reflect the highest standards of quality and design, Takmeel aims to foster lasting value and trust within communities. Guided by a culture of purpose and progress, we envision dynamic spaces where people and possibilities thrive together.
+                                        </div>
 
                                     </motion.div>
                                 </div>
@@ -175,7 +177,7 @@ export default function AboutVisionMission2() {
                                     </motion.div>
 
                                     <motion.div className="" variants={itemVariants}>
-                                        <div className="VmT2 nunito-text mb-0 text-left ">Takmeel's Mission is to develop sustainable and intelligently designed environments that blend elegance with functionality. With a focus on quality, innovation, and long-term value, Takmeel aims to enhance everyday living experiences while contributing meaningfully to the future of urban development.</div>
+                                        <div className="VmT2 nunito-text mb-0 text-left ">Takmeel's Mission is to create iconic and innovative projects that redefine the urban skyline and become enduring landmarks. We are dedicated to maintaining an uncompromising commitment to exceptional quality in every project we undertake. By nurturing and elevating a distinct human capital of the highest potential, we empower our teams to lead with purpose and passion. Our mission also extends to expanding across diverse real estate sectors, driving holistic growth and delivering transformative value to communities and stakeholders alike.</div>
 
                                     </motion.div>
                                 </div>
