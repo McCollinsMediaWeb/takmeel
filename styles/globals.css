@@ -2426,6 +2426,7 @@ input[type="number"] {
   border-radius: 20px;
   cursor: pointer;
   transition: 0.4s;
+  border: 1px solid #fff;
 }
 .LanguageSwitcher:hover{
 background-color: #d6b264;
@@ -2439,6 +2440,8 @@ background-color: #d6b264;
   height: 15px;
   background-size: 100% 100%;
   border-radius: 3px;
+  position: relative;
+  top: 1px;
 }
 .uaelogo{
   background-image: url(../public/uaeflag.jpg);
