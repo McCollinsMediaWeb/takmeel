@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Nunito_Sans } from "next/font/google";
+import { Geist, Geist_Mono, Nunito_Sans , Cairo } from "next/font/google";
 
 import Header from "@/components/header/header";
 import { GlobalDataProvider } from "@/context/GlobalDataContext";
@@ -26,6 +26,12 @@ const nunitoSans = Nunito_Sans({
   display: "swap",
 });
 
+const cairo = Cairo({
+  variable: "--font-cairo",
+  subsets: ["latin"],
+  display: "swap",
+});
+
 
 
 // export const metadata = {
@@ -47,7 +53,7 @@ export default function RootLayout({ children }) {
   return (
 
 
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${nunitoSans.variable}`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${nunitoSans.variable} ${cairo.variable}`}>
 
       <body>
         <div className="vibe-stack">

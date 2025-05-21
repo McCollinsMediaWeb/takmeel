@@ -83,7 +83,11 @@ export default function Header() {
 
             </div>
             <div className='HeaderBoxRight'>
-              <div className='Link4 hover1 toggleForm cursor-pointer'>
+              <div className='LanguageSwitcher ArabicLink arabic-text'>
+                عربي
+                <span className="LanguageICon uaelogo">&nbsp;</span>
+              </div>
+              <div className='Link4 hover1 toggleForm cursor-pointer d-only'>
                 Get in Touch
               </div>
             </div>
