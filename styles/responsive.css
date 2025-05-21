@@ -996,4 +996,7 @@
   .StageItemT1 {
     font-size: 20px;
   }
+  .OurValuesBox .StageItemBox{
+  padding: 15px;
+  }
 }
