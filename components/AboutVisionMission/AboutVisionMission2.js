@@ -163,8 +163,8 @@ export default function AboutVisionMission2() {
                                         </div>
                                     </motion.div>
                                     <motion.div variants={itemVariants}>
-                                        <div className="VmT2 nunito-text mb-0 text-left">
-                                            Takmeel's Vision is to shape the future of real estate through a steadfast commitment to Excellence, Integrity, and Innovation. By developing exceptional properties that reflect the highest standards of quality and design, Takmeel aims to foster lasting value and trust within communities. Guided by a culture of purpose and progress, we envision dynamic spaces where people and possibilities thrive together.
+                                        <div className="VmT2 mb-0 text-left">
+                                           A brand committed to building exceptional properties and a culture of Excellence, Integrity, and Innovation.
                                         </div>
                                     </motion.div>
                                 </motion.div>
@@ -185,11 +185,29 @@ export default function AboutVisionMission2() {
                                             Takmeel Mission
                                         </div>
                                     </motion.div>
-                                    <motion.div variants={itemVariants}>
-                                        <div className="VmT2 nunito-text mb-0 text-left">
-                                            Takmeel's Mission is to create iconic and innovative projects that redefine the urban skyline and become enduring landmarks. We are dedicated to maintaining an uncompromising commitment to exceptional quality in every project we undertake. By nurturing and elevating a distinct human capital of the highest potential, we empower our teams to lead with purpose and passion. Our mission also extends to expanding across diverse real estate sectors, driving holistic growth and delivering transformative value to communities and stakeholders alike.
-                                        </div>
-                                    </motion.div>
+                                    <ul className="ListTyle1">
+                                        <li>
+                                                <motion.div variants={itemVariants}>
+                                                    <div className="VmT2 mb-0 text-left LiSt"><span>CREATE</span> Iconic and Innovative Projects that Redefine Landmarks.</div>
+                                                </motion.div>
+                                        </li>
+                                        <li>
+                                                <motion.div variants={itemVariants}>
+                                                    <div className="VmT2 mb-0 text-left LiSt"><span>MAINTAIN</span>an Uncompromising Commitment to Exceptional Project Quality.</div>
+                                                </motion.div>
+                                        </li>
+                                        <li>
+                                                <motion.div variants={itemVariants}>
+                                                    <div className="VmT2 mb-0 text-left LiSt"><span>NURTURE </span>and Elevate a Distinct Human Capital of the Highest Potential.</div>
+                                                </motion.div>
+                                        </li>
+                                        <li>
+                                                <motion.div variants={itemVariants}>
+                                                    <div className="VmT2 mb-0 text-left LiSt"><span>EXPAND</span>and Encompass Varied Real Estate Sectors for Holistic Growth.</div>
+                                                </motion.div>
+                                        </li>
+                                    </ul>
+                                    
                                 </motion.div>
                             </motion.div>
                         </div>
@@ -259,3 +277,4 @@ export default function AboutVisionMission2() {
         </section>
     );
 }
+

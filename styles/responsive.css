@@ -999,4 +999,14 @@
   .OurValuesBox .StageItemBox{
   padding: 15px;
   }
+  .ListTyle1{
+    list-style: none;
+    padding: 0;
+  }
+  .ListTyle1 li div span{
+    font-size: 16px;
+  }
+  .ListTyle1 li div {
+    margin-bottom: 10px;
+  }
 }

@@ -69,7 +69,7 @@ const itemVariants = {
                     </motion.div>
 
                     <motion.div className="" variants={itemVariants}>
-                        <div className="VmT2 nunito-text mb-0 text-left">
+                        <div className="VmT2 mb-0 text-left">
                             You can rely on our team of seasoned specialists to provide the kind of unmatched service that paves the way to unlock the doors to your dream home in one of the world’s most beautiful and sought-after locations. Our company is dedicated to quality, creativity, and the continuous quest to make your dreams a reality. Every project we take on is a blank slate for us to combine our skills, explore new ideas, and push the boundaries of quality and creativity.
                         </div>
                     </motion.div>

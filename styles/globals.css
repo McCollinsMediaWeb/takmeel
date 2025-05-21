@@ -2871,3 +2871,19 @@ body {
   min-height: 235px;
 }
 
+.ListTyle1{
+  margin: 0;
+  padding-left: 20px;
+}
+.ListTyle1 li div{
+  margin-bottom: 15px;
+}
+.ListTyle1 li:last-child div{
+  margin-bottom: 0px;
+}
+.ListTyle1 li div span{
+  color: #d6b264;
+  font-size: 21px;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
