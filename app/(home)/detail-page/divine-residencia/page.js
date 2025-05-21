@@ -164,10 +164,7 @@ export default async function DivineResidencia() {
         src: "dv5.jpg",
         title: "Washroom Area",
       },
-      {
-        src: "dv6.jpg",
-        title: "Washroom Area",
-      },
+      
 
     ],
   };
