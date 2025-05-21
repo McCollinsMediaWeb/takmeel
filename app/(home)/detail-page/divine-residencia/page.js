@@ -141,6 +141,14 @@ export default async function DivineResidencia() {
       "Nestled in Dubai Studio City A vibrant, family-friendly community with seamless access to major roads and city landmarks.",
     GalleryImagesWithNames: [
       {
+        src: "dvr1.jpg",
+        title: "Living Room",
+      },
+      {
+        src: "dvr2.jpg",
+        title: "Living Room",
+      },
+      {
         src: "Divine-Residencia/Interior/Divine Residencia Interior 05.jpg",
         title: "Welcome Lounge",
       },
