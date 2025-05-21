@@ -49,7 +49,7 @@ export default function OurValues() {
 
 
     return (
-        <section className="pd-common bg2">
+        <section className="pd-common bg2 OurValuesBox">
             <div className="container">
 
                 <motion.div

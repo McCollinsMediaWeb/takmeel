@@ -2865,3 +2865,8 @@ body {
 .StageItemBox{
   margin-top: 40px;
 }
+.OurValuesBox .StageItemBox{
+  padding: 20px;
+  background-color: #fff;
+  min-height: 235px;
+}
