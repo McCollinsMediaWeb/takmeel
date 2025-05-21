@@ -137,10 +137,10 @@ export default async function DivineResidencies() {
         src: "Divine-Residences/Interior/8.jpg",
         title: "Bedroom",
       },
-      {
-        src: "Divine-Residences/Interior/9.jpg",
-        title: "Living Room",
-      },
+      // {
+      //   src: "Divine-Residences/Interior/9.jpg",
+      //   title: "Living Room",
+      // },
       {
         src: "Divine-Residences/Interior/10.jpg",
         title: "Apartment Hallway",
