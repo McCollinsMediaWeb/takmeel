@@ -78,7 +78,7 @@ export default function ProjectDetails4({ text1, text2, text3, GalleryImagesWith
 
     var settings = {
         dots: true,
-        speed: 8000,
+        speed: 9000,
         slidesToShow: 3,
         slidesToScroll: 3,
         initialSlide: 0,
