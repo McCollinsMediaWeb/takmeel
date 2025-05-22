@@ -345,7 +345,7 @@ export default async function DivineLiving() {
         <DetailHero {...detailHeroData} projectStatus="Sold Out" />
         <ProjectDetails1  {...DataProjectDetails1} />
         <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
-        <PaymentPlanBlock />
+        {/* <PaymentPlanBlock /> */}
         <ProjectDetails2  {...DataProjectDetails2} />
         {/* <ProjectDetails3 mainimage1="ovr2.jpg" data={DataProjectDetails3} /> */}
 

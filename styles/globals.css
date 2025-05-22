@@ -1610,7 +1610,7 @@ body .slick-prev::before {
 }
 
 .ImageTlBox {
-
+display: none;
   background-color: #fff;
   padding: 20px;
   font-size: 23px;
@@ -2822,12 +2822,12 @@ body {
   margin-bottom: 15px;
 }
 .StageItemT1{
-  font-size: 22px;
+  font-size: 25px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 .StageItemT2{
-  font-size: 18px;
+  font-size: 19px;
 }
 .StageItemImge.image1{
   background-image: url(../public/investment.png);
