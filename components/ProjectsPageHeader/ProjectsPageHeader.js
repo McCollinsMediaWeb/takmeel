@@ -93,16 +93,39 @@ export default function ProjectsPageHeader() {
         return () => clearTimeout(timer);
     }, [inView]);
 
+    const [speed, setSpeed] = useState(9000); // autoplay speed
+    const [manualTrigger, setManualTrigger] = useState(false);
+    useEffect(() => {
+        // const handleArrowClick = () => setManualTrigger(true);
+        const handleArrowClick = () => {
+            setManualTrigger(true);
+            setSpeed(900); // faster for manual
+        };
+
+        const next = document.querySelector(".slick-next");
+        const prev = document.querySelector(".slick-prev");
+
+        if (next) next.addEventListener("click", handleArrowClick);
+        if (prev) prev.addEventListener("click", handleArrowClick);
+
+        // Cleanup on unmount
+        return () => {
+            if (next) next.removeEventListener("click", handleArrowClick);
+            if (prev) prev.removeEventListener("click", handleArrowClick);
+        };
+    }, []);
+
     var settings = {
         dots: true,
-        speed: 8000,
+        speed: speed,
         slidesToShow: 4,
-        slidesToScroll: 3,
-        initialSlide: 0,
+        slidesToScroll: 4,
         infinite: true,
-        // autoplay: true,
-        autoplaySpeed: 0,
-        CssEase: 'linear',
+        autoplay: true,
+        // autoplaySpeed: 2000,
+        // CssEase: 'linear',
+        // cssEase: 'ease-in-out',
+        pauseOnHover: true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -131,7 +154,23 @@ export default function ProjectsPageHeader() {
                     centerMode: true
                 }
             }
-        ]
+        ],
+        // beforeChange: () => {
+        //     if (manualTrigger) {
+        //         setSpeed(500); // fast manual transition
+        //         setManualTrigger(false);
+
+        //         // Restore autoplay speed shortly after
+        //         setTimeout(() => setSpeed(9000), 100);
+        //     }
+        // },
+        beforeChange: () => {
+            if (manualTrigger) {
+                setManualTrigger(false);
+                // Revert back to slow scroll shortly after manual interaction
+                setTimeout(() => setSpeed(9000), 300); // keep enough delay to complete scroll
+            }
+        },
     };
 
 
