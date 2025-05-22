@@ -75,7 +75,7 @@ export default function Founders() {
         return () => clearTimeout(timer);
     }, [inView]);
 
-    const [speed, setSpeed] = useState(9000); // autoplay speed
+    const [speed, setSpeed] = useState(2000); // autoplay speed
     const [manualTrigger, setManualTrigger] = useState(false);
     useEffect(() => {
         const handleArrowClick = () => setManualTrigger(true);
@@ -98,9 +98,10 @@ export default function Founders() {
         slidesToShow: 4,
         slidesToScroll: 4,
         infinite: true,
-        // autoplay: true,
-        autoplaySpeed: 0,
-        CssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 3000,
+        // CssEase: 'linear',
+          cssEase: 'ease-in-out',
         pauseOnHover: true,
         responsive: [
             {
@@ -131,15 +132,15 @@ export default function Founders() {
                 }
             }
         ],
-        beforeChange: () => {
-            if (manualTrigger) {
-                setSpeed(500); // fast manual transition
-                setManualTrigger(false);
+        // beforeChange: () => {
+        //     if (manualTrigger) {
+        //         setSpeed(500); // fast manual transition
+        //         setManualTrigger(false);
 
-                // Restore autoplay speed shortly after
-                setTimeout(() => setSpeed(9000), 100);
-            }
-        },
+        //         // Restore autoplay speed shortly after
+        //         setTimeout(() => setSpeed(9000), 100);
+        //     }
+        // },
     };
     
 
