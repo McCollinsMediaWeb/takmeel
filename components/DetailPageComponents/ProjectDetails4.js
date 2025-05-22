@@ -76,16 +76,40 @@ export default function ProjectDetails4({ text1, text2, text3, GalleryImagesWith
         return () => clearTimeout(timer);
     }, [inView]);
 
+    const [speed, setSpeed] = useState(9000); // autoplay speed
+    const [manualTrigger, setManualTrigger] = useState(false);
+    useEffect(() => {
+        const handleArrowClick = () => {
+            console.log("arrow clicking");
+            setManualTrigger(true);
+            setSpeed(900); // faster for manual
+        };
+
+        const container = document.querySelector(".UniqueSliderBox");
+        const next = container?.querySelector(".slick-next");
+        const prev = container?.querySelector(".slick-prev");
+
+        if (next) next.addEventListener("click", handleArrowClick);
+        if (prev) prev.addEventListener("click", handleArrowClick);
+
+        return () => {
+            if (next) next.removeEventListener("click", handleArrowClick);
+            if (prev) prev.removeEventListener("click", handleArrowClick);
+        };
+    }, []);
+
+
     var settings = {
         dots: true,
-        speed: 9000,
+        speed: speed,
         slidesToShow: 3,
         slidesToScroll: 3,
-        initialSlide: 0,
         infinite: true,
-        // autoplay: true,
-        autoplaySpeed: 0,
-        CssEase: 'linear',         // Time between slides in milliseconds
+        autoplay: true,
+        // autoplaySpeed: 2000,
+        // CssEase: 'linear',
+        // cssEase: 'ease-in-out',
+        pauseOnHover: true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -114,8 +138,65 @@ export default function ProjectDetails4({ text1, text2, text3, GalleryImagesWith
                     centerMode: true
                 }
             }
-        ]
+        ],
+        // beforeChange: () => {
+        //     if (manualTrigger) {
+        //         setSpeed(500); // fast manual transition
+        //         setManualTrigger(false);
+
+        //         // Restore autoplay speed shortly after
+        //         setTimeout(() => setSpeed(9000), 100);
+        //     }
+        // },
+        beforeChange: () => {
+            if (manualTrigger) {
+                setManualTrigger(false);
+                // Revert back to slow scroll shortly after manual interaction
+                setTimeout(() => setSpeed(9000), 300); // keep enough delay to complete scroll
+            }
+        },
     };
+
+    // var settings = {
+    //     dots: true,
+    //     speed: 9000,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 3,
+    //     initialSlide: 0,
+    //     infinite: true,
+    //     // autoplay: true,
+    //     autoplaySpeed: 0,
+    //     CssEase: 'linear',         // Time between slides in milliseconds
+    //     responsive: [
+    //         {
+    //             breakpoint: 1024,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1,
+    //                 infinite: true,
+    //                 dots: true,
+    //                 centerMode: true
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 600,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1,
+    //                 initialSlide: 1,
+    //                 centerMode: true
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 480,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1,
+    //                 centerMode: true
+    //             }
+    //         }
+    //     ]
+    // };
 
     return (
         <div className='position-relative pd-common bg2'>
@@ -134,7 +215,7 @@ export default function ProjectDetails4({ text1, text2, text3, GalleryImagesWith
                             <div className="BlT3">{text3}</div>
                         </div>
                         {GalleryImagesWithNames?.length > 0 && (
-                            <div className='col-md-12 PrDetSliderBox' ref={sliderRef}>
+                            <div className='col-md-12 PrDetSliderBox UniqueSliderBox' ref={sliderRef}>
                                 <Slider ref={slickRef} {...settings}>
                                     {GalleryImagesWithNames.map((img, index) => (
                                         <div key={index} className='AbSliderItem' onClick={() => setOpen(true)}>

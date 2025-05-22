@@ -266,19 +266,39 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
         return () => clearTimeout(timer);
     }, [inView]);
 
+    const [speed, setSpeed] = useState(9000); // autoplay speed
+    const [manualTrigger, setManualTrigger] = useState(false);
+    useEffect(() => {
+        // const handleArrowClick = () => setManualTrigger(true);
+        const handleArrowClick = () => {
+            setManualTrigger(true);
+            setSpeed(900); // faster for manual
+        };
 
+        const next = document.querySelector(".slick-next");
+        const prev = document.querySelector(".slick-prev");
 
+        if (next) next.addEventListener("click", handleArrowClick);
+        if (prev) prev.addEventListener("click", handleArrowClick);
+
+        // Cleanup on unmount
+        return () => {
+            if (next) next.removeEventListener("click", handleArrowClick);
+            if (prev) prev.removeEventListener("click", handleArrowClick);
+        };
+    }, []);
 
     var settings = {
         dots: true,
-        speed: 8000,
+        speed: speed,
         slidesToShow: 3,
         slidesToScroll: 3,
-        initialSlide: 0,
         infinite: true,
-        // autoplay: true,
-        autoplaySpeed: 0,
-        CssEase: 'linear',
+        autoplay: true,
+        // autoplaySpeed: 2000,
+        // CssEase: 'linear',
+        // cssEase: 'ease-in-out',
+        pauseOnHover: true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -307,26 +327,74 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
                     centerMode: true
                 }
             }
-        ]
+        ],
+        beforeChange: () => {
+            if (manualTrigger) {
+                setManualTrigger(false);
+                // Revert back to slow scroll shortly after manual interaction
+                setTimeout(() => setSpeed(9000), 300); // keep enough delay to complete scroll
+            }
+        },
     };
-    const animationVariants = [
-        {
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
-        },
-        {
-            hidden: { opacity: 0, scale: 0.8 },
-            visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeOut" } },
-        },
-        {
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
-        },
-        {
-            hidden: { opacity: 0, rotate: -10 },
-            visible: { opacity: 1, rotate: 0, transition: { duration: 0.8, ease: "easeOut" } },
-        },
-    ];
+
+    // var settings = {
+    //     dots: true,
+    //     speed: 8000,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 3,
+    //     initialSlide: 0,
+    //     infinite: true,
+    //     // autoplay: true,
+    //     autoplaySpeed: 0,
+    //     CssEase: 'linear',
+    //     responsive: [
+    //         {
+    //             breakpoint: 1024,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1,
+    //                 infinite: true,
+    //                 dots: true,
+    //                 centerMode: true
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 600,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1,
+    //                 initialSlide: 1,
+    //                 centerMode: true
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 480,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1,
+    //                 centerMode: true
+    //             }
+    //         }
+    //     ]
+    // };
+    // const animationVariants = [
+    //     {
+    //         hidden: { opacity: 0, y: 50 },
+    //         visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    //     },
+    //     {
+    //         hidden: { opacity: 0, scale: 0.8 },
+    //         visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeOut" } },
+    //     },
+    //     {
+    //         hidden: { opacity: 0, x: -50 },
+    //         visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    //     },
+    //     {
+    //         hidden: { opacity: 0, rotate: -10 },
+    //         visible: { opacity: 1, rotate: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    //     },
+    // ];
 
     return (
         <div className='position-relative pd-common'>
