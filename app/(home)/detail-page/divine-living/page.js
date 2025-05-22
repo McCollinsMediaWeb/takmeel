@@ -136,10 +136,10 @@ export default async function DivineLiving() {
         src: "dl3.jpg",
         title: "Living Area",
       },
-      {
-        src: "dl4.jpg",
-        title: "Living Area",
-      },
+      // {
+      //   src: "dl4.jpg",
+      //   title: "Living Area",
+      // },
       // {
       //   src: "dl5.jpg",
       //   title: "Lounge Area",
@@ -168,10 +168,10 @@ export default async function DivineLiving() {
         src: "ds4.jpg",
         title: "Washroom Area",
       },
-      {
-        src: "ds5.jpg",
-        title: "Washroom Area",
-      },
+      // {
+      //   src: "ds5.jpg",
+      //   title: "Washroom Area",
+      // },
     ],
   };
 
