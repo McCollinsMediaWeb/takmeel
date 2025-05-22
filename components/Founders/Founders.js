@@ -16,7 +16,7 @@ import f7 from "../../public/t6.jpg"
 import f8 from "../../public/rf.jpg"
 export default function Founders() {
 
-   
+
 
     const sliderRef = useRef(null);
     const slickRef = useRef(null);
@@ -75,10 +75,14 @@ export default function Founders() {
         return () => clearTimeout(timer);
     }, [inView]);
 
-    const [speed, setSpeed] = useState(2000); // autoplay speed
+    const [speed, setSpeed] = useState(9000); // autoplay speed
     const [manualTrigger, setManualTrigger] = useState(false);
     useEffect(() => {
-        const handleArrowClick = () => setManualTrigger(true);
+        // const handleArrowClick = () => setManualTrigger(true);
+        const handleArrowClick = () => {
+            setManualTrigger(true);
+            setSpeed(900); // faster for manual
+        };
 
         const next = document.querySelector(".slick-next");
         const prev = document.querySelector(".slick-prev");
@@ -88,8 +92,8 @@ export default function Founders() {
 
         // Cleanup on unmount
         return () => {
-        if (next) next.removeEventListener("click", handleArrowClick);
-        if (prev) prev.removeEventListener("click", handleArrowClick);
+            if (next) next.removeEventListener("click", handleArrowClick);
+            if (prev) prev.removeEventListener("click", handleArrowClick);
         };
     }, []);
     var settings1 = {
@@ -99,9 +103,9 @@ export default function Founders() {
         slidesToScroll: 4,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 3000,
+        // autoplaySpeed: 2000,
         // CssEase: 'linear',
-          cssEase: 'ease-in-out',
+        // cssEase: 'ease-in-out',
         pauseOnHover: true,
         responsive: [
             {
@@ -141,8 +145,15 @@ export default function Founders() {
         //         setTimeout(() => setSpeed(9000), 100);
         //     }
         // },
+        beforeChange: () => {
+            if (manualTrigger) {
+                setManualTrigger(false);
+                // Revert back to slow scroll shortly after manual interaction
+                setTimeout(() => setSpeed(9000), 300); // keep enough delay to complete scroll
+            }
+        },
     };
-    
+
 
     return (
         <section className="pd-common FoundersBlock">
