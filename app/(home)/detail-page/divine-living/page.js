@@ -354,7 +354,7 @@ export default async function DivineLiving() {
 
 
         <ProjectDetails7 mapimage="new2.jpg" mobileMapImage="new2m.jpg" {...DataProjectDetails7} />
-        <CostCalculator />
+        {/* <CostCalculator /> */}
         <PropertyForm projectName="Divine Living" />
         <Footer />
         <FooterBottom />

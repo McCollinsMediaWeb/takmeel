@@ -329,7 +329,7 @@ export default async function DivineResidencies() {
         {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
 
         <ProjectDetails7 mapimage="new3.jpg" mobileMapImage="new3m.jpg" {...DataProjectDetails7} />
-        <CostCalculator />
+        {/* <CostCalculator /> */}
         <PropertyForm projectName="Divine Residencies" />
         <Footer />
         <FooterBottom />
