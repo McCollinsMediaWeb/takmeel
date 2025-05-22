@@ -44,7 +44,7 @@ export default function TermsOfUse() {
              >
  
                <motion.div variants={itemVariants}>
-                 <div className="PolicyBoxT1">Privacy Policy</div>
+                 <div className="PolicyBoxT1">Terms Of Use</div>
                </motion.div>
                <motion.div variants={itemVariants}>
                  <div className="PolicyBoxT1">Effective Date: 20-05-2025</div>
