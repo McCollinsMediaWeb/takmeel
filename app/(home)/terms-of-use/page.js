@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import b1 from "../../../public/main1.jpg";
 import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
+import HomeAbout from "@/components/HomeAbout/HomeAbout";
 export default function TermsOfUse() {
    const containerVariants = {
      hidden: { opacity: 0, y: 40 },
