@@ -16,45 +16,7 @@ import f7 from "../../public/t6.jpg"
 import f8 from "../../public/rf.jpg"
 export default function Founders() {
 
-    var settings = {
-        dots: true,
-        speed: 2500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        initialSlide: 0,
-        infinite: true,
-        autoplay: true,               // Enables autoplay
-        autoplaySpeed: 2500,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true,
-                    centerMode: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    initialSlide: 1,
-                    centerMode: true
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerMode: true
-                }
-            }
-        ]
-    };
+   
 
     const sliderRef = useRef(null);
     const slickRef = useRef(null);
@@ -113,11 +75,26 @@ export default function Founders() {
         return () => clearTimeout(timer);
     }, [inView]);
 
+    const [speed, setSpeed] = useState(9000); // autoplay speed
+    const [manualTrigger, setManualTrigger] = useState(false);
+    useEffect(() => {
+        const handleArrowClick = () => setManualTrigger(true);
 
+        const next = document.querySelector(".slick-next");
+        const prev = document.querySelector(".slick-prev");
 
+        if (next) next.addEventListener("click", handleArrowClick);
+        if (prev) prev.addEventListener("click", handleArrowClick);
+
+        // Cleanup on unmount
+        return () => {
+        if (next) next.removeEventListener("click", handleArrowClick);
+        if (prev) prev.removeEventListener("click", handleArrowClick);
+        };
+    }, []);
     var settings1 = {
         dots: true,
-        speed: 9000,
+        speed: speed,
         slidesToShow: 4,
         slidesToScroll: 4,
         infinite: true,
@@ -153,8 +130,18 @@ export default function Founders() {
                     centerMode: true
                 }
             }
-        ]
+        ],
+        beforeChange: () => {
+            if (manualTrigger) {
+                setSpeed(500); // fast manual transition
+                setManualTrigger(false);
+
+                // Restore autoplay speed shortly after
+                setTimeout(() => setSpeed(9000), 100);
+            }
+        },
     };
+    
 
     return (
         <section className="pd-common FoundersBlock">
