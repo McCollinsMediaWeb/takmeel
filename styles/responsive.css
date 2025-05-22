@@ -1009,4 +1009,9 @@
   .ListTyle1 li div {
     margin-bottom: 10px;
   }
+  .PolicyBoxT3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
 }

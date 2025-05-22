@@ -36,7 +36,7 @@ export default function ContactUsBanner() {
     }, []);
 
     return (
-        <section className='CntPageHead screenWidth ScreenHeight'>
+        <section className='CntPageHead screenWidth ScreenHeight noOverlay'>
             <Image
                 src={b1}
                 width={1464}

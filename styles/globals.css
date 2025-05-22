@@ -2890,3 +2890,27 @@ body {
   text-transform: uppercase;
   margin-right: 5px;
 }
+.noOverlay.CntPageHead::after{
+  content: none;
+}
+.HedrT1{
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.PolicyBoxT1{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.PolicyBoxT2{
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.PolicyBoxT3{
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.PolicyBox{
+  margin-bottom: 20px;
+}
