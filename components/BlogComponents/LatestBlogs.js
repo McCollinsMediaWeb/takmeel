@@ -32,7 +32,7 @@ export default function LatestBlog({ blog }) {
               </div> */}
               <div className="LatestBlogImage position-relative">
                 <Image
-                  src="/t2.jpg"
+                  src="/trt.jpg"
                   width={364}
                   height={253}
                   layout="responsive"
