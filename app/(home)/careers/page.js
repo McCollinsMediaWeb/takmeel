@@ -15,7 +15,9 @@ export default async function Careers() {
 
     return (
         <>
-            <MetaInjector metaContent={metaTags[0].metaContent} />
+            {metaTags.length > 0 && metaTags[0].metaContent && (
+                <MetaInjector metaContent={metaTags[0].metaContent} />
+            )}
             <div>
                 <CareerFirstBanner />
                 <WhyWorkTogether />

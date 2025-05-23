@@ -14,7 +14,9 @@ export default async function NewsAndUpdates() {
 
   return (
     <>
-      <MetaInjector metaContent={metaTags[0].metaContent} />
+      {metaTags.length > 0 && metaTags[0].metaContent && (
+        <MetaInjector metaContent={metaTags[0].metaContent} />
+      )}
       <NewsAndUpdatesClient />
       <Footer />
       <FooterBottom />

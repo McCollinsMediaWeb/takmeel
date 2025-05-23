@@ -15,7 +15,9 @@ export default async function GalleryPage() {
 
   return (
     <>
-      <MetaInjector metaContent={metaTags[0].metaContent} />
+      {metaTags.length > 0 && metaTags[0].metaContent && (
+        <MetaInjector metaContent={metaTags[0].metaContent} />
+      )}
       <div>
         <GalleryHeader backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg" backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg" backgroundVideo="tt2.mp4" />
         <GalleryClient />

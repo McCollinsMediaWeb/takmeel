@@ -66,8 +66,8 @@ export default async function DivineResidencia() {
       "dv2.jpg",
       "Divine-Residencia/Divine-Residencia-Image02.jpg",
       "ad2.jpg",
-      
-      
+
+
       // "ad3.jpg",
       // "Divine-Residencia/Divine-Residencia-Image01.jpg",
       // "ad5.jpg",
@@ -172,7 +172,7 @@ export default async function DivineResidencia() {
       //   src: "dv5.jpg",
       //   title: "Washroom Area",
       // },
-      
+
 
     ],
   };
@@ -327,9 +327,11 @@ export default async function DivineResidencia() {
 
   return (
     <>
-      <MetaInjector metaContent={metaTags[0].metaContent} />
+      {metaTags.length > 0 && metaTags[0].metaContent && (
+        <MetaInjector metaContent={metaTags[0].metaContent} />
+      )}
       <div>
-        <DetailHero {...detailHeroData}  projectStatus="Sold Out"/>
+        <DetailHero {...detailHeroData} projectStatus="Sold Out" />
         <ProjectDetails1  {...DataProjectDetails1} />
         <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
         {/* <PaymentPlanBlock /> */}

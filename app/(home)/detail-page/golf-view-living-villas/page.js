@@ -57,7 +57,7 @@ export default async function GolfViewLivingVillas() {
     text3:
       "Discover a lifestyle of peace and privacy in the heart of Ajman’s prestigious Al Zorah Golf Course. Surrounded by panoramic fairways and lush mangroves, Divine Golf Villas is a limited collection of 20 high-end residences offering spacious interiors, modern architecture, and nature-integrated design—just 25 minutes from Dubai International Airport.",
     GalleryImages: [
-     
+
       "gf2.jpg",
       // "golf/3.jpg",
       "gf/1.jpg",
@@ -74,7 +74,7 @@ export default async function GolfViewLivingVillas() {
       "gvv1.jpg",
       "gvv2.jpg",
       "gvv3.jpg",
-       "gr2.jpg",
+      "gr2.jpg",
     ],
   };
   const DataProjectDetails2 = {
@@ -154,7 +154,7 @@ export default async function GolfViewLivingVillas() {
     text3:
       "Discover the perfect harmony of nature, luxury, and modern design at Divine Golf Villas—an exclusive collection of just 20 upscale residences nestled within the prestigious Al Zorah Golf Course in Ajman. Each villa is thoughtfully crafted to blend contemporary architecture with natural beauty, featuring expansive layouts, floor-to-ceiling windows, and seamless indoor-outdoor living. ",
     GalleryImagesWithNames: [
-      
+
       {
         src: "vv3.jpg",
         title: "Living Room Area",
@@ -363,7 +363,9 @@ export default async function GolfViewLivingVillas() {
 
   return (
     <>
-      <MetaInjector metaContent={metaTags[0].metaContent} />
+      {metaTags.length > 0 && metaTags[0].metaContent && (
+        <MetaInjector metaContent={metaTags[0].metaContent} />
+      )}
       <div>
         <DetailHero {...detailHeroData} projectStatus="Sold Out" />
         <ProjectDetails1 {...DataProjectDetails1} />

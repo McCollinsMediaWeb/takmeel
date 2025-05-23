@@ -405,7 +405,9 @@ export default async function TakmeelAlBarariViewPropertiesPage() {
 
   return (
     <>
-      <MetaInjector metaContent={metaTags[0].metaContent} />
+      {metaTags.length > 0 && metaTags[0].metaContent && (
+        <MetaInjector metaContent={metaTags[0].metaContent} />
+      )}
       <div>
         <div className="BrariBox">
           <DetailHero {...detailHeroData} />
@@ -415,7 +417,7 @@ export default async function TakmeelAlBarariViewPropertiesPage() {
         </div>
         {/* <ProjectDetails2 {...DataProjectDetails2} /> */}
         <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
-        <PaymentPlanBlock/>
+        <PaymentPlanBlock />
         <div className="FxdHgtImage">
           <ProjectDetails4 {...DataProjectDetails4} />
         </div>

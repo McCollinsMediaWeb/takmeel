@@ -76,7 +76,7 @@ export default async function GolfViewLivingApartments() {
       // "gv2.jpg",
       "gv3.jpg",
       "gv4.jpg",
-      
+
     ],
   };
   const DataProjectDetails2 = {
@@ -168,7 +168,7 @@ export default async function GolfViewLivingApartments() {
         src: "Golf-View-Living-Apartments/gl6.jpg",
         title: "Kitchen Area",
       },
-      
+
     ],
   };
 
@@ -319,7 +319,9 @@ export default async function GolfViewLivingApartments() {
 
   return (
     <>
-      <MetaInjector metaContent={metaTags[0].metaContent} />
+      {metaTags.length > 0 && metaTags[0].metaContent && (
+        <MetaInjector metaContent={metaTags[0].metaContent} />
+      )}
       <div>
         <DetailHero {...detailHeroData} projectStatus="Sold Out" />
         <ProjectDetails1  {...DataProjectDetails1} />

@@ -65,8 +65,8 @@ export default async function MeydanRacecourseMansion() {
       "Overlooking the iconic Meydan Racecourse, this architectural gem by Takmeel Real Estate defines the pinnacle of bespoke living. The Meydan Racecourse Mansion is more than a home—it’s a statement of timeless elegance, curated for those who desire privacy, prestige, and panoramic views in the heart of Dubai.",
     GalleryImages: [
       "my1.jpg",
-       "my2.jpg",
-        "my3.jpg",
+      "my2.jpg",
+      "my3.jpg",
     ],
   };
   const DataProjectDetails2 = {
@@ -297,7 +297,9 @@ export default async function MeydanRacecourseMansion() {
 
   return (
     <>
-      <MetaInjector metaContent={metaTags[0].metaContent} />
+      {metaTags.length > 0 && metaTags[0].metaContent && (
+        <MetaInjector metaContent={metaTags[0].metaContent} />
+      )}
       <div>
         <DetailHero {...detailHeroData} />
         <ProjectDetails1  {...DataProjectDetails1} />

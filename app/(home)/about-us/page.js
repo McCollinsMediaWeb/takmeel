@@ -21,16 +21,18 @@ export default async function AboutUs() {
 
   return (
     <>
-      <MetaInjector metaContent={metaTags[0].metaContent} />
+      {metaTags.length > 0 && metaTags[0].metaContent && (
+        <MetaInjector metaContent={metaTags[0].metaContent} />
+      )}
       <div>
         {/* <PageHeader /> */}
         <AboutUsHeader backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg" backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg" backgroundVideo="ttk1.mp4" />
         {/* <AboutSlider/> */}
         <AboutVisionMission />
         <Founders />
-        <Stages/>
+        <Stages />
         <AboutVisionMission2 />
-        <OurValues/>
+        <OurValues />
         <ContactForm />
         <Footer />
         <FooterBottom />

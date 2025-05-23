@@ -67,7 +67,7 @@ export default async function DivineLiving() {
       "s3.jpg",
       "Divine-Living/Divine-Living-Image01.jpg",
       "pool.jpg",
-      
+
       // "Divine-Living/Divine-Living-Image03.jpg",
       // "Divine-Living/Divine-Living-Image04.jpg",
       // "Divine-Living/Divine-Living-Image05.jpg",
@@ -123,7 +123,7 @@ export default async function DivineLiving() {
     text3:
       "Welcome to Divine Living, where elegance meets everyday comfort in one of Dubai’s most promising neighborhoods—Arjan. Brought to life by Takmeel Real Estate, this exclusive residential development redefines urban living with thoughtfully designed spaces, premium finishes, and a serene environment that offers a welcome escape from the city’s hustle.",
     GalleryImagesWithNames: [
-      
+
       {
         src: "dvn1.jpg",
         title: "Kitchen Area",
@@ -340,7 +340,9 @@ export default async function DivineLiving() {
 
   return (
     <>
-      <MetaInjector metaContent={metaTags[0].metaContent} />
+      {metaTags.length > 0 && metaTags[0].metaContent && (
+        <MetaInjector metaContent={metaTags[0].metaContent} />
+      )}
       <div>
         <DetailHero {...detailHeroData} projectStatus="Sold Out" />
         <ProjectDetails1  {...DataProjectDetails1} />

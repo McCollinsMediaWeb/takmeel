@@ -314,7 +314,6 @@ export default async function DivineResidencies() {
 
   return (
     <>
-      {/* <MetaInjector metaContent={metaTags[0].metaContent} /> */}
       {metaTags[0]?.metaContent && (
         <MetaInjector metaContent={metaTags[0].metaContent} />
       )}
