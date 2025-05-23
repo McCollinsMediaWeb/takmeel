@@ -234,7 +234,7 @@ export default function TermsOfUse() {
            </div>
          </div>
        </section>
-       <HomeAbout />
+       {/* <HomeAbout /> */}
        <ContactForm />
        <Footer />
        <FooterBottom />

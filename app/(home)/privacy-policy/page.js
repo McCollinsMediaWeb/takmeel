@@ -226,7 +226,7 @@ export default function PrivacyPolicy() {
           </div>
         </div>
       </section>
-      <HomeAbout />
+      {/* <HomeAbout /> */}
       <ContactForm />
       <Footer />
       <FooterBottom />
