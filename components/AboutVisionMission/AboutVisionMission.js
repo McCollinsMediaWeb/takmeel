@@ -42,7 +42,7 @@ const itemVariants = {
                 viewport={{ once: true, amount: 0.5 }}
             >
                 <Image
-                    src="/abt2.jpg"
+                    src="/aabt2.jpg"
                     width={1000}
                     height={562}
                     layout="responsive"
