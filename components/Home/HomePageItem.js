@@ -178,7 +178,7 @@ export default function HomePageItem() {
         className='pageSection'
       >
       <ProjectItem
-          backgroundImage="klt.jpg"
+          backgroundImage="ti01.jpg"
           backgroundImageMobile="Divine-Residence-Image-Mobile.jpg"
           text1="Featured Properties"
           text2="Divine Residences"

@@ -11,7 +11,7 @@ import Image from "next/image";
 import p1 from "../../public/Takmeel-Al-Barrari-View/Majan 03.jpg";
 import p2 from "../../public/k1.jpg"
 import p3 from "../../public/k2.jpg"
-import p4 from "../../public/k7.jpg"
+import p4 from "../../public/k8.jpg"
 import p5 from "../../public/k4.jpg"
 import p6 from "../../public/k5.jpg"
 import p7 from "../../public/k6.jpg"
