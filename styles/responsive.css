@@ -1020,4 +1020,7 @@
   .OurValuesBox *{
     opacity: 1 !important;
   }
+  .StageItemBox {
+    margin-top: 15px;
+  }
 }
