@@ -158,6 +158,9 @@ export default async function MeydanRacecourseMansion() {
         { iconNo: 28, name: "Children's Play Area" },
         { iconNo: 26, name: "Indoor Gym" },
         { iconNo: 38, name: "Landscaped Garden" },
+        { iconNo: 40, name: "Cinema" },
+        { iconNo: 41, name: "Snooker" },
+        { iconNo: 42, name: "Spa" },
       ]
     },
     // {

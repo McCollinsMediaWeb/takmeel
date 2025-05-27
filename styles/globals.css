@@ -1874,6 +1874,18 @@ display: none;
   background-image: url(../public/Icons/Takmeel_Icons_Outdoor\ Shower.png);
 }
 
+.AmnIcon.AmnIcon40 {
+  background-image: url(../public/Icons/Takmeel_Icons_cinema.png);
+}
+
+.AmnIcon.AmnIcon41 {
+  background-image: url(../public/Icons/Takmeel_Icons_Snooker.png);
+}
+
+.AmnIcon.AmnIcon42 {
+  background-image: url(../public/Icons/Takmeel_Icons_Spa.png);
+}
+
 .AmnBoxWrap {
   margin-top: 35px;
 }
