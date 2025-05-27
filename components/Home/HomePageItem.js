@@ -180,7 +180,7 @@ export default function HomePageItem() {
       >
       <ProjectItem
           backgroundImage="ti01.jpg"
-          backgroundImageMobile="bannerMobileFirst1.jpg"
+          backgroundImageMobile="t21.jpg"
           text1="Featured Properties"
           text2="Divine Residences"
           text3="Dubai"
@@ -209,7 +209,7 @@ export default function HomePageItem() {
         ref={(el) => (panelsRef.current[7] = el)}
         className='pageSection'
       >
-        <ProjectItem backgroundImage="Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg" backgroundImageMobile="Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg" text1="Featured Properties" text2="Golf View Living Villas" text3="Ajman" tagline="Private Villas Surrounded by Nature’s Calm" url="golf-view-living-villas" projectStatus="Sold Out" />
+        <ProjectItem backgroundImage="Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg" backgroundImageMobile="vill.jpg" text1="Featured Properties" text2="Golf View Living Villas" text3="Ajman" tagline="Private Villas Surrounded by Nature’s Calm" url="golf-view-living-villas" projectStatus="Sold Out" />
       </section>
 
       <section

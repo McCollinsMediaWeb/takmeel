@@ -22,7 +22,7 @@ export default async function GolfViewLivingVillas() {
 
   const detailHeroData = {
     backgroundImage: "Divine golf villas_landscape.mp4",
-    backgroundImageMobile: "Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg",
+    backgroundImageMobile: "vill.jpg",
     text1: "Private Villas Surrounded by Nature’s Calm",
     text2: "Golf View Living Villas",
     text3: "Ajman",
