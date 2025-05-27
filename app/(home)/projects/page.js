@@ -50,7 +50,7 @@ export default async function Projects() {
         />
         <ProjectItem
           backgroundImage="ti01.jpg"
-          backgroundImageMobile="k8.jpg"
+          backgroundImageMobile="bannerMobileFirst1.jpg"
           text1="Featured Properties"
           text2="Divine Residences"
           text3="Dubai"
