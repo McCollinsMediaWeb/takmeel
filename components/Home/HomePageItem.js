@@ -17,6 +17,7 @@ import '../../styles/scroll-snap.css'
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 export default function HomePageItem() {
+
   
    const GalleryData2 = {
     heading: "Takmeel – A Voice of Trust",
@@ -147,7 +148,7 @@ export default function HomePageItem() {
       >
        <ProjectItem
           backgroundImage="Divine-Residencia/Divine residencia main facade.jpg"
-          backgroundImageMobile="dvk.jpg"
+          backgroundImageMobile="k1.jpg"
           text1="Featured Properties"
           text2="Divine Residencia"
           text3="Dubai Studio City, Dubai"
@@ -179,7 +180,7 @@ export default function HomePageItem() {
       >
       <ProjectItem
           backgroundImage="ti01.jpg"
-          backgroundImageMobile="Divine-Residence-Image-Mobile.jpg"
+          backgroundImageMobile="k8.jpg"
           text1="Featured Properties"
           text2="Divine Residences"
           text3="Dubai"
