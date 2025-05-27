@@ -18,8 +18,8 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 export default function HomePageItem() {
 
-  
-   const GalleryData2 = {
+
+  const GalleryData2 = {
     heading: "Takmeel – A Voice of Trust",
     subheading: "What Our Clients Say About Us",
     testimonials: [
@@ -46,7 +46,7 @@ export default function HomePageItem() {
 
   const panelsRef = useRef([])
 
-  
+
   useEffect(() => {
     const panels = panelsRef.current
     let scrollTween = null
@@ -111,10 +111,10 @@ export default function HomePageItem() {
   return (
     <>
       <section
-        ref={(el) => (panelsRef.current[0] = el)}
+        // ref={(el) => (panelsRef.current[0] = el)}
         className='firstSection'
       >
-       <Banner
+        <Banner
           backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg"
           backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"
           text1=""
@@ -123,30 +123,30 @@ export default function HomePageItem() {
           tagline=""
           url="projects"
           backgroundVideo="tt2.mp4"
-        /> 
+        />
       </section>
 
       <section
-        ref={(el) => (panelsRef.current[1] = el)}
+        // ref={(el) => (panelsRef.current[1] = el)}
         className='pageSection'
       >
-         <ProjectItem
-            backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg"
-            backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"
-            text1="Coming Soon"
-            text2="Al Barari"
-            text3="Majan, Dubai"
-            tagline="Urban Living, Reimagined by Nature"
-            url="takmeel-al-barari-view-properties"
-            backgroundVideo="tkdesk1.mp4"
-          />
+        <ProjectItem
+          backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg"
+          backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"
+          text1="Coming Soon"
+          text2="Al Barari"
+          text3="Majan, Dubai"
+          tagline="Urban Living, Reimagined by Nature"
+          url="takmeel-al-barari-view-properties"
+          backgroundVideo="tkdesk1.mp4"
+        />
       </section>
 
       <section
-        ref={(el) => (panelsRef.current[2] = el)}
+        // ref={(el) => (panelsRef.current[2] = el)}
         className='pageSection'
       >
-       <ProjectItem
+        <ProjectItem
           backgroundImage="Divine-Residencia/Divine residencia main facade.jpg"
           backgroundImageMobile="k1.jpg"
           text1="Featured Properties"
@@ -159,10 +159,10 @@ export default function HomePageItem() {
       </section>
 
       <section
-        ref={(el) => (panelsRef.current[3] = el)}
+        // ref={(el) => (panelsRef.current[3] = el)}
         className='pageSection'
       >
-      <ProjectItem
+        <ProjectItem
           backgroundImage="bannerDesktopFirst.jpg"
           backgroundImageMobile="bannerMobileFirst.jpg"
           text1="Featured Properties"
@@ -175,10 +175,10 @@ export default function HomePageItem() {
       </section>
 
       <section
-        ref={(el) => (panelsRef.current[4] = el)}
+        // ref={(el) => (panelsRef.current[4] = el)}
         className='pageSection'
       >
-      <ProjectItem
+        <ProjectItem
           backgroundImage="ti01.jpg"
           backgroundImageMobile="t21.jpg"
           text1="Featured Properties"
@@ -191,50 +191,50 @@ export default function HomePageItem() {
       </section>
 
       <section
-        ref={(el) => (panelsRef.current[5] = el)}
+        // ref={(el) => (panelsRef.current[5] = el)}
         className='pageSection'
       >
         <ProjectItem backgroundImage="maydan.jpg" backgroundImageMobile="maydan.jpg" text1="Project Showcase" text2="Meydan Racecourse Mansion" text3="Dubai" tagline="Where Grandeur Meets Precision" url="meydan-racecourse-mansion" />
-      
+
       </section>
 
       <section
-        ref={(el) => (panelsRef.current[6] = el)}
+        // ref={(el) => (panelsRef.current[6] = el)}
         className='pageSection'
       >
         <ProjectItem backgroundImage="Golf-View-Living-Apartments/Golf Apartments 03.jpg" backgroundImageMobile="k5.jpg" text1="Featured Properties" text2="Golf View Living Apartments" text3="Al Zorah, Ajman" tagline="Your Everyday Escape, Overlooking the Greens" url="golf-view-living-apartments" projectStatus="Sold Out" />
       </section>
 
       <section
-        ref={(el) => (panelsRef.current[7] = el)}
+        // ref={(el) => (panelsRef.current[7] = el)}
         className='pageSection'
       >
         <ProjectItem backgroundImage="Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg" backgroundImageMobile="vill.jpg" text1="Featured Properties" text2="Golf View Living Villas" text3="Ajman" tagline="Private Villas Surrounded by Nature’s Calm" url="golf-view-living-villas" projectStatus="Sold Out" />
       </section>
 
       <section
-        ref={(el) => (panelsRef.current[8] = el)}
+        // ref={(el) => (panelsRef.current[8] = el)}
         className='pageSection'
       >
         <MainMapComponent MapImageDesk="map6.svg" MapImageMobile="mapmobile.svg" />
       </section>
 
       <section
-        ref={(el) => (panelsRef.current[9] = el)}
+        // ref={(el) => (panelsRef.current[9] = el)}
         className='pageSection'
       >
-       <HomeAbout />
+        <HomeAbout />
       </section>
 
       <section
-        ref={(el) => (panelsRef.current[10] = el)}
+        // ref={(el) => (panelsRef.current[10] = el)}
         className='pageSection'
       >
         <ContactForm />
       </section>
 
       <section
-        ref={(el) => (panelsRef.current[11] = el)}
+        // ref={(el) => (panelsRef.current[11] = el)}
         className='pageSection'
       >
         <CustomerTestimonials  {...GalleryData2} />
