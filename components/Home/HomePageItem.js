@@ -194,7 +194,8 @@ export default function HomePageItem() {
         ref={(el) => (panelsRef.current[5] = el)}
         className='pageSection'
       >
-        <ProjectItem backgroundImage="maydan.jpg" backgroundImageMobile="meydan-mobile.jpg" text1="Project Showcase" text2="Meydan Racecourse Mansion" text3="Dubai" tagline="Where Grandeur Meets Precision" url="meydan-racecourse-mansion" />
+        <ProjectItem backgroundImage="maydan.jpg" backgroundImageMobile="maydan.jpg" text1="Project Showcase" text2="Meydan Racecourse Mansion" text3="Dubai" tagline="Where Grandeur Meets Precision" url="meydan-racecourse-mansion" />
+      
       </section>
 
       <section

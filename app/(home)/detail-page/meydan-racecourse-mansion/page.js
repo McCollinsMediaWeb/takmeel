@@ -22,7 +22,7 @@ export default async function MeydanRacecourseMansion() {
 
   const detailHeroData = {
     backgroundImage: "maydan.jpg",
-    backgroundImageMobile: "meydan-mobile.jpg",
+    backgroundImageMobile: "maydan.jpg",
     text1: "Where Grandeur Meets Precision",
     text2: "Meydan Racecourse Mansion",
     text3: "Dubai",
