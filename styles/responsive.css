@@ -1017,4 +1017,7 @@
   .pageSection{
     height: auto;
   }
+  .OurValuesBox *{
+    opacity: 1 !important;
+  }
 }
