@@ -5,6 +5,7 @@ import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 import MetaInjector from "@/components/Meta/MetaInjector";
 import { getMetaTags } from "@/lib/getMetaTags";
+import JobListing from "./JobListing";
 
 export default async function Careers() {
     const metaTags = await getMetaTags("/careers");
@@ -20,6 +21,7 @@ export default async function Careers() {
             )}
             <div>
                 <CareerFirstBanner />
+                <JobListing/>
                 <WhyWorkTogether />
                 <GetInTouchForm />
                 <Footer />

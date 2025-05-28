@@ -206,7 +206,7 @@ export default function GetInTouchForm() {
 
 
     return (
-        <section className='ContactForm pd-common'>
+        <section className='ContactForm pd-common' id="careerform">
             <div className='container'>
                 <div className='text-center'>
                     <motion.div

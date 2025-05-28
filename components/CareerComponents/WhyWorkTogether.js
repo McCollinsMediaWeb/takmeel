@@ -7,7 +7,7 @@ import Image from 'next/image';
 export default function WhyWorkTogether() {
 
     return (
-        <div className="BlogPostMainArea pd-common">
+        <div className="BlogPostMainArea pd-common bg2">
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
