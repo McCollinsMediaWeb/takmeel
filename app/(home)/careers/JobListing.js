@@ -1,5 +1,6 @@
 'use client';
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function JobListing() {
     const animationVariants = [
@@ -10,6 +11,14 @@ export default function JobListing() {
         { initial: { opacity: 0, rotate: -10 }, whileInView: { opacity: 1, rotate: 0 } },
         { initial: { opacity: 0 }, whileInView: { opacity: 1 }, transition: { duration: 1.5 } }
     ];
+
+    const [visibleIndexes, setVisibleIndexes] = useState([]);
+
+    const toggleVisibility = (index) => {
+        setVisibleIndexes((prev) =>
+            prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
+        );
+    };
 
     return (
         <section className="pd-common bg">
@@ -48,7 +57,7 @@ export default function JobListing() {
                                         <div className="JobBox bg2">
                                             <div className="JobBoxT1">Administrative Assistant</div>
                                             <div className="JobBoxT2">The Administrative Assistant plays a key role in ensuring smooth day-to-day office operations. This position is responsible for general administrative support, including document preparation, supply management, equipment maintenance, and vendor coordination. The role also involves handling purchase orders through ERP systems, maintaining filing systems, and assisting with reports and presentations. Ideal candidates are organized, detail-oriented, and capable of supporting teams with various tasks and ongoing projects.</div>
-                                            <div className="ReadMoreBox">
+                                            <div className="ReadMoreBox" style={{ display: visibleIndexes.includes(1) ? 'block' : 'none' }}>
                                                 <div className="JobBoxT3">Administrative Assistant Duties:</div>
                                                 <ul className="JobulLi">
                                                     <li>Provide general administrative support on day-to-day office tasks</li>
@@ -88,7 +97,8 @@ export default function JobListing() {
                                                 <div className="JobNote">Interested candidates are invited to submit their resume to hr@takmeeluae.com</div>
                                             </div>
                                             <div className="JobButtons">
-                                                <span className="ViewAlldetails Link6 hover1">View All Details</span>
+                                                {/* <span className="ViewAlldetails Link6 hover1" >View All Details</span> */}
+                                                <span className="ViewAlldetails Link6 hover1" onClick={() => toggleVisibility(1)} >{visibleIndexes.includes(1) ? 'Hide Details' : 'View All Details'}</span>
                                                 <a href="#careerform" className="Link6 hover1">Apply Now</a>
                                             </div>
                                         </div>
@@ -103,11 +113,11 @@ export default function JobListing() {
                                         transition={{ duration: 0.8, ease: "easeOut" }}
                                         viewport={{ once: true, amount: 0.5 }}
                                     >
-                                        
+
                                         <div className="JobBox bg2">
                                             <div className="JobBoxT1">Marketing Manager</div>
                                             <div className="JobBoxT2">Takmeel is seeking a dynamic and results-oriented Marketing Manager to lead and execute marketing strategies that drive brand awareness, generate leads, and support the successful sales of our real estate projects. The ideal candidate will be a creative thinker with a strong understanding of the real estate market, digital marketing trends, and traditional marketing channels. You will be responsible for developing and implementing comprehensive marketing plans, managing budgets, and collaborating with internal teams and external agencies to achieve marketing objectives.</div>
-                                            <div className="ReadMoreBox">
+                                            <div className="ReadMoreBox" style={{ display: visibleIndexes.includes(2) ? 'block' : 'none' }}>
                                                 <div className="JobBoxT3">Responsibilities:</div>
                                                 <ul className="JobulLi">
                                                     <li>Develop and implement comprehensive marketing strategies and plans for current and upcoming real estate projects, aligning with overall business goals and sales targets.</li>
@@ -138,7 +148,8 @@ export default function JobListing() {
                                                 <div className="JobNote">Interested candidates are invited to submit their resume to hr@takmeeluae.com</div>
                                             </div>
                                             <div className="JobButtons">
-                                                <span className="ViewAlldetails Link6 hover1">View All Details</span>
+                                                {/* <span className="ViewAlldetails Link6 hover1">View All Details</span> */}
+                                                <span className="ViewAlldetails Link6 hover1" onClick={() => toggleVisibility(2)} >{visibleIndexes.includes(2) ? 'Hide Details' : 'View All Details'}</span>
                                                 <a href="#careerform" className="Link6 hover1">Apply Now</a>
                                             </div>
                                         </div>
