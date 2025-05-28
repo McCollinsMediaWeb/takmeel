@@ -2829,14 +2829,14 @@ body {
   overflow: hidden;
 }
 .StageItemImge{
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   background-size: 100% 100%;
   margin: 0 auto;
   margin-bottom: 15px;
 }
 .StageItemT1{
-  font-size: 25px;
+  font-size: 28px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }

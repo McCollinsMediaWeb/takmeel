@@ -127,7 +127,7 @@ export default function AboutVisionMission2() {
         //         </div>
         //     </div>
         // </section>
-        <section className="pd-common VisionMissionBox">
+        <section className="pd-common VisionMissionBox bg2">
             <div className="container">
                 <div className="text-center DifBox1">
 

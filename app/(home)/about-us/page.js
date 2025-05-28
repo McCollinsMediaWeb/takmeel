@@ -30,8 +30,9 @@ export default async function AboutUs() {
         {/* <AboutSlider/> */}
         <AboutVisionMission />
         <Founders />
-        <Stages />
+        
         <AboutVisionMission2 />
+        <Stages />
         <OurValues />
         <ContactForm />
         <Footer />

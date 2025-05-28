@@ -49,7 +49,7 @@ export default function Stages() {
 
 
     return (
-        <section className="pd-common bg2">
+        <section className="pd-common bg">
             <div className="container">
 
                 <motion.div
