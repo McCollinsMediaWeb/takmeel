@@ -3000,3 +3000,6 @@ margin-bottom: 10px;
   padding: 10px;
   border-radius: 5px;
 }
+.StageBox *{
+  opacity: 1 !important;
+}
