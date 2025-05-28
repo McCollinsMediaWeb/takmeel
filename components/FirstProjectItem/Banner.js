@@ -342,7 +342,7 @@ export default function FirstProjectItem({
                         </div>
                     </div>
                   <div className="arrowContainer">
-                  <div className="arrowBg" ref={scrollBg}></div>
+                  <div className="arrowBg " ref={scrollBg}></div>
                     <div className="arrowWrapper">
                         <Image
                         ref={scrollArrowRef}

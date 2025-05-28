@@ -2747,7 +2747,7 @@ body {
   height: 100%;
   overflow: hidden;
   position: absolute;
-  top: 74px;
+  top: 0px;
   left: 0;
   overflow: hidden;
   background: #fff;
