@@ -89,13 +89,16 @@ export default function ProjectDetails4({ text1, text2, text3, GalleryImagesWith
         const next = container?.querySelector(".slick-next");
         const prev = container?.querySelector(".slick-prev");
 
-        if (next) next.addEventListener("click", handleArrowClick);
-        if (prev) prev.addEventListener("click", handleArrowClick);
+        prev.style.display = "none"
+        next.style.display = "none"
 
-        return () => {
-            if (next) next.removeEventListener("click", handleArrowClick);
-            if (prev) prev.removeEventListener("click", handleArrowClick);
-        };
+        // if (next) next.addEventListener("click", handleArrowClick);
+        // if (prev) prev.addEventListener("click", handleArrowClick);
+
+        // return () => {
+        //     if (next) next.removeEventListener("click", handleArrowClick);
+        //     if (prev) prev.removeEventListener("click", handleArrowClick);
+        // };
     }, []);
 
 

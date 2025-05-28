@@ -105,14 +105,17 @@ export default function ProjectsPageHeader() {
         const next = document.querySelector(".slick-next");
         const prev = document.querySelector(".slick-prev");
 
-        if (next) next.addEventListener("click", handleArrowClick);
-        if (prev) prev.addEventListener("click", handleArrowClick);
+        prev.style.display = "none"
+        next.style.display = "none"
+
+        // if (next) next.addEventListener("click", handleArrowClick);
+        // if (prev) prev.addEventListener("click", handleArrowClick);
 
         // Cleanup on unmount
-        return () => {
-            if (next) next.removeEventListener("click", handleArrowClick);
-            if (prev) prev.removeEventListener("click", handleArrowClick);
-        };
+        // return () => {
+        //     if (next) next.removeEventListener("click", handleArrowClick);
+        //     if (prev) prev.removeEventListener("click", handleArrowClick);
+        // };
     }, []);
 
     var settings = {
