@@ -29,22 +29,12 @@ export default function JobListing() {
                     </div>
                 </motion.div>
 
-                <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    viewport={{ once: true, amount: 0.5 }}
-                >
+                
                     <div className="StageBox">
                         <div className="row">
                             <div className="col-md-6">
                                 <div className="StageItemBox text-center">
-                                    <motion.div
-                                        initial={animationVariants[0].initial}
-                                        whileInView={animationVariants[0].whileInView}
-                                        transition={{ duration: 0.8, ease: "easeOut" }}
-                                        viewport={{ once: true, amount: 0.5 }}
-                                    >
+                                    
                                         <div className="JobBox bg2">
                                             <div className="JobBoxT1">Administrative Assistant</div>
                                             <div className="JobBoxT2">The Administrative Assistant plays a key role in ensuring smooth day-to-day office operations. This position is responsible for general administrative support, including document preparation, supply management, equipment maintenance, and vendor coordination. The role also involves handling purchase orders through ERP systems, maintaining filing systems, and assisting with reports and presentations. Ideal candidates are organized, detail-oriented, and capable of supporting teams with various tasks and ongoing projects.</div>
@@ -92,18 +82,11 @@ export default function JobListing() {
                                                 <a href="#careerform" className="Link6 hover1">Apply Now</a>
                                             </div>
                                         </div>
-                                    </motion.div>
                                 </div>
                             </div>
                             <div className="col-md-6">
                                 <div className="StageItemBox text-center">
-                                    <motion.div
-                                        initial={animationVariants[1].initial}
-                                        whileInView={animationVariants[1].whileInView}
-                                        transition={{ duration: 0.8, ease: "easeOut" }}
-                                        viewport={{ once: true, amount: 0.5 }}
-                                    >
-                                        
+                                     
                                         <div className="JobBox bg2">
                                             <div className="JobBoxT1">Marketing Manager</div>
                                             <div className="JobBoxT2">Takmeel is seeking a dynamic and results-oriented Marketing Manager to lead and execute marketing strategies that drive brand awareness, generate leads, and support the successful sales of our real estate projects. The ideal candidate will be a creative thinker with a strong understanding of the real estate market, digital marketing trends, and traditional marketing channels. You will be responsible for developing and implementing comprehensive marketing plans, managing budgets, and collaborating with internal teams and external agencies to achieve marketing objectives.</div>
@@ -142,12 +125,10 @@ export default function JobListing() {
                                                 <a href="#careerform" className="Link6 hover1">Apply Now</a>
                                             </div>
                                         </div>
-                                    </motion.div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </motion.div>
             </div>
         </section>
     );
