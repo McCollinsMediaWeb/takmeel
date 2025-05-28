@@ -2166,7 +2166,6 @@ input[type="number"] {
   object-fit: cover;
   background-position: center center;
   margin: 0 !important;
-  height: 100vh !important;
 }
 
 .DetHero {
