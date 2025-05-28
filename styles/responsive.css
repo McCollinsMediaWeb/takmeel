@@ -197,11 +197,9 @@
 
   .FtrT1 {
     color: #fff;
-    border-bottom:
-      1px solid #ffffff1a;
+    border-bottom: 1px solid #ffffff1a;
     margin-bottom: 30px;
-    padding:
-      20px 0;
+    padding: 20px 0;
     font-size: 18px;
   }
 
@@ -343,7 +341,6 @@
   }
 
   .PadBox1 {
-
     padding: 20px;
     margin-top: 20px;
   }
@@ -517,7 +514,6 @@
   .propertyFormBox .InputItem input,
   .propertyFormBox .InputItem select {
     padding: 12px 20px;
-
   }
 
   .Txt17 {
@@ -677,8 +673,10 @@
   }
 
   .FullScreenBanner video {
-    min-height: 90vh !important;
-    max-height: 90vh !important;
+    /* min-height: 90vh !important;
+    max-height: 90vh !important; */
+    min-height: 100vh !important;
+    max-height: 100vh !important;
   }
 
   .galleryBoxRow .slick-dots {
@@ -719,7 +717,6 @@
   }
 }
 
-
 .tkc-wrapper {
   margin: 40px auto;
   max-width: 1200px;
@@ -745,7 +742,6 @@
     grid-template-columns: 1fr 1fr;
   }
 }
-
 
 .tkc-card,
 .tkc-summary-card {
@@ -922,8 +918,6 @@
   color: #22c55e;
 }
 
-
-
 .tkc-input-wrapper {
   position: relative;
   width: 100%;
@@ -970,40 +964,40 @@
   .custom-section-flexible {
     min-height: 50vh;
   }
-  .LatestBlogImage img{
-  height: 200px !important;
+  .LatestBlogImage img {
+    height: 200px !important;
   }
-  .FullScreenBanner img{
+  .FullScreenBanner img {
     height: 100vh !important;
   }
-  .FullScreenBanner{
+  .FullScreenBanner {
     height: auto;
   }
   .ImageTlBox {
     padding: 15px;
     font-size: 18px;
   }
-  .LanguageSwitcher{
+  .LanguageSwitcher {
     margin-right: 0;
   }
   .LanguageICon {
     width: 20px;
     height: 14px;
   }
-  .LanguageSwitcher{
+  .LanguageSwitcher {
     line-height: 1;
   }
   .StageItemT1 {
     font-size: 20px;
   }
-  .OurValuesBox .StageItemBox{
-  padding: 15px;
+  .OurValuesBox .StageItemBox {
+    padding: 15px;
   }
-  .ListTyle1{
+  .ListTyle1 {
     list-style: none;
     padding: 0;
   }
-  .ListTyle1 li div span{
+  .ListTyle1 li div span {
     font-size: 16px;
   }
   .ListTyle1 li div {
@@ -1014,10 +1008,10 @@
     margin-bottom: 10px;
     font-size: 18px;
   }
-  .pageSection{
+  /* .pageSection {
     height: auto;
-  }
-  .OurValuesBox *{
+  } */
+  .OurValuesBox * {
     opacity: 1 !important;
   }
   .StageItemBox {

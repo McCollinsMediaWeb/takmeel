@@ -7,6 +7,7 @@ import { getMetaTags } from "@/lib/getMetaTags";
 
 export default async function Home() {
   const metaTags = await getMetaTags("/");
+  
   if (metaTags.length === 0 || !metaTags[0].metaContent) {
     console.warn("No meta tags found, using default");
   }
