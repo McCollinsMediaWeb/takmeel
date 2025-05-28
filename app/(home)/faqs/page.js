@@ -22,7 +22,7 @@ export default async function Faqs() {
         <MetaInjector metaContent={metaTags[0].metaContent} />
       )}
       <div>
-        <FAQBanner />
+        {/* <FAQBanner /> */}
         <FAQbox />
         <ContactForm />
         <Footer />
