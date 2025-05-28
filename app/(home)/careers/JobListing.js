@@ -103,6 +103,7 @@ export default function JobListing() {
                                         transition={{ duration: 0.8, ease: "easeOut" }}
                                         viewport={{ once: true, amount: 0.5 }}
                                     >
+                                        
                                         <div className="JobBox bg2">
                                             <div className="JobBoxT1">Marketing Manager</div>
                                             <div className="JobBoxT2">Takmeel is seeking a dynamic and results-oriented Marketing Manager to lead and execute marketing strategies that drive brand awareness, generate leads, and support the successful sales of our real estate projects. The ideal candidate will be a creative thinker with a strong understanding of the real estate market, digital marketing trends, and traditional marketing channels. You will be responsible for developing and implementing comprehensive marketing plans, managing budgets, and collaborating with internal teams and external agencies to achieve marketing objectives.</div>
