@@ -43,7 +43,7 @@ export default function CustomerTestimonials({ heading, subheading, testimonials
         slidesToScroll: 3,
         initialSlide: 0,
         infinite: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2500,
         centerMode: true,
         responsive: [

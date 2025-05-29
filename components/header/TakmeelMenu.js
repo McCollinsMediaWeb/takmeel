@@ -2,17 +2,21 @@
 
 import Link from 'next/link';
 import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 
 const bgImages = [
-    '/bannerDesktopFirst.jpg',
-    '/Divine-Residencia/Divine residencia main facade.jpg',
-    '/Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg',
+    // '/bannerDesktopFirst.jpg',
+    // '/Divine-Residencia/Divine residencia main facade.jpg',
+    // '/Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg',
+    '/dl3.jpg',
+    '/dvr2.jpg',
+    '/dl6.jpg',
     '/d1.jpg',
     '/ak2.jpg',
-    '/Golf-View-Living-Apartments/Golf Apartments 03.jpg'
+    '/Meydan-Racecourse-Mansion/Maydan 07.jpg'
+    // '/Golf-View-Living-Apartments/Golf Apartments 03.jpg'
 ]
 export default function TakmeelMenu() {
     const pathname = usePathname();
@@ -20,6 +24,7 @@ export default function TakmeelMenu() {
 
     const [prevImage, setPrevImage] = useState(null);
     const [currentImage, setCurrentImage] = useState(bgImages[active]);
+    const isHoveringRef = useRef(false);
 
     useEffect(() => {
         const toggleButtons = document.querySelectorAll(".toggleMenu");
@@ -38,9 +43,64 @@ export default function TakmeelMenu() {
 
     const [imageLoaded, setImageLoaded] = useState(false);
 
+    // Auto change image every 3 seconds
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         if (!isHoveringRef.current) {
+    //             setActive(prev => (prev + 1) % bgImages.length);
+    //         }
+    //     }, 5000);
+
+    //     return () => clearInterval(interval);
+    // }, []);
+
+    // useEffect(() => {
+    //     setImageLoaded(false); // Trigger fade-in on image change
+    // }, [active]);
+
     useEffect(() => {
-        setImageLoaded(false); // Trigger fade-in on image change
-    }, [active]);
+        let interval;
+
+        const startInterval = () => {
+            if (!interval) {
+                interval = setInterval(() => {
+                    if (
+                        document.body.classList.contains("menu-open") &&
+                        !isHoveringRef.current
+                    ) {
+                        setActive((prev) => (prev + 1) % bgImages.length);
+                    }
+                }, 5000);
+            }
+        };
+
+        const stopInterval = () => {
+            if (interval) {
+                clearInterval(interval);
+                interval = null;
+            }
+        };
+
+        // Start interval and watch for menu class toggle
+        const observer = new MutationObserver(() => {
+            if (document.body.classList.contains("menu-open")) {
+                startInterval();
+            } else {
+                stopInterval();
+            }
+        });
+
+        observer.observe(document.body, {
+            attributes: true,
+            attributeFilter: ["class"],
+        });
+
+        return () => {
+            stopInterval();
+            observer.disconnect();
+        };
+    }, []);
+
 
 
     useEffect(() => {
@@ -253,7 +313,13 @@ export default function TakmeelMenu() {
                                         transition={{ duration: 0.8, ease: 'easeOut' }}
                                         viewport={{ once: false, amount: 0.5 }}
                                     >
-                                        <Link style={{ width: 'fit-content;' }} href={item.path} className="Link8" onMouseEnter={() => setActive(index)}>
+                                        <Link style={{ width: 'fit-content;' }} href={item.path} className="Link8" onMouseEnter={() => {
+                                            isHoveringRef.current = true;
+                                            setActive(index);
+                                        }}
+                                            onMouseLeave={() => {
+                                                isHoveringRef.current = false;
+                                            }}>
                                             {item.label}
                                         </Link>
                                     </motion.div>

@@ -77,21 +77,18 @@ export default function ProjectsPageHeader() {
     }, []);
 
 
-    useEffect(() => {
-        let timer;
-        if (inView && slickRef.current) {
-            // Start autoplay after 2 seconds delay
-            timer = setTimeout(() => {
-                slickRef.current.slickPlay();
-            }, 2000);
-        } else {
-            // If out of view, pause autoplay immediately
-            if (slickRef.current) slickRef.current.slickPause();
-        }
+    // useEffect(() => {
+    //     let timer;
+    //     if (inView && slickRef.current) {
+    //         timer = setTimeout(() => {
+    //             slickRef.current.slickPlay();
+    //         }, 2000);
+    //     } else {
+    //         if (slickRef.current) slickRef.current.slickPause();
+    //     }
 
-        // Clear timer on cleanup to avoid memory leaks
-        return () => clearTimeout(timer);
-    }, [inView]);
+    //     return () => clearTimeout(timer);
+    // }, [inView]);
 
     const [speed, setSpeed] = useState(9000); // autoplay speed
     const [manualTrigger, setManualTrigger] = useState(false);
@@ -102,11 +99,11 @@ export default function ProjectsPageHeader() {
             setSpeed(900); // faster for manual
         };
 
-        const next = document.querySelector(".slick-next");
-        const prev = document.querySelector(".slick-prev");
+        // const next = document.querySelector(".slick-next");
+        // const prev = document.querySelector(".slick-prev");
 
-        prev.style.display = "none"
-        next.style.display = "none"
+        // prev.style.display = "none"
+        // next.style.display = "none"
 
         // if (next) next.addEventListener("click", handleArrowClick);
         // if (prev) prev.addEventListener("click", handleArrowClick);
@@ -120,11 +117,12 @@ export default function ProjectsPageHeader() {
 
     var settings = {
         dots: true,
-        speed: speed,
+        // speed: speed,
+        speed: 900,
         slidesToShow: 4,
         slidesToScroll: 4,
         infinite: true,
-        autoplay: true,
+        // autoplay: true,
         // autoplaySpeed: 2000,
         // CssEase: 'linear',
         // cssEase: 'ease-in-out',

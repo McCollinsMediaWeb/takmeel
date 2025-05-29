@@ -342,7 +342,8 @@ export default async function GolfViewLivingVillas() {
           "featureType": "all",
           "elementType": "labels.icon",
           "stylers": [
-            { "visibility": "on" }
+            // { "visibility": "on" }
+            { "visibility": "off" }
           ]
         }
       ],
