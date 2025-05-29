@@ -122,7 +122,7 @@ export default function HomePageItem() {
           text3="Where purposeful design and visionary innovation converge to create spaces that inspire, elevate, and redefine modern living."
           tagline=""
           url="projects"
-          backgroundVideo="tt2.mp4"
+          backgroundVideo="tt21.mp4"
         />
       </section>
 
@@ -221,21 +221,21 @@ export default function HomePageItem() {
 
       <section
         // ref={(el) => (panelsRef.current[9] = el)}
-        className='pageSection'
+        className=''
       >
         <HomeAbout />
       </section>
 
       <section
         // ref={(el) => (panelsRef.current[10] = el)}
-        className='pageSection'
+        className=''
       >
         <ContactForm />
       </section>
 
       <section
         // ref={(el) => (panelsRef.current[11] = el)}
-        className='pageSection'
+        className=''
       >
         <CustomerTestimonials  {...GalleryData2} />
       </section>

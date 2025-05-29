@@ -2439,6 +2439,7 @@ input[type="number"] {
   cursor: pointer;
   transition: 0.4s;
   border: 1px solid #fff;
+  font-size: 17px;
 }
 .LanguageSwitcher:hover{
 background-color: #d6b264;
@@ -2797,7 +2798,6 @@ body {
   width: 100%;
 }
 .childWrapper {
-  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -3001,4 +3001,31 @@ margin-bottom: 10px;
 }
 .ReadMoreBox{
   display: none;
+}
+
+/* For large iMacs (like 4K/5K Retina, often 1920px or more) */
+@media (min-width: 1920px) {
+ .Txt2{
+  font-size: 100px;
+ }
+ .SmallSizeTxt{
+  font-size: 32px;
+ }
+ .Link1 {
+    padding: 15px 30px;
+    border-radius: 40px;
+    font-size: 30px;
+  }
+  body{
+    font-size: 32px;
+  }
+  .Txt3{
+    font-size: 40px;
+  }
+  .Txt17{
+    font-size: 32px;
+  }
+  .TxtBig{
+    font-size: 200px;
+  }
 }
