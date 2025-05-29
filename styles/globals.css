@@ -118,6 +118,10 @@ header {
   height: 100vh !important;
 }
 
+.AlignCenterBottomImage {
+  object-position: center bottom;
+}
+
 .FsBannerContentFlex {
   display: flex;
   width: 100%;
@@ -211,8 +215,7 @@ header {
   background-color: #1d1d1d;
 }
 
-footer {
-}
+footer {}
 
 .FooterLogo {
   max-width: 200px;
@@ -606,8 +609,7 @@ body .slick-dots {
   margin-top: 10px;
 }
 
-.SoldOutBox {
-}
+.SoldOutBox {}
 
 .SoldOutBox .slick-dots li button::before {
   color: #1d1d1d;
@@ -992,8 +994,7 @@ body .slick-prev::before {
   margin-bottom: 25px;
 }
 
-.d-only {
-}
+.d-only {}
 
 .m-only {
   display: none !important;
@@ -1026,7 +1027,7 @@ body .slick-prev::before {
   align-items: center;
 }
 
-.bottom-bar--list li > a {
+.bottom-bar--list li>a {
   padding: 7px 2px;
   display: block;
   pointer-events: auto;
@@ -1034,7 +1035,7 @@ body .slick-prev::before {
   color: #1d1d1b !important;
 }
 
-.bottom-bar--list .icon + .text {
+.bottom-bar--list .icon+.text {
   margin-top: 6px;
   line-height: 1;
   font-size: 11px;
@@ -1610,7 +1611,7 @@ body .slick-prev::before {
 }
 
 .ImageTlBox {
-display: none;
+  display: none;
   background-color: #fff;
   padding: 20px;
   font-size: 23px;
@@ -2429,25 +2430,28 @@ input[type="number"] {
   background-color: rgba(29, 29, 27, 1);
 }
 
-.LanguageSwitcher{
+.LanguageSwitcher {
   margin-right: 20px;
   display: flex;
   align-items: center;
   padding: 8px 15px;
-  background: rgba(255, 255, 255,0.4);  
+  background: rgba(255, 255, 255, 0.4);
   border-radius: 20px;
   cursor: pointer;
   transition: 0.4s;
   border: 1px solid #fff;
   font-size: 17px;
 }
-.LanguageSwitcher:hover{
-background-color: #d6b264;
+
+.LanguageSwitcher:hover {
+  background-color: #d6b264;
 }
+
 .arabic-text {
   font-family: var(--font-cairo);
 }
-.LanguageICon{
+
+.LanguageICon {
   display: inline-block;
   width: 23px;
   height: 15px;
@@ -2456,11 +2460,14 @@ background-color: #d6b264;
   position: relative;
   top: 1px;
 }
-.uaelogo{
+
+.uaelogo {
   background-image: url(../public/uaeflag.jpg);
   margin-left: 5px;
 }
+
 @media only screen and (min-width: 1200px) {
+
   .HeaderBoxLeft,
   .HeaderBoxRight {
     flex: 0 0 400px;
@@ -2530,11 +2537,9 @@ background-color: #d6b264;
   will-change: transform;
 }
 
-.snap-container {
-}
+.snap-container {}
 
-.snap-section {
-}
+.snap-section {}
 
 #vibe-stack {
   scroll-snap-type: y mandatory;
@@ -2696,9 +2701,11 @@ body {
     background-position: center;
   }
 }
+
 :root {
   --easeInEaseOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
 .image12 {
   position: fixed;
   top: 0;
@@ -2706,9 +2713,10 @@ body {
   z-index: 10;
   height: 100vh !important;
   object-fit: cover;
-   opacity: 0;
+  opacity: 0;
   transition: opacity 1.2s var(--easeInEaseOutCubic);
 }
+
 .image12.loaded {
   opacity: 1;
 }
@@ -2718,6 +2726,7 @@ body {
   position: fixed !important;
   top: 0 !important;
 }
+
 .bannerTx {
   z-index: 500000;
   position: absolute;
@@ -2729,10 +2738,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .changeColor .Link1 {
   color: #383838;
   border: 1px solid #383838;
 }
+
 .arrowContainer {
   width: 100%;
   height: 100%;
@@ -2742,6 +2753,7 @@ body {
   left: 0;
   overflow: hidden;
 }
+
 .arrowBg {
   width: 100%;
   height: 100%;
@@ -2753,6 +2765,7 @@ body {
   background: #fff;
   opacity: 0;
 }
+
 .arrowWrapper {
   position: fixed;
   bottom: -3rem;
@@ -2763,6 +2776,7 @@ body {
   z-index: 10;
   opacity: 0.2;
 }
+
 .scrollArrow {
   opacity: 0;
   width: 100%;
@@ -2770,9 +2784,11 @@ body {
   max-height: none !important;
   shape-rendering: geometricPrecision;
 }
+
 .FullScreenBanner img.scrollArrow {
   height: auto !important;
 }
+
 /* PAGE SECTION */
 
 .pageSection {
@@ -2792,26 +2808,31 @@ body {
   display: table;
   clear: both;
 }
+
 .videoWrapper {
   top: 0;
   left: 0;
   width: 100%;
 }
+
 .childWrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .HomeAboutItem {
   width: 100%;
   display: flex;
   align-items: center;
   height: 100%;
 }
+
 .height100p {
   height: 100%;
 }
+
 .ContactFormSection {
   align-items: center;
   display: flex;
@@ -2819,127 +2840,158 @@ body {
   justify-content: center;
   height: 100%;
 }
-.zsiq-float-tooltip{
+
+.zsiq-float-tooltip {
   display: none !important;
 }
-.Backdrop img{
+
+.Backdrop img {
   height: 100vh !important;
   object-fit: cover;
   overflow: hidden;
 }
-.StageItemImge{
+
+.StageItemImge {
   width: 48px;
   height: 48px;
   background-size: 100% 100%;
   margin: 0 auto;
   margin-bottom: 15px;
 }
-.StageItemT1{
+
+.StageItemT1 {
   font-size: 28px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.StageItemT2{
+
+.StageItemT2 {
   font-size: 19px;
 }
-.StageItemImge.image1{
+
+.StageItemImge.image1 {
   background-image: url(../public/investment.png);
 }
-.StageItemImge.image2{
+
+.StageItemImge.image2 {
   background-image: url(../public/design.png);
 }
-.StageItemImge.image3{
+
+.StageItemImge.image3 {
   background-image: url(../public/development.png);
 }
-.StageItemImge.image4{
+
+.StageItemImge.image4 {
   background-image: url(../public/sale.png);
 }
-.StageItemImge.image5{
+
+.StageItemImge.image5 {
   background-image: url(../public/marketing.png);
 }
-.StageItemImge.image6{
+
+.StageItemImge.image6 {
   background-image: url(../public/delivery.png);
 }
-.StageItemImge.image7{
+
+.StageItemImge.image7 {
   background-image: url(../public/integrity.png);
 }
-.StageItemImge.image8{
+
+.StageItemImge.image8 {
   background-image: url(../public/innovation.png);
 }
-.StageItemImge.image9{
+
+.StageItemImge.image9 {
   background-image: url(../public/excellence.png);
 }
-.StageItemImge.image10{
+
+.StageItemImge.image10 {
   background-image: url(../public/respect.png);
 }
-.StageItemImge.image11{
+
+.StageItemImge.image11 {
   background-image: url(../public/authenticity.png);
 }
-.StageItemImge.image13{
+
+.StageItemImge.image13 {
   background-image: url(../public/collaboration.png);
 }
-.StageItemBox{
+
+.StageItemBox {
   margin-top: 40px;
 }
-.OurValuesBox .StageItemBox{
+
+.OurValuesBox .StageItemBox {
   padding: 20px;
   background-color: #fff;
   min-height: 235px;
 }
 
-.ListTyle1{
+.ListTyle1 {
   margin: 0;
   padding-left: 20px;
 }
-.ListTyle1 li div{
+
+.ListTyle1 li div {
   margin-bottom: 15px;
 }
-.ListTyle1 li:last-child div{
+
+.ListTyle1 li:last-child div {
   margin-bottom: 0px;
 }
-.ListTyle1 li div span{
+
+.ListTyle1 li div span {
   color: #d6b264;
   font-size: 21px;
   text-transform: uppercase;
   margin-right: 5px;
 }
-.noOverlay.CntPageHead::after{
+
+.noOverlay.CntPageHead::after {
   content: none;
 }
-.HedrT1{
+
+.HedrT1 {
   font-size: 35px;
   text-transform: uppercase;
 }
-.PolicyBoxT1{
+
+.PolicyBoxT1 {
   font-weight: bold;
   margin-bottom: 10px;
 }
-.PolicyBoxT2{
+
+.PolicyBoxT2 {
   margin-bottom: 15px;
   font-size: 18px;
 }
-.PolicyBoxT3{
+
+.PolicyBoxT3 {
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 15px;
   margin-top: 15px;
 }
-.PolicyBox{
+
+.PolicyBox {
   margin-bottom: 20px;
 }
-.JobBox{
+
+.JobBox {
   padding: 20px;
   text-align: left;
   border-radius: 5px;
 }
-.JobBoxT1{
+
+.JobBoxT1 {
   font-size: 25px;
-text-transform: capitalize;
-position: relative;
-padding-bottom: 15px;
-margin-bottom: 15px;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
-.JobBoxT1::after{
+
+.JobBoxT1::after {
   content: "";
   width: 25%;
   height: 2px;
@@ -2949,33 +3001,40 @@ margin-bottom: 15px;
   bottom: 0;
   border-radius: 3px;
 }
-.JobBoxT2{
+
+.JobBoxT2 {
   font-size: 18px;
 }
-.JobButtons span:first-child{
+
+.JobButtons span:first-child {
   background-color: #d6b264;
   margin-right: 15px;
   color: #1d1d1b;
   cursor: pointer;
 }
-.JobButtons span:first-child:hover{
+
+.JobButtons span:first-child:hover {
   background-color: #1d1d1b;
   color: #fff;
 }
-.JobButtons{
+
+.JobButtons {
   margin-top: 10px;
 }
-.ReadMoreBox{
+
+.ReadMoreBox {
   margin-top: 15px;
 }
-.JobBoxT3{
+
+.JobBoxT3 {
   font-size: 20px;
-text-transform: capitalize;
-position: relative;
-padding-bottom: 10px;
-margin-bottom: 10px;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
-.JobBoxT3::after{
+
+.JobBoxT3::after {
   content: "";
   width: 25%;
   height: 2px;
@@ -2985,21 +3044,25 @@ margin-bottom: 10px;
   bottom: 0;
   border-radius: 3px;
 }
-.JobulLi{
+
+.JobulLi {
   margin: 0;
   padding: 0;
   padding-left: 15px;
   margin-bottom: 15px;
 }
-.JobulLi li{
+
+.JobulLi li {
   margin-bottom: 5px;
 }
-.JobNote{
+
+.JobNote {
   border: 1px solid #d6b264;
   padding: 10px;
   border-radius: 5px;
 }
-.ReadMoreBox{
+
+.ReadMoreBox {
   display: none;
 }
 

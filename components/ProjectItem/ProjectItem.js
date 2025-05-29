@@ -118,6 +118,7 @@ export default function ProjectItem({
                 <div>
                     {isDesktop ? (
                         <Image
+                            className={text2 === "Meydan Racecourse Mansion" ? "AlignCenterBottomImage" : ""}
                             src={`/${backgroundImage}`}
                             width={1338}
                             height={714}
