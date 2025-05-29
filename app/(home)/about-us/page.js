@@ -1,4 +1,4 @@
-import ContactForm from "@/components/ContactForm/ContactForm";
+import PropertyForm from "@/components/DetailPageComponents/PropertyForm"
 import PageHeader from "@/components/PageHeader/PageHeader";
 import AboutSlider from "@/components/AboutSlider/AboutSlider";
 import AboutVisionMission from "@/components/AboutVisionMission/AboutVisionMission";
@@ -34,7 +34,7 @@ export default async function AboutUs() {
         <AboutVisionMission2 />
         <Stages />
         <OurValues />
-        <ContactForm />
+        <PropertyForm projectName="Golf View Living Apartments" />
         <Footer />
         <FooterBottom />
       </div>

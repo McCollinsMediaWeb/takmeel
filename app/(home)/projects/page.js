@@ -1,4 +1,4 @@
-import ContactForm from "@/components/ContactForm/ContactForm";
+import PropertyForm from "@/components/DetailPageComponents/PropertyForm"
 import ProjectsPageHeader from "@/components/ProjectsPageHeader/ProjectsPageHeader";
 import ProjectItem from "@/components/ProjectItem/ProjectItem";
 import { getMetaTags } from "@/lib/getMetaTags";
@@ -64,7 +64,7 @@ export default async function Projects() {
 
         <ProjectItem backgroundImage="Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg" backgroundImageMobile="vill.jpg" text1="Featured Properties" text2="Golf View Living Villas" text3="Ajman" tagline="Private Villas Surrounded by Nature’s Calm" url="golf-view-living-villas" projectStatus="Sold Out" />
 
-        <ContactForm />
+        <PropertyForm projectName="Golf View Living Apartments" />
         <Footer />
         <FooterBottom />
       </section>

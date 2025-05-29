@@ -1,6 +1,6 @@
 'use client'
 
-import ContactForm from '@/components/ContactForm/ContactForm'
+import PropertyForm from "@/components/DetailPageComponents/PropertyForm"
 import CustomerTestimonials from '@/components/CustomerTestimonials/CustomerTestimonials'
 import Banner from '@/components/FirstProjectItem/Banner'
 import Footer from '@/components/footer/footer'
@@ -225,20 +225,20 @@ export default function HomePageItem() {
       >
         <HomeAbout />
       </section>
-
-      <section
-        // ref={(el) => (panelsRef.current[10] = el)}
-        className=''
-      >
-        <ContactForm />
-      </section>
-
       <section
         // ref={(el) => (panelsRef.current[11] = el)}
         className=''
       >
         <CustomerTestimonials  {...GalleryData2} />
       </section>
+      <section
+        // ref={(el) => (panelsRef.current[10] = el)}
+        className=''
+      >
+        <PropertyForm projectName="Golf View Living Apartments" />
+      </section>
+
+      
 
       <Footer />
 

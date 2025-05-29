@@ -119,7 +119,7 @@ export default async function Home() {
 
     //       {/* <SoldOutBox/> */}
     //       <div className="section">
-    //         <ContactForm />
+    //         <PropertyForm projectName="Golf View Living Apartments" />
     //       </div>
     //       <div className="section">
     //         <CustomerTestimonials  {...GalleryData2} />

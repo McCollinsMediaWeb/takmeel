@@ -3165,4 +3165,11 @@ body {
     padding: 20px 30px;
     border-radius: 30px;
   }
+  .galleryBoxRow.container-fluid,
+  .pd-common{
+    padding: 90px 0px;
+  }
+  .BlogListingWrap .BlogItem{
+    padding: 25px;
+  }
 }

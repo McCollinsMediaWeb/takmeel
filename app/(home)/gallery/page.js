@@ -1,6 +1,6 @@
 // 'use client';
 import GalleryHeader from "./GalleryHeader";
-import ContactForm from "@/components/ContactForm/ContactForm";
+import PropertyForm from "@/components/DetailPageComponents/PropertyForm"
 import GalleryClient from "./GalleryClient";
 import { getMetaTags } from "@/lib/getMetaTags";
 import MetaInjector from "@/components/Meta/MetaInjector";
@@ -21,7 +21,7 @@ export default async function GalleryPage() {
       <div>
         <GalleryHeader backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg" backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg" backgroundVideo="tt21.mp4" />
         <GalleryClient />
-        <ContactForm />
+        <PropertyForm projectName="Golf View Living Apartments" />
         <Footer />
         <FooterBottom />
       </div>

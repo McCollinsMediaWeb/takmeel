@@ -1,6 +1,6 @@
 // 'use client';
 import FAQbox from "@/components/FAQbox/FAQbox";
-import ContactForm from "@/components/ContactForm/ContactForm";
+import PropertyForm from "@/components/DetailPageComponents/PropertyForm"
 import Image from "next/image";
 import { motion } from "framer-motion";
 import b1 from "../../../public/main4.jpg";
@@ -24,7 +24,7 @@ export default async function Faqs() {
       <div>
         {/* <FAQBanner /> */}
         <FAQbox />
-        <ContactForm />
+        <PropertyForm projectName="Golf View Living Apartments" />
         <Footer />
         <FooterBottom />
       </div>

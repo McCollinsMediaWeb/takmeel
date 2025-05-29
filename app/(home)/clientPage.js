@@ -4,7 +4,7 @@ import FullScreenBanner from "@/components/fullscreen-banner/fullScreenBanner";
 import HomeBanner2 from "@/components/HomeBanner2/HomeBanner2";
 import HomeAbout from "@/components/HomeAbout/HomeAbout";
 import SoldOutBox from "@/components/SoldOutBox/SoldOutBox";
-import ContactForm from "@/components/ContactForm/ContactForm";
+import PropertyForm from "@/components/DetailPageComponents/PropertyForm"
 import ProjectItem from "@/components/ProjectItem/ProjectItem";
 import MainMapComponent from "@/components/MainMapComponent/MainMapComponent";
 import FirstProjectItem from "@/components/FirstProjectItem/FirstProjectItem";
@@ -132,7 +132,7 @@ export default function ClientPage() {
 
                     {/* <SoldOutBox/> */}
                     <div className="section">
-                        <ContactForm />
+                        <PropertyForm projectName="Golf View Living Apartments" />
                     </div>
                     <div className="section">
                         <CustomerTestimonials  {...GalleryData2} />

@@ -92,7 +92,7 @@ export default function CustomerTestimonials({ heading, subheading, testimonials
     }));
 
     return (
-        <div className="galleryBoxRow pd-common container-fluid bg2">
+        <div className="galleryBoxRow pd-common container-fluid bg">
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
