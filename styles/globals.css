@@ -3136,7 +3136,8 @@ body {
   .BlT1A,
   .ppT2,
   .CT1,
-  .Ft1
+  .Ft1,
+  .HedrT1
  {
     font-size: 60px;
   }
@@ -3186,5 +3187,11 @@ body {
   }
   .BlogListingWrap .BlogItem{
     padding: 25px;
+  }
+  .Megamenu{
+    max-width: 750px;
+  }
+  .MenuMiddle ul a{
+    font-size: 35px;
   }
 }
