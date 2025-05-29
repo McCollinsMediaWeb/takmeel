@@ -273,6 +273,7 @@ export default function DetailHero({
                                 viewport={{ once: true, amount: 0.5 }}
                             >
                                 <Image
+                                    className={text2 === "Meydan Racecourse Mansion" ? "AlignCenterBottomImage" : ""}
                                     src={formatSrc(backgroundImage)}
                                     width={1338}
                                     height={714}
