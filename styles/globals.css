@@ -3068,8 +3068,11 @@ body {
 
 /* For large iMacs (like 4K/5K Retina, often 1920px or more) */
 @media (min-width: 1920px) {
+  .container {
+    max-width: 1900px;
+  }
  .Txt2{
-  font-size: 100px;
+  font-size: 90px;
  }
  .SmallSizeTxt{
   font-size: 32px;
@@ -3080,15 +3083,51 @@ body {
     font-size: 30px;
   }
   body{
-    font-size: 32px;
+    font-size: 25px;
   }
   .Txt3{
     font-size: 40px;
   }
   .Txt17{
-    font-size: 32px;
+    font-size: 25px;
   }
   .TxtBig{
     font-size: 200px;
+  }
+  .HbT1{
+    font-size: 60px;
+  }
+  .HomeAboutContent{
+    max-width: 1500px;
+  }
+  .HbT2, .HbT3{
+    font-size: 25px;
+  }
+  .HbT4{
+    font-size: 45px;
+  }
+  .Link5{
+    border-radius: 30px;
+  }
+  .CfT2{
+    font-size: 60px;
+  }
+  .FormBox{
+    max-width: 1500px;
+  }
+  .CustomPhoneInput input{
+    font-size: 25px;
+  }
+  .FormBox button{
+    padding: 15px 30px;
+    border-radius: 35px;
+  }
+  .galleryBoxRow .BlT2{
+    font-size: 60px;
+  }
+  body .slick-prev,
+  body .slick-next{
+    width: 50px;
+    height: 50px;
   }
 }

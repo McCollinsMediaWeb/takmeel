@@ -39,7 +39,7 @@ export default function CustomerTestimonials({ heading, subheading, testimonials
     const settings = {
         dots: true,
         speed: 500,
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 3,
         initialSlide: 0,
         infinite: true,
@@ -47,6 +47,10 @@ export default function CustomerTestimonials({ heading, subheading, testimonials
         autoplaySpeed: 2500,
         centerMode: true,
         responsive: [
+            {
+                breakpoint: 1920,
+                settings: { slidesToShow: 2, slidesToScroll: 1, centerMode: true, dots: true },
+            },
             {
                 breakpoint: 1024,
                 settings: { slidesToShow: 1, slidesToScroll: 1, centerMode: true, dots: true },

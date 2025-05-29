@@ -214,7 +214,7 @@ export default function HomePageItem() {
 
       <section
         // ref={(el) => (panelsRef.current[8] = el)}
-        className='pageSection'
+        className=''
       >
         <MainMapComponent MapImageDesk="ttnew.svg" MapImageMobile="ttmobile1.svg" />
       </section>
