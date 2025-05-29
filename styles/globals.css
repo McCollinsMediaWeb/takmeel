@@ -3069,7 +3069,8 @@ body {
 /* For large iMacs (like 4K/5K Retina, often 1920px or more) */
 @media (min-width: 1930px) {
   .container,
-  .ProductDetail2 .container {
+  .ProductDetail2 .container,
+  .BlogPostMainArea .container {
     max-width: 1900px;
   }
  .Txt2{
@@ -3095,8 +3096,16 @@ body {
   .PT2,
   .BlT3,
   .Det2T1,
-  .BlT2B{
+  .BlT2B,
+  .AccordionAnswer,
+  .JobBoxT2,
+  .PolicyBoxT3,
+  .PolicyBoxT2
+  {
     font-size: 26px;
+  }
+  .CfT1{
+    font-size: 25px !important;
   }
   .AmnIcon {
     width: 100px;
@@ -3105,7 +3114,8 @@ body {
   .AmnKeyBoxLeft{
     width: 110px;
   }
-  .AmnKeyBoxRight{
+  .AmnKeyBoxRight ,
+  .JobBoxT1{
     font-size: 30px;
   }
   .FxdHgtImage img, .AbSliderItem img{
@@ -3124,12 +3134,17 @@ body {
   .HbT1 ,
   .BlT2,
   .BlT1A,
-  .ppT2
+  .ppT2,
+  .CT1,
+  .Ft1
  {
     font-size: 60px;
   }
   .HomeAboutContent{
     max-width: 1500px;
+  }
+  .AccordionQuestion{
+    font-size: 35px;
   }
   
   .HbT4{
