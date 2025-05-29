@@ -19,7 +19,7 @@ export default async function GalleryPage() {
         <MetaInjector metaContent={metaTags[0].metaContent} />
       )}
       <div>
-        <GalleryHeader backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg" backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg" backgroundVideo="tt2.mp4" />
+        <GalleryHeader backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg" backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg" backgroundVideo="tt21.mp4" />
         <GalleryClient />
         <ContactForm />
         <Footer />

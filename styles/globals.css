@@ -3067,8 +3067,9 @@ body {
 }
 
 /* For large iMacs (like 4K/5K Retina, often 1920px or more) */
-@media (min-width: 1920px) {
-  .container {
+@media (min-width: 1930px) {
+  .container,
+  .ProductDetail2 .container {
     max-width: 1900px;
   }
  .Txt2{
@@ -3082,27 +3083,55 @@ body {
     border-radius: 40px;
     font-size: 30px;
   }
-  body{
-    font-size: 25px;
+  body ,
+  .HbT2, 
+  .HbT3 ,
+  .VmT2 ,
+  .Txt17,
+  .FounderName,
+  .FounderPosition,
+  .StageItemT2,
+  .PT1,
+  .PT2,
+  .BlT3,
+  .Det2T1,
+  .BlT2B{
+    font-size: 26px;
   }
+  .AmnIcon {
+    width: 100px;
+    height: 100px;
+  }
+  .AmnKeyBoxLeft{
+    width: 110px;
+  }
+  .AmnKeyBoxRight{
+    font-size: 30px;
+  }
+  .FxdHgtImage img, .AbSliderItem img{
+    height: 600px !important;
+  }
+   .StageItemT1{
+    font-size: 45px;
+   }
   .Txt3{
     font-size: 40px;
   }
-  .Txt17{
-    font-size: 25px;
-  }
+  
   .TxtBig{
     font-size: 200px;
   }
-  .HbT1{
+  .HbT1 ,
+  .BlT2,
+  .BlT1A,
+  .ppT2
+ {
     font-size: 60px;
   }
   .HomeAboutContent{
     max-width: 1500px;
   }
-  .HbT2, .HbT3{
-    font-size: 25px;
-  }
+  
   .HbT4{
     font-size: 45px;
   }
@@ -3113,7 +3142,7 @@ body {
     font-size: 60px;
   }
   .FormBox{
-    max-width: 1500px;
+    max-width: 1700px;
   }
   .CustomPhoneInput input{
     font-size: 25px;
@@ -3122,12 +3151,18 @@ body {
     padding: 15px 30px;
     border-radius: 35px;
   }
-  .galleryBoxRow .BlT2{
+  .galleryBoxRow .BlT2 ,
+  .VmT1{
     font-size: 60px;
   }
   body .slick-prev,
   body .slick-next{
     width: 50px;
     height: 50px;
+  }
+  .ButtonsBox1 a{
+    font-size: 30px;
+    padding: 20px 30px;
+    border-radius: 30px;
   }
 }
