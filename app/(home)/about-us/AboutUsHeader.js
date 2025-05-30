@@ -66,7 +66,7 @@ export default function AboutUsHeader({
                 <>
                     {!videoLoaded && (
                         <img
-                            src="/cover1.jpg" // replace with your placeholder image (e.g., first frame)
+                            src="/cover6.jpg" // replace with your placeholder image (e.g., first frame)
                             alt="video preview"
                             style={{
                                 width: '100%',
