@@ -20,6 +20,7 @@ export default function AboutUsHeader({
 }) {
     const containerRef = useRef(null)
     const isDesktop = useMediaQuery("(min-width: 960px)")
+    const [videoLoaded, setVideoLoaded] = useState(false);
 
 
     const [phase, setPhase] = useState("initial") // 'initial' -> 'transition' -> 'final'
@@ -61,15 +62,49 @@ export default function AboutUsHeader({
     return (
         <div className="FullScreenBanner Projects VideoD">
             {backgroundVideo ? (
-                <video
-                    src={`/${backgroundVideo}`}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    preload="none"
-                    style={{ width: '100%' }}
-                />
+
+                <>
+                    {!videoLoaded && (
+                        <img
+                            src="/cover1.jpg" // replace with your placeholder image (e.g., first frame)
+                            alt="video preview"
+                            style={{
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'cover',
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                zIndex: 1,
+                            }}
+                        />
+                    )}
+
+                    <video
+                        src={`/${backgroundVideo}`}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="auto"
+                        onCanPlayThrough={() => setVideoLoaded(true)} // when video is ready
+                        style={{
+                            width: '100%',
+                            position: 'relative',
+                            zIndex: 0,
+                        }}
+                    />
+
+                    {/* <video
+                        src={`/${backgroundVideo}`}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="none"
+                        style={{ width: '100%' }}
+                    /> */}
+                </>
             ) : (
                 <motion.div
                     animate={{ scale: [1, 1.05, 1] }}
@@ -126,7 +161,7 @@ export default function AboutUsHeader({
                                         exit={{ opacity: 0 }}
                                         transition={{ duration: 1 }}
                                     >
-                                       Our Story
+                                        Our Story
                                     </motion.div>
                                 )}
 
@@ -151,13 +186,13 @@ export default function AboutUsHeader({
                                         </motion.div>
 
                                         <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
-                                        your dream home awaits <br/> its grand unveiling.
+                                            your dream home awaits <br /> its grand unveiling.
 
 
                                         </motion.div>
 
                                         <motion.div className="Txt3 nunito-text SmallSizeTxt" variants={itemVariants}>
-                                        Takmeel orchestrates exquisite marvels that go beyond a home, offering spaces where families & dreams grow and aspirations are accomplished.
+                                            Takmeel orchestrates exquisite marvels that go beyond a home, offering spaces where families & dreams grow and aspirations are accomplished.
                                         </motion.div>
                                     </>
                                 )}
