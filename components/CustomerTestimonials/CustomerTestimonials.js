@@ -49,7 +49,7 @@ export default function CustomerTestimonials({ heading, subheading, testimonials
         responsive: [
             {
                 breakpoint: 1920,
-                settings: { slidesToShow: 2, slidesToScroll: 1, centerMode: true, dots: true },
+                settings: { slidesToShow: 3, slidesToScroll: 1, centerMode: true, dots: true },
             },
             {
                 breakpoint: 1024,

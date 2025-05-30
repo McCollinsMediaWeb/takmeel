@@ -3064,7 +3064,9 @@ body {
 .ReadMoreBox {
   display: none;
 }
-
+.BkR1{
+  font-size: 18px;
+}
 /* For large iMacs (like 4K/5K Retina, often 1920px or more) */
 @media (min-width: 1930px) {
   .container,
@@ -3099,7 +3101,8 @@ body {
   .AccordionAnswer,
   .JobBoxT2,
   .PolicyBoxT3,
-  .PolicyBoxT2
+  .PolicyBoxT2,
+  .BkR1
   {
     font-size: 26px;
   }

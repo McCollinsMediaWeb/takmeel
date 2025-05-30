@@ -10,7 +10,19 @@ export default function HomeAbout({ backgroundImage, backgroundImageMobile, text
         <section className='HomeAbout pd-common bg2 childWrapper'>
             <div className='container text-center height100p'>
                 <div className='HomeAboutContent HomeAboutItem'>
-                    <motion.div
+                    <div className="">
+                                <motion.div
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }}
+                                    viewport={{ once: true }}
+                                >
+                                    <div className="Txt1 nunito-text text-center mb-1">Signature Projects</div>
+                                    <div className="BlT2 text-uppercase text-center">Where Vision Meets Home</div>
+                                    <div className='BkR1'>Takmeel crafts timeless residences that blend elegance, innovation, and purpose. Where your dream lifestyle becomes reality.</div>
+                                </motion.div>
+                   </div>
+                    {/* <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -22,7 +34,7 @@ export default function HomeAbout({ backgroundImage, backgroundImageMobile, text
                         <div className='HbT4'>Your dream home isn’t just a vision<br />
                             it’s waiting for you at Takmeel.</div>
                         <Link href="/about-us" className='Link5 hover1'>Read More</Link>
-                    </motion.div>
+                    </motion.div> */}
                 </div>
             </div>
         </section>
