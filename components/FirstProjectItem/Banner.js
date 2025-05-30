@@ -210,6 +210,15 @@ export default function FirstProjectItem({
         ease: 'none',
         duration: 0.8
       });
+      tl.to(scrollArrowRef.current, {
+        scale: 1,
+        yPercent: -70,
+        opacity: 0,
+        y: 10,
+        transformOrigin: 'center middle',
+        ease: 'none',
+        duration: 0.3
+      });
 
       // tl.to(scrollArrowRef.current, {
       //   scale: 40,
