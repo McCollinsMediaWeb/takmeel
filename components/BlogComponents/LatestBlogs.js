@@ -81,7 +81,7 @@ export default function LatestBlog({ blog }) {
                         />
                         <div className="wrapLogo">
                           <Image
-                            src="/klg.jpg"
+                            src="/dntv-logo.jpg"
                             width={900}
                             height={208}
                             layout="responsive"
