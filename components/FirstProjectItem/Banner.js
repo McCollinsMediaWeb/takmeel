@@ -19,7 +19,8 @@ export default function FirstProjectItem({
   tagline,
   url,
   projectStatus,
-  backgroundVideo = null
+  backgroundVideo = null,
+  placeholderImage
 }) {
   const containerRef = useRef(null);
   const bannerRef = useRef(null);
@@ -257,7 +258,7 @@ export default function FirstProjectItem({
         <div className="videoWrapper" ref={videoRef} style={{ position: 'relative' }}>
           {!videoLoaded && (
             <img
-              src="/abslider3.jpg" // replace with your placeholder image (e.g., first frame)
+              src={placeholderImage}
               alt="video preview"
               style={{
                 width: '100%',

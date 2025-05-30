@@ -123,6 +123,7 @@ export default function HomePageItem() {
           tagline=""
           url="projects"
           backgroundVideo="tt21.mp4"
+          placeholderImage="/cover1.jpg"
         />
       </section>
 
