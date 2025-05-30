@@ -21,6 +21,7 @@ export default function ProjectItem({
 }) {
     const [startLoop, setStartLoop] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
+    const [videoLoaded, setVideoLoaded] = useState(false);
 
     useEffect(() => {
         const timer = setTimeout(() => setStartLoop(true), 1000); // wait for pop animation to complete
@@ -105,15 +106,50 @@ export default function ProjectItem({
             </motion.div> */}
 
             {backgroundVideo ? (
-                <video
-                    src={`/${backgroundVideo}`}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    preload="none"
-                    style={{ width: '100%' }}
-                />
+                <>
+                    {!videoLoaded && (
+                        <img
+                            src="/abslider3.jpg" // replace with your placeholder image (e.g., first frame)
+                            alt="video preview"
+                            style={{
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'cover',
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                zIndex: 1,
+                            }}
+                        />
+                    )}
+
+                    <video
+                        src={`/${backgroundVideo}`}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="auto"
+                        onCanPlayThrough={() => setVideoLoaded(true)} // when video is ready
+                        style={{
+                            width: '100%',
+                            position: 'relative',
+                            zIndex: 0,
+                        }}
+                    />
+
+                    {/* 
+        <video
+            src={`/${backgroundVideo}`}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="none"
+            style={{ width: '100%' }}
+        />
+        */}
+                </>
             ) : (
                 <div>
                     {isDesktop ? (
@@ -138,6 +174,7 @@ export default function ProjectItem({
                     )}
                 </div>
             )}
+
 
 
 

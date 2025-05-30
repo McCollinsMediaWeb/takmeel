@@ -216,6 +216,7 @@ export default function DetailHero({
         triggerOnce: true,
         threshold: 0.2
     });
+    const [videoLoaded, setVideoLoaded] = useState(false);
 
     const formatSrc = (src) => (src.startsWith('/') ? src : `/${src}`);
 
@@ -248,7 +249,7 @@ export default function DetailHero({
     return (
         <>
             <div className="FullScreenBanner DetHero position-relative">
-                <div ref={ref}>
+                {/* <div ref={ref}>
                     {isDesktop ? (
                         backgroundImage.endsWith('.mp4') ? (
                             inView && (
@@ -309,7 +310,114 @@ export default function DetailHero({
                             loading="lazy"
                         />
                     )}
+                </div> */}
+                <div ref={ref}>
+                    {isDesktop ? (
+                        backgroundImage.endsWith('.mp4') ? (
+                            inView && (
+                                <>
+                                    {!videoLoaded && (
+                                        <img
+                                            src="/abslider3.jpg" // fallback image (can be first frame or custom)
+                                            alt="video preview"
+                                            style={{
+                                                width: '100%',
+                                                height: '100%',
+                                                objectFit: 'cover',
+                                                position: 'absolute',
+                                                top: 0,
+                                                left: 0,
+                                                zIndex: 1,
+                                            }}
+                                        />
+                                    )}
+                                    <video
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                        preload="auto"
+                                        onCanPlayThrough={() => setVideoLoaded(true)}
+                                        style={{
+                                            width: '100%',
+                                            height: 'auto',
+                                            objectFit: 'cover',
+                                            position: 'relative',
+                                            zIndex: 0,
+                                        }}
+                                    >
+                                        <source src={formatSrc(backgroundImage)} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </>
+                            )
+                        ) : (
+                            <motion.div
+                                animate={{ scale: [1, 1.1, 1] }}
+                                transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
+                                viewport={{ once: true, amount: 0.5 }}
+                            >
+                                <Image
+                                    className={text2 === "Meydan Racecourse Mansion" ? "AlignCenterBottomImage" : ""}
+                                    src={formatSrc(backgroundImage)}
+                                    width={1338}
+                                    height={714}
+                                    layout="responsive"
+                                    alt="Takmeel"
+                                    loading="lazy"
+                                />
+                            </motion.div>
+                        )
+                    ) : backgroundImageMobile.endsWith('.mp4') ? (
+                        inView && (
+                            <>
+                                {!videoLoaded && (
+                                    <img
+                                        src="/abslider3.jpg"
+                                        alt="video preview"
+                                        style={{
+                                            width: '100%',
+                                            height: '100%',
+                                            objectFit: 'cover',
+                                            position: 'absolute',
+                                            top: 0,
+                                            left: 0,
+                                            zIndex: 1,
+                                        }}
+                                    />
+                                )}
+                                <video
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    preload="auto"
+                                    onCanPlayThrough={() => setVideoLoaded(true)}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        objectFit: 'cover',
+                                        position: 'relative',
+                                        zIndex: 0,
+                                    }}
+                                >
+                                    <source src={formatSrc(backgroundImageMobile)} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </>
+                        )
+                    ) : (
+                        <Image
+                            src={formatSrc(backgroundImageMobile)}
+                            width={697}
+                            height={768}
+                            layout="responsive"
+                            alt="Takmeel"
+                            loading="lazy"
+                        />
+                    )}
                 </div>
+
 
                 <Lightbox
                     open={open}

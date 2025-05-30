@@ -11,60 +11,61 @@ import useMediaQuery from "../hooks/useMediaQuery";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function FirstProjectItem({
-    backgroundImage,
-    backgroundImageMobile,
-    text1,
-    text2,
-    text3,
-    tagline,
-    url,
-    projectStatus,
-    backgroundVideo = null
+  backgroundImage,
+  backgroundImageMobile,
+  text1,
+  text2,
+  text3,
+  tagline,
+  url,
+  projectStatus,
+  backgroundVideo = null
 }) {
-    const containerRef = useRef(null);
-     const bannerRef = useRef(null);
-    const bannerContentRef = useRef(null);
-    const scrollArrowRef = useRef(null);
-    const scrollBg = useRef(null);
-    const contentInnerRef = useRef(null);
-    const videoRef = useRef(null);
-    const isDesktop = useMediaQuery("(min-width: 960px)");
+  const containerRef = useRef(null);
+  const bannerRef = useRef(null);
+  const bannerContentRef = useRef(null);
+  const scrollArrowRef = useRef(null);
+  const scrollBg = useRef(null);
+  const contentInnerRef = useRef(null);
+  const videoRef = useRef(null);
+  const isDesktop = useMediaQuery("(min-width: 960px)");
+  const [videoLoaded, setVideoLoaded] = useState(false);
 
-    const [phase, setPhase] = useState("initial"); // 'initial' -> 'transition' -> 'final'
+  const [phase, setPhase] = useState("initial"); // 'initial' -> 'transition' -> 'final'
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setPhase("transition"); // begin fade-out
-            setTimeout(() => {
-                setPhase("final"); // show full content
-            }, 1000); // wait for fade-out to finish
-        }, 4000); // 4s display of 'Takmeel'
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setPhase("transition"); // begin fade-out
+      setTimeout(() => {
+        setPhase("final"); // show full content
+      }, 1000); // wait for fade-out to finish
+    }, 4000); // 4s display of 'Takmeel'
 
-        return () => clearTimeout(timer);
-    }, []);
+    return () => clearTimeout(timer);
+  }, []);
 
-    // Fade-only animations
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                duration: 0.6,
-                ease: "easeOut",
-                when: "beforeChildren",
-                staggerChildren: 0.2,
-            },
-        },
-    };
+  // Fade-only animations
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+        when: "beforeChildren",
+        staggerChildren: 0.2,
+      },
+    },
+  };
 
-    const itemVariants = {
-        hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { duration: 0.5, ease: "easeOut" } },
-    };
+  const itemVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.5, ease: "easeOut" } },
+  };
 
-    // START ARROW ANIMATION 
+  // START ARROW ANIMATION 
 
-   useEffect(() => {
+  useEffect(() => {
     const bannerContainer = bannerRef.current;
     const bannerContent = bannerContentRef.current;
     const contentInner = contentInnerRef.current;
@@ -78,32 +79,32 @@ export default function FirstProjectItem({
       onEnter: () => {
         if (bannerContent) {
           bannerContent.style.color = '#000';
-           bannerContent.classList.add('changeColor')
+          bannerContent.classList.add('changeColor')
         }
       },
       onLeaveBack: () => {
         if (bannerContent) {
           bannerContent.style.color = '#fff';
-           bannerContent.classList.remove('changeColor')
+          bannerContent.classList.remove('changeColor')
         }
       }
     });
 
     ScrollTrigger.create({
-        trigger: bannerContainer,
-        start: 'top+=50% top',
-        onEnter: () => {
-          if (videoElement) {
-            videoElement.style.position = 'fixed';
-            videoElement.style.top = '0';
-          }
-        },
-        onLeaveBack: () => {
-          if (bannerContent) {
-            videoElement.style.position = 'relative';
-          }
+      trigger: bannerContainer,
+      start: 'top+=50% top',
+      onEnter: () => {
+        if (videoElement) {
+          videoElement.style.position = 'fixed';
+          videoElement.style.top = '0';
         }
-      });
+      },
+      onLeaveBack: () => {
+        if (bannerContent) {
+          videoElement.style.position = 'relative';
+        }
+      }
+    });
 
     gsap.to(contentInner, {
       y: 0,
@@ -115,7 +116,7 @@ export default function FirstProjectItem({
         scrub: 1
       }
     });
-  
+
 
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
@@ -126,7 +127,7 @@ export default function FirstProjectItem({
 
 
 
-   useLayoutEffect(() => {
+  useLayoutEffect(() => {
     const bannerBgRefItem = bannerRef.current;
 
     const ctx = gsap.context(() => {
@@ -138,15 +139,15 @@ export default function FirstProjectItem({
           scrub: 1
         }
       });
-     
-     tl.to(scrollBg.current, {
+
+      tl.to(scrollBg.current, {
         opacity: 0,
         yPercent: 0,
         transformOrigin: 'center bottom',
         ease: 'none',
         duration: 1
       });
-     tl.to(scrollBg.current, {
+      tl.to(scrollBg.current, {
         opacity: 0.9,
         yPercent: 0,
         transformOrigin: 'center bottom',
@@ -173,7 +174,7 @@ export default function FirstProjectItem({
         }
       });
 
-     
+
       tl.to(scrollArrowRef.current, {
         scale: 0,
         opacity: 0,
@@ -190,7 +191,7 @@ export default function FirstProjectItem({
         ease: 'none',
         duration: 1.4
       });
-     
+
       tl.to(scrollArrowRef.current, {
         scale: 1,
         yPercent: -70,
@@ -200,7 +201,7 @@ export default function FirstProjectItem({
         ease: 'none',
         duration: 0.8
       });
-     
+
       tl.to(scrollArrowRef.current, {
         scale: 1,
         yPercent: -70,
@@ -237,9 +238,9 @@ export default function FirstProjectItem({
   }, []);
 
 
-    return (
-        <div className="FullScreenBanner Projects" ref={bannerRef}>
-            {backgroundVideo ? (
+  return (
+    <div className="FullScreenBanner Projects" ref={bannerRef}>
+      {/* {backgroundVideo ? (
                 <div className="videoWrapper" ref={videoRef}>
                 <video
                     src={`/${backgroundVideo}`}
@@ -250,125 +251,164 @@ export default function FirstProjectItem({
                     preload="none"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
-                </div>
-            ) : (
-                <div>
-                    {isDesktop ? (
-                        <Image
-                            src={`/${backgroundImage}`}
-                            width={1338}
-                            height={714}
-                            layout="responsive"
-                            alt="Takmeel"
-                            loading="lazy"
-                        />
-                    ) : (
-                        <Image
-                            src={`/${backgroundImageMobile}`}
-                            width={697}
-                            height={768}
-                            layout="responsive"
-                            alt="Takmeel"
-                            loading="lazy"
-                        />
-                       
-                    )}
-                </div>
-            )}
+                </div> */}
 
-            <div className="FsBannerContent VideoD">
-                <div className="FsBannerContentFlex centerBlock">
-                    <div className="container" >
-                      {/* <div className="bannerTx" ref={bannerContentRef}> */}
-                        <div className="bannerTx">
-                        <motion.div
-                            variants={containerVariants}
-                            initial="hidden"
-                            animate="visible"
-                            viewport={{ once: true, amount: 0.5 }}
-                        >
-                            <div>
-                                {projectStatus && (
-                                    <motion.div className="Txt1" variants={itemVariants}>
-                                        <div><span className="PrStatus">{projectStatus}</span></div>
-                                    </motion.div>
-                                )}
+      {backgroundVideo ? (
+        <div className="videoWrapper" ref={videoRef} style={{ position: 'relative' }}>
+          {!videoLoaded && (
+            <img
+              src="/abslider3.jpg" // replace with your placeholder image (e.g., first frame)
+              alt="video preview"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                zIndex: 1,
+              }}
+            />
+          )}
 
-                                {/* PHASE 1: Only show 'Takmeel' */}
-                                {phase === "initial" && (
-                                    <motion.div
-                                        key="initial-text2"
-                                        className="Txt2 text-uppercase TxtBig"
-                                        initial={{ opacity: 0 }}
-                                        animate={{ opacity: 1 }}
-                                        exit={{ opacity: 0 }}
-                                        transition={{ duration: 1 }}
-                                    >
-                                        {text2}
-                                    </motion.div>
-                                )}
-
-                                {/* PHASE 2: Fade-out animation */}
-                                {phase === "transition" && (
-                                    <motion.div
-                                        key="fade-out-text2"
-                                        className="Txt2 text-uppercase TxtBig"
-                                        initial={{ opacity: 1 }}
-                                        animate={{ opacity: 0 }}
-                                        transition={{ duration: 1 }}
-                                    >
-                                        {text2}
-                                    </motion.div>
-                                )}
-
-                                {/* PHASE 3: Show rest of content with new title */}
-                                {phase === "final" && (
-                                    <>
-                                        <motion.div className="Txt1" variants={itemVariants}>
-                                            {text1}
-                                        </motion.div>
-
-                                        <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
-                                            Crafted for Inspired Living
-                                        </motion.div>
-
-                                        <motion.div className="Txt3 nunito-text SmallSizeTxt" variants={itemVariants}>
-                                            {text3}
-                                        </motion.div>
-
-                                        <motion.div className="Txt17 nunito-text" variants={itemVariants}>
-                                            {tagline}
-                                        </motion.div>
-
-                                        <motion.div variants={itemVariants}>
-                                            <Link href={`/${url}`} className="Link1 hover1">
-                                                Explore our projects
-                                            </Link>
-                                        </motion.div>
-                                    </>
-                                )}
-                            </div>
-                        </motion.div>
-                        </div>
-                    </div>
-                  <div className="arrowContainer">
-                  {/* <div className="arrowBg" ref={scrollBg}></div> */}
-                    <div className="arrowWrapper">
-                        <Image
-                        ref={scrollArrowRef}
-                        className="scrollArrow"
-                            src={`/bannerLogoLg.png`}
-                            width={439}
-                            height={1205}
-                            layout="responsive"
-                            alt="Takmeel"
-                            loading="lazy"
-                        />
-                    
-                  </div>
-                </div>
-                </div>
-            </div>
+          {/* Video element */}
+          <video
+            src={`/${backgroundVideo}`}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            onCanPlayThrough={() => setVideoLoaded(true)} // when video is ready
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              position: 'relative',
+              zIndex: 0,
+            }}
+          />
         </div>
-    );
+
+
+      ) : (
+        <div>
+          {isDesktop ? (
+            <Image
+              src={`/${backgroundImage}`}
+              width={1338}
+              height={714}
+              layout="responsive"
+              alt="Takmeel"
+              loading="lazy"
+            />
+          ) : (
+            <Image
+              src={`/${backgroundImageMobile}`}
+              width={697}
+              height={768}
+              layout="responsive"
+              alt="Takmeel"
+              loading="lazy"
+            />
+
+          )}
+        </div>
+      )}
+
+      <div className="FsBannerContent VideoD">
+        <div className="FsBannerContentFlex centerBlock">
+          <div className="container" >
+            {/* <div className="bannerTx" ref={bannerContentRef}> */}
+            <div className="bannerTx">
+              <motion.div
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
+                viewport={{ once: true, amount: 0.5 }}
+              >
+                <div>
+                  {projectStatus && (
+                    <motion.div className="Txt1" variants={itemVariants}>
+                      <div><span className="PrStatus">{projectStatus}</span></div>
+                    </motion.div>
+                  )}
+
+                  {/* PHASE 1: Only show 'Takmeel' */}
+                  {phase === "initial" && (
+                    <motion.div
+                      key="initial-text2"
+                      className="Txt2 text-uppercase TxtBig"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 1 }}
+                    >
+                      {text2}
+                    </motion.div>
+                  )}
+
+                  {/* PHASE 2: Fade-out animation */}
+                  {phase === "transition" && (
+                    <motion.div
+                      key="fade-out-text2"
+                      className="Txt2 text-uppercase TxtBig"
+                      initial={{ opacity: 1 }}
+                      animate={{ opacity: 0 }}
+                      transition={{ duration: 1 }}
+                    >
+                      {text2}
+                    </motion.div>
+                  )}
+
+                  {/* PHASE 3: Show rest of content with new title */}
+                  {phase === "final" && (
+                    <>
+                      <motion.div className="Txt1" variants={itemVariants}>
+                        {text1}
+                      </motion.div>
+
+                      <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
+                        Crafted for Inspired Living
+                      </motion.div>
+
+                      <motion.div className="Txt3 nunito-text SmallSizeTxt" variants={itemVariants}>
+                        {text3}
+                      </motion.div>
+
+                      <motion.div className="Txt17 nunito-text" variants={itemVariants}>
+                        {tagline}
+                      </motion.div>
+
+                      <motion.div variants={itemVariants}>
+                        <Link href={`/${url}`} className="Link1 hover1">
+                          Explore our projects
+                        </Link>
+                      </motion.div>
+                    </>
+                  )}
+                </div>
+              </motion.div>
+            </div>
+          </div>
+          <div className="arrowContainer">
+            {/* <div className="arrowBg" ref={scrollBg}></div> */}
+            <div className="arrowWrapper">
+              <Image
+                ref={scrollArrowRef}
+                className="scrollArrow"
+                src={`/bannerLogoLg.png`}
+                width={439}
+                height={1205}
+                layout="responsive"
+                alt="Takmeel"
+                loading="lazy"
+              />
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
