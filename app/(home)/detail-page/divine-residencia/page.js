@@ -27,6 +27,7 @@ export default async function DivineResidencia() {
     text2: "Divine Residencia",
     text3: "Studio City, Dubai",
     brochureLink: "/Divine-Residencia/Brochure/Divine Residencia Studio City Brochure.pdf",
+    placeholderImage:"/cover3.jpg",
     GalleryMedia: [
       {
         type: "video",

@@ -21,6 +21,7 @@ export default async function GolfViewLivingApartments() {
   }
   const detailHeroData = {
     backgroundImage: "Divine golf apartments_landscape.mp4",
+    placeholderImage:"/cover4.jpg",
     backgroundImageMobile: "k5.jpg",
     text1: "Your Everyday Escape, Overlooking the Greens",
     text2: "Golf View Living Apartments",

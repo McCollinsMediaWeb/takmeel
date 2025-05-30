@@ -189,7 +189,8 @@ export default function DetailHero({
     GalleryMedia,
     videoPosterDesktop,
     videoPosterMobile,
-    projectStatus
+    projectStatus,
+    placeholderImage
 }) {
     const containerVariants = {
         hidden: { opacity: 0, y: 40 },
@@ -318,7 +319,7 @@ export default function DetailHero({
                                 <>
                                     {!videoLoaded && (
                                         <img
-                                            src="/abslider3.jpg" // fallback image (can be first frame or custom)
+                                            src={placeholderImage} // fallback image (can be first frame or custom)
                                             alt="video preview"
                                             style={{
                                                 width: '100%',
