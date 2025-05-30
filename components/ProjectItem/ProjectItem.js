@@ -17,7 +17,8 @@ export default function ProjectItem({
     tagline,
     url,
     projectStatus,
-    backgroundVideo = null
+    backgroundVideo = null,
+    placeholderImage
 }) {
     const [startLoop, setStartLoop] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
@@ -109,7 +110,7 @@ export default function ProjectItem({
                 <>
                     {!videoLoaded && (
                         <img
-                            src="/abslider3.jpg" // replace with your placeholder image (e.g., first frame)
+                            src={placeholderImage} // replace with your placeholder image (e.g., first frame)
                             alt="video preview"
                             style={{
                                 width: '100%',

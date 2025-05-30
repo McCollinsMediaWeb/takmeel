@@ -140,6 +140,7 @@ export default function HomePageItem() {
           tagline="Urban Living, Reimagined by Nature"
           url="takmeel-al-barari-view-properties"
           backgroundVideo="tkdesk1.mp4"
+          placeholderImage="/cover2.jpg"
         />
       </section>
 
