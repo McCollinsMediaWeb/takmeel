@@ -27,7 +27,7 @@ export default async function Projects() {
         {/* <ProjectItem backgroundImage="main1.jpg" backgroundImageMobile="bannerMobileSecondt.jpg" text2="Divine Al Barari" text3="Majan, Dubai" url="takmeel-al-barari-view-properties" /> */}
 
         {/* <ProjectItem backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg" backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg" text1="Now Unveiling" text2="Divine Al Barari" text3="Majan, Dubai" tagline="Urban Living, Reimagined by Nature" url="takmeel-al-barari-view-properties" /> */}
-        <ProjectItem backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg" backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg" text1="Coming Soon" text2="Al Barari" text3="Majan, Dubai" tagline="Urban Living, Reimagined by Nature" url="takmeel-al-barari-view-properties" backgroundVideo="tkdesk1.mp4" />
+        <ProjectItem backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg" backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg" text1="Coming Soon" text2="Al Barari" text3="Majan, Dubai" tagline="Urban Living, Reimagined by Nature" url="takmeel-al-barari-view-properties" backgroundVideo="tkdesk1.mp4" placeholderImage="/cover1.jpg" />
         <ProjectItem
           backgroundImage="Divine-Residencia/Divine residencia main facade.jpg"
           backgroundImageMobile="k1.jpg"
