@@ -663,7 +663,7 @@ body .slick-dots {
 /* Override styles for react-phone-number-input */
 .CustomPhoneInput {
   width: 100%;
-  background-color: #f7f7f7;
+  background-color: #fff;
   padding: 15px 25px;
   border-radius: 25px;
   border: 0px;
@@ -1949,6 +1949,7 @@ body .slick-prev::before {
   outline: none;
   box-shadow: none;
   padding-left: 160px;
+  color: #676666;
 }
 
 .InputItem {
@@ -1963,12 +1964,12 @@ body .slick-prev::before {
 }
 
 .InputItem ::placeholder {
-  color: #1d1d1b;
+  color: #676666;
   opacity: 1;
 }
 
 .InputItem ::-ms-input-placeholder {
-  color: #1d1d1b;
+  color: #676666;
 }
 
 .CCNotice1 {
