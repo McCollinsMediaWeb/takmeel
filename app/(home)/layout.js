@@ -56,20 +56,18 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${nunitoSans.variable} ${cairo.variable}`}>
       <head>
         {/* Google tag (gtag.js) */}
-        <Script
+        <script
+          async
           src="https://www.googletagmanager.com/gtag/js?id=G-TPGZG3YCQ7"
-          strategy="afterInteractive"
-        />
-        <Script
-          id="gtag-init"
-          strategy="afterInteractive"
+        ></script>
+        <script
           dangerouslySetInnerHTML={{
             __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-TPGZG3YCQ7');
-            `,
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TPGZG3YCQ7');
+      `,
           }}
         />
         {/* Meta Pixel Code */}
