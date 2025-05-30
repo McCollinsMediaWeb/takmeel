@@ -506,7 +506,7 @@ body .slick-dots {
 }
 
 .HomeAboutContent {
-  background-image: url(../public/homeaboutbg.png);
+  /* background-image: url(../public/homeaboutbg.png); */
   background-position: center center;
   background-repeat: no-repeat;
   max-width: 800px;
