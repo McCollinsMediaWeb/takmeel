@@ -20,6 +20,7 @@ export default function GalleryHeader({
 }) {
     const containerRef = useRef(null)
     const isDesktop = useMediaQuery("(min-width: 960px)")
+    const [videoLoaded, setVideoLoaded] = useState(false);
 
 
     const [phase, setPhase] = useState("initial") // 'initial' -> 'transition' -> 'final'
@@ -61,7 +62,40 @@ export default function GalleryHeader({
     return (
         <div className="FullScreenBanner Projects VideoD">
             {backgroundVideo ? (
-                <video
+
+                <>
+                    {!videoLoaded && (
+                        <img
+                            src="/cover1.jpg" // replace with your placeholder image (e.g., first frame)
+                            alt="video preview"
+                            style={{
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'cover',
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                zIndex: 1,
+                            }}
+                        />
+                    )}
+
+                    <video
+                        src={`/${backgroundVideo}`}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="auto"
+                        onCanPlayThrough={() => setVideoLoaded(true)} // when video is ready
+                        style={{
+                            width: '100%',
+                            position: 'relative',
+                            zIndex: 0,
+                        }}
+                    />
+
+                    {/* <video
                     src={`/${backgroundVideo}`}
                     autoPlay
                     loop
@@ -69,7 +103,8 @@ export default function GalleryHeader({
                     playsInline
                     preload="none"
                     style={{ width: '100%' }}
-                />
+                /> */}
+                </>
             ) : (
                 <motion.div
                     animate={{ scale: [1, 1.05, 1] }}
@@ -151,13 +186,13 @@ export default function GalleryHeader({
                                         </motion.div>
 
                                         <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
-                                        Crafted for Inspired Living
+                                            Crafted for Inspired Living
 
 
                                         </motion.div>
 
                                         <motion.div className="Txt3 nunito-text SmallSizeTxt" variants={itemVariants}>
-                                        Where purposeful design and visionary innovation converge to create spaces that inspire, elevate, and redefine modern living.
+                                            Where purposeful design and visionary innovation converge to create spaces that inspire, elevate, and redefine modern living.
                                         </motion.div>
                                     </>
                                 )}
