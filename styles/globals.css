@@ -1175,9 +1175,7 @@ body .slick-prev::before {
   font-size: 30px;
 }
 
-.BlogPostMainArea .container {
-  max-width: 1100px;
-}
+
 
 .LatestBlogItem {
   padding: 20px;
@@ -3197,4 +3195,10 @@ body {
   .MenuMiddle ul a{
     font-size: 35px;
   }
+}
+.FeaturedBlogListingBox{
+  margin-top: 30px;
+}
+.FeaturedBlogListingBox .LatestBlogImage img{
+height: auto !important;
 }
