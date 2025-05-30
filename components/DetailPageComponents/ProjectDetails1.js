@@ -293,7 +293,7 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
         // speed: speed,
         speed: 900,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
         // autoplay: true,
         // autoplaySpeed: 2000,
