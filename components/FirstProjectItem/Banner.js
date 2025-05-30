@@ -279,7 +279,8 @@ export default function FirstProjectItem({
             <div className="FsBannerContent VideoD">
                 <div className="FsBannerContentFlex centerBlock">
                     <div className="container" >
-                      <div className="bannerTx" ref={bannerContentRef}>
+                      {/* <div className="bannerTx" ref={bannerContentRef}> */}
+                        <div className="bannerTx">
                         <motion.div
                             variants={containerVariants}
                             initial="hidden"
@@ -351,7 +352,7 @@ export default function FirstProjectItem({
                         </div>
                     </div>
                   <div className="arrowContainer">
-                  <div className="arrowBg" ref={scrollBg}></div>
+                  {/* <div className="arrowBg" ref={scrollBg}></div> */}
                     <div className="arrowWrapper">
                         <Image
                         ref={scrollArrowRef}
