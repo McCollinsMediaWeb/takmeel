@@ -96,31 +96,31 @@ export default function ProjectItem({
 
     const boxRef = useRef(null);
 
-     useEffect(() => {
+    useEffect(() => {
     const el = boxRef.current;
 
-    // Set initial styles
-        gsap.set(el, {
-        scale: 0.9,
-        opacity: 0,
-        transformOrigin: 'center center',
-        willChange: 'transform',
-        transformStyle: 'preserve-3d',
-        });
+    // Set initial transform state
+    gsap.set(el, {
+      scale: 0.9,
+      opacity: 0,
+      transformOrigin: 'center center',
+      willChange: 'transform',
+      transformStyle: 'preserve-3d',
+    });
 
-        // Animate on scroll
-        gsap.to(el, {
-        scale: 1,
-        opacity: 1,
-        ease: 'power3.out',
-        scrollTrigger: {
-            trigger: el,
-            start: 'top 85%',
-            end: 'top 40%',
-            scrub: 1.5, // Controls smoothness and speed
-        },
-        });
-    }, []);
+    // Animate based strictly on scroll position
+    gsap.to(el, {
+      scale: 1,
+      opacity: 1,
+      ease: 'none', // Linear with scroll
+      scrollTrigger: {
+        trigger: el,
+        start: 'top 85%',
+        end: 'top 30%',
+        scrub: true, // Animation strictly follows scroll
+      },
+    });
+  }, []);
 
     return (
 
