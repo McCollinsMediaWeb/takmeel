@@ -7,7 +7,9 @@ import Image from "next/image"
 import { usePathname } from "next/navigation"
 import useMediaQuery from "../hooks/useMediaQuery"
 
-
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 export default function ProjectItem({
     backgroundImage,
     backgroundImageMobile,
@@ -92,9 +94,42 @@ export default function ProjectItem({
         };
     }, []);
 
+    const boxRef = useRef(null);
+
+     useEffect(() => {
+    const el = boxRef.current;
+
+    // Set initial styles
+        gsap.set(el, {
+        scale: 0.9,
+        opacity: 0,
+        transformOrigin: 'center center',
+        willChange: 'transform',
+        transformStyle: 'preserve-3d',
+        });
+
+        // Animate on scroll
+        gsap.to(el, {
+        scale: 1,
+        opacity: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+            trigger: el,
+            start: 'top 85%',
+            end: 'top 40%',
+            scrub: 1.5, // Controls smoothness and speed
+        },
+        });
+    }, []);
+
     return (
 
-        <div className="FullScreenBanner Projects">
+        <div className="FullScreenBanner Projects" ref={boxRef}
+            style={{
+                transform: 'translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg)',
+                transformStyle: 'preserve-3d',
+                willChange: 'transform',
+            }}>
             {/* <motion.div
                 animate={{ scale: [1, 1.05, 1] }}
                 transition={{ duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
