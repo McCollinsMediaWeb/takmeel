@@ -209,8 +209,11 @@ header {
 
 .MainLogo {
   /* max-width: 150px; */
-  max-width: 250px;
+  /* max-width: 250px; */
+  width: 250px;
 }
+
+
 
 .bg1 {
   background-color: #1d1d1d;
@@ -3076,6 +3079,10 @@ body {
   .ProductDetail2 .container,
   .BlogPostMainArea .container {
     max-width: 1900px;
+  }
+
+  .MainLogo {
+    width: 400px;
   }
 
   .Txt2 {
