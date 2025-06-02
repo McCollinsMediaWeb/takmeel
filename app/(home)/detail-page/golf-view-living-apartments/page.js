@@ -21,7 +21,7 @@ export default async function GolfViewLivingApartments() {
   }
   const detailHeroData = {
     backgroundImage: "Divine golf apartments_landscape.mp4",
-    placeholderImage:"/cover4.jpg",
+    placeholderImage: "/cover4.jpg",
     backgroundImageMobile: "k5.jpg",
     text1: "Your Everyday Escape, Overlooking the Greens",
     text2: "Golf View Living Apartments",
@@ -71,13 +71,13 @@ export default async function GolfViewLivingApartments() {
       // "Golf-View-Living-Apartments/Golf-View-Living-Apartment-Image02.jpg",
       // "glf1.jpg",
       // "gl3.jpg",
-      "gg1.jpg",
       // "gg2.jpg",
-      "gr1.jpg",
       // "gv2.jpg",
+
+      "gg1.jpg",
+      "gr1.jpg",
       "gv3.jpg",
       "gv4.jpg",
-
     ],
   };
   const DataProjectDetails2 = {
@@ -170,6 +170,18 @@ export default async function GolfViewLivingApartments() {
         title: "Kitchen Area",
       },
 
+      {
+        src: "Golf-View-Living-Apartments/Golf View Apartment 01 (2).jpg",
+        title: "Kitchen Area",
+      },
+      {
+        src: "Golf-View-Living-Apartments/Golf View Apartment 01 (3).jpg",
+        title: "Kitchen Area",
+      },
+      {
+        src: "Golf-View-Living-Apartments/Golf View Apartment 02.jpg",
+        title: "Kitchen Area",
+      },
     ],
   };
 
