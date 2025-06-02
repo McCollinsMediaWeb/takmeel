@@ -68,6 +68,10 @@
     font-size: 19px;
   }
 
+  .MainLogo {
+    width: 150px;
+  }
+
   .MenuHd {
     margin-bottom: 40px;
   }
@@ -964,56 +968,71 @@
   .custom-section-flexible {
     min-height: 50vh;
   }
+
   .LatestBlogImage img {
     height: 200px !important;
   }
+
   .FullScreenBanner img {
     height: 100vh !important;
   }
+
   .FullScreenBanner {
     height: auto;
   }
+
   .ImageTlBox {
     padding: 15px;
     font-size: 18px;
   }
+
   .LanguageSwitcher {
     margin-right: 0;
   }
+
   .LanguageICon {
     width: 20px;
     height: 14px;
   }
+
   .LanguageSwitcher {
     line-height: 1;
   }
+
   .StageItemT1 {
     font-size: 20px;
   }
+
   .OurValuesBox .StageItemBox {
     padding: 15px;
   }
+
   .ListTyle1 {
     list-style: none;
     padding: 0;
   }
+
   .ListTyle1 li div span {
     font-size: 16px;
   }
+
   .ListTyle1 li div {
     margin-bottom: 10px;
   }
+
   .PolicyBoxT3 {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 18px;
   }
+
   /* .pageSection {
     height: auto;
   } */
   .OurValuesBox * {
     opacity: 1 !important;
   }
+
   .StageItemBox {
     margin-top: 15px;
   }

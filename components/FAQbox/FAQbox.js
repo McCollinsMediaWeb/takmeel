@@ -55,7 +55,7 @@ export default function FAQbox() {
         {
             question: "What areas in the UAE does Takmeel specialize in?",
             answer:
-                "We specialize in key real estate markets across Dubai, and Ajman, including popular communities like Downtown Dubai, Dubai Marina, JVC, Business Bay, and more.",
+                "We specialize in key real estate markets across Dubai, and Ajman.",
         },
         {
             question: "How can I get in touch with a Takmeel property advisor?",
