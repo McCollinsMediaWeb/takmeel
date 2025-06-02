@@ -113,8 +113,8 @@ export default function HeaderForm() {
                         viewport={{ once: false, amount: 0.5 }} // triggers when 50% of it is in view
                     >
                         <div className='CfT1'>WE ARE HERE TO HELP</div>
-                        <div className='CfT2'>Get in Touch with Us</div>
-                        <div className='CfT3'>Should this property pique your interest, we encourage you to schedule a private viewing at your earliest convenience. </div>
+                        <div className='CfT2' style={{ color: '#fff' }} >Get in Touch with Us</div>
+                        <div className='CfT3' style={{ color: '#fff' }} >Should this property pique your interest, we encourage you to schedule a private viewing at your earliest convenience. </div>
                         <form className='FormBox' onSubmit={handleSubmit}>
                             <div className='row'>
                                 {[

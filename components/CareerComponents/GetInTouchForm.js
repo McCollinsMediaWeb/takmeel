@@ -206,7 +206,7 @@ export default function GetInTouchForm() {
 
 
     return (
-        <section className='ContactForm pd-common' id="careerform">
+        <section className='ContactForm pd-common' id="careerform" style={{ backgroundColor: '#383838' }}>
             <div className='container'>
                 <div className='text-center'>
                     <motion.div
@@ -216,8 +216,8 @@ export default function GetInTouchForm() {
                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                     >
                         {/* <div className='CfT1'>WE ARE HERE TO HELP</div> */}
-                        <div className='CfT2'>Let's Get In Touch</div>
-                        <div className='CfT3'>Please provide the details, and we’ll get back to you.</div>
+                        <div className='CfT2' style={{ color: '#fff' }}>Let's Get In Touch</div>
+                        <div className='CfT3' style={{ color: '#fff' }}>Please provide the details, and we’ll get back to you.</div>
                         {/* <div className='FormBox'> */}
                         <form className='FormBox' onSubmit={handleSubmit}>
                             <div className='row'>

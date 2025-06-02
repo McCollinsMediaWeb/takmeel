@@ -382,7 +382,7 @@ const MapComponent = ({ apiKey, center, zoom, styles, nearByPlaces, desktopHeigh
 
                         // Use fallback if no working image found
                         if (!workingImageUrl) {
-                            workingImageUrl = "/placeholder.svg?height=200&width=400";
+                            // workingImageUrl = "/placeholder.svg?height=200&width=400";
                         }
 
                         return workingImageUrl;

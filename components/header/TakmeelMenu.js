@@ -16,7 +16,7 @@ const bgImages = [
     '/d1.jpg',
     '/ak2.jpg',
     // '/Meydan-Racecourse-Mansion/Maydan 07.jpg',
-    '/Divine-Residencia/Interior/Divine Residencia Interior 02.jpg'
+    '/Studio Bespoke_Design Living_24.03.2023_Page_36_Image_0001.jpg'
     // '/Golf-View-Living-Apartments/Golf Apartments 03.jpg'
 ]
 export default function TakmeelMenu() {

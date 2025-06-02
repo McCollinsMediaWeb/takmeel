@@ -213,6 +213,12 @@ header {
   width: 250px;
 }
 
+@media (max-width: 800px) {
+  .MainLogo {
+    width: 150px;
+  }
+}
+
 
 
 .bg1 {
@@ -852,7 +858,8 @@ body .slick-dots {
   top: 0;
   position: fixed;
   width: 100%;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: #383838;
 }
 
 .FormPopUp .CfT2 {
