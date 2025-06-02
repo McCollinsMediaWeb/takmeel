@@ -1018,3 +1018,6 @@
     margin-top: 15px;
   }
 }
+html body .flogo {
+display: none !important;
+}
