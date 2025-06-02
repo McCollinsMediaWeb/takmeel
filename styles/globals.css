@@ -3063,31 +3063,38 @@ body {
 .ReadMoreBox {
   display: none;
 }
-.BkR1{
+
+.BkR1 {
   font-size: 18px;
 }
+
 /* For large iMacs (like 4K/5K Retina, often 1920px or more) */
 @media (min-width: 1930px) {
+
   .container,
   .ProductDetail2 .container,
   .BlogPostMainArea .container {
     max-width: 1900px;
   }
- .Txt2{
-  font-size: 90px;
- }
- .SmallSizeTxt{
-  font-size: 32px;
- }
- .Link1 {
+
+  .Txt2 {
+    font-size: 90px;
+  }
+
+  .SmallSizeTxt {
+    font-size: 32px;
+  }
+
+  .Link1 {
     padding: 15px 30px;
     border-radius: 40px;
     font-size: 30px;
   }
-  body ,
-  .HbT2, 
-  .HbT3 ,
-  .VmT2 ,
+
+  body,
+  .HbT2,
+  .HbT3,
+  .VmT2,
   .Txt17,
   .FounderName,
   .FounderPosition,
@@ -3101,104 +3108,128 @@ body {
   .JobBoxT2,
   .PolicyBoxT3,
   .PolicyBoxT2,
-  .BkR1
-  {
+  .BkR1 {
     font-size: 26px;
   }
-  .CfT1{
+
+  .CfT1 {
     font-size: 25px !important;
   }
+
   .AmnIcon {
     width: 100px;
     height: 100px;
   }
-  .AmnKeyBoxLeft{
+
+  .AmnKeyBoxLeft {
     width: 110px;
   }
-  .AmnKeyBoxRight ,
-  .JobBoxT1{
+
+  .AmnKeyBoxRight,
+  .JobBoxT1 {
     font-size: 30px;
   }
-  .FxdHgtImage img, .AbSliderItem img{
+
+  .FxdHgtImage img,
+  .AbSliderItem img {
     height: 600px !important;
   }
-   .StageItemT1{
+
+  .StageItemT1 {
     font-size: 45px;
-   }
-  .Txt3{
+  }
+
+  .Txt3 {
     font-size: 40px;
   }
-  
-  .TxtBig{
-    font-size: 200px;
+
+  .TxtBig {
+    /* font-size: 250px; */
+    font-size: 400px;
   }
-  .HbT1 ,
+
+  .HbT1,
   .BlT2,
   .BlT1A,
   .ppT2,
   .CT1,
   .Ft1,
-  .HedrT1
- {
+  .HedrT1 {
     font-size: 60px;
   }
-  .HomeAboutContent{
+
+  .HomeAboutContent {
     max-width: 1500px;
   }
-  .AccordionQuestion{
+
+  .AccordionQuestion {
     font-size: 35px;
   }
-  
-  .HbT4{
+
+  .HbT4 {
     font-size: 45px;
   }
-  .Link5{
+
+  .Link5 {
     border-radius: 30px;
   }
-  .CfT2{
+
+  .CfT2 {
     font-size: 60px;
   }
-  .FormBox{
+
+  .FormBox {
     max-width: 1700px;
   }
-  .CustomPhoneInput input{
+
+  .CustomPhoneInput input {
     font-size: 25px;
   }
-  .FormBox button{
+
+  .FormBox button {
     padding: 15px 30px;
     border-radius: 35px;
   }
-  .galleryBoxRow .BlT2 ,
-  .VmT1{
+
+  .galleryBoxRow .BlT2,
+  .VmT1 {
     font-size: 60px;
   }
+
   body .slick-prev,
-  body .slick-next{
+  body .slick-next {
     width: 50px;
     height: 50px;
   }
-  .ButtonsBox1 a{
+
+  .ButtonsBox1 a {
     font-size: 30px;
     padding: 20px 30px;
     border-radius: 30px;
   }
+
   .galleryBoxRow.container-fluid,
-  .pd-common{
+  .pd-common {
     padding: 90px 0px;
   }
-  .BlogListingWrap .BlogItem{
+
+  .BlogListingWrap .BlogItem {
     padding: 25px;
   }
-  .Megamenu{
+
+  .Megamenu {
     max-width: 750px;
   }
-  .MenuMiddle ul a{
+
+  .MenuMiddle ul a {
     font-size: 35px;
   }
 }
-.FeaturedBlogListingBox{
+
+.FeaturedBlogListingBox {
   margin-top: 30px;
 }
-.FeaturedBlogListingBox .LatestBlogImage img{
-height: auto !important;
+
+.FeaturedBlogListingBox .LatestBlogImage img {
+  height: auto !important;
 }
