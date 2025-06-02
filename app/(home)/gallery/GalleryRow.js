@@ -59,14 +59,15 @@ export default function GalleryRow({ text1, GalleryImages }) {
         },
     ];
     const fadeVariant = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.6, ease: 'easeOut' } },
-};
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { duration: 0.6, ease: 'easeOut' } },
+    };
     var settings = {
         dots: true,
-        speed: 6000,
+        // speed: 6000,
+        speed: 900,
         slidesToShow: 2,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         initialSlide: 0,
         infinite: true,
         // autoplay: true,
@@ -131,11 +132,11 @@ export default function GalleryRow({ text1, GalleryImages }) {
         if (inView && slickRef.current) {
             // Start autoplay after 2 seconds delay
             timer = setTimeout(() => {
-                slickRef.current.slickPlay();
+                // slickRef.current.slickPlay();
             }, 2000);
         } else {
             // If out of view, pause autoplay immediately
-            if (slickRef.current) slickRef.current.slickPause();
+            // if (slickRef.current) slickRef.current.slickPause();
         }
 
         // Clear timer on cleanup to avoid memory leaks
@@ -160,13 +161,13 @@ export default function GalleryRow({ text1, GalleryImages }) {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true }} // triggers when 50% of it is in view
             >
-            <div ref={sliderRef} >
-                <Slider ref={slickRef} {...settings}>
-                    {GalleryImages?.map((img, index) => {
-                        const randomVariant = animationVariants[Math.floor(Math.random() * animationVariants.length)];
-                        return (
-                            <div key={index} className="" onClick={() => setOpen(true)}>
-                                
+                <div ref={sliderRef} >
+                    <Slider ref={slickRef} {...settings}>
+                        {GalleryImages?.map((img, index) => {
+                            const randomVariant = animationVariants[Math.floor(Math.random() * animationVariants.length)];
+                            return (
+                                <div key={index} className="" onClick={() => setOpen(true)}>
+
                                     <div className="GalleryImageBox">
                                         <Image
                                             src={`/${img}`}
@@ -177,13 +178,13 @@ export default function GalleryRow({ text1, GalleryImages }) {
                                             loading="lazy"
                                         />
                                     </div>
-                            </div>
-                        );
-                    })}
+                                </div>
+                            );
+                        })}
 
 
-                </Slider>
-            </div>
+                    </Slider>
+                </div>
             </motion.div>
             <Lightbox
                 open={open}

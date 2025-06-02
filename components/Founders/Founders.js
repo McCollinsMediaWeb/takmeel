@@ -100,7 +100,7 @@ export default function Founders() {
         // speed: speed,
         speed: 900,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
         infinite: true,
         // autoplay: true,
         // autoplaySpeed: 2000,

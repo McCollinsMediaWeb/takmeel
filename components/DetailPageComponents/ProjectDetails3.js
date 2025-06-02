@@ -27,7 +27,7 @@ export default function ProjectDetails3({ mainimage1, data }) {
         infinite: false,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         initialSlide: 0,
         infinite: false,
         responsive: [

@@ -19,7 +19,7 @@ export default function AboutSlider() {
         dots: true,
         speed: 500,
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         initialSlide: 0,
         infinite: true,
         autoplay: true,               // Enables autoplay

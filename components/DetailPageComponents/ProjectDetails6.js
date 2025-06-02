@@ -16,7 +16,7 @@ export default function ProjectDetails6({ planImage, data }) {
         infinite: false,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         initialSlide: 0,
         infinite: false,
         responsive: [

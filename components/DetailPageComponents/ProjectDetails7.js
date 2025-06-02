@@ -46,7 +46,7 @@ export default function ProjectDetails7({ mapimage, text1, text2, landmarks, map
         infinite: false,
         speed: 2500,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         initialSlide: 0,
         infinite: false,
         autoplay: true,

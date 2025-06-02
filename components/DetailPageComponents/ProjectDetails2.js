@@ -27,7 +27,7 @@ export default function ProjectDetails2({ ThumbImage1,ThumbImage2,text1Heading ,
         infinite: false,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         initialSlide: 0,
         infinite: false,
         responsive: [
