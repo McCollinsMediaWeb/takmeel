@@ -209,7 +209,7 @@ export default async function GolfViewLivingApartments() {
       apiKey: "AIzaSyCBtGUl2z4uc5HX9e7eMmzIHalH2a99Oz4",
       // center: { lat: 25.435623597666495, lng: 55.485490181419905, place_id: "ChIJlx5vQQBXXz4RDephFNMrJhI" },
       center: { lat: 25.43498638833699, lng: 55.48557042956523, place_id: "ChIJlx5vQQBXXz4RDephFNMrJhI" },
-      zoom: 16,
+      zoom: 17,
       styles: [
         {
           "featureType": "water",
@@ -306,8 +306,8 @@ export default async function GolfViewLivingApartments() {
           "featureType": "all",
           "elementType": "labels.icon",
           "stylers": [
-            // { "visibility": "on" }
-            { "visibility": "off" }
+            { "visibility": "on" }
+            // { "visibility": "off" }
           ]
         }
       ],

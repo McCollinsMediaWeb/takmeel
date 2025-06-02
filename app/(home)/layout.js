@@ -102,19 +102,16 @@ export default function RootLayout({ children }) {
         </noscript>
         <div className="vibe-stack">
           <GlobalDataProvider>
-            <Script
-              id="zsiq-init"
-              strategy="beforeInteractive"
-            >
+            <Script id="zsiq-init" strategy="beforeInteractive">
               {`
-          window.$zoho = window.$zoho || {};
-          $zoho.salesiq = $zoho.salesiq || { ready: function() {} };
-        `}
+        window.$zoho = window.$zoho || {};
+        $zoho.salesiq = $zoho.salesiq || { ready: function() {} };
+      `}
             </Script>
 
             <Script
               id="zsiqscript"
-              src="https://salesiq.zohopublic.in/widget?wc=siqd42e964546372063eb47c76bbf42497379120a2771308eb2d1ca6165301d5e33"
+              src="https://salesiq.zohopublic.com/widget?wc=siq56336b532438deb7cfdbff018b021175034a777a0a32d17bd7c230a43c106fbf"
               strategy="lazyOnload"
               defer
             />
