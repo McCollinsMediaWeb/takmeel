@@ -93,7 +93,7 @@ export default function CatalogueForm({ isOpen, setIsOpen, brochureLink, sourceP
     };
 
     return (
-        <section className='ContactForm' style={{ backgroundColor: 'white', borderRadius: '20px', padding: '30px 20px' }} >
+        <section className='ContactForm' style={{ backgroundColor: '#383838', borderRadius: '20px', padding: '30px 20px' }} >
 
             <div style={{ textAlign: 'end' }}>
                 <span
@@ -105,6 +105,7 @@ export default function CatalogueForm({ isOpen, setIsOpen, brochureLink, sourceP
                         cursor: 'pointer',
                         userSelect: 'none',
                         fontFamily: `'Segoe UI', Roboto, Helvetica, Arial, sans-serif`,
+                        color: '#fff'
                     }}
                     aria-label="Close"
                 >
@@ -124,8 +125,8 @@ export default function CatalogueForm({ isOpen, setIsOpen, brochureLink, sourceP
                         viewport={{ once: true, amount: 0.5 }}
                     >
                         <div className='CfT1'>WE ARE HERE TO HELP</div>
-                        <div className='CfT2'>Get in Touch with Us</div>
-                        <div className='CfT3'>
+                        <div className='CfT2' style={{ color: '#fff' }}>Get in Touch with Us</div>
+                        <div className='CfT3' style={{ color: '#fff' }}>
                             Should this property pique your interest, we encourage you to schedule a private viewing at your earliest convenience.
                         </div>
 
