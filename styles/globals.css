@@ -983,7 +983,7 @@ body .slick-next {
   height: 35px;
   right: 20px;
   border-radius: 50%;
-  z-index: 9999;
+  z-index: 1;
 }
 
 body .slick-prev {
@@ -994,7 +994,7 @@ body .slick-prev {
   height: 35px;
   left: 20px;
   border-radius: 50%;
-  z-index: 9999;
+  z-index: 1;
 }
 
 body .slick-next:hover,
@@ -1004,7 +1004,7 @@ body .slick-prev:hover {
 
 body .slick-next::before,
 body .slick-prev::before {
-  content: none;
+  content: none !important;
 }
 
 .slick-slide:last-child .SldSliderItem {
