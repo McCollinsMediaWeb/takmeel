@@ -5,8 +5,10 @@ import React, { useRef, useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
+import { useTranslations } from "next-intl";
 
 export default function GetInTouchForm() {
+    const t = useTranslations('Careers');
 
     const initialForm = {
         firstName: '',
@@ -216,16 +218,16 @@ export default function GetInTouchForm() {
                         viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                     >
                         {/* <div className='CfT1'>WE ARE HERE TO HELP</div> */}
-                        <div className='CfT2' style={{ color: '#fff' }}>Let's Get In Touch</div>
-                        <div className='CfT3' style={{ color: '#fff' }}>Please provide the details, and we’ll get back to you.</div>
+                        <div className='CfT2' style={{ color: '#fff' }}>{t('getInTouchForm.title')}</div>
+                        <div className='CfT3' style={{ color: '#fff' }}>{t('getInTouchForm.subTitle')}</div>
                         {/* <div className='FormBox'> */}
                         <form className='FormBox' onSubmit={handleSubmit}>
                             <div className='row'>
                                 {[
-                                    { label: 'First Name', name: 'firstName' },
-                                    { label: 'Last Name', name: 'lastName' },
+                                    { label: t('getInTouchForm.field1.placeholder'), name: 'firstName' },
+                                    { label: t('getInTouchForm.field2.placeholder'), name: 'lastName' },
                                     // { label: 'Phone Number', name: 'phone' },
-                                    { label: 'Email Address', name: 'email' },
+                                    { label: t('getInTouchForm.field3.placeholder'), name: 'email' },
                                 ].map(({ label, name }) => (
                                     <div className='col-md-6' key={name}>
                                         <input
@@ -241,7 +243,7 @@ export default function GetInTouchForm() {
 
                                 <div className='col-md-6'>
                                     <PhoneInput
-                                        placeholder="Enter phone number"
+                                        placeholder={t('getInTouchForm.field4.placeholder')}
                                         value={formData.phone}
                                         defaultCountry="AE"
                                         onChange={(value) => {
@@ -276,8 +278,8 @@ export default function GetInTouchForm() {
                                             borderColor: isDragging ? "#f0b941" : "#e2e2e2",
                                             padding: "20px",
                                         }} >
-                                        <div style={{ fontSize: "18px", color: "#333", marginBottom: "4px" }}>Drag & Drop Files Here</div>
-                                        <div style={{ color: "#666" }}>or</div>
+                                        <div style={{ fontSize: "18px", color: "#333", marginBottom: "4px" }}>{t('getInTouchForm.field5.line1')}</div>
+                                        <div style={{ color: "#666" }}>{t('getInTouchForm.field5.line2')}</div>
                                         <div
                                             style={{
                                                 color: "#f0b941",
@@ -288,7 +290,7 @@ export default function GetInTouchForm() {
                                             onMouseOver={(e) => (e.currentTarget.style.color = "#e09c2d")}
                                             onMouseOut={(e) => (e.currentTarget.style.color = "#f0b941")}
                                         >
-                                            Browse Files
+                                            {t('getInTouchForm.field5.line3')}
                                         </div>
 
                                         <input
@@ -352,7 +354,7 @@ export default function GetInTouchForm() {
 
                                 <div className='col-md-12'>
                                     <button className='hover1' type="submit" disabled={loading}>
-                                        {loading ? 'Submitting...' : 'Send Enquiry'}
+                                        {loading ? 'Submitting...' : t('getInTouchForm.submitText')}
                                     </button>
 
                                     {submitted && (

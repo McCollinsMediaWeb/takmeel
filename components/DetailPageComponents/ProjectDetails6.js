@@ -7,10 +7,13 @@ import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function ProjectDetails6({ planImage, data }) {
+    const t = useTranslations('Properties');
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
+    const locale = useLocale();
     var settings = {
         dots: true,
         infinite: false,
@@ -75,15 +78,15 @@ export default function ProjectDetails6({ planImage, data }) {
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-12'>
+                    <div className='col-md-12' style={{ textAlign: locale === "ar" ? "right" : undefined }}>
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
                             viewport={{ once: true, amount: 0.5 }}
                         >
-                            <div className="BlT1 nunito-text text-uppercase">AMENITIES AND FACILITIES</div>
-                            <div className="BlT2 text-uppercase">Create Your Perfect Home Layout​</div>
+                            <div className="BlT1 nunito-text text-uppercase">{t('amenitiesIcons.subTitle')}</div>
+                            <div className="BlT2 text-uppercase">{t('amenitiesIcons.title')}​</div>
                         </motion.div>
                         {data?.length > 0 ? (
                             data?.map((section, idx) => (

@@ -205,6 +205,7 @@ import image1 from "../../public/abslider1.jpg"
 import image2 from "../../public/abslider2.jpg"
 import image3 from "../../public/abslider3.jpg"
 import image4 from "../../public/abslider3.jpg"
+import { useLocale } from 'next-intl';
 
 export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
@@ -212,6 +213,7 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
     const sliderRef = useRef(null);
     const slickRef = useRef(null);
     const [inView, setInView] = useState(false);
+    const locale = useLocale();
 
 
     useEffect(() => {
@@ -408,7 +410,7 @@ export default function ProjectDetails1({ text1, text2, text3, GalleryImages }) 
                     viewport={{ once: true, amount: 0.5 }}
                 >
                     <div className='row'>
-                        <div className='col-md-12'>
+                        <div className='col-md-12' style={{ textAlign: locale === "ar" ? "right" : undefined }}>
                             <div className="BlT1 nunito-text text-uppercase">{text1}</div>
                             <div className="BlT2 text-uppercase">{text2}​</div>
                             <div className="BlT3">{text3}</div>

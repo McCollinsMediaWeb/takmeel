@@ -12,16 +12,17 @@ import gsap from 'gsap'
 import ScrollToPlugin from 'gsap/ScrollToPlugin'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import { useEffect, useRef } from 'react'
+import { useTranslations } from "next-intl";
 import '../../styles/scroll-snap.css'
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 export default function HomePageItem() {
-
+  const t = useTranslations('HomePage');
 
   const GalleryData2 = {
-    heading: "Takmeel – A Voice of Trust",
-    subheading: "What Our Clients Say About Us",
+    heading: t('testimonial.subTitle'),
+    subheading: t('testimonial.title'),
     testimonials: [
       {
         type: "video",
@@ -118,8 +119,10 @@ export default function HomePageItem() {
           backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg"
           backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"
           text1=""
-          text2="TAKMEEL"
-          text3="Where purposeful design and visionary innovation converge to create spaces that inspire, elevate, and redefine modern living."
+          // text2="TAKMEEL"
+          text2={t('slider1.title')}
+          // text3="Where purposeful design and visionary innovation converge to create spaces that inspire, elevate, and redefine modern living."
+          text3={t('slider1.content')}
           tagline=""
           url="projects"
           backgroundVideo="tt21.mp4"
@@ -134,10 +137,10 @@ export default function HomePageItem() {
         <ProjectItem
           backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg"
           backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"
-          text1="Coming Soon"
-          text2="Al Barari"
-          text3="Majan, Dubai"
-          tagline="Urban Living, Reimagined by Nature"
+          text1={t('slider2.preTitle')}
+          text2={t('slider2.title')}
+          text3={t('slider2.subTitle')}
+          tagline={t('slider2.content')}
           url="takmeel-al-barari-view-properties"
           backgroundVideo="tkdesk1.mp4"
           placeholderImage="/cover2.jpg"
@@ -151,12 +154,12 @@ export default function HomePageItem() {
         <ProjectItem
           backgroundImage="Divine-Residencia/Divine residencia main facade.jpg"
           backgroundImageMobile="k1.jpg"
-          text1="Featured Properties"
-          text2="Divine Residencia"
-          text3="Dubai Studio City, Dubai"
-          tagline="Where Comfort Meets Contemporary Elegance"
+          text1={t('slider3.preTitle')}
+          text2={t('slider3.title')}
+          text3={t('slider3.subTitle')}
+          tagline={t('slider3.content')}
           url="divine-residencia"
-          projectStatus="Sold Out"
+          projectStatus={t('soldOut')}
         />
       </section>
 
@@ -167,12 +170,12 @@ export default function HomePageItem() {
         <ProjectItem
           backgroundImage="bannerDesktopFirst.jpg"
           backgroundImageMobile="bannerMobileFirst.jpg"
-          text1="Featured Properties"
-          text2="Divine Living"
-          text3="Arjan, Dubai"
-          tagline="Thoughtfully Designed for Peaceful Living"
+          text1={t('slider4.preTitle')}
+          text2={t('slider4.title')}
+          text3={t('slider4.subTitle')}
+          tagline={t('slider4.content')}
           url="divine-living"
-          projectStatus="Sold Out"
+          projectStatus={t('soldOut')}
         />
       </section>
 
@@ -185,12 +188,12 @@ export default function HomePageItem() {
           // backgroundImage="ti01 - Copy.jpg"
           backgroundImage="ti02.jpg"
           backgroundImageMobile="t21.jpg"
-          text1="Featured Properties"
-          text2="Divine Residences"
-          text3="Dubai"
-          tagline="Smart Spaces Crafted for Modern Lifestyles"
+          text1={t('slider5.preTitle')}
+          text2={t('slider5.title')}
+          text3={t('slider5.subTitle')}
+          tagline={t('slider5.content')}
           url="divine-residences"
-          projectStatus="Sold Out"
+          projectStatus={t('soldOut')}
         />
       </section>
 
@@ -198,22 +201,45 @@ export default function HomePageItem() {
         // ref={(el) => (panelsRef.current[5] = el)}
         className='pageSection'
       >
-        <ProjectItem backgroundImage="maydan.jpg" backgroundImageMobile="maydan.jpg" text1="Project Showcase" text2="Meydan Racecourse Mansion" text3="Dubai" tagline="Where Grandeur Meets Precision" url="meydan-racecourse-mansion" />
-
+        <ProjectItem
+          backgroundImage="maydan.jpg"
+          backgroundImageMobile="maydan.jpg"
+          text1={t('slider6.preTitle')}
+          text2={t('slider6.title')}
+          text3={t('slider6.subTitle')}
+          tagline={t('slider6.content')}
+          url="meydan-racecourse-mansion" />
       </section>
 
       <section
         // ref={(el) => (panelsRef.current[6] = el)}
         className='pageSection'
       >
-        <ProjectItem backgroundImage="Golf-View-Living-Apartments/Golf Apartments 03.jpg" backgroundImageMobile="k5.jpg" text1="Featured Properties" text2="Golf View Living Apartments" text3="Al Zorah, Ajman" tagline="Your Everyday Escape, Overlooking the Greens" url="golf-view-living-apartments" projectStatus="Sold Out" />
+        <ProjectItem
+          backgroundImage="Golf-View-Living-Apartments/Golf Apartments 03.jpg"
+          backgroundImageMobile="k5.jpg"
+          text1={t('slider7.preTitle')}
+          text2={t('slider7.title')}
+          text3={t('slider7.subTitle')}
+          tagline={t('slider7.content')}
+          url="golf-view-living-apartments"
+          projectStatus={t('soldOut')}
+        />
       </section>
 
       <section
         // ref={(el) => (panelsRef.current[7] = el)}
         className='pageSection'
       >
-        <ProjectItem backgroundImage="Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg" backgroundImageMobile="vill.jpg" text1="Featured Properties" text2="Golf View Living Villas" text3="Ajman" tagline="Private Villas Surrounded by Nature’s Calm" url="golf-view-living-villas" projectStatus="Sold Out" />
+        <ProjectItem
+          backgroundImage="Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg"
+          backgroundImageMobile="vill.jpg"
+          text1={t('slider8.preTitle')}
+          text2={t('slider8.title')}
+          text3={t('slider8.subTitle')}
+          tagline={t('slider8.content')}
+          url="golf-view-living-villas"
+          projectStatus={t('soldOut')} />
       </section>
 
       <section
@@ -242,7 +268,7 @@ export default function HomePageItem() {
         <PropertyForm projectName="Golf View Living Apartments" />
       </section>
 
-      
+
 
       <Footer />
 

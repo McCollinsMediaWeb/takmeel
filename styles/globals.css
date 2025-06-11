@@ -32,8 +32,33 @@ body {
   line-height: 1.2;
 }
 
+[dir="rtl"] body {
+  /* font-family: "Cairo", sans-serif; */
+  font-family: var(--font-cairo);
+}
+
+[dir="rtl"] .nunito-text {
+  /* font-family: "Cairo", sans-serif; */
+  font-family: var(--font-cairo);
+}
+
+[dir="rtl"] .FtrLnk1 {
+  /* font-family: "Cairo", sans-serif; */
+  font-family: var(--font-cairo);
+}
+
+[dir="rtl"] .CRow {
+  /* font-family: "Cairo", sans-serif; */
+  font-family: var(--font-cairo);
+}
+
 .nunito-text {
   font-family: var(--font-nunito-sans), Arial, Helvetica, sans-serif;
+}
+
+[dir="rtl"] .nunito-text {
+  /* font-family: "Cairo", sans-serif; */
+  font-family: var(--font-cairo);
 }
 
 a {
@@ -240,7 +265,8 @@ footer {}
 }
 
 .CRow {
-  padding-left: 37px;
+  /* padding-left: 37px; */
+  padding-inline-start: 37px;
   position: relative;
   color: #fff;
   margin-bottom: 25px;
@@ -254,7 +280,8 @@ footer {}
   background-image: url(../public/whatsapp.png);
   background-size: 100% 100%;
   position: absolute;
-  left: 0;
+  /* left: 0; */
+  inset-inline-start: 0;
   top: 0;
 }
 
@@ -295,7 +322,8 @@ footer {}
   background-image: url(../public/call.png);
   background-size: 100% 100%;
   position: absolute;
-  left: 0;
+  /* left: 0; */
+  inset-inline-start: 0;
   top: 0;
 }
 
@@ -306,7 +334,8 @@ footer {}
   background-image: url(../public/email.png);
   background-size: 100% 100%;
   position: absolute;
-  left: 0;
+  /* left: 0; */
+  inset-inline-start: 0;
   top: 0;
 }
 
@@ -317,7 +346,8 @@ footer {}
   background-image: url(../public/location.png);
   background-size: 100% 100%;
   position: absolute;
-  left: 0;
+  /* left: 0; */
+  inset-inline-start: 0;
   top: 0;
 }
 
@@ -361,7 +391,8 @@ footer {}
   color: #d6b264;
   position: absolute;
   top: 10px;
-  right: 0;
+  /* right: 0; */
+  inset-inline-end: 0;
   border: 0;
   cursor: pointer;
 }
@@ -696,6 +727,19 @@ body .slick-dots {
   margin-right: 10px;
 }
 
+/* For translation Start */
+.CustomPhoneInput.rtl input {
+  direction: rtl;
+  text-align: right;
+}
+
+.CustomPhoneInput.rtl .PhoneInputCountry {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+/* For translation End */
+
 .FormBox button {
   color: #fff;
   text-align: center;
@@ -939,7 +983,7 @@ body .slick-next {
   height: 35px;
   right: 20px;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 9999;
 }
 
 body .slick-prev {
@@ -950,7 +994,7 @@ body .slick-prev {
   height: 35px;
   left: 20px;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 9999;
 }
 
 body .slick-next:hover,
@@ -2108,7 +2152,8 @@ body .slick-prev::before {
   background-image: url(../public/btn1.png);
   background-size: 100% 100%;
   display: inline-block;
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  margin-inline-start: 10px;
   display: inline-block;
   position: relative;
   top: 3px;
@@ -2836,6 +2881,8 @@ body {
   display: flex;
   align-items: center;
   height: 100%;
+
+  justify-content: center;
 }
 
 .height100p {
@@ -3247,4 +3294,66 @@ body {
 
 .FeaturedBlogListingBox .LatestBlogImage img {
   height: auto !important;
+}
+
+[dir="rtl"] .FounderDetails {
+  text-align: right !important;
+}
+
+[dir="rtl"] .CustomPhoneInput input {
+  direction: rtl !important;
+}
+
+[dir="rtl"] .text-left {
+  text-align: right !important;
+}
+
+[dir="rtl"] .btn1 {
+  transform: rotate(-90deg);
+}
+
+/* RTL override using [dir="rtl"] */
+[dir="rtl"] .slick-next {
+  background-image: url(../public/prev.png) !important;
+  /* swapped */
+  left: 20px !important;
+  right: auto;
+}
+
+[dir="rtl"] .slick-prev {
+  background-image: url(../public/next.png) !important;
+  /* swapped */
+  right: 20px !important;
+  left: auto;
+}
+
+/* RTL padding adjustment */
+[dir="rtl"] .Accordion {
+  padding-right: 20px;
+  padding-left: 50px;
+}
+
+/* Move to left in RTL */
+[dir="rtl"] .Accordion::after {
+  right: auto;
+  left: 20px;
+}
+
+[dir="rtl"] .JobBox {
+  text-align: right;
+}
+
+[dir="rtl"] .PolicyBox {
+  text-align: right;
+}
+
+[dir="rtl"] .slick-dots {
+  direction: rtl;
+}
+
+[dir="rtl"] .JobBoxT1::after,
+.JobBoxT2::after,
+.JobBoxT3::after {
+  left: auto;
+  right: 0;
 }

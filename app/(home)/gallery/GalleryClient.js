@@ -1,7 +1,9 @@
 'use client';
 import { useEffect } from 'react';
 import GalleryRow from "./GalleryRow";
+import { useTranslations } from 'next-intl';
 export default function GalleryClient() {
+    const t = useTranslations('Gallery');
 
     useEffect(() => {
         const screenWidth = window.innerWidth;
@@ -32,7 +34,7 @@ export default function GalleryClient() {
         return () => window.removeEventListener('resize', updateHeights);
     }, []);
     const GalleryData = {
-        text1: "Ajman Exhibition",
+        text1: t('section1.title'),
         GalleryImages: [
             "gallery/1.jpg",
             "gallery/2.jpg",
@@ -56,7 +58,7 @@ export default function GalleryClient() {
         ]
     };
     const GalleryData2 = {
-        text1: "International Proprietary Show(IPS) Dubai Exibition",
+        text1: t('section2.title'),
         GalleryImages: [
             "gallery2/1.jpg",
             "gallery2/2.jpg",
@@ -82,9 +84,9 @@ export default function GalleryClient() {
     };
     return (
         <>
-            <GalleryRow  {...GalleryData} />
+            <GalleryRow t={t}  {...GalleryData} />
             <div className="bg2">
-                <GalleryRow  {...GalleryData2} />
+                <GalleryRow t={t}  {...GalleryData2} />
             </div>
         </>
     );

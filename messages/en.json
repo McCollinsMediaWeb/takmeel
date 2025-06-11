@@ -1,0 +1,933 @@
+{
+    "Menus": {
+        "home": "Home",
+        "ourStory": "Our Story",
+        "signatureProjects": "Signature Projects",
+        "visualJourney": "Visual Journey",
+        "newsAndUpdates": "News & Updates",
+        "letsConnect": "Let's Connect",
+        "careers": "Careers",
+        "faqs": "FAQs",
+        "privacyPolicies": "Privacy Policies",
+        "termsOfUse": "Terms of use"
+    },
+    "Header": {
+        "getInTouchButton": "Get In Touch"
+    },
+    "HomePage": {
+        "slider1": {
+            "title": "TAKMEEL",
+            "subTitle": "Crafted for Inspired Living",
+            "content": "Where purposeful design and visionary innovation converge to create spaces that inspire, elevate, and redefine modern living.",
+            "buttonText": "Explore our projects"
+        },
+        "slider2": {
+            "preTitle": "Coming Soon",
+            "title": "Al Barari",
+            "subTitle": "Majan, Dubai",
+            "content": "Urban Living, Reimagined by Nature"
+        },
+        "slider3": {
+            "preTitle": "Featured Properties",
+            "title": "Divine Residencia",
+            "subTitle": "Dubai Studio City, Dubai",
+            "content": "Where Comfort Meets Contemporary Elegance"
+        },
+        "slider4": {
+            "preTitle": "Featured Properties",
+            "title": "Divine Living",
+            "subTitle": "Arjan, Dubai",
+            "content": "Thoughtfully Designed for Peaceful Living"
+        },
+        "slider5": {
+            "preTitle": "Featured Properties",
+            "title": "Divine Residences",
+            "subTitle": "Dubai",
+            "content": "Smart Spaces Crafted for Modern Lifestyles"
+        },
+        "slider6": {
+            "preTitle": "Project Showcase",
+            "title": "Meydan Racecourse Mansion",
+            "subTitle": "Dubai",
+            "content": "Where Grandeur Meets Precision"
+        },
+        "slider7": {
+            "preTitle": "Featured Properties",
+            "title": "Golf View Living Apartments",
+            "subTitle": "Al Zorah, Ajman",
+            "content": "Your Everyday Escape, Overlooking the Greens"
+        },
+        "slider8": {
+            "preTitle": "Featured Properties",
+            "title": "Golf View Living Villas",
+            "subTitle": "Ajman",
+            "content": "Private Villas Surrounded by Nature’s Calm"
+        },
+        "buttonText": "Explore Property",
+        "soldOut": "Sold Out",
+        "section2": {
+            "subTitle": "Signature Projects",
+            "title": "Where Vision Meets Home",
+            "content": "Takmeel crafts timeless residences that blend elegance, innovation, and purpose. Where your dream lifestyle becomes reality."
+        },
+        "testimonial": {
+            "subTitle": "Takmeel – A Voice of Trust",
+            "title": "What Our Clients Say About Us"
+        }
+    },
+    "HeaderForm": {
+        "subTitle": "WE ARE HERE TO HELP",
+        "title": "Get in Touch with Us",
+        "content": "Should this property pique your interest, we encourage you to schedule a private viewing at your earliest convenience.",
+        "field1": {
+            "placeholder": "First Name"
+        },
+        "field2": {
+            "placeholder": "Last Name"
+        },
+        "field3": {
+            "placeholder": "Email"
+        },
+        "field4": {
+            "placeholder": "Enter phone number"
+        },
+        "field5": {
+            "placeholder": "Message"
+        },
+        "submitText": "Send Enquiry"
+    },
+    "GetInTouchForm": {
+        "subTitle": "REGISTER YOUR INTEREST",
+        "title": "Get in Touch with Us",
+        "field1": {
+            "placeholder": "First Name"
+        },
+        "field2": {
+            "placeholder": "Last Name"
+        },
+        "field3": {
+            "placeholder": "Email"
+        },
+        "field4": {
+            "placeholder": "Enter phone number"
+        },
+        "field5": {
+            "placeholder": ""
+        },
+        "field6": {
+            "placeholder": "Select a project",
+            "option1": "Al Barari",
+            "option2": "Divine Residencia",
+            "option3": "Divine Living",
+            "option4": "Divine Residences",
+            "option5": "Meydan Racecourse Mansion",
+            "option6": "Golf View Living Apartments",
+            "option7": "Golf View Living Villas"
+        },
+        "field7": {
+            "placeholder": "What's the purpose of buying?",
+            "option1": "Business",
+            "option2": "Self",
+            "option3": "Investment"
+        },
+        "field8": {
+            "placeholder": "How soon are you looking to buy?",
+            "option1": "Immediately",
+            "option2": "3 Months",
+            "option3": "6 Months",
+            "option4": "1 Year",
+            "option5": "Over 1 year"
+        },
+        "field9": {
+            "placeholder": "Number of bedrooms",
+            "option1": "1 Bedroom",
+            "option2": "2 Bedrooms",
+            "option3": "3 Bedrooms",
+            "option4": "4 Bedrooms",
+            "option5": "5 Bedrooms",
+            "option6": "Penthouse"
+        },
+        "field10": {
+            "placeholder": "Are you assisted by a broker?",
+            "option1": "Yes",
+            "option2": "No"
+        },
+        "buttonText": "Submit Now"
+    },
+    "Footer": {
+        "info": {
+            "address": "Office No 706, Building No 8, Bay Square, Business Bay, Dubai, UAE"
+        },
+        "quickLinks": {
+            "title": "Quick Links",
+            "option1": "Home",
+            "option2": "About us",
+            "option3": "Projects",
+            "option4": "News & Updates"
+        },
+        "help": {
+            "title": "Help",
+            "option1": "Contact us",
+            "option2": "FAQs",
+            "option3": "Privacy Policies",
+            "option4": "Terms of use"
+        },
+        "newsLetter": {
+            "title": "Stay In The Know",
+            "placeholder": "Email Address",
+            "submitText": "Submit",
+            "content": "By signing up I want to hear about new updates and masterpieces and agree with the data protection policy of Takmeel."
+        },
+        "footerBottom": {
+            "line1": " © Takmeel Real Estate Development L.L.C 2025. All Rights Reserved.",
+            "line2": "Designed & Developed By Mccollins Media"
+        }
+    },
+    "AboutUs": {
+        "banner": {
+            "title": "OUR STORY",
+            "subTitle": "your dream home awaits",
+            "subTitleLine2": "its grand unveiling.",
+            "content": "Takmeel orchestrates exquisite marvels that go beyond a home, offering spaces where families & dreams grow and aspirations are accomplished."
+        },
+        "beyondBoundaries": {
+            "title": "Beyond Boundaries.",
+            "titleLine2": "Quality and Creativity in Every Project.",
+            "content": "You can rely on our team of seasoned specialists to provide the kind of unmatched service that paves the way to unlock the doors to your dream home in one of the world’s most beautiful and sought-after locations. Our company is dedicated to quality, creativity, and the continuous quest to make your dreams a reality. Every project we take on is a blank slate for us to combine our skills, explore new ideas, and push the boundaries of quality and creativity."
+        },
+        "ourPeople": {
+            "subTitle": "Our People",
+            "title": "The Visionaries Behind Takmeel",
+            "titleLine2": "Shaping the Future of Real Estate",
+            "person1": {
+                "name": "Mian Asad Bashir",
+                "designation": "Founder & Chairman"
+            },
+            "person2": {
+                "name": "Sheikh Tariq Ali",
+                "designation": "Managing Director"
+            },
+            "person3": {
+                "name": "Hamza Asad",
+                "designation": "Executive Director"
+            },
+            "person4": {
+                "name": "Shohaib Tariq",
+                "designation": "General Manager"
+            },
+            "person5": {
+                "name": "Asim Mustaq",
+                "designation": "Head of Finance"
+            },
+            "person6": {
+                "name": "Rabia Afsheen",
+                "designation": "Head of HR"
+            },
+            "person7": {
+                "name": "Rafique Zaman",
+                "designation": "Head of Project"
+            }
+        },
+        "visionMission": {
+            "vision": {
+                "title": "Takmeel Vision",
+                "content": "A brand committed to building exceptional properties and a culture of Excellence, Integrity, and Innovation."
+            },
+            "mission": {
+                "title": "Takmeel Mission",
+                "lists": {
+                    "item1": {
+                        "span": "CREATE",
+                        "content": "Iconic and Innovative Projects that Redefine Landmarks."
+                    },
+                    "item2": {
+                        "span": "MAINTAIN",
+                        "content": "an Uncompromising Commitment to Exceptional Project Quality."
+                    },
+                    "item3": {
+                        "span": "NURTURE",
+                        "content": "and Elevate a Distinct Human Capital of the Highest Potential."
+                    },
+                    "item4": {
+                        "span": "EXPAND",
+                        "content": "and Encompass Varied Real Estate Sectors for Holistic Growth."
+                    }
+                }
+            }
+        },
+        "stages": {
+            "subTitle": "Stages of Takmeel Development",
+            "title": "A Purpose-Driven Journey of Creating Excellence,",
+            "titleLine2": "Shaping Skylines, and Enriching Communities",
+            "lists": {
+                "item1": {
+                    "title": "Investment",
+                    "content": "Tailored investment plans backed by smart asset management built to deliver lasting value and growth."
+                },
+                "item2": {
+                    "title": "Design",
+                    "content": "Innovative designs that redefine modern living, blending style, comfort, and purposeful aesthetics."
+                },
+                "item3": {
+                    "title": "Development",
+                    "content": "We create future-ready spaces where creativity meets functionality, designed to inspire and perform."
+                },
+                "item4": {
+                    "title": "Sales",
+                    "content": "Understanding customer aspirations to build trust, drive engagement, and close with confidence."
+                },
+                "item5": {
+                    "title": "Marketing",
+                    "content": "Strategic storytelling that builds desire, elevates perception, and forges meaningful brand connections."
+                },
+                "item6": {
+                    "title": "Delivery",
+                    "content": "Turning vision into reality — we ensure every handover brings confidence, quality, and satisfaction."
+                }
+            }
+        },
+        "coreValues": {
+            "subTitle": "Our Core Values",
+            "title": "The Guiding Principles That Define Takmeel's",
+            "titleLine2": "Commitment to Excellence, Integrity, and Innovation",
+            "lists": {
+                "item1": {
+                    "title": "Integrity",
+                    "content": "We uphold unwavering ethical standards, ensuring transparency, honesty, and fairness in every interaction and decision we make."
+                },
+                "item2": {
+                    "title": "Innovation",
+                    "content": "We embrace forward-thinking ideas and cutting-edge technologies to deliver smarter, more effective solutions across all facets of our operations."
+                },
+                "item3": {
+                    "title": "Excellence",
+                    "content": "We are driven by a commitment to excellence, consistently striving to exceed expectations and deliver superior quality in everything we do."
+                },
+                "item4": {
+                    "title": "Respect",
+                    "content": "We foster an environment of mutual respect, valuing the diverse perspectives of our clients, employees, and partners."
+                },
+                "item5": {
+                    "title": "Authenticity",
+                    "content": "We build genuine, trust-based relationships and stand as a credible, dependable force in the real estate development industry."
+                },
+                "item6": {
+                    "title": "Collaboration",
+                    "content": "We champion a culture of teamwork, believing that meaningful collaboration both internally and externally—is key to collective achievement."
+                }
+            }
+        }
+    },
+    "Projects": {
+        "subTitle": "Projects",
+        "title": "Discover Our",
+        "titleLine2": "Featured Properties",
+        "properties": {
+            "slider1": {
+                "title": "Divine Residencia",
+                "subTitle": "Dubai Studio City, Dubai"
+            },
+            "slider2": {
+                "title": "Divine Living",
+                "subTitle": "Arjan, Dubai"
+            },
+            "slider3": {
+                "title": "Divine Residences",
+                "subTitle": "Dubai"
+            },
+            "slider4": {
+                "title": "Meydan Racecourse Mansion",
+                "subTitle": "Dubai"
+            },
+            "slider5": {
+                "title": "Golf View Living Apartments",
+                "subTitle": "Ajman"
+            },
+            "slider6": {
+                "title": "Golf View Living Villas",
+                "subTitle": "Ajman"
+            }
+        },
+        "slider1": {
+            "preTitle": "Coming Soon",
+            "title": "Al Barari",
+            "subTitle": "Majan, Dubai",
+            "content": "Urban Living, Reimagined by Nature"
+        },
+        "slider2": {
+            "preTitle": "Featured Properties",
+            "title": "Divine Residencia",
+            "subTitle": "Dubai Studio City, Dubai",
+            "content": "Where Comfort Meets Contemporary Elegance"
+        },
+        "slider3": {
+            "preTitle": "Featured Properties",
+            "title": "Divine Living",
+            "subTitle": "Arjan, Dubai",
+            "content": "Thoughtfully Designed for Peaceful Living"
+        },
+        "slider4": {
+            "preTitle": "Featured Properties",
+            "title": "Divine Residences",
+            "subTitle": "Dubai",
+            "content": "Smart Spaces Crafted for Modern Lifestyles"
+        },
+        "slider5": {
+            "preTitle": "Project Showcase",
+            "title": "Meydan Racecourse Mansion",
+            "subTitle": "Dubai",
+            "content": "Where Grandeur Meets Precision"
+        },
+        "slider6": {
+            "preTitle": "Featured Properties",
+            "title": "Golf View Living Apartments",
+            "subTitle": "Al Zorah, Ajman",
+            "content": "Your Everyday Escape, Overlooking the Greens"
+        },
+        "slider7": {
+            "preTitle": "Featured Properties",
+            "title": "Golf View Living Villas",
+            "subTitle": "Ajman",
+            "content": "Private Villas Surrounded by Nature’s Calm"
+        },
+        "soldOut": "Sold Out"
+    },
+    "Gallery": {
+        "title": "OUR GALLERY",
+        "subTitle": "Crafted for Inspired Living",
+        "content": "Where purposeful design and visionary innovation converge to create spaces that inspire, elevate, and redefine modern living.",
+        "section1": {
+            "subTitle": "TAKMEEL",
+            "title": "Ajman Exhibition"
+        },
+        "section2": {
+            "subTitle": "TAKMEEL",
+            "title": "International Proprietary Show(IPS) Dubai Exibition"
+        }
+    },
+    "NewsAndUpdates": {
+        "subTitle": "LATEST ARTICLE",
+        "title": "News & Updates",
+        "content": "Stay connected with Takmeel Real Estate Development as we share the latest news, project updates, and industry insights. This section is your direct source for everything happening within our company, from groundbreaking announcements and project milestones to market trends and community initiatives. We’re committed to transparency and keeping you informed, ensuring you’re always up-to-date on our progress and the opportunities we’re creating. Follow our news to stay ahead and be part of the Takmeel journey.",
+        "latestBlog": {
+            "blog1": {
+                "subTitle": "Featured Article",
+                "title": "Understanding 2024 — What to expect in 2025: Demystifying Dubai’s off-plan real estate boom",
+                "content": "Few markets have captured the global investor’s imagination quite like Dubai’s off-plan real estate sector. In 2024, this segment didn’t just grow — it evolved. The year was marked not by the kind of speculative frenzy that once defined the emirate’s real estate landscape, but by measured, confident strides rooted in transparency, smart planning, and a growing maturity in both buyer behavior and developer offerings."
+            },
+            "blog2": {
+                "subTitle": "Featured Article",
+                "title": "5 Things to Know Before Investing in Dubai’s Off-Plan Real Estate",
+                "content": "Dubai’s real estate market has long been a magnet for global investors — and with good reason. Strong returns, tax-free ownership, and a city that never stops reinventing itself make it an exciting playground for property investments. Among the many opportunities available, buying off-plan real estate — properties sold before they’re completed — offers particularly attractive potential"
+            }
+        },
+        "readMore": "Read More"
+    },
+    "ContactUs": {
+        "title": "Hello, How Can We Help You Today?",
+        "getInTouchForm": {
+            "subTitle": "CONTACT US",
+            "title": "Get in Touch with Us",
+            "content": "Need to sell or buy a property? Just get in touch and we will deal with everything else. You’ve made a great choice getting in touch with us.",
+            "field1": {
+                "placeholder": "First Name"
+            },
+            "field2": {
+                "placeholder": "Last Name"
+            },
+            "field3": {
+                "placeholder": "Email Address"
+            },
+            "field4": {
+                "placeholder": "Enter phone number"
+            },
+            "field5": {
+                "placeholder": "Message"
+            },
+            "submitText": "Send Enquiry"
+        },
+        "contactInfo": {
+            "title": "Contact Our Team",
+            "row1": {
+                "title": "TIMINGS",
+                "line1": "Monday - Friday",
+                "line2": "Saturday"
+            },
+            "row2": {
+                "title": "CALL US"
+            },
+            "row3": {
+                "title": "EMAIL"
+            },
+            "row4": {
+                "title": "VISIT US",
+                "office1": {
+                    "place": "Dubai",
+                    "addressLine1": "Office No. 706, Building No. 8,",
+                    "addressLine2": "Bay Square, Business Bay, Dubai, UAE."
+                },
+                "office2": {
+                    "place": "Ajman",
+                    "addressLine1": "G01, Sheikh Ammar Bin Humaid St.",
+                    "addressLine2": "Al Mowaihat 02, Ajman, UAE."
+                },
+                "getDirection": "Get Direction"
+            }
+        }
+    },
+    "FAQS": {
+        "title": "Frequently Asked Questions",
+        "item1": {
+            "question": "What types of properties does Takmeel Development Properties offer?",
+            "answer": "Takmeel Development Properties offers a wide range of real estate options including residential apartments, villas, commercial spaces, off-plan projects, and investment properties across the UAE."
+        },
+        "item2": {
+            "question": "Is Takmeel Development Properties licensed to operate in the UAE?",
+            "answer": "Yes, Takmeel Development Properties is a fully licensed and RERA-registered real estate agency, operating legally and ethically within the UAE market."
+        },
+        "item3": {
+            "question": "How can I schedule a property viewing with Takmeel?",
+            "answer": "You can schedule a viewing by contacting us via phone, WhatsApp, email, or by filling out a request form on our website. Our agents will coordinate a convenient time based on your availability."
+        },
+        "item4": {
+            "question": "Does Takmeel Development Properties assist with property management services?",
+            "answer": "Yes, we provide end-to-end property management services including tenant placement, rent collection, maintenance coordination, and legal compliance."
+        },
+        "item5": {
+            "question": "Can international buyers purchase property through Takmeel?",
+            "answer": "Absolutely. We assist international clients with buying property in designated freehold areas in the UAE and guide them through the entire legal and financial process."
+        },
+        "item6": {
+            "question": "What are the payment plan options for off-plan properties?",
+            "answer": "Off-plan properties often come with flexible post-handover payment plans. We work directly with top developers to offer installment options that fit your budget."
+        },
+        "item7": {
+            "question": "Does Takmeel provide legal or mortgage assistance for property purchases?",
+            "answer": "Yes, we work with a network of trusted mortgage brokers and legal advisors to ensure a smooth and secure property purchase experience."
+        },
+        "item8": {
+            "question": "How does Takmeel help landlords rent out their properties?",
+            "answer": "We market your property across major platforms, screen tenants, handle documentation, and manage the lease process to ensure timely occupancy and rental income."
+        },
+        "item9": {
+            "question": "What areas in the UAE does Takmeel specialize in?",
+            "answer": "We specialize in key real estate markets across Dubai, and Ajman."
+        },
+        "item10": {
+            "question": "How can I get in touch with a Takmeel property advisor?",
+            "answer": "You can reach us via our official website, call us directly, or visit our office. Our property consultants are ready to assist you with expert guidance and support."
+        }
+    },
+    "Careers": {
+        "title": "CAREERS",
+        "content": "We seek passionate and driven individuals to fill open positions across various departments. Whether you're an experienced professional or a fresh talent looking to make your mark, Takmeel offers a collaborative environment where creativity and dedication thrive. Join us in shaping the future of real estate and unlocking new possibilities. Explore our current openings and embark on a rewarding journey with Takmeel Real Estate.",
+        "vacancies": {
+            "subTitle": "Join Our Mission to Build the Future",
+            "title": "Explore current opportunities at Takmeel",
+            "titleLine2": "and be part of a team that's transforming ideas into impactful solutions",
+            "role1": {
+                "position": "Administrative Assistant",
+                "content": "Takmeel is seeking a proactive and detail-oriented Administrative Assistant to support day-to-day office operations and ensure organizational efficiency. The ideal candidate will be highly organized and capable of managing a wide range of administrative tasks, including document preparation, inventory control, and vendor coordination. You will be responsible for maintaining filing systems, supporting internal teams, and handling procurement processes through ERP systems. This role requires strong communication skills, a problem-solving mindset, and the ability to multitask in a fast-paced environment while contributing to the smooth functioning of our office and ongoing projects.",
+                "duties": {
+                    "title": "Administrative Assistant Duties:",
+                    "item1": "Provide general administrative support on day-to-day office tasks",
+                    "item2": "Prepare and modify documents including correspondence, reports, drafts, memos, and emails.",
+                    "item3": "Manage and maintain office supplies inventory.",
+                    "item4": "Maintenance and repair of office equipment, building, furniture & fixtures.",
+                    "item5": "Coordinate and negotiate with different vendors/suppliers.",
+                    "item6": "Generate purchase requisitions and purchase order in ERP as per agreed terms and conditions.",
+                    "item7": "Organize and maintain electronic and paper filing systems.",
+                    "item8": "Assist in the preparation of presentations and reports.",
+                    "item9": "Support the team with various administrative tasks and projects as needed."
+                },
+                "duties2": {
+                    "title": "Public Relations Officer (PRO) Duties:",
+                    "item1": "Manage and process all visa applications, renewals, and cancellations for employees.",
+                    "item2": "Liaise with government authorities, ministries, and departments to ensure compliance with regulations.",
+                    "item3": "Prepare and submit documents required for various government transactions (e.g., trade licenses, permits, certifications).",
+                    "item4": "Stay updated on changes in government laws and procedures and advise the company on any necessary actions.",
+                    "item5": "Handle employee relations matters pertaining to government regulations and documentation.",
+                    "item6": "Assist with the attestation of documents as required.",
+                    "item7": "Maintain accurate records of all PRO-related activities and documentation.",
+                    "item8": "Facilitate the renewal of company licenses and registrations.",
+                    "item9": "Manage the company's relationship with relevant government entities."
+                },
+                "qualification": {
+                    "title": "Qualifications:",
+                    "item1": "Bachelor's degree in Marketing, Business Administration, or a related field. A Master's degree is a plus.",
+                    "item2": "3-5 years of proven experience in marketing within the real estate development industry.",
+                    "item3": "Strong understanding of the real estate market dynamics, customer segments, and sales processes.",
+                    "item4": "Demonstrated success in developing and executing effective multi-channel marketing strategies.",
+                    "item5": "Proficiency in digital marketing tools and platforms, including SEO/SEM, social media marketing, email marketing, CRM systems, and website analytics.",
+                    "item6": "Excellent written and verbal communication skills, with the ability to create compelling marketing content.",
+                    "item7": "Strong project management and organizational skills, with the ability to manage multiple projects simultaneously and meet deadlines.",
+                    "item8": "Analytical and data-driven mindset, with the ability to interpret marketing performance data and make informed decisions.",
+                    "item9": "Strong negotiation and vendor management skills."
+                }
+            },
+            "role2": {
+                "position": "Marketing Manager",
+                "content": "Takmeel is seeking a dynamic and results-oriented Marketing Manager to lead and execute marketing strategies that drive brand awareness, generate leads, and support the successful sales of our real estate projects. The ideal candidate will be a creative thinker with a strong understanding of the real estate market, digital marketing trends, and traditional marketing channels. You will be responsible for developing and implementing comprehensive marketing plans, managing budgets, and collaborating with internal teams and external agencies to achieve marketing objectives.",
+                "duties": {
+                    "title": "Responsibilities:",
+                    "item1": "Develop and implement comprehensive marketing strategies and plans for current and upcoming real estate projects, aligning with overall business goals and sales targets.",
+                    "item2": "Manage and execute multi-channel marketing campaigns, including digital marketing (SEO, SEM, social media, email marketing), content marketing, print advertising, public relations, events, and partnerships.",
+                    "item3": "Conduct thorough market research and competitor analysis to identify opportunities and trends, informing marketing strategies and messaging.",
+                    "item4": "Oversee the creation of compelling marketing materials, including brochures, website content, social media posts, videos, and presentations, ensuring brand consistency and accuracy.",
+                    "item5": "Manage and optimize the company website and online presence to enhance user experience and lead generation.",
+                    "item6": "Plan and execute successful property launches, open houses, and other promotional events.",
+                    "item7": "Develop and manage the marketing budget, ensuring cost-effectiveness and maximizing ROI.",
+                    "item8": "Track, analyze, and report on the performance of marketing campaigns, providing insights and recommendations for optimization.",
+                    "item9": "Build and maintain strong relationships with media outlets, advertising agencies, and other external vendors.",
+                    "item10": "Collaborate closely with the sales team to ensure alignment of marketing and sales efforts and provide them with necessary marketing support and tools.",
+                    "item11": "Stay up-to-date with the latest trends and best practices in real estate marketing and digital technologies.",
+                    "item12": "Ensure all marketing activities comply with relevant regulations and ethical standards."
+                },
+                "qualification": {
+                    "title": "Qualifications:",
+                    "item1": "Bachelor's degree in Marketing, Business Administration, or a related field. A Master's degree is a plus.",
+                    "item2": "3-5 years of proven experience in marketing within the real estate development industry.",
+                    "item3": "Strong understanding of the real estate market dynamics, customer segments, and sales processes.",
+                    "item4": "Demonstrated success in developing and executing effective multi-channel marketing strategies.",
+                    "item5": "Proficiency in digital marketing tools and platforms, including SEO/SEM, social media marketing, email marketing, CRM systems, and website analytics.",
+                    "item6": "Excellent written and verbal communication skills, with the ability to create compelling marketing content.",
+                    "item7": "Strong project management and organizational skills, with the ability to manage multiple projects simultaneously and meet deadlines.",
+                    "item8": "Analytical and data-driven mindset, with the ability to interpret marketing performance data and make informed decisions.",
+                    "item9": "Strong negotiation and vendor management skills."
+                }
+            },
+            "note": "Interested candidates are invited to submit their resume to hr@takmeeluae.com",
+            "applyNow": "Apply Now",
+            "showDetails": "View All Details",
+            "hideDetails": "Hide Details"
+        },
+        "team": {
+            "title": "WHY WORK TOGETHER?",
+            "content": "We seek passionate and driven individuals to fill open positions across various departments. Whether you’re an experienced professional or a fresh talent looking to make your mark, Takmeel offers a collaborative environment where creativity and dedication thrive. Join us in shaping the future of real estate and unlocking new possibilities. Explore our current openings and embark on a rewarding journey with Takmeel Real Estate."
+        },
+        "getInTouchForm": {
+            "title": "Let's Get In Touch",
+            "subTitle": "Please provide the details, and we’ll get back to you.",
+            "field1": {
+                "placeholder": "First Name"
+            },
+            "field2": {
+                "placeholder": "Last Name"
+            },
+            "field3": {
+                "placeholder": "Email Address"
+            },
+            "field4": {
+                "placeholder": "Enter phone number"
+            },
+            "field5": {
+                "line1": "Drag & Drop Files Here",
+                "line2": "or",
+                "line3": " Browse Files"
+            },
+            "submitText": "Send Enquiry"
+        }
+    },
+    "Properties": {
+        "downloadBrochure": "Download Brochure",
+        "soldOut": "Sold Out",
+        "amenitiesIcons": {
+            "subTitle": "AMENITIES AND FACILITIES",
+            "title": "Create Your Perfect Home Layout​",
+            "items": {
+                "swimmingPool": "Swimming Pool",
+                "childrensPool": "Children's Pool",
+                "childrensPlayArea": "Children's Play Area",
+                "indoorGym": "Indoor Gym",
+                "landscapedGarden": "Landscaped Garden",
+                "cinema": "Cinema",
+                "snooker": "Snooker",
+                "spa": "Spa"
+            }
+        },
+        "DivineResidencia": {
+            "title": "Divine Residencia",
+            "subTitle": "Dubai Studio City, Dubai",
+            "content": "Where Comfort Meets Contemporary Elegance",
+            "amenitiesSection": {
+                "subTitle": "Modern Living in the Heart of Dubai Studio City",
+                "title": "Designed for a Well-Rounded Lifestyle",
+                "content": "At Divine Residencia, every element has been thoughtfully designed to enhance your everyday living experience. Located in the heart of Dubai Studio City, this project blends comfort, nature, and functionality—offering a vibrant lifestyle for individuals, couples, and families."
+            },
+            "projectDetailsSection": {
+                "title1": "Residences That Reflect You",
+                "content1": "A curated collection of 1, 2 & 3-bedroom apartments crafted for a modern, balanced lifestyle. Each home features thoughtful layouts with dedicated study rooms, designed to maximize natural light and cross ventilation. Elegant interiors are brought to life with premium materials and sophisticated finishes that offer a timeless aesthetic.",
+                "title2": "Live Close to Nature",
+                "content2": "Set amidst lush green surroundings, these residences are designed to welcome abundant natural light and encourage fresh air circulation. The result is a calming environment that promotes overall well-being and harmony with nature."
+            },
+            "interiorSection": {
+                "subTitle": "Modern Living in the Heart of Dubai Studio City",
+                "title": "Spectacular Views, Contemporary Comfort",
+                "content": "Nestled in Dubai Studio City A vibrant, family-friendly community with seamless access to major roads and city landmarks."
+            },
+            "mapSection": {
+                "title": "EFFORTLESS ACCESS TO ALL CORNERS OF THE CITY",
+                "content": "Nestled in a prime location, Studio City enjoys seamless connectivity to major highways like Hessa Street and Sheikh Mohammed Bin Zayed Road, enjoying effortless access to all corners of the city."
+            }
+        },
+        "DivineLiving": {
+            "title": "Divine Living",
+            "subTitle": "Arjan, Dubai",
+            "content": "Thoughtfully Designed for Peaceful Living",
+            "amenitiesSection": {
+                "subTitle": "Modern Living in the Heart of Arjan",
+                "title": "Timeless Elegance, Modern Comfort",
+                "content": "Tucked away in the vibrant district of Arjan, Divine Living offers a perfect balance of luxury and tranquility. Developed by Takmeel Real Estate, this refined residential project is designed for those who seek spacious living, sophisticated interiors, and a peaceful lifestyle—without compromising on urban connectivity."
+            },
+            "projectDetailsSection": {
+                "title1": "Spacious Urban Living in Arjan",
+                "content1": "This exclusive development features a curated selection of 1, 2, and 3-bedroom apartments. Each residence offers meticulously planned layouts, high-quality finishing and sanitary ware, and world-class materials throughout, ensuring both comfort and elegance.",
+                "title2": "A Family-Friendly Community with Everything You Need",
+                "content2": "Located in a central area with everything at your doorstep, the development boasts an award-winning design by Lucy De Vito. Apartments are equipped with smart home technology and modern automation, and feature bright, spacious interiors with spectacular views of the community."
+            },
+            "interiorSection": {
+                "subTitle": "Spacious Urban Living in Arjan",
+                "title": "Spectacular Views, Contemporary Comfort",
+                "content": "Welcome to Divine Living, where elegance meets everyday comfort in one of Dubai’s most promising neighborhoods—Arjan. Brought to life by Takmeel Real Estate, this exclusive residential development redefines urban living with thoughtfully designed spaces, premium finishes, and a serene environment that offers a welcome escape from the city’s hustle."
+            },
+            "mapSection": {
+                "title": "EFFORTLESS ACCESS TO ALL CORNERS OF THE CITY",
+                "content": "The community features residential complexes, commercial buildings and retail developments. Although residential and peaceful, the luxurious residences offer direct and quick access to Sheikh Zayed Road and Umm Suqeim Street allowing fast reach to the whole city."
+            }
+        },
+        "DivineResidences": {
+            "title": "Divine Residences",
+            "subTitle": "Dubai",
+            "content": "Smart Spaces Crafted for Modern Lifestyles",
+            "amenitiesSection": {
+                "subTitle": "Modern Living in a Lush Urban Setting",
+                "title": "Spectacular Views, Contemporary Comfort",
+                "content": "Located in the heart of Arjan and just moments from the world-famous Dubai Miracle Garden and Butterfly Garden, Divine Residences is a ready-to-move-in residential project crafted for comfort, convenience, and contemporary living. With seamless access to Umm Suqeim Street and major city landmarks, this community strikes the perfect balance between natural serenity and urban vibrance."
+            },
+            "projectDetailsSection": {
+                "title1": "A Curated Collection of Residences",
+                "content1": "Studios, 1 & 2 Bedroom Apartments, Bright, open layouts designed for modern lifestyles, Spacious balconies with community views, Thoughtfully selected color palettes for effortless interior styling",
+                "title2": "Prime Connectivity & Comfort",
+                "content2": "Just 20 minutes from Burj Khalifa, Easy access to Dubai Miracle Garden and Butterfly Garden, Close to major roads and community essentials, Vibrant surroundings with schools, clinics, and shops nearby"
+            },
+            "interiorSection": {
+                "subTitle": "Modern Living in the Heart of Dubai",
+                "title": "Spectacular Views, Contemporary Comfort",
+                "content": "Set amidst the flourishing neighborhood of Arjan, Divine Residences offers an exceptional lifestyle just steps away from Dubai’s iconic Miracle Garden and Butterfly Garden. Thoughtfully designed and ready for immediate occupancy, this modern residential enclave blends contemporary elegance with everyday convenience. With effortless connectivity to Umm Suqeim Street and key destinations across Dubai, residents enjoy a harmonious fusion of tranquil surroundings and dynamic city living."
+            },
+            "mapSection": {
+                "title": "EFFORTLESS ACCESS TO ALL CORNERS OF THE CITY",
+                "content": "The community features residential complexes, commercial buildings and retail developments. Although residential and peaceful, the luxurious residences offer direct and quick access to Sheikh Zayed Road and Umm Suqeim Street allowing fast reach to the whole city."
+            }
+        },
+        "MeydanMansion": {
+            "title": "Meydan Racecourse Mansion",
+            "subTitle": "Dubai",
+            "content": "Where Grandeur Meets Precision",
+            "amenitiesSection": {
+                "subTitle": "Modern Living in the Heart of Dubai",
+                "title": "Unmatched Views, Unparalleled Luxury",
+                "content": "Overlooking the iconic Meydan Racecourse, this architectural gem by Takmeel Real Estate defines the pinnacle of bespoke living. The Meydan Racecourse Mansion is more than a home—it’s a statement of timeless elegance, curated for those who desire privacy, prestige, and panoramic views in the heart of Dubai."
+            },
+            "projectDetailsSection": {
+                "title1": "Features That Redefine Opulence",
+                "content1": "Central Location – Nestled in Meydan, with seamless city access, Award-Winning Design – European aesthetics with a blend of Russian elegance and Italian grace, Spectacular Views – Uninterrupted racecourse panoramas from every room, Smart Home Features – Intelligent systems for lighting, security, and comfort",
+                "title2": "A Mansion that Embodies “The Art of Living”",
+                "content2": "Surrounded by lush landscapes and crafted with natural cut stone, this residence is a tranquil sanctuary in a vibrant city. From serene mornings overlooking the turf to intimate evenings in your private cinema—every moment here is extraordinary."
+            },
+            "interiorSection": {
+                "subTitle": "Modern Living in the Heart of Dubai",
+                "title": "Spectacular Views, Contemporary Comfort",
+                "content": "Nestled in the heart of Dubai’s most sought-after enclave, this exquisite mansion by Takmeel Real Estate is a masterpiece of modern opulence and architectural grace. Designed with a seamless blend of contemporary aesthetics and timeless detail, the residence offers expansive living spaces, sun-drenched interiors, and unobstructed skyline views. Whether you're hosting grand soirées under the stars or enjoying quiet reflection beside the infinity pool, every corner of this home is crafted to elevate your lifestyle. Here, luxury isn't just experienced—it's lived."
+            },
+            "mapSection": {
+                "title": "EFFORTLESS ACCESS TO ALL CORNERS OF THE CITY",
+                "content": "The community features residential complexes, commercial buildings and retail developments. Although residential and peaceful, the luxurious residences offer direct and quick access to Sheikh Zayed Road and Umm Suqeim Street allowing fast reach to the whole city."
+            }
+        },
+        "GolfViewLivingApartment": {
+            "title": "Golf View Living Apartments",
+            "subTitle": "Al Zorah, Ajman",
+            "content": "Your Everyday Escape, Overlooking the Greens",
+            "amenitiesSection": {
+                "subTitle": "Modern Living in the Heart of Al Zorah",
+                "title": "Spectacular Views, Contemporary Comfort",
+                "content": "Nestled in the heart of Al Zorah, Ajman, Golf View Living offers a unique blend of peace, luxury, and accessibility. Overlooking the lush greens of Al Zorah Golf Course, the serene mangroves, and the Ajman skyline, this new residential development is the perfect escape—without ever leaving the city."
+            },
+            "projectDetailsSection": {
+                "title1": "Spacious Urban Living in Al Zorah",
+                "content1": "This thoughtfully designed community features two G+5 buildings with a curated selection of: 1, 2 & 3 Bedroom Apartments, Contemporary layouts, Top-class finishes, Spacious interiors with spectacular views",
+                "title2": "A Peaceful, Luxurious Community",
+                "content2": "Live close to nature and enjoy unmatched connectivity: 1 minute to Al Zorah Golf Club, Near Zorah Beaches & Marina 1, Smooth access to major roads and facilities"
+            },
+            "interiorSection": {
+                "subTitle": "Modern Living in the Heart of Al Zorah",
+                "title": "Spectacular Views, Contemporary Comfort",
+                "content": "Nestled in the heart of Al Zorah, Ajman, Golf View Living offers a unique blend of peace, luxury, and accessibility. Overlooking the lush greens of Al Zorah Golf Course, the serene mangroves, and the Ajman skyline, this new residential development is the perfect escape—without ever leaving the city."
+            },
+            "mapSection": {
+                "title": "",
+                "content": ""
+            }
+        },
+        "GolfViewLivingVilla": {
+            "title": "Golf View Living Villas",
+            "subTitle": "Ajman",
+            "content": "Private Villas Surrounded by Nature’s Calm",
+            "amenitiesSection": {
+                "subTitle": "Modern Living in the Heart of Ajman’s prestigious Al Zorah Golf Course",
+                "title": "Live Where Serenity Meets Sophistication",
+                "content": "Discover a lifestyle of peace and privacy in the heart of Ajman’s prestigious Al Zorah Golf Course. Surrounded by panoramic fairways and lush mangroves, Divine Golf Villas is a limited collection of 20 high-end residences offering spacious interiors, modern architecture, and nature-integrated design—just 25 minutes from Dubai International Airport."
+            },
+            "projectDetailsSection": {
+                "title1": "Villas Crafted for Modern Family Living",
+                "content1": "Each villa welcomes you with an elegant double-height entrance, leading into expansive ground floor living and dining areas that open directly onto golf course views. The large kitchens come equipped with a pantry and service access, while private landscaped gardens and shaded rooftop terraces provide serene outdoor spaces.",
+                "title2": "Project Highlights",
+                "content2": "This exclusive development offers just 20 limited-edition villas, each designed to capture panoramic views of the golf course and surrounding mangroves. Located just minutes from sandy beaches and only 25 minutes from Dubai and 20 from Sharjah, the project blends convenience with natural beauty."
+            },
+            "interiorSection": {
+                "subTitle": "A Tranquil Luxury Retreat at the Heart of Al Zorah Golf Course",
+                "title": "Spectacular Views, Contemporary Comfort",
+                "content": "Discover the perfect harmony of nature, luxury, and modern design at Divine Golf Villas—an exclusive collection of just 20 upscale residences nestled within the prestigious Al Zorah Golf Course in Ajman. Each villa is thoughtfully crafted to blend contemporary architecture with natural beauty, featuring expansive layouts, floor-to-ceiling windows, and seamless indoor-outdoor living."
+            },
+            "mapSection": {
+                "title": "",
+                "content": ""
+            }
+        }
+    },
+    "PrivacyPolicy": {
+        "title": "Privacy Policy",
+        "effective_date": "Effective Date: 20-05-2025",
+        "introduction": "Takmeel Development (\"we\", \"our\", or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services related to property management.",
+        "sections": {
+            "section_1": {
+                "title": "1. Information We Collect",
+                "description": "We may collect personal information that you provide directly to us, including:",
+                "items": [
+                    "Contact Information: Name, email address, phone number, and mailing address.",
+                    "Property Details: Information about properties you own, lease, or inquire about.",
+                    "Payment Information: Billing details for rent or service payments (processed securely).",
+                    "Usage Data: Information automatically collected when you use our website, including IP address, browser type, and usage patterns."
+                ]
+            },
+            "section_2": {
+                "title": "2. How We Use Your Information",
+                "description": "We use the collected information to:",
+                "items": [
+                    "Manage and maintain properties and tenant relationships.",
+                    "Respond to inquiries and provide customer support.",
+                    "Process payments and manage accounts.",
+                    "Improve our website, services, and communication.",
+                    "Comply with legal obligations."
+                ]
+            },
+            "section_3": {
+                "title": "3. Sharing Your Information",
+                "description": "We do not sell your personal data. We may share information with:",
+                "items": [
+                    "Service Providers: Vendors who perform services on our behalf (e.g., maintenance contractors, payment processors).",
+                    "Legal Authorities: When required by law or to protect our rights.",
+                    "Affiliated Entities: As part of a business merger, sale, or reorganization."
+                ]
+            },
+            "section_4": {
+                "title": "4. Data Security",
+                "description": "We implement appropriate security measures to protect your personal data. However, no method of transmission over the internet or method of storage is 100% secure."
+            },
+            "section_5": {
+                "title": "5. Your Rights",
+                "description": "Depending on your location, you may have rights regarding your personal information, such as:",
+                "items": [
+                    "Accessing the data we hold about you",
+                    "Requesting corrections or deletions",
+                    "Process payments and manage accounts.",
+                    "Opting out of marketing communications"
+                ],
+                "contact_note": "To exercise these rights, contact us at [info@takmeeluae.com]."
+            },
+            "section_6": {
+                "title": "6. Cookies and Tracking",
+                "description": "We may use cookies and similar technologies to enhance your experience on our website. You can modify your browser settings to manage cookies."
+            },
+            "section_7": {
+                "title": "7. Third-Party Links",
+                "description": "Our website may contain links to third-party websites. We are not responsible for their privacy practices."
+            },
+            "section_8": {
+                "title": "8. Changes to This Privacy Policy",
+                "description": "We may update this Privacy Policy periodically. Any changes will be posted on this page with a revised effective date."
+            },
+            "section_9": {
+                "title": "9. Contact Us",
+                "description": "For questions or concerns about this policy, contact:",
+                "contact_info": {
+                    "email": "info@takmeeluae.com",
+                    "phone": "+971 523749615"
+                }
+            }
+        }
+    },
+    "TermsOfUse": {
+        "title": "Terms Of Use",
+        "effectiveDate": "Effective Date: 20-05-2025",
+        "introduction": "Welcome to Takmeel Development. These Terms of Use (\"Terms\") govern your access to and use of our website and any related services provided by Takmeel Development (\"we,\" \"us,\" or \"our\"). By accessing or using our website or services, you agree to be bound by these Terms.",
+        "sections": {
+            "section1": {
+                "title": "1. Use of Our Services",
+                "content": "You agree to use our website and services only for lawful purposes and in accordance with these Terms. You must not use the site:",
+                "listItems": [
+                    "In any way that violates any applicable local, national, or international law or regulation.",
+                    "To transmit any unsolicited or unauthorized advertising or promotional material.",
+                    "To harm or attempt to harm minors or others in any way.",
+                    "To interfere with or disrupt the operation of the site or servers."
+                ]
+            },
+            "section2": {
+                "title": "2. User Accounts",
+                "content": "Certain services may require you to create an account. You agree to provide accurate and complete information and to keep your login credentials confidential. You are responsible for all activities under your account."
+            },
+            "section3": {
+                "title": "3. Intellectual Property",
+                "content": "All content on this website—including text, images, graphics, logos, and software—is the property of Takmeel Development or its licensors and is protected by intellectual property laws. You may not use, reproduce, or distribute any content without our written permission."
+            },
+            "section4": {
+                "title": "4. Property Listings and Information",
+                "content": "Information about properties on our website is provided for informational purposes only and is subject to change. We make reasonable efforts to keep property details up to date but do not guarantee their accuracy."
+            },
+            "section5": {
+                "title": "5. Payments and Transactions",
+                "content": "Any payments made through our platform for rent, deposits, or services are subject to our billing terms. All transactions are securely processed through third-party payment processors."
+            },
+            "section6": {
+                "title": "6. Termination",
+                "content": "We reserve the right to suspend or terminate your access to the website or services at any time, without notice, if you violate these Terms or for any other reason deemed necessary."
+            },
+            "section7": {
+                "title": "7. Disclaimers",
+                "content": [
+                    "Our website and services are provided \"as is\" without warranties of any kind, either express or implied.",
+                    "We do not guarantee the availability, accuracy, or reliability of the services or information provided."
+                ]
+            },
+            "section8": {
+                "title": "8. Limitation of Liability",
+                "content": "To the fullest extent permitted by law, Takmeel Development shall not be liable for any indirect, incidental, special, or consequential damages resulting from your use of or inability to use our services."
+            },
+            "section9": {
+                "title": "9. Governing Law",
+                "content": "These Terms are governed by and construed in accordance with the laws of [Insert Jurisdiction]. Any disputes shall be resolved in the courts located in Dubai."
+            },
+            "section10": {
+                "title": "10. Changes to Terms",
+                "content": "We reserve the right to modify these Terms at any time. Changes will be posted on this page with a revised effective date. Continued use of the site after changes means you accept the new Terms."
+            },
+            "contact": {
+                "title": "9. Contact Us",
+                "content": "For questions about these Terms, contact:",
+                "email": "info@takmeeluae.com",
+                "phone": "+971 523749615"
+            }
+        }
+    }
+}

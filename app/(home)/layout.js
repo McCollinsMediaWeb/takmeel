@@ -8,6 +8,8 @@ import "@/styles/responsive.css";
 import "@/styles/slick-slider/slick/slick-theme.css";
 import "@/styles/slick-slider/slick/slick.css";
 import Script from "next/script";
+import { getLocale } from 'next-intl/server';
+import { NextIntlClientProvider } from "next-intl";
 
 
 const geistSans = Geist({
@@ -49,11 +51,17 @@ const cairo = Cairo({
 
 
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+
+  const locale = await getLocale();
+
+
   return (
 
 
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${nunitoSans.variable} ${cairo.variable}`}>
+    <html lang={locale}
+      dir={locale === 'ar' ? 'rtl' : 'ltr'}
+      className={`${geistSans.variable} ${geistMono.variable} ${nunitoSans.variable} ${cairo.variable}`}>
       <head>
         {/* Google tag (gtag.js) */}
         <script
@@ -102,25 +110,26 @@ export default function RootLayout({ children }) {
         </noscript>
         <div className="vibe-stack">
           <GlobalDataProvider>
-            <Script id="zsiq-init" strategy="beforeInteractive">
-              {`
+            <NextIntlClientProvider>
+              <Script id="zsiq-init" strategy="beforeInteractive">
+                {`
         window.$zoho = window.$zoho || {};
         $zoho.salesiq = $zoho.salesiq || { ready: function() {} };
       `}
-            </Script>
+              </Script>
 
-            <Script
-              id="zsiqscript"
-              src="https://salesiq.zohopublic.com/widget?wc=siq56336b532438deb7cfdbff018b021175034a777a0a32d17bd7c230a43c106fbf"
-              strategy="lazyOnload"
-              defer
-            />
+              <Script
+                id="zsiqscript"
+                src="https://salesiq.zohopublic.com/widget?wc=siq56336b532438deb7cfdbff018b021175034a777a0a32d17bd7c230a43c106fbf"
+                strategy="lazyOnload"
+                defer
+              />
 
-            <Header />
-            <main>{children}</main>
-            {/* <Footer /> */}
-            {/* <FooterBottom /> */}
-
+              <Header />
+              <main>{children}</main>
+              {/* <Footer /> */}
+              {/* <FooterBottom /> */}
+            </NextIntlClientProvider>
           </GlobalDataProvider>
         </div>
       </body>

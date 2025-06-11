@@ -18,10 +18,12 @@ import image1 from "../../public/abslider1.jpg"
 import image2 from "../../public/abslider2.jpg"
 import image3 from "../../public/abslider3.jpg"
 import image4 from "../../public/abslider3.jpg"
+import { useLocale } from 'next-intl';
 
-export default function ProjectDetails2({ ThumbImage1,ThumbImage2,text1Heading ,text1Desc,text2Heading ,text2Desc }) {
+export default function ProjectDetails2({ ThumbImage1, ThumbImage2, text1Heading, text1Desc, text2Heading, text2Desc }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
+    const locale = useLocale();
     var settings = {
         dots: true,
         infinite: false,
@@ -63,7 +65,7 @@ export default function ProjectDetails2({ ThumbImage1,ThumbImage2,text1Heading ,
 
     return (
         <div className='position-relative pd-common bg2 ProductDetail2'>
-            
+
             <div className='container'>
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
@@ -72,7 +74,7 @@ export default function ProjectDetails2({ ThumbImage1,ThumbImage2,text1Heading ,
                     viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                 >
                     <div className='row align-items-center mb3'>
-                        <div className='col-md-6'>
+                        <div className='col-md-6' style={{ textAlign: locale === "ar" ? "right" : undefined }}>
                             <div className='BlT2 text-uppercase'>{text1Heading}</div>
                             <div className='Det2T1'>
                                 {text1Desc}
@@ -98,7 +100,7 @@ export default function ProjectDetails2({ ThumbImage1,ThumbImage2,text1Heading ,
                                 alt="Takmeel"
                             />
                         </div>
-                        <div className='col-md-6'>
+                        <div className='col-md-6' style={{ textAlign: locale === "ar" ? "right" : undefined }}>
                             <div className='BlT2 text-uppercase mtm'>{text2Heading}</div>
                             <div className='Det2T1'>
                                 {text2Desc}

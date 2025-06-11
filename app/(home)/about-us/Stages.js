@@ -3,8 +3,11 @@ import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from 'react';
 import Slider from "react-slick";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function Stages() {
+    const t = useTranslations('AboutUs');
+
     const animationVariants = [
         { initial: { opacity: 0, y: 50 }, whileInView: { opacity: 1, y: 0 } }, // Slide up
         { initial: { opacity: 0, x: -50 }, whileInView: { opacity: 1, x: 0 } }, // Slide in from left
@@ -17,33 +20,33 @@ export default function Stages() {
     const stages = [
         {
             imageClass: "image1",
-            title: "Investment",
-            text: "Tailored investment plans backed by smart asset management built to deliver lasting value and growth."
+            title: t('stages.lists.item1.title'),
+            text: t('stages.lists.item1.content')
         },
         {
             imageClass: "image2",
-            title: "Design",
-            text: "Innovative designs that redefine modern living, blending style, comfort, and purposeful aesthetics."
+            title: t('stages.lists.item2.title'),
+            text: t('stages.lists.item2.content')
         },
         {
             imageClass: "image3",
-            title: "Development",
-            text: "We create future-ready spaces where creativity meets functionality, designed to inspire and perform."
+            title: t('stages.lists.item3.title'),
+            text: t('stages.lists.item3.content')
         },
         {
             imageClass: "image4",
-            title: "Sales",
-            text: "Understanding customer aspirations to build trust, drive engagement, and close with confidence."
+            title: t('stages.lists.item4.title'),
+            text: t('stages.lists.item4.content')
         },
         {
             imageClass: "image5",
-            title: "Marketing",
-            text: "Strategic storytelling that builds desire, elevates perception, and forges meaningful brand connections."
+            title: t('stages.lists.item5.title'),
+            text: t('stages.lists.item5.content')
         },
         {
             imageClass: "image6",
-            title: "Delivery",
-            text: "Turning vision into reality — we ensure every handover brings confidence, quality, and satisfaction."
+            title: t('stages.lists.item6.title'),
+            text: t('stages.lists.item6.content')
         }
     ];
 
@@ -59,8 +62,8 @@ export default function Stages() {
                     viewport={{ once: true, amount: 0.5 }}
                 >
                     <div className="text-center">
-                        <div className="CfT1 nunito-text">Stages of Takmeel Development</div>
-                        <div className="CfT2">A Purpose-Driven Journey of Creating Excellence, <br />Shaping Skylines, and Enriching Communities</div>
+                        <div className="CfT1 nunito-text">{t('stages.subTitle')}</div>
+                        <div className="CfT2">{t('stages.title')} <br />{t('stages.titleLine2')}</div>
                     </div>
                 </motion.div>
                 <motion.div

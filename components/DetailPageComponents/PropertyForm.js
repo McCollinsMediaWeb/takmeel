@@ -7,9 +7,13 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import countries from '../../public/countries.json';
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function PropertyForm({ projectName }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
+    const t = useTranslations('GetInTouchForm');
+
+    const locale = useLocale();
 
     const initialForm = {
         firstName: '',
@@ -94,8 +98,8 @@ export default function PropertyForm({ projectName }) {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.5 }}
                 >
-                    <div className='text-center ppT1 nunito-text'>REGISTER YOUR INTEREST</div>
-                    <div className='text-center ppT2'>Get in Touch with Us</div>
+                    <div className='text-center ppT1 nunito-text'>{t('subTitle')}</div>
+                    <div className='text-center ppT2'>{t('title')}</div>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
@@ -108,10 +112,10 @@ export default function PropertyForm({ projectName }) {
                         <div className='row'>
                             <input type="hidden" name="projectName" value={projectName} />
                             {[
-                                { name: 'firstName', placeholder: 'First Name' },
-                                { name: 'lastName', placeholder: 'Last Name' },
+                                { name: 'firstName', placeholder: t('field1.placeholder') },
+                                { name: 'lastName', placeholder: t('field2.placeholder') },
                                 // { name: 'phone', placeholder: 'Phone Number' },
-                                { name: 'email', placeholder: 'Email' }
+                                { name: 'email', placeholder: t('field3.placeholder') }
                             ].map(({ name, placeholder }) => (
                                 <div className='col-md-6' key={name}>
                                     <div className='InputItem position-relative'>
@@ -130,7 +134,7 @@ export default function PropertyForm({ projectName }) {
                             <div className='col-md-6'>
                                 <div className='position-relative'>
                                     <PhoneInput
-                                        placeholder="Enter phone number"
+                                        placeholder={t('field4.placeholder')}
                                         value={formData.phone}
                                         defaultCountry="AE"
                                         onChange={(value) => {
@@ -140,8 +144,9 @@ export default function PropertyForm({ projectName }) {
                                             }));
                                             setErrors((prev) => ({ ...prev, phone: '' }));
                                         }}
-                                        className="CustomPhoneInput"
-                                         />
+                                        // className="CustomPhoneInput"
+                                        className={`CustomPhoneInput ${locale === 'ar' ? 'rtl' : ''}`}
+                                    />
                                     {errors.phone && <div style={errorStyle}>{errors.phone}</div>}
                                 </div>
                             </div>
@@ -172,14 +177,14 @@ export default function PropertyForm({ projectName }) {
                             <div className='col-md-6'>
                                 <div className='InputItem position-relative'>
                                     <select name="project" value={formData.project} onChange={handleChange}>
-                                        <option value="">Select a project</option>
-                                        <option value="divine-al-barari">Divine Al Barari</option>
-                                        <option value="divine-residencia">Divine Residencia</option>
-                                        <option value="divine-living">Divine Living</option>
-                                        <option value="divine-residences">Divine Residences</option>
-                                        <option value="meydan-racecourse-mansion">Meydan Racecourse Mansion</option>
-                                        <option value="golf-view-living-apartments">Golf View Living Apartments</option>
-                                        <option value="golf-view-living-villas">Golf View Living Villas</option>
+                                        <option value="">{t('field6.placeholder')}</option>
+                                        <option value="divine-al-barari">{t('field6.option1')}</option>
+                                        <option value="divine-residencia">{t('field6.option2')}</option>
+                                        <option value="divine-living">{t('field6.option3')}</option>
+                                        <option value="divine-residences">{t('field6.option4')}</option>
+                                        <option value="meydan-racecourse-mansion">{t('field6.option5')}</option>
+                                        <option value="golf-view-living-apartments">{t('field6.option6')}</option>
+                                        <option value="golf-view-living-villas">{t('field6.option7')}</option>
 
                                     </select>
                                     {errors.project && <div style={errorStyle}>{errors.project}</div>}
@@ -189,10 +194,10 @@ export default function PropertyForm({ projectName }) {
                             <div className='col-md-6'>
                                 <div className='InputItem position-relative'>
                                     <select name="purpose" value={formData.purpose} onChange={handleChange}>
-                                        <option value="">What’s the purpose of buying?*</option>
-                                        <option value="business">Business</option>
-                                        <option value="self">Self</option>
-                                        <option value="investment">Investment</option>
+                                        <option value="">{t('field7.placeholder')}</option>
+                                        <option value="business">{t('field7.option1')}</option>
+                                        <option value="self">{t('field7.option2')}</option>
+                                        <option value="investment">{t('field7.option3')}</option>
                                     </select>
                                     {errors.purpose && <div style={errorStyle}>{errors.purpose}</div>}
                                 </div>
@@ -202,12 +207,12 @@ export default function PropertyForm({ projectName }) {
                             <div className='col-md-6'>
                                 <div className='InputItem position-relative'>
                                     <select name="timeframe" value={formData.timeframe} onChange={handleChange}>
-                                        <option value="">How soon are you looking to buy?*</option>
-                                        <option value="immediately">Immediately</option>
-                                        <option value="3months">3 months</option>
-                                        <option value="6months">6 months</option>
-                                        <option value="1year">1 year</option>
-                                        <option value="over1year">Over 1 year</option>
+                                        <option value="">{t('field8.placeholder')}</option>
+                                        <option value="immediately">{t('field8.option1')}</option>
+                                        <option value="3months">{t('field8.option2')}</option>
+                                        <option value="6months">{t('field8.option3')}</option>
+                                        <option value="1year">{t('field8.option4')}</option>
+                                        <option value="over1year">{t('field8.option5')}</option>
                                     </select>
                                     {errors.timeframe && <div style={errorStyle}>{errors.timeframe}</div>}
                                 </div>
@@ -215,13 +220,13 @@ export default function PropertyForm({ projectName }) {
                             <div className='col-md-6'>
                                 <div className='InputItem position-relative'>
                                     <select name="bedrooms" value={formData.bedrooms} onChange={handleChange}>
-                                        <option value="">Number of bedrooms*</option>
-                                        <option value="1">1 Bedroom</option>
-                                        <option value="2">2 Bedrooms</option>
-                                        <option value="3">3 Bedrooms</option>
-                                        <option value="4">4 Bedrooms</option>
-                                        <option value="5">5 Bedrooms</option>
-                                        <option value="penthouse">Penthouse</option>
+                                        <option value="">{t('field9.placeholder')}</option>
+                                        <option value="1">{t('field9.option1')}</option>
+                                        <option value="2">{t('field9.option2')}</option>
+                                        <option value="3">{t('field9.option3')}</option>
+                                        <option value="4">{t('field9.option4')}</option>
+                                        <option value="5">{t('field9.option5')}</option>
+                                        <option value="penthouse">{t('field9.option6')}</option>
                                     </select>
                                     {errors.bedrooms && <div style={errorStyle}>{errors.bedrooms}</div>}
                                 </div>
@@ -230,9 +235,9 @@ export default function PropertyForm({ projectName }) {
                             <div className='col-md-6'>
                                 <div className='InputItem position-relative'>
                                     <select name="broker" value={formData.broker} onChange={handleChange}>
-                                        <option value="">Are you assisted by a broker?*</option>
-                                        <option value="yes">Yes</option>
-                                        <option value="no">No</option>
+                                        <option value="">{t('field10.placeholder')}</option>
+                                        <option value="yes">{t('field10.option1')}</option>
+                                        <option value="no">{t('field10.option2')}</option>
                                     </select>
                                     {errors.broker && <div style={errorStyle}>{errors.broker}</div>}
                                 </div>
@@ -268,7 +273,7 @@ export default function PropertyForm({ projectName }) {
                                             >
                                                 {loading ? 'Submitting...' : (
                                                     <>
-                                                        Submit Now<span className='btn1'>&nbsp;</span>
+                                                        {t('buttonText')}<span className='btn1'>&nbsp;</span>
                                                     </>
                                                 )}
                                             </button>

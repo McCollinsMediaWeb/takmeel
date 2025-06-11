@@ -12,7 +12,7 @@ import b4 from "../../public/b4.jpg";
 import b5 from "../../public/b5.jpg";
 import b6 from "../../public/b6.jpg";
 
-export default function BlogListing({ blogs }) {
+export default function BlogListing({ t, blogs }) {
     const { loadMore, loading, hasMore } = useGlobalData();
 
     return (
@@ -77,12 +77,12 @@ export default function BlogListing({ blogs }) {
                                                 alt="Takmeel"
                                             />
                                         </div>
-                                        <div className="LatestBlogDesc">
+                                        <div className="LatestBlogDesc" dir="ltr">
                                             <div className="LtT1 nunito-text" style={{ textTransform: 'uppercase' }}>{blog?.date} | {blog?.category}</div>
                                             <div className="LtT2">{blog?.heading}</div>
                                             <div className="LtT3 truncate-3-lines">{blog?.subheading}</div>
                                             <div className="text-right">
-                                                <Link href={`/news-updates/${blog._id}`} className='Link6 hover1'>Read More</Link>
+                                                <Link href={`/news-updates/${blog._id}`} className='Link6 hover1'>{t('readMore')}</Link>
                                             </div>
                                         </div>
                                     </div>

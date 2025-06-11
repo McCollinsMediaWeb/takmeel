@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from 'react';
 import Image from "next/image";
 import b1 from "../../../public/cnt.jpg";
+import { useTranslations } from "next-intl";
 
 export default function ContactUsBanner() {
+    const t = useTranslations('ContactUs');
 
     useEffect(() => {
         const screenWidth = window.innerWidth;
@@ -51,7 +53,7 @@ export default function ContactUsBanner() {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.5 }}
                 >
-                    Hello, How Can We Help You Today?
+                    {t('title')}
                 </motion.div>
             </div>
         </section>

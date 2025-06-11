@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from 'react';
 import Slider from "react-slick";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function OurValues() {
+    const t = useTranslations('AboutUs');
     const animationVariants = [
         { initial: { opacity: 0, y: 50 }, whileInView: { opacity: 1, y: 0 } }, // Slide up
         { initial: { opacity: 0, x: -50 }, whileInView: { opacity: 1, x: 0 } }, // Slide in from left
@@ -17,33 +19,33 @@ export default function OurValues() {
     const stages = [
         {
             imageClass: "image7",
-            title: "Integrity",
-            text: "We uphold unwavering ethical standards, ensuring transparency, honesty, and fairness in every interaction and decision we make."
+            title: t('coreValues.lists.item1.title'),
+            text: t('coreValues.lists.item1.content')
         },
         {
             imageClass: "image8",
-            title: "Innovation",
-            text: "We embrace forward-thinking ideas and cutting-edge technologies to deliver smarter, more effective solutions across all facets of our operations."
+            title: t('coreValues.lists.item2.title'),
+            text: t('coreValues.lists.item2.content')
         },
         {
             imageClass: "image9",
-            title: "Excellence",
-            text: "We are driven by a commitment to excellence, consistently striving to exceed expectations and deliver superior quality in everything we do."
+            title: t('coreValues.lists.item3.title'),
+            text: t('coreValues.lists.item3.content')
         },
         {
             imageClass: "image10",
-            title: "Respect",
-            text: "We foster an environment of mutual respect, valuing the diverse perspectives of our clients, employees, and partners."
+            title: t('coreValues.lists.item4.title'),
+            text: t('coreValues.lists.item4.content')
         },
         {
             imageClass: "image11",
-            title: "Authenticity",
-            text: "We build genuine, trust-based relationships and stand as a credible, dependable force in the real estate development industry."
+            title: t('coreValues.lists.item5.title'),
+            text: t('coreValues.lists.item5.content')
         },
         {
             imageClass: "image13",
-            title: "Collaboration",
-            text: "We champion a culture of teamwork, believing that meaningful collaboration both internally and externally—is key to collective achievement."
+            title: t('coreValues.lists.item6.title'),
+            text: t('coreValues.lists.item6.content')
         }
     ];
 
@@ -59,8 +61,8 @@ export default function OurValues() {
                     viewport={{ once: true, amount: 0.5 }}
                 >
                     <div className="text-center">
-                        <div className="CfT1 nunito-text">Our Core Values</div>
-                        <div className="CfT2">The Guiding Principles That Define Takmeel's <br/>Commitment to Excellence, Integrity, and Innovation</div>
+                        <div className="CfT1 nunito-text">{t('coreValues.subTitle')}</div>
+                        <div className="CfT2">{t('coreValues.title')} <br />{t('coreValues.titleLine2')}</div>
                     </div>
                 </motion.div>
                 <motion.div

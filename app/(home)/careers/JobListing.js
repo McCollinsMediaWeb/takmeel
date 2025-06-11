@@ -1,8 +1,10 @@
 'use client';
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 export default function JobListing() {
+    const t = useTranslations('Careers');
     const animationVariants = [
         { initial: { opacity: 0, y: 50 }, whileInView: { opacity: 1, y: 0 } },
         { initial: { opacity: 0, x: -50 }, whileInView: { opacity: 1, x: 0 } },
@@ -30,10 +32,10 @@ export default function JobListing() {
                     viewport={{ once: true, amount: 0.5 }}
                 >
                     <div className="text-center">
-                        <div className="CfT1 nunito-text">Join Our Mission to Build the Future</div>
+                        <div className="CfT1 nunito-text">{t('vacancies.subTitle')}</div>
                         <div className="CfT2">
-                            Explore current opportunities at Takmeel<br />
-                            and be part of a team that's transforming ideas into impactful solutions
+                            {t('vacancies.title')}<br />
+                            {t('vacancies.titleLine2')}
                         </div>
                     </div>
                 </motion.div>
@@ -55,51 +57,51 @@ export default function JobListing() {
                                         viewport={{ once: true, amount: 0.5 }}
                                     >
                                         <div className="JobBox bg2">
-                                            <div className="JobBoxT1">Administrative Assistant</div>
-                                            <div className="JobBoxT2">Takmeel is seeking a proactive and detail-oriented Administrative Assistant to support day-to-day office operations and ensure organizational efficiency. The ideal candidate will be highly organized and capable of managing a wide range of administrative tasks, including document preparation, inventory control, and vendor coordination. You will be responsible for maintaining filing systems, supporting internal teams, and handling procurement processes through ERP systems. This role requires strong communication skills, a problem-solving mindset, and the ability to multitask in a fast-paced environment while contributing to the smooth functioning of our office and ongoing projects.</div>
+                                            <div className="JobBoxT1">{t('vacancies.role1.position')}</div>
+                                            <div className="JobBoxT2">{t('vacancies.role1.content')}</div>
                                             <div className="ReadMoreBox" style={{ display: visibleIndexes.includes(1) ? 'block' : 'none' }}>
-                                                <div className="JobBoxT3">Administrative Assistant Duties:</div>
+                                                <div className="JobBoxT3">{t('vacancies.role1.duties.title')}</div>
                                                 <ul className="JobulLi">
-                                                    <li>Provide general administrative support on day-to-day office tasks</li>
-                                                    <li>Prepare and modify documents including correspondence, reports, drafts, memos, and emails.</li>
-                                                    <li>Manage and maintain office supplies inventory.</li>
-                                                    <li>Maintenance and repair of office equipment, building, furniture & fixtures. </li>
-                                                    <li>Coordinate and negotiate with different vendors/suppliers</li>
-                                                    <li>Generate purchase requisitions and purchase order in ERP as per agreed terms and conditions</li>
-                                                    <li>Organize and maintain electronic and paper filing systems.</li>
-                                                    <li>Assist in the preparation of presentations and reports.</li>
-                                                    <li>Support the team with various administrative tasks and projects as needed.</li>
+                                                    <li>{t('vacancies.role1.duties.item1')}</li>
+                                                    <li>{t('vacancies.role1.duties.item2')}</li>
+                                                    <li>{t('vacancies.role1.duties.item3')}</li>
+                                                    <li>{t('vacancies.role1.duties.item4')}</li>
+                                                    <li>{t('vacancies.role1.duties.item5')}</li>
+                                                    <li>{t('vacancies.role1.duties.item6')}</li>
+                                                    <li>{t('vacancies.role1.duties.item7')}</li>
+                                                    <li>{t('vacancies.role1.duties.item8')}</li>
+                                                    <li>{t('vacancies.role1.duties.item9')}</li>
                                                 </ul>
-                                                <div className="JobBoxT3">Public Relations Officer (PRO) Duties:</div>
+                                                <div className="JobBoxT3"><li>{t('vacancies.role1.duties2.title')}</li></div>
                                                 <ul className="JobulLi">
-                                                    <li>Manage and process all visa applications, renewals, and cancellations for employees.</li>
-                                                    <li>Liaise with government authorities, ministries, and departments to ensure compliance with regulations.</li>
-                                                    <li>Prepare and submit documents required for various government transactions (e.g., trade licenses, permits, certifications).</li>
-                                                    <li>Stay updated on changes in government laws and procedures and advise the company on any necessary actions.</li>
-                                                    <li>Handle employee relations matters pertaining to government regulations and documentation.</li>
-                                                    <li>Assist with the attestation of documents as required.</li>
-                                                    <li>Maintain accurate records of all PRO-related activities and documentation.</li>
-                                                    <li>Facilitate the renewal of company licenses and registrations.</li>
-                                                    <li>Manage the company's relationship with relevant government entities.</li>
+                                                    <li>{t('vacancies.role1.duties2.item1')}</li>
+                                                    <li>{t('vacancies.role1.duties2.item2')}</li>
+                                                    <li>{t('vacancies.role1.duties2.item3')}</li>
+                                                    <li>{t('vacancies.role1.duties2.item4')}</li>
+                                                    <li>{t('vacancies.role1.duties2.item5')}</li>
+                                                    <li>{t('vacancies.role1.duties2.item6')}</li>
+                                                    <li>{t('vacancies.role1.duties2.item7')}</li>
+                                                    <li>{t('vacancies.role1.duties2.item8')}</li>
+                                                    <li>{t('vacancies.role1.duties2.item9')}</li>
                                                 </ul>
-                                                <div className="JobBoxT3">Qualifications:</div>
+                                                <div className="JobBoxT3"><li>{t('vacancies.role1.qualification.title')}</li></div>
                                                 <ul className="JobulLi">
-                                                    <li>Bachelor's degree in Marketing, Business Administration, or a related field. A Master's degree is a plus.   </li>
-                                                    <li>3-5 years of proven experience in marketing within the real estate development industry.</li>
-                                                    <li>Strong understanding of the real estate market dynamics, customer segments, and sales processes.</li>
-                                                    <li>Demonstrated success in developing and executing effective multi-channel marketing strategies.</li>
-                                                    <li>Proficiency in digital marketing tools and platforms, including SEO/SEM, social media marketing, email marketing, CRM systems, and website analytics.</li>
-                                                    <li>Excellent written and verbal communication skills, with the ability to create compelling marketing content.</li>
-                                                    <li>Strong project management and organizational skills, with the ability to manage multiple projects simultaneously and meet deadlines.   </li>
-                                                    <li>Analytical and data-driven mindset, with the ability to interpret marketing performance data and make informed decisions.</li>
-                                                    <li>Strong negotiation and vendor management skills.</li>
+                                                    <li>{t('vacancies.role1.qualification.item1')}</li>
+                                                    <li>{t('vacancies.role1.qualification.item2')}</li>
+                                                    <li>{t('vacancies.role1.qualification.item3')}</li>
+                                                    <li>{t('vacancies.role1.qualification.item4')}</li>
+                                                    <li>{t('vacancies.role1.qualification.item5')}</li>
+                                                    <li>{t('vacancies.role1.qualification.item6')}</li>
+                                                    <li>{t('vacancies.role1.qualification.item7')}</li>
+                                                    <li>{t('vacancies.role1.qualification.item8')}</li>
+                                                    <li>{t('vacancies.role1.qualification.item9')}</li>
                                                 </ul>
-                                                <div className="JobNote">Interested candidates are invited to submit their resume to hr@takmeeluae.com</div>
+                                                <div className="JobNote"><li>{t('vacancies.note')}</li></div>
                                             </div>
                                             <div className="JobButtons">
                                                 {/* <span className="ViewAlldetails Link6 hover1" >View All Details</span> */}
-                                                <span className="ViewAlldetails Link6 hover1" onClick={() => toggleVisibility(1)} >{visibleIndexes.includes(1) ? 'Hide Details' : 'View All Details'}</span>
-                                                <a href="#careerform" className="Link6 hover1">Apply Now</a>
+                                                <span className="ViewAlldetails Link6 hover1" onClick={() => toggleVisibility(1)} >{visibleIndexes.includes(1) ? t('vacancies.hideDetails') : t('vacancies.showDetails')}</span>
+                                                <a href="#careerform" className="Link6 hover1">{t('vacancies.applyNow')}</a>
                                             </div>
                                         </div>
                                     </motion.div>
@@ -115,42 +117,42 @@ export default function JobListing() {
                                     >
 
                                         <div className="JobBox bg2">
-                                            <div className="JobBoxT1">Marketing Manager</div>
-                                            <div className="JobBoxT2">Takmeel is seeking a dynamic and results-oriented Marketing Manager to lead and execute marketing strategies that drive brand awareness, generate leads, and support the successful sales of our real estate projects. The ideal candidate will be a creative thinker with a strong understanding of the real estate market, digital marketing trends, and traditional marketing channels. You will be responsible for developing and implementing comprehensive marketing plans, managing budgets, and collaborating with internal teams and external agencies to achieve marketing objectives.</div>
+                                            <div className="JobBoxT1">{t('vacancies.role2.position')}</div>
+                                            <div className="JobBoxT2">{t('vacancies.role2.content')}</div>
                                             <div className="ReadMoreBox" style={{ display: visibleIndexes.includes(2) ? 'block' : 'none' }}>
-                                                <div className="JobBoxT3">Responsibilities:</div>
+                                                <div className="JobBoxT3">{t('vacancies.role2.duties.title')}</div>
                                                 <ul className="JobulLi">
-                                                    <li>Develop and implement comprehensive marketing strategies and plans for current and upcoming real estate projects, aligning with overall business goals and sales targets.</li>
-                                                    <li>Manage and execute multi-channel marketing campaigns, including digital marketing (SEO, SEM, social media, email marketing), content marketing, print advertising, public relations, events, and partnerships.</li>
-                                                    <li>Conduct thorough market research and competitor analysis to identify opportunities and trends, informing marketing strategies and messaging.</li>
-                                                    <li>Oversee the creation of compelling marketing materials, including brochures, website content, social media posts, videos, and presentations, ensuring brand consistency and accuracy.</li>
-                                                    <li>Manage and optimize the company website and online presence to enhance user experience and lead generation.</li>
-                                                    <li>Plan and execute successful property launches, open houses, and other promotional events.</li>
-                                                    <li>Develop and manage the marketing budget, ensuring cost-effectiveness and maximizing ROI.</li>
-                                                    <li>Track, analyze, and report on the performance of marketing campaigns, providing insights and recommendations for optimization.</li>
-                                                    <li>Build and maintain strong relationships with media outlets, advertising agencies, and other external vendors.</li>
-                                                    <li>Collaborate closely with the sales team to ensure alignment of marketing and sales efforts and provide them with necessary marketing support and tools.</li>
-                                                    <li>Stay up-to-date with the latest trends and best practices in real estate marketing and digital technologies.</li>
-                                                    <li>Ensure all marketing activities comply with relevant regulations and ethical standards.</li>
+                                                    <li>{t('vacancies.role2.duties.item1')}</li>
+                                                    <li>{t('vacancies.role2.duties.item2')}</li>
+                                                    <li>{t('vacancies.role2.duties.item3')}</li>
+                                                    <li>{t('vacancies.role2.duties.item4')}</li>
+                                                    <li>{t('vacancies.role2.duties.item5')}</li>
+                                                    <li>{t('vacancies.role2.duties.item6')}</li>
+                                                    <li>{t('vacancies.role2.duties.item7')}</li>
+                                                    <li>{t('vacancies.role2.duties.item8')}</li>
+                                                    <li>{t('vacancies.role2.duties.item9')}</li>
+                                                    <li>{t('vacancies.role2.duties.item10')}</li>
+                                                    <li>{t('vacancies.role2.duties.item11')}</li>
+                                                    <li>{t('vacancies.role2.duties.item12')}</li>
                                                 </ul>
-                                                <div className="JobBoxT3">Qualifications:</div>
+                                                <div className="JobBoxT3">{t('vacancies.role2.qualification.title')}</div>
                                                 <ul className="JobulLi">
-                                                    <li>Bachelor's degree in Marketing, Business Administration, or a related field. A Master's degree is a plus.   </li>
-                                                    <li>3-5 years of proven experience in marketing within the real estate development industry.</li>
-                                                    <li>Strong understanding of the real estate market dynamics, customer segments, and sales processes.</li>
-                                                    <li>Demonstrated success in developing and executing effective multi-channel marketing strategies.</li>
-                                                    <li>Proficiency in digital marketing tools and platforms, including SEO/SEM, social media marketing, email marketing, CRM systems, and website analytics.</li>
-                                                    <li>Excellent written and verbal communication skills, with the ability to create compelling marketing content.</li>
-                                                    <li>Strong project management and organizational skills, with the ability to manage multiple projects simultaneously and meet deadlines.   </li>
-                                                    <li>Analytical and data-driven mindset, with the ability to interpret marketing performance data and make informed decisions.</li>
-                                                    <li>Strong negotiation and vendor management skills.</li>
+                                                    <li>{t('vacancies.role2.qualification.item1')}</li>
+                                                    <li>{t('vacancies.role2.qualification.item2')}</li>
+                                                    <li>{t('vacancies.role2.qualification.item3')}</li>
+                                                    <li>{t('vacancies.role2.qualification.item4')}</li>
+                                                    <li>{t('vacancies.role2.qualification.item5')}</li>
+                                                    <li>{t('vacancies.role2.qualification.item6')}</li>
+                                                    <li>{t('vacancies.role2.qualification.item7')}</li>
+                                                    <li>{t('vacancies.role2.qualification.item8')}</li>
+                                                    <li>{t('vacancies.role2.qualification.item9')}</li>
                                                 </ul>
-                                                <div className="JobNote">Interested candidates are invited to submit their resume to hr@takmeeluae.com</div>
+                                                <div className="JobNote">{t('vacancies.note')}</div>
                                             </div>
                                             <div className="JobButtons">
                                                 {/* <span className="ViewAlldetails Link6 hover1">View All Details</span> */}
-                                                <span className="ViewAlldetails Link6 hover1" onClick={() => toggleVisibility(2)} >{visibleIndexes.includes(2) ? 'Hide Details' : 'View All Details'}</span>
-                                                <a href="#careerform" className="Link6 hover1">Apply Now</a>
+                                                <span className="ViewAlldetails Link6 hover1" onClick={() => toggleVisibility(2)} >{visibleIndexes.includes(2) ? t('vacancies.hideDetails') : t('vacancies.showDetails')}</span>
+                                                <a href="#careerform" className="Link6 hover1">{t('vacancies.applyNow')}</a>
                                             </div>
                                         </div>
                                     </motion.div>

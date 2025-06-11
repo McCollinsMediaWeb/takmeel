@@ -79,8 +79,10 @@
 import { motion } from "framer-motion";
 import { useEffect } from 'react';
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function CareerFirstBanner() {
+    const t = useTranslations('Careers');
     const containerVariants = {
         hidden: { opacity: 0, y: 40 },
         visible: {
@@ -115,12 +117,12 @@ export default function CareerFirstBanner() {
                                 <div>
                                     <motion.div className="" variants={itemVariants}>
                                         <div className="VmT1 text-left">
-                                            CAREERS
+                                            {t('title')}
                                         </div>
                                     </motion.div>
 
                                     <motion.div className="" variants={itemVariants}>
-                                        <div className="BlT3 nunito-text mb-0 text-left">We seek passionate and driven individuals to fill open positions across various departments. Whether you're an experienced professional or a fresh talent looking to make your mark, Takmeel offers a collaborative environment where creativity and dedication thrive. Join us in shaping the future of real estate and unlocking new possibilities. Explore our current openings and embark on a rewarding journey with Takmeel Real Estate.</div>
+                                        <div className="BlT3 nunito-text mb-0 text-left">{t('content')}</div>
                                     </motion.div>
                                 </div>
                             </motion.div>

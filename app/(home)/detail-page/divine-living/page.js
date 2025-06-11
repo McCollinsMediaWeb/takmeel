@@ -14,6 +14,7 @@ import { getMetaTags } from "@/lib/getMetaTags";
 import MetaInjector from "@/components/Meta/MetaInjector";
 import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
+import DivineLivingClient from "./DivineLivingClient";
 
 export default async function DivineLiving() {
   const metaTags = await getMetaTags("/detail-page/divine-living");
@@ -343,24 +344,18 @@ export default async function DivineLiving() {
       {metaTags.length > 0 && metaTags[0].metaContent && (
         <MetaInjector metaContent={metaTags[0].metaContent} />
       )}
-      <div>
+      <DivineLivingClient />
+      {/* <div>
         <DetailHero {...detailHeroData} projectStatus="Sold Out" />
         <ProjectDetails1  {...DataProjectDetails1} />
         <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
-        {/* <PaymentPlanBlock /> */}
         <ProjectDetails2  {...DataProjectDetails2} />
-        {/* <ProjectDetails3 mainimage1="ovr2.jpg" data={DataProjectDetails3} /> */}
-
         <ProjectDetails4  {...DataProjectDetails4} />
-        {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
-
-
         <ProjectDetails7 mapimage="new2.jpg" mobileMapImage="new2m.jpg" {...DataProjectDetails7} />
-        {/* <CostCalculator /> */}
         <PropertyForm projectName="Divine Living" />
         <Footer />
         <FooterBottom />
-      </div>
+      </div> */}
     </>
   );
 }

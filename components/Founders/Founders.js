@@ -14,7 +14,10 @@ import f5 from "../../public/t4.jpg"
 import f6 from "../../public/t5.jpg"
 import f7 from "../../public/t6.jpg"
 import f8 from "../../public/rf.jpg"
+import { useLocale, useTranslations } from "next-intl";
 export default function Founders() {
+    const t = useTranslations('AboutUs');
+    const locale = useLocale();
 
 
 
@@ -106,6 +109,8 @@ export default function Founders() {
         // autoplaySpeed: 2000,
         // CssEase: 'linear',
         // cssEase: 'ease-in-out',
+        // rtl: true,
+        initialSlide: locale === "ar" ? 7 - 1 : 0,
         pauseOnHover: true,
         responsive: [
             {
@@ -289,9 +294,9 @@ export default function Founders() {
                         viewport={{ once: true, amount: 0.5 }}
                     >
                         <div className="text-center">
-                            <div className="CfT1 nunito-text">Our People</div>
-                            <div className="CfT2">The Visionaries Behind Takmeel<br />
-                                Shaping the Future of Real Estate</div>
+                            <div className="CfT1 nunito-text">{t('ourPeople.subTitle')}</div>
+                            <div className="CfT2">{t('ourPeople.title')}<br />
+                                {t('ourPeople.titleLine2')}</div>
                         </div>
                     </motion.div>
                     <motion.div
@@ -315,8 +320,8 @@ export default function Founders() {
                                             />
                                         </div>
                                         <div className="FounderDetails">
-                                            <div className="FounderName">Mian Asad Bashir</div>
-                                            <div className="FounderPosition">Founder & Chairman</div>
+                                            <div className="FounderName">{t('ourPeople.person1.name')}</div>
+                                            <div className="FounderPosition">{t('ourPeople.person1.designation')}</div>
                                             {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
                                             </div> */}
@@ -337,8 +342,8 @@ export default function Founders() {
                                             />
                                         </div>
                                         <div className="FounderDetails">
-                                            <div className="FounderName">Sheikh Tariq Ali</div>
-                                            <div className="FounderPosition">Managing Director</div>
+                                            <div className="FounderName">{t('ourPeople.person2.name')}</div>
+                                            <div className="FounderPosition">{t('ourPeople.person2.designation')}</div>
                                             {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
                                             </div> */}
@@ -357,8 +362,8 @@ export default function Founders() {
                                             />
                                         </div>
                                         <div className="FounderDetails">
-                                            <div className="FounderName">Hamza Asad</div>
-                                            <div className="FounderPosition">Executive Director</div>
+                                            <div className="FounderName">{t('ourPeople.person3.name')}</div>
+                                            <div className="FounderPosition">{t('ourPeople.person3.designation')}</div>
                                             {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
                                             </div> */}
@@ -378,8 +383,8 @@ export default function Founders() {
                                             />
                                         </div>
                                         <div className="FounderDetails">
-                                            <div className="FounderName">Shohaib Tariq</div>
-                                            <div className="FounderPosition">General Manager</div>
+                                            <div className="FounderName">{t('ourPeople.person4.name')}</div>
+                                            <div className="FounderPosition">{t('ourPeople.person4.designation')}</div>
                                             {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
                                             </div> */}
@@ -399,8 +404,8 @@ export default function Founders() {
                                             />
                                         </div>
                                         <div className="FounderDetails">
-                                            <div className="FounderName">Asim Mustaq</div>
-                                            <div className="FounderPosition">Head of Finance</div>
+                                            <div className="FounderName">{t('ourPeople.person5.name')}</div>
+                                            <div className="FounderPosition">{t('ourPeople.person5.designation')}</div>
                                             {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
                                             </div> */}
@@ -420,8 +425,8 @@ export default function Founders() {
                                             />
                                         </div>
                                         <div className="FounderDetails">
-                                            <div className="FounderName">Rabia Afsheen</div>
-                                            <div className="FounderPosition">Head of HR</div>
+                                            <div className="FounderName">{t('ourPeople.person6.name')}</div>
+                                            <div className="FounderPosition">{t('ourPeople.person6.designation')}</div>
                                             {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
                                             </div> */}
@@ -441,8 +446,8 @@ export default function Founders() {
                                             />
                                         </div>
                                         <div className="FounderDetails">
-                                            <div className="FounderName">Rafique Zaman</div>
-                                            <div className="FounderPosition">Head of Project</div>
+                                            <div className="FounderName">{t('ourPeople.person7.name')}</div>
+                                            <div className="FounderPosition">{t('ourPeople.person7.designation')}</div>
                                             {/* <div className="text-right">
                                                 <a href="#" className="MoreInfoLink nunito-text">More Info</a>
                                             </div> */}

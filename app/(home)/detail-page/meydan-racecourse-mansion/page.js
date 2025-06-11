@@ -13,6 +13,7 @@ import MetaInjector from "@/components/Meta/MetaInjector";
 import { getMetaTags } from "@/lib/getMetaTags";
 import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
+import MeydanRacecourseMansionClient from "./MeydanRacecourceMansionClient";
 
 export default async function MeydanRacecourseMansion() {
   const metaTags = await getMetaTags("/detail-page/meydan-racecourse-mansion");
@@ -307,20 +308,18 @@ export default async function MeydanRacecourseMansion() {
       {metaTags.length > 0 && metaTags[0].metaContent && (
         <MetaInjector metaContent={metaTags[0].metaContent} />
       )}
-      <div>
+      <MeydanRacecourseMansionClient />
+      {/* <div>
         <DetailHero {...detailHeroData} />
         <ProjectDetails1  {...DataProjectDetails1} />
         <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
         <ProjectDetails2  {...DataProjectDetails2} />
-        {/* <ProjectDetails3 mainimage1="ovr7.jpg" data={DataProjectDetails3} /> */}
         <ProjectDetails4  {...DataProjectDetails4} />
-        {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
         <ProjectDetails7 mapimage="new5.jpg" mobileMapImage="new5m.jpg"  {...DataProjectDetails7} />
-        {/* /<CostCalculator /> */}
         <PropertyForm projectName="Meydan Racecourse Mansion" />
         <Footer />
         <FooterBottom />
-      </div>
+      </div> */}
     </>
   );
 }

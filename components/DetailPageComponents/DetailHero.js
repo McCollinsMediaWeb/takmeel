@@ -176,6 +176,7 @@ import 'yet-another-react-lightbox/styles.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
 import TypingText from '../Animations/TypingText';
 import CatalogueForm from '../ContactForm/CatalogueForm';
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function DetailHero({
     backgroundImage,
@@ -192,6 +193,8 @@ export default function DetailHero({
     projectStatus,
     placeholderImage
 }) {
+    const t = useTranslations('Properties');
+    const locale = useLocale();
     const containerVariants = {
         hidden: { opacity: 0, y: 40 },
         visible: {
@@ -457,7 +460,7 @@ export default function DetailHero({
                             viewport={{ once: true, amount: 0.5 }}
                         >
                             <div className="row align-items-center">
-                                <div className="col-md-7">
+                                <div className="col-md-7" style={{ textAlign: locale === "ar" ? "right" : undefined }}>
                                     <motion.div
                                         variants={containerVariants}
                                         initial="hidden"
@@ -508,7 +511,7 @@ export default function DetailHero({
                                                     }}
                                                 >
                                                     <div className="Txt1">
-                                                        <span className="PrStatus">{projectStatus}</span>
+                                                        <span className="PrStatus">{t('soldOut')}</span>
                                                     </div>
                                                 </motion.div>
                                             )}
@@ -525,7 +528,7 @@ export default function DetailHero({
                                                 // </a>
 
                                                 <a onClick={() => setIsOpen(!isOpen)} className='hover1' style={{ cursor: 'pointer' }}>
-                                                    Download Brochure
+                                                    {t('downloadBrochure')}
                                                 </a>
                                             )}
                                             {masterPlanLink && (

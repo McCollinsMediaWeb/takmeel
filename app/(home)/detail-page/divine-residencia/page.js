@@ -14,6 +14,8 @@ import { getMetaTags } from "@/lib/getMetaTags";
 import MetaInjector from "@/components/Meta/MetaInjector";
 import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
+import { useTranslations } from "next-intl";
+import DivineResidenciaClient from "./DivineResidenciaClient";
 
 export default async function DivineResidencia() {
   const metaTags = await getMetaTags("/detail-page/divine-residencia");
@@ -27,7 +29,7 @@ export default async function DivineResidencia() {
     text2: "Divine Residencia",
     text3: "Studio City, Dubai",
     brochureLink: "/Divine-Residencia/Brochure/Divine Residencia Studio City Brochure.pdf",
-    placeholderImage:"/cover3.jpg",
+    placeholderImage: "/cover3.jpg",
     GalleryMedia: [
       {
         type: "video",
@@ -331,24 +333,18 @@ export default async function DivineResidencia() {
       {metaTags.length > 0 && metaTags[0].metaContent && (
         <MetaInjector metaContent={metaTags[0].metaContent} />
       )}
-      <div>
+      {/* <div>
         <DetailHero {...detailHeroData} projectStatus="Sold Out" />
         <ProjectDetails1  {...DataProjectDetails1} />
         <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
-        {/* <PaymentPlanBlock /> */}
         <ProjectDetails2  {...DataProjectDetails2} />
-        {/* <ProjectDetails3 mainimage1="ovr2.jpg" data={DataProjectDetails3} /> */}
-
         <ProjectDetails4  {...DataProjectDetails4} />
-        {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
-
-
         <ProjectDetails7 mapimage="new4.jpg" mobileMapImage="new4m.jpg" {...DataProjectDetails7} />
-        {/* <CostCalculator /> */}
         <PropertyForm projectName="Divine Residencia" />
         <Footer />
         <FooterBottom />
-      </div>
+      </div> */}
+      <DivineResidenciaClient />
     </>
   );
 }

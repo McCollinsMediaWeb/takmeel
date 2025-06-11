@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from 'react';
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
+import { useTranslations } from "next-intl";
 
 export default function GetInTouchForm() {
+    const t = useTranslations('ContactUs');
 
     const initialForm = {
         firstName: '',
@@ -90,15 +92,15 @@ export default function GetInTouchForm() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.5 }}
                     >
-                        <div className='CfT1'>CONTACT US</div>
-                        <div className='CfT2' style={{ color: "#F7F7F7" }} >Get in Touch with Us</div>
-                        <div className='CfT3' style={{ color: "#F7F7F7" }} >Need to sell or buy a property? Just get in touch and we will deal with everything else. You’ve made a great choice getting in touch with us.</div>
+                        <div className='CfT1'>{t('getInTouchForm.subTitle')}</div>
+                        <div className='CfT2' style={{ color: "#F7F7F7" }} >{t('getInTouchForm.title')}</div>
+                        <div className='CfT3' style={{ color: "#F7F7F7" }} >{t('getInTouchForm.content')}</div>
                         <form className='FormBox' onSubmit={handleSubmit}>
                             <div className='row'>
                                 {[
-                                    { label: 'First Name', name: 'firstName' },
-                                    { label: 'Last Name', name: 'lastName' },
-                                    { label: 'Email Address', name: 'email' },
+                                    { label: t('getInTouchForm.field1.placeholder'), name: 'firstName' },
+                                    { label: t('getInTouchForm.field2.placeholder'), name: 'lastName' },
+                                    { label: t('getInTouchForm.field3.placeholder'), name: 'email' },
                                 ].map(({ label, name }) => (
                                     <div className='col-md-6' key={name}>
                                         <input
@@ -114,7 +116,7 @@ export default function GetInTouchForm() {
 
                                 <div className='col-md-6'>
                                     <PhoneInput
-                                        placeholder="Enter phone number"
+                                        placeholder={t('getInTouchForm.field4.placeholder')}
                                         value={formData.phone}
                                         defaultCountry="AE"
                                         onChange={(value) => {
@@ -132,7 +134,7 @@ export default function GetInTouchForm() {
                                     <textarea
                                         rows={5}
                                         name="message"
-                                        placeholder="Message"
+                                        placeholder={t('getInTouchForm.field5.placeholder')}
                                         value={formData.message}
                                         onChange={handleChange}
                                     />
@@ -140,7 +142,7 @@ export default function GetInTouchForm() {
                                 </div>
                                 <div className='col-md-12'>
                                     <button className='hover1' type="submit" disabled={loading}>
-                                        {loading ? 'Submitting...' : 'Send Enquiry'}
+                                        {loading ? 'Submitting...' : t('getInTouchForm.submitText')}
                                     </button>
 
                                     {submitted && (

@@ -1,27 +1,29 @@
-'use client'; 
+'use client';
 
 import { motion } from "framer-motion";
 import Link from 'next/link';
 import useMediaQuery from "../hooks/useMediaQuery";
+import { useTranslations } from "next-intl";
 export default function HomeAbout({ backgroundImage, backgroundImageMobile, text1, text2, text3 }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
-    
+    const t = useTranslations('HomePage');
+
     return (
         <section className='HomeAbout pd-common bg2 childWrapper'>
             <div className='container text-center height100p'>
                 <div className='HomeAboutContent HomeAboutItem'>
                     <div className="">
-                                <motion.div
-                                    initial={{ opacity: 0, y: 50 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: "easeOut" }}
-                                    viewport={{ once: true }}
-                                >
-                                    <div className="Txt1 nunito-text text-center mb-1">Signature Projects</div>
-                                    <div className="BlT2 text-uppercase text-center">Where Vision Meets Home</div>
-                                    <div className='BkR1'>Takmeel crafts timeless residences that blend elegance, innovation, and purpose. Where your dream lifestyle becomes reality.</div>
-                                </motion.div>
-                   </div>
+                        <motion.div
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            viewport={{ once: true }}
+                        >
+                            <div className="Txt1 nunito-text text-center mb-1">{t('section2.subTitle')}</div>
+                            <div className="BlT2 text-uppercase text-center">{t('section2.title')}</div>
+                            <div className='BkR1'>{t('section2.content')}</div>
+                        </motion.div>
+                    </div>
                     {/* <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}

@@ -6,6 +6,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
 import useMediaQuery from "../../../components/hooks/useMediaQuery"
+import { useTranslations } from "next-intl";
 
 export default function AboutUsHeader({
     backgroundImage,
@@ -18,6 +19,7 @@ export default function AboutUsHeader({
     projectStatus,
     backgroundVideo = null
 }) {
+    const t = useTranslations('AboutUs');
     const containerRef = useRef(null)
     const isDesktop = useMediaQuery("(min-width: 960px)")
     const [videoLoaded, setVideoLoaded] = useState(false);
@@ -161,7 +163,7 @@ export default function AboutUsHeader({
                                         exit={{ opacity: 0 }}
                                         transition={{ duration: 1 }}
                                     >
-                                        Our Story
+                                        {t('banner.title')}
                                     </motion.div>
                                 )}
 
@@ -174,7 +176,7 @@ export default function AboutUsHeader({
                                         animate={{ opacity: 0 }}
                                         transition={{ duration: 1 }}
                                     >
-                                        Our Story
+                                        {t('banner.title')}
                                     </motion.div>
                                 )}
 
@@ -186,13 +188,13 @@ export default function AboutUsHeader({
                                         </motion.div>
 
                                         <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
-                                            your dream home awaits <br /> its grand unveiling.
+                                            {t('banner.subTitle')} <br /> {t('banner.subTitleLine2')}
 
 
                                         </motion.div>
 
                                         <motion.div className="Txt3 nunito-text SmallSizeTxt" variants={itemVariants}>
-                                            Takmeel orchestrates exquisite marvels that go beyond a home, offering spaces where families & dreams grow and aspirations are accomplished.
+                                            {t('banner.content')}
                                         </motion.div>
                                     </>
                                 )}

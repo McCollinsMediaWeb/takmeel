@@ -1,7 +1,10 @@
 'use client';
 import { motion } from "framer-motion";
 import MapComponent from "@/components/MapComponent/MapComponent";
+import { useLocale, useTranslations } from "next-intl";
 export default function OurOffice() {
+    const t = useTranslations('ContactUs');
+    const locale = useLocale();
 
     const mapData = {
         apiKey: "AIzaSyCBtGUl2z4uc5HX9e7eMmzIHalH2a99Oz4",
@@ -143,8 +146,8 @@ export default function OurOffice() {
                         </div>
 
 
-                        <div className="col-md-6">
-                            <div className='CfT2 contact-team-header mb-5'>Contact Our Team</div>
+                        <div className="col-md-6" style={{ textAlign: locale === "ar" ? "right" : undefined }}>
+                            <div className='CfT2 contact-team-header mb-5'>{t('contactInfo.title')}</div>
                             <div
                                 style={{
                                     display: "flex",
@@ -168,7 +171,7 @@ export default function OurOffice() {
                                         style={{
                                             width: "43%",
                                             minWidth: "150px",
-                                            paddingRight: "20px",
+                                            // paddingRight: "20px",
                                         }}
                                     >
                                         <div
@@ -178,7 +181,7 @@ export default function OurOffice() {
                                             }}
                                             className="CfT1"
                                         >
-                                            TIMINGS
+                                            {t('contactInfo.row1.title')}
                                         </div>
                                     </div>
                                     <div
@@ -190,12 +193,12 @@ export default function OurOffice() {
                                         }}
                                     >
                                         <div>
-                                            <p style={{ margin: "0", fontWeight: "500" }}>Monday - Friday</p>
-                                            <p style={{ margin: "0", color: "#666" }}>8:30 AM to 5:30 PM</p>
+                                            <p style={{ margin: "0", fontWeight: "500" }}>{t('contactInfo.row1.line1')}</p>
+                                            <p style={{ margin: "0", color: "#666" }} dir="ltr">8:30 AM to 5:30 PM</p>
                                         </div>
                                         <div>
-                                            <p style={{ margin: "0", fontWeight: "500" }}>Saturday</p>
-                                            <p style={{ margin: "0", color: "#666" }}>8:30 AM to 12:30 PM</p>
+                                            <p style={{ margin: "0", fontWeight: "500" }}>{t('contactInfo.row1.line2')}</p>
+                                            <p style={{ margin: "0", color: "#666" }} dir="ltr">8:30 AM to 12:30 PM</p>
                                         </div>
                                     </div>
                                 </div>
@@ -225,7 +228,7 @@ export default function OurOffice() {
                                             }}
                                             className="CfT1"
                                         >
-                                            CALL US
+                                            {t('contactInfo.row2.title')}
                                         </div>
                                     </div>
                                     <div
@@ -240,7 +243,7 @@ export default function OurOffice() {
                                             <span style={{ fontSize: "20px" }}>
                                                 <img src="/whatsapp-black-icon.png" />
                                             </span>
-                                            <a href="https://wa.me/971523749615?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties" style={{ color: "#333", textDecoration: "none" }}>
+                                            <a dir="ltr" href="https://wa.me/971523749615?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties" style={{ color: "#333", textDecoration: "none" }}>
                                                 +971 523749615
                                             </a>
                                         </div>
@@ -248,11 +251,11 @@ export default function OurOffice() {
                                             <span style={{ fontSize: "20px" }}>
                                                 <img src="/call-black-icon.png" />
                                             </span>
-                                            <a href="tel:+97145531916" style={{ color: "#333", textDecoration: "none" }}>
+                                            <a dir="ltr" href="tel:+97145531916" style={{ color: "#333", textDecoration: "none" }}>
                                                 +971 45531916
                                             </a>
                                             <span style={{ color: "#666" }}>|</span>
-                                            <a href="tel:+97145655099" style={{ color: "#333", textDecoration: "none" }}>
+                                            <a dir="ltr" href="tel:+97145655099" style={{ color: "#333", textDecoration: "none" }}>
                                                 +971 45655099
                                             </a>
                                         </div>
@@ -284,7 +287,7 @@ export default function OurOffice() {
                                             }}
                                             className="CfT1"
                                         >
-                                            EMAIL
+                                            {t('contactInfo.row3.title')}
                                         </div>
                                     </div>
                                     <div
@@ -325,7 +328,7 @@ export default function OurOffice() {
                                             }}
                                             className="CfT1"
                                         >
-                                            VISIT US
+                                            {t('contactInfo.row4.title')}
                                         </div>
                                     </div>
                                     <div
@@ -338,26 +341,26 @@ export default function OurOffice() {
                                         }}
                                     >
                                         <div style={{ flex: "1", minWidth: "250px" }}>
-                                            <h4 style={{ margin: "0 0 10px 0", fontSize: "18px", fontWeight: "600" }}>Dubai</h4>
+                                            <h4 style={{ margin: "0 0 10px 0", fontSize: "18px", fontWeight: "600" }}>{t('contactInfo.row4.office1.place')}</h4>
                                             <p style={{ margin: "0 0 10px 0", color: "#666", lineHeight: "1.5" }}>
-                                                Office No. 706, Building No. 8,
+                                                {t('contactInfo.row4.office1.addressLine1')}
                                                 <br />
-                                                Bay Square, Business Bay, Dubai, UAE.
+                                                {t('contactInfo.row4.office1.addressLine2')}
                                             </p>
                                             <a href="https://maps.app.goo.gl/kqhWDZuo1m5pVXsV9" style={{ color: "#333", textDecoration: "none", fontWeight: "500" }}>
-                                                Get Direction
+                                                {t('contactInfo.row4.getDirection')}
                                             </a>
                                         </div>
 
                                         <div style={{ flex: "1", minWidth: "250px" }}>
-                                            <h4 style={{ margin: "0 0 10px 0", fontSize: "18px", fontWeight: "600" }}>Ajman</h4>
+                                            <h4 style={{ margin: "0 0 10px 0", fontSize: "18px", fontWeight: "600" }}>{t('contactInfo.row4.office2.place')}</h4>
                                             <p style={{ margin: "0 0 10px 0", color: "#666", lineHeight: "1.5" }}>
-                                                G01, Sheikh Ammar Bin Humaid St.
+                                                {t('contactInfo.row4.office2.addressLine1')}
                                                 <br />
-                                                Al Mowaihat 02, Ajman, UAE.
+                                                {t('contactInfo.row4.office2.addressLine2')}
                                             </p>
                                             <a href="https://maps.app.goo.gl/b3EXFcSGJEprVeB29" style={{ color: "#333", textDecoration: "none", fontWeight: "500" }}>
-                                                Get Direction
+                                                {t('contactInfo.row4.getDirection')}
                                             </a>
                                         </div>
                                     </div>

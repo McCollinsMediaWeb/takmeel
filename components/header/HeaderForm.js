@@ -5,8 +5,11 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from 'react';
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function HeaderForm() {
+    const t = useTranslations('HeaderForm');
+    const locale = useLocale();
     useEffect(() => {
         const toggleButtons = document.querySelectorAll(".toggleForm");
 
@@ -100,7 +103,7 @@ export default function HeaderForm() {
     return (
         <div className='HeaderForm'>
             <div className='Backdrop BackdropForm toggleForm'>&nbsp;</div>
-            <div className='FormPopUp'>
+            <div className='FormPopUp' dir={locale === "ar" ? "rtl" : "ltr"}>
 
                 <div className='text-center'>
                     <div className='MenuHd'>
@@ -112,15 +115,15 @@ export default function HeaderForm() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         viewport={{ once: false, amount: 0.5 }} // triggers when 50% of it is in view
                     >
-                        <div className='CfT1'>WE ARE HERE TO HELP</div>
-                        <div className='CfT2' style={{ color: '#fff' }} >Get in Touch with Us</div>
-                        <div className='CfT3' style={{ color: '#fff' }} >Should this property pique your interest, we encourage you to schedule a private viewing at your earliest convenience. </div>
+                        <div className='CfT1'>{t('subTitle')}</div>
+                        <div className='CfT2' style={{ color: '#fff' }} >{t('title')}</div>
+                        <div className='CfT3' style={{ color: '#fff' }} >{t('content')}</div>
                         <form className='FormBox' onSubmit={handleSubmit}>
                             <div className='row'>
                                 {[
-                                    { label: 'First Name', name: 'firstName' },
-                                    { label: 'Last Name', name: 'lastName' },
-                                    { label: 'Email Address', name: 'email' },
+                                    { label: t('field1.placeholder'), name: 'firstName' },
+                                    { label: t('field2.placeholder'), name: 'lastName' },
+                                    { label: t('field3.placeholder'), name: 'email' },
                                 ].map(({ label, name }) => (
                                     <div className='col-md-12' key={name}>
                                         <input
@@ -136,7 +139,7 @@ export default function HeaderForm() {
 
                                 <div className='col-md-12'>
                                     <PhoneInput
-                                        placeholder="Enter phone number"
+                                        placeholder={t('field4.placeholder')}
                                         value={formData.phone}
                                         defaultCountry="AE"
                                         onChange={(value) => {
@@ -155,7 +158,7 @@ export default function HeaderForm() {
                                     <textarea
                                         rows={5}
                                         name="message"
-                                        placeholder="Message"
+                                        placeholder={t('field5.placeholder')}
                                         value={formData.message}
                                         onChange={handleChange}
                                     />
@@ -164,7 +167,7 @@ export default function HeaderForm() {
 
                                 <div className='col-md-12'>
                                     <button className='hover1' type="submit" disabled={loading}>
-                                        {loading ? 'Submitting...' : 'Send Enquiry'}
+                                        {loading ? 'Submitting...' : t('submitText')}
                                     </button>
 
                                     {submitted && (

@@ -13,6 +13,7 @@ import { getMetaTags } from "@/lib/getMetaTags";
 import MetaInjector from "@/components/Meta/MetaInjector";
 import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
+import GolfViewLivingVillasClient from "./GolfViewLivingVillasClient";
 
 export default async function GolfViewLivingVillas() {
   const metaTags = await getMetaTags("/detail-page/golf-view-living-villas");
@@ -22,7 +23,7 @@ export default async function GolfViewLivingVillas() {
 
   const detailHeroData = {
     backgroundImage: "Divine golf villas_landscape.mp4",
-    placeholderImage:"/cover5.jpg",
+    placeholderImage: "/cover5.jpg",
     backgroundImageMobile: "vill.jpg",
     text1: "Private Villas Surrounded by Nature’s Calm",
     text2: "Golf View Living Villas",
@@ -368,21 +369,20 @@ export default async function GolfViewLivingVillas() {
       {metaTags.length > 0 && metaTags[0].metaContent && (
         <MetaInjector metaContent={metaTags[0].metaContent} />
       )}
-      <div>
+
+      <GolfViewLivingVillasClient />
+      
+      {/* <div>
         <DetailHero {...detailHeroData} projectStatus="Sold Out" />
         <ProjectDetails1 {...DataProjectDetails1} />
         <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
         <ProjectDetails2 {...DataProjectDetails2} />
-        {/* <ProjectDetails3 mainimage1="ovr4.jpg" data={DataProjectDetails3} /> */}
         <ProjectDetails4 {...DataProjectDetails4} />
-        {/* <ProjectDetails5 panoramaimage="/golfstreet.jpg" /> */}
-
         <ProjectDetails7 {...DataProjectDetails7} />
-        {/* <CostCalculator /> */}
         <PropertyForm projectName="Golf View Living Villas" />
         <Footer />
         <FooterBottom />
-      </div>
+      </div> */}
     </>
   );
 }

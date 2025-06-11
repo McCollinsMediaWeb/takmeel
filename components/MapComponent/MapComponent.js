@@ -634,6 +634,7 @@ const MapComponent = ({ apiKey, center, zoom, styles, nearByPlaces, desktopHeigh
                     width: "100%",
                     marginBottom: "20px",
                 }}
+                dir="ltr"
             ></div>
         </div>
     );

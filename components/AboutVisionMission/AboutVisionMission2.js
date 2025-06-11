@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import { useEffect } from 'react';
 import f3 from '../../public/team-photo.jpg'
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 export default function AboutVisionMission2() {
+    const t = useTranslations('AboutUs');
     // Container animation variants
     // Unique variants for each column
     const leftImageVariant = {
@@ -159,12 +161,12 @@ export default function AboutVisionMission2() {
                                 <motion.div variants={containerVariants} initial="hidden" animate="visible">
                                     <motion.div variants={itemVariants}>
                                         <div className="VmT1 text-left mtm1">
-                                            Takmeel Vision
+                                            {t('visionMission.vision.title')}
                                         </div>
                                     </motion.div>
                                     <motion.div variants={itemVariants}>
                                         <div className="VmT2 mb-0 text-left">
-                                           A brand committed to building exceptional properties and a culture of Excellence, Integrity, and Innovation.
+                                            {t('visionMission.vision.content')}
                                         </div>
                                     </motion.div>
                                 </motion.div>
@@ -182,32 +184,32 @@ export default function AboutVisionMission2() {
                                 <motion.div variants={containerVariants} initial="hidden" animate="visible">
                                     <motion.div variants={itemVariants}>
                                         <div className="VmT1 text-left mtm1">
-                                            Takmeel Mission
+                                            {t('visionMission.mission.title')}
                                         </div>
                                     </motion.div>
                                     <ul className="ListTyle1">
                                         <li>
-                                                <motion.div variants={itemVariants}>
-                                                    <div className="VmT2 mb-0 text-left LiSt"><span>CREATE</span> Iconic and Innovative Projects that Redefine Landmarks.</div>
-                                                </motion.div>
+                                            <motion.div variants={itemVariants}>
+                                                <div className="VmT2 mb-0 text-left LiSt"><span>{t('visionMission.mission.lists.item1.span')} </span> {t('visionMission.mission.lists.item1.content')}</div>
+                                            </motion.div>
                                         </li>
                                         <li>
-                                                <motion.div variants={itemVariants}>
-                                                    <div className="VmT2 mb-0 text-left LiSt"><span>MAINTAIN</span>an Uncompromising Commitment to Exceptional Project Quality.</div>
-                                                </motion.div>
+                                            <motion.div variants={itemVariants}>
+                                                <div className="VmT2 mb-0 text-left LiSt"><span>{t('visionMission.mission.lists.item2.span')} </span>{t('visionMission.mission.lists.item2.content')}</div>
+                                            </motion.div>
                                         </li>
                                         <li>
-                                                <motion.div variants={itemVariants}>
-                                                    <div className="VmT2 mb-0 text-left LiSt"><span>NURTURE </span>and Elevate a Distinct Human Capital of the Highest Potential.</div>
-                                                </motion.div>
+                                            <motion.div variants={itemVariants}>
+                                                <div className="VmT2 mb-0 text-left LiSt"><span>{t('visionMission.mission.lists.item3.span')} </span>{t('visionMission.mission.lists.item3.content')}</div>
+                                            </motion.div>
                                         </li>
                                         <li>
-                                                <motion.div variants={itemVariants}>
-                                                    <div className="VmT2 mb-0 text-left LiSt"><span>EXPAND</span>and Encompass Varied Real Estate Sectors for Holistic Growth.</div>
-                                                </motion.div>
+                                            <motion.div variants={itemVariants}>
+                                                <div className="VmT2 mb-0 text-left LiSt"><span>{t('visionMission.mission.lists.item4.span')} </span>{t('visionMission.mission.lists.item4.content')}</div>
+                                            </motion.div>
                                         </li>
                                     </ul>
-                                    
+
                                 </motion.div>
                             </motion.div>
                         </div>

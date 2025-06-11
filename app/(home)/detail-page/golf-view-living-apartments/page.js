@@ -13,6 +13,7 @@ import MetaInjector from "@/components/Meta/MetaInjector";
 import { getMetaTags } from "@/lib/getMetaTags";
 import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
+import GolfViewLivingApartmentsClient from "./GolfViewLivingApartmentsClient";
 
 export default async function GolfViewLivingApartments() {
   const metaTags = await getMetaTags("/detail-page/golf-view-living-apartments");
@@ -337,22 +338,18 @@ export default async function GolfViewLivingApartments() {
       {metaTags.length > 0 && metaTags[0].metaContent && (
         <MetaInjector metaContent={metaTags[0].metaContent} />
       )}
-      <div>
+      <GolfViewLivingApartmentsClient />
+      {/* <div>
         <DetailHero {...detailHeroData} projectStatus="Sold Out" />
         <ProjectDetails1  {...DataProjectDetails1} />
         <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
         <ProjectDetails2  {...DataProjectDetails2} />
-        {/* <ProjectDetails3 mainimage1="ovr6.jpg" data={DataProjectDetails3} /> */}
         <ProjectDetails4  {...DataProjectDetails4} />
-        {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
-
-
         <ProjectDetails7 {...DataProjectDetails7} />
-        {/* <CostCalculator /> */}
         <PropertyForm projectName="Golf View Living Apartments" />
         <Footer />
         <FooterBottom />
-      </div>
+      </div> */}
     </>
   );
 }

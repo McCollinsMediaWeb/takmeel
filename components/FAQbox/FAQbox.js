@@ -3,9 +3,12 @@ import Image from "next/image";
 import Link from 'next/link';
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
 
 
 export default function FAQbox() {
+    const t = useTranslations('FAQS');
+    const locale = useLocale();
     const [activeIndex, setActiveIndex] = useState(0); // Start with the first item open
 
     const toggleAccordion = (index) => {
@@ -13,54 +16,44 @@ export default function FAQbox() {
     };
     const accordionItems = [
         {
-            question: "What types of properties does Takmeel offer?",
-            answer:
-                "Takmeel offers a wide range of real estate options including residential apartments, villas, commercial spaces, off-plan projects, and investment properties across the UAE.",
+            question: t('item1.question'),
+            answer: t('item1.answer'),
         },
         {
-            question: "Is Takmeel licensed to operate in the UAE?",
-            answer:
-                "Yes, Takmeel is a fully licensed and RERA-registered real estate agency, operating legally and ethically within the UAE market.",
+            question: t('item2.question'),
+            answer: t('item2.answer'),
         },
         {
-            question: "How can I schedule a property viewing with Takmeel?",
-            answer:
-                "You can schedule a viewing by contacting us via phone, WhatsApp, email, or by filling out a request form on our website. Our agents will coordinate a convenient time based on your availability.",
+            question: t('item3.question'),
+            answer: t('item3.answer'),
         },
         {
-            question: "Does Takmeel assist with property management services?",
-            answer:
-                "Yes, we provide end-to-end property management services including tenant placement, rent collection, maintenance coordination, and legal compliance.",
+            question: t('item4.question'),
+            answer: t('item4.answer'),
         },
         {
-            question: "Can international buyers purchase property through Takmeel?",
-            answer:
-                "Absolutely. We assist international clients with buying property in designated freehold areas in the UAE and guide them through the entire legal and financial process.",
+            question: t('item5.question'),
+            answer: t('item5.answer'),
         },
         {
-            question: "What are the payment plan options for off-plan properties?",
-            answer:
-                "Off-plan properties often come with flexible post-handover payment plans. We work directly with top developers to offer installment options that fit your budget.",
+            question: t('item6.question'),
+            answer: t('item6.answer'),
         },
         {
-            question: "Does Takmeel provide legal or mortgage assistance for property purchases?",
-            answer:
-                "Yes, we work with a network of trusted mortgage brokers and legal advisors to ensure a smooth and secure property purchase experience.",
+            question: t('item7.question'),
+            answer: t('item7.answer'),
         },
         {
-            question: "How does Takmeel help landlords rent out their properties?",
-            answer:
-                "We market your property across major platforms, screen tenants, handle documentation, and manage the lease process to ensure timely occupancy and rental income.",
+            question: t('item8.question'),
+            answer: t('item8.answer'),
         },
         {
-            question: "What areas in the UAE does Takmeel specialize in?",
-            answer:
-                "We specialize in key real estate markets across Dubai, and Ajman.",
+            question: t('item9.question'),
+            answer: t('item9.answer'),
         },
         {
-            question: "How can I get in touch with a Takmeel property advisor?",
-            answer:
-                "You can reach us via our official website, call us directly, or visit our office. Our property consultants are ready to assist you with expert guidance and support.",
+            question: t('item10.question'),
+            answer: t('item10.answer'),
         },
     ];
     return (
@@ -73,7 +66,7 @@ export default function FAQbox() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.5 }}
                     >
-                        <div className="Ft1">Frequently Asked Questions</div>
+                        <div className="Ft1">{t('title')}</div>
                     </motion.div>
                 </div>
                 <div className="Accordionitems">
@@ -89,7 +82,10 @@ export default function FAQbox() {
                                 key={index}
                                 className={`Accordion ${activeIndex === index ? "active" : ""}`}
                                 onClick={() => toggleAccordion(index)}
-                                style={{ cursor: "pointer" }}
+                                style={{
+                                    cursor: 'pointer',
+                                    textAlign: locale === 'ar' ? 'right' : 'left'
+                                }}
                             >
                                 <div className="AccordionQuestion">{item.question}</div>
                                 {activeIndex === index && (

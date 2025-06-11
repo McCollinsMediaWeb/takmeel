@@ -16,9 +16,11 @@ import p5 from "../../public/k4.jpg"
 import p6 from "../../public/k5.jpg"
 import p7 from "../../public/k6.jpg"
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 
 export default function ProjectsPageHeader() {
+    const t = useTranslations('Projects');
 
     const sliderRef = useRef(null);
     const slickRef = useRef(null);
@@ -186,10 +188,10 @@ export default function ProjectsPageHeader() {
                             transition={{ duration: 0.8, ease: "easeOut" }}
                             viewport={{ once: false, amount: 0.5 }} // triggers when 50% of it is in view
                         >
-                            <div className='HdT1 nunito-text'>Projects</div>
+                            <div className='HdT1 nunito-text'>{t('subTitle')}</div>
                             <div className='HdT2'>
-                                Discover Our<br />
-                                Featured Properties
+                                {t('title')}<br />
+                                {t('titleLine2')}
                             </div>
                             <div className="FtrProperties" ref={sliderRef}>
                                 <Slider ref={slickRef} {...settings}>
@@ -226,8 +228,8 @@ export default function ProjectsPageHeader() {
                                                     />
                                                 </div>
                                                 <div className="ProjectDetails text-center">
-                                                    <div className="PT1">Divine Residencia</div>
-                                                    <div className="PT2">Dubai Studio City, Dubai</div>
+                                                    <div className="PT1">{t('properties.slider1.title')}</div>
+                                                    <div className="PT2">{t('properties.slider1.subTitle')}</div>
                                                 </div>
                                             </div>
                                         </Link>
@@ -245,8 +247,8 @@ export default function ProjectsPageHeader() {
                                                     />
                                                 </div>
                                                 <div className="ProjectDetails text-center">
-                                                    <div className="PT1">Divine Living</div>
-                                                    <div className="PT2">Arjan, Dubai</div>
+                                                    <div className="PT1">{t('properties.slider2.title')}</div>
+                                                    <div className="PT2">{t('properties.slider2.subTitle')}</div>
                                                 </div>
                                             </div>
                                         </Link>
@@ -264,8 +266,8 @@ export default function ProjectsPageHeader() {
                                                     />
                                                 </div>
                                                 <div className="ProjectDetails text-center">
-                                                    <div className="PT1">Divine Residences</div>
-                                                    <div className="PT2">Dubai</div>
+                                                    <div className="PT1">{t('properties.slider3.title')}</div>
+                                                    <div className="PT2">{t('properties.slider3.subTitle')}</div>
                                                 </div>
                                             </div>
                                         </Link>
@@ -283,8 +285,8 @@ export default function ProjectsPageHeader() {
                                                     />
                                                 </div>
                                                 <div className="ProjectDetails text-center">
-                                                    <div className="PT1">Meydan Racecourse Mansion</div>
-                                                    <div className="PT2">Dubai</div>
+                                                    <div className="PT1">{t('properties.slider4.title')}</div>
+                                                    <div className="PT2">{t('properties.slider4.subTitle')}</div>
                                                 </div>
                                             </div>
                                         </Link>
@@ -302,8 +304,8 @@ export default function ProjectsPageHeader() {
                                                     />
                                                 </div>
                                                 <div className="ProjectDetails text-center">
-                                                    <div className="PT1">Golf View Living Apartments</div>
-                                                    <div className="PT2">Ajman</div>
+                                                    <div className="PT1">{t('properties.slider5.title')}</div>
+                                                    <div className="PT2">{t('properties.slider5.subTitle')}</div>
                                                 </div>
                                             </div>
                                         </Link>
@@ -322,8 +324,8 @@ export default function ProjectsPageHeader() {
                                                     />
                                                 </div>
                                                 <div className="ProjectDetails text-center">
-                                                    <div className="PT1">Golf View Living Villas</div>
-                                                    <div className="PT2">Ajman</div>
+                                                    <div className="PT1">{t('properties.slider6.title')}</div>
+                                                    <div className="PT2">{t('properties.slider6.subTitle')}</div>
                                                 </div>
                                             </div>
                                         </Link>

@@ -1,15 +1,17 @@
 'use client'; // optional if using interactivity (like menus)
 
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 export default function FooterBottom() {
+    const t = useTranslations('Footer');
     return (
         <div className='FooterBottom '>
             <div className='container'>
                 {/* <a href='#' className='ChatBoat'>Ask Takmeel</a> */}
                 <div className='row'>
                     <div className='col-md-8'>
-                        © Takmeel Real Estate Development L.L.C 2025. All Rights Reserved. &nbsp;<a href='https://www.mccollinsmedia.com/' target='_blank'>Designed & Developed By Mccollins Media</a>
+                       {t('footerBottom.line1')} &nbsp;<a href='https://www.mccollinsmedia.com/' target='_blank'>{t('footerBottom.line2')}</a>
                     </div>
                     <div className='col-md-4'>
                         <div className='socialMediaLinks'>

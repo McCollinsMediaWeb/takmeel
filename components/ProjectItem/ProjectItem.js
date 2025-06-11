@@ -9,6 +9,7 @@ import useMediaQuery from "../hooks/useMediaQuery"
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useTranslations } from "next-intl"
 gsap.registerPlugin(ScrollTrigger);
 export default function ProjectItem({
     backgroundImage,
@@ -22,6 +23,7 @@ export default function ProjectItem({
     backgroundVideo = null,
     placeholderImage
 }) {
+    const t = useTranslations('HomePage');
     const [startLoop, setStartLoop] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
     const [videoLoaded, setVideoLoaded] = useState(false);
@@ -97,30 +99,30 @@ export default function ProjectItem({
     const boxRef = useRef(null);
 
     useEffect(() => {
-    const el = boxRef.current;
+        const el = boxRef.current;
 
-    // Set initial transform state
-    gsap.set(el, {
-      scale: 0.9,
-      opacity: 0,
-      transformOrigin: 'center center',
-      willChange: 'transform',
-      transformStyle: 'preserve-3d',
-    });
+        // Set initial transform state
+        gsap.set(el, {
+            scale: 0.9,
+            opacity: 0,
+            transformOrigin: 'center center',
+            willChange: 'transform',
+            transformStyle: 'preserve-3d',
+        });
 
-    // Animate based strictly on scroll position
-    gsap.to(el, {
-      scale: 1,
-      opacity: 1,
-      ease: 'none', // Linear with scroll
-      scrollTrigger: {
-        trigger: el,
-        start: 'top 85%',
-        end: 'top 30%',
-        scrub: true, // Animation strictly follows scroll
-      },
-    });
-  }, []);
+        // Animate based strictly on scroll position
+        gsap.to(el, {
+            scale: 1,
+            opacity: 1,
+            ease: 'none', // Linear with scroll
+            scrollTrigger: {
+                trigger: el,
+                start: 'top 85%',
+                end: 'top 30%',
+                scrub: true, // Animation strictly follows scroll
+            },
+        });
+    }, []);
 
     return (
 
@@ -284,7 +286,7 @@ export default function ProjectItem({
                                 <div className="Txt17 nunito-text">{tagline}</div>
                                 {url !== "takmeel-al-barari-view-properties" && (
                                     <Link href={`/detail-page/${url}`} className="Link1 hover1">
-                                        Explore Property
+                                        {t('buttonText')}
                                     </Link>
                                 )}
                                 {projectStatus && (
@@ -338,7 +340,7 @@ export default function ProjectItem({
                                     {url !== "takmeel-al-barari-view-properties" && (
                                         <motion.div variants={itemVariants}>
                                             <Link href={`/detail-page/${url}`} className="Link1 hover1">
-                                                Explore Property
+                                                {t('buttonText')}
                                             </Link>
                                         </motion.div>
                                     )}

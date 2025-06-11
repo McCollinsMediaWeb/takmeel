@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
+import { useTranslations } from "next-intl";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,6 +30,7 @@ export default function FirstProjectItem({
   const scrollBg = useRef(null);
   const contentInnerRef = useRef(null);
   const videoRef = useRef(null);
+  const t = useTranslations('HomePage');
   const isDesktop = useMediaQuery("(min-width: 960px)");
   const [videoLoaded, setVideoLoaded] = useState(false);
 
@@ -370,7 +372,8 @@ export default function FirstProjectItem({
                       </motion.div>
 
                       <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
-                        Crafted for Inspired Living
+                        {/* Crafted for Inspired Living */}
+                        {t('slider1.subTitle')}
                       </motion.div>
 
                       <motion.div className="Txt3 nunito-text SmallSizeTxt" variants={itemVariants}>
@@ -383,7 +386,8 @@ export default function FirstProjectItem({
 
                       <motion.div variants={itemVariants}>
                         <Link href={`/${url}`} className="Link1 hover1">
-                          Explore our projects
+                          {/* Explore our projects */}
+                          {t('slider1.buttonText')}
                         </Link>
                       </motion.div>
                     </>

@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 const bgImages = [
     // '/bannerDesktopFirst.jpg',
@@ -22,6 +23,7 @@ const bgImages = [
 export default function TakmeelMenu() {
     const pathname = usePathname();
     const [active, setActive] = useState(0);
+    const t = useTranslations('Menus');
 
     const [prevImage, setPrevImage] = useState(null);
     const [currentImage, setCurrentImage] = useState(bgImages[active]);
@@ -43,6 +45,8 @@ export default function TakmeelMenu() {
     }, []);
 
     const [imageLoaded, setImageLoaded] = useState(false);
+
+    const isTouchDevice = typeof window !== 'undefined' && 'ontouchstart' in window;
 
     // Auto change image every 3 seconds
     // useEffect(() => {
@@ -297,12 +301,12 @@ export default function TakmeelMenu() {
                     <div className="MenuMiddle toggleMenu">
                         <ul>
                             {[
-                                { path: '/', label: 'Home' },
-                                { path: '/about-us', label: 'Our Story' },
-                                { path: '/projects', label: 'Signature Projects' },
-                                { path: '/gallery', label: 'Visual Journey' },
-                                { path: '/news-updates', label: 'News & Updates' },
-                                { path: '/contact-us', label: 'Let\'s Connect' },
+                                { path: '/', label: t('home') },
+                                { path: '/about-us', label: t('ourStory') },
+                                { path: '/projects', label: t('signatureProjects') },
+                                { path: '/gallery', label: t('visualJourney') },
+                                { path: '/news-updates', label: t('newsAndUpdates') },
+                                { path: '/contact-us', label: t('letsConnect') },
                             ].map((item, index) => (
                                 <li
                                     key={item.path}
@@ -314,13 +318,26 @@ export default function TakmeelMenu() {
                                         transition={{ duration: 0.8, ease: 'easeOut' }}
                                         viewport={{ once: false, amount: 0.5 }}
                                     >
-                                        <Link style={{ width: 'fit-content;' }} href={item.path} className="Link8" onMouseEnter={() => {
-                                            isHoveringRef.current = true;
-                                            setActive(index);
-                                        }}
+                                        <Link style={{ width: 'fit-content;' }} href={item.path} className="Link8"
+                                            // onMouseEnter={() => {
+                                            //     isHoveringRef.current = true;
+                                            //     setActive(index);
+                                            // }}
+                                            // onMouseLeave={() => {
+                                            //     isHoveringRef.current = false;
+                                            // }}
+                                            onMouseEnter={() => {
+                                                if (!isTouchDevice) {
+                                                    isHoveringRef.current = true;
+                                                    setActive(index);
+                                                }
+                                            }}
                                             onMouseLeave={() => {
-                                                isHoveringRef.current = false;
-                                            }}>
+                                                if (!isTouchDevice) {
+                                                    isHoveringRef.current = false;
+                                                }
+                                            }}
+                                        >
                                             {item.label}
                                         </Link>
                                     </motion.div>
@@ -340,7 +357,7 @@ export default function TakmeelMenu() {
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <Link href="/careers" className='Link8'>
-                                        Careers
+                                        {t('careers')}
                                     </Link>
                                 </motion.div>
 
@@ -353,7 +370,7 @@ export default function TakmeelMenu() {
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <Link href="/faqs" className='Link8'>
-                                        FAQs
+                                        {t('faqs')}
                                     </Link>
                                 </motion.div>
 
@@ -366,7 +383,7 @@ export default function TakmeelMenu() {
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <Link href="/privacy-policy" className='Link8'>
-                                        Privacy Policies
+                                        {t('privacyPolicies')}
                                     </Link>
                                 </motion.div>
 
@@ -379,7 +396,7 @@ export default function TakmeelMenu() {
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <Link href="/terms-of-use" className='Link8'>
-                                        Terms of use
+                                        {t('termsOfUse')}
                                     </Link>
                                 </motion.div>
 

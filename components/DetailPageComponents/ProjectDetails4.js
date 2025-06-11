@@ -16,6 +16,7 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Slider from "react-slick";
 import image1 from "../../public/as1.jpg"
 import image2 from "../../public/as2.jpg"
+import { useLocale } from 'next-intl';
 
 export default function ProjectDetails4({ text1, text2, text3, GalleryImagesWithNames }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
@@ -23,6 +24,7 @@ export default function ProjectDetails4({ text1, text2, text3, GalleryImagesWith
     const sliderRef = useRef(null);
     const slickRef = useRef(null);
     const [inView, setInView] = useState(false);
+    const locale = useLocale();
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -210,7 +212,7 @@ export default function ProjectDetails4({ text1, text2, text3, GalleryImagesWith
                     viewport={{ once: true, amount: 0.5 }} // triggers when 50% of it is in view
                 >
                     <div className='row'>
-                        <div className='col-md-12'>
+                        <div className='col-md-12' style={{ textAlign: locale === "ar" ? "right" : undefined }}>
                             <div className="BlT1 nunito-text text-uppercase">{text1}</div>
                             <div className="BlT2 text-uppercase">{text2}​</div>
                             <div className="BlT3">{text3}</div>

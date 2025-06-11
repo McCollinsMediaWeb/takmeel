@@ -6,6 +6,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
 import useMediaQuery from "../../../components/hooks/useMediaQuery"
+import { useTranslations } from "next-intl";
 
 export default function GalleryHeader({
     backgroundImage,
@@ -18,6 +19,7 @@ export default function GalleryHeader({
     projectStatus,
     backgroundVideo = null
 }) {
+    const t = useTranslations('Gallery');
     const containerRef = useRef(null)
     const isDesktop = useMediaQuery("(min-width: 960px)")
     const [videoLoaded, setVideoLoaded] = useState(false);
@@ -161,7 +163,7 @@ export default function GalleryHeader({
                                         exit={{ opacity: 0 }}
                                         transition={{ duration: 1 }}
                                     >
-                                        Our Gallery
+                                        {t('title')}
                                     </motion.div>
                                 )}
 
@@ -174,7 +176,7 @@ export default function GalleryHeader({
                                         animate={{ opacity: 0 }}
                                         transition={{ duration: 1 }}
                                     >
-                                        Our Gallery
+                                        {t('title')}
                                     </motion.div>
                                 )}
 
@@ -186,13 +188,13 @@ export default function GalleryHeader({
                                         </motion.div>
 
                                         <motion.div className="Txt2 text-uppercase" variants={itemVariants}>
-                                            Crafted for Inspired Living
+                                            {t('subTitle')}
 
 
                                         </motion.div>
 
                                         <motion.div className="Txt3 nunito-text SmallSizeTxt" variants={itemVariants}>
-                                            Where purposeful design and visionary innovation converge to create spaces that inspire, elevate, and redefine modern living.
+                                            {t('content')}
                                         </motion.div>
                                     </>
                                 )}

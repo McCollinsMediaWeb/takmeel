@@ -4,7 +4,9 @@ import Link from 'next/link';
 import { motion } from "framer-motion";
 import React from "react";
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 export default function WhyWorkTogether() {
+    const t = useTranslations('Careers');
 
     return (
         <div className="BlogPostMainArea pd-common bg2">
@@ -17,7 +19,7 @@ export default function WhyWorkTogether() {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 centerBlock">
-                            <div className="BlT2" style={{ margin: '20px' }}>WHY WORK TOGETHER<span style={{ fontFamily: 'monospace' }} >?</span></div>
+                            <div className="BlT2" style={{ margin: '20px' }}>{t('team.title')}</div>
                             <Image
                                 src="/team-photo.jpg"
                                 width={478}
@@ -25,7 +27,7 @@ export default function WhyWorkTogether() {
                                 layout="responsive"
                                 alt="Takmeel"
                             />
-                            <div className="BlT3" style={{ margin: '20px' }}>We seek passionate and driven individuals to fill open positions across various departments. Whether you’re an experienced professional or a fresh talent looking to make your mark, Takmeel offers a collaborative environment where creativity and dedication thrive. Join us in shaping the future of real estate and unlocking new possibilities. Explore our current openings and embark on a rewarding journey with Takmeel Real Estate.</div>
+                            <div className="BlT3" style={{ margin: '20px' }}>{t('team.content')}</div>
                         </div>
                     </div>
                 </div>

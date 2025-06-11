@@ -15,7 +15,7 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Slider from "react-slick";
 
-export default function GalleryRow({ text1, GalleryImages }) {
+export default function GalleryRow({ t, text1, GalleryImages }) {
 
     const slickRef = useRef(null);
     const sliderRef = useRef(null);
@@ -152,8 +152,8 @@ export default function GalleryRow({ text1, GalleryImages }) {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true }} // triggers when 50% of it is in view
             >
-                <div className="Txt1 nunito-text text-center mb-1">TAKMEEL</div>
-                <div className="BlT2 text-uppercase text-center">{text1}</div>
+                <div className="Txt1 nunito-text text-center mb-1">{t('section1.subTitle')}</div>
+                <div className="BlT2 text-uppercase text-center" dir="ltr">{text1}</div>
             </motion.div>
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
