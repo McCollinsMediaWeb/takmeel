@@ -16,11 +16,12 @@ import p5 from "../../public/k4.jpg"
 import p6 from "../../public/k5.jpg"
 import p7 from "../../public/k6.jpg"
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 
 export default function ProjectsPageHeader() {
     const t = useTranslations('Projects');
+    const locale = useLocale();
 
     const sliderRef = useRef(null);
     const slickRef = useRef(null);
@@ -128,6 +129,8 @@ export default function ProjectsPageHeader() {
         // autoplaySpeed: 2000,
         // CssEase: 'linear',
         // cssEase: 'ease-in-out',
+        rtl: locale === "ar" ? true : false,
+        initialSlide: locale === "ar" ? 6 - 1 : 0,
         pauseOnHover: true,
         responsive: [
             {

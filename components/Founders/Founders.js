@@ -15,9 +15,11 @@ import f6 from "../../public/t5.jpg"
 import f7 from "../../public/t6.jpg"
 import f8 from "../../public/rf.jpg"
 import { useLocale, useTranslations } from "next-intl";
+import useMediaQuery from "../hooks/useMediaQuery";
 export default function Founders() {
     const t = useTranslations('AboutUs');
     const locale = useLocale();
+    const isDesktop = useMediaQuery("(min-width: 960px)")
 
 
 
@@ -109,8 +111,10 @@ export default function Founders() {
         // autoplaySpeed: 2000,
         // CssEase: 'linear',
         // cssEase: 'ease-in-out',
-        // rtl: true,
-        initialSlide: locale === "ar" ? 7 - 1 : 0,
+        rtl: locale === "ar" ? true : false,
+        initialSlide: locale === "ar" ? 6 : 0,
+        // initialSlide: 0,
+        // initialSlide: isDesktop ? (locale === "ar" ? 6 : 0) : 4,
         pauseOnHover: true,
         responsive: [
             {
@@ -120,7 +124,8 @@ export default function Founders() {
                     slidesToScroll: 1,
                     infinite: true,
                     dots: true,
-                    centerMode: true
+                    centerMode: true,
+                    // initialSlide: 1,
                 }
             },
             {
@@ -128,7 +133,7 @@ export default function Founders() {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    initialSlide: 1,
+                    // initialSlide: 1,
                     centerMode: true
                 }
             },
@@ -137,7 +142,7 @@ export default function Founders() {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerMode: true
+                    centerMode: true,
                 }
             }
         ],
