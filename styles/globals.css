@@ -1971,6 +1971,10 @@ body .slick-prev::before {
   background-color: #d6b264;
 }
 
+.mapLayoutActive {
+  background-color: #d6b264;
+}
+
 .DownloadBtn {
   width: 30px;
   height: 30px;
@@ -1978,7 +1982,8 @@ body .slick-prev::before {
   background-size: 100% 100%;
   position: absolute;
   top: 25px;
-  right: 30px;
+  /* right: 30px; */
+  inset-inline-end: 30px;
 }
 
 .LocationRowWrap .BlT2 {
@@ -3356,4 +3361,9 @@ body {
 .JobBoxT3::after {
   left: auto;
   right: 0;
+}
+
+[dir="rtl"] .VmT5::after {
+  /* left: auto; */
+  right: -30px;
 }

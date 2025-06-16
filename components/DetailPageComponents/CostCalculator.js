@@ -4,9 +4,11 @@ import Link from 'next/link';
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import useMediaQuery from "../hooks/useMediaQuery";
+import { useTranslations } from 'next-intl';
 
 export default function CostCalculator({ }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
+    const t = useTranslations('Properties');
 
     const [propertyPrice, setPropertyPrice] = useState(1000000);
     const [downPayment, setDownPayment] = useState(100000);
@@ -212,13 +214,13 @@ export default function CostCalculator({ }) {
             <div className='container'>
 
 
-                <div className='text-center ccT1'>Takmeel Cost Calculator</div>
+                <div className='text-center ccT1'>{t('DivineAlBarari.costCalculator.title')}</div>
 
                 <div className="tkc-grid">
                     {/* Form Section */}
                     <div className="tkc-card">
                         <div className="tkc-form-group">
-                            <label htmlFor="property-price" className="tkc-label">Property Price</label>
+                            <label htmlFor="property-price" className="tkc-label">{t('DivineAlBarari.costCalculator.field1.label')}</label>
                             <div className="tkc-input-wrapper">
                                 <input
                                     id="property-price"
@@ -233,7 +235,7 @@ export default function CostCalculator({ }) {
 
                         <div className="tkc-grid-row">
                             <div className="tkc-form-group">
-                                <label htmlFor="down-payment" className="tkc-label">Down Payment</label>
+                                <label htmlFor="down-payment" className="tkc-label">{t('DivineAlBarari.costCalculator.field2.label')}</label>
                                 <div className="tkc-input-wrapper">
                                     <input
                                         id="down-payment"
@@ -247,7 +249,7 @@ export default function CostCalculator({ }) {
                             </div>
 
                             <div className="tkc-form-group">
-                                <label htmlFor="percentage" className="tkc-label">Percentage</label>
+                                <label htmlFor="percentage" className="tkc-label">{t('DivineAlBarari.costCalculator.field3.label')}</label>
                                 <div className="tkc-input-wrapper">
                                     <input
                                         id="percentage"
@@ -262,7 +264,7 @@ export default function CostCalculator({ }) {
                         </div>
 
                         <div className="tkc-form-group">
-                            <label htmlFor="mortgage-length" className="tkc-label">Mortgage Length</label>
+                            <label htmlFor="mortgage-length" className="tkc-label">{t('DivineAlBarari.costCalculator.field4.label')}</label>
                             <div className="tkc-input-wrapper">
                                 <input
                                     id="mortgage-length"
@@ -271,32 +273,32 @@ export default function CostCalculator({ }) {
                                     onChange={(e) => setMortageLength(Number(e.target.value))}
                                     className="tkc-input pr-12"
                                 />
-                                <span className="tkc-suffix">Years</span>
+                                <span className="tkc-suffix">{t('DivineAlBarari.costCalculator.field4.suffix')}</span>
                             </div>
-                            <p className="tkc-note">Maximum Of 25 Years</p>
+                            <p className="tkc-note">{t('DivineAlBarari.costCalculator.field4.note')}</p>
                         </div>
 
                         <div className="tkc-products">
-                            <h3 className="tkc-subtitle">Try Our Most Popular Mortgage Products:</h3>
+                            <h3 className="tkc-subtitle">{t('DivineAlBarari.costCalculator.mostPlans.title')}</h3>
                             <div className="tkc-products-grid">
                                 <div className="tkc-product-option" onClick={() => {
                                     setPercentage(3.99);
                                     setMortageLength(3);
                                 }}>
-                                    <div className="tkc-product-name">3 Years Fixed-Rate</div>
+                                    <div className="tkc-product-name">{t('DivineAlBarari.costCalculator.mostPlans.plan1.label')}</div>
                                     <div className="tkc-product-rate">3.99%</div>
                                 </div>
                                 <div className="tkc-product-option" onClick={() => {
                                     setPercentage(3.98);
                                     setMortageLength(5);
                                 }}>
-                                    <div className="tkc-product-name">5 Years Fixed-Rate</div>
+                                    <div className="tkc-product-name">{t('DivineAlBarari.costCalculator.mostPlans.plan2.label')}</div>
                                     <div className="tkc-product-rate">3.98%</div>
                                 </div>
                                 <div className="tkc-product-option" onClick={() => {
                                     setPercentage(5.51);
                                 }} >
-                                    <div className="tkc-product-name">Variable Rate</div>
+                                    <div className="tkc-product-name">{t('DivineAlBarari.costCalculator.mostPlans.plan3.label')}</div>
                                     <div className="tkc-product-rate">5.51%</div>
                                 </div>
                             </div>
@@ -307,34 +309,34 @@ export default function CostCalculator({ }) {
                     <div className="tkc-result-section">
                         <div className="tkc-summary-card">
                             <div className="tkc-summary-block">
-                                <h3 className="tkc-summary-title">Total Amount to Pay</h3>
+                                <h3 className="tkc-summary-title">{t('DivineAlBarari.costCalculator.valueSection.totalAmountToPay')}</h3>
                                 <p className="tkc-summary-value">
                                     AED {totalAmoutToPay.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                                 </p>
                             </div>
 
                             <div className="tkc-summary-block">
-                                <h3 className="tkc-summary-title">Monthly Installment</h3>
+                                <h3 className="tkc-summary-title">{t('DivineAlBarari.costCalculator.valueSection.monthlyInstallment')}</h3>
                                 <p className="tkc-summary-value tkc-installment">
                                     AED {monthlyInstallment.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                                 </p>
                             </div>
 
                             <p className="tkc-estimate-note">
-                                This Value Is An Estimate. To Get The Precise Amount, Apply For A Free Consultation Or Contact Us!
+                                {t('DivineAlBarari.costCalculator.valueSection.note')}
                             </p>
                         </div>
 
                         <div className="tkc-contact-section">
                             <div className="tkc-contact-info">
-                                <span className="tkc-contact-label">For More Enquiries</span>
+                                <span className="tkc-contact-label">{t('DivineAlBarari.costCalculator.valueSection.moreEnquiries')}</span>
                                 <span className="tkc-contact-email">info@takmeeluae.com</span>
                             </div>
 
                             <div className='formButtonsWrap'>
                                 <div className='FormButtons'>
                                     <div className='FormButton FormButton1 toggleForm'>
-                                        <span className='position-relative'>Apply Now<span className='btn1'>&nbsp;</span></span>
+                                        <span className='position-relative'>{t('DivineAlBarari.costCalculator.valueSection.applyNow')}<span className='btn1'>&nbsp;</span></span>
                                     </div>
                                     {/* <div onClick={() => window.open("https://wa.me/971523749615?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties")} className='FormButton FormButton2'>
                                         <span className='position-relative'><span className='btn2'>&nbsp;</span>WhatsApp</span>
@@ -357,8 +359,6 @@ export default function CostCalculator({ }) {
                                             WhatsApp
                                         </span>
                                     </a>
-
-
                                 </div>
                             </div>
                         </div>

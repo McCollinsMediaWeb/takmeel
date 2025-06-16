@@ -460,7 +460,7 @@ export default function DetailHero({
                             viewport={{ once: true, amount: 0.5 }}
                         >
                             <div className="row align-items-center">
-                                <div className="col-md-7" style={{ textAlign: locale === "ar" ? "right" : undefined }}>
+                                <div className="col-md-7" style={{ textAlign: locale === "ar" && isDesktop ? "right" : undefined }}>
                                     <motion.div
                                         variants={containerVariants}
                                         initial="hidden"

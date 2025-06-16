@@ -289,6 +289,9 @@ export default function ProjectItem({
                                         {t('buttonText')}
                                     </Link>
                                 )}
+                                {/* <Link href={`/detail-page/${url}`} className="Link1 hover1">
+                                    {t('buttonText')}
+                                </Link> */}
                                 {projectStatus && (
                                     <div className="Txt1">
                                         <span className="PrStatus">{projectStatus}</span>
@@ -337,13 +340,19 @@ export default function ProjectItem({
                                         </motion.div>
                                     </motion.div>
 
-                                    {url !== "takmeel-al-barari-view-properties" && (
+                                    {/* {url !== "takmeel-al-barari-view-properties" && (
                                         <motion.div variants={itemVariants}>
                                             <Link href={`/detail-page/${url}`} className="Link1 hover1">
                                                 {t('buttonText')}
                                             </Link>
                                         </motion.div>
-                                    )}
+                                    )} */}
+
+                                    <motion.div variants={itemVariants}>
+                                        <Link href={`/detail-page/${url}`} className="Link1 hover1">
+                                            {t('buttonText')}
+                                        </Link>
+                                    </motion.div>
 
                                     {projectStatus && (
                                         <motion.div className="Txt1" variants={itemVariants}>

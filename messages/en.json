@@ -634,6 +634,9 @@
         "amenitiesIcons": {
             "subTitle": "AMENITIES AND FACILITIES",
             "title": "Create Your Perfect Home Layout​",
+            "subLabel1": "Ground Floor",
+            "subLabel2": "Indoor",
+            "subLabel3": "Roof Top",
             "items": {
                 "swimmingPool": "Swimming Pool",
                 "childrensPool": "Children's Pool",
@@ -642,7 +645,98 @@
                 "landscapedGarden": "Landscaped Garden",
                 "cinema": "Cinema",
                 "snooker": "Snooker",
-                "spa": "Spa"
+                "spa": "Spa",
+                "coWorkingSpace": "Co-working space",
+                "outdoorShowers": "Outdoor Showers",
+                "beachEntryPool": "Beach Entry Pool",
+                "adultPool": "Adult Pool",
+                "jacuzzi": "Jacuzzi",
+                "cabanas": "Cabanas",
+                "kidsPool": "Kids Pool",
+                "kidsPlayArea": "Kids Play Area",
+                "outdoorGym": "Outdoor Gym",
+                "steamAndSaunaArea": "Steam and Sauna Area",
+                "outdoorCinema": "Outdoor Cinema",
+                "outdoorShadedSeating": "Outdoor Shaded Seating",
+                "smokingLounge": "Smoking Lounge",
+                "bbqArea": "BBQ Area",
+                "yogaArea": "Yoga Area",
+                "miniGolf": "Mini Golf",
+                "boardGamesArea": "Board Games Area",
+                "tableTennisCourt": "Table Tennis Court",
+                "archeryArea": "Archery Area"
+            }
+        },
+        "DivineAlBarari": {
+            "title": "Al Barari",
+            "subTitle": "Majan, Dubai",
+            "content": "Urban Living, Reimagined by Nature",
+            "amenitiesSection": {
+                "subTitle": "Modern Living in the Heart of Majan",
+                "title": "From Desert Dreams to a Living Wilderness",
+                "content": "Takmeel’s upcoming project at Al Barari is a tribute to visionary transformation — where untouched wilderness evolves into a luxurious smart living community. Enveloped in nature, yet rooted in innovation, this sanctuary redefines opulence through sustainability and harmony. Wake up to greenery, water, and serenity, just minutes away from the city’s hustle. Barari is not just a place to live — it’s where nature and modern living exist in perfect balance."
+            },
+            "layoutSection": {
+                "1bhk": "1 BHK",
+                "2bhk": "2 BHK",
+                "3bhk": "3 BHK",
+                "studio": "Studio"
+            },
+            "paymentSection": {
+                "title": "Flexible Payment Plan",
+                "subTitle": "Own your dream home at Takmeel with a stress-free, flexible payment structure designed for convenience:",
+                "item1": "10% on booking",
+                "item2": "10% after 2 months of booking",
+                "item3": "10% after 7-month of booking",
+                "item4": "10% after 12 month of booking",
+                "item5": "60% on after completion hand over"
+            },
+            "interiorSection": {
+                "subTitle": "Modern Living in the Heart of Majan",
+                "title": "Spectacular Views, Contemporary Comfort",
+                "content": "Takmeel’s Al Barari project reimagines luxury living—where smart design meets natural beauty. Surrounded by greenery and water features, these 1, 2 & 3-bedroom apartments offer modern layouts, premium finishes, and sustainable living. Just minutes from Dubai Miracle Garden with easy access to Sheikh Zayed Road, this is where peace and connectivity come together in perfect harmony."
+            },
+            "mapSection": {
+                "title": "IMMERSED IN NATURE, CONNECTED TO THE CITY",
+                "content": "Surrounded by lush landscapes and tranquil walkways, Divine Al Barari offers an oasis of calm amidst Dubai’s vibrant pace. This serene community combines peaceful living with exceptional connectivity—ensuring seamless access to every part of the city."
+            },
+            "costCalculator": {
+                "title": "Takmeel Cost Calculator",
+                "field1": {
+                    "label": "Property Price",
+                    "suffix": "AED"
+                },
+                "field2": {
+                    "label": "Down Payment",
+                    "suffix": "AED"
+                },
+                "field3": {
+                    "label": "Percentage"
+                },
+                "field4": {
+                    "label": "Mortgage Length",
+                    "suffix": "Years",
+                    "note": "Maximum Of 25 Years"
+                },
+                "mostPlans": {
+                    "title": "Try Our Most Popular Mortgage Products:",
+                    "plan1": {
+                        "label": "3 Years Fixed-Rate"
+                    },
+                    "plan2": {
+                        "label": "5 Years Fixed-Rate"
+                    },
+                    "plan3": {
+                        "label": "Variable Rate"
+                    }
+                },
+                "valueSection": {
+                    "totalAmountToPay": "Total Amount to Pay",
+                    "monthlyInstallment": "Monthly Installment",
+                    "note": "This Value Is An Estimate. To Get The Precise Amount, Apply For A Free Consultation Or Contact Us!",
+                    "moreEnquiries": "For More Enquiries",
+                    "applyNow": "Apply Now"
+                }
             }
         },
         "DivineResidencia": {

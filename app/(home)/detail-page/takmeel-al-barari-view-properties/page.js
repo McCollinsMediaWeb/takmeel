@@ -14,6 +14,7 @@ import { getMetaTags } from "@/lib/getMetaTags";
 import MetaInjector from "@/components/Meta/MetaInjector";
 import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
+import TakmeelAlBarariViewClient from "./TakmeelAlBarrariViewClient";
 
 export default async function TakmeelAlBarariViewPropertiesPage() {
   const metaTags = await getMetaTags("/detail-page/takmeel-al-barari-view-properties");
@@ -408,32 +409,26 @@ export default async function TakmeelAlBarariViewPropertiesPage() {
       {metaTags.length > 0 && metaTags[0].metaContent && (
         <MetaInjector metaContent={metaTags[0].metaContent} />
       )}
-      <div>
+
+      <TakmeelAlBarariViewClient />
+      {/* <div>
         <div className="BrariBox">
           <DetailHero {...detailHeroData} />
         </div>
         <div className="FxdHgtImage">
           <ProjectDetails1 {...DataProjectDetails1} />
         </div>
-        {/* <ProjectDetails2 {...DataProjectDetails2} /> */}
         <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} />
         <PaymentPlanBlock />
         <div className="FxdHgtImage">
           <ProjectDetails4 {...DataProjectDetails4} />
         </div>
         <ProjectDetails7 mapimage="new1.jpg" mobileMapImage="new1m.jpg" {...DataProjectDetails7} />
-
-        {/* <ProjectDetails3 mainimage1="ak2.jpg" data={DataProjectDetails3} /> */}
-
-        {/* <ProjectDetails5 panoramaimage="/albararistreet.jpg" /> */}
-
-
-        {/* <ProjectDetails7 mapimage="mapalb.jpg" {...DataProjectDetails7} /> */}
         <CostCalculator />
         <PropertyForm projectName="Divine Al Barari" />
         <Footer />
         <FooterBottom />
-      </div>
+      </div> */}
     </>
   );
 }

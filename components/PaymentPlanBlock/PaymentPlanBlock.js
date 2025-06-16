@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion"
-export default function PaymentPlanBlock() {
+export default function PaymentPlanBlock({ title, subTitle, item1, item2, item3, item4, item5 }) {
     const containerVariants = {
         hidden: { opacity: 0, y: 40 },
         visible: {
@@ -39,7 +39,7 @@ export default function PaymentPlanBlock() {
                                     ease: "easeInOut",
                                 }}
                             >
-                                <div className="BlT1A text-uppercase">Flexible Payment Plan</div>
+                                <div className="BlT1A text-uppercase">{title}</div>
                             </motion.div>
                         </motion.div>
                         <motion.div className="" variants={itemVariants}>
@@ -51,7 +51,7 @@ export default function PaymentPlanBlock() {
                                     ease: "easeInOut",
                                 }}
                             >
-                                <div className="BlT2B text-uppercase">Own your dream home at Takmeel with a stress-free, flexible payment structure designed for convenience:</div>
+                                <div className="BlT2B text-uppercase">{subTitle}</div>
                             </motion.div>
                         </motion.div>
                     </div>
@@ -76,7 +76,7 @@ export default function PaymentPlanBlock() {
                                                 ease: "easeInOut",
                                             }}
                                         >
-                                            <div className="PayBlockBxHdr VmT5">10% on booking</div>
+                                            <div className="PayBlockBxHdr VmT5">{item1}</div>
                                         </motion.div>
                                     </motion.div>
 
@@ -103,7 +103,7 @@ export default function PaymentPlanBlock() {
                                                 ease: "easeInOut",
                                             }}
                                         >
-                                            <div className="PayBlockBxHdr VmT5">10% after 2 months of booking</div>
+                                            <div className="PayBlockBxHdr VmT5">{item2}</div>
                                         </motion.div>
                                     </motion.div>
 
@@ -130,7 +130,7 @@ export default function PaymentPlanBlock() {
                                                 ease: "easeInOut",
                                             }}
                                         >
-                                            <div className="PayBlockBxHdr VmT5">10% after 7-month of booking</div>
+                                            <div className="PayBlockBxHdr VmT5">{item3}</div>
                                         </motion.div>
                                     </motion.div>
 
@@ -157,7 +157,7 @@ export default function PaymentPlanBlock() {
                                                 ease: "easeInOut",
                                             }}
                                         >
-                                            <div className="PayBlockBxHdr VmT5">10% after 12 month of booking</div>
+                                            <div className="PayBlockBxHdr VmT5">{item4}</div>
                                         </motion.div>
                                     </motion.div>
 
@@ -184,7 +184,7 @@ export default function PaymentPlanBlock() {
                                                 ease: "easeInOut",
                                             }}
                                         >
-                                            <div className="PayBlockBxHdr VmT5">60% on after completion hand over</div>
+                                            <div className="PayBlockBxHdr VmT5">{item5}</div>
                                         </motion.div>
                                     </motion.div>
 

@@ -715,6 +715,17 @@
   .DifBox1 .text-left {
     text-align: center !important;
   }
+
+  .DownloadBtn {
+    width: 20px;
+    height: 20px;
+    /* background-image: url(../public/download.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 25px; */
+    /* right: 30px; */
+    inset-inline-end: 10px;
+  }
 }
 
 .tkc-wrapper {
@@ -942,6 +953,23 @@
   pointer-events: none;
   font-size: 13px;
   color: #555;
+}
+
+[dir="rtl"] .tkc-suffix {
+  left: 12px;
+  right: 0px;
+}
+
+[dir="rtl"] .tkc-label {
+  text-align: right;
+}
+
+[dir="rtl"] .tkc-note {
+  text-align: right;
+}
+
+[dir="rtl"] .tkc-input {
+  padding: 10px 12px 10px 48px;
 }
 
 @media only screen and (max-width: 1000px) {
