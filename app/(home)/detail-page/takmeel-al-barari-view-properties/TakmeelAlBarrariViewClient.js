@@ -18,6 +18,8 @@ import ProjectDetails8 from "@/components/DetailPageComponents/ProjectDetails8";
 import ProjectDetails44 from "@/components/DetailPageComponents/projectdetails44";
 import ProjectDetails45 from "@/components/DetailPageComponents/projectdetails45";
 import { useTranslations } from "next-intl";
+import ProjectDetails9 from "@/components/DetailPageComponents/ProjectDetails9";
+import ProjectDetails10 from "@/components/DetailPageComponents/ProjectDetails10";
 
 export default function TakmeelAlBarariViewClient() {
     const t = useTranslations('Properties');
@@ -419,6 +421,7 @@ export default function TakmeelAlBarariViewClient() {
             <div className="BrariBox">
                 <DetailHero {...detailHeroData} />
             </div>
+            <ProjectDetails9 data={DataProjectDetails6} />
             <div className="FxdHgtImage">
 
                 <ProjectDetails45 {...DataProjectDetails1} />
@@ -427,11 +430,15 @@ export default function TakmeelAlBarariViewClient() {
             {/* <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} /> */}
 
             {/* <ProjectDetails8 data={DataProjectDetails8} /> */}
-            <ProjectDetails8 planData={DataProjectDetails8} data={DataProjectDetails6} />
-            <PaymentPlanBlock {...DataPaymentBlock} />
             <div className="FxdHgtImage">
                 <ProjectDetails44  {...DataProjectDetails4} />
             </div>
+            {/* <ProjectDetails8 planData={DataProjectDetails8} data={DataProjectDetails6} /> */}
+            <ProjectDetails10 planData={DataProjectDetails8} />
+            {/* <PaymentPlanBlock {...DataPaymentBlock} /> */}
+            {/* <div className="FxdHgtImage">
+                <ProjectDetails44  {...DataProjectDetails4} />
+            </div> */}
             <ProjectDetails7 mapimage="mapnew1.jpg" mobileMapImage="mapmobilenew.jpg" {...DataProjectDetails7} />
             {/* <ProjectDetails3 mainimage1="ak2.jpg" data={DataProjectDetails3} /> */}
             {/* <ProjectDetails5 panoramaimage="/albararistreet.jpg" /> */}

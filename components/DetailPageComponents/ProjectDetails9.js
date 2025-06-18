@@ -1,49 +1,3 @@
-// 'use client';
-
-
-// import { useState, useRef, useEffect } from "react";
-// import { motion } from "framer-motion";
-// import Image from "next/image";
-// import useMediaQuery from "../hooks/useMediaQuery";
-// import "yet-another-react-lightbox/styles.css";
-// import "yet-another-react-lightbox/plugins/thumbnails.css";
-// import { useLocale, useTranslations } from "next-intl";
-
-// export default function ProjectDetails8({ data }) {
-//     const t = useTranslations('Properties');
-//     const isDesktop = useMediaQuery("(min-width: 960px)");
-//     const [currentIndex, setCurrentIndex] = useState(0);
-
-//     return (
-//         <div className='position-relative pd-common bg2'>
-//             <div className='container'>
-//                 <div className='row PlanRow'>
-//                     <div className='col-md-6' style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
-//                         <div className='PlanBoxBottomLnk hove1' onClick={() => setCurrentIndex(0)}>1 BHK - Layout</div>
-//                         <div className='PlanBoxBottomLnk hove1' onClick={() => setCurrentIndex(1)}>2 BHK - Layout</div>
-//                         <div className='PlanBoxBottomLnk hove1' onClick={() => setCurrentIndex(2)}>3 BHK - Layout</div>
-//                         <div className='PlanBoxBottomLnk hove1' onClick={() => setCurrentIndex(3)}>Studio - Layout</div>
-//                     </div>
-//                     <div className='col-md-6'>
-//                         <div className='PlanBox'>
-//                             <Image
-//                                 src={`/${data[currentIndex].image}`}
-//                                 width={438}
-//                                 height={414}
-//                                 layout="responsive"
-//                                 alt="Takmeel"
-//                             />
-//                         </div>
-//                     </div>
-//                 </div >
-
-//             </div >
-
-//         </div >
-//     );
-// }
-
-
 'use client';
 
 
@@ -55,7 +9,7 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import { useLocale, useTranslations } from "next-intl";
 
-export default function ProjectDetails8({ planData, data }) {
+export default function ProjectDetails9({ data }) {
     const t = useTranslations('Properties');
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
@@ -101,12 +55,12 @@ export default function ProjectDetails8({ planData, data }) {
     };
 
     return (
-        <div className='position-relative pd-common'>
+        <div className='position-relative pd-common bg2'>
 
             <div className='container'>
 
                 <div className='row PlanRow'>
-                    <div className='col-md-6'>
+                    {/* <div className='col-md-6'>
                         <div className='PlanBox'>
                             <Image
                                 src={`/${planData[currentIndex].image}`}
@@ -125,8 +79,8 @@ export default function ProjectDetails8({ planData, data }) {
                                 <a href={`/${planData[currentIndex].pdfFile}`} download="FloorPlan.pdf"><div className='DownloadBtn'>&nbsp;</div></a>
                             </div>
                         </div>
-                    </div>
-                    <div className='col-md-6' style={{ textAlign: locale === "ar" ? "right" : undefined }}>
+                    </div> */}
+                    <div className='col-md-12' style={{ textAlign: locale === "ar" ? "right" : undefined }}>
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}

@@ -222,7 +222,7 @@ export default function CostCalculator({ }) {
             <div className='container'>
 
 
-                <div className='text-center ccT1'>{t('DivineAlBarari.costCalculator.title')}</div>
+                <div className='text-center BlT1A'>{t('DivineAlBarari.costCalculator.title')}</div>
 
                 <div className="tkc-grid">
                     {/* Form Section */}
