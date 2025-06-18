@@ -3393,4 +3393,6 @@ body {
   right: 15px;
 }
 
-
+.Opacity1 *{
+  opacity: 1 !important;
+}

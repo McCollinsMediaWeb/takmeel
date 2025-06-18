@@ -99,7 +99,24 @@ export default function ProjectDetails44({ text1, text2, text3, interiorTitle1 =
         //     if (prev) prev.removeEventListener("click", handleArrowClick);
         // };
     }, []);
+    const containerVariants = {
+        hidden: { opacity: 0, y: 40 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.6,
+                ease: 'easeOut',
+                when: 'beforeChildren',
+                staggerChildren: 0.2,
+            },
+        },
+    };
 
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+    };
 
     var settings = {
         dots: true,
@@ -207,14 +224,27 @@ export default function ProjectDetails44({ text1, text2, text3, interiorTitle1 =
             <div className='container'>
 
                 <div className='row'>
+                    <motion.div
+                                        variants={containerVariants}
+                                        initial="hidden"
+                                        whileInView="visible"
+                                        viewport={{ once: true, amount: 0.5 }}
+                                    >
+
+                                        <motion.div className="" variants={itemVariants}>
                     <div className='col-md-12' style={{ textAlign: locale === "ar" ? "right" : undefined }}>
                         <div className="BlT1 nunito-text text-uppercase">{text1}</div>
                         <div className="BlT2 text-uppercase">{text2}​</div>
                         <div className="BlT3">{text3}</div>
                     </div>
+                    </motion.div>
+                    
+</motion.div>
+
 
                     {GalleryImagesWithNames1?.length > 0 && (
                         <>
+                         
                             <div className='SbT1 col-md-12'>{interiorTitle1}</div>
                             <div className='col-md-12 PrDetSliderBox UniqueSliderBox' ref={sliderRef}>
                                 <Slider ref={slickRef} {...settings}>
@@ -282,7 +312,6 @@ export default function ProjectDetails44({ text1, text2, text3, interiorTitle1 =
                             </div>
                         </>
                     )}
-
 
 
                 </div>

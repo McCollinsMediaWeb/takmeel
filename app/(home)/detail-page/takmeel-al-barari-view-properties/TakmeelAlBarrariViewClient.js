@@ -16,6 +16,7 @@ import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 import ProjectDetails8 from "@/components/DetailPageComponents/ProjectDetails8";
 import ProjectDetails44 from "@/components/DetailPageComponents/projectdetails44";
+import ProjectDetails45 from "@/components/DetailPageComponents/projectdetails45";
 import { useTranslations } from "next-intl";
 
 export default function TakmeelAlBarariViewClient() {
@@ -73,9 +74,15 @@ export default function TakmeelAlBarariViewClient() {
             "newlanding/amenities/8.jpg",
             "newlanding/amenities/9.jpg",
             "newlanding/amenities/10.jpg",
+
+        ],
+        GalleryImages1: [
+            "newlanding/interior/8.jpg",
+            "newlanding/interior/7.jpg",
             "newlanding/amenities/11.jpg",
             "newlanding/amenities/12.jpg",
             "newlanding/amenities/13.jpg",
+            
 
         ]
     };
@@ -153,14 +160,7 @@ export default function TakmeelAlBarariViewClient() {
                 src: "newlanding/interior/6.jpg",
                 title: "Kitchen Area",
             },
-            {
-                src: "newlanding/interior/7.jpg",
-                title: "Kitchen Area",
-            },
-            {
-                src: "newlanding/interior/8.jpg",
-                title: "Kitchen Area",
-            },
+            
         ],
         GalleryImagesWithNames1: [
             {
@@ -403,7 +403,8 @@ export default function TakmeelAlBarariViewClient() {
                 <DetailHero {...detailHeroData} />
             </div>
             <div className="FxdHgtImage">
-                <ProjectDetails1 {...DataProjectDetails1} />
+                
+                <ProjectDetails45 {...DataProjectDetails1} />
             </div>
             {/* <ProjectDetails2 {...DataProjectDetails2} /> */}
             {/* <ProjectDetails6 planImage="plan1.jpg" data={DataProjectDetails6} /> */}
