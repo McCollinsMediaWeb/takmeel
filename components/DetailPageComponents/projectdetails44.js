@@ -225,26 +225,26 @@ export default function ProjectDetails44({ text1, text2, text3, interiorTitle1 =
 
                 <div className='row'>
                     <motion.div
-                                        variants={containerVariants}
-                                        initial="hidden"
-                                        whileInView="visible"
-                                        viewport={{ once: true, amount: 0.5 }}
-                                    >
+                        variants={containerVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.5 }}
+                    >
 
-                                        <motion.div className="" variants={itemVariants}>
-                    <div className='col-md-12' style={{ textAlign: locale === "ar" ? "right" : undefined }}>
-                        <div className="BlT1 nunito-text text-uppercase">{text1}</div>
-                        <div className="BlT2 text-uppercase">{text2}​</div>
-                        <div className="BlT3">{text3}</div>
-                    </div>
+                        <motion.div className="" variants={itemVariants}>
+                            <div className='col-md-12' style={{ textAlign: locale === "ar" ? "right" : undefined }}>
+                                <div className="BlT1 nunito-text text-uppercase">{text1}</div>
+                                <div className="BlT2 text-uppercase">{text2}​</div>
+                                <div className="BlT3">{text3}</div>
+                            </div>
+                        </motion.div>
+
                     </motion.div>
-                    
-</motion.div>
 
 
                     {GalleryImagesWithNames1?.length > 0 && (
                         <>
-                         
+
                             <div className='SbT1 col-md-12'>{interiorTitle1}</div>
                             <div className='col-md-12 PrDetSliderBox UniqueSliderBox' ref={sliderRef}>
                                 <Slider ref={slickRef} {...settings}>

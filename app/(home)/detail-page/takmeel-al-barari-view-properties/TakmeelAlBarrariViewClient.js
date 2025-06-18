@@ -63,6 +63,8 @@ export default function TakmeelAlBarariViewClient() {
         text1: t('DivineAlBarari.amenitiesSection.subTitle'),
         text2: t('DivineAlBarari.amenitiesSection.title'),
         text3: t('DivineAlBarari.amenitiesSection.content'),
+        imageSection1Title: t('DivineAlBarari.amenitiesSection.imageSection1.title'),
+        imageSection2Title: t('DivineAlBarari.amenitiesSection.imageSection2.title'),
         GalleryImages: [
             "newlanding/amenities/1.jpg",
             "newlanding/amenities/2.jpg",
@@ -160,7 +162,7 @@ export default function TakmeelAlBarariViewClient() {
                 src: "newlanding/interior/6.jpg",
                 title: "Kitchen Area",
             },
-            
+
         ],
         GalleryImagesWithNames1: [
             {
@@ -403,7 +405,7 @@ export default function TakmeelAlBarariViewClient() {
                 <DetailHero {...detailHeroData} />
             </div>
             <div className="FxdHgtImage">
-                
+
                 <ProjectDetails45 {...DataProjectDetails1} />
             </div>
             {/* <ProjectDetails2 {...DataProjectDetails2} /> */}

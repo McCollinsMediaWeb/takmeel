@@ -207,7 +207,7 @@ import image3 from "../../public/abslider3.jpg"
 import image4 from "../../public/abslider3.jpg"
 import { useLocale } from 'next-intl';
 
-export default function ProjectDetails45({ text1, text2, text3, GalleryImages , GalleryImages1 }) {
+export default function ProjectDetails45({ text1, text2, text3, imageSection1Title = null, imageSection2Title = null, GalleryImages, GalleryImages1 }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
     const sliderRef = useRef(null);
@@ -417,67 +417,72 @@ export default function ProjectDetails45({ text1, text2, text3, GalleryImages , 
                         </div>
 
 
-                        <div className='SbT1 col-md-12'>Luxury Living Redefined: Al Barari's World-Class Amenities</div>
                         {GalleryImages?.length > 0 ? (
-                            <div className='col-md-12 PrDetSliderBox FxdHgtImage' ref={sliderRef}>
-                                <Slider ref={slickRef} {...settings}>
-                                    {GalleryImages?.map((img, index) => (
-                                        <div className='AbSliderItem' key={index} onClick={() => setOpen(true)}>
-                                            <div className='ImageBox'>
-                                                <Image
-                                                    src={`/${img}`}
-                                                    width={893}
-                                                    height={601}
-                                                    layout="responsive"
-                                                    alt="Takmeel"
-                                                />
+                            <>
+                                {imageSection1Title !== null && <div className='SbT1 col-md-12'>{imageSection1Title}</div>}
+                                <div className='col-md-12 PrDetSliderBox FxdHgtImage' ref={sliderRef}>
+                                    <Slider ref={slickRef} {...settings}>
+                                        {GalleryImages?.map((img, index) => (
+                                            <div className='AbSliderItem' key={index} onClick={() => setOpen(true)}>
+                                                <div className='ImageBox'>
+                                                    <Image
+                                                        src={`/${img}`}
+                                                        width={893}
+                                                        height={601}
+                                                        layout="responsive"
+                                                        alt="Takmeel"
+                                                    />
+                                                </div>
                                             </div>
-                                        </div>
-                                    ))}
-                                </Slider>
+                                        ))}
+                                    </Slider>
 
-                                <Lightbox
-                                    open={open}
-                                    close={() => setOpen(false)}
-                                    plugins={[Video, Thumbnails, Zoom]}
-                                    slides={
-                                        GalleryImages?.map((img) => ({
-                                            src: `/${img}`,
-                                        }))
-                                    }
-                                />
-                            </div>
+                                    <Lightbox
+                                        open={open}
+                                        close={() => setOpen(false)}
+                                        plugins={[Video, Thumbnails, Zoom]}
+                                        slides={
+                                            GalleryImages?.map((img) => ({
+                                                src: `/${img}`,
+                                            }))
+                                        }
+                                    />
+                                </div>
+                            </>
                         ) : null}
-                        <div className='SbT1 col-md-12'>Step Inside Elegance: Al Barari Interiors</div>
                         {GalleryImages1?.length > 0 ? (
-                            <div className='col-md-12 PrDetSliderBox FxdHgtImage' ref={sliderRef}>
-                                <Slider ref={slickRef} {...settings}>
-                                    {GalleryImages1?.map((img, index) => (
-                                        <div className='AbSliderItem' key={index} onClick={() => setOpen(true)}>
-                                            <div className='ImageBox'>
-                                                <Image
-                                                    src={`/${img}`}
-                                                    width={893}
-                                                    height={601}
-                                                    layout="responsive"
-                                                    alt="Takmeel"
-                                                />
-                                            </div>
-                                        </div>
-                                    ))}
-                                </Slider>
+                            <>
+                                {imageSection2Title !== null && <div className='SbT1 col-md-12'>{imageSection2Title}</div>}
 
-                                <Lightbox
-                                    open={open}
-                                    close={() => setOpen(false)}
-                                    plugins={[Video, Thumbnails, Zoom]}
-                                    slides={
-                                        GalleryImages1?.map((img) => ({
-                                            src: `/${img}`,
-                                        }))
-                                    }
-                                />
-                            </div>
+                                <div className='col-md-12 PrDetSliderBox FxdHgtImage' ref={sliderRef}>
+                                    <Slider ref={slickRef} {...settings}>
+                                        {GalleryImages1?.map((img, index) => (
+                                            <div className='AbSliderItem' key={index} onClick={() => setOpen(true)}>
+                                                <div className='ImageBox'>
+                                                    <Image
+                                                        src={`/${img}`}
+                                                        width={893}
+                                                        height={601}
+                                                        layout="responsive"
+                                                        alt="Takmeel"
+                                                    />
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </Slider>
+
+                                    <Lightbox
+                                        open={open}
+                                        close={() => setOpen(false)}
+                                        plugins={[Video, Thumbnails, Zoom]}
+                                        slides={
+                                            GalleryImages1?.map((img) => ({
+                                                src: `/${img}`,
+                                            }))
+                                        }
+                                    />
+                                </div>
+                            </>
                         ) : null}
                     </div>
                 </motion.div>
