@@ -3385,5 +3385,12 @@ body {
   left: 15;
   bottom: 0;
 }
+[dir="rtl"] .SbT1{
+  text-align: right;
+}
+[dir="rtl"]  .SbT1::after{
+  left: auto;
+  right: 15px;
+}
 
 
