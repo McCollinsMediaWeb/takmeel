@@ -10,13 +10,21 @@ export default function CostCalculator({ }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const t = useTranslations('Properties');
 
-    const [propertyPrice, setPropertyPrice] = useState(1000000);
-    const [downPayment, setDownPayment] = useState(100000);
-    const [percentage, setPercentage] = useState(15);
-    const [mortageLength, setMortageLength] = useState(12);
+    // const [propertyPrice, setPropertyPrice] = useState(1000000);
+    // const [downPayment, setDownPayment] = useState(100000);
+    // const [percentage, setPercentage] = useState(15);
+    // const [mortageLength, setMortageLength] = useState(12);
 
-    const [totalAmoutToPay, setTotalAmoutToPay] = useState(100000);
-    const [monthlyInstallment, setMonthlyInstallment] = useState(50000);
+    // const [totalAmoutToPay, setTotalAmoutToPay] = useState(100000);
+    // const [monthlyInstallment, setMonthlyInstallment] = useState(50000);
+
+    const [propertyPrice, setPropertyPrice] = useState(null);
+    const [downPayment, setDownPayment] = useState(null);
+    const [percentage, setPercentage] = useState(null);
+    const [mortageLength, setMortageLength] = useState(null);
+
+    const [totalAmoutToPay, setTotalAmoutToPay] = useState(0);
+    const [monthlyInstallment, setMonthlyInstallment] = useState(0);
 
     // useEffect(() => {
     //     const loanAmount = propertyPrice - downPayment;
@@ -224,6 +232,7 @@ export default function CostCalculator({ }) {
                             <div className="tkc-input-wrapper">
                                 <input
                                     id="property-price"
+                                    placeholder='0'
                                     type="number"
                                     value={propertyPrice}
                                     onChange={(e) => setPropertyPrice(Number(e.target.value))}
@@ -240,6 +249,7 @@ export default function CostCalculator({ }) {
                                     <input
                                         id="down-payment"
                                         type="number"
+                                        placeholder='0'
                                         value={downPayment}
                                         onChange={(e) => setDownPayment(Number(e.target.value))}
                                         className="tkc-input pr-12"
@@ -254,6 +264,7 @@ export default function CostCalculator({ }) {
                                     <input
                                         id="percentage"
                                         type="number"
+                                        placeholder='0'
                                         value={percentage}
                                         onChange={(e) => setPercentage(Number(e.target.value))}
                                         className="tkc-input pr-12"
@@ -269,6 +280,7 @@ export default function CostCalculator({ }) {
                                 <input
                                     id="mortgage-length"
                                     type="number"
+                                    placeholder='0'
                                     value={mortageLength}
                                     onChange={(e) => setMortageLength(Number(e.target.value))}
                                     className="tkc-input pr-12"
