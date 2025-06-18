@@ -269,7 +269,7 @@ export default function ProjectDetails44({ text1, text2, text3, interiorTitle1 =
                                     close={() => setOpen(false)}
                                     plugins={[Video, Thumbnails, Zoom]}
                                     slides={
-                                        GalleryImagesWithNames.map((img) => ({
+                                        GalleryImagesWithNames1.map((img) => ({
                                             src: `/${img.src}`,
                                         }))
                                     }
