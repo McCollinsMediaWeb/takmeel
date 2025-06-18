@@ -82,7 +82,7 @@ export default function TakmeelAlBarariViewClient() {
             "newlanding/amenities/11.jpg",
             "newlanding/amenities/12.jpg",
             "newlanding/amenities/13.jpg",
-            
+            "newlanding/interior/10.jpg",
 
         ]
     };
