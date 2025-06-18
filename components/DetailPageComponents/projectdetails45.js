@@ -210,6 +210,7 @@ import { useLocale } from 'next-intl';
 export default function ProjectDetails45({ text1, text2, text3, imageSection1Title = null, imageSection2Title = null, GalleryImages, GalleryImages1 }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
+    const [open2, setOpen2] = useState(false);
     const sliderRef = useRef(null);
     const slickRef = useRef(null);
     const [inView, setInView] = useState(false);
@@ -457,7 +458,7 @@ export default function ProjectDetails45({ text1, text2, text3, imageSection1Tit
                                 <div className='col-md-12 PrDetSliderBox FxdHgtImage' ref={sliderRef}>
                                     <Slider ref={slickRef} {...settings}>
                                         {GalleryImages1?.map((img, index) => (
-                                            <div className='AbSliderItem' key={index} onClick={() => setOpen(true)}>
+                                            <div className='AbSliderItem' key={index} onClick={() => setOpen2(true)}>
                                                 <div className='ImageBox'>
                                                     <Image
                                                         src={`/${img}`}
@@ -472,8 +473,8 @@ export default function ProjectDetails45({ text1, text2, text3, imageSection1Tit
                                     </Slider>
 
                                     <Lightbox
-                                        open={open}
-                                        close={() => setOpen(false)}
+                                        open={open2}
+                                        close={() => setOpen2(false)}
                                         plugins={[Video, Thumbnails, Zoom]}
                                         slides={
                                             GalleryImages1?.map((img) => ({

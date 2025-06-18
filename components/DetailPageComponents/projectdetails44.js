@@ -18,9 +18,11 @@ import image1 from "../../public/as1.jpg"
 import image2 from "../../public/as2.jpg"
 import { useLocale } from 'next-intl';
 
+
 export default function ProjectDetails44({ text1, text2, text3, interiorTitle1 = null, interiorTitle2 = null, GalleryImagesWithNames, GalleryImagesWithNames1 }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
+    const [open2, setOpen2] = useState(false);
     const sliderRef = useRef(null);
     const slickRef = useRef(null);
     const [inView, setInView] = useState(false);
@@ -284,7 +286,7 @@ export default function ProjectDetails44({ text1, text2, text3, interiorTitle1 =
                             <div className='col-md-12 PrDetSliderBox UniqueSliderBox' ref={sliderRef}>
                                 <Slider ref={slickRef} {...settings}>
                                     {GalleryImagesWithNames.map((img, index) => (
-                                        <div key={index} className='AbSliderItem' onClick={() => setOpen(true)}>
+                                        <div key={index} className='AbSliderItem' onClick={() => setOpen2(true)}>
                                             <div className='ImageBox position-relative ImageWithTextBox'>
                                                 <Image
                                                     src={`/${img.src}`}
@@ -300,8 +302,8 @@ export default function ProjectDetails44({ text1, text2, text3, interiorTitle1 =
                                 </Slider>
 
                                 <Lightbox
-                                    open={open}
-                                    close={() => setOpen(false)}
+                                    open={open2}
+                                    close={() => setOpen2(false)}
                                     plugins={[Video, Thumbnails, Zoom]}
                                     slides={
                                         GalleryImagesWithNames.map((img) => ({
