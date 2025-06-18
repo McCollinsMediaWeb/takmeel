@@ -204,30 +204,41 @@ export default function TakmeelAlBarariViewClient() {
         {
             amenity: t('amenitiesIcons.subLabel1'),
             values: [
-                { iconNo: 25, name: t('amenitiesIcons.items.coWorkingSpace') }
+                { iconNo: 25, name: t('amenitiesIcons.items.coWorkingSpace') },
+                { iconNo: 43, name: t('amenitiesIcons.items.partyArea') },
+                { iconNo: 44, name: t('amenitiesIcons.items.stateOfTheArtGymFacility') }
             ]
         },
         {
             amenity: t('amenitiesIcons.subLabel2'),
             values: [
                 { iconNo: 39, name: t('amenitiesIcons.items.outdoorShowers') },
-                { iconNo: 22, name: t('amenitiesIcons.items.beachEntryPool') },
+                // { iconNo: 22, name: t('amenitiesIcons.items.beachEntryPool') },
+                { iconNo: 45, name: t('amenitiesIcons.items.beachEntryPool') },
                 { iconNo: 19, name: t('amenitiesIcons.items.adultPool') },
+                { iconNo: 46, name: t('amenitiesIcons.items.dryDeckingArea') },
+                { iconNo: 47, name: t('amenitiesIcons.items.wetDeckingArea') },
                 // { iconNo: 5, name: "Dry Decking Area" },
                 // { iconNo: 6, name: "Wet Decking Area" },
                 { iconNo: 27, name: t('amenitiesIcons.items.jacuzzi') },
+                { iconNo: 48, name: t('amenitiesIcons.items.sunkenSetting') },
                 // { iconNo: 1, name: "Sunken Setting" },
                 { iconNo: 24, name: t('amenitiesIcons.items.cabanas') },
+                { iconNo: 49, name: t('amenitiesIcons.items.aquaGym') },
                 // { iconNo: 3, name: "Aqua Gym" },
                 { iconNo: 29, name: t('amenitiesIcons.items.kidsPool') },
+                { iconNo: 50, name: t('amenitiesIcons.items.kidsSplashPad') },
                 // { iconNo: 5, name: "Kids Splash Pad" },
                 { iconNo: 28, name: t('amenitiesIcons.items.kidsPlayArea') },
                 { iconNo: 32, name: t('amenitiesIcons.items.outdoorGym') },
                 // { iconNo: 1, name: "Family Seating Area" },
                 // { iconNo: 2, name: "Casual Setting Area" },
                 { iconNo: 26, name: t('amenitiesIcons.items.indoorGym') },
+                { iconNo: 43, name: t('amenitiesIcons.items.partyArea') },
                 // { iconNo: 4, name: "Party Area" },
                 { iconNo: 35, name: t('amenitiesIcons.items.steamAndSaunaArea') },
+                { iconNo: 51, name: t('amenitiesIcons.items.zenGarden') },
+                { iconNo: 52, name: t('amenitiesIcons.items.electricParking') },
                 // { iconNo: 6, name: "Zen Garden" },
             ]
         },
@@ -235,16 +246,19 @@ export default function TakmeelAlBarariViewClient() {
             amenity: t('amenitiesIcons.subLabel3'),
             values: [
                 { iconNo: 31, name: t('amenitiesIcons.items.outdoorCinema') },
-                { iconNo: 33, name: t('amenitiesIcons.items.outdoorShadedSeating') },
+                // { iconNo: 33, name: t('amenitiesIcons.items.outdoorShadedSeating') },
                 { iconNo: 34, name: t('amenitiesIcons.items.smokingLounge') },
                 { iconNo: 21, name: t('amenitiesIcons.items.bbqArea') },
                 { iconNo: 37, name: t('amenitiesIcons.items.yogaArea') },
+                { iconNo: 53, name: t('amenitiesIcons.items.seatingArea') },
+                { iconNo: 54, name: t('amenitiesIcons.items.multiPurposeCourt') },
                 // { iconNo: 6, name: "Seating Area" },
                 // { iconNo: 7, name: "Multi Pourpose Court" },
                 { iconNo: 30, name: t('amenitiesIcons.items.miniGolf') },
                 { iconNo: 23, name: t('amenitiesIcons.items.boardGamesArea') },
                 { iconNo: 36, name: t('amenitiesIcons.items.tableTennisCourt') },
                 { iconNo: 20, name: t('amenitiesIcons.items.archeryArea') },
+                { iconNo: 55, name: t('amenitiesIcons.items.observatoryPoint') },
                 // { iconNo: 5, name: "Observatory Point" },
             ]
         }

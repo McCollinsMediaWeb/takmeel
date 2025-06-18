@@ -1940,6 +1940,59 @@ body .slick-prev::before {
   background-image: url(../public/Icons/Takmeel_Icons_Spa.png);
 }
 
+.AmnIcon.AmnIcon43 {
+  background-image: url(../public/Icons/Takmeel_Icons__Party\ Area.png);
+}
+
+.AmnIcon.AmnIcon44 {
+  background-image: url(../public/Icons/Takmeel_Icons__State\ of\ the\ Art\ Gym\ Facility.png);
+}
+
+.AmnIcon.AmnIcon45 {
+  background-image: url(../public/Icons/Takmeel_Icons__Beach\ pool\ entry.png);
+}
+
+.AmnIcon.AmnIcon46 {
+  background-image: url(../public/Icons/Takmeel_Icons__Dry\ Decking\ Area.png);
+}
+
+.AmnIcon.AmnIcon47 {
+  background-image: url(../public/Icons/Takmeel_Icons__Wet\ Decking\ Area.png);
+}
+
+.AmnIcon.AmnIcon48 {
+  background-image: url(../public/Icons/Takmeel_Icons__Sunken\ Setting-.png);
+}
+
+.AmnIcon.AmnIcon49 {
+  background-image: url(../public/Icons/Takmeel_Icons__Aqua\ Gym.png);
+}
+
+.AmnIcon.AmnIcon50 {
+  background-image: url(../public/Icons/Takmeel_Icons__Kids\ Splash\ Pad.png);
+}
+
+.AmnIcon.AmnIcon51 {
+  background-image: url(../public/Icons/Takmeel_Icons__Zen\ Garden.png);
+}
+
+.AmnIcon.AmnIcon52 {
+  background-image: url(../public/Icons/Takmeel_Icons__electric\ parking.png);
+}
+
+.AmnIcon.AmnIcon53 {
+  background-image: url(../public/Icons/Takmeel_Icons__Seating\ Area.png);
+}
+
+.AmnIcon.AmnIcon54 {
+  background-image: url(../public/Icons/Takmeel_Icons__Multi-Purpose\ Court.png);
+}
+
+.AmnIcon.AmnIcon55 {
+  background-image: url(../public/Icons/Takmeel_Icons__Observatory\ Point-.png);
+}
+
+
 .AmnBoxWrap {
   margin-top: 35px;
 }
@@ -3368,14 +3421,15 @@ body {
   right: -30px;
 }
 
-.SbT1{
+.SbT1 {
   font-size: 25px;
   text-transform: uppercase;
   margin-top: 15px;
   padding-bottom: 15px;
   position: relative;
 }
-.SbT1::after{
+
+.SbT1::after {
   content: "";
   background: #d6b264;
   width: 150px;
@@ -3385,14 +3439,16 @@ body {
   left: 15px;
   bottom: 0;
 }
-[dir="rtl"] .SbT1{
+
+[dir="rtl"] .SbT1 {
   text-align: right;
 }
-[dir="rtl"]  .SbT1::after{
+
+[dir="rtl"] .SbT1::after {
   left: auto;
   right: 15px;
 }
 
-.Opacity1 *{
+.Opacity1 * {
   opacity: 1 !important;
 }
