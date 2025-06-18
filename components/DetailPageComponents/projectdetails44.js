@@ -18,7 +18,7 @@ import image1 from "../../public/as1.jpg"
 import image2 from "../../public/as2.jpg"
 import { useLocale } from 'next-intl';
 
-export default function ProjectDetails44({ text1, text2, text3, GalleryImagesWithNames ,GalleryImagesWithNames1 }) {
+export default function ProjectDetails44({ text1, text2, text3, interiorTitle1 = null, interiorTitle2 = null, GalleryImagesWithNames, GalleryImagesWithNames1 }) {
     const isDesktop = useMediaQuery("(min-width: 960px)");
     const [open, setOpen] = useState(false);
     const sliderRef = useRef(null);
@@ -205,15 +205,17 @@ export default function ProjectDetails44({ text1, text2, text3, GalleryImagesWit
         <div className='position-relative pd-common bg2'>
 
             <div className='container'>
-                
-                    <div className='row'>
-                        <div className='col-md-12' style={{ textAlign: locale === "ar" ? "right" : undefined }}>
-                            <div className="BlT1 nunito-text text-uppercase">{text1}</div>
-                            <div className="BlT2 text-uppercase">{text2}​</div>
-                            <div className="BlT3">{text3}</div>
-                        </div>
-                        <div className='SbT1 col-md-12'>Studio apartments </div>
-                        {GalleryImagesWithNames1?.length > 0 && (
+
+                <div className='row'>
+                    <div className='col-md-12' style={{ textAlign: locale === "ar" ? "right" : undefined }}>
+                        <div className="BlT1 nunito-text text-uppercase">{text1}</div>
+                        <div className="BlT2 text-uppercase">{text2}​</div>
+                        <div className="BlT3">{text3}</div>
+                    </div>
+
+                    {GalleryImagesWithNames1?.length > 0 && (
+                        <>
+                            <div className='SbT1 col-md-12'>{interiorTitle1}</div>
                             <div className='col-md-12 PrDetSliderBox UniqueSliderBox' ref={sliderRef}>
                                 <Slider ref={slickRef} {...settings}>
                                     {GalleryImagesWithNames1.map((img, index) => (
@@ -243,9 +245,12 @@ export default function ProjectDetails44({ text1, text2, text3, GalleryImagesWit
                                     }
                                 />
                             </div>
-                        )}
-                         <div className='SbT1 col-md-12'>One Bedroom apartments </div>
-                        {GalleryImagesWithNames?.length > 0 && (
+                        </>
+                    )}
+
+                    {GalleryImagesWithNames?.length > 0 && (
+                        <>
+                            <div className='SbT1 col-md-12'>{interiorTitle2}</div>
                             <div className='col-md-12 PrDetSliderBox UniqueSliderBox' ref={sliderRef}>
                                 <Slider ref={slickRef} {...settings}>
                                     {GalleryImagesWithNames.map((img, index) => (
@@ -275,11 +280,12 @@ export default function ProjectDetails44({ text1, text2, text3, GalleryImagesWit
                                     }
                                 />
                             </div>
-                        )}
+                        </>
+                    )}
 
 
 
-                    </div>
+                </div>
 
             </div>
 
