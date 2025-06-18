@@ -15,6 +15,7 @@ import MetaInjector from "@/components/Meta/MetaInjector";
 import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 import ProjectDetails8 from "@/components/DetailPageComponents/ProjectDetails8";
+import ProjectDetails44 from "@/components/DetailPageComponents/projectdetails44";
 import { useTranslations } from "next-intl";
 
 export default function TakmeelAlBarariViewClient() {
@@ -62,11 +63,19 @@ export default function TakmeelAlBarariViewClient() {
         text2: t('DivineAlBarari.amenitiesSection.title'),
         text3: t('DivineAlBarari.amenitiesSection.content'),
         GalleryImages: [
-            "majan1/1.jpg",
-            "majan1/2.jpg",
-            "majan1/3.jpg",
-            "majan1/4.jpg",
-            "am3.jpg",
+            "newlanding/amenities/1.jpg",
+            "newlanding/amenities/2.jpg",
+            "newlanding/amenities/3.jpg",
+            "newlanding/amenities/4.jpg",
+            "newlanding/amenities/5.jpg",
+            "newlanding/amenities/6.jpg",
+            "newlanding/amenities/7.jpg",
+            "newlanding/amenities/8.jpg",
+            "newlanding/amenities/9.jpg",
+            "newlanding/amenities/10.jpg",
+            "newlanding/amenities/11.jpg",
+            "newlanding/amenities/12.jpg",
+            "newlanding/amenities/13.jpg",
 
         ]
     };
@@ -112,111 +121,68 @@ export default function TakmeelAlBarariViewClient() {
             subHeading: "The apartment was designed by Lucy De Vito with great attention to details"
         },
     ];
-
+    
     const DataProjectDetails4 = {
         text1: t('DivineAlBarari.interiorSection.subTitle'),
         text2: t('DivineAlBarari.interiorSection.title'),
         text3: t('DivineAlBarari.interiorSection.content'),
         GalleryImagesWithNames: [
             {
-                src: "am1.jpg",
-                title: "Kitchen Area",
-            },
-            // {
-            //   src: "am2.jpg",
-            //   title: "Kitchen Area",
-            // },
-            {
-                src: "am55.jpg",
-                title: "Living Area",
-            },
-            {
-                src: "am6.jpg",
-                title: "Lounge Area",
-            },
-            // {
-            //   src: "m1.jpg",
-            //   title: "Bedroom Area",
-            // },
-            {
-                src: "m3.jpg",
-                title: "Living Area",
-            },
-
-
-            {
-                src: "majan1/20.jpg",
-                title: "Living Area",
-            },
-            {
-                src: "majan1/28.jpg",
-                title: "Gym Area",
-            },
-            // {
-            //   src: "majan1/34.jpg",
-            //   title: "Lounge Area",
-            // },
-            // {
-            //   src: "majan1/46.jpg",
-            //   title: "Kitchen Area",
-            // },
-            {
-                src: "majan1/49.jpg",
-                title: "Bedroom Area",
-            },
-            {
-                src: "majan1/54.jpg",
-                title: "Washroom Area",
-            },
-            {
-                src: "majan1/52.jpg",
-                title: "Bedroom Area",
-            },
-            {
-                src: "majan1/36.jpg",
-                title: "Living Area",
-            },
-            {
-                src: "majan1/29.jpg",
-                title: "Gym Area",
-            },
-            // {
-            //   src: "majan1/30.jpg",
-            //   title: "Gym Area",
-            // },
-
-            {
-                src: "majan1/37.jpg",
-                title: "Living Area",
-            },
-            {
-                src: "majan1/38.jpg",
-                title: "Living Area",
-            },
-            // {
-            //   src: "majan1/47.jpg",
-            //   title: "Kitchen Area",
-            // },
-            {
-                src: "majan1/48.jpg",
+                src: "newlanding/interior/1.jpg",
                 title: "Kitchen Area",
             },
             {
-                src: "majan1/56.jpg",
-                title: "Bedroom Area",
-            },
-            {
-                src: "majan1/57.jpg",
-                title: "Bedroom Area",
-            },
-            {
-                src: "majan1/59.jpg",
+                src: "newlanding/interior/2.jpg",
                 title: "Kitchen Area",
             },
-
+            {
+                src: "newlanding/interior/3.jpg",
+                title: "Kitchen Area",
+            },
+            {
+                src: "newlanding/interior/4.jpg",
+                title: "Kitchen Area",
+            },
+            {
+                src: "newlanding/interior/5.jpg",
+                title: "Kitchen Area",
+            },
+            {
+                src: "newlanding/interior/6.jpg",
+                title: "Kitchen Area",
+            },
+            {
+                src: "newlanding/interior/7.jpg",
+                title: "Kitchen Area",
+            },
+            {
+                src: "newlanding/interior/8.jpg",
+                title: "Kitchen Area",
+            },
         ],
-        // GalleryImagesWithNames: []
+        GalleryImagesWithNames1: [
+            {
+                src: "newlanding/studio/1.jpg",
+                title: "Kitchen Area",
+            },
+            {
+                src: "newlanding/studio/2.jpg",
+                title: "Living Area",
+            },
+            {
+                src: "newlanding/studio/4.jpg",
+                title: "Living Area",
+            },
+            {
+                src: "newlanding/studio/5.jpg",
+                title: "Living Area",
+            },
+            
+        ],
     };
+
+
+    
 
     const DataPaymentBlock = {
         title: t('DivineAlBarari.paymentSection.title'),
@@ -444,7 +410,7 @@ export default function TakmeelAlBarariViewClient() {
             <ProjectDetails8 planData={DataProjectDetails8} data={DataProjectDetails6} />
             <PaymentPlanBlock {...DataPaymentBlock} />
             <div className="FxdHgtImage">
-                <ProjectDetails4 {...DataProjectDetails4} />
+                <ProjectDetails44  {...DataProjectDetails4} />
             </div>
             <ProjectDetails7 mapimage="new1.jpg" mobileMapImage="new1m.jpg" {...DataProjectDetails7} />
             {/* <ProjectDetails3 mainimage1="ak2.jpg" data={DataProjectDetails3} /> */}

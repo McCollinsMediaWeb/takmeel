@@ -3367,3 +3367,23 @@ body {
   /* left: auto; */
   right: -30px;
 }
+
+.SbT1{
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+}
+.SbT1::after{
+  content: "";
+  background: #d6b264;
+  width: 150px;
+  height: 2px;
+  border-radius: 5px;
+  position: absolute;
+  left: 15;
+  bottom: 0;
+}
+
+
