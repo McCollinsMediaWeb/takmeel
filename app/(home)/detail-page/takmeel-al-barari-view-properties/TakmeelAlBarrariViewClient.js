@@ -415,7 +415,7 @@ export default function TakmeelAlBarariViewClient() {
             <div className="FxdHgtImage">
                 <ProjectDetails44  {...DataProjectDetails4} />
             </div>
-            <ProjectDetails7 mapimage="new1.jpg" mobileMapImage="new1m.jpg" {...DataProjectDetails7} />
+            <ProjectDetails7 mapimage="mapnew1.jpg" mobileMapImage="mapmobilenew.jpg" {...DataProjectDetails7} />
             {/* <ProjectDetails3 mainimage1="ak2.jpg" data={DataProjectDetails3} /> */}
             {/* <ProjectDetails5 panoramaimage="/albararistreet.jpg" /> */}
             {/* <ProjectDetails7 mapimage="mapalb.jpg" {...DataProjectDetails7} /> */}
