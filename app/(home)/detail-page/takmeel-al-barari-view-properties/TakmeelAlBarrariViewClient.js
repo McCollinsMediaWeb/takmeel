@@ -121,11 +121,13 @@ export default function TakmeelAlBarariViewClient() {
             subHeading: "The apartment was designed by Lucy De Vito with great attention to details"
         },
     ];
-    
+
     const DataProjectDetails4 = {
         text1: t('DivineAlBarari.interiorSection.subTitle'),
         text2: t('DivineAlBarari.interiorSection.title'),
         text3: t('DivineAlBarari.interiorSection.content'),
+        interiorTitle1: t('DivineAlBarari.interiorSection.studioApartment.title'),
+        interiorTitle2: t('DivineAlBarari.interiorSection.oneBedroomApartment.title'),
         GalleryImagesWithNames: [
             {
                 src: "newlanding/interior/1.jpg",
@@ -177,12 +179,12 @@ export default function TakmeelAlBarariViewClient() {
                 src: "newlanding/studio/5.jpg",
                 title: "Living Area",
             },
-            
+
         ],
     };
 
 
-    
+
 
     const DataPaymentBlock = {
         title: t('DivineAlBarari.paymentSection.title'),
