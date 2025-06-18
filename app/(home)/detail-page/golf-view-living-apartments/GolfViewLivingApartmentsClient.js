@@ -19,7 +19,8 @@ export default function GolfViewLivingApartmentsClient() {
     const detailHeroData = {
         backgroundImage: "Divine golf apartments_landscape.mp4",
         placeholderImage: "/cover4.jpg",
-        backgroundImageMobile: "k5.jpg",
+        // backgroundImageMobile: "k5.jpg",
+        backgroundImageMobile: "Divine golf apartments_landscape.mp4",
         text1: t('GolfViewLivingApartment.content'),
         text2: t('GolfViewLivingApartment.title'),
         text3: t('GolfViewLivingApartment.subTitle'),

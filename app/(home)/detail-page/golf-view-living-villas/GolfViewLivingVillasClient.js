@@ -15,11 +15,12 @@ import { useTranslations } from "next-intl";
 
 export default function GolfViewLivingVillasClient() {
     const t = useTranslations('Properties');
-    
+
     const detailHeroData = {
         backgroundImage: "Divine golf villas_landscape.mp4",
         placeholderImage: "/cover5.jpg",
-        backgroundImageMobile: "vill.jpg",
+        // backgroundImageMobile: "vill.jpg",
+        backgroundImageMobile: "Divine golf villas_landscape.mp4",
         text1: t('GolfViewLivingVilla.content'),
         text2: t('GolfViewLivingVilla.title'),
         text3: t('GolfViewLivingVilla.subTitle'),

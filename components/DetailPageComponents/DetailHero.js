@@ -188,8 +188,8 @@ export default function DetailHero({
     masterPlanLink,
     registerInterest,
     GalleryMedia,
-    videoPosterDesktop,
-    videoPosterMobile,
+    videoPosterDesktop = null,
+    videoPosterMobile = null,
     projectStatus,
     placeholderImage
 }) {
@@ -322,7 +322,7 @@ export default function DetailHero({
                                 <>
                                     {!videoLoaded && (
                                         <img
-                                            src={placeholderImage} // fallback image (can be first frame or custom)
+                                            src={videoPosterDesktop ? videoPosterDesktop : placeholderImage} // fallback image (can be first frame or custom)
                                             alt="video preview"
                                             style={{
                                                 width: '100%',
@@ -377,7 +377,8 @@ export default function DetailHero({
                             <>
                                 {!videoLoaded && (
                                     <img
-                                        src="/abslider3.jpg"
+                                        // src={videoPosterMobile ? videoPosterMobile : "/abslider3.jpg"}
+                                        src={videoPosterMobile ? videoPosterMobile : placeholderImage}
                                         alt="video preview"
                                         style={{
                                             width: '100%',

@@ -20,7 +20,8 @@ export default function DivineResidenciaClient() {
 
     const detailHeroData = {
         backgroundImage: "divinresdesk.mp4",
-        backgroundImageMobile: "k1.jpg",
+        // backgroundImageMobile: "k1.jpg",
+        backgroundImageMobile: "divinresdesk.mp4",
         text1: t('DivineResidencia.content'),
         text2: t('DivineResidencia.title'),
         text3: t('DivineResidencia.subTitle'),
