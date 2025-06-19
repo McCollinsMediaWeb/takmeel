@@ -20,6 +20,7 @@ import ProjectDetails45 from "@/components/DetailPageComponents/projectdetails45
 import { useTranslations } from "next-intl";
 import ProjectDetails9 from "@/components/DetailPageComponents/ProjectDetails9";
 import ProjectDetails10 from "@/components/DetailPageComponents/ProjectDetails10";
+import CtaBroker from "@/components/DetailPageComponents/CtaBroker";
 
 export default function TakmeelAlBarariViewClient() {
     const t = useTranslations('Properties');
@@ -454,19 +455,8 @@ export default function TakmeelAlBarariViewClient() {
             {/* <ProjectDetails5 panoramaimage="/albararistreet.jpg" /> */}
             {/* <ProjectDetails7 mapimage="mapalb.jpg" {...DataProjectDetails7} /> */}
             <CostCalculator />
-            <div className="RegisterBrockerBox pd-common">
-                <div className="container">
-                    <div className="row BrockerFlex">
-                        <div className="col-md-9">
-                            <div className="Br1 BlT2 text-uppercase">Become a Certified Property Broker</div>
-                            <div className="Br1 BlT3">Partner with us to sell one of Dubai’s most luxurious residences and earn high commissions on every successful sale.</div>
-                        </div>
-                        <div className="col-md-3">
-                            <a href="/Takmeel-Al-Barrari-View/EOI Form.pdf" className="FormButton">Register as a Broker</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <CtaBroker/>
+           
             <PropertyForm projectName="Divine Al Barari" />
             <Footer />
             <FooterBottom />
