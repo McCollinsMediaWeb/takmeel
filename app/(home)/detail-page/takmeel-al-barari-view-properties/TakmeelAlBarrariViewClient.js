@@ -150,28 +150,29 @@ export default function TakmeelAlBarariViewClient() {
         interiorTitle1: t('DivineAlBarari.interiorSection.studioApartment.title'),
         interiorTitle2: t('DivineAlBarari.interiorSection.oneBedroomApartment.title'),
         GalleryImagesWithNames: [
+
             {
-                src: "newlanding/interior/1.jpg",
+                src: "newlanding/interior/b1.jpg",
                 title: "Kitchen Area",
             },
             {
-                src: "newlanding/interior/2.jpg",
+                src: "newlanding/interior/b2.jpg",
                 title: "Kitchen Area",
             },
             {
-                src: "newlanding/interior/3.jpg",
+                src: "newlanding/interior/b3.jpg",
                 title: "Kitchen Area",
             },
             {
-                src: "newlanding/interior/4.jpg",
+                src: "newlanding/interior/b4.jpg",
                 title: "Kitchen Area",
             },
             {
-                src: "newlanding/interior/5.jpg",
+                src: "newlanding/interior/b5.jpg",
                 title: "Kitchen Area",
             },
             {
-                src: "newlanding/interior/6.jpg",
+                src: "newlanding/interior/b6.jpg",
                 title: "Kitchen Area",
             },
 
@@ -453,6 +454,14 @@ export default function TakmeelAlBarariViewClient() {
             {/* <ProjectDetails5 panoramaimage="/albararistreet.jpg" /> */}
             {/* <ProjectDetails7 mapimage="mapalb.jpg" {...DataProjectDetails7} /> */}
             <CostCalculator />
+            <div className="RegisterBrockerBox">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-8"></div>
+                        <div className="col-md-4"></div>
+                    </div>
+                </div>
+            </div>
             <PropertyForm projectName="Divine Al Barari" />
             <Footer />
             <FooterBottom />
