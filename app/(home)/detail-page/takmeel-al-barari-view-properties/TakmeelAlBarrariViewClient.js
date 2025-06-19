@@ -69,6 +69,10 @@ export default function TakmeelAlBarariViewClient() {
         imageSection1Title: t('DivineAlBarari.amenitiesSection.imageSection1.title'),
         imageSection2Title: t('DivineAlBarari.amenitiesSection.imageSection2.title'),
         GalleryImages: [
+            "newlanding/amenities/a1.jpg",
+            "newlanding/amenities/a2.jpg",
+            "newlanding/amenities/a3.jpg",
+            "newlanding/amenities/a4.jpg",
             "newlanding/amenities/1.jpg",
             "newlanding/amenities/2.jpg",
             "newlanding/amenities/3.jpg",
