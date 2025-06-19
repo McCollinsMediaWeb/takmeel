@@ -194,7 +194,7 @@ export default function CostCalculator({ }) {
         //                                 <div className='FreeCredit'>
         //                                     <div className='FreeCreditFlex'>
         //                                         <div className='FreeCreditFlexLeft'>For More Enquiries</div>
-        //                                         <div className='FreeCreditFlexRight'>info@takmeeluae.com</div>
+        //                                         <div className='FreeCreditFlexRight'>info@takmeeldevelopment.com</div>
         //                                     </div>
         //                                 </div>
         //                             </div>
@@ -342,7 +342,7 @@ export default function CostCalculator({ }) {
                         <div className="tkc-contact-section">
                             <div className="tkc-contact-info">
                                 <span className="tkc-contact-label">{t('DivineAlBarari.costCalculator.valueSection.moreEnquiries')}</span>
-                                <span className="tkc-contact-email">info@takmeeluae.com</span>
+                                <span className="tkc-contact-email">info@takmeeldevelopment.com</span>
                             </div>
 
                             <div className='formButtonsWrap'>

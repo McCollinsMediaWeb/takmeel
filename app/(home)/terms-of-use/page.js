@@ -227,7 +227,7 @@ export default function TermsOfUse() {
                  <div className="PolicyBoxT2">For questions about these Terms, contact:</div>
                </motion.div>
                <motion.div variants={itemVariants}>
-                 <div className="PolicyBoxT2">info@takmeeluae.com</div>
+                 <div className="PolicyBoxT2">info@takmeeldevelopment.com</div>
                </motion.div>
                <motion.div variants={itemVariants}>
                  <div className="PolicyBoxT2">+971 523749615</div>

@@ -82,7 +82,7 @@ export default async function ContactUs() {
                     <a href='#' title='Call Us'>+971 45655099</a>
                   </div>
                   <div className='CRow email a3'>
-                    <a href='#' title='Call Us'>info@takmeeluae.com</a>
+                    <a href='#' title='Call Us'>info@takmeeldevelopment.com</a>
                   </div>
                   <div className='CRow location a4'>
                     <div className="LcBox">

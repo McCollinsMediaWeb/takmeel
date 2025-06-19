@@ -298,8 +298,8 @@ export default function OurOffice() {
                                             gap: "10px",
                                         }}
                                     >
-                                        <a href="mailto:info@takmeeluae.com" style={{ color: "#333", textDecoration: "none" }}>
-                                            Info@Takmeeluae.Com
+                                        <a href="mailto:info@takmeeldevelopment.com" style={{ color: "#333", textDecoration: "none" }}>
+                                            Info@takmeeldevelopment.com
                                         </a>
                                     </div>
                                 </div>

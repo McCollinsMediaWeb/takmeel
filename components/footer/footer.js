@@ -29,7 +29,7 @@ export default function Footer() {
                   <a href='tel:+971 45655099' style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} title='Call Us'>+971 45655099</a>
                 </div>
                 <div className='CRow email'>
-                  <a href='mailto:info@takmeeluae.com' style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} title='Call Us'>info@takmeeluae.com</a>
+                  <a href='mailto:info@takmeeldevelopment.com' style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} title='Call Us'>info@takmeeldevelopment.com</a>
                 </div>
                 <div className='CRow location'>
                   <a href='https://maps.app.goo.gl/UtBJrv8Qw1DjwXsi9' target='_blank' title='Call Us'>{t('info.address')}</a>
