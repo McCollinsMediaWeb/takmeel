@@ -3456,6 +3456,9 @@ body {
 .BrockerFlex{
   align-items: center;
 }
+[dir="rtl"] .BrockerFlex {
+  text-align: right;
+}
 .BrockerFlex a:hover{
   background-color: #1d1d1b;
   color: #fff;

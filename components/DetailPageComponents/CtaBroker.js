@@ -71,18 +71,20 @@ export default function CtaBroker({ planData }) {
                                 <div className="container">
                                     <div className="row BrockerFlex">
                                         <div className="col-md-9">
-                                            <div className="Br1 BlT2 text-uppercase">Become a Certified Property Broker</div>
-                                            <div className="Br1 BlT3">Partner with us to sell one of Dubai’s most luxurious residences and earn high commissions on every successful sale.</div>
+                                            <div className="Br1 BlT2 text-uppercase">{t('DivineAlBarari.registerBrokerSection.title')}</div>
+                                            <div className="Br1 BlT3">{t('DivineAlBarari.registerBrokerSection.subTitle')}</div>
                                         </div>
                                         <div className="col-md-3">
-                                            <a href="/Takmeel-Al-Barrari-View/EOI Form.pdf" className="FormButton">Register as a Broker</a>
+                                            <a href="/Takmeel-Al-Barrari-View/EOI Form.pdf"
+                                                download="Broker-Registration.pdf"
+                                                className="FormButton">{t('DivineAlBarari.registerBrokerSection.buttonText')}</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </motion.div>
                     </div>
-                    
+
                 </div >
 
             </div >

@@ -766,6 +766,11 @@
                     "moreEnquiries": "لمزيد من الاستفسارات",
                     "applyNow": "قدّم الآن"
                 }
+            },
+            "registerBrokerSection": {
+                "title": "كن وسيطًا عقاريًا معتمدًا",
+                "subTitle": "شاركنا في بيع أحد أرقى المساكن في دبي واحصل على عمولات عالية عن كل عملية بيع ناجحة.",
+                "buttonText": "سجل كوسيط"
             }
         },
         "DivineResidencia": {

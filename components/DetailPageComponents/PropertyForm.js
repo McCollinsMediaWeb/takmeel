@@ -279,7 +279,7 @@ export default function PropertyForm({ projectName }) {
                                             </button>
                                         </div>
 
-                                        <div className='FormButton FormButton1'>
+                                        {/* <div className='FormButton FormButton1'>
                                             <a
                                                 type="button"
                                                 className="position-relative"
@@ -298,7 +298,7 @@ export default function PropertyForm({ projectName }) {
                                             >
                                                 {t('registerAsBroker')}
                                             </a>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     {submitted && (
                                         <div style={{ color: 'green', marginTop: '10px', fontSize: '14px' }}>
