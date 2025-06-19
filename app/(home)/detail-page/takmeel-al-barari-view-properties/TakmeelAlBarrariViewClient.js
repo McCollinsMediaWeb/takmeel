@@ -36,8 +36,8 @@ export default function TakmeelAlBarariViewClient() {
         brochureLink: null,
         masterPlanLink: null,
         registerInterest: null,
-        videoPosterDesktop: "Takmeel-Al-Barrari-View/Majan 03.jpg",
-        videoPosterMobile: "Takmeel-Al-Barrari-View/Mobile Majan 03.jpg",
+        videoPosterDesktop: "/Takmeel-Al-Barrari-View/Majan 03.jpg",
+        videoPosterMobile: "/Takmeel-Al-Barrari-View/Mobile Majan 03.jpg",
         GalleryMedia: [
             // {
             // type: "video",
