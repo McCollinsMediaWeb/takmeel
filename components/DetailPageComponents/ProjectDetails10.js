@@ -68,7 +68,7 @@ export default function ProjectDetails10({ planData }) {
                             viewport={{ once: true, amount: 0.5 }}
                         >
                             {/* <div className="BlT1 nunito-text text-uppercase">{t('amenitiesIcons.subTitle')}</div> */}
-                            <div className="BlT2 text-uppercase">{t('amenitiesIcons.title')}​</div>
+                            <div className="BlT2 text-uppercase text-center">{t('amenitiesIcons.title')}​</div>
                         </motion.div>
                         <div className='PlanBox'>
                             <Image

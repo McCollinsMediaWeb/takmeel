@@ -86,12 +86,17 @@ export default function TakmeelAlBarariViewClient() {
 
         ],
         GalleryImages1: [
+            "newlanding/interior/i1.jpg",
+            "newlanding/interior/i2.jpg",
+            "newlanding/interior/i4.jpg",
             "newlanding/interior/8.jpg",
-            "newlanding/interior/7.jpg",
-            "newlanding/amenities/11.jpg",
-            "newlanding/amenities/12.jpg",
-            "newlanding/amenities/13.jpg",
             "newlanding/interior/10.jpg",
+            "newlanding/amenities/13.jpg",
+            "newlanding/interior/g1.jpg",
+            "newlanding/interior/p1.jpg",
+            "newlanding/interior/p2.jpg",
+            "newlanding/interior/c1.jpg",
+            
 
         ]
     };
