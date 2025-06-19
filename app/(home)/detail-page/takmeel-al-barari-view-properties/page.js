@@ -120,7 +120,7 @@ export default async function TakmeelAlBarariViewPropertiesPage() {
     text1: "Modern Living in the Heart of Majan",
     text2: "Spectacular Views, Contemporary Comfort",
     text3:
-      "Takmeel’s Al Barari project reimagines luxury living—where smart design meets natural beauty. Surrounded by greenery and water features, these 1, 2 & 3-bedroom apartments offer modern layouts, premium finishes, and sustainable living. Just minutes from Dubai Miracle Garden with easy access to Sheikh Zayed Road, this is where peace and connectivity come together in perfect harmony.",
+      "Takmeel’s Al Barari project reimagines luxury living—where smart design meets natural beauty. Surrounded by greenery and water features, these Studio, 1, 2 & 3-bedroom apartments offer modern layouts, premium finishes, and sustainable living. Just minutes from Dubai Miracle Garden with easy access to Sheikh Zayed Road, this is where peace and connectivity come together in perfect harmony.",
     GalleryImagesWithNames: [
       {
         src: "am1.jpg",
