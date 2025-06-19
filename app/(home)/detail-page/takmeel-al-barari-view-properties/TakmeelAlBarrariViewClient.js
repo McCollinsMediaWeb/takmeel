@@ -454,11 +454,16 @@ export default function TakmeelAlBarariViewClient() {
             {/* <ProjectDetails5 panoramaimage="/albararistreet.jpg" /> */}
             {/* <ProjectDetails7 mapimage="mapalb.jpg" {...DataProjectDetails7} /> */}
             <CostCalculator />
-            <div className="RegisterBrockerBox">
+            <div className="RegisterBrockerBox pd-common">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-md-8"></div>
-                        <div className="col-md-4"></div>
+                    <div className="row BrockerFlex">
+                        <div className="col-md-9">
+                            <div className="Br1 BlT2 text-uppercase">Become a Certified Property Broker</div>
+                            <div className="Br1 BlT3">Partner with us to sell one of Dubai’s most luxurious residences and earn high commissions on every successful sale.</div>
+                        </div>
+                        <div className="col-md-3">
+                            <a href="/Takmeel-Al-Barrari-View/EOI Form.pdf" className="FormButton">Register as a Broker</a>
+                        </div>
                     </div>
                 </div>
             </div>
