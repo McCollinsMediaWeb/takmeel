@@ -639,9 +639,9 @@
         "amenitiesIcons": {
             "subTitle": "AMENITIES AND FACILITIES",
             "title": "Create Your Perfect Home Layout​",
-            "subLabel1": "Ground Floor",
-            "subLabel2": "Indoor",
-            "subLabel3": "Roof Top",
+            "subLabel1": "Interior Amenities",
+            "subLabel2": "Exterior Amenities",
+            "subLabel3": "Roof Top Amenities",
             "items": {
                 "coWorkingSpace": "Co-working space",
                 "partyArea": "Party Area",
