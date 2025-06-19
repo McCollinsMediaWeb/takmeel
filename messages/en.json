@@ -152,7 +152,8 @@
             "option1": "Yes",
             "option2": "No"
         },
-        "buttonText": "Submit Now"
+        "buttonText": "Submit Now",
+        "registerAsBroker": "Register as Broker?"
     },
     "Footer": {
         "info": {
@@ -323,6 +324,10 @@
         "title": "Discover Our",
         "titleLine2": "Featured Properties",
         "properties": {
+            "slider0": {
+                "title": "Al Barari",
+                "subTitle": "Majan, Dubai"
+            },
             "slider1": {
                 "title": "Divine Residencia",
                 "subTitle": "Dubai Studio City, Dubai"

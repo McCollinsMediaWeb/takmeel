@@ -399,19 +399,19 @@ export default function TakmeelAlBarariViewClient() {
 
     const DataProjectDetails8 = [
         {
-            image: "Takmeel-Al-Barrari-View/1 BHK Layout.jpg",
+            image: "Takmeel-Al-Barrari-View/1 BHK Layout Copy.png",
             pdfFile: "Takmeel-Al-Barrari-View/1 BHK- Al Barari Layout_compressed.pdf"
         },
         {
-            image: "Takmeel-Al-Barrari-View/2 BHK Layout.jpg",
+            image: "Takmeel-Al-Barrari-View/2 BHK Layout Copy.png",
             pdfFile: "Takmeel-Al-Barrari-View//2 BHK- Al Barari Layout_compressed.pdf"
         },
         {
-            image: "Takmeel-Al-Barrari-View/3 BHK Layout.jpg",
+            image: "Takmeel-Al-Barrari-View/3 BHK Layout Copy.png",
             pdfFile: "Takmeel-Al-Barrari-View/3 BHK- Al Barari Layout_compressed.pdf"
         },
         {
-            image: "Takmeel-Al-Barrari-View/Studio Layout Copy.jpg",
+            image: "Takmeel-Al-Barrari-View/Studio Layout Copy.png",
             pdfFile: "Takmeel-Al-Barrari-View/Studio- Al Barari Layout_compressed.pdf"
         }
     ]

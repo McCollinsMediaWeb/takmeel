@@ -278,6 +278,27 @@ export default function PropertyForm({ projectName }) {
                                                 )}
                                             </button>
                                         </div>
+
+                                        <div className='FormButton FormButton1'>
+                                            <a
+                                                type="button"
+                                                className="position-relative"
+                                                style={{
+                                                    background: 'transparent',
+                                                    border: 'none',
+                                                    padding: 0,
+                                                    margin: 0,
+                                                    color: 'inherit',
+                                                    font: 'inherit',
+                                                    cursor: 'pointer'
+                                                }}
+                                                disabled={loading}
+                                                href="/Takmeel-Al-Barrari-View/EOI Form.pdf"
+                                                download="Broker-Registration.pdf"
+                                            >
+                                                {t('registerAsBroker')}
+                                            </a>
+                                        </div>
                                     </div>
                                     {submitted && (
                                         <div style={{ color: 'green', marginTop: '10px', fontSize: '14px' }}>

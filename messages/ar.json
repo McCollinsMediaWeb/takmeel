@@ -152,7 +152,8 @@
             "option1": "نعم",
             "option2": "لا"
         },
-        "buttonText": "يقدم الآن"
+        "buttonText": "يقدم الآن",
+        "registerAsBroker": "سجّل كوسيط؟"
     },
     "Footer": {
         "info": {
@@ -323,6 +324,10 @@
         "title": "اكتشف",
         "titleLine2": "أبرز عقاراتنا",
         "properties": {
+            "slider0": {
+                "title": "البراري",
+                "subTitle": "مجان، دبي"
+            },
             "slider1": {
                 "title": "ديفاين ريزيدينسيا",
                 "subTitle": "دبي استوديو سيتي، دبي"

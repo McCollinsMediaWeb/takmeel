@@ -284,14 +284,14 @@ export default function ProjectItem({
                                 <div className="Txt2 text-uppercase">{text2}</div>
                                 <div className="Txt3 nunito-text">{text3}</div>
                                 <div className="Txt17 nunito-text">{tagline}</div>
-                                {url !== "takmeel-al-barari-view-properties" && (
+                                {/* {url !== "takmeel-al-barari-view-properties" && (
                                     <Link href={`/detail-page/${url}`} className="Link1 hover1">
                                         {t('buttonText')}
                                     </Link>
-                                )}
-                                {/* <Link href={`/detail-page/${url}`} className="Link1 hover1">
+                                )} */}
+                                <Link href={`/detail-page/${url}`} className="Link1 hover1">
                                     {t('buttonText')}
-                                </Link> */}
+                                </Link>
                                 {projectStatus && (
                                     <div className="Txt1">
                                         <span className="PrStatus">{projectStatus}</span>
@@ -340,19 +340,19 @@ export default function ProjectItem({
                                         </motion.div>
                                     </motion.div>
 
-                                    {url !== "takmeel-al-barari-view-properties" && (
+                                    {/* {url !== "takmeel-al-barari-view-properties" && (
                                         <motion.div variants={itemVariants}>
                                             <Link href={`/detail-page/${url}`} className="Link1 hover1">
                                                 {t('buttonText')}
                                             </Link>
                                         </motion.div>
-                                    )}
+                                    )} */}
 
-                                    {/* <motion.div variants={itemVariants}>
+                                    <motion.div variants={itemVariants}>
                                         <Link href={`/detail-page/${url}`} className="Link1 hover1">
                                             {t('buttonText')}
                                         </Link>
-                                    </motion.div> */}
+                                    </motion.div>
 
                                     {projectStatus && (
                                         <motion.div className="Txt1" variants={itemVariants}>

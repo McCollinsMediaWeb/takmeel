@@ -198,7 +198,7 @@ export default function ProjectsPageHeader() {
                             </div>
                             <div className="FtrProperties" ref={sliderRef}>
                                 <Slider ref={slickRef} {...settings}>
-                                    {/* <div>
+                                    <div>
                                         <Link className="no-hover-color" href="/detail-page/takmeel-al-barari-view-properties">
                                             <div className="FtrProject">
                                                 <div className="ProjectImage">
@@ -211,13 +211,13 @@ export default function ProjectsPageHeader() {
                                                     />
                                                 </div>
                                                 <div className="ProjectDetails text-center">
-                                                    <div className="PT1">Divine Al Barari</div>
-                                                    <div className="PT2">Majan, Dubai</div>
+                                                    <div className="PT1">{t('properties.slider0.title')}</div>
+                                                    <div className="PT2">{t('properties.slider0.subTitle')}</div>
                                                 </div>
                                             </div>
                                         </Link>
 
-                                    </div> */}
+                                    </div>
                                     <div>
                                         <Link className="no-hover-color" href="/detail-page/divine-residencia">
                                             <div className="FtrProject">
