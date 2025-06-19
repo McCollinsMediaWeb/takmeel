@@ -99,7 +99,7 @@ export default function TakmeelAlBarariViewClient() {
         ThumbImage1: "grd2.jpg",
         ThumbImage2: "grd3.jpg",
         text1Heading: "Spacious Urban Living in Majan",
-        text1Desc: "This exclusive development features a curated selection of: 1, 2 & 3 Bedroom Apartments , Meticulously planned layouts , High-quality finishing & sanitary ware World-class materials throughout",
+        text1Desc: "This exclusive development features a curated selection of: Studio, 1, 2 & 3 Bedroom Apartments , Meticulously planned layouts , High-quality finishing & sanitary ware World-class materials throughout",
         text2Heading: "A Family-Friendly Community with Everything You Need",
         text2Desc: "Enjoy a peaceful lifestyle with convenient access to key destinations: Close to Dubai Miracle Garden & Butterfly Garden , Easy access to Sheikh Zayed Road & Umm Suqeim Street Tranquil , surroundings with minimal noise and traffic",
 
