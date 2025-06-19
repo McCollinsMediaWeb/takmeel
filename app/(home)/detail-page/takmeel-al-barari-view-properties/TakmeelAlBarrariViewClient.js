@@ -94,8 +94,14 @@ export default function TakmeelAlBarariViewClient() {
             "newlanding/interior/10.jpg",
             "newlanding/amenities/13.jpg",
             "newlanding/interior/g1.jpg",
+            "newlanding/interior/g2.jpg",
+            "newlanding/interior/g3.jpg",
+            "newlanding/interior/g4.jpg",
             "newlanding/interior/p1.jpg",
             "newlanding/interior/p2.jpg",
+            "newlanding/interior/p3.jpg",
+            "newlanding/interior/p4.jpg",
+            "newlanding/interior/p5.jpg",
             "newlanding/interior/c1.jpg",
             
 
