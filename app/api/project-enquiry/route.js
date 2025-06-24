@@ -51,16 +51,14 @@ export async function POST(req) {
             port: 587,
             secure: false,
             auth: {
-                // user: "sahad@mccollinsmedia.com",
-                // pass: "muwjfkkhclpsvrgg",
-                user: "developer@mccollinsmedia.com",
-                pass: "hjezjnallmndxlha",
+                user: process.env.EMAIL_FROM,
+                pass: process.env.EMAIL_PASS,
             },
         });
 
         const mailOptions = {
-            from: "developer@mccollinsmedia.com",
-            to: "info@takmeeldevelopment.com",
+            from: process.env.EMAIL_FROM,
+            to: process.env.EMAIL_TO,
             subject: "New Form Submission",
             html: `
                 <h2>Form Submitted</h2>
