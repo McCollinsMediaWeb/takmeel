@@ -409,7 +409,7 @@ const MapComponent = ({ apiKey, center, zoom, styles, nearByPlaces, desktopHeigh
                     // Find working image and then create content
                     findWorkingImage().then((photoUrl) => {
                         const contentHtml = `
-                    <div style="width: 300px; font-family: Roboto, Arial, sans-serif; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+                    <div style="width: 100%; font-family: Roboto, Arial, sans-serif; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
                         <!-- Single Image -->
                         <div style="width: 100%; height: 150px; overflow: hidden; background: #f5f5f5;">
                             <img src="${photoUrl}" 
@@ -488,7 +488,7 @@ const MapComponent = ({ apiKey, center, zoom, styles, nearByPlaces, desktopHeigh
                         // Re-find working image and display
                         findWorkingImage().then((photoUrl) => {
                             const contentHtml = `
-                        <div style="width: 300px; font-family: Roboto, Arial, sans-serif; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+                        <div style="width: 100%; font-family: Roboto, Arial, sans-serif; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
                             <!-- Single Image -->
                             <div style="width: 100%; height: 150px; overflow: hidden; background: #f5f5f5;">
                                 <img src="${photoUrl}" 
