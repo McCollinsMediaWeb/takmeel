@@ -4,18 +4,19 @@ import { ObjectId } from "mongodb";
 
 export async function GET(req, { params }) {
     try {
-        const { id } = params;
+        const { id } = await params;
 
         // Validate ID
-        if (!ObjectId.isValid(id)) {
-            return NextResponse.json({ success: false, message: "Invalid news ID" }, { status: 400 });
-        }
+        // if (!ObjectId.isValid(id)) {
+        //     return NextResponse.json({ success: false, message: "Invalid news ID" }, { status: 400 });
+        // }
 
         const client = await clientPromise;
         const db = client.db("Takmeel");
         const newsCollection = db.collection("news");
 
-        const newsItem = await newsCollection.findOne({ _id: new ObjectId(id) });
+        // const newsItem = await newsCollection.findOne({ _id: new ObjectId(id) });
+        const newsItem = await newsCollection.findOne({ handle: id });
 
         if (!newsItem) {
             return NextResponse.json({ success: false, message: "News not found" }, { status: 404 });

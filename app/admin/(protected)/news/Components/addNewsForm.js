@@ -232,6 +232,7 @@ function AddNewsForm({
     const [date, setDate] = useState(newsToEdit?.date || defaultDate);
     const [category, setCategory] = useState(newsToEdit?.category || '');
     const [newsHeading, setNewsHeading] = useState(newsToEdit?.heading || '');
+    const [newsHandle, setNewsHandle] = useState(newsToEdit?.handle || '');
     // const [newsContent, setNewsContent] = useState('');
     const [newsContent, setNewsContent] = useState(newsToEdit?.content || '');
     const [newsSubHeading, setNewsSubHeading] = useState(newsToEdit?.subheading || '');
@@ -275,6 +276,7 @@ function AddNewsForm({
                 date,
                 category,
                 heading: newsHeading,
+                handle: newsHandle,
                 subheading: newsSubHeading,
                 content: newsContent,
                 visibility,
@@ -316,6 +318,22 @@ function AddNewsForm({
             setNewsToEdit(null);
         }
     };
+
+    const handleHeadingChange = (e) => {
+        const value = e.target.value;
+        setNewsHeading(value);
+
+        // generate handle
+        const handle = value
+            .toLowerCase()
+            .replace(/[^a-z0-9\s-]/g, '')
+            .trim()
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-');
+
+        setNewsHandle(handle);
+    };
+
 
 
     return (
@@ -400,7 +418,21 @@ function AddNewsForm({
                         className={styles.formControl}
                         placeholder="Enter news headline"
                         value={newsHeading}
-                        onChange={(e) => setNewsHeading(e.target.value)}
+                        // onChange={(e) => setNewsHeading(e.target.value)}
+                        onChange={handleHeadingChange}
+                        required
+                    />
+                </div>
+
+                <div className={styles.formGroup}>
+                    <label htmlFor="newsHandle">News Handle</label>
+                    <input
+                        type="text"
+                        id="newsHandle"
+                        className={styles.formControl}
+                        placeholder="Enter news handle"
+                        value={newsHandle}
+                        onChange={(e) => setNewsHandle(e.target.value)}
                         required
                     />
                 </div>

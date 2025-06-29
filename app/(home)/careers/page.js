@@ -21,7 +21,7 @@ export default async function Careers() {
             )}
             <div>
                 <CareerFirstBanner />
-                <JobListing/>
+                <JobListing />
                 <WhyWorkTogether />
                 <GetInTouchForm />
                 <Footer />

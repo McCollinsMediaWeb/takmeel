@@ -82,7 +82,8 @@ export default function BlogListing({ t, blogs }) {
                                             <div className="LtT2">{blog?.heading}</div>
                                             <div className="LtT3 truncate-3-lines">{blog?.subheading}</div>
                                             <div className="text-right">
-                                                <Link href={`/news-updates/${blog._id}`} className='Link6 hover1'>{t('readMore')}</Link>
+                                                {/* <Link href={`/news-updates/${blog._id}`} className='Link6 hover1'>{t('readMore')}</Link> */}
+                                                <Link href={`/news-updates/${blog.handle}`} className='Link6 hover1'>{t('readMore')}</Link>
                                             </div>
                                         </div>
                                     </div>
