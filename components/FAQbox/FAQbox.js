@@ -27,10 +27,10 @@ export default function FAQbox() {
             question: t('item3.question'),
             answer: t('item3.answer'),
         },
-        {
-            question: t('item4.question'),
-            answer: t('item4.answer'),
-        },
+        // {
+        //     question: t('item4.question'),
+        //     answer: t('item4.answer'),
+        // },
         {
             question: t('item5.question'),
             answer: t('item5.answer'),
@@ -39,14 +39,14 @@ export default function FAQbox() {
             question: t('item6.question'),
             answer: t('item6.answer'),
         },
-        {
-            question: t('item7.question'),
-            answer: t('item7.answer'),
-        },
-        {
-            question: t('item8.question'),
-            answer: t('item8.answer'),
-        },
+        // {
+        //     question: t('item7.question'),
+        //     answer: t('item7.answer'),
+        // },
+        // {
+        //     question: t('item8.question'),
+        //     answer: t('item8.answer'),
+        // },
         {
             question: t('item9.question'),
             answer: t('item9.answer'),
