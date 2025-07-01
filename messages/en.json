@@ -527,6 +527,54 @@
         "item10": {
             "question": "How can I get in touch with a Takmeel property advisor?",
             "answer": "You can reach us via our official website, call us directly, or visit our office. Our property consultants are ready to assist you with expert guidance and support."
+        },
+        "item11": {
+            "question": "By law, how can I buy properties in Dubai?",
+            "answer": "You can buy property in designated freehold areas by signing a sale agreement and registering it with Dubai Land Department (DLD)."
+        },
+        "item12": {
+            "question": "Can foreigners/expats buy houses in Dubai?",
+            "answer": "Yes, foreigners and expats can buy freehold properties in Dubai with full ownership rights."
+        },
+        "item13": {
+            "question": "Can I rent a unit in one of Takmeel projects?",
+            "answer": "No, Takmeel offers off-plan properties at Dubai’s premium locations for sales only. Please contact the sales office for availability by the mentioned phone or email."
+        },
+        "item14": {
+            "question": "What documents are required to register the property with Takmeel?",
+            "answer": "You need a valid passport, Emirates ID (if applicable), and signed Sales Purchase Agreement (SPA)."
+        },
+        "item15": {
+            "question": "Guide me about Oqood/Initial Agreement of Property Sale?",
+            "answer": "Oqood is a DLD-issued initial registration that secures your rights until the Title Deed is issued."
+        },
+        "item16": {
+            "question": "Can I receive my Title Deed and when?",
+            "answer": "Yes, the Title Deed is issued upon full payment and project completion, typically within the given time period by Takmeel."
+        },
+        "item17": {
+            "question": "I'd like to carry out some modifications to the unit. Is an NOC required?",
+            "answer": "Yes, any structural or design modification requires a prior NOC from Takmeel and relevant authorities."
+        },
+        "item18": {
+            "question": "Guide me to apply for a Modification NOC?",
+            "answer": "Submit a request with detailed drawings and contractor details to Takmeel's customer care team."
+        },
+        "item19": {
+            "question": "I'm planning to resell my property. Do I, as the seller, need a No Objection Certificate (NOC)?",
+            "answer": "Yes, a resale NOC from Takmeel is mandatory before listing or transferring the property."
+        },
+        "item20": {
+            "question": "Can I add my spouse's/children's name?",
+            "answer": "Yes, names can be added by submitting a request and legal documents to the DLD or Takmeel. Connect with our customer care team."
+        },
+        "item21": {
+            "question": "How to register as Broker/Agent?",
+            "answer": "Register through the DLD’s Trakheesi system with a valid RERA license and Takmeel onboarding form on its official website with complete documents."
+        },
+        "item22": {
+            "question": "How can I get in touch with a Takmeel property advisor?",
+            "answer": "For specific queries, please reach out directly to Takmeel’s customer care for personalized guidance or use our chatbot for further assistance."
         }
     },
     "Careers": {

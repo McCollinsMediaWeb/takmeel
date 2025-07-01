@@ -15,46 +15,83 @@ export default function FAQbox() {
         setActiveIndex(activeIndex === index ? null : index);
     };
     const accordionItems = [
-        {
-            question: t('item1.question'),
-            answer: t('item1.answer'),
-        },
-        {
-            question: t('item2.question'),
-            answer: t('item2.answer'),
-        },
-        {
-            question: t('item3.question'),
-            answer: t('item3.answer'),
-        },
         // {
-        //     question: t('item4.question'),
-        //     answer: t('item4.answer'),
-        // },
-        {
-            question: t('item5.question'),
-            answer: t('item5.answer'),
-        },
-        {
-            question: t('item6.question'),
-            answer: t('item6.answer'),
-        },
-        // {
-        //     question: t('item7.question'),
-        //     answer: t('item7.answer'),
+        //     question: t('item1.question'),
+        //     answer: t('item1.answer'),
         // },
         // {
-        //     question: t('item8.question'),
-        //     answer: t('item8.answer'),
+        //     question: t('item2.question'),
+        //     answer: t('item2.answer'),
         // },
+        // {
+        //     question: t('item3.question'),
+        //     answer: t('item3.answer'),
+        // },
+        // {
+        //     question: t('item5.question'),
+        //     answer: t('item5.answer'),
+        // },
+        // {
+        //     question: t('item6.question'),
+        //     answer: t('item6.answer'),
+        // },
+        // {
+        //     question: t('item9.question'),
+        //     answer: t('item9.answer'),
+        // },
+        // {
+        //     question: t('item10.question'),
+        //     answer: t('item10.answer'),
+        // },
+
         {
-            question: t('item9.question'),
-            answer: t('item9.answer'),
+            question: t('item11.question'),
+            answer: t('item11.answer'),
         },
         {
-            question: t('item10.question'),
-            answer: t('item10.answer'),
+            question: t('item12.question'),
+            answer: t('item12.answer'),
         },
+        {
+            question: t('item13.question'),
+            answer: t('item13.answer'),
+        },
+        {
+            question: t('item14.question'),
+            answer: t('item14.answer'),
+        },
+        {
+            question: t('item15.question'),
+            answer: t('item15.answer'),
+        },
+        {
+            question: t('item16.question'),
+            answer: t('item16.answer'),
+        },
+        {
+            question: t('item17.question'),
+            answer: t('item17.answer'),
+        },
+        {
+            question: t('item18.question'),
+            answer: t('item18.answer'),
+        },
+        {
+            question: t('item19.question'),
+            answer: t('item19.answer'),
+        },
+        {
+            question: t('item20.question'),
+            answer: t('item20.answer'),
+        },
+        {
+            question: t('item21.question'),
+            answer: t('item21.answer'),
+        },
+        {
+            question: t('item22.question'),
+            answer: t('item22.answer'),
+        }
     ];
     return (
         <div className="FaqBoxWrp pd-common bg2">
