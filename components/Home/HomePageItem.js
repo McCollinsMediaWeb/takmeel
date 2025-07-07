@@ -201,9 +201,8 @@ export default function HomePageItem() {
         className='pageSection'
       >
         <ProjectItem
-          // backgroundImage="ti01.jpg"
-          // backgroundImage="ti01 - Copy.jpg"
-          backgroundImage="ti02.jpg"
+          backgroundImage="takmeel-banner-image-5.png"
+          // backgroundImage="ti02.jpg"
           backgroundImageMobile="t21.jpg"
           text1={t('slider5.preTitle')}
           text2={t('slider5.title')}
