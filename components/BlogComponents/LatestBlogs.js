@@ -140,6 +140,39 @@ export default function LatestBlog({ t, blog }) {
                       </div>
                     </div>
                   </div>
+                   <div className="col-md-4">
+                    <div className="LatestBlogItem bg2">
+                      <div className="LatestBlogImage position-relative">
+                        <Image
+                          src="/pr33.jpg"
+                          width={364}
+                          height={253}
+                          layout="responsive"
+                          alt="Takmeel"
+                        />
+                        <div className="wrapLogo">
+                          <Image
+                            src="/gulftimepmg.png"
+                            width={900}
+                            height={208}
+                            layout="responsive"
+                            alt="Takmeel"
+                            className="LogoKlhaleeg"
+                          />
+                        </div>
+                      </div>
+                      <div className="LatestBlogDesc" style={{ textAlign: locale === "ar" ? "right" : undefined }}>
+                        <div className="LtT1 nunito-text" style={{ textTransform: 'uppercase' }}>{t('latestBlog.blog2.subTitle')}</div>
+                        <div className="LtT2">Takmeel Real Estate Development Announces Bold Vision for the Future with AED 1.5 Billion in Pipeline for 2025</div>
+                        <div className="LtT3 truncate-3-lines">After nearly two decades of shaping thoughtfully designed communities, Takmeel Real Estate Development L.L.C. is entering a transformative new era. With a proven track record of over 100 completed projects across the UAE, this homegrown developer is now unveiling its ambitious development roadmap for 2025 a dynamic pipeline valued at AED 1.5 billion, with AED 550 million dedicated to upcoming flagship projects in Dubai South and Al Barari.
+Built on a foundation of timely delivery, lifestyle-driven design, and unwavering transparency, Takmeel is positioning itself as a next-generation developer committed to crafting communities that go beyond architecture offering environments that inspire belonging, well-being, and long-term value.
+Takmeel’s upcoming developments will span over 350,000 sq. ft. of built-up area, strategically located in high-growth areas such as Majan, Al Barari, and Dubai South. These districts are recognized for their connectivity, natural landscapes,</div>
+                        <div className="text-right">
+                          <a target="_blank" href="https://www.khaleejtimes.com/business-technology-review/understanding-2024-what-to-expect-in-2025-demystifying-dubais-off-plan-real-estate-boom?_refresh=true" className='Link6 hover1'>{t('readMore')}</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
