@@ -9,12 +9,7 @@ export default function LatestBlog({ t, blog }) {
   const locale = useLocale();
   return (
     <div className="BlogPostMainArea pd-common">
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.5 }}
-      >
+     
         <div className="container">
           <div className="row">
             <div className="col-md-12" style={{ textAlign: locale === "ar" ? "right" : undefined }}>
@@ -178,7 +173,6 @@ Takmeel’s upcoming developments will span over 350,000 sq. ft. of built-up are
             </div>
           </div>
         </div>
-      </motion.div>
     </div>
   );
 }
