@@ -131,9 +131,9 @@ export default function LatestBlog({ t, blog }) {
                       </div>
                       <div className="LatestBlogDesc" style={{ textAlign: locale === "ar" ? "right" : undefined }}>
                         
-                        <div className="LtT1 nunito-text" style={{ textTransform: 'uppercase' }}>{t('latestBlog.blog1.subTitle')}</div>
-                        <div className="LtT2">Dubai realtor announces project pipeline worth Dh1.5 billion for 2025</div>
-                        <div className="LtT3 truncate-3-lines">Takmeel Real Estate Development, a UAE-based developer unveiled its development roadmap for 2025 with a dynamic pipeline valued at Dh1.5 billion, with Dh550 million dedicated to upcoming flagship projects in Dubai South and Al Barari.</div>
+                        <div className="LtT1 nunito-text" style={{ textTransform: 'uppercase' }}>{t('latestBlog.blog3.subTitle')}</div>
+                        <div className="LtT2">{t('latestBlog.blog3.title')}</div>
+                        <div className="LtT3 truncate-3-lines">{t('latestBlog.blog3.content')}</div>
                         <div className="text-right">
                           <a target="_blank" href="https://www.khaleejtimes.com/business/dubai-realtor-announces-project-pipeline-worth-dh15-billion-for-2025" className='Link6 hover1'>{t('readMore')}</a>
                         </div>
