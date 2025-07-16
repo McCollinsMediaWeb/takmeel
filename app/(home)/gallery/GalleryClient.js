@@ -33,6 +33,48 @@ export default function GalleryClient() {
 
         return () => window.removeEventListener('resize', updateHeights);
     }, []);
+    const GalleryData1 = {
+        text1: "PR Event Library",
+        GalleryImages: [
+            "pr/pr2.jpg",
+            "pr/pr3.jpg",
+            "pr/pr4.jpg",
+            "pr/pr5.jpg",
+            "pr/pr6.jpg",
+            "pr/pr7.jpg",
+            "pr/pr8.jpg",
+            "pr/pr9.jpg",
+            "pr/pr10.jpg",
+            "pr/pr11.jpg",
+            "pr/pr12.jpg",
+            "pr/pr13.jpg",
+            "pr/pr14.jpg",
+            "pr/pr15.jpg",
+            "pr/pr16.jpg",
+            "pr/pr17.jpg",
+            "pr/pr18.jpg",
+            "pr/pr19.jpg",
+            "pr/pr20.jpg",
+            "pr/pr21.jpg",
+            "pr/pr22.jpg",
+            "pr/pr23.jpg",
+            "pr/pr24.jpg",
+            "pr/pr25.jpg",
+            "pr/pr26.jpg",
+            "pr/pr27.jpg",
+            "pr/pr28.jpg",
+            "pr/pr29.jpg",
+            "pr/pr30.jpg",
+            "pr/pr31.jpg",
+            "pr/pr32.jpg",
+            "pr/pr33.jpg",
+            "pr/pr34.jpg",
+            "pr/pr35.jpg",
+            "pr/pr36.jpg",
+            "pr/pr37.jpg",
+
+        ]
+    };
     const GalleryData = {
         text1: t('section1.title'),
         GalleryImages: [
@@ -84,6 +126,9 @@ export default function GalleryClient() {
     };
     return (
         <>
+            <div className="bg2">
+                <GalleryRow t={t}  {...GalleryData1} />
+            </div>
             <GalleryRow t={t}  {...GalleryData} />
             <div className="bg2">
                 <GalleryRow t={t}  {...GalleryData2} />
