@@ -108,6 +108,38 @@ export default function LatestBlog({ t, blog }) {
                       </div>
                     </div>
                   </div>
+                  <div className="col-md-4">
+                    <div className="LatestBlogItem bg2">
+                      <div className="LatestBlogImage position-relative">
+                        <Image
+                          src="/pr22.jpg"
+                          width={364}
+                          height={253}
+                          layout="responsive"
+                          alt="Takmeel"
+                        />
+                        <div className="wrapLogo">
+                          <Image
+                            src="/klg.jpg"
+                            width={900}
+                            height={208}
+                            layout="responsive"
+                            alt="Takmeel"
+                            className="LogoKlhaleeg"
+                          />
+                        </div>
+                      </div>
+                      <div className="LatestBlogDesc" style={{ textAlign: locale === "ar" ? "right" : undefined }}>
+                        
+                        <div className="LtT1 nunito-text" style={{ textTransform: 'uppercase' }}>{t('latestBlog.blog1.subTitle')}</div>
+                        <div className="LtT2">Dubai realtor announces project pipeline worth Dh1.5 billion for 2025</div>
+                        <div className="LtT3 truncate-3-lines">Takmeel Real Estate Development, a UAE-based developer unveiled its development roadmap for 2025 with a dynamic pipeline valued at Dh1.5 billion, with Dh550 million dedicated to upcoming flagship projects in Dubai South and Al Barari.</div>
+                        <div className="text-right">
+                          <a target="_blank" href="https://www.khaleejtimes.com/business/dubai-realtor-announces-project-pipeline-worth-dh15-billion-for-2025" className='Link6 hover1'>{t('readMore')}</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
