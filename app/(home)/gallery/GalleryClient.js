@@ -34,7 +34,7 @@ export default function GalleryClient() {
         return () => window.removeEventListener('resize', updateHeights);
     }, []);
     const GalleryData1 = {
-        text1: "Inside the Event: A PR Evening to Remember",
+        text1: "Snapshots of Success: PR Event Gallery",
         GalleryImages: [
             "pr/pr2.jpg",
             "pr/pr3.jpg",
