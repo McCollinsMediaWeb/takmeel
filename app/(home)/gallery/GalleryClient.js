@@ -73,6 +73,41 @@ export default function GalleryClient() {
             "pr/pr35.jpg",
             "pr/pr36.jpg",
             "pr/pr37.jpg",
+            "pr/pr38.jpg",
+            "pr/pr39.jpg",
+            "pr/pr40.jpg",
+            "pr/pr41.jpg",
+            "pr/pr42.jpg",
+            "pr/pr44.jpg",
+            "pr/pr45.jpg",
+            "pr/pr46.jpg",
+            "pr/pr47.jpg",
+            "pr/pr48.jpg",
+            "pr/pr49.jpg",
+            "pr/pr50.jpg",
+            "pr/pr51.jpg",
+            "pr/pr52.jpg",
+            "pr/pr53.jpg",
+            "pr/pr54.jpg",
+            "pr/pr55.jpg",
+            "pr/pr56.jpg",
+            "pr/pr57.jpg",
+            "pr/pr58.jpg",
+            "pr/pr59.jpg",
+            "pr/pr60.jpg",
+            "pr/pr61.jpg",
+            "pr/pr62.jpg",
+            "pr/pr63.jpg",
+            "pr/pr64.jpg",
+            "pr/pr65.jpg",
+            "pr/pr66.jpg",
+            "pr/pr67.jpg",
+            "pr/pr68.jpg",
+            "pr/pr69.jpg",
+            "pr/pr70.jpg",
+            "pr/pr71.jpg",
+            "pr/pr72.jpg",
+            "pr/pr73.jpg",
 
         ]
     };
@@ -127,7 +162,7 @@ export default function GalleryClient() {
     };
     return (
         <>
-            <div className="bg2">
+            <div className="bg2 NoPagination">
                 <GalleryRow t={t}  {...GalleryData1} />
             </div>
             <GalleryRow t={t}  {...GalleryData} />

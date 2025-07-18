@@ -3489,3 +3489,10 @@ body {
     transform: rotate(360deg);
   }
 }
+/* .NoPagination .slick-dots {
+    display: none !important;
+  } */
+   .galleryBoxRow .slick-dots li ,
+   .galleryBoxRow .slick-dots li button {
+  width: 10px;
+}
