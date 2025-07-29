@@ -41,7 +41,6 @@ export default function GalleryClient() {
             "pr/2.jpg",
             "pr/3.jpg",
             "pr/4.jpg",
-            "pr/.jpg",
             "pr/5.jpg",
             "pr/6.jpg",
             "pr/7.jpg",
