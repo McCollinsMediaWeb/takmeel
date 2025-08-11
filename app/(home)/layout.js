@@ -111,12 +111,52 @@ export default async function RootLayout({ children }) {
         <div className="vibe-stack">
           <GlobalDataProvider>
             <NextIntlClientProvider>
-              <Script id="zsiq-init" strategy="beforeInteractive">
+              {/* <Script id="zsiq-init" strategy="beforeInteractive">
                 {`
         window.$zoho = window.$zoho || {};
         $zoho.salesiq = $zoho.salesiq || { ready: function() {} };
       `}
               </Script>
+
+              <Script
+                id="zsiqscript"
+                src="https://salesiq.zohopublic.com/widget?wc=siq56336b532438deb7cfdbff018b021175034a777a0a32d17bd7c230a43c106fbf"
+                strategy="lazyOnload"
+                defer
+                dangerouslySetInnerHTML={{
+                  __html: `
+      (function(){
+        let attempts = 0;
+        const checkZoho = setInterval(function(){
+          if (window.$zoho && window.$zoho.salesiq && window.$zoho.salesiq.widget && typeof window.$zoho.salesiq.widget.open === "function") {
+            clearInterval(checkZoho);
+            window.$zoho.salesiq.widget.open();
+          }
+          attempts++;
+          if (attempts > 20) clearInterval(checkZoho);
+        }, 500);
+      })();
+    `,
+                }}
+              /> */}
+
+              <Script
+                id="zsiq-init"
+                strategy="beforeInteractive"
+                dangerouslySetInnerHTML={{
+                  __html: `
+      window.$zoho = window.$zoho || {};
+      $zoho.salesiq = $zoho.salesiq || {
+        ready: function() {
+          // Open chat as soon as it's ready
+          if ($zoho.salesiq.widget && typeof $zoho.salesiq.widget.open === "function") {
+            $zoho.salesiq.widget.open();
+          }
+        }
+      };
+    `,
+                }}
+              />
 
               <Script
                 id="zsiqscript"
