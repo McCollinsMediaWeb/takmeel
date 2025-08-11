@@ -1069,4 +1069,11 @@
   .tkc-product-rate {
   font-size: 18px;
   }
+  .FixedCallBackLayout{
+    bottom: 80px;
+  }
+  .IconF {
+  width: 45px;
+  height: 45px;
+  }
 }
