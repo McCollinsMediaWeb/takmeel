@@ -1071,9 +1071,13 @@
   }
   .FixedCallBackLayout{
     bottom: 80px;
+    left: 10px;
   }
   .IconF {
   width: 45px;
   height: 45px;
+  }
+  .FixedCallBackLayout a:first-child {
+  margin-bottom: 5px;
   }
 }
