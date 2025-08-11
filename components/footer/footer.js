@@ -67,7 +67,15 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
+      <div className='FixedCallBackLayout'>
+        <a href='https://wa.me/971523749615?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties'>
+          <span className='IconF wa'>&nbsp;</span>
+        </a>
+        <a href='tel:8008335'>
+          <span className='IconF ca'>&nbsp;</span>
+        </a>
+        
+      </div>
     </footer>
   );
 }

@@ -3496,3 +3496,28 @@ body {
    .galleryBoxRow .slick-dots li button {
   width: 10px;
 }
+
+
+.FixedCallBackLayout{
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 999;
+  width: 55px;
+}
+.IconF{
+  width: 55px;
+  height: 55px;
+  background-size: 100% 100%;
+  display: inline-block;
+}
+.IconF.wa{
+  background-image: url(../public/wa1.png);
+}
+.IconF.ca{
+  background-image: url(../public/ca1.png);
+}
+.FixedCallBackLayout a:first-child{
+  margin-bottom: 10px;
+  display: inline-block;
+}
