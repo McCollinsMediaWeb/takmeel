@@ -251,13 +251,13 @@ export default function OurOffice() {
                                             <span style={{ fontSize: "20px" }}>
                                                 <img src="/call-black-icon.png" />
                                             </span>
-                                            <a dir="ltr" href="tel:+97145531916" style={{ color: "#333", textDecoration: "none" }}>
-                                                +971 45531916
+                                            <a dir="ltr" href="tel:+8008335" style={{ color: "#333", textDecoration: "none" }}>
+                                                8008335
                                             </a>
-                                            <span style={{ color: "#666" }}>|</span>
+                                            {/* <span style={{ color: "#666" }}>|</span>
                                             <a dir="ltr" href="tel:+97145655099" style={{ color: "#333", textDecoration: "none" }}>
                                                 +971 45655099
-                                            </a>
+                                            </a> */}
                                         </div>
                                     </div>
                                 </div>

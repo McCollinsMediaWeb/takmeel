@@ -78,7 +78,7 @@ export default async function ContactUs() {
                     <a href='#' title='Whatsapp Us'>+971 523749615</a>
                   </div>
                   <div className='CRow call a2'>
-                    <a href='#' title='Call Us'>+971 45531916</a>&nbsp;,&nbsp;
+                    <a href='#' title='Call Us'>8008335</a>&nbsp;,&nbsp;
                     <a href='#' title='Call Us'>+971 45655099</a>
                   </div>
                   <div className='CRow email a3'>
