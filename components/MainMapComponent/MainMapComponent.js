@@ -52,7 +52,7 @@ export default function MainMapComponent({ MapImageDesk, MapImageMobile, MapURL 
                             alt="Takmeel"
                         />
                         </div> */}
-                        <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
+                        <div style={{ position: 'relative', width: '100%'}}>
                             <Image
                                 src={`/${MapImageDesk}`}
                                 alt="Takmeel"
