@@ -52,12 +52,13 @@ export default function MainMapComponent({ MapImageDesk, MapImageMobile, MapURL 
                             alt="Takmeel"
                         />
                         </div> */}
-                        <div style={{ position: 'relative', width: '100%'}}>
+                        <div>
                             <Image
                                 src={`/${MapImageDesk}`}
                                 alt="Takmeel"
-                                fill
-                                style={{ objectFit: 'cover' }}
+                                width={1920}
+                                height={1080}
+                               layout="responsive"
                             />
                         </div>
                     </motion.div>
