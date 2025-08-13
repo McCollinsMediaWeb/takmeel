@@ -264,7 +264,7 @@ export default function HomePageItem() {
       >
         {/* <MainMapComponent MapImageDesk="map6.svg" MapImageMobile="mapmobile.svg" /> */}
         {/* <MainMapComponent MapImageDesk="ttnew.svg" MapImageMobile="ttmobile1.svg" /> */}
-        <MainMapComponent MapImageDesk="rrd1.svg" MapImageMobile="rrm1.svg" />
+        <MainMapComponent MapImageDesk="ed.svg" MapImageMobile="em.svg" />
       </section>
 
       <section
