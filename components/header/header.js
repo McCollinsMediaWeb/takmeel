@@ -91,10 +91,13 @@ export default function Header() {
 
             </div>
             <div className='HeaderBoxRight'>
-              <div onClick={toggleLocale} className='LanguageSwitcher ArabicLink arabic-text'>
-                {currentLocale === 'en' ? 'عربي' : 'English'}
-                <span className="LanguageICon uaelogo">&nbsp;</span>
+              <div
+                 onClick={toggleLocale}
+                className='LanguageSwitcher ArabicLink arabic-text'>
+                {/* {currentLocale === 'en' ? 'عربي' : 'English'} */}
+                <span className={`LanguageICon ${currentLocale === "en" ? "uklogo" : "uaelogo"}`} aria-label={`${currentLocale === "en" ? "English" : "Arabic"}`}>&nbsp;</span>
               </div>
+
               <div className='Link4 hover1 toggleForm cursor-pointer d-only'>
                 {t('getInTouchButton')}
               </div>
