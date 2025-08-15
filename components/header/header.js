@@ -95,7 +95,7 @@ export default function Header() {
                  onClick={toggleLocale}
                 className='LanguageSwitcher ArabicLink arabic-text'>
                 {/* {currentLocale === 'en' ? 'عربي' : 'English'} */}
-                <span className={`LanguageICon ${currentLocale === "en" ? "uklogo" : "uaelogo"}`} aria-label={`${currentLocale === "en" ? "English" : "Arabic"}`}>&nbsp;</span>
+                <span className={`LanguageICon ${currentLocale === "en" ? "uaelogo" : "uklogo"}`} aria-label={`${currentLocale === "en" ? "English" : "Arabic"}`}>&nbsp;</span>
               </div>
 
               <div className='Link4 hover1 toggleForm cursor-pointer d-only'>
