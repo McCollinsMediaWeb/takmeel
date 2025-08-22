@@ -70,7 +70,7 @@ export default function LatestBlog({ t, blog }) {
                     <div className="LatestBlogItem bg2">
                       <div className="LatestBlogImage position-relative">
                         <Image
-                          src="/hamza.jpg"
+                          src="/asd.jpg"
                           width={364}
                           height={253}
                           layout="responsive"
@@ -139,7 +139,7 @@ export default function LatestBlog({ t, blog }) {
                     <div className="LatestBlogItem bg2">
                       <div className="LatestBlogImage position-relative">
                         <Image
-                          src="/pr33.jpg"
+                          src="/asd1.jpg"
                           width={364}
                           height={253}
                           layout="responsive"
