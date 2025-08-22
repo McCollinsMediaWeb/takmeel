@@ -2576,7 +2576,11 @@ input[type="number"] {
 
 .uaelogo {
   background-image: url(../public/uaeflag.jpg);
-  margin-left: 5px;
+  /* margin-left: 5px; */
+}
+.uklogo {
+  background-image: url(../public/ukflag.webp);
+  /* margin-left: 5px; */
 }
 
 @media only screen and (min-width: 1200px) {
