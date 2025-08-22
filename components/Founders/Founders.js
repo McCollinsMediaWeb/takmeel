@@ -11,7 +11,7 @@ import f2 from "../../public/t1.jpg"
 import f3 from '../../public/team-photo.jpg'
 import f4 from "../../public/t3.jpg"
 import f5 from "../../public/t4.jpg"
-import f6 from "../../public/t5.jpg"
+import f6 from "../../public/t10.jpg"
 import f7 from "../../public/t6.jpg"
 import f8 from "../../public/rf.jpg"
 import { useLocale, useTranslations } from "next-intl";
