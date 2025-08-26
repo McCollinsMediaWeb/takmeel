@@ -166,7 +166,7 @@ header {
 }
 
 .Txt1 {
-  color: #d6b264;
+  color: #c9a878;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -202,7 +202,7 @@ header {
 }
 
 .hover1:hover {
-  background-color: #d6b264;
+  background-color: #c9a878;
   color: #383838;
 }
 
@@ -229,7 +229,7 @@ header {
 }
 
 .MenuClick:hover::after {
-  color: #d6b264;
+  color: #c9a878;
 }
 
 .MainLogo {
@@ -352,11 +352,11 @@ footer {}
 }
 
 .CRow a:hover {
-  color: #d6b264;
+  color: #c9a878;
 }
 
 .LinkTitle {
-  color: #d6b264;
+  color: #c9a878;
   margin-bottom: 15px;
 }
 
@@ -368,7 +368,7 @@ footer {}
 }
 
 .FtrLnk1:hover {
-  color: #d6b264 !important;
+  color: #c9a878 !important;
 }
 
 .NewsletterBox {
@@ -388,7 +388,7 @@ footer {}
 
 .NewsletterBox button {
   background-color: transparent;
-  color: #d6b264;
+  color: #c9a878;
   position: absolute;
   top: 10px;
   /* right: 0; */
@@ -414,7 +414,7 @@ footer {}
 }
 
 .FooterBottom a:hover {
-  color: #d6b264;
+  color: #c9a878;
 }
 
 .socialMediaLinksFlex {
@@ -664,7 +664,7 @@ body .slick-dots {
 }
 
 .CfT1 {
-  color: #d6b264;
+  color: #c9a878;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
@@ -829,12 +829,12 @@ body .slick-dots {
 }
 
 .MenuMiddle ul li.active a {
-  color: #d6b264;
+  color: #c9a878;
 }
 
 .MenuMiddle ul a:hover {
   padding-left: 30px;
-  color: #d6b264;
+  color: #c9a878;
 }
 
 .MenuMiddle ul a:hover::after {
@@ -855,7 +855,7 @@ body .slick-dots {
 }
 
 .MenuFtr ul a {
-  color: #d6b264;
+  color: #c9a878;
   text-transform: uppercase;
   margin-bottom: 10px;
   display: block;
@@ -876,7 +876,7 @@ body .slick-dots {
 }
 
 .ChatBoat:hover {
-  background-color: #d6b264;
+  background-color: #c9a878;
   color: #1d1d1d !important;
 }
 
@@ -948,7 +948,7 @@ header.fixed-class {
 
 .HdT1 {
   text-transform: uppercase;
-  color: #d6b264;
+  color: #c9a878;
   margin-bottom: 10px;
 }
 
@@ -999,7 +999,7 @@ body .slick-prev {
 
 body .slick-next:hover,
 body .slick-prev:hover {
-  background-color: #d6b264 !important;
+  background-color: #c9a878 !important;
 }
 
 body .slick-next::before,
@@ -1138,7 +1138,7 @@ body .slick-prev::before {
 }
 
 .FounderPosition {
-  color: #d6b264;
+  color: #c9a878;
   font-size: 18px;
 }
 
@@ -1161,7 +1161,7 @@ body .slick-prev::before {
 }
 
 .MoreInfoLink:hover {
-  color: #d6b264;
+  color: #c9a878;
 }
 
 .FounderItemBox {
@@ -1193,7 +1193,7 @@ body .slick-prev::before {
 }
 
 .PT2 {
-  color: #d6b264;
+  color: #c9a878;
 }
 
 .FtrProject {
@@ -1220,7 +1220,7 @@ body .slick-prev::before {
 }
 
 .BlT1 {
-  color: #d6b264;
+  color: #c9a878;
   margin-bottom: 5px;
 }
 
@@ -1238,7 +1238,7 @@ body .slick-prev::before {
 }
 
 .LtT1 {
-  color: #d6b264;
+  color: #c9a878;
   margin-bottom: 5px;
 }
 
@@ -1325,7 +1325,7 @@ body .slick-prev::before {
 }
 
 .Ct2 {
-  color: #d6b264;
+  color: #c9a878;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
@@ -1381,7 +1381,7 @@ body .slick-prev::before {
 }
 
 .Accordion {
-  background-color: #d6b264;
+  background-color: #c9a878;
   padding: 20px;
   margin-bottom: 15px;
   font-size: 18px;
@@ -2021,11 +2021,11 @@ body .slick-prev::before {
 }
 
 .PlanBoxBottomLnk:hover {
-  background-color: #d6b264;
+  background-color: #c9a878;
 }
 
 .mapLayoutActive {
-  background-color: #d6b264;
+  background-color: #c9a878;
 }
 
 .DownloadBtn {
@@ -2116,7 +2116,7 @@ body .slick-prev::before {
 }
 
 .MortageItem:hover {
-  background-color: #d6b264;
+  background-color: #c9a878;
 }
 
 .MortageItem:last-child {
@@ -2194,10 +2194,10 @@ body .slick-prev::before {
   flex: 0 0 48%;
   padding: 13px;
   text-align: center;
-  background-color: #d6b264;
+  background-color: #c9a878;
   border-radius: 25px;
   cursor: pointer;
-  border: 1px solid #d6b264;
+  border: 1px solid #c9a878;
   color: #000;
   display: flex;
   align-items: center;
@@ -2238,7 +2238,7 @@ body .slick-prev::before {
 }
 
 .ppT1 {
-  color: #d6b264;
+  color: #c9a878;
   margin-bottom: 5px;
 }
 
@@ -2557,7 +2557,7 @@ input[type="number"] {
 }
 
 .LanguageSwitcher:hover {
-  background-color: #d6b264;
+  background-color: #c9a878;
 }
 
 .arabic-text {
@@ -3059,7 +3059,7 @@ body {
 }
 
 .ListTyle1 li div span {
-  color: #d6b264;
+  color: #c9a878;
   font-size: 21px;
   text-transform: uppercase;
   margin-right: 5px;
@@ -3113,7 +3113,7 @@ body {
   content: "";
   width: 25%;
   height: 2px;
-  background-color: #d6b264;
+  background-color: #c9a878;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -3125,7 +3125,7 @@ body {
 }
 
 .JobButtons span:first-child {
-  background-color: #d6b264;
+  background-color: #c9a878;
   margin-right: 15px;
   color: #1d1d1b;
   cursor: pointer;
@@ -3156,7 +3156,7 @@ body {
   content: "";
   width: 25%;
   height: 2px;
-  background-color: #d6b264;
+  background-color: #c9a878;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -3175,7 +3175,7 @@ body {
 }
 
 .JobNote {
-  border: 1px solid #d6b264;
+  border: 1px solid #c9a878;
   padding: 10px;
   border-radius: 5px;
 }
@@ -3435,7 +3435,7 @@ body {
 
 .SbT1::after {
   content: "";
-  background: #d6b264;
+  background: #c9a878;
   width: 150px;
   height: 2px;
   border-radius: 5px;

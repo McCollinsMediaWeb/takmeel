@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className='pd-common bg1'>
       <div className='container'>
         <div className='text-center container'>
-          <img className='FooterLogo' src="/footerlogo.png" />
+          <img className='FooterLogo' src="/footerlogonew.png" />
           <div className='FtrT1 text-uppercase'>
             {/* Urban Living, Reimagined by Nature */}&nbsp;
           </div>
