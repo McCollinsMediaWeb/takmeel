@@ -25,7 +25,7 @@ export default function Footer() {
                   <a target="_blank" style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} href='https://wa.me/971523749615?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties' title='Whatsapp Us'>+971 523749615</a>
                 </div>
                 <div className='CRow call'>
-                  <a href='tel:8008335' style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} title='Call Us'>8008335</a>
+                  <a href='tel:08008335' style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} title='Call Us'>0800-8335</a>
                 </div>
                 <div className='CRow email'>
                   <a href='mailto:info@takmeeldevelopment.com' style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} title='Call Us'>info@takmeeldevelopment.com</a>
@@ -70,7 +70,7 @@ export default function Footer() {
         <a href='https://wa.me/971523749615?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties'>
           <span className='IconF wa'>&nbsp;</span>
         </a>
-        <a href='tel:8008335'>
+        <a href='tel:08008335'>
           <span className='IconF ca'>&nbsp;</span>
         </a>
         
