@@ -227,7 +227,7 @@ export default function TermsOfUseClient() {
                  <div className="PolicyBoxT2">info@takmeeldevelopment.com</div>
                </motion.div>
                <motion.div variants={itemVariants}>
-                 <div className="PolicyBoxT2">+971 523749615</div>
+                 <div className="PolicyBoxT2">+971 58 138 9773</div>
                </motion.div>
              </motion.div>
            </div>

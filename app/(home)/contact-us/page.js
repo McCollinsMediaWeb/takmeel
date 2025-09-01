@@ -75,7 +75,7 @@ export default async function ContactUs() {
               <div className="col-md-6 PadBox1">
                 <div className='contactDetailBox ConPage'>
                   <div className='CRow whatsapp a1'>
-                    <a href='#' title='Whatsapp Us'>+971 523749615</a>
+                    <a href='#' title='Whatsapp Us'>+971 58 138 9773</a>
                   </div>
                   <div className='CRow call a2'>
                     <a href='#' title='Call Us'>0800-8335</a>&nbsp;,&nbsp;

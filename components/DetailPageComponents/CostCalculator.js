@@ -350,12 +350,12 @@ export default function CostCalculator({ }) {
                                     <div className='FormButton FormButton1 toggleForm'>
                                         <span className='position-relative'>{t('DivineAlBarari.costCalculator.valueSection.applyNow')}<span className='btn1'>&nbsp;</span></span>
                                     </div>
-                                    {/* <div onClick={() => window.open("https://wa.me/971523749615?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties")} className='FormButton FormButton2'>
+                                    {/* <div onClick={() => window.open("https://wa.me/+971581389773?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties")} className='FormButton FormButton2'>
                                         <span className='position-relative'><span className='btn2'>&nbsp;</span>WhatsApp</span>
                                     </div> */}
 
                                     <a
-                                        href="https://wa.me/971523749615?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties"
+                                        href="https://wa.me/+971581389773?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="FormButton FormButton2"

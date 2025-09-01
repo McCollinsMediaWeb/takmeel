@@ -243,8 +243,8 @@ export default function OurOffice() {
                                             <span style={{ fontSize: "20px" }}>
                                                 <img src="/whatsapp-black-icon.png" />
                                             </span>
-                                            <a dir="ltr" href="https://wa.me/971523749615?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties" style={{ color: "#333", textDecoration: "none" }}>
-                                                +971 523749615
+                                            <a dir="ltr" href="https://wa.me/+971581389773?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties" style={{ color: "#333", textDecoration: "none" }}>
+                                                +971 58 138 9773
                                             </a>
                                         </div>
                                         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>

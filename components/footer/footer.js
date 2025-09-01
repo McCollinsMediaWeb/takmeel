@@ -22,7 +22,7 @@ export default function Footer() {
             <div className='col-md-4'>
               <div className='contactDetailBox'>
                 <div className='CRow whatsapp'>
-                  <a target="_blank" style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} href='https://wa.me/971523749615?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties' title='Whatsapp Us'>+971 523749615</a>
+                  <a target="_blank" style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} href='https://wa.me/+971581389773?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties' title='Whatsapp Us'>+971 58 138 9773</a>
                 </div>
                 <div className='CRow call'>
                   <a href='tel:08008335' style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} title='Call Us'>0800-8335</a>
@@ -67,7 +67,7 @@ export default function Footer() {
         </div>
       </div>
       <div className='FixedCallBackLayout'>
-        <a href='https://wa.me/971523749615?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties'>
+        <a href='https://wa.me/+971581389773?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties'>
           <span className='IconF wa'>&nbsp;</span>
         </a>
         <a href='tel:08008335'>
