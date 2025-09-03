@@ -204,7 +204,7 @@ export default function OurOffice() {
                                 </div>
 
                                 {/* Call Us Section */}
-                                <div
+                                {/* <div
                                     style={{
                                         display: "flex",
                                         flexDirection: "row",
@@ -254,16 +254,83 @@ export default function OurOffice() {
                                             <a dir="ltr" href="tel:08008335" style={{ color: "#333", textDecoration: "none" }}>
                                                 8008335
                                             </a>
-                                            {/* <span style={{ color: "#666" }}>|</span>
-                                            <a dir="ltr" href="tel:+97145655099" style={{ color: "#333", textDecoration: "none" }}>
-                                                +971 45655099
-                                            </a> */}
+                                        </div>
+                                    </div>
+                                </div> */}
+
+
+                                {/* Call Us Section */}
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        flexDirection: "row",
+                                        borderBottom: "1px solid #eaeaea",
+                                        paddingBottom: "20px",
+                                        flexWrap: "wrap",
+                                    }}
+                                >
+                                    <div
+                                        className="responsive-call-box"
+                                        style={{
+                                            width: "43%",
+                                            minWidth: "150px",
+                                            paddingRight: "20px",
+                                        }}
+                                    >
+                                        <div
+                                            style={{
+                                                color: "#333",
+                                                fontSize: "18px"
+                                            }}
+                                            className="CfT1"
+                                        >
+                                            {t('contactInfo.row2.title')}
+                                        </div>
+                                    </div>
+                                    <div
+                                        style={{
+                                            flex: "1",
+                                            display: "flex",
+                                            flexDirection: "row",
+                                            gap: "20px",
+                                            flexWrap: "wrap",
+                                        }}
+                                    >
+
+                                        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                                            <span style={{ fontSize: "20px" }}>
+                                                <img src="/whatsapp-black-icon.png" />
+                                            </span>
+                                            <a dir="ltr" href="https://wa.me/+971581389773?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties" style={{ color: "#333", textDecoration: "none" }}>
+                                                +971 58 138 9773
+                                            </a>
+                                        </div>
+
+                                        <div style={{ flex: "1", minWidth: "250px" }}>
+                                            <h4 style={{ margin: "0 0 10px 0", fontSize: "18px", fontWeight: "600" }}>{t('contactInfo.row2.option2')}</h4>
+                                            <p style={{ margin: "0 0 10px 0", color: "#666", lineHeight: "1.5" }}>
+                                                <a dir="ltr" href="tel:08008335" style={{ color: "#333", textDecoration: "none" }}>
+                                                    0800 8335
+                                                </a>
+                                            </p>
+                                        </div>
+
+                                        <div style={{ flex: "1", minWidth: "250px" }}>
+                                            <h4 style={{ margin: "0 0 10px 0", fontSize: "18px", fontWeight: "600" }}>{t('contactInfo.row2.option1')}</h4>
+                                            <p style={{ margin: "0 0 10px 0", color: "#666", lineHeight: "1.5" }}>
+                                            </p>
+                                            <a dir="ltr" href="tel:045531916" style={{ color: "#333", textDecoration: "none" }}>
+                                                045 531916
+                                            </a>{" / "}
+                                            <a dir="ltr" href="tel:045 655099" style={{ color: "#333", textDecoration: "none" }}>
+                                                045 655099
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
 
                                 {/* Email Section */}
-                                <div
+                                {/* <div
                                     style={{
                                         display: "flex",
                                         flexDirection: "row",
@@ -301,6 +368,63 @@ export default function OurOffice() {
                                         <a href="mailto:info@takmeeldevelopment.com" style={{ color: "#333", textDecoration: "none" }}>
                                             Info@takmeeldevelopment.com
                                         </a>
+                                    </div>
+                                </div> */}
+
+                                {/* Email Section */}
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        flexDirection: "row",
+                                        borderBottom: "1px solid #eaeaea",
+                                        paddingBottom: "20px",
+                                        flexWrap: "wrap",
+                                    }}
+                                >
+                                    <div
+                                        className="responsive-call-box"
+                                        style={{
+                                            width: "43%",
+                                            minWidth: "150px",
+                                            paddingRight: "20px",
+                                        }}
+                                    >
+                                        <div
+                                            style={{
+                                                color: "#333",
+                                                fontSize: "18px"
+                                            }}
+                                            className="CfT1"
+                                        >
+                                            {t('contactInfo.row3.title')}
+                                        </div>
+                                    </div>
+                                    <div
+                                        style={{
+                                            flex: "1",
+                                            display: "flex",
+                                            flexDirection: "row",
+                                            gap: "20px",
+                                            flexWrap: "wrap",
+                                        }}
+                                    >
+                                        <div style={{ flex: "1", minWidth: "250px" }}>
+                                            <h4 style={{ margin: "0 0 10px 0", fontSize: "18px", fontWeight: "600" }}>{t('contactInfo.row3.option2')}</h4>
+                                            <p style={{ margin: "0 0 10px 0", color: "#666", lineHeight: "1.5" }}>
+                                                <a href="mailto:agency@takmeeldevelopment.com" style={{ color: "#333", textDecoration: "none" }}>
+                                                    agency@takmeeldevelopment.com
+                                                </a>
+                                            </p>
+                                        </div>
+
+                                        <div style={{ flex: "1", minWidth: "250px" }}>
+                                            <h4 style={{ margin: "0 0 10px 0", fontSize: "18px", fontWeight: "600" }}>{t('contactInfo.row3.option1')}</h4>
+                                            <p style={{ margin: "0 0 10px 0", color: "#666", lineHeight: "1.5" }}>
+                                            </p>
+                                            <a href="mailto:info@takmeeldevelopment.com" style={{ color: "#333", textDecoration: "none" }}>
+                                                info@takmeeldevelopment.com
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
 

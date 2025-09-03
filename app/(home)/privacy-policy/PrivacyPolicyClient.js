@@ -5,33 +5,33 @@ import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 import { useTranslations } from "next-intl";
 export default function PrivacyPolicyClient() {
-    const t = useTranslations('PrivacyPolicy');
-    const containerVariants = {
-        hidden: { opacity: 0, y: 40 },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.6,
-                ease: "easeOut",
-                when: "beforeChildren",
-                staggerChildren: 0.2,
-            },
-        },
-    }
+  const t = useTranslations('PrivacyPolicy');
+  const containerVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+        when: "beforeChildren",
+        staggerChildren: 0.2,
+      },
+    },
+  }
 
-    const itemVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-    }
-    return (
-        <div>
-            <section className='HdTpHd1 bg2 pd-common'>
-                <div className="text-center">
-                    <h2 className="HedrT1">{t('title')}</h2>
-                </div>
-            </section>
-            {/* <section className="pd-common">
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+  }
+  return (
+    <div>
+      <section className='HdTpHd1 bg2 pd-common'>
+        <div className="text-center">
+          <h2 className="HedrT1">{t('title')}</h2>
+        </div>
+      </section>
+      {/* <section className="pd-common">
         <div className="container">
           <div className="PolicyBox">
             <motion.div
@@ -224,203 +224,240 @@ export default function PrivacyPolicyClient() {
           </div>
         </div>
       </section> */}
-            <section className="pd-common">
-                <div className="container">
-                    <div className="PolicyBox">
-                        <motion.div
-                            variants={containerVariants}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: false, amount: 0.5 }}
-                        >
+      <section className="pd-common">
+        <div className="container">
+          <div className="PolicyBox">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.5 }}
+            >
 
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT1">{t('title')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT1">{t('effective_date')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT2">{t('introduction')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT3">{t('sections.section_1.title')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT2">{t('sections.section_1.description')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <ul className="PPUl">
-                                    <li>{t('sections.section_1.items.0')}</li>
-                                    <li>{t('sections.section_1.items.1')}</li>
-                                    <li>{t('sections.section_1.items.2')}</li>
-                                    <li>{t('sections.section_1.items.3')}</li>
-                                </ul>
-                            </motion.div>
-                        </motion.div>
-                    </div>
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT1">{t('title')}</div>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT1">{t('effective_date')}</div>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT2">{t('introduction')}</div>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT3">{t('sections.section_1.title')}</div>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT2">{t('sections.section_1.description')}</div>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <ul className="PPUl">
+                  <li>{t('sections.section_1.items.0')}</li>
+                  <li>{t('sections.section_1.items.1')}</li>
+                  <li>{t('sections.section_1.items.2')}</li>
+                  <li>{t('sections.section_1.items.3')}</li>
+                </ul>
+              </motion.div>
+            </motion.div>
+          </div>
 
 
-                    <div className="PolicyBox">
-                        <motion.div
-                            variants={containerVariants}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: false, amount: 0.5 }}
-                        >
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT3">{t('sections.section_2.title')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT2">{t('sections.section_2.description')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <ul className="PPUl">
-                                    <li>{t('sections.section_2.items.0')}</li>
-                                    <li>{t('sections.section_2.items.1')}</li>
-                                    <li>{t('sections.section_2.items.2')}</li>
-                                    <li>{t('sections.section_2.items.3')}</li>
-                                    <li>{t('sections.section_2.items.4')}</li>
-                                </ul>
-                            </motion.div>
-                        </motion.div>
-                    </div>
+          <div className="PolicyBox">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.5 }}
+            >
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT3">{t('sections.section_2.title')}</div>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT2">{t('sections.section_2.description')}</div>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <ul className="PPUl">
+                  <li>{t('sections.section_2.items.0')}</li>
+                  <li>{t('sections.section_2.items.1')}</li>
+                  <li>{t('sections.section_2.items.2')}</li>
+                  <li>{t('sections.section_2.items.3')}</li>
+                  <li>{t('sections.section_2.items.4')}</li>
+                </ul>
+              </motion.div>
+            </motion.div>
+          </div>
 
-                    <div className="PolicyBox">
-                        <motion.div
-                            variants={containerVariants}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: false, amount: 0.5 }}
-                        >
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT3">{t('sections.section_3.title')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT2">{t('sections.section_3.description')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <ul className="PPUl">
-                                    <li>{t('sections.section_3.items.0')}</li>
-                                    <li>{t('sections.section_3.items.1')}</li>
-                                    <li>{t('sections.section_3.items.2')}</li>
-                                </ul>
-                            </motion.div>
-                        </motion.div>
-                    </div>
-                    <div className="PolicyBox">
-                        <motion.div
-                            variants={containerVariants}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: false, amount: 0.5 }}
-                        >
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT3">{t('sections.section_4.title')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT2">{t('sections.section_4.description')}</div>
-                            </motion.div>
-                        </motion.div>
-                    </div>
-                    <div className="PolicyBox">
-                        <motion.div
-                            variants={containerVariants}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: false, amount: 0.5 }}
-                        >
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT3">{t('sections.section_5.title')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT2">{t('sections.section_5.description')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <ul className="PPUl">
-                                    <li>{t('sections.section_5.items.0')}</li>
-                                    <li>{t('sections.section_5.items.1')}</li>
-                                    <li>{t('sections.section_5.items.2')}</li>
-                                    <li>{t('sections.section_5.items.3')}</li>
-                                </ul>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT2">{t('sections.section_5.contact_note')}</div>
-                            </motion.div>
-                        </motion.div>
-                    </div>
-                    <div className="PolicyBox">
-                        <motion.div
-                            variants={containerVariants}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: false, amount: 0.5 }}
-                        >
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT3">{t('sections.section_6.title')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT2">{t('sections.section_6.description')}</div>
-                            </motion.div>
-                        </motion.div>
-                    </div>
-                    <div className="PolicyBox">
-                        <motion.div
-                            variants={containerVariants}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: false, amount: 0.5 }}
-                        >
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT3">{t('sections.section_7.title')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT2">{t('sections.section_7.description')}</div>
-                            </motion.div>
-                        </motion.div>
-                    </div>
-                    <div className="PolicyBox">
-                        <motion.div
-                            variants={containerVariants}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: false, amount: 0.5 }}
-                        >
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT3">{t('sections.section_8.title')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT2">{t('sections.section_8.description')}</div>
-                            </motion.div>
-                        </motion.div>
-                    </div>
-                    <div className="PolicyBox">
-                        <motion.div
-                            variants={containerVariants}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: false, amount: 0.5 }}
-                        >
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT3">{t('sections.section_9.title')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT2">{t('sections.section_9.description')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT2">{t('sections.section_9.contact_info.email')}</div>
-                            </motion.div>
-                            <motion.div variants={itemVariants}>
-                                <div className="PolicyBoxT2" dir="ltr">{t('sections.section_9.contact_info.phone')}</div>
-                            </motion.div>
-                        </motion.div>
-                    </div>
+          <div className="PolicyBox">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.5 }}
+            >
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT3">{t('sections.section_3.title')}</div>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT2">{t('sections.section_3.description')}</div>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <ul className="PPUl">
+                  <li>{t('sections.section_3.items.0')}</li>
+                  <li>{t('sections.section_3.items.1')}</li>
+                  <li>{t('sections.section_3.items.2')}</li>
+                </ul>
+              </motion.div>
+            </motion.div>
+          </div>
+          <div className="PolicyBox">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.5 }}
+            >
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT3">{t('sections.section_4.title')}</div>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT2">{t('sections.section_4.description')}</div>
+              </motion.div>
+            </motion.div>
+          </div>
+          <div className="PolicyBox">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.5 }}
+            >
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT3">{t('sections.section_5.title')}</div>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT2">{t('sections.section_5.description')}</div>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <ul className="PPUl">
+                  <li>{t('sections.section_5.items.0')}</li>
+                  <li>{t('sections.section_5.items.1')}</li>
+                  <li>{t('sections.section_5.items.2')}</li>
+                  <li>{t('sections.section_5.items.3')}</li>
+                </ul>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT2">{t('sections.section_5.contact_note')}</div>
+              </motion.div>
+            </motion.div>
+          </div>
+          <div className="PolicyBox">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.5 }}
+            >
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT3">{t('sections.section_6.title')}</div>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT2">{t('sections.section_6.description')}</div>
+              </motion.div>
+            </motion.div>
+          </div>
+          <div className="PolicyBox">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.5 }}
+            >
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT3">{t('sections.section_7.title')}</div>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT2">{t('sections.section_7.description')}</div>
+              </motion.div>
+            </motion.div>
+          </div>
+          <div className="PolicyBox">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.5 }}
+            >
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT3">{t('sections.section_8.title')}</div>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT2">{t('sections.section_8.description')}</div>
+              </motion.div>
+            </motion.div>
+          </div>
+          <div className="PolicyBox">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.5 }}
+            >
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT3">{t('sections.section_9.title')}</div>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT2">{t('sections.section_9.description')}</div>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                <div className="PolicyBoxT1" >{t('sections.section_9.contact_info.option1')}</div>
+                <ul>
+                  <li className="PolicyBoxT2">
+                    <a href="mailto:info@takmeeldevelopment.com" style={{ textDecoration: "none" }}>
+                      info@takmeeldevelopment.com
+                    </a>
+                  </li>
+                  <li className="PolicyBoxT2">
+                    <a dir="ltr" href="tel:045531916" style={{ textDecoration: "none" }}>
+                      045 531916
+                    </a>{" / "}
+                    <a dir="ltr" href="tel:045 655099" style={{ textDecoration: "none" }}>
+                      045 655099
+                    </a>
+                  </li>
+                </ul>
+
+                <div className="PolicyBoxT1" >{t('sections.section_9.contact_info.option2')}</div>
+                <ul>
+                  <li className="PolicyBoxT2">
+                    <a href="mailto:agency@takmeeldevelopment.com" style={{ textDecoration: "none" }}>
+                      agency@takmeeldevelopment.com
+                    </a>
+                  </li>
+                  <li className="PolicyBoxT2">
+                    <a dir="ltr" href="tel:8008335" style={{ textDecoration: "none" }}>
+                      800 8335
+                    </a>
+                  </li>
+                </ul>
+              </motion.div>
+              <motion.div variants={itemVariants}>
+                {/* <div className="PolicyBoxT2" dir="ltr">{t('sections.contact.phone')}</div> */}
+                <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                  <span style={{ fontSize: "20px" }}>
+                    <img src="/whatsapp-black-icon.png" />
+                  </span>
+                  <a dir="ltr" href="https://wa.me/+971581389773?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties" style={{ color: "#333", textDecoration: "none" }}>
+                    +971 58 138 9773
+                  </a>
                 </div>
-            </section>
-            {/* <HomeAbout /> */}
-            <PropertyForm projectName="Golf View Living Apartments" />
-            <Footer />
-            <FooterBottom />
+              </motion.div>
+            </motion.div>
+          </div>
         </div>
-    );
+      </section>
+      {/* <HomeAbout /> */}
+      <PropertyForm projectName="Golf View Living Apartments" />
+      <Footer />
+      <FooterBottom />
+    </div>
+  );
 }

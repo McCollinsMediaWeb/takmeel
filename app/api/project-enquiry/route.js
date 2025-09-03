@@ -59,9 +59,10 @@ export async function POST(req) {
         const mailOptions = {
             from: process.env.EMAIL_FROM,
             to: process.env.EMAIL_TO,
-            subject: "New Form Submission",
+            cc: process.env.EMAIL_CC,
+            subject: "New Project Enquiry Form Submission",
             html: `
-                <h2>Form Submitted</h2>
+                <h2>Project Enquiry Form Submitted</h2>
                 <p><strong>First Name:</strong> ${firstName}</p>
                 <p><strong>Last Name:</strong> ${lastName}</p>
                 <p><strong>Phone:</strong> ${phone}</p>

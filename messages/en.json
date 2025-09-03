@@ -474,10 +474,14 @@
                 "line2": "Saturday"
             },
             "row2": {
-                "title": "CALL US"
+                "title": "CALL US",
+                "option1": "General Enquiry:",
+                "option2": "Sales Contact:"
             },
             "row3": {
-                "title": "EMAIL"
+                "title": "EMAIL",
+                "option1": "General Enquiry:",
+                "option2": "Sales Contact:"
             },
             "row4": {
                 "title": "VISIT US",
@@ -1053,6 +1057,8 @@
                 "title": "9. Contact Us",
                 "description": "For questions or concerns about this policy, contact:",
                 "contact_info": {
+                    "option1": "General Enquiry:",
+                    "option2": "Sales Contact:",
                     "email": "info@takmeeldevelopment.com",
                     "phone": "+971 58 138 9773"
                 }
@@ -1116,6 +1122,8 @@
             "contact": {
                 "title": "9. Contact Us",
                 "content": "For questions about these Terms, contact:",
+                "option1": "General Enquiry:",
+                "option2": "Sales Contact:",
                 "email": "info@takmeeldevelopment.com",
                 "phone": "+971 58 138 9773"
             }
