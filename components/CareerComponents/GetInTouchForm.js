@@ -180,20 +180,17 @@ export default function GetInTouchForm() {
             }
 
             const payload = {
-                ...formData,
-                cvUrl, // include Cloudinary URL
+                  First_Name: formData.firstName,
+                  Last_Name: formData.lastName,
+                  Email: formData.email,
+                  Phone: formData.phone,
+                  CV_URL: cvUrl// include Cloudinary URL
             };
 
             const response = await fetch("https://flow.zoho.com/897487424/flow/webhook/incoming?zapikey=1001.d2e0618a8c06dc6cd9163f13602190fe.2cb9a2535972f0f26dca418f097727f5&isdebug=false", {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                First_Name: formData.firstName,
-                Last_Name: formData.lastName,
-                Email: formData.email,
-                Phone: formData.phone,
-                CV_URL: cvUrl
-              }),
+                body: JSON.stringify(payload),
             });
 
             if (response.ok) {
