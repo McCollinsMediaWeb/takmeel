@@ -163,6 +163,8 @@
     },
     "Footer": {
         "info": {
+            "option1": "Sales Queries",
+            "option2": "General Queries",
             "address": "Office No 706, Building No 8, Bay Square, Business Bay, Dubai, UAE"
         },
         "quickLinks": {

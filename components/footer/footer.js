@@ -9,7 +9,7 @@ export default function Footer() {
   const locale = useLocale();
 
   return (
-    <footer className='pd-common bg1'>
+    <footer className='pd-common bg1' style={{ padding: '70px 0 20px 0' }}>
       <div className='container'>
         <div className='text-center container'>
           <img className='FooterLogo' src="/footerlogonew.png" />
@@ -21,17 +21,34 @@ export default function Footer() {
           <div className='row' style={{ textAlign: locale === 'ar' ? 'right' : undefined }} >
             <div className='col-md-4'>
               <div className='contactDetailBox'>
+                <div className='LinkTitle'>{t('info.option1')}</div>
+                <div className='CRow call'>
+                  <a href='tel:08008335' style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} title='Call Us'>0800 8335</a>
+                </div>
+                <div className='CRow email'>
+                  <a href='mailto:agency@takmeeldevelopment.com' style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} title='Email Us'>agency@takmeeldevelopment.com</a>
+                </div>
+
+                <div className='LinkTitle'>{t('info.option2')}</div>
+                <div className='CRow call'>
+                  <a href='tel:045531916' style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} title='Call Us'>045 531916</a>{" / "}
+                  <a href='tel:045655099' style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} title='Call Us'>045 655099</a>
+                </div>
+                <div className='CRow email'>
+                  <a href='mailto:info@takmeeldevelopment.com' style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} title='Email Us'>info@takmeeldevelopment.com</a>
+                </div>
+
                 <div className='CRow whatsapp'>
                   <a target="_blank" style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} href='https://wa.me/+971581389773?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties' title='Whatsapp Us'>+971 58 138 9773</a>
                 </div>
-                <div className='CRow call'>
+                {/* <div className='CRow call'>
                   <a href='tel:08008335' style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} title='Call Us'>0800-8335</a>
                 </div>
                 <div className='CRow email'>
                   <a href='mailto:info@takmeeldevelopment.com' style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }} title='Call Us'>info@takmeeldevelopment.com</a>
-                </div>
+                </div> */}
                 <div className='CRow location'>
-                  <a href='https://maps.app.goo.gl/UtBJrv8Qw1DjwXsi9' target='_blank' title='Call Us'>{t('info.address')}</a>
+                  <a href='https://maps.app.goo.gl/UtBJrv8Qw1DjwXsi9' target='_blank' title='Locate Us'>{t('info.address')}</a>
                 </div>
               </div>
             </div>
@@ -73,7 +90,7 @@ export default function Footer() {
         <a href='tel:08008335'>
           <span className='IconF ca'>&nbsp;</span>
         </a>
-        
+
       </div>
     </footer>
   );
