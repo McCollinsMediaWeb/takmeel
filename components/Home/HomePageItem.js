@@ -130,7 +130,7 @@ export default function HomePageItem() {
         />
       </section>
 
-      <section
+      {/* <section
         // ref={(el) => (panelsRef.current[1] = el)}
         className='pageSection'
       >
@@ -145,7 +145,7 @@ export default function HomePageItem() {
           backgroundVideo="tkdesk1.mp4"
           placeholderImage="/cover2.jpg"
         />
-      </section>
+      </section> */}
 
       <section
         // ref={(el) => (panelsRef.current[1] = el)}
