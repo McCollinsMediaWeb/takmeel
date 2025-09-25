@@ -284,7 +284,7 @@ export default function ProjectItem({
                                 <div className="Txt2 text-uppercase">{text2}</div>
                                 <div className="Txt3 nunito-text">{text3}</div>
                                 <div className="Txt17 nunito-text">{tagline}</div>
-                                {url !== "takmeel-al-barari-view-properties" && (
+                                {url !== "dubai-south" && (
                                     <Link href={`/detail-page/${url}`} className="Link1 hover1">
                                         {t('buttonText')}
                                     </Link>
@@ -340,7 +340,7 @@ export default function ProjectItem({
                                         </motion.div>
                                     </motion.div>
 
-                                    {url !== "takmeel-al-barari-view-properties" && (
+                                    {url !== "dubai-south" && (
                                         <motion.div variants={itemVariants}>
                                             <Link href={`/detail-page/${url}`} className="Link1 hover1">
                                                 {t('buttonText')}

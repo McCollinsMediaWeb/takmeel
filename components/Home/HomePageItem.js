@@ -158,7 +158,7 @@ export default function HomePageItem() {
           text2={t('slider9.title')}
           // text3={t('slider9.subTitle')}
           tagline={t('slider9.content')}
-          url="takmeel-al-barari-view-properties"
+          url="dubai-south"
           backgroundVideo="south.mp4"
           placeholderImage="dubai-south-cover.png"
         />
