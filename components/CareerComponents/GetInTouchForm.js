@@ -180,10 +180,10 @@ export default function GetInTouchForm() {
             }
 
             const payload = {
-                First_Name: formData.firstName,
-                Last_Name: formData.lastName, 
-                Email: formData.email,
-                Phone: formData.phone, 
+                First_Name: formData.firstName || "",
+                Last_Name: formData.lastName || "", 
+                Email: formData.email || "",
+                Phone: formData.phone || "", 
                 CV_URL: cvUrl // include Cloudinary URL
                     // firstName: formData.firstName || "",
                     // lastName: formData.lastName || "",
