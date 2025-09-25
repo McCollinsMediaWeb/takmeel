@@ -6,7 +6,7 @@ export default function ClientComponent() {
 
     return (
         <>
-            {/* <ProjectItem backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg"
+            <ProjectItem backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg"
                 backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"
                 text1={t('slider1.preTitle')}
                 text2={t('slider1.title')}
@@ -14,7 +14,7 @@ export default function ClientComponent() {
                 tagline={t('slider1.content')}
                 url="takmeel-al-barari-view-properties"
                 backgroundVideo="tkdesk1.mp4"
-                placeholderImage="/cover2.jpg" /> */}
+                placeholderImage="/cover2.jpg" />
             <ProjectItem
                 backgroundImage="Divine-Residencia/Divine residencia main facade.jpg"
                 backgroundImageMobile="k1.jpg"
