@@ -67,7 +67,7 @@ export default function HeaderForm() {
 
         setLoading(true);
         try {
-            const response = await fetch('https://flow.zoho.com/897487424/flow/webhook/incoming?zapikey=1001.87b8cf69b2e43548d79cfe3a5e38fcab.71bc99b84e195790bcad9cbfc83ae3bd&isdebug=false', {
+            const response = await fetch('/api/contacts', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
