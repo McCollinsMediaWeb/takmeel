@@ -291,7 +291,7 @@ export default function ProjectItem({
                                 )}
 
                                 {url === "takmeel-al-barari-view-properties" && (
-                                    <Link href="https://promo.invespy.com/divine-al-barari" className="Link2 hover1" style={{ marginLeft: "10px" }} target="_blank">
+                                    <Link href="https://promo.invespy.com/divine-al-barari" className="Link1 hover1 MinWidthLnk" style={{ marginLeft: "10px" }} target="_blank">
                                         {t('buttonText2')}
                                     </Link>
                                 )}
@@ -371,7 +371,7 @@ export default function ProjectItem({
                                             {url === "takmeel-al-barari-view-properties" && (
                                                 <Link
                                                     href="https://promo.invespy.com/divine-al-barari"
-                                                    className="Link2 hover1"
+                                                    className="Link1 hover1"
                                                     style={{ marginLeft: "15px" }}
                                                     target="_blank"
                                                 >
