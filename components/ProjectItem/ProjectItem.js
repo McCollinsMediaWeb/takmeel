@@ -289,6 +289,12 @@ export default function ProjectItem({
                                         {t('buttonText')}
                                     </Link>
                                 )}
+
+                                {url === "takmeel-al-barari-view-properties" && (
+                                    <Link href="https://promo.invespy.com/divine-al-barari" className="Link2 hover1" target="_blank">
+                                        {t('buttonText2')}
+                                    </Link>
+                                )}
                                 {/* <Link href={`/detail-page/${url}`} className="Link1 hover1">
                                     {t('buttonText')}
                                 </Link> */}
@@ -344,6 +350,14 @@ export default function ProjectItem({
                                         <motion.div variants={itemVariants}>
                                             <Link href={`/detail-page/${url}`} className="Link1 hover1">
                                                 {t('buttonText')}
+                                            </Link>
+                                        </motion.div>
+                                    )}
+
+                                     {url === "takmeel-al-barari-view-properties" && (
+                                        <motion.div variants={itemVariants}>
+                                            <Link href="https://promo.invespy.com/divine-al-barari" className="Link2 hover1" target="_blank">
+                                                {t('buttonText2')}
                                             </Link>
                                         </motion.div>
                                     )}
