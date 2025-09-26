@@ -291,7 +291,7 @@ export default function ProjectItem({
                                 )}
 
                                 {url === "takmeel-al-barari-view-properties" && (
-                                    <Link href="https://promo.invespy.com/divine-al-barari" className="Link2 hover1" target="_blank">
+                                    <Link href="https://promo.invespy.com/divine-al-barari" className="Link2 hover1" style={{ marginLeft: "10px" }} target="_blank">
                                         {t('buttonText2')}
                                     </Link>
                                 )}
@@ -346,7 +346,7 @@ export default function ProjectItem({
                                         </motion.div>
                                     </motion.div>
 
-                                    {url !== "dubai-south" && (
+                                    {/* {url !== "dubai-south" && (
                                         <motion.div variants={itemVariants}>
                                             <Link href={`/detail-page/${url}`} className="Link1 hover1">
                                                 {t('buttonText')}
@@ -354,13 +354,33 @@ export default function ProjectItem({
                                         </motion.div>
                                     )}
 
-                                     {url === "takmeel-al-barari-view-properties" && (
+                                    {url === "takmeel-al-barari-view-properties" && (
                                         <motion.div variants={itemVariants}>
                                             <Link href="https://promo.invespy.com/divine-al-barari" className="Link2 hover1" target="_blank">
                                                 {t('buttonText2')}
                                             </Link>
                                         </motion.div>
+                                    )} */}
+
+                                    {url !== "dubai-south" && (
+                                        <motion.div variants={itemVariants}>
+                                            <Link href={`/detail-page/${url}`} className="Link1 hover1">
+                                                {t('buttonText')}
+                                            </Link>
+
+                                            {url === "takmeel-al-barari-view-properties" && (
+                                                <Link
+                                                    href="https://promo.invespy.com/divine-al-barari"
+                                                    className="Link2 hover1"
+                                                    style={{ marginLeft: "15px" }}
+                                                    target="_blank"
+                                                >
+                                                    {t('buttonText2')}
+                                                </Link>
+                                            )}
+                                        </motion.div>
                                     )}
+
 
                                     {/* <motion.div variants={itemVariants}>
                                         <Link href={`/detail-page/${url}`} className="Link1 hover1">
