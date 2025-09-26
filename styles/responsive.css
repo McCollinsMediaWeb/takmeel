@@ -1080,8 +1080,5 @@
   .FixedCallBackLayout a:first-child {
   margin-bottom: 5px;
   }
-  .MinWidthLnk{
-    margin-left: 0 !important;
-    margin-top: 10px !important;
-  }
+  
 }
