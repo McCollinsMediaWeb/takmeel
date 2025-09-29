@@ -376,7 +376,8 @@
   }
 
   .ButtonsBox1 a {
-    margin-right: 5px;
+    /* margin-right: 5px; */
+    margin-inline-end: 5px;
     padding: 10px;
     font-size: 12px;
   }

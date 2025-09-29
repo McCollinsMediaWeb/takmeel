@@ -705,6 +705,7 @@
     },
     "Properties": {
         "downloadBrochure": "تحميل الكتيّب التعريفي",
+        "downloadFactsheet": "تحميل النشرة",
         "soldOut": "تم البيع",
         "amenitiesIcons": {
             "subTitle": "المرافق والخدمات",

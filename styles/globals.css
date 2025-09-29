@@ -1447,7 +1447,8 @@ body .slick-prev::before {
   background-color: #1d1d1b;
   color: #fff;
   border-radius: 20px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
+  margin-inline-end: 10px;
   text-align: center;
 }
 

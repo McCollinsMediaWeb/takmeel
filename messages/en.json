@@ -705,6 +705,7 @@
     },
     "Properties": {
         "downloadBrochure": "Download Brochure",
+        "downloadFactsheet": "Download Factsheet",
         "soldOut": "Sold Out",
         "amenitiesIcons": {
             "subTitle": "AMENITIES AND FACILITIES",

@@ -524,17 +524,17 @@ export default function DetailHero({
                                     <div className='col-md-5'>
                                         <div className='ButtonsBox1'>
                                             {brochureLink && (
-                                                // <a href={brochureLink} download className='hover1'>
-                                                //     Download Brochure
-                                                // </a>
-
-                                                <a onClick={() => setIsOpen(!isOpen)} className='hover1' style={{ cursor: 'pointer' }}>
+                                                <a href={brochureLink} download className='hover1' target="_blank" rel="noopener noreferrer">
                                                     {t('downloadBrochure')}
                                                 </a>
+
+                                                // <a onClick={() => setIsOpen(!isOpen)} className='hover1' style={{ cursor: 'pointer' }}>
+                                                //     {t('downloadBrochure')}
+                                                // </a>
                                             )}
                                             {masterPlanLink && (
-                                                <a href='#' className='hover1'>
-                                                    Download Masterplan
+                                                <a href={masterPlanLink} className='hover1' target="_blank" rel="noopener noreferrer">
+                                                    {t('downloadFactsheet')}
                                                 </a>
                                             )}
                                             {registerInterest && (
