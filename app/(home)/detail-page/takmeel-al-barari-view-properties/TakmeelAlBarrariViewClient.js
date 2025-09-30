@@ -39,6 +39,7 @@ export default function TakmeelAlBarariViewClient() {
         registerInterest: null,
         videoPosterDesktop: "/Takmeel-Al-Barrari-View/Majan 03.jpg",
         videoPosterMobile: "/Takmeel-Al-Barrari-View/Mobile Majan 03.jpg",
+        vrLink:"https://tinyurl.com/5n7mbkuw",
         GalleryMedia: [
             // {
             // type: "video",

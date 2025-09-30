@@ -191,7 +191,8 @@ export default function DetailHero({
     videoPosterDesktop = null,
     videoPosterMobile = null,
     projectStatus,
-    placeholderImage
+    placeholderImage,
+    vrLink = null
 }) {
     const t = useTranslations('Properties');
     const locale = useLocale();
@@ -434,23 +435,23 @@ export default function DetailHero({
                 <div className="DetSlContentBox">
                     <div className="container">
                         {/* <motion.div
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, ease: 'easeOut' }}
-                        viewport={{ once: true, amount: 0.5 }}
-                    >
-                        <div className="text-center">
-                            <div
-                                className="PlayIconBox"
-                                onClick={() => setOpen(true)}
-                                role="button"
-                                aria-label="Open Gallery"
-                                tabIndex={0}
-                                onKeyDown={(e) => e.key === 'Enter' && setOpen(true)}
-                            >
-                                <div className="PlayIcon">&nbsp;</div>
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, ease: 'easeOut' }}
+                            viewport={{ once: true, amount: 0.5 }}
+                        >
+                            <div className="text-center">
+                                <div
+                                    className="PlayIconBox"
+                                    onClick={() => setOpen(true)}
+                                    role="button"
+                                    aria-label="Open Gallery"
+                                    tabIndex={0}
+                                    onKeyDown={(e) => e.key === 'Enter' && setOpen(true)}
+                                >
+                                    <div className="PlayIcon">&nbsp;</div>
+                                </div>
                             </div>
-                        </div>
                     </motion.div> */}
 
                         {/* {text2 !== "Divine Al Barari" && ( */}
@@ -502,6 +503,28 @@ export default function DetailHero({
                                                     {text3}
                                                 </motion.div>
                                             </motion.div>
+
+
+                                            {vrLink !== null && (
+                                                <motion.div
+                                                    className="Txt1 nunito-text"
+                                                    animate={{ opacity: [1, 0.3, 1] }}
+                                                    transition={{
+                                                        duration: 2,
+                                                        ease: 'easeInOut',
+                                                    }}
+                                                >
+                                                    <Link
+                                                        href={vrLink}
+                                                        className="Link1 hover1"
+                                                        style={{ marginTop: "15px" }}
+                                                        target="_blank"
+                                                    >
+                                                        {t('vrTour')}
+                                                    </Link>
+                                                </motion.div>
+                                            )}
+
                                             {projectStatus && (
                                                 <motion.div
                                                     className="Txt1 nunito-text"
