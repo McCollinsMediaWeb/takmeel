@@ -516,7 +516,7 @@ export default function DetailHero({
                                                 >
                                                     <Link
                                                         href={vrLink}
-                                                        className="Link1 hover1"
+                                                        className="Link2 hover1"
                                                         style={{ marginTop: "15px" }}
                                                         target="_blank"
                                                     >
