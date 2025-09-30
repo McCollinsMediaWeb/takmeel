@@ -26,11 +26,10 @@ export default function TakmeelAlBarariViewClient() {
     const t = useTranslations('Properties');
 
     const detailHeroData = {
-        // backgroundImage: "main1.jpg",
-        // backgroundImageMobile: "main1mobile.jpg",
-        backgroundImage: "tkdesk1.mp4",
-        // backgroundImageMobile: "Takmeel-Al-Barrari-View/Mobile Majan 03.jpg",
-        backgroundImageMobile: "tkdesk1.mp4",
+        // backgroundImage: "tkdesk1.mp4",
+        // backgroundImageMobile: "tkdesk1.mp4",
+        backgroundImage: "Takmeel-Al-Barrari-View/Al-Barari-Video.mp4",
+        backgroundImageMobile: "Takmeel-Al-Barrari-View/Al-Barari-Video.mp4",
         text1: t('DivineAlBarari.content'),
         text2: t('DivineAlBarari.title'),
         text3: t('DivineAlBarari.subTitle'),

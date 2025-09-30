@@ -13,8 +13,10 @@ export default function ClientComponent() {
                 text3={t('slider1.subTitle')}
                 tagline={t('slider1.content')}
                 url="takmeel-al-barari-view-properties"
-                backgroundVideo="tkdesk1.mp4"
-                placeholderImage="/cover2.jpg" />
+                // backgroundVideo="tkdesk1.mp4"
+                // placeholderImage="/cover2.jpg" />
+                backgroundVideo="Takmeel-Al-Barrari-View/Al-Barari-Video.mp4"
+                placeholderImage="Takmeel-Al-Barrari-View/Al-Barari-Cover.png" />
             <ProjectItem
                 backgroundImage="Divine-Residencia/Divine residencia main facade.jpg"
                 backgroundImageMobile="k1.jpg"
