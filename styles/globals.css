@@ -236,11 +236,13 @@ header {
   /* max-width: 150px; */
   /* max-width: 250px; */
   width: 250px;
+  height: 65px;
 }
 
 @media (max-width: 800px) {
   .MainLogo {
     width: 150px;
+    height: 40px;
   }
 }
 
@@ -3200,6 +3202,7 @@ body {
 
   .MainLogo {
     width: 400px;
+    height: 110px;
   }
 
   .Txt2 {

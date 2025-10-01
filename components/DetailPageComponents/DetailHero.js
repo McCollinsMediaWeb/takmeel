@@ -505,7 +505,7 @@ export default function DetailHero({
                                             </motion.div>
 
 
-                                            {vrLink !== null && (
+                                            {/* {vrLink !== null && (
                                                 <motion.div
                                                     className="Txt1 nunito-text"
                                                     animate={{ opacity: [1, 0.3, 1] }}
@@ -523,7 +523,7 @@ export default function DetailHero({
                                                         {t('vrTour')}
                                                     </Link>
                                                 </motion.div>
-                                            )}
+                                            )} */}
 
                                             {projectStatus && (
                                                 <motion.div
@@ -554,6 +554,30 @@ export default function DetailHero({
                                                 // <a onClick={() => setIsOpen(!isOpen)} className='hover1' style={{ cursor: 'pointer' }}>
                                                 //     {t('downloadBrochure')}
                                                 // </a>
+                                            )}
+
+                                            {vrLink !== null && (
+                                                // <motion.div
+                                                //     className="Txt1 nunito-text"
+                                                //     animate={{ opacity: [1, 0.3, 1] }}
+                                                //     transition={{
+                                                //         duration: 2,
+                                                //         ease: 'easeInOut',
+                                                //     }}
+                                                // >
+                                                //     <Link
+                                                //         href={vrLink}
+                                                //         className="Link2 hover1"
+                                                //         style={{ marginTop: "15px" }}
+                                                //         target="_blank"
+                                                //     >
+                                                //         {t('vrTour')}
+                                                //     </Link>
+                                                // </motion.div>
+
+                                                <a href={vrLink} className='hover1' target="_blank" rel="noopener noreferrer">
+                                                    {t('vrTour')}
+                                                </a>
                                             )}
                                             {masterPlanLink && (
                                                 <a href={masterPlanLink} className='hover1' target="_blank" rel="noopener noreferrer">
