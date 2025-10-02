@@ -28,8 +28,8 @@ export default function TakmeelAlBarariViewClient() {
     const detailHeroData = {
         // backgroundImage: "tkdesk1.mp4",
         // backgroundImageMobile: "tkdesk1.mp4",
-        backgroundImage: "Takmeel-Al-Barrari-View/Al-Barari-Video.mp4",
-        backgroundImageMobile: "Takmeel-Al-Barrari-View/Al-Barari-Video.mp4",
+        backgroundImage: "Takmeel-Al-Barrari-View/Al-Barari-Video-2.mp4",
+        backgroundImageMobile: "Takmeel-Al-Barrari-View/Al-Barari-Video-2.mp4",
         text1: t('DivineAlBarari.content'),
         text2: t('DivineAlBarari.title'),
         text3: t('DivineAlBarari.subTitle'),

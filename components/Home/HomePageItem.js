@@ -143,9 +143,9 @@ export default function HomePageItem() {
           tagline={t('slider2.content')}
           url="takmeel-al-barari-view-properties"
           // backgroundVideo="tkdesk1.mp4"
-          backgroundVideo="Takmeel-Al-Barrari-View/Al-Barari-Video.mp4"
+          backgroundVideo="Takmeel-Al-Barrari-View/Al-Barari-Video-2.mp4"
           // placeholderImage="/cover2.jpg"
-          placeholderImage="Takmeel-Al-Barrari-View/Al-Barari-Cover.png"
+          placeholderImage="Takmeel-Al-Barrari-View/Al-Barari-Cover-2.png"
         />
       </section>
 
@@ -266,7 +266,8 @@ export default function HomePageItem() {
       >
         {/* <MainMapComponent MapImageDesk="map6.svg" MapImageMobile="mapmobile.svg" /> */}
         {/* <MainMapComponent MapImageDesk="ttnew.svg" MapImageMobile="ttmobile1.svg" /> */}
-        <MainMapComponent MapImageDesk="ed.svg" MapImageMobile="em.svg" />
+        {/* <MainMapComponent MapImageDesk="ed.svg" MapImageMobile="em.svg" /> */}
+        <MainMapComponent MapImageDesk="home-web-map.svg" MapImageMobile="home-mobile-map.svg" />
       </section>
 
       <section
