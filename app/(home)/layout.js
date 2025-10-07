@@ -140,7 +140,7 @@ export default async function RootLayout({ children }) {
                 }}
               /> */}
 
-              <Script
+              {/* <Script
                 id="zsiq-init"
                 strategy="beforeInteractive"
                 dangerouslySetInnerHTML={{
@@ -163,7 +163,63 @@ export default async function RootLayout({ children }) {
                 src="https://salesiq.zohopublic.com/widget?wc=siq56336b532438deb7cfdbff018b021175034a777a0a32d17bd7c230a43c106fbf"
                 strategy="lazyOnload"
                 defer
+              /> */}
+
+
+              <Script
+                id="zsiq-init"
+                strategy="beforeInteractive"
+                dangerouslySetInnerHTML={{
+                  __html: `
+      // Utility: Clear all Zoho chat-related localStorage/sessionStorage items
+      function clearZohoStorage() {
+        try {
+          for (const key in localStorage) {
+            if (key.startsWith('ZSIQ_') || key.startsWith('siq_')) {
+              localStorage.removeItem(key);
+            }
+          }
+          for (const key in sessionStorage) {
+            if (key.startsWith('ZSIQ_') || key.startsWith('siq_')) {
+              sessionStorage.removeItem(key);
+            }
+          }
+        } catch (err) {
+          console.warn("Zoho storage clear failed:", err);
+        }
+      }
+
+      // Run immediately (before widget loads)
+      clearZohoStorage();
+
+      window.$zoho = window.$zoho || {};
+      $zoho.salesiq = $zoho.salesiq || {
+        ready: function() {
+          try {
+            clearZohoStorage();
+            // Force open chat after ensuring session is cleared
+            setTimeout(() => {
+              if ($zoho.salesiq.widget && typeof $zoho.salesiq.widget.open === "function") {
+                $zoho.salesiq.widget.open();
+              }
+            }, 1500);
+          } catch (err) {
+            console.error("Zoho SalesIQ auto open failed:", err);
+          }
+        }
+      };
+    `,
+                }}
               />
+
+              <Script
+                id="zsiqscript"
+                src="https://salesiq.zohopublic.com/widget?wc=siq56336b532438deb7cfdbff018b021175034a777a0a32d17bd7c230a43c106fbf"
+                strategy="lazyOnload"
+                defer
+              />
+
+
 
               <Header />
               <main>{children}</main>

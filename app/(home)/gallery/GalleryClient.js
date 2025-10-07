@@ -124,8 +124,81 @@ export default function GalleryClient() {
         ]
 
     };
+
+    const GalleryData3 = {
+        text1: t('section4.title'),
+        GalleryImages: [
+            "gallery4/McCO (16 of 160).jpg",
+            "gallery4/McCO (1 of 160).jpg",
+            "gallery4/McCO (3 of 160).jpg",
+            "gallery4/McCO (14 of 160).jpg",
+            "gallery4/McCO (15 of 160).jpg",
+
+            "gallery4/McCO (25 of 160).jpg",
+            "gallery4/McCO (13 of 160).jpg",
+            "gallery4/McCO (30 of 160).jpg",
+            "gallery4/McCO (36 of 160).jpg",
+
+            "gallery4/McCO (39 of 160).jpg",
+            "gallery4/McCO (46 of 160).jpg",
+            "gallery4/McCO (47 of 160).jpg",
+            "gallery4/McCO (63 of 160).jpg",
+            "gallery4/McCO (65 of 160).jpg",
+
+            "gallery4/McCO (66 of 160).jpg",
+            "gallery4/McCO (74 of 160).jpg",
+            "gallery4/McCO (90 of 160).jpg",
+            "gallery4/McCO (91 of 160).jpg",
+            "gallery4/McCO (92 of 160).jpg",
+
+            "gallery4/McCO (94 of 160).jpg",
+            "gallery4/McCO (95 of 160).jpg",
+            "gallery4/McCO (100 of 160).jpg",
+            // "gallery4/McCO (101 of 160).jpg",
+            "gallery4/McCO (102 of 160).jpg",
+
+            // "gallery4/McCO (103 of 160).jpg",
+            // "gallery4/McCO (105 of 160).jpg",
+            // "gallery4/McCO (106 of 160).jpg",
+            "gallery4/McCO (111 of 160).jpg",
+            // "gallery4/McCO (112 of 160).jpg",
+
+            "gallery4/McCO (114 of 160).jpg",
+            "gallery4/McCO (115 of 160).jpg",
+            // "gallery4/McCO (116 of 160).jpg",
+            "gallery4/McCO (118 of 160).jpg",
+            "gallery4/McCO (121 of 160).jpg",
+
+            "gallery4/McCO (124 of 160).jpg",
+            "gallery4/McCO (126 of 160).jpg",
+            // "gallery4/McCO (127 of 160).jpg",
+            // "gallery4/McCO (128 of 160).jpg",
+            "gallery4/McCO (130 of 160).jpg",
+
+            "gallery4/McCO (132 of 160).jpg",
+            "gallery4/McCO (133 of 160).jpg",
+            "gallery4/McCO (134 of 160).jpg",
+            "gallery4/McCO (135 of 160).jpg",
+            "gallery4/McCO (136 of 160).jpg",
+
+            "gallery4/McCO (137 of 160).jpg",
+            "gallery4/McCO (138 of 160).jpg",
+            "gallery4/McCO (139 of 160).jpg",
+            "gallery4/McCO (141 of 160).jpg",
+            "gallery4/McCO (147 of 160).jpg",
+
+            "gallery4/McCO (148 of 160).jpg",
+            "gallery4/McCO (150 of 160).jpg",
+            "gallery4/McCO (158 of 160).jpg",
+        ]
+
+    };
+
     return (
         <>
+            <div className="bg2 NoPagination">
+                <GalleryRow t={t}  {...GalleryData3} />
+            </div>
             <div className="bg2 NoPagination">
                 <GalleryRow t={t}  {...GalleryData1} />
             </div>
