@@ -68,7 +68,7 @@ export default function GalleryRow({ t, text1, GalleryImages }) {
         speed: 900,
         slidesToShow: 2,
         slidesToScroll: 1,
-        initialSlide: 0,
+        initialSlide: 1,
         infinite: true,
         // autoplay: true,
         autoplaySpeed: 0,
