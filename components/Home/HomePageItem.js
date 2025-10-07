@@ -125,8 +125,10 @@ export default function HomePageItem() {
           text3={t('slider1.content')}
           tagline=""
           url="projects"
-          backgroundVideo="tt21.mp4"
-          placeholderImage="/cover1.jpg"
+          // backgroundVideo="tt21.mp4"
+          backgroundVideo="Takmeel-Al-Barrari-View/Al-Barari-Video.mp4"
+          // placeholderImage="/cover1.jpg"
+          placeholderImage="Takmeel-Al-Barrari-View/Al-Barari-Cover.png"
         />
       </section>
 
@@ -143,9 +145,9 @@ export default function HomePageItem() {
           tagline={t('slider2.content')}
           url="takmeel-al-barari-view-properties"
           // backgroundVideo="tkdesk1.mp4"
-          backgroundVideo="Takmeel-Al-Barrari-View/Al-Barari-Video.mp4"
+          backgroundVideo="Takmeel-Al-Barrari-View/Al-Barari-Video-3.mp4"
           // placeholderImage="/cover2.jpg"
-          placeholderImage="Takmeel-Al-Barrari-View/Al-Barari-Cover.png"
+          placeholderImage="Takmeel-Al-Barrari-View/Al-Barari-Cover-2.png"
         />
       </section>
 

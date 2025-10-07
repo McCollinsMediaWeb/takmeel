@@ -15,8 +15,8 @@ export default function ClientComponent() {
                 url="takmeel-al-barari-view-properties"
                 // backgroundVideo="tkdesk1.mp4"
                 // placeholderImage="/cover2.jpg" />
-                backgroundVideo="Takmeel-Al-Barrari-View/Al-Barari-Video.mp4"
-                placeholderImage="Takmeel-Al-Barrari-View/Al-Barari-Cover.png" />
+                backgroundVideo="Takmeel-Al-Barrari-View/Al-Barari-Video-3.mp4"
+                placeholderImage="Takmeel-Al-Barrari-View/Al-Barari-Cover-2.png" /> 
             <ProjectItem
                 backgroundImage="Divine-Residencia/Divine residencia main facade.jpg"
                 backgroundImageMobile="k1.jpg"

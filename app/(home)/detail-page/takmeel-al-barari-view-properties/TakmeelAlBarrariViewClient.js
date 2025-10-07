@@ -28,16 +28,18 @@ export default function TakmeelAlBarariViewClient() {
     const detailHeroData = {
         // backgroundImage: "tkdesk1.mp4",
         // backgroundImageMobile: "tkdesk1.mp4",
-        backgroundImage: "Takmeel-Al-Barrari-View/Al-Barari-Video.mp4",
-        backgroundImageMobile: "Takmeel-Al-Barrari-View/Al-Barari-Video.mp4",
+        backgroundImage: "Takmeel-Al-Barrari-View/Al-Barari-Video-3.mp4",
+        backgroundImageMobile: "Takmeel-Al-Barrari-View/Al-Barari-Video-3.mp4",
         text1: t('DivineAlBarari.content'),
         text2: t('DivineAlBarari.title'),
         text3: t('DivineAlBarari.subTitle'),
         brochureLink: "/Takmeel-Al-Barrari-View/Divine-Al-Barari-Brochure.pdf",
         masterPlanLink: "/Takmeel-Al-Barrari-View/Divine-Al-Barari-Factsheet.pdf",
         registerInterest: null,
-        videoPosterDesktop: "/Takmeel-Al-Barrari-View/Majan 03.jpg",
-        videoPosterMobile: "/Takmeel-Al-Barrari-View/Mobile Majan 03.jpg",
+        // videoPosterDesktop: "/Takmeel-Al-Barrari-View/Majan 03.jpg",
+        // videoPosterMobile: "/Takmeel-Al-Barrari-View/Mobile Majan 03.jpg",
+        videoPosterDesktop: "/Takmeel-Al-Barrari-View/Al-Barari-Cover-2.png",
+        videoPosterMobile: "/Takmeel-Al-Barrari-View/Al-Barari-Cover-2.png",
         vrLink:"https://tinyurl.com/5n7mbkuw",
         GalleryMedia: [
             // {
