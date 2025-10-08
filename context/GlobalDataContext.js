@@ -16,7 +16,7 @@ export const GlobalDataProvider = ({ children }) => {
     const [hasMore, setHasMore] = useState(true);
     const [skip, setSkip] = useState(0);
 
-    const initialLimit = 7;
+    const initialLimit = 6;
     const subsequentLimit = 6;
 
     const fetchNews = async (currentSkip = 0, limit = initialLimit) => {

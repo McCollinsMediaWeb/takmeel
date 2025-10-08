@@ -116,16 +116,18 @@ export async function POST(req) {
 
         console.log('Body', body)
 
-        const { coverImage, date, category, heading, handle, subheading, content, visibility } = body;
+        const { coverImage, newsBrandImage, date, category, heading, handle, subheading, newsUrl, content, visibility } = body;
 
         // Insert with timestamp
         await db.collection("news").insertOne({
             coverImage,
+            newsBrandImage,
             date,
             category,
             heading,
             handle,
             subheading,
+            newsUrl,
             content,
             visibility,
             createdAt: new Date(), // timestamp

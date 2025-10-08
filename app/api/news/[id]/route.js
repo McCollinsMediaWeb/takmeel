@@ -46,7 +46,7 @@ export async function PUT(req, { params }) {
         }
 
         const body = await req.json();
-        const { coverImage, date, category, heading, subheading, content, visibility } = body;
+        const { coverImage, newsBrandImage, date, category, heading, subheading, newsUrl, content, visibility } = body;
 
         const client = await clientPromise;
         const db = client.db("Takmeel");
@@ -56,10 +56,12 @@ export async function PUT(req, { params }) {
             {
                 $set: {
                     coverImage,
+                    newsBrandImage,
                     date,
                     category,
                     heading,
                     subheading,
+                    newsUrl,
                     content,
                     visibility,
                 },

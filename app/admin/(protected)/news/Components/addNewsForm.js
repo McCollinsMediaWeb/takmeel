@@ -229,16 +229,18 @@ function AddNewsForm({
     });
 
     const [file, setFile] = useState(null);
+    const [newsBrand, setNewsBrand] = useState(null);
     const [date, setDate] = useState(newsToEdit?.date || defaultDate);
     const [category, setCategory] = useState(newsToEdit?.category || '');
     const [newsHeading, setNewsHeading] = useState(newsToEdit?.heading || '');
     const [newsHandle, setNewsHandle] = useState(newsToEdit?.handle || '');
-    // const [newsContent, setNewsContent] = useState('');
+    const [newsUrl, setNewsUrl] = useState('');
     const [newsContent, setNewsContent] = useState(newsToEdit?.content || '');
     const [newsSubHeading, setNewsSubHeading] = useState(newsToEdit?.subheading || '');
     const [visibility, setVisibility] = useState(newsToEdit?.visibility ?? true);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [previewUrl, setPreviewUrl] = useState(newsToEdit?.coverImage || null);
+    const [newsBrandPreviewUrl, setNewsBrandPreviewUrl] = useState(newsToEdit?.newsBrandImage || null);
 
     const imgUpload = async (file) => {
         const formData = new FormData();
@@ -264,6 +266,7 @@ function AddNewsForm({
 
         try {
             let imageUrl = previewUrl;
+            let newsBrandImageUrl = newsBrandPreviewUrl;
 
             // Upload image if file is selected
             if (file) {
@@ -271,13 +274,19 @@ function AddNewsForm({
                 imageUrl = await imgUpload(file);
             }
 
+            if (newsBrand) {
+                newsBrandImageUrl = await imgUpload(newsBrand);
+            }
+
             const payload = {
                 coverImage: imageUrl,
+                newsBrandImage: newsBrandImageUrl,
                 date,
                 category,
                 heading: newsHeading,
                 handle: newsHandle,
                 subheading: newsSubHeading,
+                newsUrl:newsUrl,
                 content: newsContent,
                 visibility,
             };
@@ -308,9 +317,11 @@ function AddNewsForm({
         } finally {
             setIsSubmitting(false);
             setFile(null);
+            setNewsBrand(null);
             setDate(defaultDate);
             setCategory('');
             setNewsHeading('');
+            setNewsUrl('');
             setNewsContent('');
             setNewsSubHeading('');
             setVisibility(true);
@@ -382,6 +393,46 @@ function AddNewsForm({
 
                 <small className={styles.formText}>Upload a cover image for the news article</small>
 
+                <div className={styles.fileInput} style={{ marginTop: '30px' }}>
+                    <label htmlFor="newsBrandImage" className={styles.fileInputLabel}>Choose News Brand</label>
+                    <input
+                        type="file"
+                        id="newsBrandImage"
+                        className={styles.formFileInput}
+                        accept="image/*"
+                        onChange={(e) => {
+                            const selectedFile = e.target.files[0];
+                            if (selectedFile) {
+                                setNewsBrand(selectedFile);
+                                const reader = new FileReader();
+                                reader.onload = () => {
+                                    setNewsBrandPreviewUrl(reader.result);
+                                };
+                                reader.readAsDataURL(selectedFile);
+                            }
+                        }}
+                    />
+                    <span className={styles.fileInputText}>{newsBrand ? newsBrand.name : 'No file chosen'}</span>
+                </div>
+
+                {newsBrandPreviewUrl && (
+                    <div className={styles.imagePreviewWrapper}>
+                        <img src={newsBrandPreviewUrl} alt="Preview" className={styles.imagePreview} />
+                        <button
+                            type="button"
+                            className={styles.removeImageBtn}
+                            onClick={() => {
+                                setNewsBrand(null);
+                                setNewsBrandPreviewUrl(null);
+                            }}
+                        >
+                            &times;
+                        </button>
+                    </div>
+                )}
+
+                <small className={styles.formText}>Upload a cover image for the news brand</small>
+
                 <div className={styles.formsRow} style={{ marginTop: '30px' }}>
                     <div className={styles.formGroup}>
                         <label htmlFor="newsDate">Date</label>
@@ -450,6 +501,22 @@ function AddNewsForm({
                         required
                     ></textarea>
                 </div>
+
+                <div className={styles.formGroup}>
+                    <label htmlFor="newsUrl">News URL</label>
+                    <input
+                        type="text"
+                        id="newsUrl"
+                        className={styles.formControl}
+                        placeholder="Enter news URL"
+                        value={newsUrl}
+                        onChange={(e) => setNewsUrl(e.target.value)}
+                        required
+                    />
+                </div>
+
+                <p>Enter News URL or News Content</p>
+
 
                 <div className={styles.formGroup}>
                     <label htmlFor="newsContent">News Content</label>

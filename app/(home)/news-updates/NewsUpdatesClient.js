@@ -16,8 +16,15 @@ export default function NewsAndUpdatesClient() {
             <section className="BlogPostWrap">
                 {/* {latest && <LatestBlog blog={latest} />} */}
                 {/* {rest && rest.length > 0 && <BlogListing blogs={rest} />} */}
-                <LatestBlog t={t} />
-                {news && news.length > 0 && <BlogListing t={t} blogs={news} />}
+                {/* <LatestBlog t={t} /> */}
+                {news && news.length > 0 ? (
+                    <BlogListing t={t} blogs={news} />
+                ) : (
+                    <div className="col-md-12 d-flex justify-content-center" style={{ minHeight: '200px', alignItems: 'center' }}>
+                        <div className="spinner"></div>
+                    </div>
+                )}
+
             </section>
             <section className="BlogPostWrap pd-common" dir="ltr">
                 <div className="container1">

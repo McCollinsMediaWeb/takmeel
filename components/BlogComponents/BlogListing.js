@@ -3,23 +3,22 @@ import Image from "next/image";
 import Link from 'next/link';
 import { motion } from "framer-motion";
 import { useGlobalData } from "@/context/GlobalDataContext";
-
-import blogimage from "../../public/blmain.jpg";
-import b1 from "../../public/b1.jpg";
-import b2 from "../../public/b2.jpg";
-import b3 from "../../public/b3.jpg";
-import b4 from "../../public/b4.jpg";
-import b5 from "../../public/b5.jpg";
-import b6 from "../../public/b6.jpg";
+import { useLocale } from "next-intl";
 
 export default function BlogListing({ t, blogs }) {
     const { loadMore, loading, hasMore } = useGlobalData();
+    const locale = useLocale();
 
     return (
         <div className="BlogListingWrap pd-common bg2">
             <div className="blogLists">
                 <div className="container">
                     <div className="row">
+                        <div className="col-md-12" style={{ textAlign: locale === "ar" ? "right" : undefined, marginBottom: '30px' }}>
+                            <div className="BlT1 nunito-text">{t('subTitle')}</div>
+                            <div className="BlT2">{t('title')}</div>
+                            <div className="BlT3">{t('content')}</div>
+                        </div>
                         {/* <div className="col-md-4">
                             <motion.div
                                 initial={{ opacity: 0, y: 50 }}
@@ -68,7 +67,7 @@ export default function BlogListing({ t, blogs }) {
                                     viewport={{ once: true, amount: 0.5 }}
                                 >
                                     <div className="BlogItem">
-                                        <div className="LatestBlogImage">
+                                        <div className="LatestBlogImage position-relative">
                                             <Image
                                                 src={blog?.coverImage}
                                                 width={364}
@@ -76,6 +75,18 @@ export default function BlogListing({ t, blogs }) {
                                                 layout="responsive"
                                                 alt="Takmeel"
                                             />
+                                            {blog?.newsBrandImage && (
+                                                <div className="wrapLogo">
+                                                    <Image
+                                                        src={blog?.newsBrandImage}
+                                                        width={900}
+                                                        height={208}
+                                                        layout="responsive"
+                                                        alt="Takmeel"
+                                                        className="LogoKlhaleeg"
+                                                    />
+                                                </div>
+                                            )}
                                         </div>
                                         <div className="LatestBlogDesc" dir="ltr">
                                             <div className="LtT1 nunito-text" style={{ textTransform: 'uppercase' }}>{blog?.date} | {blog?.category}</div>
@@ -83,7 +94,11 @@ export default function BlogListing({ t, blogs }) {
                                             <div className="LtT3 truncate-3-lines">{blog?.subheading}</div>
                                             <div className="text-right">
                                                 {/* <Link href={`/news-updates/${blog._id}`} className='Link6 hover1'>{t('readMore')}</Link> */}
-                                                <Link href={`/news-updates/${blog.handle}`} className='Link6 hover1'>{t('readMore')}</Link>
+                                                {blog?.newsUrl ? (
+                                                    <Link href={blog?.newsUrl} className='Link6 hover1'>{t('readMore')}</Link>
+                                                ) : (
+                                                    <Link href={`/news-updates/${blog.handle}`} className='Link6 hover1'>{t('readMore')}</Link>
+                                                )}
                                             </div>
                                         </div>
                                     </div>
