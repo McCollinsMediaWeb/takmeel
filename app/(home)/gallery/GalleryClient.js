@@ -64,7 +64,7 @@ export default function GalleryClient() {
             "pr/25.jpg",
             "pr/26.jpg",
             "pr/27.jpg",
-            "pr/28.jpg",
+            // "pr/28.jpg",
             "pr/29.jpg",
             "pr/30.jpg",
             "pr/31.jpg",
@@ -188,7 +188,8 @@ export default function GalleryClient() {
             "gallery4/McCO (147 of 160).jpg",
 
             "gallery4/McCO (148 of 160).jpg",
-            "gallery4/McCO (150 of 160).jpg",
+            // "gallery4/McCO (150 of 160).jpg",
+            "gallery4/ARJ04824.jpg",
             "gallery4/McCO (158 of 160).jpg",
         ]
 
