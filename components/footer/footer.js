@@ -2,6 +2,7 @@
 
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
+import Script from 'next/script';
 
 
 export default function Footer() {
@@ -84,14 +85,49 @@ export default function Footer() {
         </div>
       </div>
       <div className='FixedCallBackLayout'>
-        <a href='https://wa.me/+971581389773?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties'>
-          <span className='IconF wa'>&nbsp;</span>
-        </a>
+
         <a href='tel:08008335'>
           <span className='IconF ca'>&nbsp;</span>
         </a>
 
+        <a style={{visibility: "hidden"}} href='https://wa.me/+971581389773?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties'>
+          <span className='IconF wa'>&nbsp;</span>
+        </a>
+
       </div>
+
+      <Script
+        id="gallabox-whatsapp-widget"
+        strategy="lazyOnload"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function (w, d, s, u) {
+              w.gbwawc = {
+                url: u,
+                options: {
+                  waId: "971581389773",
+                  siteName: "Takmeel Developments",
+                  siteTag: "Usually replies within 10 minutes",
+                  siteLogo: "https://files.gallabox.com/68b577d0420ef0daa15c42d9/886e4805-59c4-4b18-a9ad-e25ff166d802-Untitleddesign.png",
+                  widgetPosition: "LEFT",
+                  welcomeMessage: "Welcome to Takmeel Development",
+                  brandColor: "#25D366",
+                  customQuestion: "Hi, I would like to know more about you? ",
+                  startChatBtnTxt: "Send a Message",
+                  version: "v2",
+                  widgetPositionMarginX: 0,
+                  widgetPositionMarginY: 0,
+                },
+              };
+              var h = d.getElementsByTagName(s)[0],
+              j = d.createElement(s);
+              j.async = true;
+              j.src = u + "/whatsapp-widget.min.js?_=" + Date.now();
+              h.parentNode.insertBefore(j, h);
+            })(window, document, "script", "https://waw.gallabox.com");
+          `,
+        }}
+      />
     </footer>
   );
 }

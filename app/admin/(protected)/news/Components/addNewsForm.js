@@ -511,7 +511,6 @@ function AddNewsForm({
                         placeholder="Enter news URL"
                         value={newsUrl}
                         onChange={(e) => setNewsUrl(e.target.value)}
-                        required
                     />
                 </div>
 
