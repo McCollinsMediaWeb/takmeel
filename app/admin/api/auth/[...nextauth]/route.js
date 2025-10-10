@@ -35,8 +35,8 @@ const handler = NextAuth({
                 //     email: credentials.email,
                 // });
                 let result = {
-                    email: "admin@example.com",
-                    password: "admin123",
+                    email: "admin@takmeel.com",
+                    password: "mccollins2025",
                     name: "Takmeel Admin"
                 }
 
