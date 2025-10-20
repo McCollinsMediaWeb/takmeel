@@ -140,8 +140,8 @@ export default function GalleryClient() {
             "gallery4/McCO (36 of 160).jpg",
 
             "gallery4/McCO (39 of 160).jpg",
-            "gallery4/McCO (46 of 160).jpg",
-            "gallery4/McCO (47 of 160).jpg",
+            // "gallery4/McCO (46 of 160).jpg",
+            // "gallery4/McCO (47 of 160).jpg",
             "gallery4/McCO (63 of 160).jpg",
             "gallery4/McCO (65 of 160).jpg",
 
