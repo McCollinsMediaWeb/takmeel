@@ -228,6 +228,11 @@ export default async function RootLayout({ children }) {
             </NextIntlClientProvider>
           </GlobalDataProvider>
         </div>
+
+        <Script
+          src="https://crm.zoho.com/crm/javascript/zcga.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
