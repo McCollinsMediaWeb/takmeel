@@ -19,6 +19,12 @@ export async function POST(req) {
 
         const { firstName, lastName, phone, email, country, project, purpose, timeframe, bedrooms, broker, projectName } = body;
 
+        fetch('https://flow.zoho.com/897487424/flow/webhook/incoming?zapikey=1001.29babf23820fd4324119029324f75377.37f85460968769af10cba5f029bceb71&isdebug=false', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body),
+        });
+
         // Save data on Common Email Collection
         await db.collection("project-enquiry").insertOne({
             firstName,
