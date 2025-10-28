@@ -19,10 +19,27 @@ export async function POST(req) {
 
         const { firstName, lastName, phone, email, country, project, purpose, timeframe, bedrooms, broker, projectName } = body;
 
+        const projectIdMap = {
+            "divine-al-barari": 6926620000001493204,
+            "divine-residencia": 6926620000002018249,
+            "divine-living": 6926620000002018254,
+            "divine-residences": 6926620000002018259,
+            "meydan-racecourse-mansion": 6926620000002018264,
+            "golf-view-living-apartments": 6926620000002018269,
+            "golf-view-living-villas": 6926620000002018274
+        };
+
+        const projectId = projectIdMap[projectName] || null;
+
+        const payload = {
+            ...body,
+            project_id: projectId, // add the ID field Zoho expects
+        };
+
         fetch('https://flow.zoho.com/897487424/flow/webhook/incoming?zapikey=1001.29babf23820fd4324119029324f75377.37f85460968769af10cba5f029bceb71&isdebug=false', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(body),
+            body: JSON.stringify(payload),
         });
 
         // Save data on Common Email Collection
