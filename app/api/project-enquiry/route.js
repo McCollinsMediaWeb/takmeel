@@ -29,7 +29,9 @@ export async function POST(req) {
             "golf-view-living-villas": 6926620000002018274
         };
 
-        const projectId = projectIdMap[projectName] || null;
+        const projectId = projectIdMap[project] || null;
+
+        console.log("Mapped project ID:", projectId);
 
         const payload = {
             ...body,
