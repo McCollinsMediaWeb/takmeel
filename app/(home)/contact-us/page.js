@@ -7,6 +7,7 @@ import MetaInjector from "@/components/Meta/MetaInjector";
 import { getMetaTags } from "@/lib/getMetaTags";
 import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
+import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
 
 export default async function ContactUs() {
   const metaTags = await getMetaTags("/contact-us");
@@ -21,7 +22,8 @@ export default async function ContactUs() {
       )}
       <div>
         <ContactUsBanner />
-        <GetInTouchForm />
+        {/* <GetInTouchForm /> */}
+        <PropertyForm projectName="Golf View Living Apartments" />
         <OurOffice />
         {/* <section className="CntMiddleBox pd-common">
         <div className="container">
