@@ -159,6 +159,24 @@
             "option1": "نعم",
             "option2": "لا"
         },
+        "field11": {
+            "placeholder": "من أين سمعت عنا؟",
+            "option1": "Instagram",
+            "option2": "Facebook",
+            "option3": "بحث Google",
+            "option4": "بوابة العقارات (Bayut / Property Finder / Dubizzle)",
+            "option5": "إرسال عبر WhatsApp",
+            "option6": "لوحة إعلانات خارجية",
+            "option7": "إحالة وسيط / وكيل",
+            "option8": "صديق أو أحد أفراد العائلة",
+            "option9": "نشرة بريد إلكتروني",
+            "option10": "فعالية / معرض طريق",
+            "option11": "YouTube / مؤثر",
+            "option12": "أخرى (يرجى التحديد)"
+        },
+        "field12": {
+            "placeholder": "أدخل كيف سمعت عنا"
+        },
         "buttonText": "يقدم الآن",
         "registerAsBroker": "سجّل كوسيط؟"
     },

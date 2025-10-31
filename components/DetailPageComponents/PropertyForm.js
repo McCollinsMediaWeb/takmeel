@@ -26,6 +26,8 @@ export default function PropertyForm({ projectName }) {
         timeframe: '',
         bedrooms: '',
         broker: '',
+        hearAboutUs: '',
+        otherSource: ''
     };
 
     const [formData, setFormData] = useState(initialForm);
@@ -45,6 +47,7 @@ export default function PropertyForm({ projectName }) {
     const validate = () => {
         const newErrors = {};
         for (let field in formData) {
+            if (field === "otherSource" && formData.hearAboutUs !== "Other") continue;
             if (!formData[field]?.trim()) {
                 newErrors[field] = 'This field is required';
             }
@@ -251,6 +254,41 @@ export default function PropertyForm({ projectName }) {
                                     </div>
                                 </div>
                             </div> */}
+
+                            <div className='col-md-6'>
+                                <div className='InputItem position-relative'>
+                                    <select name="hearAboutUs" value={formData.hearAboutUs} onChange={handleChange}>
+                                        <option value="">{t('field11.placeholder')}</option>
+                                        <option value="Instagram">{t('field11.option1')}</option>
+                                        <option value="Facebook">{t('field11.option2')}</option>
+                                        <option value="Google Search">{t('field11.option3')}</option>
+                                        <option value="Property Portal (Bayut / Property Finder / Dubizzle')">{t('field11.option4')}</option>
+                                        <option value="WhatsApp Broadcast">{t('field11.option5')}</option>
+                                        <option value="Outdoor Billboard">{t('field11.option6')}</option>
+                                        <option value="Broker / Agent Referral">{t('field11.option7')}</option>
+                                        <option value="Friend or Family">{t('field11.option8')}</option>
+                                        <option value="Email Newsletter">{t('field11.option9')}</option>
+                                        <option value="Event / Roadshow">{t('field11.option10')}</option>
+                                        <option value="YouTube / Influencer">{t('field11.option11')}</option>
+                                        <option value="Other">{t('field11.option12')}</option>
+                                    </select>
+                                    {errors.hearAboutUs && <div style={errorStyle}>{errors.hearAboutUs}</div>}
+                                </div>
+                            </div>
+                            <div className='col-md-6'>
+                                {formData?.hearAboutUs === "Other" && (
+                                    <div className='InputItem position-relative'>
+                                        <input
+                                            type='text'
+                                            name="otherSource"
+                                            placeholder={t('field12.placeholder')}
+                                            value={formData.otherSource}
+                                            onChange={handleChange}
+                                        />
+                                        {errors.otherSource && <div style={errorStyle}>{errors.otherSource}</div>}
+                                    </div>
+                                )}
+                            </div>
 
 
                             <div className='col-md-6'>

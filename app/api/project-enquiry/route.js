@@ -17,7 +17,7 @@ export async function POST(req) {
         const client = await clientPromise;
         const db = client.db("Takmeel");
 
-        const { firstName, lastName, phone, email, country, project, purpose, timeframe, bedrooms, broker, projectName } = body;
+        const { firstName, lastName, phone, email, country, project, purpose, timeframe, bedrooms, broker, hearAboutUs, otherSource, projectName } = body;
 
         const projectIdMap = {
             "divine-al-barari": "6926620000001493204",
@@ -31,12 +31,20 @@ export async function POST(req) {
 
         const projectId = projectIdMap[project] || null;
 
-        console.log("Mapped project ID:", projectId);
+        // Replace "hearAboutUs" with "otherSource" value if user selected "Other"
+        const finalHearAboutUs =
+            hearAboutUs === "Other" && otherSource?.trim()
+                ? otherSource.trim()
+                : hearAboutUs;
 
         const payload = {
             ...body,
+            hearAboutUs: finalHearAboutUs, // overwrite it
             project_id: projectId, // add the ID field Zoho expects
         };
+
+        // remove redundant `otherSource` key (optional)
+        delete payload.otherSource;
 
         fetch('https://flow.zoho.com/897487424/flow/webhook/incoming?zapikey=1001.29babf23820fd4324119029324f75377.37f85460968769af10cba5f029bceb71&isdebug=false', {
             method: 'POST',
@@ -56,6 +64,7 @@ export async function POST(req) {
             timeframe,
             bedrooms,
             broker,
+            hearAboutUs: finalHearAboutUs,
             sourcePage: projectName,
             createdAt: new Date(), // timestamp
         });
@@ -98,6 +107,7 @@ export async function POST(req) {
                 <p><strong>How soon are you looking to buy?:</strong> ${timeframe}</p>
                 <p><strong>Number of bedrooms:</strong> ${bedrooms}</p>
                 <p><strong>Are you assisted by a broker?:</strong> ${broker}</p>
+                <p><strong>Where did you hear about us?:</strong> ${finalHearAboutUs}</p>
                 <p><strong>User submitted property enquiry form from?:</strong> ${projectName} page</p>
             `,
         };

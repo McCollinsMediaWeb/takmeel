@@ -159,6 +159,24 @@
             "option1": "Yes",
             "option2": "No"
         },
+        "field11": {
+            "placeholder": "Where did you hear about us?",
+            "option1": "Instagram",
+            "option2": "Facebook",
+            "option3": "Google Search",
+            "option4": "Property Portal (Bayut / Property Finder / Dubizzle)",
+            "option5": "WhatsApp Broadcast",
+            "option6": "Outdoor Billboard",
+            "option7": "Broker / Agent Referral",
+            "option8": "Friend or Family",
+            "option9": "Email Newsletter",
+            "option10": "Event / Roadshow",
+            "option11": "YouTube / Influencer",
+            "option12": "Other (please specify)"
+        },
+        "field12": {
+            "placeholder": "Enter how you heard about us"
+        },
         "buttonText": "Submit Now",
         "registerAsBroker": "Register as Broker?"
     },
