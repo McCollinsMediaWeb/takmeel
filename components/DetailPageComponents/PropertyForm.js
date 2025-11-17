@@ -182,12 +182,12 @@ export default function PropertyForm({ projectName }) {
                                     <select name="project" value={formData.project} onChange={handleChange}>
                                         <option value="">{t('field6.placeholder')}</option>
                                         <option value="divine-al-barari">{t('field6.option1')}</option>
-                                        <option value="divine-residencia">{t('field6.option2')}</option>
+                                        {/* <option value="divine-residencia">{t('field6.option2')}</option>
                                         <option value="divine-living">{t('field6.option3')}</option>
                                         <option value="divine-residences">{t('field6.option4')}</option>
                                         <option value="meydan-racecourse-mansion">{t('field6.option5')}</option>
                                         <option value="golf-view-living-apartments">{t('field6.option6')}</option>
-                                        <option value="golf-view-living-villas">{t('field6.option7')}</option>
+                                        <option value="golf-view-living-villas">{t('field6.option7')}</option> */}
 
                                     </select>
                                     {errors.project && <div style={errorStyle}>{errors.project}</div>}
