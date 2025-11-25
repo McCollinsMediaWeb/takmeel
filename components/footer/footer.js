@@ -84,7 +84,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className='FixedCallBackLayout'>
+      <div className='FixedCallBackLayout d-only'>
 
         <a href='tel:08008335'>
           <span className='IconF ca'>&nbsp;</span>

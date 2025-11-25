@@ -65,7 +65,7 @@ export default function FooterBottom() {
                                     </span>
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <a href='https://wa.me/+971581389773?text=Hi%20Takmeel%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20properties'>
                                     <span>
                                         <div className='icon'>
@@ -76,7 +76,7 @@ export default function FooterBottom() {
                                         </div>
                                     </span>
                                 </a>
-                            </li>
+                            </li> */}
                             <li>
                                 <a href='tel:08008335'>
                                     <span>

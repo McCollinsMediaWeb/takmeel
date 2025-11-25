@@ -3529,3 +3529,9 @@ body {
   margin-bottom: 10px;
   display: inline-block;
 }
+
+@media (max-width: 768px) {
+  #gb-waw-iframe {
+    bottom: 75px !important;
+  }
+}
