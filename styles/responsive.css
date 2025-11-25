@@ -1071,8 +1071,9 @@
   font-size: 18px;
   }
   .FixedCallBackLayout{
-    bottom: 80px;
-    left: 10px;
+    /* bottom: 80px; */
+    bottom: 35px;
+    /* left: 10px; */
   }
   .IconF {
   width: 45px;
