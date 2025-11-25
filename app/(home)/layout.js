@@ -233,6 +233,40 @@ export default async function RootLayout({ children }) {
           src="https://crm.zoho.com/crm/javascript/zcga.js"
           strategy="afterInteractive"
         />
+
+
+        <Script
+        id="gallabox-whatsapp-widget"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function (w, d, s, u) {
+              w.gbwawc = {
+                url: u,
+                options: {
+                  waId: "971581389773",
+                  siteName: "Takmeel Developments",
+                  siteTag: "Usually replies within 10 minutes",
+                  siteLogo: "https://files.gallabox.com/68b577d0420ef0daa15c42d9/886e4805-59c4-4b18-a9ad-e25ff166d802-Untitleddesign.png",
+                  widgetPosition: "LEFT",
+                  welcomeMessage: "Welcome to Takmeel Development",
+                  brandColor: "#25D366",
+                  customQuestion: "Hi, I would like to know more about you? ",
+                  startChatBtnTxt: "Send a Message",
+                  version: "v2",
+                  widgetPositionMarginX: 0,
+                  widgetPositionMarginY: 0,
+                },
+              };
+              var h = d.getElementsByTagName(s)[0],
+              j = d.createElement(s);
+              j.async = true;
+              j.src = u + "/whatsapp-widget.min.js?_=" + Date.now();
+              h.parentNode.insertBefore(j, h);
+            })(window, document, "script", "https://waw.gallabox.com");
+          `,
+        }}
+      />
       </body>
     </html>
   );

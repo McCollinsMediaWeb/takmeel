@@ -96,7 +96,7 @@ export default function Footer() {
 
       </div>
 
-      <Script
+      {/* <Script
         id="gallabox-whatsapp-widget"
         strategy="lazyOnload"
         dangerouslySetInnerHTML={{
@@ -127,7 +127,7 @@ export default function Footer() {
             })(window, document, "script", "https://waw.gallabox.com");
           `,
         }}
-      />
+      /> */}
     </footer>
   );
 }

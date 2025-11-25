@@ -318,7 +318,7 @@ export default function TakmeelMenu() {
                                         transition={{ duration: 0.8, ease: 'easeOut' }}
                                         viewport={{ once: false, amount: 0.5 }}
                                     >
-                                        <Link style={{ width: 'fit-content;' }} href={item.path} className="Link8"
+                                        <Link style={{ width: 'fit-content' }} href={item.path} className="Link8"
                                             // onMouseEnter={() => {
                                             //     isHoveringRef.current = true;
                                             //     setActive(index);
