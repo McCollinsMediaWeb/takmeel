@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono, Nunito_Sans, Cairo } from "next/font/google";
-
+import { headers } from "next/headers";
 import Header from "@/components/header/header";
 import { GlobalDataProvider } from "@/context/GlobalDataContext";
 import "@/styles/bootstrap.css";
@@ -54,7 +54,8 @@ const cairo = Cairo({
 export default async function RootLayout({ children }) {
 
   const locale = await getLocale();
-
+  const pathname = headers().get("x-pathname") || "";
+  const showHeader = pathname !== "/divine-elements-page";
 
   return (
 
@@ -221,7 +222,8 @@ export default async function RootLayout({ children }) {
 
 
 
-              <Header />
+              {/* <Header /> */}
+              {showHeader && <Header />}
               <main>{children}</main>
               {/* <Footer /> */}
               {/* <FooterBottom /> */}
@@ -236,10 +238,10 @@ export default async function RootLayout({ children }) {
 
 
         <Script
-        id="gallabox-whatsapp-widget"
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
+          id="gallabox-whatsapp-widget"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
             (function (w, d, s, u) {
               w.gbwawc = {
                 url: u,
@@ -265,8 +267,8 @@ export default async function RootLayout({ children }) {
               h.parentNode.insertBefore(j, h);
             })(window, document, "script", "https://waw.gallabox.com");
           `,
-        }}
-      />
+          }}
+        />
       </body>
     </html>
   );
