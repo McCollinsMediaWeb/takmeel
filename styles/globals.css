@@ -3529,7 +3529,197 @@ body {
   margin-bottom: 10px;
   display: inline-block;
 }
-
+.LandHeroBanner img{
+  width: 100%;
+}
+.LandHeroBanner{
+  max-height: 100vh;
+  overflow: hidden;
+}
+.comp2{
+  background-color: #0E4566;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.comp2::before{
+  content: "";
+  background-image: url(../public/com2bg.png);
+  position: absolute;
+  left: -120px;
+  bottom: 0;
+  width: 350px;
+  height: 350px;
+  background-size: 100% 100%;
+}
+.comp2::after{
+  content: "";
+  background-image: url(../public/com2bg.png);
+  position: absolute;
+  right: -120px;
+  top: 0;
+  width: 350px;
+  height: 350px;
+  background-size: 100% 100%;
+}
+.comp2 .container{
+  max-width: 900px;
+}
+.Txt5{
+  font-size: 22px;
+}
+.comp2ic{
+  background-image: url(../public/comp2ic.png);
+  width: 85px;
+  height: 85px;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.comp-width-full{
+  margin: 0 auto;
+}
+.comp3{
+  background-image: url(../public/comp3bg.jpg);
+  background-size: 100% 100%;
+}
+.CompRight{
+  padding-left: 30px;
+  color: #0E4566;
+}
+.LiSt1{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 25px;
+}
+.LiSt1 li{
+  position: relative;
+  font-size: 21px;
+  margin-bottom: 15px;
+  padding-left: 35px;
+}
+.LiSt1 li::before{
+  content: "";
+  background-image: url(../public/icon1.png);
+  width: 20px;
+  height: 20px;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 20%;
+}
+.SldItem{
+  padding: 0 5px;
+  position: relative;
+}
+.SldItemCnt{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 80px;
+  color: #fff;
+  text-align: right;
+}
+.SldItemCnt .Txt5{
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.SldItemCnt .Link4 {
+  padding: 14px;
+  font-size: 18px;
+  min-width: 250px;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+.comp5{
+    background-image: url(../public/com5bg.jpg);
+  background-size: 100% 100%;
+  color: #0E4566;
+}
+.AmnBox{
+  margin-top: 30px;
+}
+.Txt6{
+  margin-bottom: 10px;
+}
+.Txt7{
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.AmnItemIcon{
+  width: 79px;
+  height: 57px;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.AmnItemIcon.ic1{
+  background-image: url(../public/ic1.png);
+}
+.AmnItemIcon.ic2{
+  background-image: url(../public/ic2.png);
+}
+.AmnItemIcon.ic3{
+  background-image: url(../public/ic3.png);
+}
+.AmnItemIcon.ic4{
+  background-image: url(../public/ic4.png);
+}
+.AmnItemIcon.ic5{
+  background-image: url(../public/ic5.png);
+}
+.AmnItemIcon.ic6{
+  background-image: url(../public/ic6.png);
+}
+.AmnItemIcon.ic7{
+  background-image: url(../public/ic7.png);
+}
+.AmnItemIcon.ic8{
+  background-image: url(../public/ic8.png);
+}
+.AmnItemIcon.ic9{
+  background-image: url(../public/ic9.png);
+}
+.AmnItemIcon.ic10{
+  background-image: url(../public/ic10.png);
+}
+.AmnItemIcon.ic11{
+  background-image: url(../public/ic11.png);
+}
+.AmnItemIcon.ic12{
+  background-image: url(../public/ic12.png);
+}
+.AmnItemIcon.ic13{
+  background-image: url(../public/ic13.png);
+}
+.AmnItemIcon.ic14{
+  background-image: url(../public/ic14.png);
+}
+.AmnItemIcon.ic15{
+  background-image: url(../public/ic15.png);
+}
+.AmnItem1{
+  background-color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #e4e4e4;
+}
+.AmnItem1T1{
+  font-size: 20px;
+}
+.comp6{
+  background-color: #f8f8f8;
+  padding-top: 0 !important;
+}
 @media (max-width: 768px) {
   #gb-waw-iframe {
     bottom: 75px !important;
