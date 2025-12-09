@@ -3,7 +3,7 @@
 import useMediaQuery from "../../hooks/useMediaQuery";
 import Image from "next/image";
 import { motion } from "framer-motion";
-export default function Component1() {
+export default function Component11() {
     const containerVariants = {
         hidden: { opacity: 0, y: 40 },
         visible: {
@@ -29,9 +29,9 @@ export default function Component1() {
             <div className="LandHeroBanner">
                 {isDesktop && (
                     <Image
-                        src="/landing2.jpg"
-                        width={1440}
-                        height={940}
+                        src="/comp11.jpg"
+                        width={1428}
+                        height={712}
                         alt="Takmeel"
                         priority
                         layout="responsive"
@@ -39,15 +39,15 @@ export default function Component1() {
                 )}
                 {!isDesktop && (
                     <Image
-                        src="/landing2mob.jpg"
-                        width={708}
-                        height={940}
+                        src="/comp11mob.jpg"
+                        width={600}
+                        height={712}
                         alt="Takmeel"
                         priority
                         layout="responsive"
                     />
                 )}
-                <div className="LogoBoxHero">
+                <div className="LogoBoxHero align-items-center">
                     <motion.div
                         variants={containerVariants}
                         initial="hidden"
@@ -56,12 +56,13 @@ export default function Component1() {
                     >
                         <div variants={itemVariants} className="Maxwidthmain">
                             <Image
-                                src="/landinglogo.png"
-                                width={345}
-                                height={170}
+                                src="/landinglogo1.png"
+                                width={382}
+                                height={188}
                                 alt="Takmeel"
                                 priority
                                 layout="responsive"
+
                             />
                         </div>
                     </motion.div>

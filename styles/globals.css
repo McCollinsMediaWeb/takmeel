@@ -3544,8 +3544,8 @@ width: 100%;
   height: 100%;
   padding: 40px;
 }
-.LogoBoxHero img{
-  max-width: 345px;
+.LogoBoxHero .Maxwidthmain{
+  width: 355px;
 }
 .comp2{
   background-color: #0E4566;
@@ -3858,8 +3858,241 @@ width: 100%;
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.CatName{
+  font-size: 45px;
+  color: #0E4566;
+  margin-bottom: 25px;
+}
+.ButtonBoxLnk{
+  padding: 20px;
+  background-color: #F4F5F5;
+  color: #4A4F56;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 19px;
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  padding-left: 55px;
+}
+.ButtonBoxLnk:hover{
+   color: #4A4F56;
+}
+.ButtonBoxLnk.l3{
+  display: inline-block;
+  color: #fff;
+  background-color: #4A4F56;
+}
+.ButtonBoxLnk.l3:hover{
+   background-color: #c9a878;
+}
+.ButtonBoxLnk::before{
+  content: "";
+  width: 26px;
+  height: 23px;
+  background-size: 100% 100%;
+  background-image: url(../public/l1.png);
+  position: absolute;
+  top: 16px;
+  left: 18px;
+}
+.ButtonBoxLnk.l2::before{
+background-image: url(../public/l2.png);
+}
+.ButtonBoxLnk.l3::before{
+background-image: url(../public/l3.png);
+}
+.ButtonBox{
+  margin-bottom: 20px;
+}
+.comp10{
+    background-image: url(../public/com5bg.jpg);
+  background-size: 100% 100%;
+  color: #0E4566;
+}
+.Comp10T1{
+  font-size: 45px;
+margin-bottom: 15px;
+text-transform: uppercase;
+}
+.Comp10T2{
+  font-size: 21px;
+}
+.ContectForm{
+  background-color: #fff;
+  padding: 45px;
+  border-radius: 30px;
+  margin-top: -130px;
+}
+.Contheader{
+    color: #0E4566;
+}
+.comp12{
+  overflow: visible;
+}
+.comp12 .container{
+  max-width: 1200px;
+}
+.ct1{
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.ct2{
+  font-size: 45px;
+}
+.ct3{
+font-size: 21px;
+}
+.Contheader{
+  margin-bottom: 30px;
+}
+.FormBx1 input , 
+.FormBx1 select , 
+.FormBx1 textarea{
+  border: 0px solid #e4e4e4;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: #F4F5F5;
+  border-radius: 25px;
+  outline: none !important;
+  box-shadow: none !important;
+  text-transform: capitalize;
+     color: #4A4F56;
+}
+.FormBx1 ::placeholder {
+  color: #4A4F56;
+  opacity: 1; 
+}
+
+.FormBx1 ::-ms-input-placeholder { 
+  color: #4A4F56;
+}
+.BtnSt1p{
+  background-color: #0E4566;
+  padding: 15px;
+  border-radius: 25px;
+  border: 0px solid #e4e4e4;
+  color: #fff;
+  width: 100%;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.BtnSt1p:hover{
+  background-color: #c9a878;
+}
+.ForMr{
+  margin: 25px 0px;
+  color: #fff;
+}
+.WhatsappLink{
+  background-color: #4AAE4F;
+  padding: 15px;
+  border-radius: 25px;
+  border: 0px solid #e4e4e4;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s;
+  display: inline-block;
+  min-width: 300px;
+}
+.WhatsappLink:hover{
+  color: #fff;
+}
+.LinkIcon{
+  position: relative;
+  padding-left: 30px;
+  display: inline-block;
+}
+.LinkIcon::before{
+content: "";
+background-image: url(../public/what.png);
+background-size: 100% 100%;
+width: 30px;
+height: 30px;
+position: absolute;
+top: -5px;
+  left: -5px;
+}
 @media (max-width: 768px) {
   #gb-waw-iframe {
     bottom: 75px !important;
   }
+}
+@media (max-width: 1000px) {
+  .DvnLnd .Txt2 {
+    font-size: 23px;
+  }
+  .LogoBoxHero .Maxwidthmain{
+    width: 220px;
+  }
+  .Txt5 {
+    font-size: 19px;
+  }
+  .CompRight {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  .LiSt1 li {
+    margin-bottom: 13px;
+    font-size: 19px;
+  }
+ 
+  .comp4 .SldItemCnt {
+    color: #0E4566;
+    text-align: center;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    display: block;
+    position: relative;
+    top: auto;
+    left: auto;
+    background: #fff;
+  }
+  .SldItemCnt .Txt5 {
+    margin-bottom: 10px;
+    font-size: 19px;
+  }
+  .SldItemCnt .Txt2 {
+    margin-bottom: 10px;
+    font-size: 21px;
+  }
+  .SldItemCnt .Link4 {
+    border-radius: 25px;
+    min-width: 220px;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 16px;
+  }
+  .AmnBox .col-md-6 .col-md-6{
+    flex:0 0 50%;
+    max-width: 50%;
+    padding: 0px 5px;
+  }
+  .AmnItem1T1 {
+  font-size: 16px;
+}
+.AmnItemIcon {
+  width: 60px;
+  height: 50px;
+}
+.AmnItem1 {
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 15px;
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 }

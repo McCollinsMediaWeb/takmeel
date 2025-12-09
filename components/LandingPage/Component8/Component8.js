@@ -74,10 +74,44 @@ export default function Component8() {
                         </div>
                     </motion.div>
                     <div className="AccordionContentBx">
-                        <div className="row">
-                            <div className="col-md-5">Iajs</div>
-                            <div className="col-md-7">Iajs</div>
-                        </div>
+                        <motion.div
+                            variants={containerVariants}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: false, amount: 0.5 }}
+                        >
+                            <div className="row">
+                                <div className="col-md-5">
+                                    <motion.div
+                                        variants={containerVariants}
+                                        initial="hidden"
+                                        whileInView="visible"
+                                        viewport={{ once: false, amount: 0.5 }}
+                                    >
+                                        <div className="CatName" variants={itemVariants}>Studio</div>
+                                        <div className="ButtonBox"  variants={itemVariants}>
+                                            <a href="javascript:void(0);" className="ButtonBoxLnk l1"><b>Starting Price&nbsp;:&nbsp;</b>Contact us for pricing</a>
+                                        </div>
+                                        <div className="ButtonBox"  variants={itemVariants}>
+                                            <a href="javascript:void(0);" className="ButtonBoxLnk l2"><b>Total Area&nbsp;:&nbsp;</b>Available on Request</a>
+                                        </div>
+                                        <div className="ButtonBox"  variants={itemVariants}>
+                                            <a href="#" className="ButtonBoxLnk l3"><b>Get all floor plans</b></a>
+                                        </div>
+                                    </motion.div>
+                                </div>
+                                <div className="col-md-7">
+                                    <Image variants={itemVariants}
+                                        src="/studio.jpg"
+                                        width={650}
+                                        height={287}
+                                        alt="Takmeel"
+                                        priority
+                                        layout="responsive"
+                                    />
+                                </div>
+                            </div>
+                        </motion.div>
                     </div>
 
 
