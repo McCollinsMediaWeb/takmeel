@@ -4374,7 +4374,13 @@ body {
 }
 .FormBx1 input, .FormBx1 select, .FormBx1 textarea {
   margin-bottom: 10px;
-  padding: 15px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
   line-height: 15px;
+   appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 }
