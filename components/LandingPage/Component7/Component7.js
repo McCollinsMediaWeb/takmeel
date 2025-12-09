@@ -30,7 +30,7 @@ export default function Component7() {
                         variants={containerVariants}
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: false, amount: 0.5 }}
+                        viewport={{ once: true, amount: 0.5 }}
                     >
                         <div className="row">
                             <div className="col-md-8 p-0">

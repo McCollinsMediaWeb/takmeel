@@ -32,7 +32,7 @@ export default function Component3() {
                                 variants={containerVariants}
                                 initial="hidden"
                                 whileInView="visible"
-                                viewport={{ once: false, amount: 0.5 }}
+                                viewport={{ once: true, amount: 0.5 }}
                             >
                                 <div className="comp-width-full">
                                     <Image
@@ -52,7 +52,7 @@ export default function Component3() {
                                     variants={containerVariants}
                                     initial="hidden"
                                     whileInView="visible"
-                                    viewport={{ once: false, amount: 0.5 }}
+                                    viewport={{ once: true, amount: 0.5 }}
                                 >
                                     <div className="Txt2 text-uppercase">
                                         Elegance Defined in<br />
@@ -66,7 +66,7 @@ export default function Component3() {
                                     variants={containerVariants}
                                     initial="hidden"
                                     whileInView="visible"
-                                    viewport={{ once: false, amount: 0.5 }}
+                                    viewport={{ once: true, amount: 0.5 }}
                                 >
                                     <ul className="LiSt1">
                                         <li >

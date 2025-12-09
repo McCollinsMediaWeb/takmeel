@@ -33,7 +33,7 @@ export default function Component8() {
                                 variants={containerVariants}
                                 initial="hidden"
                                 whileInView="visible"
-                                viewport={{ once: false, amount: 0.5 }}
+                                viewport={{ once: true, amount: 0.5 }}
                             >
                                 <div className="com8T1" >Floor Plan</div>
                                 <div className="com8T2" >Where Smart Layouts
@@ -45,7 +45,7 @@ export default function Component8() {
                                 variants={containerVariants}
                                 initial="hidden"
                                 whileInView="visible"
-                                viewport={{ once: false, amount: 0.5 }}
+                                viewport={{ once: true, amount: 0.5 }}
                             >
                                 <div className="com8T3" >Where smart layouts meet stylish living, every space is designed with purpose and clarity. Thoughtfully planned proportions ensure a seamless flow that elevates both comfort and modern lifestyle.</div>
                             </motion.div>
@@ -55,7 +55,7 @@ export default function Component8() {
                         variants={containerVariants}
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: false, amount: 0.5 }}
+                        viewport={{ once: true, amount: 0.5 }}
                     >
                         <div className="row accordionHGd">
 
@@ -78,7 +78,7 @@ export default function Component8() {
                             variants={containerVariants}
                             initial="hidden"
                             whileInView="visible"
-                            viewport={{ once: false, amount: 0.5 }}
+                            viewport={{ once: true, amount: 0.5 }}
                         >
                             <div className="row">
                                 <div className="col-md-5">
@@ -86,7 +86,7 @@ export default function Component8() {
                                         variants={containerVariants}
                                         initial="hidden"
                                         whileInView="visible"
-                                        viewport={{ once: false, amount: 0.5 }}
+                                        viewport={{ once: true, amount: 0.5 }}
                                     >
                                         <div className="CatName" >Studio</div>
                                         <div className="ButtonBox"  >

@@ -30,7 +30,7 @@ export default function Component2() {
                         variants={containerVariants}
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: false, amount: 0.5 }}
+                        viewport={{ once: true, amount: 0.5 }}
                     >
                         <div className="comp2ic"  variants={itemVariants}>&nbsp;</div>
                         <div className="Txt2 text-uppercase"  variants={itemVariants}>An Emblem Inspired by <br />Balance and Beauty</div>

@@ -52,7 +52,7 @@ export default function Component1() {
                         variants={containerVariants}
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: false, amount: 0.5 }}
+                        viewport={{ once: true, amount: 0.5 }}
                     >
                         <div variants={itemVariants} className="Maxwidthmain">
                             <Image

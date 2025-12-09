@@ -32,7 +32,7 @@ export default function Component10() {
                         variants={containerVariants}
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: false, amount: 0.5 }}
+                        viewport={{ once: true, amount: 0.5 }}
                     >
                         <div className="row align-items-center">
                             <div className="col-md-6">

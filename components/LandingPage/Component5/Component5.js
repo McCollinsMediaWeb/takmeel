@@ -30,7 +30,7 @@ export default function Component5() {
                         variants={containerVariants}
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: false, amount: 0.5 }}
+                        viewport={{ once: true, amount: 0.5 }}
                     >
                         <div className="Txt3 text-center" >Feature & Amenities</div>
                         <div className="Txt2 text-center text-uppercase" >Luxury Within Reach,<br />
@@ -44,7 +44,7 @@ export default function Component5() {
                                     variants={containerVariants}
                                     initial="hidden"
                                     whileInView="visible"
-                                    viewport={{ once: false, amount: 0.5 }}
+                                    viewport={{ once: true, amount: 0.5 }}
                                 >
                                     <div className="Txt6 text-center text-uppercase">First Floor Amenities</div>
                                     <div className="Txt7 text-center" >Wellness meets community — sunlit pools, shaded seating, and spaces for families to gather and grow.</div>
@@ -53,7 +53,7 @@ export default function Component5() {
                                     variants={containerVariants}
                                     initial="hidden"
                                     whileInView="visible"
-                                    viewport={{ once: false, amount: 0.5 }}
+                                    viewport={{ once: true, amount: 0.5 }}
                                 >
                                     <div className="row">
                                         <div className="col-md-6">
@@ -108,7 +108,7 @@ export default function Component5() {
                                     variants={containerVariants}
                                     initial="hidden"
                                     whileInView="visible"
-                                    viewport={{ once: false, amount: 0.5 }}
+                                    viewport={{ once: true, amount: 0.5 }}
                                 >
                                     <div className="Txt6 text-center text-uppercase" >Rooftop Amenities</div>
                                     <div className="Txt7 text-center" >An elevated lifestyle above the city — where evenings bring movies under the stars, matches on the court, and moments that linger long after sunset.</div>
@@ -117,7 +117,7 @@ export default function Component5() {
                                     variants={containerVariants}
                                     initial="hidden"
                                     whileInView="visible"
-                                    viewport={{ once: false, amount: 0.5 }}
+                                    viewport={{ once: true, amount: 0.5 }}
                                 >
                                     <div className="row">
                                         <div className="col-md-6">

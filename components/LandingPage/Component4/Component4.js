@@ -84,7 +84,7 @@ export default function Component4() {
                                             variants={containerVariants}
                                             initial="hidden"
                                             whileInView="visible"
-                                            viewport={{ once: false, amount: 0.5 }}
+                                            viewport={{ once: true, amount: 0.5 }}
                                         >
                                             <div className="Txt5 MbBtm" >GALLERY</div>
                                             <div className="Txt2 text-uppercase" >Where Architecture <br />Meets Inner Calm</div>
@@ -112,7 +112,7 @@ export default function Component4() {
                                             variants={containerVariants}
                                             initial="hidden"
                                             whileInView="visible"
-                                            viewport={{ once: false, amount: 0.5 }}
+                                            viewport={{ once: true, amount: 0.5 }}
                                         >
                                             <div className="Txt5 MbBtm" variants={itemVariants}>GALLERY</div>
                                             <div className="Txt2 text-uppercase" variants={itemVariants}>Where Architecture <br />Meets Inner Calm</div>
