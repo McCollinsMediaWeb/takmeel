@@ -54,11 +54,11 @@ export default function Component3() {
                                     whileInView="visible"
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
-                                    <div className="Txt2 text-uppercase" variants={itemVariants}>
+                                    <div className="Txt2 text-uppercase">
                                         Elegance Defined in<br />
                                         Perfect Proportion
                                     </div>
-                                    <div className="Txt3" variants={itemVariants}>
+                                    <div className="Txt3">
                                         Key Highlights of Divine Elements
                                     </div>
                                 </motion.div>
@@ -69,26 +69,26 @@ export default function Component3() {
                                     viewport={{ once: false, amount: 0.5 }}
                                 >
                                     <ul className="LiSt1">
-                                        <li variants={itemVariants}>
+                                        <li >
                                             Selection of 1, 2, and 3-bedroom apartments designed for different lifestyle needs.
                                         </li>
-                                        <li variants={itemVariants}>
+                                        <li >
                                             Developed by Takmeel Real Estate Development, known for quality and attention to detail
                                         </li>
-                                        <li variants={itemVariants}>
+                                        <li>
                                             Located in Dubai South, a fast-growing, well-connected master community.
                                         </li>
-                                        <li variants={itemVariants}>
+                                        <li>
                                             Modern architecture with open layouts and high-quality interiors.
                                         </li>
-                                        <li variants={itemVariants}>
+                                        <li >
                                             Bright, spacious apartments with large windows and elegant finishes.
                                         </li>
-                                        <li variants={itemVariants}>
+                                        <li >
                                             Access to lifestyle amenities including a gym, pool, landscaped outdoor spaces, and leisure areas.
 
                                         </li>
-                                        <li variants={itemVariants}>
+                                        <li >
                                             Secure environment with 24-hour security, parking, and concierge services
                                         </li>
                                     </ul>

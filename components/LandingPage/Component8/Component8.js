@@ -35,8 +35,8 @@ export default function Component8() {
                                 whileInView="visible"
                                 viewport={{ once: false, amount: 0.5 }}
                             >
-                                <div className="com8T1" variants={itemVariants}>Floor Plan</div>
-                                <div className="com8T2" variants={itemVariants}>Where Smart Layouts
+                                <div className="com8T1" >Floor Plan</div>
+                                <div className="com8T2" >Where Smart Layouts
                                     Meet Stylish Living</div>
                             </motion.div>
                         </div>
@@ -47,7 +47,7 @@ export default function Component8() {
                                 whileInView="visible"
                                 viewport={{ once: false, amount: 0.5 }}
                             >
-                                <div className="com8T3" variants={itemVariants}>Where smart layouts meet stylish living, every space is designed with purpose and clarity. Thoughtfully planned proportions ensure a seamless flow that elevates both comfort and modern lifestyle.</div>
+                                <div className="com8T3" >Where smart layouts meet stylish living, every space is designed with purpose and clarity. Thoughtfully planned proportions ensure a seamless flow that elevates both comfort and modern lifestyle.</div>
                             </motion.div>
                         </div>
                     </div>
@@ -60,16 +60,16 @@ export default function Component8() {
                         <div className="row accordionHGd">
 
                             <div className="col-md-3">
-                                <div className="AccordionBtn active" variants={itemVariants}>Studio</div>
+                                <div className="AccordionBtn active" >Studio</div>
                             </div>
                             <div className="col-md-3">
-                                <div className="AccordionBtn " variants={itemVariants}>1 BR Apartment</div>
+                                <div className="AccordionBtn " >1 BR Apartment</div>
                             </div>
                             <div className="col-md-3">
-                                <div className="AccordionBtn " variants={itemVariants}>2 BR Apartment</div>
+                                <div className="AccordionBtn " >2 BR Apartment</div>
                             </div>
                             <div className="col-md-3">
-                                <div className="AccordionBtn " variants={itemVariants}>2 BR Apartment</div>
+                                <div className="AccordionBtn " >2 BR Apartment</div>
                             </div>
                         </div>
                     </motion.div>
@@ -88,20 +88,20 @@ export default function Component8() {
                                         whileInView="visible"
                                         viewport={{ once: false, amount: 0.5 }}
                                     >
-                                        <div className="CatName" variants={itemVariants}>Studio</div>
-                                        <div className="ButtonBox"  variants={itemVariants}>
+                                        <div className="CatName" >Studio</div>
+                                        <div className="ButtonBox"  >
                                             <a href="javascript:void(0);" className="ButtonBoxLnk l1"><b>Starting Price&nbsp;:&nbsp;</b>Contact us for pricing</a>
                                         </div>
-                                        <div className="ButtonBox"  variants={itemVariants}>
+                                        <div className="ButtonBox"  >
                                             <a href="javascript:void(0);" className="ButtonBoxLnk l2"><b>Total Area&nbsp;:&nbsp;</b>Available on Request</a>
                                         </div>
-                                        <div className="ButtonBox"  variants={itemVariants}>
+                                        <div className="ButtonBox"  >
                                             <a href="#" className="ButtonBoxLnk l3"><b>Get all floor plans</b></a>
                                         </div>
                                     </motion.div>
                                 </div>
                                 <div className="col-md-7">
-                                    <Image variants={itemVariants}
+                                    <Image 
                                         src="/studio.jpg"
                                         width={650}
                                         height={287}

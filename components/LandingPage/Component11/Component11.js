@@ -54,7 +54,7 @@ export default function Component11() {
                         whileInView="visible"
                         viewport={{ once: false, amount: 0.5 }}
                     >
-                        <div variants={itemVariants} className="Maxwidthmain">
+                        <div  className="Maxwidthmain">
                             <Image
                                 src="/landinglogo1.png"
                                 width={382}

@@ -86,10 +86,10 @@ export default function Component4() {
                                             whileInView="visible"
                                             viewport={{ once: false, amount: 0.5 }}
                                         >
-                                            <div className="Txt5 MbBtm" variants={itemVariants}>GALLERY</div>
-                                            <div className="Txt2 text-uppercase" variants={itemVariants}>Where Architecture <br />Meets Inner Calm</div>
-                                            <div className="Txt5 " variants={itemVariants}>A Symbol of Balance, Beauty, and Living</div>
-                                            <div className="Link4 hover1 toggleForm cursor-pointer" variants={itemVariants}>Register Your Intrest</div>
+                                            <div className="Txt5 MbBtm" >GALLERY</div>
+                                            <div className="Txt2 text-uppercase" >Where Architecture <br />Meets Inner Calm</div>
+                                            <div className="Txt5 " >A Symbol of Balance, Beauty, and Living</div>
+                                            <div className="Link4 hover1 toggleForm cursor-pointer">Register Your Intrest</div>
                                         </motion.div>
 
                                     </div>

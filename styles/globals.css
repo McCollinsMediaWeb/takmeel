@@ -3998,6 +3998,7 @@ font-size: 21px;
   transition: 0.4s;
   display: inline-block;
   min-width: 300px;
+  margin-bottom: 50px;
 }
 .WhatsappLink:hover{
   color: #fff;
@@ -4153,5 +4154,10 @@ top: -5px;
   align-items: center;
   flex-direction: column;
 }
-
+.FixedNav {
+  display: none;
+}
+.WhatsappLink{
+  margin-bottom: 0;
+}
 }
