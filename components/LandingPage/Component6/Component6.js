@@ -129,7 +129,7 @@ export default function Component6({ text1, text2, text3, GalleryImages }) {
     return (
         <div className='position-relative pd-common comp6'>
 
-            <div className='container'>
+            <div className='container1'>
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}

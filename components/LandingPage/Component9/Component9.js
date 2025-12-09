@@ -3,7 +3,7 @@
 import useMediaQuery from "../../hooks/useMediaQuery";
 import Image from "next/image";
 import { motion } from "framer-motion";
-export default function Component1() {
+export default function Component9() {
     const containerVariants = {
         hidden: { opacity: 0, y: 40 },
         visible: {
@@ -29,9 +29,9 @@ export default function Component1() {
             <div className="LandHeroBanner">
                 {isDesktop && (
                     <Image
-                        src="/landing2.jpg"
-                        width={1440}
-                        height={940}
+                        src="/bn1.jpg"
+                        width={1428}
+                        height={784}
                         alt="Takmeel"
                         priority
                         layout="responsive"
@@ -39,7 +39,7 @@ export default function Component1() {
                 )}
                 {!isDesktop && (
                     <Image
-                        src="/landing2mob.jpg"
+                        src="/bn1mob.jpg"
                         width={708}
                         height={940}
                         alt="Takmeel"
@@ -47,26 +47,6 @@ export default function Component1() {
                         layout="responsive"
                     />
                 )}
-                <div className="LogoBoxHero">
-                    <motion.div
-                        variants={containerVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: false, amount: 0.5 }}
-                    >
-                        <div variants={itemVariants}>
-                            <Image
-                                src="/landinglogo.png"
-                                width={345}
-                                height={170}
-                                alt="Takmeel"
-                                priority
-
-                            />
-                        </div>
-                    </motion.div>
-
-                </div>
             </div>
 
         </div>
