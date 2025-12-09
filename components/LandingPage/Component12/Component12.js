@@ -30,8 +30,8 @@ export default function Component12() {
                         <div className="Contheader">
                             <div className="row">
                                 <div className="col-md-5">
-                                        <div className="ct1">WE ARE HERE TO HELP</div>
-                                        <div className="ct2">CONTACT US</div>
+                                    <div className="ct1">WE ARE HERE TO HELP</div>
+                                    <div className="ct2">CONTACT US</div>
                                 </div>
                                 <div className="col-md-7">
                                     <div className="ct3">Contact us today to begin your registration. Our team is ready to guide you through a smooth and seamless process.</div>
@@ -41,13 +41,13 @@ export default function Component12() {
                         <div className="FormBx1">
                             <div className="row">
                                 <div className="col-md-6">
-                                    <input type="text" placeholder="Name*"/>
+                                    <input type="text" placeholder="Name*" />
                                 </div>
                                 <div className="col-md-6">
-                                    <input type="text" placeholder="email*"/>
+                                    <input type="text" placeholder="email*" />
                                 </div>
                                 <div className="col-md-6">
-                                    <input type="text" placeholder="phone number*"/>
+                                    <input type="text" placeholder="phone number*" />
                                 </div>
                                 <div className="col-md-6">
                                     <select>
@@ -62,7 +62,7 @@ export default function Component12() {
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div className="ForMr text-center">For more information, you can easily connect with us via WhatsApp.</div>
                     <div className="text-center">
@@ -72,7 +72,58 @@ export default function Component12() {
                     </div>
                 </div>
             </div>
+            <div className="FixedNav">
+                <div className="container">
+                    <div className="row align-items-center text-center flex-nowrap">
+                        <div className="col-auto logoCol">
+                            <div className="Logowidth">
+                                <Image
+                                    src="/landinglogo2.png"
+                                    width={145}
+                                    height={35}
+                                    alt="Takmeel"
+                                    priority
+                                    layout="responsive"
+                                />
+                            </div>
+                        </div>
 
+                        <div className="col-auto brdRight">
+                            <div className="FxdNavT1">
+                                Studio, 1 BR, 2 BR, 2 BR + Study,<br />
+                                2 BR + Maid’s Room, 3 BR, 3 BR Duplex Penthouse
+                            </div>
+                        </div>
+
+                        <div className="col-auto brdRight">
+                            <div className="FxdNavT1">
+                                Starting from<br />
+                                AED 600K
+                            </div>
+                        </div>
+
+                        <div className="col-auto brdRight">
+                            <div className="FxdNavT1">
+                                Stylish Amenities <br />
+                                for Elevated Living
+                            </div>
+                        </div>
+
+                        <div className="col-auto ">
+                            <div className="FxdNavT1">
+                                40% during construction <br />
+                                60% on completion
+                            </div>
+                        </div>
+
+                        <div className="col-auto btnCol">
+                            <div className="RegisterBtn">Register Now</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
     );
 }

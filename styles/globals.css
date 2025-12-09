@@ -4017,6 +4017,65 @@ position: absolute;
 top: -5px;
   left: -5px;
 }
+.FixedNav{
+  background-color:#D0A671;
+  color: #fff;
+  padding: 20px 0px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+.Logowidth{
+  width: 100%;
+}
+
+
+.brdRight::after{
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.FixedNav .row{
+  align-items: center;
+}
+.FixedNav .row > div{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+.RegisterBtn{
+  background-color: #0E4566;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+}
+.logoCol {
+    flex: 0 0 200px; /* fixed logo column */
+    max-width: 200px;
+}
+
+.btnCol {
+    flex: 0 0 200px; /* fixed button column */
+    max-width: 200px;
+}
+
+.RegisterBtn {
+    white-space: nowrap;
+}
+
+.Logowidth {
+    width: 145px;
+}
 @media (max-width: 768px) {
   #gb-waw-iframe {
     bottom: 75px !important;
