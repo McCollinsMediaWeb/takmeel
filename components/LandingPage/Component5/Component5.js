@@ -110,7 +110,7 @@ export default function Component5() {
                                     whileInView="visible"
                                     viewport={{ once: true, amount: 0.5 }}
                                 >
-                                    <div className="Txt6 text-center text-uppercase" >Rooftop Amenities</div>
+                                    <div className="Txt6 text-center text-uppercase mrgtop12" >Rooftop Amenities</div>
                                     <div className="Txt7 text-center" >An elevated lifestyle above the city — where evenings bring movies under the stars, matches on the court, and moments that linger long after sunset.</div>
                                 </motion.div>
                                 <motion.div
