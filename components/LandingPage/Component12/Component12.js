@@ -66,8 +66,8 @@ export default function Component12() {
                     </div>
                     <div className="ForMr text-center">For more information, you can easily connect with us via WhatsApp.</div>
                     <div className="text-center">
-                        <a href="https://wa.me/971523749615?text=I%20would%20like%20to%20know%20more%20about%20your%20properties" className="WhatsappLink">
-                            <div className="LinkIcon">+971 523749615</div>
+                        <a href="https://api.whatsapp.com/send/?phone=971581389773&text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20you%3F%20" className="WhatsappLink">
+                            <div className="LinkIcon">+971 581389773</div>
                         </a>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ export default function Component12() {
             <div className="FixedNav">
                 <div className="container">
                     <div className="row align-items-center text-center flex-nowrap">
-                        <div className="col-auto logoCol">
+                        <div className="col-md-2 ">
                             <div className="Logowidth">
                                 <Image
                                     src="/landinglogo2.png"
@@ -88,35 +88,34 @@ export default function Component12() {
                             </div>
                         </div>
 
-                        <div className="col-auto brdRight">
+                        <div className="col-md-2 brdRight">
                             <div className="FxdNavT1">
-                                Studio, 1 BR, 2 BR, 2 BR + Study,<br />
-                                2 BR + Maid’s Room, 3 BR, 3 BR Duplex Penthouse
+                                Studio, 1 BR, <br/>2 BR, 2 BR + Studio
                             </div>
                         </div>
 
-                        <div className="col-auto brdRight">
+                        <div className="col-md-2 brdRight">
                             <div className="FxdNavT1">
                                 Starting from<br />
                                 AED 600K
                             </div>
                         </div>
 
-                        <div className="col-auto brdRight">
+                        <div className="col-md-2 brdRight">
                             <div className="FxdNavT1">
                                 Stylish Amenities <br />
                                 for Elevated Living
                             </div>
                         </div>
 
-                        <div className="col-auto ">
+                        <div className="col-md-2  ">
                             <div className="FxdNavT1">
                                 40% during construction <br />
                                 60% on completion
                             </div>
                         </div>
 
-                        <div className="col-auto btnCol">
+                        <div className="col-md-2 ">
                             <div className="RegisterBtn">Register Now</div>
                         </div>
                     </div>
