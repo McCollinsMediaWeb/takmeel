@@ -29,7 +29,8 @@ export default function Component1() {
             <div className="LandHeroBanner">
                 {isDesktop && (
                     <Image
-                        src="/poi1.jpg"
+                        // src="/poi1.jpg"
+                        src="/test5.jpg"
                         width={1440}
                         height={775}
                         alt="Takmeel"

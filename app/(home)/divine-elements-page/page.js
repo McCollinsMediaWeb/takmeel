@@ -12,6 +12,7 @@ import Component9 from "@/components/LandingPage/Component9/Component9";
 import Component10 from "@/components/LandingPage/Component10/Component10";
 import Component11 from "@/components/LandingPage/Component11/Component11";
 import Component12 from "@/components/LandingPage/Component12/Component12";
+import Component13 from "@/components/LandingPage/Component13/Component13";
 
 export default async function DivineElementsPage() {
     const metaTags = await getMetaTags("/divine-elements-page");
@@ -21,10 +22,23 @@ export default async function DivineElementsPage() {
     }
     const DataProjectDetails1 = {
         GalleryImages: [
-            "l1.jpg",
-            "l2.jpg",
-            "l3.jpg",
-            "l4.jpg",
+            // "l1.jpg",
+            // "l2.jpg",
+            // "l3.jpg",
+            // "l4.jpg",
+
+            "test6.png",
+            "test7.png",
+            "test8.png",
+            "test9.png",
+            "test10.png",
+            "test11.png",
+            // "https://res.cloudinary.com/dje8fshak/image/upload/v1769768950/Screenshot_2026-01-30_at_3.44.41_PM_yiw5pt.png",
+            // "https://res.cloudinary.com/dje8fshak/image/upload/v1769768950/Screenshot_2026-01-30_at_3.44.21_PM_kgaefq.png",
+            // "https://res.cloudinary.com/dje8fshak/image/upload/v1769768950/Screenshot_2026-01-30_at_3.43.45_PM_q12uc6.png",
+            // "https://res.cloudinary.com/dje8fshak/image/upload/v1769768950/Screenshot_2026-01-30_at_3.44.36_PM_rodh7p.png",
+            // "https://res.cloudinary.com/dje8fshak/image/upload/v1769768950/Screenshot_2026-01-30_at_3.43.32_PM_vhwpde.png",
+            // "https://res.cloudinary.com/dje8fshak/image/upload/v1769768950/Screenshot_2026-01-30_at_3.44.02_PM_i1c2q4.png"
         ],
     };
     return (
@@ -43,6 +57,7 @@ export default async function DivineElementsPage() {
                 <Component8 />
                 <Component9 />
                 <Component10 />
+                <Component13 />
                 <Component11 />
                 <Component12 />
             </div>

@@ -29,7 +29,8 @@ export default function Component11() {
             <div className="LandHeroBanner">
                 {isDesktop && (
                     <Image
-                        src="/comp11.jpg"
+                        // src="/comp11.jpg"
+                        src="/test3.jpg"
                         width={1428}
                         height={712}
                         alt="Takmeel"
@@ -54,7 +55,7 @@ export default function Component11() {
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.5 }}
                     >
-                        <div  className="Maxwidthmain">
+                        <div className="Maxwidthmain">
                             <Image
                                 src="/landinglogo1.png"
                                 width={382}

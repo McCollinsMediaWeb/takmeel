@@ -3694,8 +3694,10 @@ body {
 }
 
 .AmnItemIcon {
-  width: 79px;
-  height: 57px;
+  /* width: 79px; */
+  /* height: 57px; */
+  width: 65px;
+  height: 53px;
   background-size: 100% 100%;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -4293,97 +4295,122 @@ body {
   .RHd2 {
     font-size: 19px;
   }
+
   .RgUl {
-  margin: 30px 0 0;
+    margin: 30px 0 0;
   }
+
   .RgUl li {
-  font-size: 17px;
-}
-.RgIconBx {
-  width: 40px;
-  height: 40px;
-}
-.RgUl::before {
-  left: 20px;
-}
-.com8T2 {
-  color: #0e4566;
-  font-size: 25px;
-  margin-bottom: 10px;
-}
-.com8T1 {
-  font-size: 19px;
-}
-.com8T3 {
-  font-size: 19px;
-}
-.accordionHGd {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  white-space: nowrap;
-  display: flex;
-  overflow-x: auto;
-  flex-wrap: nowrap;
-  gap: 1px;
-}
-.accordionHGd > div{
-  padding: 0 5px;
-}
-.AccordionBtn {
-  padding: 13px 20px;
-  font-size: 20px;
-  font-weight: 700;
-  transition: all .5s;
-  min-width: 150px;
-}
-.CatName {
-  margin-bottom: 20px;
-  font-size: 25px;
-}
-.ButtonBoxLnk {
-  font-size: 15px;
-}
-.ButtonBox {
-  margin-bottom: 10px;
-}
-.ButtonBoxLnk.l3 {
-  display: block;
-}
-.Comp10T1 {
-  font-size: 25px;
-}
-.Comp10T2 {
-  font-size: 19px;
-  margin-bottom: 15px;
-}
-.ContectForm {
-  padding: 15px;
-}
-.ct2 {
-  font-size: 25px;
-  margin-bottom: 10px;
-}
-.ct1 {
-  font-size: 19px;
-}
-.ct3 {
-  font-size: 19px;
-}
-.Contheader {
-  margin-bottom: 20px;
-}
-.FormBx1 input, .FormBx1 select, .FormBx1 textarea {
-  margin-bottom: 10px;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  line-height: 15px;
-   appearance: none;
+    font-size: 17px;
+  }
+
+  .RgIconBx {
+    width: 40px;
+    height: 40px;
+  }
+
+  .RgUl::before {
+    left: 20px;
+  }
+
+  .com8T2 {
+    color: #0e4566;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .com8T1 {
+    font-size: 19px;
+  }
+
+  .com8T3 {
+    font-size: 19px;
+  }
+
+  .accordionHGd {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 1px;
+  }
+
+  .accordionHGd>div {
+    padding: 0 5px;
+  }
+
+  .AccordionBtn {
+    padding: 13px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all .5s;
+    min-width: 150px;
+  }
+
+  .CatName {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .ButtonBoxLnk {
+    font-size: 15px;
+  }
+
+  .ButtonBox {
+    margin-bottom: 10px;
+  }
+
+  .ButtonBoxLnk.l3 {
+    display: block;
+  }
+
+  .Comp10T1 {
+    font-size: 25px;
+  }
+
+  .Comp10T2 {
+    font-size: 19px;
+    margin-bottom: 15px;
+  }
+
+  .ContectForm {
+    padding: 15px;
+  }
+
+  .ct2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .ct1 {
+    font-size: 19px;
+  }
+
+  .ct3 {
+    font-size: 19px;
+  }
+
+  .Contheader {
+    margin-bottom: 20px;
+  }
+
+  .FormBx1 input,
+  .FormBx1 select,
+  .FormBx1 textarea {
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    line-height: 15px;
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-}
-.mrgtop12{
-  margin-top: 20px;
-}
+  }
+
+  .mrgtop12 {
+    margin-top: 20px;
+  }
 }

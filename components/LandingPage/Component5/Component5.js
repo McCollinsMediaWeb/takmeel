@@ -62,7 +62,7 @@ export default function Component5() {
                                                 <div className="AmnItem1T1">Kids’ Pool</div>
                                             </div>
                                         </div>
-                                         <div className="col-md-6">
+                                        <div className="col-md-6">
                                             <div className="AmnItem1" >
                                                 <div className="AmnItemIcon ic2">&nbsp;</div>
                                                 <div className="AmnItem1T1">Main Pool</div>
@@ -152,7 +152,7 @@ export default function Component5() {
                                         </div>
                                         <div className="col-md-6">
                                             <div className="AmnItem1" >
-                                                <div className="AmnItemIcon ic13">&nbsp;</div>
+                                                <div className="AmnItemIcon ic13" style={{ width: "78px" }}>&nbsp;</div>
                                                 <div className="AmnItem1T1">Benches & Board-Game Zones</div>
                                             </div>
                                         </div>
@@ -164,7 +164,7 @@ export default function Component5() {
                                         </div>
                                         <div className="col-md-6">
                                             <div className="AmnItem1" >
-                                                <div className="AmnItemIcon ic15">&nbsp;</div>
+                                                <div className="AmnItemIcon ic15" style={{ width: "50px" }}>&nbsp;</div>
                                                 <div className="AmnItem1T1">Bar Area</div>
                                             </div>
                                         </div>

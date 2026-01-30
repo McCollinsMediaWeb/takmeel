@@ -32,9 +32,9 @@ export default function Component2() {
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.5 }}
                     >
-                        <div className="comp2ic"  variants={itemVariants}>&nbsp;</div>
-                        <div className="Txt2 text-uppercase"  variants={itemVariants}>An Emblem Inspired by <br />Balance and Beauty</div>
-                        <div className="Txt5"  variants={itemVariants}>Divine Elements at Dubai South by Takmeel Real Estate offers 1, 2, and 3-bedroom apartments designed for singles, couples, and families, combining modern layouts, stylish finishes, and flexible living spaces for balanced city living.</div>
+                        <div className="comp2ic" variants={itemVariants}>&nbsp;</div>
+                        <div className="Txt2 text-uppercase" variants={itemVariants}>An Emblem Inspired by <br />Balance and Beauty</div>
+                        <div className="Txt5" variants={itemVariants}>Divine Elements at Dubai South by Takmeel Developments offers Studio, 1 and 2 bedroom apartments designed for singles, couples, and families, combining modern layouts, stylish finishes, and flexible living spaces for balanced city living.</div>
                     </motion.div>
                 </div>
             </div>

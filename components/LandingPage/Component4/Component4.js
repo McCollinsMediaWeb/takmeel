@@ -71,7 +71,8 @@ export default function Component4() {
                         <div>
                             <div className="SldItem">
                                 <Image
-                                    src="/i1.jpg"
+                                    // src="/i1.jpg"
+                                    src="/test2.jpg"
                                     width={1440}
                                     height={768}
                                     alt="Takmeel"
@@ -99,7 +100,8 @@ export default function Component4() {
                         <div>
                             <div className="SldItem">
                                 <Image
-                                    src="/i2.jpg"
+                                    // src="/i2.jpg"
+                                    src="/test1.jpg"
                                     width={1440}
                                     height={768}
                                     alt="Takmeel"

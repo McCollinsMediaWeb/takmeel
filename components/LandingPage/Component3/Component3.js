@@ -36,7 +36,8 @@ export default function Component3() {
                             >
                                 <div className="comp-width-full">
                                     <Image
-                                        src="/comp3.jpg"
+                                        // src="/comp3.jpg"
+                                        src="/hihi.png"
                                         width={523}
                                         height={555}
                                         alt="Takmeel"
@@ -70,10 +71,10 @@ export default function Component3() {
                                 >
                                     <ul className="LiSt1">
                                         <li >
-                                            Selection of 1, 2, and 3-bedroom apartments designed for different lifestyle needs.
+                                            Selection of Studio, 1 and 2 bedroom apartments designed for dierent lifestyle needs.
                                         </li>
                                         <li >
-                                            Developed by Takmeel Real Estate Development, known for quality and attention to detail
+                                            Developed by Takmeel Developments, known for quality and attention to detail.
                                         </li>
                                         <li>
                                             Located in Dubai South, a fast-growing, well-connected master community.
@@ -82,14 +83,13 @@ export default function Component3() {
                                             Modern architecture with open layouts and high-quality interiors.
                                         </li>
                                         <li >
-                                            Bright, spacious apartments with large windows and elegant finishes.
+                                            Modern architecture with open layouts and high-quality interiors.
                                         </li>
                                         <li >
                                             Access to lifestyle amenities including a gym, pool, landscaped outdoor spaces, and leisure areas.
-
                                         </li>
                                         <li >
-                                            Secure environment with 24-hour security, parking, and concierge services
+                                            Secure environment with 24-hour security, parking, and concierge services.
                                         </li>
                                     </ul>
                                 </motion.div>
