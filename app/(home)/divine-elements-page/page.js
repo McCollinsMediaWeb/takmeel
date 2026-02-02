@@ -33,6 +33,8 @@ export default async function DivineElementsPage() {
             "test9.png",
             "test10.png",
             "test11.png",
+            "test12.png",
+            "test13.png"
             // "https://res.cloudinary.com/dje8fshak/image/upload/v1769768950/Screenshot_2026-01-30_at_3.44.41_PM_yiw5pt.png",
             // "https://res.cloudinary.com/dje8fshak/image/upload/v1769768950/Screenshot_2026-01-30_at_3.44.21_PM_kgaefq.png",
             // "https://res.cloudinary.com/dje8fshak/image/upload/v1769768950/Screenshot_2026-01-30_at_3.43.45_PM_q12uc6.png",
