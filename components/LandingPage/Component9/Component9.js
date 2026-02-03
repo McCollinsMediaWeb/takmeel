@@ -30,7 +30,7 @@ export default function Component9() {
                 {isDesktop && (
                     <Image
                         // src="/bn1.jpg"
-                        src="/test4.jpg"
+                        src="/test14.jpg"
                         width={1428}
                         height={784}
                         alt="Takmeel"
@@ -40,7 +40,8 @@ export default function Component9() {
                 )}
                 {!isDesktop && (
                     <Image
-                        src="/bn1mob.jpg"
+                        // src="/bn1mob.jpg"
+                        src="/test14.jpg"
                         width={708}
                         height={940}
                         alt="Takmeel"

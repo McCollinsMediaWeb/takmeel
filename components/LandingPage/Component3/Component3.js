@@ -37,7 +37,8 @@ export default function Component3() {
                                 <div className="comp-width-full">
                                     <Image
                                         // src="/comp3.jpg"
-                                        src="/hihi.png"
+                                        // src="/hihi.png"
+                                        src="/test15.jpg"
                                         width={523}
                                         height={555}
                                         alt="Takmeel"

@@ -186,7 +186,7 @@ const plans = {
     },
 
     oneBhk: {
-        label: "1 BHK",
+        label: "1 BR",
         types: {
             type01: {
                 label: "Type 01",
@@ -210,7 +210,7 @@ const plans = {
     },
 
     twoBhk: {
-        label: "2 BHK",
+        label: "2 BR",
         types: {
             type01: {
                 label: "Type 01",
@@ -427,7 +427,7 @@ export default function Component8() {
                                             <a href="javascript:void(0);" className="ButtonBoxLnk l2"><b>Total Area&nbsp;:&nbsp;</b>Available on Request</a>
                                         </div>
                                         <div className="ButtonBox"  >
-                                            <a href="/plans/floor-plans.pdf" download className="ButtonBoxLnk l3"><b>Get all floor plans</b></a>
+                                            <a href="/plans/Floor-Plans.pdf" download className="ButtonBoxLnk l3"><b>Get all floor plans</b></a>
                                         </div>
                                     </motion.div>
                                 </div>

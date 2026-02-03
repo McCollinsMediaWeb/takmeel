@@ -90,7 +90,7 @@ export default function Component12() {
 
                         <div className="col-md-2 brdRight">
                             <div className="FxdNavT1">
-                                Studio, 1 BR, <br/>2 BR, 2 BR + Studio
+                                Studio, 1 BR, <br />2 BR
                             </div>
                         </div>
 
