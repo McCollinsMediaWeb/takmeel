@@ -16,8 +16,8 @@ import { useTranslations } from "next-intl";
 export default function DivineResidencesClient() {
     const t = useTranslations('Properties');
     const detailHeroData = {
-        backgroundImage: "ti01.jpg",
-        backgroundImageMobile: "t21.jpg",
+        backgroundImage: "ti011.jpg",
+        backgroundImageMobile: "t211.jpg",
         text1: t('DivineResidences.content'),
         text2: t('DivineResidences.title'),
         text3: t('DivineResidences.subTitle'),

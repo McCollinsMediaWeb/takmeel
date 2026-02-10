@@ -38,8 +38,8 @@ export default function ClientComponent() {
                 projectStatus={t('soldOut')}
             />
             <ProjectItem
-                backgroundImage="ti01.jpg"
-                backgroundImageMobile="t21.jpg"
+                backgroundImage="ti011.jpg"
+                backgroundImageMobile="t211.jpg"
                 text1={t('slider4.preTitle')}
                 text2={t('slider4.title')}
                 text3={t('slider4.subTitle')}
