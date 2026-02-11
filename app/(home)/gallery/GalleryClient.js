@@ -33,6 +33,44 @@ export default function GalleryClient() {
 
         return () => window.removeEventListener('resize', updateHeights);
     }, []);
+    const GalleryData11 = {
+        // text1: "A Glimpse Of Our Sales Centre",
+        text1: "A Glimpse Of Our Sales Centre",
+        GalleryImages: [
+            "sales/1.jpg",
+            "sales/2.jpg",
+            "sales/3.jpg",
+            "sales/4.jpg",
+            "sales/5.jpg",
+            "sales/6.jpg",
+            "sales/7.jpg",
+            "sales/8.jpg",
+            "sales/9.jpg",
+            "sales/10.jpg",
+            "sales/11.jpg",
+            "sales/12.jpg",
+            "sales/13.jpg",
+            "sales/14.jpg",
+            "sales/15.jpg",
+            "sales/16.jpg",
+            "sales/17.jpg",
+            "sales/18.jpg",
+            "sales/19.jpg",
+            "sales/20.jpg",
+            "sales/21.jpg",
+            "sales/22.jpg",
+            "sales/23.jpg",
+            "sales/24.jpg",
+            "sales/25.jpg",
+            "sales/26.jpg",
+            "sales/27.jpg",
+             "sales/28.jpg",
+            "sales/29.jpg",
+            "sales/30.jpg",
+            "sales/31.jpg",
+
+        ]
+    };
     const GalleryData1 = {
         // text1: "Snapshots of Success: PR Event Gallery",
         text1: t('section3.title'),
@@ -198,6 +236,9 @@ export default function GalleryClient() {
 
     return (
         <>
+            <div className="bg2 NoPagination">
+                <GalleryRow t={t}  {...GalleryData11} />
+            </div>
             <div className="bg2 NoPagination">
                 <GalleryRow t={t}  {...GalleryData3} />
             </div>
