@@ -275,7 +275,7 @@ export default function GalleryClient() {
             <div className="bg2 NoPagination">
                 <GalleryRow t={t}  {...GalleryData11} />
             </div>
-            <div className="bg2 NoPagination">
+            <div className="bg2 NoPagination FixedImageHeight">
                 <GalleryRow t={t}  {...GalleryData22} />
             </div>
             <div className="bg2 NoPagination">
