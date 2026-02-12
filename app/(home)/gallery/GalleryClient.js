@@ -71,6 +71,42 @@ export default function GalleryClient() {
 
         ]
     };
+    const GalleryData22 = {
+        // text1: "A Glimpse Of Our Sales Centre",
+        text1: "The Launch of Divine Elements",
+        GalleryImages: [
+            "divine/1.jpg",
+            "divine/2.jpg",
+            "divine/3.jpg",
+            "divine/4.jpg",
+            "divine/5.jpg",
+            "divine/6.jpg",
+            "divine/7.jpg",
+            "divine/8.jpg",
+            "divine/9.jpg",
+            "divine/10.jpg",
+            "divine/11.jpg",
+            "divine/12.jpg",
+            "divine/13.jpg",
+            "divine/14.jpg",
+            "divine/15.jpg",
+            "divine/16.jpg",
+            "divine/17.jpg",
+            "divine/18.jpg",
+            "divine/19.jpg",
+            "divine/20.jpg",
+            "divine/21.jpg",
+            "divine/22.jpg",
+            "divine/23.jpg",
+            "divine/24.jpg",
+            "divine/25.jpg",
+            "divine/26.jpg",
+            "divine/27.jpg",
+            "divine/28.jpg",
+            "divine/29.jpg",
+
+        ]
+    };
     const GalleryData1 = {
         // text1: "Snapshots of Success: PR Event Gallery",
         text1: t('section3.title'),
@@ -238,6 +274,9 @@ export default function GalleryClient() {
         <>
             <div className="bg2 NoPagination">
                 <GalleryRow t={t}  {...GalleryData11} />
+            </div>
+            <div className="bg2 NoPagination">
+                <GalleryRow t={t}  {...GalleryData22} />
             </div>
             <div className="bg2 NoPagination">
                 <GalleryRow t={t}  {...GalleryData3} />
