@@ -2,35 +2,39 @@
 import PrivacyPolicyClient from "./PrivacyPolicyClient";
 import MetaInjector from "@/components/Meta/MetaInjector";
 import { getMetaTags } from "@/lib/getMetaTags";
-export default async function PrivacyPolicy() {
+
+export async function generateMetadata() {
   const metaTags = await getMetaTags("/privacy-policy");
-  if (metaTags.length === 0 || !metaTags[0].metaContent) {
-    console.warn("No meta tags found, using default");
-  }
-  // const t = useTranslations('PrivacyPolicy');
-  // const containerVariants = {
-  //   hidden: { opacity: 0, y: 40 },
-  //   visible: {
-  //     opacity: 1,
-  //     y: 0,
-  //     transition: {
-  //       duration: 0.6,
-  //       ease: "easeOut",
-  //       when: "beforeChildren",
-  //       staggerChildren: 0.2,
-  //     },
-  //   },
+  const metaContent = metaTags?.[0]?.metaContent || "";
+
+  // Parse title
+  const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+  const title = titleMatch?.[1] || "Privacy Policy | Takmeel Development";
+
+  // Parse description
+  const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+  const description = descMatch?.[1] || "";
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: "https://www.takmeeldevelopment.com/privacy-policy",
+    },
+  };
+}
+
+export default async function PrivacyPolicy() {
+  // const metaTags = await getMetaTags("/privacy-policy");
+  // if (metaTags.length === 0 || !metaTags[0].metaContent) {
+  //   console.warn("No meta tags found, using default");
   // }
 
-  // const itemVariants = {
-  //   hidden: { opacity: 0, y: 20 },
-  //   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-  // }
   return (
     <>
-      {metaTags.length > 0 && metaTags[0].metaContent && (
+      {/* {metaTags.length > 0 && metaTags[0].metaContent && (
         <MetaInjector metaContent={metaTags[0].metaContent} />
-      )}
+      )} */}
       <PrivacyPolicyClient />
     </>
     // <div>

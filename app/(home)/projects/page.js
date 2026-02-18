@@ -8,17 +8,38 @@ import FooterBottom from "@/components/footerBottom/footerBottom";
 import { useTranslations } from "next-intl";
 import ClientComponent from "./ClientComponent";
 
-export default async function Projects() {
+export async function generateMetadata() {
   const metaTags = await getMetaTags("/projects");
-  if (metaTags.length === 0 || !metaTags[0].metaContent) {
-    console.warn("No meta tags found, using default");
-  }
+  const metaContent = metaTags?.[0]?.metaContent || "";
+
+  // Parse title
+  const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+  const title = titleMatch?.[1] || "Projects | Takmeel Development";
+
+  // Parse description
+  const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+  const description = descMatch?.[1] || "";
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: "https://www.takmeeldevelopment.com/projects",
+    },
+  };
+}
+
+export default async function Projects() {
+  // const metaTags = await getMetaTags("/projects");
+  // if (metaTags.length === 0 || !metaTags[0].metaContent) {
+  //   console.warn("No meta tags found, using default");
+  // }
 
   return (
     <>
-      {metaTags.length > 0 && metaTags[0].metaContent && (
+      {/* {metaTags.length > 0 && metaTags[0].metaContent && (
         <MetaInjector metaContent={metaTags[0].metaContent} />
-      )}
+      )} */}
       <section>
         <ProjectsPageHeader />
         {/* <ProjectItem backgroundImage="pr1.jpg" backgroundImageMobile="pr1m.jpg" text2="Divine Al Barari" text3="Majan" />

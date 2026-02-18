@@ -12,25 +12,46 @@ import AboutUsHeader from "./AboutUsHeader";
 import Stages from "./Stages";
 import OurValues from "./OurValues";
 
-export default async function AboutUs() {
+export async function generateMetadata() {
   const metaTags = await getMetaTags("/about-us");
-  if (metaTags.length === 0 || !metaTags[0].metaContent) {
-    // Add fallback if meta tags are not found
-    console.warn("No meta tags found, using default");
-  }
+  const metaContent = metaTags?.[0]?.metaContent || "";
+
+  // Parse title
+  const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+  const title = titleMatch?.[1] || "About Us | Takmeel Development";
+
+  // Parse description
+  const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+  const description = descMatch?.[1] || "";
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: "https://www.takmeeldevelopment.com/about-us",
+    },
+  };
+}
+
+export default async function AboutUs() {
+  // const metaTags = await getMetaTags("/about-us");
+  // if (metaTags.length === 0 || !metaTags[0].metaContent) {
+  //   // Add fallback if meta tags are not found
+  //   console.warn("No meta tags found, using default");
+  // }
 
   return (
     <>
-      {metaTags.length > 0 && metaTags[0].metaContent && (
+      {/* {metaTags.length > 0 && metaTags[0].metaContent && (
         <MetaInjector metaContent={metaTags[0].metaContent} />
-      )}
+      )} */}
       <div>
         {/* <PageHeader /> */}
         <AboutUsHeader backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg" backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg" backgroundVideo="ttk1.mp4" />
         {/* <AboutSlider/> */}
         <AboutVisionMission />
         <Founders />
-        
+
         <AboutVisionMission2 />
         <Stages />
         <OurValues />

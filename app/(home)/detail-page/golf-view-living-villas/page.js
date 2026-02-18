@@ -15,11 +15,32 @@ import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 import GolfViewLivingVillasClient from "./GolfViewLivingVillasClient";
 
-export default async function GolfViewLivingVillas() {
+export async function generateMetadata() {
   const metaTags = await getMetaTags("/detail-page/golf-view-living-villas");
-  if (metaTags.length === 0 || !metaTags[0].metaContent) {
-    console.warn("No meta tags found, using default");
-  }
+  const metaContent = metaTags?.[0]?.metaContent || "";
+
+  // Parse title
+  const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+  const title = titleMatch?.[1] || "Golf View Living Villas | Takmeel Development";
+
+  // Parse description
+  const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+  const description = descMatch?.[1] || "";
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: "https://www.takmeeldevelopment.com/detail-page/golf-view-living-villas",
+    },
+  };
+}
+
+export default async function GolfViewLivingVillas() {
+  // const metaTags = await getMetaTags("/detail-page/golf-view-living-villas");
+  // if (metaTags.length === 0 || !metaTags[0].metaContent) {
+  //   console.warn("No meta tags found, using default");
+  // }
 
   const detailHeroData = {
     backgroundImage: "Divine golf villas_landscape.mp4",
@@ -366,12 +387,12 @@ export default async function GolfViewLivingVillas() {
 
   return (
     <>
-      {metaTags.length > 0 && metaTags[0].metaContent && (
+      {/* {metaTags.length > 0 && metaTags[0].metaContent && (
         <MetaInjector metaContent={metaTags[0].metaContent} />
-      )}
+      )} */}
 
       <GolfViewLivingVillasClient />
-      
+
       {/* <div>
         <DetailHero {...detailHeroData} projectStatus="Sold Out" />
         <ProjectDetails1 {...DataProjectDetails1} />

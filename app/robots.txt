@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
+Disallow: /*.pdf$
 Sitemap: https://www.takmeeldevelopment.com/sitemap.xml

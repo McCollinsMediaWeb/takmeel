@@ -16,11 +16,32 @@ import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 import TakmeelAlBarariViewClient from "./TakmeelAlBarrariViewClient";
 
-export default async function TakmeelAlBarariViewPropertiesPage() {
+export async function generateMetadata() {
   const metaTags = await getMetaTags("/detail-page/takmeel-al-barari-view-properties");
-  if (metaTags.length === 0 || !metaTags[0].metaContent) {
-    console.warn("No meta tags found, using default");
-  }
+  const metaContent = metaTags?.[0]?.metaContent || "";
+
+  // Parse title
+  const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+  const title = titleMatch?.[1] || "Takmeel Al Barari View Properties | Takmeel Development";
+
+  // Parse description
+  const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+  const description = descMatch?.[1] || "";
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: "https://www.takmeeldevelopment.com/detail-page/takmeel-al-barari-view-properties",
+    },
+  };
+}
+
+export default async function TakmeelAlBarariViewPropertiesPage() {
+  // const metaTags = await getMetaTags("/detail-page/takmeel-al-barari-view-properties");
+  // if (metaTags.length === 0 || !metaTags[0].metaContent) {
+  //   console.warn("No meta tags found, using default");
+  // }
 
   const detailHeroData = {
     // backgroundImage: "main1.jpg",
@@ -406,9 +427,9 @@ export default async function TakmeelAlBarariViewPropertiesPage() {
 
   return (
     <>
-      {metaTags.length > 0 && metaTags[0].metaContent && (
+      {/* {metaTags.length > 0 && metaTags[0].metaContent && (
         <MetaInjector metaContent={metaTags[0].metaContent} />
-      )}
+      )} */}
 
       <TakmeelAlBarariViewClient />
       {/* <div>

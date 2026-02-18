@@ -5,6 +5,9 @@ export const metadata = {
   title: "Top Real Estate Developers in UAE | Takmeel Development",
   description:
     "Discover premium residential and commercial real estate with one of the leading property developers in UAE. Explore luxury homes, smart investments, and innovative housing projects with Takmeel Development.",
+  alternates: {
+    canonical: "https://www.takmeeldevelopment.com", // ✅ works
+  }
 };
 
 import HomePageItem from "@/components/Home/HomePageItem";
@@ -23,6 +26,7 @@ export default async function Home() {
       {/* {metaTags.length > 0 && metaTags[0].metaContent && (
         <MetaInjector metaContent={metaTags[0].metaContent} />
       )} */}
+      <h1 className="sr-only">Top Real Estate Developers in UAE | Takmeel Development</h1>
       <HomePageItem />
     </>
   );

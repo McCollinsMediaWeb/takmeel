@@ -16,11 +16,32 @@ import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 import DivineLivingClient from "./DivineLivingClient";
 
-export default async function DivineLiving() {
+export async function generateMetadata() {
   const metaTags = await getMetaTags("/detail-page/divine-living");
-  if (metaTags.length === 0 || !metaTags[0].metaContent) {
-    console.warn("No meta tags found, using default");
-  }
+  const metaContent = metaTags?.[0]?.metaContent || "";
+
+  // Parse title
+  const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+  const title = titleMatch?.[1] || "Divine Living | Takmeel Development";
+
+  // Parse description
+  const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+  const description = descMatch?.[1] || "";
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: "https://www.takmeeldevelopment.com/detail-page/divine-living",
+    },
+  };
+}
+
+export default async function DivineLiving() {
+  // const metaTags = await getMetaTags("/detail-page/divine-living");
+  // if (metaTags.length === 0 || !metaTags[0].metaContent) {
+  //   console.warn("No meta tags found, using default");
+  // }
   const detailHeroData = {
     backgroundImage: "bannerDesktopFirst.jpg",
     backgroundImageMobile: "bannerMobileFirst.jpg",
@@ -341,9 +362,9 @@ export default async function DivineLiving() {
 
   return (
     <>
-      {metaTags.length > 0 && metaTags[0].metaContent && (
+      {/* {metaTags.length > 0 && metaTags[0].metaContent && (
         <MetaInjector metaContent={metaTags[0].metaContent} />
-      )}
+      )} */}
       <DivineLivingClient />
       {/* <div>
         <DetailHero {...detailHeroData} projectStatus="Sold Out" />

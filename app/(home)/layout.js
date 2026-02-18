@@ -234,6 +234,10 @@ import Script from "next/script";
 import { getLocale } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 
+export const metadata = {
+  metadataBase: new URL("https://www.takmeeldevelopment.com"),
+};
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
