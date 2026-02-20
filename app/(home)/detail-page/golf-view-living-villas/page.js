@@ -1,4 +1,14 @@
 // 'use client';
+
+export const metadata = {
+  title: "Golf View Luxury Villas in UAE | Real Estate in Ajman",
+  description:
+    "Enjoy serene living with golf course views in UAE. Explore premium villas developed by Takmeel — a trusted name in Ajman and GCC luxury housing.",
+  alternates: {
+    canonical: "https://www.takmeeldevelopment.com/detail-page/golf-view-living-villas",
+  }
+};
+
 import DetailHero from "@/components/DetailPageComponents/DetailHero";
 import ProjectDetails1 from "@/components/DetailPageComponents/ProjectDetails1";
 import ProjectDetails2 from "@/components/DetailPageComponents/ProjectDetails2";
@@ -15,26 +25,26 @@ import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 import GolfViewLivingVillasClient from "./GolfViewLivingVillasClient";
 
-export async function generateMetadata() {
-  const metaTags = await getMetaTags("/detail-page/golf-view-living-villas");
-  const metaContent = metaTags?.[0]?.metaContent || "";
+// export async function generateMetadata() {
+//   const metaTags = await getMetaTags("/detail-page/golf-view-living-villas");
+//   const metaContent = metaTags?.[0]?.metaContent || "";
 
-  // Parse title
-  const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
-  const title = titleMatch?.[1] || "Golf View Living Villas | Takmeel Development";
+//   // Parse title
+//   const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+//   const title = titleMatch?.[1] || "Golf View Living Villas | Takmeel Development";
 
-  // Parse description
-  const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
-  const description = descMatch?.[1] || "";
+//   // Parse description
+//   const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+//   const description = descMatch?.[1] || "";
 
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: "https://www.takmeeldevelopment.com/detail-page/golf-view-living-villas",
-    },
-  };
-}
+//   return {
+//     title,
+//     description,
+//     alternates: {
+//       canonical: "https://www.takmeeldevelopment.com/detail-page/golf-view-living-villas",
+//     },
+//   };
+// }
 
 export default async function GolfViewLivingVillas() {
   // const metaTags = await getMetaTags("/detail-page/golf-view-living-villas");

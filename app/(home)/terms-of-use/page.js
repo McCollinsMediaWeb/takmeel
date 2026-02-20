@@ -1,27 +1,36 @@
+export const metadata = {
+  title: "Terms of Use | Takmeel Development",
+  description:
+    "Read Takmeel Development’s Terms of Use to understand how we collect, use, and protect your personal information across our real estate projects in the UAE.",
+  alternates: {
+    canonical: "https://www.takmeeldevelopment.com/terms-of-use",
+  }
+};
+
 import { getMetaTags } from "@/lib/getMetaTags";
 import TermsOfUseClient from "./TermsOfUseClient";
 import MetaInjector from "@/components/Meta/MetaInjector";
 
-export async function generateMetadata() {
-  const metaTags = await getMetaTags("/terms-of-use");
-  const metaContent = metaTags?.[0]?.metaContent || "";
+// export async function generateMetadata() {
+//   const metaTags = await getMetaTags("/terms-of-use");
+//   const metaContent = metaTags?.[0]?.metaContent || "";
 
-  // Parse title
-  const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
-  const title = titleMatch?.[1] || "Terms of Use | Takmeel Development";
+//   // Parse title
+//   const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+//   const title = titleMatch?.[1] || "Terms of Use | Takmeel Development";
 
-  // Parse description
-  const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
-  const description = descMatch?.[1] || "";
+//   // Parse description
+//   const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+//   const description = descMatch?.[1] || "";
 
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: "https://www.takmeeldevelopment.com/terms-of-use",
-    },
-  };
-}
+//   return {
+//     title,
+//     description,
+//     alternates: {
+//       canonical: "https://www.takmeeldevelopment.com/terms-of-use",
+//     },
+//   };
+// }
 
 export default async function TermsOfUse() {
   // const metaTags = await getMetaTags("/terms-of-use");

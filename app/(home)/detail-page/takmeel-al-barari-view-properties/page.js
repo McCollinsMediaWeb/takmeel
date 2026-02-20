@@ -1,4 +1,14 @@
 // 'use client';
+
+export const metadata = {
+  title: "Al Barari Villas for Sale in Dubai | Luxury Real Estate",
+  description:
+    "Own a piece of paradise with luxury villas for sale in Al Barari, Dubai. Browse high-end homes built by top real estate developers in the UAE and Ajman.",
+  alternates: {
+    canonical: "https://www.takmeeldevelopment.com/detail-page/takmeel-al-barari-view-properties",
+  }
+};
+
 import DetailHero from "@/components/DetailPageComponents/DetailHero";
 import ProjectDetails1 from "@/components/DetailPageComponents/ProjectDetails1";
 import ProjectDetails2 from "@/components/DetailPageComponents/ProjectDetails2";
@@ -16,26 +26,26 @@ import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 import TakmeelAlBarariViewClient from "./TakmeelAlBarrariViewClient";
 
-export async function generateMetadata() {
-  const metaTags = await getMetaTags("/detail-page/takmeel-al-barari-view-properties");
-  const metaContent = metaTags?.[0]?.metaContent || "";
+// export async function generateMetadata() {
+//   const metaTags = await getMetaTags("/detail-page/takmeel-al-barari-view-properties");
+//   const metaContent = metaTags?.[0]?.metaContent || "";
 
-  // Parse title
-  const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
-  const title = titleMatch?.[1] || "Takmeel Al Barari View Properties | Takmeel Development";
+//   // Parse title
+//   const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+//   const title = titleMatch?.[1] || "Takmeel Al Barari View Properties | Takmeel Development";
 
-  // Parse description
-  const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
-  const description = descMatch?.[1] || "";
+//   // Parse description
+//   const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+//   const description = descMatch?.[1] || "";
 
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: "https://www.takmeeldevelopment.com/detail-page/takmeel-al-barari-view-properties",
-    },
-  };
-}
+//   return {
+//     title,
+//     description,
+//     alternates: {
+//       canonical: "https://www.takmeeldevelopment.com/detail-page/takmeel-al-barari-view-properties",
+//     },
+//   };
+// }
 
 export default async function TakmeelAlBarariViewPropertiesPage() {
   // const metaTags = await getMetaTags("/detail-page/takmeel-al-barari-view-properties");

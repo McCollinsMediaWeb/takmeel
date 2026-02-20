@@ -1,3 +1,13 @@
+
+export const metadata = {
+  title: "New Real Estate Projects in UAE | Residential & Commercial Development",
+  description:
+    "Browse ongoing and upcoming real estate developments by Takmeel. Discover top residential projects and land development opportunities across UAE and GCC.",
+  alternates: {
+    canonical: "https://www.takmeeldevelopment.com/projects",
+  }
+};
+
 import PropertyForm from "@/components/DetailPageComponents/PropertyForm"
 import ProjectsPageHeader from "@/components/ProjectsPageHeader/ProjectsPageHeader";
 import ProjectItem from "@/components/ProjectItem/ProjectItem";
@@ -8,26 +18,26 @@ import FooterBottom from "@/components/footerBottom/footerBottom";
 import { useTranslations } from "next-intl";
 import ClientComponent from "./ClientComponent";
 
-export async function generateMetadata() {
-  const metaTags = await getMetaTags("/projects");
-  const metaContent = metaTags?.[0]?.metaContent || "";
+// export async function generateMetadata() {
+//   const metaTags = await getMetaTags("/projects");
+//   const metaContent = metaTags?.[0]?.metaContent || "";
 
-  // Parse title
-  const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
-  const title = titleMatch?.[1] || "Projects | Takmeel Development";
+//   // Parse title
+//   const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+//   const title = titleMatch?.[1] || "Projects | Takmeel Development";
 
-  // Parse description
-  const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
-  const description = descMatch?.[1] || "";
+//   // Parse description
+//   const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+//   const description = descMatch?.[1] || "";
 
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: "https://www.takmeeldevelopment.com/projects",
-    },
-  };
-}
+//   return {
+//     title,
+//     description,
+//     alternates: {
+//       canonical: "https://www.takmeeldevelopment.com/projects",
+//     },
+//   };
+// }
 
 export default async function Projects() {
   // const metaTags = await getMetaTags("/projects");

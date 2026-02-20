@@ -1,3 +1,13 @@
+export const metadata = {
+    title: "Careers at Takmeel | Join a Leading UAE Real Estate Developer",
+    description:
+        "Build your future with Takmeel. Explore career opportunities in one of the UAE’s most innovative and fast-growing real estate development firms.",
+    alternates: {
+        canonical: "https://www.takmeeldevelopment.com/careers",
+    }
+};
+
+
 import CareerFirstBanner from "@/components/CareerComponents/CareerFirstBanner";
 import GetInTouchForm from "@/components/CareerComponents/GetInTouchForm";
 import WhyWorkTogether from "@/components/CareerComponents/WhyWorkTogether";
@@ -7,26 +17,26 @@ import MetaInjector from "@/components/Meta/MetaInjector";
 import { getMetaTags } from "@/lib/getMetaTags";
 import JobListing from "./JobListing";
 
-export async function generateMetadata() {
-    const metaTags = await getMetaTags("/careers");
-    const metaContent = metaTags?.[0]?.metaContent || "";
+// export async function generateMetadata() {
+//     const metaTags = await getMetaTags("/careers");
+//     const metaContent = metaTags?.[0]?.metaContent || "";
 
-    // Parse title
-    const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
-    const title = titleMatch?.[1] || "Careers | Takmeel Development";
+//     // Parse title
+//     const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+//     const title = titleMatch?.[1] || "Careers | Takmeel Development";
 
-    // Parse description
-    const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
-    const description = descMatch?.[1] || "";
+//     // Parse description
+//     const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+//     const description = descMatch?.[1] || "";
 
-    return {
-        title,
-        description,
-        alternates: {
-            canonical: "https://www.takmeeldevelopment.com/careers",
-        },
-    };
-}
+//     return {
+//         title,
+//         description,
+//         alternates: {
+//             canonical: "https://www.takmeeldevelopment.com/careers",
+//         },
+//     };
+// }
 
 export default async function Careers() {
     // const metaTags = await getMetaTags("/careers");

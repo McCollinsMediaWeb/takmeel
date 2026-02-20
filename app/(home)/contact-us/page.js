@@ -1,4 +1,14 @@
 // 'use client';
+
+export const metadata = {
+  title: "Contact Takmeel Development | Real Estate Enquiries UAE",
+  description:
+    "Get in touch with Takmeel Development — your trusted real estate partner in Dubai, Ajman, and across the UAE. Let’s discuss your next investment.",
+  alternates: {
+    canonical: "https://www.takmeeldevelopment.com/contact-us",
+  }
+};
+
 import FAQbox from "@/components/FAQbox/FAQbox";
 import GetInTouchForm from "./GetInTouchForm";
 import OurOffice from "./OurOffice";
@@ -9,26 +19,26 @@ import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 import PropertyForm from "@/components/DetailPageComponents/PropertyForm";
 
-export async function generateMetadata() {
-  const metaTags = await getMetaTags("/contact-us");
-  const metaContent = metaTags?.[0]?.metaContent || "";
+// export async function generateMetadata() {
+//   const metaTags = await getMetaTags("/contact-us");
+//   const metaContent = metaTags?.[0]?.metaContent || "";
 
-  // Parse title
-  const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
-  const title = titleMatch?.[1] || "Contact Us | Takmeel Development";
+//   // Parse title
+//   const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+//   const title = titleMatch?.[1] || "Contact Us | Takmeel Development";
 
-  // Parse description
-  const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
-  const description = descMatch?.[1] || "";
+//   // Parse description
+//   const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+//   const description = descMatch?.[1] || "";
 
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: "https://www.takmeeldevelopment.com/contact-us",
-    },
-  };
-}
+//   return {
+//     title,
+//     description,
+//     alternates: {
+//       canonical: "https://www.takmeeldevelopment.com/contact-us",
+//     },
+//   };
+// }
 
 export default async function ContactUs() {
   // const metaTags = await getMetaTags("/contact-us");

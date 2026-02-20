@@ -1,28 +1,38 @@
 // 'use client';
+
+export const metadata = {
+  title: "Privacy Policy | Takmeel Development",
+  description:
+    "Read Takmeel Development’s Privacy Policy to understand how we collect, use, and protect your personal information across our real estate projects in the UAE.",
+  alternates: {
+    canonical: "https://www.takmeeldevelopment.com/privacy-policy",
+  }
+};
+
 import PrivacyPolicyClient from "./PrivacyPolicyClient";
 import MetaInjector from "@/components/Meta/MetaInjector";
 import { getMetaTags } from "@/lib/getMetaTags";
 
-export async function generateMetadata() {
-  const metaTags = await getMetaTags("/privacy-policy");
-  const metaContent = metaTags?.[0]?.metaContent || "";
+// export async function generateMetadata() {
+//   const metaTags = await getMetaTags("/privacy-policy");
+//   const metaContent = metaTags?.[0]?.metaContent || "";
 
-  // Parse title
-  const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
-  const title = titleMatch?.[1] || "Privacy Policy | Takmeel Development";
+//   // Parse title
+//   const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+//   const title = titleMatch?.[1] || "Privacy Policy | Takmeel Development";
 
-  // Parse description
-  const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
-  const description = descMatch?.[1] || "";
+//   // Parse description
+//   const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+//   const description = descMatch?.[1] || "";
 
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: "https://www.takmeeldevelopment.com/privacy-policy",
-    },
-  };
-}
+//   return {
+//     title,
+//     description,
+//     alternates: {
+//       canonical: "https://www.takmeeldevelopment.com/privacy-policy",
+//     },
+//   };
+// }
 
 export default async function PrivacyPolicy() {
   // const metaTags = await getMetaTags("/privacy-policy");

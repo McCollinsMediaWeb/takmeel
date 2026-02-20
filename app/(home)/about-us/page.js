@@ -1,3 +1,14 @@
+
+export const metadata = {
+  title: "About Takmeel | Leading Property Developers in Dubai & Ajman",
+  description:
+    "Learn more about Takmeel Development — a premier real estate company building innovative residential and commercial projects across UAE and GCC.",
+  alternates: {
+    canonical: "https://www.takmeeldevelopment.com/about-us",
+  }
+};
+
+
 import PropertyForm from "@/components/DetailPageComponents/PropertyForm"
 import PageHeader from "@/components/PageHeader/PageHeader";
 import AboutSlider from "@/components/AboutSlider/AboutSlider";
@@ -12,26 +23,26 @@ import AboutUsHeader from "./AboutUsHeader";
 import Stages from "./Stages";
 import OurValues from "./OurValues";
 
-export async function generateMetadata() {
-  const metaTags = await getMetaTags("/about-us");
-  const metaContent = metaTags?.[0]?.metaContent || "";
+// export async function generateMetadata() {
+//   const metaTags = await getMetaTags("/about-us");
+//   const metaContent = metaTags?.[0]?.metaContent || "";
 
-  // Parse title
-  const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
-  const title = titleMatch?.[1] || "About Us | Takmeel Development";
+//   // Parse title
+//   const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+//   const title = titleMatch?.[1] || "About Us | Takmeel Development";
 
-  // Parse description
-  const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
-  const description = descMatch?.[1] || "";
+//   // Parse description
+//   const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+//   const description = descMatch?.[1] || "";
 
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: "https://www.takmeeldevelopment.com/about-us",
-    },
-  };
-}
+//   return {
+//     title,
+//     description,
+//     alternates: {
+//       canonical: "https://www.takmeeldevelopment.com/about-us",
+//     },
+//   };
+// }
 
 export default async function AboutUs() {
   // const metaTags = await getMetaTags("/about-us");

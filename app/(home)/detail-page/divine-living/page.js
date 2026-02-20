@@ -1,4 +1,15 @@
 // 'use client';
+
+export const metadata = {
+  title: "Divine Living UAE | Affordable Housing in Arjan, Dubai",
+  description:
+    "Own an affordable yet luxurious home in Arjan or Dubai. Divine Living by a leading UAE real estate company builds premium residences for smart investors.",
+  alternates: {
+    canonical: "https://www.takmeeldevelopment.com/detail-page/divine-living",
+  }
+};
+
+
 import DetailHero from "@/components/DetailPageComponents/DetailHero";
 import ProjectDetails1 from "@/components/DetailPageComponents/ProjectDetails1";
 import ProjectDetails2 from "@/components/DetailPageComponents/ProjectDetails2";
@@ -16,26 +27,26 @@ import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 import DivineLivingClient from "./DivineLivingClient";
 
-export async function generateMetadata() {
-  const metaTags = await getMetaTags("/detail-page/divine-living");
-  const metaContent = metaTags?.[0]?.metaContent || "";
+// export async function generateMetadata() {
+//   const metaTags = await getMetaTags("/detail-page/divine-living");
+//   const metaContent = metaTags?.[0]?.metaContent || "";
 
-  // Parse title
-  const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
-  const title = titleMatch?.[1] || "Divine Living | Takmeel Development";
+//   // Parse title
+//   const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+//   const title = titleMatch?.[1] || "Divine Living | Takmeel Development";
 
-  // Parse description
-  const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
-  const description = descMatch?.[1] || "";
+//   // Parse description
+//   const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+//   const description = descMatch?.[1] || "";
 
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: "https://www.takmeeldevelopment.com/detail-page/divine-living",
-    },
-  };
-}
+//   return {
+//     title,
+//     description,
+//     alternates: {
+//       canonical: "https://www.takmeeldevelopment.com/detail-page/divine-living",
+//     },
+//   };
+// }
 
 export default async function DivineLiving() {
   // const metaTags = await getMetaTags("/detail-page/divine-living");

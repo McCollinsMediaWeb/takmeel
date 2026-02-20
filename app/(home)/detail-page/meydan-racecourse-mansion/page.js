@@ -1,4 +1,14 @@
 // 'use client';
+
+export const metadata = {
+  title: "Luxury Mansions Near Meydan Racecourse | Premium Dubai Real Estate",
+  description:
+    "Live in style near Meydan Racecourse with opulent mansions from Dubai’s leading property developers. Ideal for high-end buyers and real estate investors.",
+  alternates: {
+    canonical: "https://www.takmeeldevelopment.com/detail-page/meydan-racecourse-mansion",
+  }
+};
+
 import DetailHero from "@/components/DetailPageComponents/DetailHero";
 import ProjectDetails1 from "@/components/DetailPageComponents/ProjectDetails1";
 import ProjectDetails2 from "@/components/DetailPageComponents/ProjectDetails2";
@@ -15,26 +25,26 @@ import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 import MeydanRacecourseMansionClient from "./MeydanRacecourceMansionClient";
 
-export async function generateMetadata() {
-  const metaTags = await getMetaTags("/detail-page/meydan-racecourse-mansion");
-  const metaContent = metaTags?.[0]?.metaContent || "";
+// export async function generateMetadata() {
+//   const metaTags = await getMetaTags("/detail-page/meydan-racecourse-mansion");
+//   const metaContent = metaTags?.[0]?.metaContent || "";
 
-  // Parse title
-  const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
-  const title = titleMatch?.[1] || "Meydan Racecourse Mansion | Takmeel Development";
+//   // Parse title
+//   const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+//   const title = titleMatch?.[1] || "Meydan Racecourse Mansion | Takmeel Development";
 
-  // Parse description
-  const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
-  const description = descMatch?.[1] || "";
+//   // Parse description
+//   const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+//   const description = descMatch?.[1] || "";
 
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: "https://www.takmeeldevelopment.com/detail-page/meydan-racecourse-mansion",
-    },
-  };
-}
+//   return {
+//     title,
+//     description,
+//     alternates: {
+//       canonical: "https://www.takmeeldevelopment.com/detail-page/meydan-racecourse-mansion",
+//     },
+//   };
+// }
 
 export default async function MeydanRacecourseMansion() {
   // const metaTags = await getMetaTags("/detail-page/meydan-racecourse-mansion");

@@ -1,4 +1,15 @@
 // 'use client';
+
+export const metadata = {
+  title: "Divine Residences | Smart Homes & Luxury Apartments in Dubai",
+  description:
+    "Explore smart homes and sustainable luxury apartments in Dubai. A top real estate project by leading residential developers in UAE and the GCC region.",
+  alternates: {
+    canonical: "https://www.takmeeldevelopment.com/detail-page/divine-residences",
+  }
+};
+
+
 import DetailHero from "@/components/DetailPageComponents/DetailHero";
 import ProjectDetails1 from "@/components/DetailPageComponents/ProjectDetails1";
 import ProjectDetails2 from "@/components/DetailPageComponents/ProjectDetails2";
@@ -15,26 +26,26 @@ import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 import DivineResidencesClient from "./DivineResidencesClient";
 
-export async function generateMetadata() {
-  const metaTags = await getMetaTags("/detail-page/divine-residences");
-  const metaContent = metaTags?.[0]?.metaContent || "";
+// export async function generateMetadata() {
+//   const metaTags = await getMetaTags("/detail-page/divine-residences");
+//   const metaContent = metaTags?.[0]?.metaContent || "";
 
-  // Parse title
-  const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
-  const title = titleMatch?.[1] || "Divine Residences | Takmeel Development";
+//   // Parse title
+//   const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+//   const title = titleMatch?.[1] || "Divine Residences | Takmeel Development";
 
-  // Parse description
-  const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
-  const description = descMatch?.[1] || "";
+//   // Parse description
+//   const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+//   const description = descMatch?.[1] || "";
 
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: "https://www.takmeeldevelopment.com/detail-page/divine-residences",
-    },
-  };
-}
+//   return {
+//     title,
+//     description,
+//     alternates: {
+//       canonical: "https://www.takmeeldevelopment.com/detail-page/divine-residences",
+//     },
+//   };
+// }
 
 export default async function DivineResidencies() {
   // const metaTags = await getMetaTags("/detail-page/divine-residences");
