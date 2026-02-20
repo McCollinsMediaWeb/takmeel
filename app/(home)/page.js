@@ -6,7 +6,7 @@ export const metadata = {
   description:
     "Discover premium residential and commercial real estate with one of the leading property developers in UAE. Explore luxury homes, smart investments, and innovative housing projects with Takmeel Development.",
   alternates: {
-    canonical: "https://www.takmeeldevelopment.com", // ✅ works
+    canonical: "https://www.takmeeldevelopment.com",
   }
 };
 

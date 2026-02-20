@@ -1,4 +1,14 @@
 // 'use client';
+
+export const metadata = {
+  title: "Takmeel Real Estate Portfolio | Explore Luxury Homes in UAE",
+  description:
+    "View our gallery of premium apartments, villas, and commercial spaces developed across Dubai, Ajman, and GCC. See what luxury living looks like.",
+  alternates: {
+    canonical: "https://www.takmeeldevelopment.com/gallery",
+  }
+};
+
 import GalleryHeader from "./GalleryHeader";
 import PropertyForm from "@/components/DetailPageComponents/PropertyForm"
 import GalleryClient from "./GalleryClient";
@@ -8,26 +18,26 @@ import Footer from "@/components/footer/footer";
 import FooterBottom from "@/components/footerBottom/footerBottom";
 
 
-export async function generateMetadata() {
-  const metaTags = await getMetaTags("/gallery");
-  const metaContent = metaTags?.[0]?.metaContent || "";
+// export async function generateMetadata() {
+//   const metaTags = await getMetaTags("/gallery");
+//   const metaContent = metaTags?.[0]?.metaContent || "";
 
-  // Parse title
-  const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
-  const title = titleMatch?.[1] || "Gallery | Takmeel Development";
+//   // Parse title
+//   const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
+//   const title = titleMatch?.[1] || "Gallery | Takmeel Development";
 
-  // Parse description
-  const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
-  const description = descMatch?.[1] || "";
+//   // Parse description
+//   const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
+//   const description = descMatch?.[1] || "";
 
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: "https://www.takmeeldevelopment.com/gallery",
-    },
-  };
-}
+//   return {
+//     title,
+//     description,
+//     alternates: {
+//       canonical: "https://www.takmeeldevelopment.com/gallery",
+//     },
+//   };
+// }
 
 export default async function GalleryPage() {
   // const metaTags = await getMetaTags("/gallery");
