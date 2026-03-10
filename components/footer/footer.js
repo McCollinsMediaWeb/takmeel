@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className='pd-common bg1' style={{ padding: '70px 0 20px 0' }}>
       <div className='container'>
         <div className='text-center container'>
-          <img className='FooterLogo' src="/footerlogonew.png" />
+          <img className='FooterLogo' src="/footerlogonew1.png" />
           <div className='FtrT1 text-uppercase'>
             {/* Urban Living, Reimagined by Nature */}&nbsp;
           </div>

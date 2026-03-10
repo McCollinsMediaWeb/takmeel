@@ -86,7 +86,7 @@ export default function Header() {
             </div>
             <div className='HeaderBoxMiddle'>
               <Link href="/">
-                <img src='/logonew.png' className='MainLogo' />
+                <img src='/logonew1.png' className='MainLogo' />
               </Link>
 
             </div>
