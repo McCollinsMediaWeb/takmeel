@@ -72,7 +72,7 @@
         "slider10": {
             "preTitle": "Featured Properties",
             "title": "Divine Elements",
-            "subTitle": "Dubai",
+            "subTitle": "Dubai South",
             "content": "Crafting Elevated Lifestyles"
         },
         "buttonText": "Explore Property",
@@ -387,7 +387,7 @@
             },
             "slider7": {
                 "title": "Divine Elements",
-                "subTitle": "Dubai"
+                "subTitle": "Dubai South"
             }
         },
         "slider1": {
@@ -435,7 +435,7 @@
         "slider8": {
             "preTitle": "Featured Properties",
             "title": "Divine Elements",
-            "subTitle": "Dubai",
+            "subTitle": "Dubai South",
             "content": "Crafting Elevated Lifestyles"
         },
         "soldOut": "Sold Out"

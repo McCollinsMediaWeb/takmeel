@@ -177,7 +177,7 @@ export default function HomePageItem() {
           backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"
           text1={t('slider10.preTitle')}
           text2={t('slider10.title')}
-          // text3={t('slider10.subTitle')}
+          text3={t('slider10.subTitle')}
           tagline={t('slider10.content')}
           url="divine-elements-page"
           backgroundVideo="south.mp4"
