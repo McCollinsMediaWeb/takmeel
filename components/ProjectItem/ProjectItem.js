@@ -284,7 +284,17 @@ export default function ProjectItem({
                                 <div className="Txt2 text-uppercase">{text2}</div>
                                 <div className="Txt3 nunito-text">{text3}</div>
                                 <div className="Txt17 nunito-text">{tagline}</div>
-                                {url !== "dubai-south" && (
+                                {/* {url !== "dubai-south" && (
+                                    <Link href={`/detail-page/${url}`} className="Link1 hover1">
+                                        {t('buttonText')}
+                                    </Link>
+                                )} */}
+
+                                {url === "divine-elements-page" ? (
+                                    <Link href={`/${url}`} className="Link1 hover1">
+                                        {t('buttonText')}
+                                    </Link>
+                                ) : (
                                     <Link href={`/detail-page/${url}`} className="Link1 hover1">
                                         {t('buttonText')}
                                     </Link>
@@ -373,17 +383,6 @@ export default function ProjectItem({
                                                     {t('buttonText')}
                                                 </Link>
                                             )}
-
-                                            {/* {url === "divine-elements" && (
-                                                <Link
-                                                    href={`/${url}`}
-                                                    className="Link1 hover1"
-                                                    style={{ marginLeft: "15px" }}
-                                                    target="_blank"
-                                                >
-                                                    {t('buttonText2')}
-                                                </Link>
-                                            )} */}
 
                                             {url === "takmeel-al-barari-view-properties" && (
                                                 <Link
