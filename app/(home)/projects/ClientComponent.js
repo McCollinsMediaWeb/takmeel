@@ -16,7 +16,20 @@ export default function ClientComponent() {
                 // backgroundVideo="tkdesk1.mp4"
                 // placeholderImage="/cover2.jpg" />
                 backgroundVideo="Takmeel-Al-Barrari-View/Al-Barari-Video-3.mp4"
-                placeholderImage="Takmeel-Al-Barrari-View/Al-Barari-Cover-2.png" /> 
+                placeholderImage="Takmeel-Al-Barrari-View/Al-Barari-Cover-2.png" />
+
+            <ProjectItem backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg"
+                backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"
+                text1={t('slider8.preTitle')}
+                text2={t('slider8.title')}
+                text3={t('slider8.subTitle')}
+                tagline={t('slider8.content')}
+                url="divine-elements-page"
+                // backgroundVideo="tkdesk1.mp4"
+                // placeholderImage="/cover2.jpg" />
+                backgroundVideo="south.mp4"
+                placeholderImage="dubai-south-cover.png" />
+
             <ProjectItem
                 backgroundImage="Divine-Residencia/Divine residencia main facade.jpg"
                 backgroundImageMobile="k1.jpg"

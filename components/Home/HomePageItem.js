@@ -151,7 +151,7 @@ export default function HomePageItem() {
         />
       </section>
 
-      <section
+      {/* <section
         // ref={(el) => (panelsRef.current[1] = el)}
         className='pageSection'
       >
@@ -163,6 +163,23 @@ export default function HomePageItem() {
           // text3={t('slider9.subTitle')}
           tagline={t('slider9.content')}
           url="dubai-south"
+          backgroundVideo="south.mp4"
+          placeholderImage="dubai-south-cover.png"
+        />
+      </section> */}
+
+      <section
+        // ref={(el) => (panelsRef.current[1] = el)}
+        className='pageSection'
+      >
+        <ProjectItem
+          backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg"
+          backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"
+          text1={t('slider10.preTitle')}
+          text2={t('slider10.title')}
+          // text3={t('slider10.subTitle')}
+          tagline={t('slider10.content')}
+          url="divine-elements-page"
           backgroundVideo="south.mp4"
           placeholderImage="dubai-south-cover.png"
         />

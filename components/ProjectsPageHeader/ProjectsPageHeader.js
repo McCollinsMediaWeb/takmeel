@@ -15,6 +15,7 @@ import p4 from "../../public/k88.jpg"
 import p5 from "../../public/k4.jpg"
 import p6 from "../../public/k5.jpg"
 import p7 from "../../public/k6.jpg"
+import p8 from "../../public/test42.jpg";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -198,6 +199,25 @@ export default function ProjectsPageHeader() {
                             </div>
                             <div className="FtrProperties" ref={sliderRef}>
                                 <Slider ref={slickRef} {...settings}>
+                                    <div>
+                                        <Link className="no-hover-color" href="/divine-elements-page">
+                                            <div className="FtrProject">
+                                                <div className="ProjectImage">
+                                                    <Image
+                                                        src={p8}
+                                                        width={297}
+                                                        height={166}
+                                                        layout="responsive"
+                                                        alt="Takmeel"
+                                                    />
+                                                </div>
+                                                <div className="ProjectDetails text-center">
+                                                    <div className="PT1">{t('properties.slider7.title')}</div>
+                                                    <div className="PT2">{t('properties.slider7.subTitle')}</div>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
                                     <div>
                                         <Link className="no-hover-color" href="/detail-page/takmeel-al-barari-view-properties">
                                             <div className="FtrProject">

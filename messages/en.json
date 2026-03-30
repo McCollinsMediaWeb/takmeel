@@ -69,6 +69,12 @@
             "subTitle": "Ajman",
             "content": "Crafting Elevated Lifestyles"
         },
+        "slider10": {
+            "preTitle": "Coming soon",
+            "title": "Divine Elements",
+            "subTitle": "Dubai",
+            "content": "Crafting Elevated Lifestyles"
+        },
         "buttonText": "Explore Property",
         "buttonText2": "Register Now",
         "soldOut": "Sold Out",
@@ -378,6 +384,10 @@
             "slider6": {
                 "title": "Golf View Living Villas",
                 "subTitle": "Ajman"
+            },
+            "slider7": {
+                "title": "Divine Elements",
+                "subTitle": "Dubai"
             }
         },
         "slider1": {
@@ -421,6 +431,12 @@
             "title": "Golf View Living Villas",
             "subTitle": "Ajman",
             "content": "Private Villas Surrounded by Nature’s Calm"
+        },
+        "slider8": {
+            "preTitle": "Coming soon",
+            "title": "Divine Elements",
+            "subTitle": "Dubai",
+            "content": "Crafting Elevated Lifestyles"
         },
         "soldOut": "Sold Out"
     },

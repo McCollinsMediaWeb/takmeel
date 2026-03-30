@@ -364,9 +364,26 @@ export default function ProjectItem({
 
                                     {url !== "dubai-south" && (
                                         <motion.div variants={itemVariants}>
-                                            <Link href={`/detail-page/${url}`} className="Link1 hover1">
-                                                {t('buttonText')}
-                                            </Link>
+                                            {url === "divine-elements-page" ? (
+                                                <Link href={`/${url}`} className="Link1 hover1">
+                                                    {t('buttonText')}
+                                                </Link>
+                                            ) : (
+                                                <Link href={`/detail-page/${url}`} className="Link1 hover1">
+                                                    {t('buttonText')}
+                                                </Link>
+                                            )}
+
+                                            {/* {url === "divine-elements" && (
+                                                <Link
+                                                    href={`/${url}`}
+                                                    className="Link1 hover1"
+                                                    style={{ marginLeft: "15px" }}
+                                                    target="_blank"
+                                                >
+                                                    {t('buttonText2')}
+                                                </Link>
+                                            )} */}
 
                                             {url === "takmeel-al-barari-view-properties" && (
                                                 <Link
