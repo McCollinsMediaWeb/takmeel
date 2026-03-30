@@ -25,10 +25,10 @@ export default function ClientComponent() {
                 text3={t('slider8.subTitle')}
                 tagline={t('slider8.content')}
                 url="divine-elements-page"
-                // backgroundVideo="tkdesk1.mp4"
-                // placeholderImage="/cover2.jpg" />
-                backgroundVideo="south.mp4"
-                placeholderImage="dubai-south-cover.png" />
+                // backgroundVideo="south.mp4"
+                // placeholderImage="dubai-south-cover.png" />
+                backgroundVideo="divine-elements-video.mp4"
+                placeholderImage="divine-element-frame.png" />
 
             <ProjectItem
                 backgroundImage="Divine-Residencia/Divine residencia main facade.jpg"
