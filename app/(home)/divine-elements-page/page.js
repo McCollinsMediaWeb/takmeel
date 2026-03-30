@@ -1,3 +1,13 @@
+export const metadata = {
+    title: "Divine Elements | Takmeel Development",
+    description:
+        "Discover Divine Elements, a premier residential project by Takmeel Development. Explore luxury villas and townhouses in Dubai South, designed with purposeful living in mind.",
+    alternates: {
+        canonical: "https://www.takmeeldevelopment.com/divine-elements-page",
+    }
+};
+
+
 import { getMetaTags } from "@/lib/getMetaTags";
 import MetaInjector from "@/components/Meta/MetaInjector";
 import Component1 from "@/components/LandingPage/Component1/Component1";
@@ -13,6 +23,7 @@ import Component10 from "@/components/LandingPage/Component10/Component10";
 import Component11 from "@/components/LandingPage/Component11/Component11";
 import Component12 from "@/components/LandingPage/Component12/Component12";
 import Component13 from "@/components/LandingPage/Component13/Component13";
+import Component14 from "@/components/LandingPage/Component14/Component14";
 
 export default async function DivineElementsPage() {
     const metaTags = await getMetaTags("/divine-elements-page");
@@ -72,13 +83,23 @@ export default async function DivineElementsPage() {
             // "https://res.cloudinary.com/dje8fshak/image/upload/v1769768950/Screenshot_2026-01-30_at_3.44.02_PM_i1c2q4.png"
         ],
     };
+
+    const detailHeroData = {
+        backgroundImage: "divine-elements-video.mp4",
+        backgroundImageMobile: "divine-elements-video.mp4",
+        brochureLink: "/Divine-Residencia/Brochure/Divine Residencia Studio City Brochure.pdf",
+        placeholderImage: "/divine-element-frame.png",
+    };
+
+
     return (
         <>
             {metaTags.length > 0 && metaTags[0].metaContent && (
                 <MetaInjector metaContent={metaTags[0].metaContent} />
             )}
             <div className="DvnLnd">
-                <Component1 />
+                <Component14 {...detailHeroData} />
+                {/* <Component1 /> */}
                 <Component2 />
                 <Component3 />
                 <Component4 />

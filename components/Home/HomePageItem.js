@@ -182,6 +182,8 @@ export default function HomePageItem() {
           url="divine-elements-page"
           backgroundVideo="south.mp4"
           placeholderImage="dubai-south-cover.png"
+        // backgroundVideo="divine-elements-video.mp4"
+        // placeholderImage="divine-element-frame.png"
         />
       </section>
 
