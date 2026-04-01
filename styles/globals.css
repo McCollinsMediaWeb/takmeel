@@ -2513,6 +2513,11 @@ input[type="number"] {
   border-radius: 10px;
 }
 
+.ImagePositionTop .GalleryImageBox img {
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
 .galleryBoxRow .slick-dots li {
   width: 30px;
   height: 4px;
@@ -4197,16 +4202,18 @@ body {
 }
 
 @media (min-width: 1000px) {
-  .FixedImageHeight .GalleryImageBox img{
+  .FixedImageHeight .GalleryImageBox img {
     max-height: 480px;
     object-fit: cover;
   }
 }
+
 @media (max-width: 1000px) {
-  .FixedImageHeight .GalleryImageBox img{
+  .FixedImageHeight .GalleryImageBox img {
     max-height: 250px;
     object-fit: cover;
   }
+
   .DvnLnd .Txt2 {
     font-size: 23px;
   }

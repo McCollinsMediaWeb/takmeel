@@ -33,9 +33,45 @@ export default function GalleryClient() {
 
         return () => window.removeEventListener('resize', updateHeights);
     }, []);
+
+    const GalleryData12 = {
+        text1: t('section7.title'),
+        GalleryImages: [
+            "ifthar/1.jpg",
+            "ifthar/2.jpg",
+            "ifthar/3.jpg",
+            "ifthar/4.jpg",
+            "ifthar/5.jpg",
+            "ifthar/6.jpg",
+            "ifthar/7.jpg",
+            "ifthar/8.jpg",
+            "ifthar/9.jpg",
+            "ifthar/10.jpg",
+            "ifthar/11.jpg",
+            "ifthar/12.jpg",
+            "ifthar/13.jpg",
+            "ifthar/14.jpg",
+            "ifthar/15.jpg",
+            "ifthar/16.jpg",
+            "ifthar/17.jpg",
+            "ifthar/18.jpg",
+            "ifthar/19.jpg",
+            "ifthar/20.jpg",
+            "ifthar/21.jpg",
+            "ifthar/22.jpg",
+            // "ifthar/23.jpg",
+            "ifthar/232.jpeg",
+            "ifthar/24.jpg",
+            "ifthar/25.jpg",
+            "ifthar/26.jpg",
+            "ifthar/27.jpg"
+
+        ]
+    };
+
     const GalleryData11 = {
         // text1: "A Glimpse Of Our Sales Centre",
-        text1: "A Glimpse Of Our Sales Centre",
+        text1: t('section6.title'),
         GalleryImages: [
             "sales/1.jpg",
             "sales/2.jpg",
@@ -64,7 +100,7 @@ export default function GalleryClient() {
             "sales/25.jpg",
             "sales/26.jpg",
             "sales/27.jpg",
-             "sales/28.jpg",
+            "sales/28.jpg",
             "sales/29.jpg",
             "sales/30.jpg",
             "sales/31.jpg",
@@ -73,7 +109,7 @@ export default function GalleryClient() {
     };
     const GalleryData22 = {
         // text1: "A Glimpse Of Our Sales Centre",
-        text1: "The Launch of Divine Elements",
+        text1: t('section5.title'),
         GalleryImages: [
             "divine/1.jpg",
             "divine/2.jpg",
@@ -272,6 +308,9 @@ export default function GalleryClient() {
 
     return (
         <>
+            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
+                <GalleryRow t={t}  {...GalleryData12} />
+            </div>
             <div className="bg2 NoPagination">
                 <GalleryRow t={t}  {...GalleryData11} />
             </div>
