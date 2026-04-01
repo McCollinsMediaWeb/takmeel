@@ -180,10 +180,10 @@ export default function HomePageItem() {
           text3={t('slider10.subTitle')}
           tagline={t('slider10.content')}
           url="divine-elements-page"
-          backgroundVideo="south.mp4"
-          placeholderImage="dubai-south-cover.png"
-        // backgroundVideo="divine-elements-video.mp4"
-        // placeholderImage="divine-element-frame.png"
+          // backgroundVideo="south.mp4"
+          // placeholderImage="dubai-south-cover.png"
+          backgroundVideo="divine-elements-video.mp4"
+          placeholderImage="divine-element-frame.png"
         />
       </section>
 
