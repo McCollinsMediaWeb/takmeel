@@ -85,8 +85,8 @@ export default async function DivineElementsPage() {
     };
 
     const detailHeroData = {
-        backgroundImage: "divine-elements-video.mp4",
-        backgroundImageMobile: "divine-elements-video.mp4",
+        backgroundImage: "divine-elements-video-2.mp4",
+        backgroundImageMobile: "divine-elements-video-2.mp4",
         brochureLink: "/Divine-Residencia/Brochure/Divine Residencia Studio City Brochure.pdf",
         placeholderImage: "/divine-element-frame.png",
     };

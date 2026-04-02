@@ -27,7 +27,7 @@ export default function ClientComponent() {
                 url="divine-elements-page"
                 // backgroundVideo="south.mp4"
                 // placeholderImage="dubai-south-cover.png" />
-                backgroundVideo="divine-elements-video.mp4"
+                backgroundVideo="divine-elements-video-2.mp4"
                 placeholderImage="divine-element-frame.png" />
 
             <ProjectItem
