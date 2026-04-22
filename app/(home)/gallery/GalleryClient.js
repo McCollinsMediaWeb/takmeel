@@ -33,6 +33,26 @@ export default function GalleryClient() {
 
         return () => window.removeEventListener('resize', updateHeights);
     }, []);
+    const constructionGallery = {
+        text1: "Construction Update, Divine Al Barari - 17 April 2026",
+        GalleryImages: [
+            "construction/1.jpg",
+            "construction/2.jpg",
+            "construction/3.jpg",
+            "construction/4.jpg",
+            "construction/5.jpg",
+            "construction/6.jpg",
+            "construction/7.jpg",
+            "construction/8.jpg",
+            "construction/9.jpg",
+            "construction/10.jpg",
+            "construction/11.jpg",
+            "construction/12.jpg",
+            "construction/13.jpg",
+            "construction/14.jpg",
+
+        ]
+    };
 
     const GalleryData12 = {
         text1: t('section7.title'),
@@ -308,6 +328,11 @@ export default function GalleryClient() {
 
     return (
         <>
+
+        
+            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
+                <GalleryRow t={t}  {...constructionGallery} />
+            </div>
             <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
                 <GalleryRow t={t}  {...GalleryData12} />
             </div>

@@ -2507,10 +2507,10 @@ input[type="number"] {
 }
 
 .GalleryImageBox {
-  padding: 8px;
+  padding: 12px;
   margin: 0 5px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .ImagePositionTop .GalleryImageBox img {
@@ -4200,18 +4200,22 @@ body {
     bottom: 75px !important;
   }
 }
-
+ .GalleryImageBox img{
+  border-radius: 20px;
+}
 @media (min-width: 1000px) {
-  .FixedImageHeight .GalleryImageBox img {
-    max-height: 480px;
+  .GalleryImageBox img {
+    max-height: 450px;
     object-fit: cover;
+     height: 450px !important;
   }
 }
 
 @media (max-width: 1000px) {
-  .FixedImageHeight .GalleryImageBox img {
+  .GalleryImageBox img {
     max-height: 250px;
     object-fit: cover;
+    height: 250px !important;
   }
 
   .DvnLnd .Txt2 {
