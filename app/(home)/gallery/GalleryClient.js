@@ -36,6 +36,8 @@ export default function GalleryClient() {
     const constructionGallery = {
         text1: "Construction Update, Divine Al Barari - 17 April 2026",
         GalleryImages: [
+            "construction/111.jpg",
+            "construction/22.jpg",
             "construction/1.jpg",
             "construction/2.jpg",
             "construction/3.jpg",
