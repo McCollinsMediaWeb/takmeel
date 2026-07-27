@@ -33,6 +33,40 @@ export default function GalleryClient() {
 
         return () => window.removeEventListener('resize', updateHeights);
     }, []);
+
+    const constructionGalleryJuly = {
+        text1: "Construction Update, Divine Al Barari - 23 July 2026",
+        GalleryImages: [
+            "constructionJuly/1.jpg",
+            "constructionJuly/2.jpg",
+            "constructionJuly/3.jpg",
+            "constructionJuly/4.jpg",
+            "constructionJuly/5.jpg",
+            "constructionJuly/6.jpg",
+            "constructionJuly/7.jpg",
+            "constructionJuly/8.jpg",
+            "constructionJuly/9.jpg",
+            "constructionJuly/10.jpg",
+            "constructionJuly/11.jpg",
+            "constructionJuly/12.jpg",
+            "constructionJuly/13.jpg",
+            "constructionJuly/14.jpg",
+            "constructionJuly/15.jpg",
+            "constructionJuly/16.jpg",
+            "constructionJuly/17.jpg",
+            "constructionJuly/18.jpg",
+            "constructionJuly/19.jpg",
+            "constructionJuly/20.jpg",
+            "constructionJuly/21.jpg",
+            "constructionJuly/22.jpg",
+            "constructionJuly/23.jpg",
+            "constructionJuly/24.jpg",
+            "constructionJuly/25.jpg",
+            "constructionJuly/26.jpg",
+        ]
+    }
+
+
     const latestConstructionGallery = {
         text1: "Construction Update, Divine Al Barari - 19 May 2026",
         GalleryImages: [
@@ -376,6 +410,9 @@ export default function GalleryClient() {
     return (
         <>
 
+            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
+                <GalleryRow t={t} {...constructionGalleryJuly} />
+            </div>
             <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
                 <GalleryRow t={t} {...latestConstructionGallery} />
             </div>
