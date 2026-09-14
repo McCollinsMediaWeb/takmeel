@@ -34,6 +34,39 @@ export default function GalleryClient() {
         return () => window.removeEventListener('resize', updateHeights);
     }, []);
 
+    const constructionGallerySeptember = {
+        text1: "Construction Update, Divine Al Barari - 9 September 2026",
+        subTitle: "takmeel",
+        GalleryImages: [
+            "takmeelgallery1/DSC00003.jpg",
+            "takmeelgallery1/DSC00006.jpg",
+            "takmeelgallery1/DSC00008.jpg",
+            "takmeelgallery1/DSC00010.jpg",
+            "takmeelgallery1/DSC00012.jpg",
+            "takmeelgallery1/DSC00014.jpg",
+            "takmeelgallery1/DSC00017.jpg",
+            "takmeelgallery1/DSC00019.jpg",
+            "takmeelgallery1/DSC00021.jpg",
+            "takmeelgallery1/DSC00025.jpg",
+            "takmeelgallery1/DSC00027.jpg",
+            "takmeelgallery1/DSC00029.jpg",
+            "takmeelgallery1/DSC00032.jpg",
+            "takmeelgallery1/DSC00034.jpg",
+            "takmeelgallery1/DSC00036.jpg",
+            "takmeelgallery1/DSC_6565.jpg",
+            "takmeelgallery1/DSC_6567.jpg",
+            "takmeelgallery1/DSC_6569.jpg",
+            "takmeelgallery1/DSC_6572.jpg",
+            "takmeelgallery1/DSC_6574.jpg",
+            "takmeelgallery1/DSC_6577.jpg",
+            "takmeelgallery1/DSC_6579.jpg",
+            "takmeelgallery1/DSC_6580.jpg",
+            "takmeelgallery1/DSC_6582.jpg",
+            "takmeelgallery1/DSC_6585.jpg",
+            "takmeelgallery1/DSC_6586.jpg",
+        ]
+    };
+
     const constructionGalleryJuly = {
         text1: "Construction Update, Divine Al Barari - 23 July 2026",
         GalleryImages: [
@@ -410,6 +443,9 @@ export default function GalleryClient() {
     return (
         <>
 
+            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
+                <GalleryRow t={t} {...constructionGallerySeptember} />
+            </div>
             <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
                 <GalleryRow t={t} {...constructionGalleryJuly} />
             </div>
