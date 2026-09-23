@@ -231,7 +231,7 @@ import "@/styles/responsive.css";
 import "@/styles/slick-slider/slick/slick-theme.css";
 import "@/styles/slick-slider/slick/slick.css";
 import Script from "next/script";
-import { getLocale } from "next-intl/server";
+import { getLocale, getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 
 export const metadata = {
@@ -262,6 +262,7 @@ const cairo = Cairo({
 
 export default async function RootLayout({ children }) {
   const locale = await getLocale();
+  const messages = await getMessages();
   const pathname = headers().get("x-pathname") || "";
   const showHeader = pathname !== "/divine-elements-page";
 
@@ -322,7 +323,7 @@ export default async function RootLayout({ children }) {
 
         <div className="vibe-stack">
           <GlobalDataProvider>
-            <NextIntlClientProvider>
+            <NextIntlClientProvider messages={messages}>
               {/* -------------------------------
                   SHOW WIDGETS ON ALL PAGES EXCEPT 
                   /divine-elements-page 

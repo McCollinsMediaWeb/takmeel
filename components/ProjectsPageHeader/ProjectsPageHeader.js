@@ -16,6 +16,8 @@ import p5 from "../../public/k4.jpg"
 import p6 from "../../public/k5.jpg"
 import p7 from "../../public/k6.jpg"
 import p8 from "../../public/test42.jpg";
+import p10 from "../../public/new-project-copy.jpg";
+import p9 from "../../public/vill.jpg";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -199,25 +201,7 @@ export default function ProjectsPageHeader() {
                             </div>
                             <div className="FtrProperties" ref={sliderRef}>
                                 <Slider ref={slickRef} {...settings}>
-                                    <div>
-                                        <Link className="no-hover-color" href="/divine-elements-page">
-                                            <div className="FtrProject">
-                                                <div className="ProjectImage">
-                                                    <Image
-                                                        src={p8}
-                                                        width={297}
-                                                        height={166}
-                                                        layout="responsive"
-                                                        alt="Takmeel"
-                                                    />
-                                                </div>
-                                                <div className="ProjectDetails text-center">
-                                                    <div className="PT1">{t('properties.slider7.title')}</div>
-                                                    <div className="PT2">{t('properties.slider7.subTitle')}</div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </div>
+                                    {/* 1. Divine Al Barari */}
                                     <div>
                                         <Link className="no-hover-color" href="/detail-page/takmeel-al-barari-view-properties">
                                             <div className="FtrProject">
@@ -237,12 +221,14 @@ export default function ProjectsPageHeader() {
                                             </div>
                                         </Link>
                                     </div>
+
+                                    {/* 2. Divine Elements */}
                                     <div>
-                                        <Link className="no-hover-color" href="/detail-page/divine-residencia">
+                                        <Link className="no-hover-color" href="/divine-elements-page">
                                             <div className="FtrProject">
                                                 <div className="ProjectImage">
                                                     <Image
-                                                        src={p2}
+                                                        src={p8}
                                                         width={297}
                                                         height={166}
                                                         layout="responsive"
@@ -250,50 +236,14 @@ export default function ProjectsPageHeader() {
                                                     />
                                                 </div>
                                                 <div className="ProjectDetails text-center">
-                                                    <div className="PT1">{t('properties.slider1.title')}</div>
-                                                    <div className="PT2">{t('properties.slider1.subTitle')}</div>
+                                                    <div className="PT1">{t('properties.slider7.title')}</div>
+                                                    <div className="PT2">{t('properties.slider7.subTitle')}</div>
                                                 </div>
                                             </div>
                                         </Link>
                                     </div>
-                                    <div>
-                                        <Link className="no-hover-color" href="/detail-page/divine-living">
-                                            <div className="FtrProject">
-                                                <div className="ProjectImage">
-                                                    <Image
-                                                        src={p3}
-                                                        width={297}
-                                                        height={166}
-                                                        layout="responsive"
-                                                        alt="Takmeel"
-                                                    />
-                                                </div>
-                                                <div className="ProjectDetails text-center">
-                                                    <div className="PT1">{t('properties.slider2.title')}</div>
-                                                    <div className="PT2">{t('properties.slider2.subTitle')}</div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </div>
-                                    <div>
-                                        <Link className="no-hover-color" href="/detail-page/divine-residences">
-                                            <div className="FtrProject">
-                                                <div className="ProjectImage">
-                                                    <Image
-                                                        src={p4}
-                                                        width={297}
-                                                        height={166}
-                                                        layout="responsive"
-                                                        alt="Takmeel"
-                                                    />
-                                                </div>
-                                                <div className="ProjectDetails text-center">
-                                                    <div className="PT1">{t('properties.slider3.title')}</div>
-                                                    <div className="PT2">{t('properties.slider3.subTitle')}</div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </div>
+
+                                    {/* 3. Meydan Racecourse Mansion */}
                                     <div>
                                         <Link className="no-hover-color" href="/detail-page/meydan-racecourse-mansion">
                                             <div className="FtrProject">
@@ -313,6 +263,110 @@ export default function ProjectsPageHeader() {
                                             </div>
                                         </Link>
                                     </div>
+
+                                    {/* 4. New Project Launch (Dubai South - Blurred) */}
+                                    <div>
+                                        <div className="FtrProject">
+                                            <div className="ProjectImage" style={{ overflow: "hidden" }}>
+                                                <Image
+                                                    src={p10}
+                                                    width={297}
+                                                    height={166}
+                                                    layout="responsive"
+                                                    alt="Takmeel"
+                                                    style={{ filter: "blur(10px)", transform: "scale(1.1)" }}
+                                                />
+                                            </div>
+                                            <div className="ProjectDetails text-center">
+                                                <div className="PT1">{t('properties.slider8.title')}</div>
+                                                <div className="PT2">{t('properties.slider8.subTitle')}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* 5. Divine Villas */}
+                                    <div>
+                                        <div className="FtrProject">
+                                            <div className="ProjectImage">
+                                                <Image
+                                                    src={p7}
+                                                    width={297}
+                                                    height={166}
+                                                    layout="responsive"
+                                                    alt="Takmeel"
+                                                />
+                                            </div>
+                                            <div className="ProjectDetails text-center">
+                                                <div className="PT1">{t('properties.slider9.title')}</div>
+                                                <div className="PT2">{t('properties.slider9.subTitle')}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* 6. Divine Residencia */}
+                                    <div>
+                                        <Link className="no-hover-color" href="/detail-page/divine-residencia">
+                                            <div className="FtrProject">
+                                                <div className="ProjectImage">
+                                                    <Image
+                                                        src={p2}
+                                                        width={297}
+                                                        height={166}
+                                                        layout="responsive"
+                                                        alt="Takmeel"
+                                                    />
+                                                </div>
+                                                <div className="ProjectDetails text-center">
+                                                    <div className="PT1">{t('properties.slider1.title')}</div>
+                                                    <div className="PT2">{t('properties.slider1.subTitle')}</div>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+
+                                    {/* 5. Divine Living */}
+                                    <div>
+                                        <Link className="no-hover-color" href="/detail-page/divine-living">
+                                            <div className="FtrProject">
+                                                <div className="ProjectImage">
+                                                    <Image
+                                                        src={p3}
+                                                        width={297}
+                                                        height={166}
+                                                        layout="responsive"
+                                                        alt="Takmeel"
+                                                    />
+                                                </div>
+                                                <div className="ProjectDetails text-center">
+                                                    <div className="PT1">{t('properties.slider2.title')}</div>
+                                                    <div className="PT2">{t('properties.slider2.subTitle')}</div>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+
+                                    {/* 6. Divine Residences */}
+                                    <div>
+                                        <Link className="no-hover-color" href="/detail-page/divine-residences">
+                                            <div className="FtrProject">
+                                                <div className="ProjectImage">
+                                                    <Image
+                                                        src={p4}
+                                                        width={297}
+                                                        height={166}
+                                                        layout="responsive"
+                                                        alt="Takmeel"
+                                                    />
+                                                </div>
+                                                <div className="ProjectDetails text-center">
+                                                    <div className="PT1">{t('properties.slider3.title')}</div>
+                                                    <div className="PT2">{t('properties.slider3.subTitle')}</div>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+
+                                    {/* 7. Golf View Living Apartments */}
                                     <div>
                                         <Link className="no-hover-color" href="/detail-page/golf-view-living-apartments">
                                             <div className="FtrProject">
@@ -333,6 +387,7 @@ export default function ProjectsPageHeader() {
                                         </Link>
                                     </div>
 
+                                    {/* 8. Golf View Living Villas */}
                                     <div>
                                         <Link className="no-hover-color" href="/detail-page/golf-view-living-villas">
                                             <div className="FtrProject">

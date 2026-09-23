@@ -75,6 +75,18 @@
             "subTitle": "Dubai South",
             "content": "Crafting Elevated Lifestyles"
         },
+        "slider11": {
+            "preTitle": "Featured Properties",
+            "title": "Divine Villas",
+            "subTitle": "JVC, Dubai",
+            "content": "Exclusive Modern Villa Living"
+        },
+        "slider12": {
+            "preTitle": "Coming Soon",
+            "title": "New Project Launch",
+            "subTitle": "Dubai South, Dubai",
+            "content": "Where Visionary Architecture Meets Everyday Luxury"
+        },
         "buttonText": "Explore Property",
         "buttonText2": "Register Now",
         "soldOut": "Sold Out",
@@ -388,6 +400,14 @@
             "slider7": {
                 "title": "Divine Elements",
                 "subTitle": "Dubai South"
+            },
+            "slider8": {
+                "title": "New Project Launch",
+                "subTitle": "Dubai South, Dubai"
+            },
+            "slider9": {
+                "title": "Divine Villas",
+                "subTitle": "JVC, Dubai"
             }
         },
         "slider1": {
@@ -441,6 +461,12 @@
         "soldOut": "Sold Out"
     },
     "Gallery": {
+        "tabs": {
+            "all": "All",
+            "sales": "Sales & Broker activations",
+            "construction": "Construction Updates",
+            "events": "Events and Launches"
+        },
         "title": "OUR GALLERY",
         "subTitle": "Crafted for Inspired Living",
         "content": "Where purposeful design and visionary innovation converge to create spaces that inspire, elevate, and redefine modern living.",

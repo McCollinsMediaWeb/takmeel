@@ -1,9 +1,11 @@
 'use client';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import GalleryRow from "./GalleryRow";
 import { useTranslations } from 'next-intl';
+
 export default function GalleryClient() {
     const t = useTranslations('Gallery');
+    const [selectedCategory, setSelectedCategory] = useState('all');
 
     useEffect(() => {
         const screenWidth = window.innerWidth;
@@ -440,43 +442,97 @@ export default function GalleryClient() {
 
     };
 
+    const showAll = selectedCategory === 'all';
+    const showSales = showAll || selectedCategory === 'sales';
+    const showConstruction = showAll || selectedCategory === 'construction';
+    const showEvents = showAll || selectedCategory === 'events';
+
     return (
         <>
+            <div className="gallery-tabs-wrapper">
+                <div className="gallery-tabs-container">
+                    <button
+                        type="button"
+                        className={`gallery-tab-btn ${selectedCategory === 'all' ? 'active' : ''}`}
+                        onClick={() => setSelectedCategory('all')}
+                    >
+                        {t('tabs.all')}
+                    </button>
+                    <button
+                        type="button"
+                        className={`gallery-tab-btn ${selectedCategory === 'sales' ? 'active' : ''}`}
+                        onClick={() => setSelectedCategory('sales')}
+                    >
+                        {t('tabs.sales')}
+                    </button>
+                    <button
+                        type="button"
+                        className={`gallery-tab-btn ${selectedCategory === 'construction' ? 'active' : ''}`}
+                        onClick={() => setSelectedCategory('construction')}
+                    >
+                        {t('tabs.construction')}
+                    </button>
+                    <button
+                        type="button"
+                        className={`gallery-tab-btn ${selectedCategory === 'events' ? 'active' : ''}`}
+                        onClick={() => setSelectedCategory('events')}
+                    >
+                        {t('tabs.events')}
+                    </button>
+                </div>
+            </div>
 
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t} {...constructionGallerySeptember} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t} {...constructionGalleryJuly} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t} {...latestConstructionGallery} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t}  {...EventGalley} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t}  {...constructionGallery} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t}  {...GalleryData12} />
-            </div>
-            <div className="bg2 NoPagination">
-                <GalleryRow t={t}  {...GalleryData11} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight">
-                <GalleryRow t={t}  {...GalleryData22} />
-            </div>
-            <div className="bg2 NoPagination">
-                <GalleryRow t={t}  {...GalleryData3} />
-            </div>
-            <div className="bg2 NoPagination">
-                <GalleryRow t={t}  {...GalleryData1} />
-            </div>
-            <GalleryRow t={t}  {...GalleryData} />
-            <div className="bg2">
-                <GalleryRow t={t}  {...GalleryData2} />
-            </div>
+            {/* Construction Updates */}
+            {showConstruction && (
+                <>
+                    <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
+                        <GalleryRow t={t} {...constructionGallerySeptember} />
+                    </div>
+                    <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
+                        <GalleryRow t={t} {...constructionGalleryJuly} />
+                    </div>
+                    <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
+                        <GalleryRow t={t} {...latestConstructionGallery} />
+                    </div>
+                    <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
+                        <GalleryRow t={t} {...constructionGallery} />
+                    </div>
+                </>
+            )}
+
+            {/* Sales & Broker Activations */}
+            {showSales && (
+                <>
+                    <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
+                        <GalleryRow t={t} {...EventGalley} />
+                    </div>
+                    <div className="bg2 NoPagination">
+                        <GalleryRow t={t} {...GalleryData11} />
+                    </div>
+                    <div className="bg2 NoPagination FixedImageHeight">
+                        <GalleryRow t={t} {...GalleryData22} />
+                    </div>
+                </>
+            )}
+
+            {/* Events and Launches */}
+            {showEvents && (
+                <>
+                    <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
+                        <GalleryRow t={t} {...GalleryData12} />
+                    </div>
+                    <div className="bg2 NoPagination">
+                        <GalleryRow t={t} {...GalleryData3} />
+                    </div>
+                    <div className="bg2 NoPagination">
+                        <GalleryRow t={t} {...GalleryData1} />
+                    </div>
+                    <GalleryRow t={t} {...GalleryData} />
+                    <div className="bg2">
+                        <GalleryRow t={t} {...GalleryData2} />
+                    </div>
+                </>
+            )}
         </>
     );
 }

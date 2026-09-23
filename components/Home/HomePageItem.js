@@ -188,6 +188,50 @@ export default function HomePageItem() {
       </section>
 
       <section
+        // ref={(el) => (panelsRef.current[5] = el)}
+        className='pageSection'
+      >
+        <ProjectItem
+          backgroundImage="maydan.jpg"
+          backgroundImageMobile="maydan.jpg"
+          text1={t('slider6.preTitle')}
+          text2={t('slider6.title')}
+          text3={t('slider6.subTitle')}
+          tagline={t('slider6.content')}
+          url="meydan-racecourse-mansion" />
+      </section>
+
+      <section
+        className='pageSection'
+      >
+        <ProjectItem
+          backgroundImage="new-project.jpg"
+          backgroundImageMobile="new-project.jpg"
+          text1={t('slider12.preTitle')}
+          text2={t('slider12.title')}
+          text3={t('slider12.subTitle')}
+          tagline={t('slider12.content')}
+          url="#"
+          isBlurred={true}
+        />
+      </section>
+
+      <section
+        className='pageSection'
+      >
+        <ProjectItem
+          backgroundImage="Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg"
+          backgroundImageMobile="vill.jpg"
+          text1={t('slider11.preTitle')}
+          text2={t('slider11.title')}
+          text3={t('slider11.subTitle')}
+          tagline={t('slider11.content')}
+          url="#"
+          projectStatus={t('soldOut')}
+        />
+      </section>
+
+      <section
         // ref={(el) => (panelsRef.current[2] = el)}
         className='pageSection'
       >
@@ -234,20 +278,6 @@ export default function HomePageItem() {
           url="divine-residences"
           projectStatus={t('soldOut')}
         />
-      </section>
-
-      <section
-        // ref={(el) => (panelsRef.current[5] = el)}
-        className='pageSection'
-      >
-        <ProjectItem
-          backgroundImage="maydan.jpg"
-          backgroundImageMobile="maydan.jpg"
-          text1={t('slider6.preTitle')}
-          text2={t('slider6.title')}
-          text3={t('slider6.subTitle')}
-          tagline={t('slider6.content')}
-          url="meydan-racecourse-mansion" />
       </section>
 
       <section

@@ -21,6 +21,7 @@ export default function ProjectItem({
     url,
     projectStatus,
     backgroundVideo = null,
+    isBlurred = false,
     placeholderImage
 }) {
     const t = useTranslations('HomePage');
@@ -189,7 +190,7 @@ export default function ProjectItem({
         */}
                 </>
             ) : (
-                <div>
+                <div style={{ overflow: "hidden" }}>
                     {isDesktop ? (
                         <Image
                             className={text2 === "Meydan Racecourse Mansion" ? "AlignCenterBottomImage" : ""}
@@ -199,6 +200,7 @@ export default function ProjectItem({
                             layout="responsive"
                             alt="Takmeel"
                             loading="lazy"
+                            style={isBlurred ? { filter: "blur(18px)", transform: "scale(1.08)", transition: "filter 0.3s ease" } : {}}
                         />
                     ) : (
                         <Image
@@ -208,6 +210,7 @@ export default function ProjectItem({
                             layout="responsive"
                             alt="Takmeel"
                             loading="lazy"
+                            style={isBlurred ? { filter: "blur(18px)", transform: "scale(1.08)", transition: "filter 0.3s ease" } : {}}
                         />
                     )}
                 </div>
@@ -290,14 +293,16 @@ export default function ProjectItem({
                                     </Link>
                                 )} */}
 
-                                {url === "divine-elements-page" ? (
-                                    <Link href={`/${url}`} className="Link1 hover1">
-                                        {t('buttonText')}
-                                    </Link>
-                                ) : (
-                                    <Link href={`/detail-page/${url}`} className="Link1 hover1">
-                                        {t('buttonText')}
-                                    </Link>
+                                {url && url !== "#" && url !== "dubai-south" && (
+                                    url === "divine-elements-page" ? (
+                                        <Link href={`/${url}`} className="Link1 hover1">
+                                            {t('buttonText')}
+                                        </Link>
+                                    ) : (
+                                        <Link href={`/detail-page/${url}`} className="Link1 hover1">
+                                            {t('buttonText')}
+                                        </Link>
+                                    )
                                 )}
 
                                 {url === "takmeel-al-barari-view-properties" && (
@@ -372,7 +377,7 @@ export default function ProjectItem({
                                         </motion.div>
                                     )} */}
 
-                                    {url !== "dubai-south" && (
+                                    {url && url !== "#" && url !== "dubai-south" && (
                                         <motion.div variants={itemVariants}>
                                             {url === "divine-elements-page" ? (
                                                 <Link href={`/${url}`} className="Link1 hover1">
