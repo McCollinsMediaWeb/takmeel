@@ -56,7 +56,7 @@ export default async function Projects() {
       <ProjectItem backgroundImage="pr2.jpg" backgroundImageMobile="pr2m.jpg" text2="Divine Residencia" text3="Dubai Studio City" />
       <ProjectItem backgroundImage="pr3.jpg" backgroundImageMobile="pr3m.jpg" text2="Divine Living Arjan​" text3="AL Barsha South, Dubai" />
       <ProjectItem backgroundImage="pr4.jpg" backgroundImageMobile="pr4m.jpg" text2="Divine Golf Residences" text3="Al Zorah, Ajman" />
-      <ProjectItem backgroundImage="pr5.jpg" backgroundImageMobile="pr5m.jpg" text2="Meydan Racecourse Mansion" text3="AL Meydan, Nad Al Sheba 1" /> */}
+      <ProjectItem backgroundImage="pr5.jpg" backgroundImageMobile="pr5m.jpg" text2="The Meydan Villa" text3="AL Meydan, Nad Al Sheba 1" /> */}
         {/* <ProjectItem backgroundImage="main1.jpg" backgroundImageMobile="bannerMobileSecondt.jpg" text2="Divine Al Barari" text3="Majan, Dubai" url="takmeel-al-barari-view-properties" /> */}
 
         {/* <ProjectItem backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg" backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg" text1="Now Unveiling" text2="Divine Al Barari" text3="Majan, Dubai" tagline="Urban Living, Reimagined by Nature" url="takmeel-al-barari-view-properties" /> */}

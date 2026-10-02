@@ -170,7 +170,7 @@ export default function MeydanRacecourseMansionClient() {
         text1: t('MeydanMansion.mapSection.title'),
         text2: t('MeydanMansion.mapSection.content'),
         landmarks: [
-            "Meydan Racecourse Mansion",
+            "The Meydan Villa",
             "Contemporary Designs With Top Class Finishing",
             "Peaceful And Luxiourious Community",
             "Top Facilities And Amenities",
@@ -308,7 +308,7 @@ export default function MeydanRacecourseMansionClient() {
             {/* <ProjectDetails5 panoramaimage="/str1.jpg" /> */}
             <ProjectDetails7 mapimage="new5.jpg" mobileMapImage="new5m.jpg"  {...DataProjectDetails7} />
             {/* /<CostCalculator /> */}
-            <PropertyForm projectName="Meydan Racecourse Mansion" />
+            <PropertyForm projectName="The Meydan Villa" />
             <Footer />
             <FooterBottom />
         </div>

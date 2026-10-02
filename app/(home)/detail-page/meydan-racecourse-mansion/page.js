@@ -31,7 +31,7 @@ import MeydanRacecourseMansionClient from "./MeydanRacecourceMansionClient";
 
 //   // Parse title
 //   const titleMatch = metaContent.match(/<title[^>]*>(.*?)<\/title>/i);
-//   const title = titleMatch?.[1] || "Meydan Racecourse Mansion | Takmeel Development";
+//   const title = titleMatch?.[1] || "The Meydan Villa | Takmeel Development";
 
 //   // Parse description
 //   const descMatch = metaContent.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i);
@@ -56,7 +56,7 @@ export default async function MeydanRacecourseMansion() {
     backgroundImage: "maydan.jpg",
     backgroundImageMobile: "maydan.jpg",
     text1: "Where Grandeur Meets Precision",
-    text2: "Meydan Racecourse Mansion",
+    text2: "The Meydan Villa",
     text3: "Dubai",
     brochureLink: null,
     masterPlanLink: null,
@@ -94,7 +94,7 @@ export default async function MeydanRacecourseMansion() {
     text1: "Modern Living in the Heart of Dubai",
     text2: "Unmatched Views, Unparalleled Luxury",
     text3:
-      "Overlooking the iconic Meydan Racecourse, this architectural gem by Takmeel Real Estate defines the pinnacle of bespoke living. The Meydan Racecourse Mansion is more than a home—it’s a statement of timeless elegance, curated for those who desire privacy, prestige, and panoramic views in the heart of Dubai.",
+      "Overlooking the iconic Meydan Racecourse, this architectural gem by Takmeel Real Estate defines the pinnacle of bespoke living. The Meydan Villa is more than a home—it’s a statement of timeless elegance, curated for those who desire privacy, prestige, and panoramic views in the heart of Dubai.",
     GalleryImages: [
       "mk1.jpg",
       "mk2.jpg",
@@ -208,7 +208,7 @@ export default async function MeydanRacecourseMansion() {
     text1: "EFFORTLESS ACCESS TO ALL CORNERS OF THE CITY",
     text2: "The community features residential complexes, commercial buildings and retail developments. Although residential and peaceful, the luxurious residences offer direct and quick access to Sheikh Zayed Road and Umm Suqeim Street allowing fast reach to the whole city.",
     landmarks: [
-      "Meydan Racecourse Mansion",
+      "The Meydan Villa",
       "Contemporary Designs With Top Class Finishing",
       "Peaceful And Luxiourious Community",
       "Top Facilities And Amenities",
@@ -347,7 +347,7 @@ export default async function MeydanRacecourseMansion() {
         <ProjectDetails2  {...DataProjectDetails2} />
         <ProjectDetails4  {...DataProjectDetails4} />
         <ProjectDetails7 mapimage="new5.jpg" mobileMapImage="new5m.jpg"  {...DataProjectDetails7} />
-        <PropertyForm projectName="Meydan Racecourse Mansion" />
+        <PropertyForm projectName="The Meydan Villa" />
         <Footer />
         <FooterBottom />
       </div> */}
