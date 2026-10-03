@@ -31,15 +31,37 @@ export default function ClientComponent() {
                 placeholderImage="divine-element-frame.png" />
 
             <ProjectItem
-                backgroundImage="Divine-Residencia/Divine residencia main facade.jpg"
-                backgroundImageMobile="k1.jpg"
-                text1={t('slider2.preTitle')}
-                text2={t('slider2.title')}
-                text3={t('slider2.subTitle')}
-                tagline={t('slider2.content')}
-                url="divine-residencia"
-                projectStatus={t('soldOut')}
+                backgroundImage="maydan.jpg"
+                backgroundImageMobile="maydan.jpg"
+                text1={t('slider5.preTitle')}
+                text2={t('slider5.title')}
+                text3={t('slider5.subTitle')}
+                tagline={t('slider5.content')}
+                url="meydan-racecourse-mansion"
             />
+
+            <ProjectItem
+                backgroundImage="maydan.jpg"
+                backgroundImageMobile="maydan.jpg"
+                text1={t('slider9.preTitle')}
+                text2={t('slider9.title')}
+                text3={t('slider9.subTitle')}
+                tagline={t('slider9.content')}
+                url="dubai-south"
+                backgroundVideo="south.mp4"
+                placeholderImage="dubai-south-cover.png"
+            />
+
+            <ProjectItem
+                backgroundImage="divine-homes/BEE_9595.jpg"
+                backgroundImageMobile="divine-homes/BEE_9595.jpg"
+                text1={t('slider10.preTitle')}
+                text2={t('slider10.title')}
+                text3={t('slider10.subTitle')}
+                tagline={t('slider10.content')}
+                url="dubai-south"
+            />
+
             <ProjectItem
                 backgroundImage="bannerDesktopFirst.jpg"
                 backgroundImageMobile="bannerMobileFirst.jpg"
@@ -50,6 +72,7 @@ export default function ClientComponent() {
                 url="divine-living"
                 projectStatus={t('soldOut')}
             />
+
             <ProjectItem
                 backgroundImage="ti011.jpg"
                 backgroundImageMobile="t211.jpg"
@@ -60,14 +83,17 @@ export default function ClientComponent() {
                 url="divine-residences"
                 projectStatus={t('soldOut')}
             />
+
             <ProjectItem
-                backgroundImage="maydan.jpg"
-                backgroundImageMobile="maydan.jpg"
-                text1={t('slider5.preTitle')}
-                text2={t('slider5.title')}
-                text3={t('slider5.subTitle')}
-                tagline={t('slider5.content')}
-                url="meydan-racecourse-mansion" />
+                backgroundImage="Divine-Residencia/Divine residencia main facade.jpg"
+                backgroundImageMobile="k1.jpg"
+                text1={t('slider2.preTitle')}
+                text2={t('slider2.title')}
+                text3={t('slider2.subTitle')}
+                tagline={t('slider2.content')}
+                url="divine-residencia"
+                projectStatus={t('soldOut')}
+            />
 
             <ProjectItem
                 backgroundImage="Golf-View-Living-Apartments/Golf Apartments 03.jpg"

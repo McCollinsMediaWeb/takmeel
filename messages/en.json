@@ -42,7 +42,7 @@
         "slider5": {
             "preTitle": "Featured Properties",
             "title": "Divine Residences",
-            "subTitle": "Dubai",
+            "subTitle": "Arjan, Dubai",
             "content": "Smart Spaces Crafted for Modern Lifestyles"
         },
         "slider6": {
@@ -72,7 +72,19 @@
         "slider10": {
             "preTitle": "Featured Properties",
             "title": "Divine Elements",
-            "subTitle": "Dubai South",
+            "subTitle": "Dubai South, Dubai",
+            "content": "Crafting Elevated Lifestyles"
+        },
+        "slider11": {
+            "preTitle": "Coming soon",
+            "title": "New Dubai South Project",
+            "subTitle": "Dubai South, Dubai",
+            "content": "Crafting Elevated Lifestyles"
+        },
+        "slider12": {
+            "preTitle": "Coming soon",
+            "title": "Divine Homes",
+            "subTitle": "JVC, Dubai",
             "content": "Crafting Elevated Lifestyles"
         },
         "buttonText": "Explore Property",
@@ -371,7 +383,7 @@
             },
             "slider3": {
                 "title": "Divine Residences",
-                "subTitle": "Dubai"
+                "subTitle": "Arjan, Dubai"
             },
             "slider4": {
                 "title": "The Meydan Villa",
@@ -387,7 +399,15 @@
             },
             "slider7": {
                 "title": "Divine Elements",
-                "subTitle": "Dubai South"
+                "subTitle": "Dubai South, Dubai"
+            },
+            "slider8": {
+                "title": "New Dubai South Project",
+                "subTitle": "Dubai South, Dubai"
+            },
+            "slider9": {
+                "title": "Divine Homes",
+                "subTitle": "JVC, Dubai"
             }
         },
         "slider1": {
@@ -411,13 +431,13 @@
         "slider4": {
             "preTitle": "Featured Properties",
             "title": "Divine Residences",
-            "subTitle": "Dubai",
+            "subTitle": "Arjan, Dubai",
             "content": "Smart Spaces Crafted for Modern Lifestyles"
         },
         "slider5": {
             "preTitle": "Project Showcase",
             "title": "The Meydan Villa",
-            "subTitle": "Dubai",
+            "subTitle": "Meydan, Dubai",
             "content": "Where Grandeur Meets Precision"
         },
         "slider6": {
@@ -435,7 +455,19 @@
         "slider8": {
             "preTitle": "Featured Properties",
             "title": "Divine Elements",
-            "subTitle": "Dubai South",
+            "subTitle": "Dubai South, Dubai",
+            "content": "Crafting Elevated Lifestyles"
+        },
+        "slider9": {
+            "preTitle": "Coming soon",
+            "title": "New Dubai South Project",
+            "subTitle": "Dubai South, Dubai",
+            "content": "Crafting Elevated Lifestyles"
+        },
+        "slider10": {
+            "preTitle": "Featured Properties",
+            "title": "Divine Homes",
+            "subTitle": "JVC, Dubai",
             "content": "Crafting Elevated Lifestyles"
         },
         "soldOut": "Sold Out"
