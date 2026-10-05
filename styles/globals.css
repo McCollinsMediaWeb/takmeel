@@ -2582,14 +2582,19 @@ input[type="number"] {
 
 .galleryChapterImage img {
   object-fit: cover;
+  object-position: center center;
   filter: brightness(1) saturate(1);
   transition: transform 850ms cubic-bezier(.2, .65, .25, 1), filter 500ms ease, opacity 500ms ease;
+}
+
+.galleryChapterFocusTop .galleryChapterImage img {
+  object-position: center 24%;
 }
 
 .galleryChapterImage:hover img,
 .galleryChapterImage:focus-visible img {
   filter: brightness(1.06) saturate(1.08);
-  transform: scale(1.065);
+  transform: scale(1.035);
 }
 
 .galleryChapterImages:has(.galleryChapterImage:hover) .galleryChapterImage:not(:hover) img {

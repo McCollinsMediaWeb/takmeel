@@ -29,6 +29,7 @@ The title-overlay and navigation regions were inspected at full browser resoluti
 - Image click and “View gallery” tested; the existing lightbox opens at the selected image.
 - Lightbox close behavior tested.
 - Desktop hover treatment includes eased image zoom/brightening, softened neighboring images, responsive captions, and control feedback; reduced-motion preferences disable movement.
+- People-focused galleries use a higher focal point and restrained zoom so faces remain visible; construction imagery retains centered framing.
 - Browser console checked after interaction; no errors or warnings were reported.
 - Production build completed successfully. Existing unrelated Autoprefixer warnings remain.
 

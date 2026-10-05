@@ -13,7 +13,7 @@ import "yet-another-react-lightbox/plugins/thumbnails.css"
 
 const VISIBLE_IMAGES = 3
 
-export default function GalleryRow({ t, text1, subTitle, GalleryImages = [], reverse = false }) {
+export default function GalleryRow({ t, text1, subTitle, GalleryImages = [], reverse = false, focusTop = false }) {
     const [activeIndex, setActiveIndex] = useState(0)
     const [lightboxIndex, setLightboxIndex] = useState(-1)
     const imageCount = GalleryImages.length
@@ -28,7 +28,7 @@ export default function GalleryRow({ t, text1, subTitle, GalleryImages = [], rev
     }
 
     return (
-        <section className={`galleryChapter ${reverse ? "galleryChapterReverse" : ""}`}>
+        <section className={`galleryChapter ${reverse ? "galleryChapterReverse" : ""} ${focusTop ? "galleryChapterFocusTop" : ""}`}>
             <motion.div
                 className="galleryChapterInner"
                 initial={{ opacity: 0, y: 36 }}

@@ -473,9 +473,9 @@ export default function GalleryClient() {
     return (
         <>
             <div className="galleryChapters">
-                <GalleryRow t={t} {...salesAndBrokerActivation} />
+                <GalleryRow t={t} {...salesAndBrokerActivation} focusTop />
                 <GalleryRow t={t} {...constructionUpdates} reverse />
-                <GalleryRow t={t} {...eventsAndLaunches} />
+                <GalleryRow t={t} {...eventsAndLaunches} focusTop />
             </div>
         </>
     );
