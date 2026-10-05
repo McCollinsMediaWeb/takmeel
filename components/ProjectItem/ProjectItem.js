@@ -294,6 +294,8 @@ export default function ProjectItem({
                                     <Link href={`/${url}`} className="Link1 hover1">
                                         {t('buttonText')}
                                     </Link>
+                                ) : url === "dubai-south" ? (
+                                    null
                                 ) : (
                                     <Link href={`/detail-page/${url}`} className="Link1 hover1">
                                         {t('buttonText')}

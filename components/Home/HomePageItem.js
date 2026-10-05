@@ -188,19 +188,48 @@ export default function HomePageItem() {
       </section>
 
       <section
-        // ref={(el) => (panelsRef.current[2] = el)}
+        // ref={(el) => (panelsRef.current[5] = el)}
         className='pageSection'
       >
         <ProjectItem
-          backgroundImage="Divine-Residencia/Divine residencia main facade.jpg"
-          backgroundImageMobile="k1.jpg"
-          text1={t('slider3.preTitle')}
-          text2={t('slider3.title')}
-          text3={t('slider3.subTitle')}
-          tagline={t('slider3.content')}
-          url="divine-residencia"
-          projectStatus={t('soldOut')}
+          backgroundImage="maydan.jpg"
+          backgroundImageMobile="maydan.jpg"
+          text1={t('slider6.preTitle')}
+          text2={t('slider6.title')}
+          text3={t('slider6.subTitle')}
+          tagline={t('slider6.content')}
+          url="meydan-racecourse-mansion" />
+      </section>
+
+      <section
+        // ref={(el) => (panelsRef.current[1] = el)}
+        className='pageSection'
+      >
+        <ProjectItem
+          backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg"
+          backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"
+          text1={t('slider11.preTitle')}
+          text2={t('slider11.title')}
+          text3={t('slider11.subTitle')}
+          tagline={t('slider11.content')}
+          url="dubai-south"
+          backgroundVideo="south.mp4"
+          placeholderImage="dubai-south-cover.png"
         />
+      </section>
+
+      <section
+        // ref={(el) => (panelsRef.current[5] = el)}
+        className='pageSection'
+      >
+        <ProjectItem
+          backgroundImage="divine-homes/BEE_9595.jpg"
+          backgroundImageMobile="divine-homes/BEE_9595.jpg"
+          text1={t('slider12.preTitle')}
+          text2={t('slider12.title')}
+          text3={t('slider12.subTitle')}
+          tagline={t('slider12.content')}
+          url="dubai-south" />
       </section>
 
       <section
@@ -237,17 +266,19 @@ export default function HomePageItem() {
       </section>
 
       <section
-        // ref={(el) => (panelsRef.current[5] = el)}
+        // ref={(el) => (panelsRef.current[2] = el)}
         className='pageSection'
       >
         <ProjectItem
-          backgroundImage="maydan.jpg"
-          backgroundImageMobile="maydan.jpg"
-          text1={t('slider6.preTitle')}
-          text2={t('slider6.title')}
-          text3={t('slider6.subTitle')}
-          tagline={t('slider6.content')}
-          url="meydan-racecourse-mansion" />
+          backgroundImage="Divine-Residencia/Divine residencia main facade.jpg"
+          backgroundImageMobile="k1.jpg"
+          text1={t('slider3.preTitle')}
+          text2={t('slider3.title')}
+          text3={t('slider3.subTitle')}
+          tagline={t('slider3.content')}
+          url="divine-residencia"
+          projectStatus={t('soldOut')}
+        />
       </section>
 
       <section
