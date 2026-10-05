@@ -444,6 +444,11 @@
         "title": "OUR GALLERY",
         "subTitle": "Crafted for Inspired Living",
         "content": "Where purposeful design and visionary innovation converge to create spaces that inspire, elevate, and redefine modern living.",
+        "categories": {
+            "salesAndBrokerActivation": "Sales & Broker Activation",
+            "constructionUpdates": "Construction Updates",
+            "eventsAndLaunches": "Events & Launches"
+        },
         "section1": {
             "subTitle": "TAKMEEL",
             "title": "Ajman Exhibition"

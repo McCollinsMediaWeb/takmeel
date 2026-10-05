@@ -440,42 +440,42 @@ export default function GalleryClient() {
 
     };
 
+    const salesAndBrokerActivation = {
+        text1: t('categories.salesAndBrokerActivation'),
+        GalleryImages: [
+            ...EventGalley.GalleryImages,
+            ...GalleryData11.GalleryImages,
+        ],
+    };
+
+    const constructionUpdates = {
+        text1: t('categories.constructionUpdates'),
+        GalleryImages: [
+            ...constructionGallerySeptember.GalleryImages,
+            ...constructionGalleryJuly.GalleryImages,
+            ...latestConstructionGallery.GalleryImages,
+            ...constructionGallery.GalleryImages,
+        ],
+    };
+
+    const eventsAndLaunches = {
+        text1: t('categories.eventsAndLaunches'),
+        GalleryImages: [
+            ...GalleryData12.GalleryImages,
+            ...GalleryData22.GalleryImages,
+            ...GalleryData3.GalleryImages,
+            ...GalleryData1.GalleryImages,
+            ...GalleryData.GalleryImages,
+            ...GalleryData2.GalleryImages,
+        ],
+    };
+
     return (
         <>
-
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t} {...constructionGallerySeptember} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t} {...constructionGalleryJuly} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t} {...latestConstructionGallery} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t}  {...EventGalley} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t}  {...constructionGallery} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t}  {...GalleryData12} />
-            </div>
-            <div className="bg2 NoPagination">
-                <GalleryRow t={t}  {...GalleryData11} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight">
-                <GalleryRow t={t}  {...GalleryData22} />
-            </div>
-            <div className="bg2 NoPagination">
-                <GalleryRow t={t}  {...GalleryData3} />
-            </div>
-            <div className="bg2 NoPagination">
-                <GalleryRow t={t}  {...GalleryData1} />
-            </div>
-            <GalleryRow t={t}  {...GalleryData} />
-            <div className="bg2">
-                <GalleryRow t={t}  {...GalleryData2} />
+            <div className="galleryChapters">
+                <GalleryRow t={t} {...salesAndBrokerActivation} />
+                <GalleryRow t={t} {...constructionUpdates} reverse />
+                <GalleryRow t={t} {...eventsAndLaunches} />
             </div>
         </>
     );
