@@ -28,6 +28,7 @@ The title-overlay and navigation regions were inspected at full browser resoluti
 - Previous/next controls tested; the visible image set advances correctly.
 - Image click and “View gallery” tested; the existing lightbox opens at the selected image.
 - Lightbox close behavior tested.
+- Desktop hover treatment includes eased image zoom/brightening, softened neighboring images, responsive captions, and control feedback; reduced-motion preferences disable movement.
 - Browser console checked after interaction; no errors or warnings were reported.
 - Production build completed successfully. Existing unrelated Autoprefixer warnings remain.
 
@@ -36,7 +37,7 @@ The title-overlay and navigation regions were inspected at full browser resoluti
 1. Initial pass: title overlay occupied too much of each dominant photo (P2).
 2. Fix: reduced the overlay to a compact content-width caption block.
 3. Post-fix evidence: final 1440 × 1024 browser capture shows all three image compositions remaining dominant with readable, consistently aligned captions.
-4. Full-width refinement: removed the 1340px container cap and expanded chapter height to a responsive 340–460px range after the original implementation felt too small.
+4. Full-width refinement: removed the 1340px container cap and expanded chapter height to a responsive 380–510px range after the original implementation felt too small.
 5. Post-refinement evidence: the final 1440 × 1024 browser capture shows edge-to-edge imagery, larger subjects, and preserved overlay/control alignment without horizontal overflow.
 
 ## Implementation checklist

@@ -2559,7 +2559,7 @@ input[type="number"] {
   display: grid;
   grid-template-columns: minmax(0, 1.7fr) minmax(220px, .7fr) minmax(190px, .52fr);
   gap: 8px;
-  height: clamp(340px, 27vw, 460px);
+  height: clamp(380px, 30vw, 510px);
   overflow: hidden;
 }
 
@@ -2582,11 +2582,19 @@ input[type="number"] {
 
 .galleryChapterImage img {
   object-fit: cover;
-  transition: transform 700ms cubic-bezier(.2, .65, .25, 1);
+  filter: brightness(1) saturate(1);
+  transition: transform 850ms cubic-bezier(.2, .65, .25, 1), filter 500ms ease, opacity 500ms ease;
 }
 
 .galleryChapterImage:hover img,
-.galleryChapterImage:focus-visible img { transform: scale(1.035); }
+.galleryChapterImage:focus-visible img {
+  filter: brightness(1.06) saturate(1.08);
+  transform: scale(1.065);
+}
+
+.galleryChapterImages:has(.galleryChapterImage:hover) .galleryChapterImage:not(:hover) img {
+  filter: brightness(.86) saturate(.9);
+}
 
 .galleryChapterReverse .galleryChapterImage1 { grid-column: 3; grid-row: 1; }
 .galleryChapterReverse .galleryChapterImage2 { grid-column: 1; grid-row: 1; }
@@ -2604,6 +2612,12 @@ input[type="number"] {
   color: #fff;
   background: rgba(16, 16, 15, .72);
   pointer-events: none;
+  transition: background-color 400ms ease, transform 500ms cubic-bezier(.2, .65, .25, 1);
+}
+
+.galleryChapterImages:hover .galleryChapterOverlay {
+  background: rgba(16, 16, 15, .8);
+  transform: translateY(-5px);
 }
 
 .galleryChapterReverse .galleryChapterOverlay {
@@ -2651,6 +2665,13 @@ input[type="number"] {
   font: inherit;
   cursor: pointer;
   pointer-events: auto;
+  transition: color 250ms ease, letter-spacing 350ms ease;
+}
+
+.galleryChapterMeta button:hover,
+.galleryChapterMeta button:focus-visible {
+  color: #fff;
+  letter-spacing: .035em;
 }
 
 .galleryChapterControls {
@@ -2674,17 +2695,35 @@ input[type="number"] {
   background: rgba(21, 21, 20, .68);
   backdrop-filter: blur(8px);
   cursor: pointer;
-  transition: background-color .25s ease, border-color .25s ease;
+  transition: background-color .25s ease, border-color .25s ease, transform .3s ease;
 }
 
 .galleryChapterControls button:hover,
 .galleryChapterControls button:focus-visible {
   border-color: #d3ae69;
   background: #d3ae69;
+  transform: scale(1.08);
 }
 
 .galleryChapterArrow { filter: invert(1); object-fit: contain; }
 .galleryChapterArrowPrevious { transform: rotate(180deg); }
+
+@media (prefers-reduced-motion: reduce) {
+  .galleryChapterImage img,
+  .galleryChapterOverlay,
+  .galleryChapterMeta button,
+  .galleryChapterControls button {
+    transition: none;
+  }
+
+  .galleryChapterImage:hover img,
+  .galleryChapterImage:focus-visible img,
+  .galleryChapterImages:hover .galleryChapterOverlay,
+  .galleryChapterControls button:hover,
+  .galleryChapterControls button:focus-visible {
+    transform: none;
+  }
+}
 
 @media (max-width: 1024px) {
   .galleryChapters { padding: 44px 0 60px; }
