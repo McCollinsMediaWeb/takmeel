@@ -482,7 +482,7 @@
       "description": "Browse our latest activations, construction milestones, and signature events.",
       "navigationLabel": "Gallery categories",
       "collections": "collections",
-      "salesAndBrokerActivations": "Sales & Broker Activations",
+      "salesAndBrokerActivations": "Sales",
             "constructionUpdates": "Construction Updates",
             "eventsAndLaunches": "Events & Launches"
         },
