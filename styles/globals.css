@@ -2540,219 +2540,59 @@ input[type="number"] {
   opacity: 1;
 }
 
-.galleryChapters {
+.galleryCategorySection {
   background: #f7f5f0;
-  padding: 34px 0 72px;
 }
 
-.galleryChapter {
-  width: 100%;
-  max-width: none;
-  margin: 0 0 10px;
-  padding: 0;
+.galleryCategoryHeading {
+  padding: 82px 6vw 30px;
+  text-align: center;
 }
 
-.galleryChapter:last-child { margin-bottom: 0; }
-
-.galleryChapterImages {
-  position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1.7fr) minmax(220px, .7fr) minmax(190px, .52fr);
-  gap: 8px;
-  height: clamp(380px, 30vw, 510px);
-  overflow: hidden;
-}
-
-.galleryChapterReverse .galleryChapterImages {
-  grid-template-columns: minmax(190px, .52fr) minmax(220px, .7fr) minmax(0, 1.7fr);
-}
-
-.galleryChapterImage {
-  position: relative;
+.galleryCategoryHeading span {
   display: block;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  border-radius: 0;
-  background: #d9d4ca;
-  cursor: pointer;
-}
-
-.galleryChapterImage img {
-  object-fit: cover;
-  object-position: center center;
-  filter: brightness(1) saturate(1);
-  transition: transform 850ms cubic-bezier(.2, .65, .25, 1), filter 500ms ease, opacity 500ms ease;
-}
-
-.galleryChapterFocusTop .galleryChapterImage img {
-  object-position: center 24%;
-}
-
-.galleryChapterImage:hover img,
-.galleryChapterImage:focus-visible img {
-  filter: brightness(1.06) saturate(1.08);
-  transform: scale(1.035);
-}
-
-.galleryChapterImages:has(.galleryChapterImage:hover) .galleryChapterImage:not(:hover) img {
-  filter: brightness(.86) saturate(.9);
-}
-
-.galleryChapterReverse .galleryChapterImage1 { grid-column: 3; grid-row: 1; }
-.galleryChapterReverse .galleryChapterImage2 { grid-column: 1; grid-row: 1; }
-.galleryChapterReverse .galleryChapterImage3 { grid-column: 2; grid-row: 1; }
-
-.galleryChapterOverlay {
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  bottom: 0;
-  width: auto;
-  min-width: 46%;
-  max-width: 58%;
-  padding: 18px 38px 22px;
-  color: #fff;
-  background: rgba(16, 16, 15, .72);
-  pointer-events: none;
-  transition: background-color 400ms ease, transform 500ms cubic-bezier(.2, .65, .25, 1);
-}
-
-.galleryChapterImages:hover .galleryChapterOverlay {
-  background: rgba(16, 16, 15, .8);
-  transform: translateY(-5px);
-}
-
-.galleryChapterReverse .galleryChapterOverlay {
-  left: auto;
-  right: 0;
-  text-align: left;
-}
-
-.galleryChapterEyebrow {
-  margin-bottom: 3px;
-  color: #d3ae69;
+  margin-bottom: 8px;
+  color: #b69a68;
   font-family: var(--font-nunito), sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: .12em;
+  font-size: 13px;
+  letter-spacing: .14em;
   text-transform: uppercase;
 }
 
-.galleryChapterOverlay h2 {
+.galleryCategoryHeading h2 {
   margin: 0;
-  color: #fff;
-  font-size: clamp(27px, 2.55vw, 42px);
+  color: #1d1d1b;
+  font-size: clamp(34px, 4vw, 58px);
   font-weight: 400;
-  line-height: 1.08;
+  line-height: 1.1;
   text-transform: none;
 }
 
-.galleryChapterMeta {
-  display: flex;
-  align-items: center;
-  gap: 36px;
-  margin-top: 10px;
-  font-family: var(--font-nunito), sans-serif;
-  font-size: 13px;
+.galleryCategoryHeading::after {
+  display: block;
+  width: 64px;
+  height: 1px;
+  margin: 24px auto 0;
+  background: #b69a68;
+  content: "";
 }
 
-.galleryChapterMeta button {
-  position: relative;
-  padding: 0 0 3px;
-  border: 0;
-  border-bottom: 1px solid #d3ae69;
-  border-radius: 0;
-  color: #e1c388;
-  background: transparent;
-  font: inherit;
-  cursor: pointer;
-  pointer-events: auto;
-  transition: color 250ms ease, letter-spacing 350ms ease;
-}
-
-.galleryChapterMeta button:hover,
-.galleryChapterMeta button:focus-visible {
-  color: #fff;
-  letter-spacing: .035em;
-}
-
-.galleryChapterControls {
-  position: absolute;
-  z-index: 3;
-  right: 18px;
-  top: 50%;
-  display: flex;
-  gap: 8px;
-  transform: translateY(-50%);
-}
-
-.galleryChapterControls button {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  padding: 0;
-  place-items: center;
-  border: 1px solid rgba(255, 255, 255, .75);
-  border-radius: 50%;
-  background: rgba(21, 21, 20, .68);
-  backdrop-filter: blur(8px);
-  cursor: pointer;
-  transition: background-color .25s ease, border-color .25s ease, transform .3s ease;
-}
-
-.galleryChapterControls button:hover,
-.galleryChapterControls button:focus-visible {
-  border-color: #d3ae69;
-  background: #d3ae69;
-  transform: scale(1.08);
-}
-
-.galleryChapterArrow { filter: invert(1); object-fit: contain; }
-.galleryChapterArrowPrevious { transform: rotate(180deg); }
-
-@media (prefers-reduced-motion: reduce) {
-  .galleryChapterImage img,
-  .galleryChapterOverlay,
-  .galleryChapterMeta button,
-  .galleryChapterControls button {
-    transition: none;
+@media (max-width: 767px) {
+  .galleryCategoryHeading {
+    padding: 46px 20px 18px;
   }
 
-  .galleryChapterImage:hover img,
-  .galleryChapterImage:focus-visible img,
-  .galleryChapterImages:hover .galleryChapterOverlay,
-  .galleryChapterControls button:hover,
-  .galleryChapterControls button:focus-visible {
-    transform: none;
+  .galleryCategoryHeading span {
+    font-size: 11px;
   }
-}
 
-@media (max-width: 1024px) {
-  .galleryChapters { padding: 44px 0 60px; }
-  .galleryChapter { padding: 0 20px; margin-bottom: 14px; }
-  .galleryChapterImages,
-  .galleryChapterReverse .galleryChapterImages { grid-template-columns: 1.4fr .8fr; height: 360px; }
-  .galleryChapterImage3 { display: none; }
-  .galleryChapterReverse .galleryChapterImage1,
-  .galleryChapterReverse .galleryChapterImage2 { grid-column: auto; grid-row: auto; }
-  .galleryChapterOverlay,
-  .galleryChapterReverse .galleryChapterOverlay { left: 0; right: auto; width: auto; min-width: 62%; max-width: 72%; text-align: left; }
-}
+  .galleryCategoryHeading h2 {
+    font-size: 30px;
+  }
 
-@media (max-width: 600px) {
-  .galleryChapters { padding: 24px 0 40px; }
-  .galleryChapter { padding: 0 14px; margin-bottom: 12px; }
-  .galleryChapterImages,
-  .galleryChapterReverse .galleryChapterImages { display: block; height: 360px; }
-  .galleryChapterImage:not(.galleryChapterImage1) { display: none; }
-  .galleryChapterOverlay,
-  .galleryChapterReverse .galleryChapterOverlay { width: auto; min-width: 78%; max-width: calc(100% - 14px); padding: 18px 22px 22px; }
-  .galleryChapterOverlay h2 { max-width: calc(100% - 50px); font-size: 29px; }
-  .galleryChapterControls { right: 14px; top: 22px; transform: none; }
-  .galleryChapterControls button { width: 36px; height: 36px; }
+  .galleryCategoryHeading::after {
+    margin-top: 16px;
+  }
 }
 
 .AbsPos {

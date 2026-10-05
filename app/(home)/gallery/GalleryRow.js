@@ -1,87 +1,201 @@
+
+
 "use client"
 
-import { useState } from "react"
-import { motion } from "framer-motion"
+import { useRef, useState, useEffect } from "react"
+import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion"
+import Link from "next/link"
 import Image from "next/image"
-import Lightbox from "yet-another-react-lightbox"
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails"
-import Video from "yet-another-react-lightbox/plugins/video"
-import Zoom from "yet-another-react-lightbox/plugins/zoom"
+import Lightbox from "yet-another-react-lightbox";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import Video from "yet-another-react-lightbox/plugins/video";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
 
-import "yet-another-react-lightbox/styles.css"
-import "yet-another-react-lightbox/plugins/thumbnails.css"
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+import Slider from "react-slick";
 
-const VISIBLE_IMAGES = 3
+export default function GalleryRow({ t, text1, subTitle, GalleryImages }) {
 
-export default function GalleryRow({ t, text1, subTitle, GalleryImages = [], reverse = false, focusTop = false }) {
-    const [activeIndex, setActiveIndex] = useState(0)
-    const [lightboxIndex, setLightboxIndex] = useState(-1)
-    const imageCount = GalleryImages.length
-    const visibleImages = Array.from({ length: Math.min(VISIBLE_IMAGES, imageCount) }, (_, offset) => {
-        const index = (activeIndex + offset) % imageCount
-        return { src: GalleryImages[index], index }
-    })
-
-    const changeSlide = (direction) => {
-        if (!imageCount) return
-        setActiveIndex((current) => (current + direction + imageCount) % imageCount)
+    const slickRef = useRef(null);
+    const sliderRef = useRef(null);
+    const [inView, setInView] = useState(false);
+    const [open, setOpen] = useState(false);
+    const containerVariants = {
+        hidden: { opacity: 0, y: 40 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.6,
+                ease: "easeOut",
+                when: "beforeChildren",
+                staggerChildren: 0.2,
+            },
+        },
     }
 
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+    }
+
+    const animationVariants = [
+        {
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+        },
+        {
+            hidden: { opacity: 0, scale: 0.8 },
+            visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeOut" } },
+        },
+        {
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+        },
+        {
+            hidden: { opacity: 0, rotate: -10 },
+            visible: { opacity: 1, rotate: 0, transition: { duration: 0.8, ease: "easeOut" } },
+        },
+    ];
+    const fadeVariant = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { duration: 0.6, ease: 'easeOut' } },
+    };
+    var settings = {
+        dots: true,
+        // speed: 6000,
+        speed: 900,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        initialSlide: 1,
+        infinite: true,
+        // autoplay: true,
+        autoplaySpeed: 0,
+        centerMode: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                    centerMode: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1,
+                    centerMode: true
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true
+                }
+            }
+        ]
+    };
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setInView(true);
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        const currentSlider = sliderRef.current;
+
+        if (currentSlider) {
+            observer.observe(currentSlider);
+        }
+
+        return () => {
+            if (currentSlider) {
+                observer.unobserve(currentSlider);
+            }
+        };
+    }, []);
+
+    useEffect(() => {
+        let timer;
+        if (inView && slickRef.current) {
+            // Start autoplay after 2 seconds delay
+            timer = setTimeout(() => {
+                // slickRef.current.slickPlay();
+            }, 2000);
+        } else {
+            // If out of view, pause autoplay immediately
+            // if (slickRef.current) slickRef.current.slickPause();
+        }
+
+        // Clear timer on cleanup to avoid memory leaks
+        return () => clearTimeout(timer);
+    }, [inView]);
+
+
     return (
-        <section className={`galleryChapter ${reverse ? "galleryChapterReverse" : ""} ${focusTop ? "galleryChapterFocusTop" : ""}`}>
+        <div className="galleryBoxRow pd-common container-fluid bg2">
             <motion.div
-                className="galleryChapterInner"
-                initial={{ opacity: 0, y: 36 }}
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.65, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: true }} // triggers when 50% of it is in view
             >
-                <div className="galleryChapterImages">
-                    {visibleImages.map(({ src, index }, position) => (
-                        <button
-                            type="button"
-                            className={`galleryChapterImage galleryChapterImage${position + 1}`}
-                            key={`${src}-${index}`}
-                            onClick={() => setLightboxIndex(index)}
-                            aria-label={`Open image ${index + 1} of ${imageCount}`}
-                        >
-                            <Image
-                                src={`/${src}`}
-                                fill
-                                sizes={position === 0 ? "(min-width: 1024px) 56vw, 100vw" : "(min-width: 1024px) 22vw, 50vw"}
-                                alt={`${text1} — image ${index + 1}`}
-                                loading="lazy"
-                            />
-                        </button>
-                    ))}
+                <div className="Txt1 nunito-text text-center mb-1">{subTitle || t('section1.subTitle')}</div>
+                <div className="BlT2 text-uppercase text-center" dir="ltr">{text1}</div>
+            </motion.div>
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: true }} // triggers when 50% of it is in view
+            >
+                <div ref={sliderRef} >
+                    <Slider ref={slickRef} {...settings}>
+                        {GalleryImages?.map((img, index) => {
+                            const randomVariant = animationVariants[Math.floor(Math.random() * animationVariants.length)];
+                            return (
+                                <div key={index} className="" onClick={() => setOpen(true)}>
 
-                    <div className="galleryChapterOverlay">
-                        <div className="galleryChapterEyebrow">{subTitle || t("section1.subTitle")}</div>
-                        <h2>{text1}</h2>
-                        <div className="galleryChapterMeta">
-                            <span>{imageCount} Images</span>
-                            <button type="button" onClick={() => setLightboxIndex(activeIndex)}>View gallery</button>
-                        </div>
-                    </div>
+                                    <div className="GalleryImageBox">
+                                        <Image
+                                            src={`/${img}`}
+                                            width={2000}
+                                            height={1125}
+                                            layout="responsive"
+                                            alt="Takmeel"
+                                            loading="lazy"
+                                        />
+                                    </div>
+                                </div>
+                            );
+                        })}
 
-                    <div className="galleryChapterControls" aria-label={`${text1} gallery controls`}>
-                        <button type="button" onClick={() => changeSlide(-1)} aria-label="Previous images">
-                            <Image src="/next.png" width={18} height={18} alt="" className="galleryChapterArrow galleryChapterArrowPrevious" />
-                        </button>
-                        <button type="button" onClick={() => changeSlide(1)} aria-label="Next images">
-                            <Image src="/next.png" width={18} height={18} alt="" className="galleryChapterArrow" />
-                        </button>
-                    </div>
+
+                    </Slider>
                 </div>
             </motion.div>
-
             <Lightbox
-                open={lightboxIndex >= 0}
-                index={Math.max(lightboxIndex, 0)}
-                close={() => setLightboxIndex(-1)}
+                open={open}
+                close={() => setOpen(false)}
                 plugins={[Video, Thumbnails, Zoom]}
-                slides={GalleryImages.map((img) => ({ src: `/${img}` }))}
+                slides={
+                    GalleryImages?.map((img) => ({
+                        src: `/${img}`,
+                    }))
+                }
             />
-        </section>
+        </div>
     )
 }
