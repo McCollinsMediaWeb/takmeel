@@ -444,9 +444,13 @@
         "title": "معرضنا",
         "subTitle": "صُمّم من أجل أسلوب حياة مُلهم",
         "content": "عندما يجتمع التصميم الهادف مع الابتكار المستقبلي، تتكوّن مساحات تلهم وتُرقّي وتُعيد تصور الحياة العصرية.",
-        "categories": {
-            "eyebrow": "استكشف معرضنا",
-            "salesAndBrokerActivations": "المبيعات وتفعيل الوسطاء",
+    "categories": {
+      "eyebrow": "استكشف معرضنا",
+      "title": "لحظات تصنع قصتنا",
+      "description": "تصفح أحدث فعالياتنا ومراحل الإنشاء وأبرز مناسباتنا.",
+      "navigationLabel": "فئات المعرض",
+      "collections": "مجموعات",
+      "salesAndBrokerActivations": "المبيعات وتفعيل الوسطاء",
             "constructionUpdates": "تحديثات الإنشاءات",
             "eventsAndLaunches": "الفعاليات والإطلاقات"
         },
