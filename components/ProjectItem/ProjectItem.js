@@ -21,7 +21,8 @@ export default function ProjectItem({
     url,
     projectStatus,
     backgroundVideo = null,
-    placeholderImage
+    placeholderImage,
+    blurBackground = false
 }) {
     const t = useTranslations('HomePage');
     const [startLoop, setStartLoop] = useState(false);
@@ -149,6 +150,7 @@ export default function ProjectItem({
                         <img
                             src={placeholderImage} // replace with your placeholder image (e.g., first frame)
                             alt="video preview"
+                            className={blurBackground ? "ProjectMediaBlur" : ""}
                             style={{
                                 width: '100%',
                                 height: '100%',
@@ -163,6 +165,7 @@ export default function ProjectItem({
 
                     <video
                         src={`/${backgroundVideo}`}
+                        className={blurBackground ? "ProjectMediaBlur" : ""}
                         autoPlay
                         loop
                         muted
@@ -192,7 +195,7 @@ export default function ProjectItem({
                 <div>
                     {isDesktop ? (
                         <Image
-                            className={text2 === "The Meydan Villa" ? "AlignCenterBottomImage" : ""}
+                            className={`${text2 === "The Meydan Villa" ? "AlignCenterBottomImage" : ""} ${blurBackground ? "ProjectMediaBlur" : ""}`.trim()}
                             src={`/${backgroundImage}`}
                             width={1338}
                             height={714}
@@ -202,6 +205,7 @@ export default function ProjectItem({
                         />
                     ) : (
                         <Image
+                            className={blurBackground ? "ProjectMediaBlur" : ""}
                             src={`/${backgroundImageMobile}`}
                             width={697}
                             height={768}

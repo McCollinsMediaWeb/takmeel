@@ -50,6 +50,7 @@ export default function ClientComponent() {
                 url="dubai-south"
                 backgroundVideo="south.mp4"
                 placeholderImage="dubai-south-cover.png"
+                blurBackground
             />
 
             <ProjectItem

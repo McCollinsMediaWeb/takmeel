@@ -2532,6 +2532,11 @@ input[type="number"] {
   transform: scale(1.025);
 }
 
+.ProjectMediaBlur {
+  filter: blur(10px);
+  transform: scale(1.04);
+}
+
 .ImagePositionTop .GalleryImageBox img {
   object-fit: cover;
   object-position: 50% 30%;
