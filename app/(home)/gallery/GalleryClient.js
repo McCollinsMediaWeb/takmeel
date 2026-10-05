@@ -442,41 +442,94 @@ export default function GalleryClient() {
 
     return (
         <>
+            <div className="galleryDirectory">
+                <div className="galleryDirectoryIntro">
+                    <span>{t('categories.eyebrow')}</span>
+                    <h2>{t('categories.title')}</h2>
+                    <p>{t('categories.description')}</p>
+                </div>
+                <nav className="galleryDirectoryNav" aria-label={t('categories.navigationLabel')}>
+                    <a href="#sales-broker-activations">
+                        <span>01</span>
+                        <strong>{t('categories.salesAndBrokerActivations')}</strong>
+                        <small>2 {t('categories.collections')}</small>
+                    </a>
+                    <a href="#construction-updates">
+                        <span>02</span>
+                        <strong>{t('categories.constructionUpdates')}</strong>
+                        <small>4 {t('categories.collections')}</small>
+                    </a>
+                    <a href="#events-launches">
+                        <span>03</span>
+                        <strong>{t('categories.eventsAndLaunches')}</strong>
+                        <small>6 {t('categories.collections')}</small>
+                    </a>
+                </nav>
+            </div>
 
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t} {...constructionGallerySeptember} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t} {...constructionGalleryJuly} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t} {...latestConstructionGallery} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t}  {...EventGalley} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t}  {...constructionGallery} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
-                <GalleryRow t={t}  {...GalleryData12} />
-            </div>
-            <div className="bg2 NoPagination">
-                <GalleryRow t={t}  {...GalleryData11} />
-            </div>
-            <div className="bg2 NoPagination FixedImageHeight">
-                <GalleryRow t={t}  {...GalleryData22} />
-            </div>
-            <div className="bg2 NoPagination">
-                <GalleryRow t={t}  {...GalleryData3} />
-            </div>
-            <div className="bg2 NoPagination">
-                <GalleryRow t={t}  {...GalleryData1} />
-            </div>
-            <GalleryRow t={t}  {...GalleryData} />
-            <div className="bg2">
-                <GalleryRow t={t}  {...GalleryData2} />
-            </div>
+            <section className="galleryCategorySection" id="sales-broker-activations">
+                <div className="galleryCategoryHeading">
+                    <span className="galleryCategoryNumber">01</span>
+                    <div>
+                        <small>2 {t('categories.collections')}</small>
+                        <h2>{t('categories.salesAndBrokerActivations')}</h2>
+                    </div>
+                </div>
+                <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
+                    <GalleryRow t={t} {...EventGalley} />
+                </div>
+                <div className="bg2 NoPagination">
+                    <GalleryRow t={t} {...GalleryData11} />
+                </div>
+            </section>
+
+            <section className="galleryCategorySection" id="construction-updates">
+                <div className="galleryCategoryHeading">
+                    <span className="galleryCategoryNumber">02</span>
+                    <div>
+                        <small>4 {t('categories.collections')}</small>
+                        <h2>{t('categories.constructionUpdates')}</h2>
+                    </div>
+                </div>
+                <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
+                    <GalleryRow t={t} {...constructionGallerySeptember} />
+                </div>
+                <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
+                    <GalleryRow t={t} {...constructionGalleryJuly} />
+                </div>
+                <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
+                    <GalleryRow t={t} {...latestConstructionGallery} />
+                </div>
+                <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
+                    <GalleryRow t={t} {...constructionGallery} />
+                </div>
+            </section>
+
+            <section className="galleryCategorySection" id="events-launches">
+                <div className="galleryCategoryHeading">
+                    <span className="galleryCategoryNumber">03</span>
+                    <div>
+                        <small>6 {t('categories.collections')}</small>
+                        <h2>{t('categories.eventsAndLaunches')}</h2>
+                    </div>
+                </div>
+                <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
+                    <GalleryRow t={t} {...GalleryData12} />
+                </div>
+                <div className="bg2 NoPagination FixedImageHeight">
+                    <GalleryRow t={t} {...GalleryData22} />
+                </div>
+                <div className="bg2 NoPagination">
+                    <GalleryRow t={t} {...GalleryData3} />
+                </div>
+                <div className="bg2 NoPagination">
+                    <GalleryRow t={t} {...GalleryData1} />
+                </div>
+                <GalleryRow t={t} {...GalleryData} />
+                <div className="bg2">
+                    <GalleryRow t={t} {...GalleryData2} />
+                </div>
+            </section>
         </>
     );
 }
