@@ -440,8 +440,8 @@ export default function GalleryClient() {
 
     };
 
-    const salesAndBrokerActivation = {
-        text1: t('categories.salesAndBrokerActivation'),
+    const salesAndBrokerActivations = {
+        text1: t('categories.salesAndBrokerActivations'),
         GalleryImages: [
             ...EventGalley.GalleryImages,
             ...GalleryData11.GalleryImages,
@@ -473,7 +473,7 @@ export default function GalleryClient() {
     return (
         <>
             <div className="galleryChapters">
-                <GalleryRow t={t} {...salesAndBrokerActivation} focusTop />
+                <GalleryRow t={t} {...salesAndBrokerActivations} focusTop />
                 <GalleryRow t={t} {...constructionUpdates} reverse />
                 <GalleryRow t={t} {...eventsAndLaunches} focusTop />
             </div>
