@@ -184,7 +184,6 @@ export default function HomePageItem() {
           // placeholderImage="dubai-south-cover.png"
           backgroundVideo="divine-elements-video-2.mp4"
           placeholderImage="divine-element-frame.png"
-          blurBackground
         />
       </section>
 
@@ -200,7 +199,7 @@ export default function HomePageItem() {
           text3={t('slider6.subTitle')}
           tagline={t('slider6.content')}
           url="meydan-racecourse-mansion"
-          blurBackground />
+        />
       </section>
 
       <section
@@ -233,7 +232,6 @@ export default function HomePageItem() {
           text3={t('slider12.subTitle')}
           tagline={t('slider12.content')}
           url="dubai-south"
-          blurBackground
         />
       </section>
 
@@ -250,7 +248,6 @@ export default function HomePageItem() {
           tagline={t('slider4.content')}
           url="divine-living"
           projectStatus={t('soldOut')}
-          blurBackground
         />
       </section>
 
@@ -268,7 +265,6 @@ export default function HomePageItem() {
           tagline={t('slider5.content')}
           url="divine-residences"
           projectStatus={t('soldOut')}
-          blurBackground
         />
       </section>
 
@@ -285,7 +281,6 @@ export default function HomePageItem() {
           tagline={t('slider3.content')}
           url="divine-residencia"
           projectStatus={t('soldOut')}
-          blurBackground
         />
       </section>
 
@@ -302,7 +297,6 @@ export default function HomePageItem() {
           tagline={t('slider7.content')}
           url="golf-view-living-apartments"
           projectStatus={t('soldOut')}
-          blurBackground
         />
       </section>
 
@@ -319,7 +313,6 @@ export default function HomePageItem() {
           tagline={t('slider8.content')}
           url="golf-view-living-villas"
           projectStatus={t('soldOut')}
-          blurBackground
         />
       </section>
 

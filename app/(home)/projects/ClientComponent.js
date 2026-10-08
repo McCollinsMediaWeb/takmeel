@@ -38,7 +38,6 @@ export default function ClientComponent() {
                 text3={t('slider5.subTitle')}
                 tagline={t('slider5.content')}
                 url="meydan-racecourse-mansion"
-                blurBackground
             />
 
             <ProjectItem
@@ -63,7 +62,6 @@ export default function ClientComponent() {
                 text3={t('slider10.subTitle')}
                 tagline={t('slider10.content')}
                 url="dubai-south"
-                blurBackground
             />
 
             <ProjectItem
@@ -75,7 +73,6 @@ export default function ClientComponent() {
                 tagline={t('slider3.content')}
                 url="divine-living"
                 projectStatus={t('soldOut')}
-                blurBackground
             />
 
             <ProjectItem
@@ -87,7 +84,6 @@ export default function ClientComponent() {
                 tagline={t('slider4.content')}
                 url="divine-residences"
                 projectStatus={t('soldOut')}
-                blurBackground
             />
 
             <ProjectItem
@@ -99,7 +95,6 @@ export default function ClientComponent() {
                 tagline={t('slider2.content')}
                 url="divine-residencia"
                 projectStatus={t('soldOut')}
-                blurBackground
             />
 
             <ProjectItem
@@ -111,7 +106,6 @@ export default function ClientComponent() {
                 tagline={t('slider6.content')}
                 url="golf-view-living-apartments"
                 projectStatus={t('soldOut')}
-                blurBackground
             />
 
             <ProjectItem
@@ -123,7 +117,6 @@ export default function ClientComponent() {
                 tagline={t('slider7.content')}
                 url="golf-view-living-villas"
                 projectStatus={t('soldOut')}
-                blurBackground
             />
         </>
     );
