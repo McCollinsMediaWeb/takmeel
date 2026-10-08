@@ -38,19 +38,21 @@ export default function ClientComponent() {
                 text3={t('slider5.subTitle')}
                 tagline={t('slider5.content')}
                 url="meydan-racecourse-mansion"
+                blurBackground
             />
 
             <ProjectItem
-                backgroundImage="maydan.jpg"
-                backgroundImageMobile="maydan.jpg"
+                backgroundImage="dubai-south/new-dubai-south.jpeg"
+                backgroundImageMobile="dubai-south/new-dubai-south.jpeg"
                 text1={t('slider9.preTitle')}
                 text2={t('slider9.title')}
                 text3={t('slider9.subTitle')}
                 tagline={t('slider9.content')}
                 url="dubai-south"
-                backgroundVideo="south.mp4"
-                placeholderImage="dubai-south-cover.png"
                 blurBackground
+            // backgroundVideo="south.mp4"
+            // placeholderImage="dubai-south-cover.png"
+            // blurBackground
             />
 
             <ProjectItem
@@ -61,6 +63,7 @@ export default function ClientComponent() {
                 text3={t('slider10.subTitle')}
                 tagline={t('slider10.content')}
                 url="dubai-south"
+                blurBackground
             />
 
             <ProjectItem
@@ -72,6 +75,7 @@ export default function ClientComponent() {
                 tagline={t('slider3.content')}
                 url="divine-living"
                 projectStatus={t('soldOut')}
+                blurBackground
             />
 
             <ProjectItem
@@ -83,6 +87,7 @@ export default function ClientComponent() {
                 tagline={t('slider4.content')}
                 url="divine-residences"
                 projectStatus={t('soldOut')}
+                blurBackground
             />
 
             <ProjectItem
@@ -94,6 +99,7 @@ export default function ClientComponent() {
                 tagline={t('slider2.content')}
                 url="divine-residencia"
                 projectStatus={t('soldOut')}
+                blurBackground
             />
 
             <ProjectItem
@@ -104,7 +110,9 @@ export default function ClientComponent() {
                 text3={t('slider6.subTitle')}
                 tagline={t('slider6.content')}
                 url="golf-view-living-apartments"
-                projectStatus={t('soldOut')} />
+                projectStatus={t('soldOut')}
+                blurBackground
+            />
 
             <ProjectItem
                 backgroundImage="Golf-View-Living-Villas/divine-golf-villas-Facade 03.jpg"
@@ -114,7 +122,9 @@ export default function ClientComponent() {
                 text3={t('slider7.subTitle')}
                 tagline={t('slider7.content')}
                 url="golf-view-living-villas"
-                projectStatus={t('soldOut')} />
+                projectStatus={t('soldOut')}
+                blurBackground
+            />
         </>
     );
 }

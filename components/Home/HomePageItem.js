@@ -184,6 +184,7 @@ export default function HomePageItem() {
           // placeholderImage="dubai-south-cover.png"
           backgroundVideo="divine-elements-video-2.mp4"
           placeholderImage="divine-element-frame.png"
+          blurBackground
         />
       </section>
 
@@ -198,7 +199,8 @@ export default function HomePageItem() {
           text2={t('slider6.title')}
           text3={t('slider6.subTitle')}
           tagline={t('slider6.content')}
-          url="meydan-racecourse-mansion" />
+          url="meydan-racecourse-mansion"
+          blurBackground />
       </section>
 
       <section
@@ -206,15 +208,15 @@ export default function HomePageItem() {
         className='pageSection'
       >
         <ProjectItem
-          backgroundImage="Takmeel-Al-Barrari-View/Majan 03.jpg"
-          backgroundImageMobile="Takmeel-Al-Barrari-View/Mobile Majan 03.jpg"
+          backgroundImage="dubai-south/new-dubai-south.jpeg"
+          backgroundImageMobile="dubai-south/new-dubai-south.jpeg"
           text1={t('slider11.preTitle')}
           text2={t('slider11.title')}
           text3={t('slider11.subTitle')}
           tagline={t('slider11.content')}
           url="dubai-south"
-          backgroundVideo="south.mp4"
-          placeholderImage="dubai-south-cover.png"
+          // backgroundVideo="south.mp4"
+          // placeholderImage="dubai-south-cover.png"
           blurBackground
         />
       </section>
@@ -230,7 +232,9 @@ export default function HomePageItem() {
           text2={t('slider12.title')}
           text3={t('slider12.subTitle')}
           tagline={t('slider12.content')}
-          url="dubai-south" />
+          url="dubai-south"
+          blurBackground
+        />
       </section>
 
       <section
@@ -246,6 +250,7 @@ export default function HomePageItem() {
           tagline={t('slider4.content')}
           url="divine-living"
           projectStatus={t('soldOut')}
+          blurBackground
         />
       </section>
 
@@ -263,6 +268,7 @@ export default function HomePageItem() {
           tagline={t('slider5.content')}
           url="divine-residences"
           projectStatus={t('soldOut')}
+          blurBackground
         />
       </section>
 
@@ -279,6 +285,7 @@ export default function HomePageItem() {
           tagline={t('slider3.content')}
           url="divine-residencia"
           projectStatus={t('soldOut')}
+          blurBackground
         />
       </section>
 
@@ -295,6 +302,7 @@ export default function HomePageItem() {
           tagline={t('slider7.content')}
           url="golf-view-living-apartments"
           projectStatus={t('soldOut')}
+          blurBackground
         />
       </section>
 
@@ -310,7 +318,9 @@ export default function HomePageItem() {
           text3={t('slider8.subTitle')}
           tagline={t('slider8.content')}
           url="golf-view-living-villas"
-          projectStatus={t('soldOut')} />
+          projectStatus={t('soldOut')}
+          blurBackground
+        />
       </section>
 
       <section

@@ -2533,7 +2533,7 @@ input[type="number"] {
 }
 
 .ProjectMediaBlur {
-  filter: blur(10px);
+  filter: blur(1px);
   transform: scale(1.04);
 }
 
@@ -2580,7 +2580,7 @@ input[type="number"] {
   text-align: center;
 }
 
-.galleryDirectoryIntro > span,
+.galleryDirectoryIntro>span,
 .galleryCategoryHeading small {
   color: #9b7c45;
   font-family: var(--font-nunito), sans-serif;
@@ -4381,14 +4381,16 @@ body {
     bottom: 75px !important;
   }
 }
- .GalleryImageBox img{
+
+.GalleryImageBox img {
   border-radius: 20px;
 }
+
 @media (min-width: 1000px) {
   .GalleryImageBox img {
     max-height: 450px;
     object-fit: cover;
-     height: 450px !important;
+    height: 450px !important;
   }
 }
 
