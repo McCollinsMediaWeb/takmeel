@@ -1,9 +1,9 @@
 // 'use client';
 
 export const metadata = {
-  title: "Golf View Luxury Villas in UAE | Real Estate in Ajman",
+  title: "Residential Property Developers Ajman | Takmeel Development",
   description:
-    "Enjoy serene living with golf course views in UAE. Explore premium villas developed by Takmeel — a trusted name in Ajman and GCC luxury housing.",
+    "Discover premium apartments in Ajman by Takmeel Development. Explore modern 1,2 and 3-bedroom residences in Al Zorah with scenic views and contemporary design.",
   alternates: {
     canonical: "https://www.takmeeldevelopment.com/detail-page/golf-view-living-apartments",
   }
