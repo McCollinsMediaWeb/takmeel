@@ -1,9 +1,9 @@
 // 'use client';
 
 export const metadata = {
-  title: "Al Barari Villas for Sale in Dubai | Luxury Real Estate",
+  title: "Al Barari Apartments in Dubai | Divine Al Barari by Takmeel",
   description:
-    "Own a piece of paradise with luxury villas for sale in Al Barari, Dubai. Browse high-end homes built by top real estate developers in the UAE and Ajman.",
+    "Explore luxury apartments in Al Barari, Dubai, by Takmeel Development. Discover modern studio, 1, 2 & 3-bedroom homes with premium amenities and nature-inspired living.",
   alternates: {
     canonical: "https://www.takmeeldevelopment.com/detail-page/takmeel-al-barari-view-properties",
   }
