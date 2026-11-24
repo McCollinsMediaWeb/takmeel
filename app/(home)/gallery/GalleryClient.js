@@ -34,6 +34,54 @@ export default function GalleryClient() {
         return () => window.removeEventListener('resize', updateHeights);
     }, []);
 
+    const constructionGalleryNovember = {
+        text1: "Construction Update, Divine Al Barari - 18 November 2026",
+        subTitle: "takmeel",
+        GalleryImages: [
+            "constructionNovember/BEE_7160.webp",
+            "constructionNovember/BEE_7161.webp",
+            "constructionNovember/BEE_7163.webp",
+            "constructionNovember/BEE_7165.webp",
+            "constructionNovember/BEE_7166.webp",
+            "constructionNovember/BEE_7167.webp",
+            "constructionNovember/BEE_7168.webp",
+            "constructionNovember/BEE_7170.webp",
+            "constructionNovember/BEE_7173.webp",
+            "constructionNovember/BEE_7175.webp",
+            "constructionNovember/BEE_7177.webp",
+            "constructionNovember/BEE_7178.webp",
+            "constructionNovember/BEE_7179.webp",
+            "constructionNovember/BEE_7180.webp",
+            "constructionNovember/BEE_7181.webp",
+
+            "constructionNovember/BEE_7182.webp",
+            "constructionNovember/BEE_7183.webp",
+            "constructionNovember/BEE_7184.webp",
+            "constructionNovember/BEE_7185.webp",
+            "constructionNovember/BEE_7186.webp",
+            "constructionNovember/BEE_7187.webp",
+            "constructionNovember/BEE_7189.webp",
+            "constructionNovember/BEE_7191.webp",
+            "constructionNovember/BEE_7193.webp",
+            "constructionNovember/BEE_7194.webp",
+
+            "constructionNovember/BEE_7195.webp",
+            "constructionNovember/BEE_7196.webp",
+            "constructionNovember/BEE_7197.webp",
+            "constructionNovember/BEE_7199.webp",
+            "constructionNovember/BEE_7200.webp",
+            "constructionNovember/BEE_7201.webp",
+
+            "constructionNovember/BEE_7202.webp",
+            "constructionNovember/BEE_7204.webp",
+            "constructionNovember/BEE_7205.webp",
+            "constructionNovember/BEE_7206.webp",
+            "constructionNovember/BEE_7207.webp",
+            "constructionNovember/BEE_7208.webp",
+
+        ]
+    };
+
     const constructionGallerySeptember = {
         text1: "Construction Update, Divine Al Barari - 9 September 2026",
         subTitle: "takmeel",
@@ -490,6 +538,9 @@ export default function GalleryClient() {
                         <small>4 {t('categories.collections')}</small>
                         <h2>{t('categories.constructionUpdates')}</h2>
                     </div>
+                </div>
+                <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
+                    <GalleryRow t={t} {...constructionGalleryNovember} />
                 </div>
                 <div className="bg2 NoPagination FixedImageHeight ImagePositionTop">
                     <GalleryRow t={t} {...constructionGallerySeptember} />
